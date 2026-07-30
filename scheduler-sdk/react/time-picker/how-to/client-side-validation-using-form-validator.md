@@ -1,0 +1,26 @@
+---
+layout: post
+title: Client side validation in React Timepicker component | Syncfusion
+description: Learn here all about Client side validation using form validator in Syncfusion React Timepicker component of Syncfusion Essential JS 2 and more.
+control: Client side validation using form validator 
+platform: scheduler-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/scheduler-sdk
+---
+
+# Client side validation using form validator in React Timepicker component
+
+The TimePicker component can be integrated with the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 FormValidator](https://ej2.syncfusion.com/documentation/form-validator/) to validate time input. The FormValidator allows you to customize error messages and control validation behavior for each field.
+
+In the following example, the required field validation is implemented by mapping the name attribute value to the rules property. It validates the TimePicker component and displays the validation message when the textbox value is empty, during form post back or focus out.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/time-picker/validation-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/time-picker/validation-cs1/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/time-picker/validation-cs1" %}

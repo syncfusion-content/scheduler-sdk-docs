@@ -1,0 +1,322 @@
+---
+layout: post
+title: Globalization in React Daterangepicker component | Syncfusion
+description: Learn here all about Globalization in Syncfusion React Daterangepicker component of Syncfusion Essential JS 2 and more.
+control: Globalization 
+platform: scheduler-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/scheduler-sdk
+---
+
+# Globalization in React Daterangepicker component
+
+Globalization enables components to support multiple languages and regional formats. This combines [`Internationalization`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization) (parsing and formatting dates according to regional standards) with [`localization`](https://ej2.syncfusion.com/react/documentation/common/globalization/localization) (translating text and applying culture-specific customizations).
+
+By default, the DateRangePicker uses `American English` culture for date format and meridian names. It leverages the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](http://ej2.syncfusion.com/documentation/common/internationalization) package with official [`UNICODE CLDR`](https://cldr.unicode.org/) JSON data to parse and format dates according to the selected culture.
+
+### **Quick Start: Enable a Different Culture**
+
+To display the DateRangePicker in a culture other than English, follow these steps:
+
+1. **Install CLDR-Data Package**
+
+Install the `CLDR-Data` package using the following command:
+
+```bash
+npm install cldr-data
+```
+
+This package contains all required CLDR JSON data. For more information, refer to [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
+
+    ```
+      npm install cldr-data --save
+    ```
+
+Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+
+* Now, import the installed CLDR JSON data into the `app.ts` file. To import JSON data we need to install the JSON plugin loader. Here we have used the systemJS JSON plugin loader.
+
+     ```
+       npm install systemjs-plugin-json --save-dev
+     ```
+
+* Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+
+* Now import the installed CLDR JSON data into the `app.ts` file.
+
+* Now use the [`loadCldr`](http://ej2.syncfusion.com/documentation/base/internationalization#cldr-data-dependencies)
+method to load the culture specific CLDR JSON data from the installed location to `app.ts` file.
+
+* DateRangePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the DateRangePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+
+```ts
+
+import { loadCldr } from "@syncfusion/ej2-base";
+
+import * as gregorian from 'cldr-data/main/de/ca-gregorian.json';
+import * as numbers from 'cldr-data/main/de/numbers.json';
+import * as timeZoneNames from 'cldr-data/main/de/timeZoneNames.json';
+import * as numberingSystems from 'cldr-data/supplemental/numberingSystems.json';
+import * as weekData from 'cldr-data/supplemental/weekData.json';// To load the culture based first day of week
+
+loadCldr(numberingSystems, gregorian, numbers, timeZoneNames, weekData);
+```
+
+> if you are facing the error `/node_modules/cldr-data/main/de/*.json (1,1): unused expression, expected an assignment or function call` when you are adding the json files to render the culture sample, then add the below configuration in your `tslint.json` file
+
+```ts
+
+"linterOptions": {
+    "exclude": [
+      "*.json",
+      "**/*.json"
+    ]
+  }
+
+```
+
+> The `Localization` library allows you to localize default text content of the DateRangePicker. The DateRangePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/react/documentation/api/daterangepicker/#locale) value and translation object.
+
+Locale keywords |Text
+-----|-----
+placeholder | Hint to describe expected value in input element.
+startLabel | Label to represent the start date.
+endLabel | Label to represent the end date.
+applyText | Text present in the apply button.
+cancelText | Text present in the cancel button.
+selectedDays | Text to represent selected days.
+days | Text represents days.
+customRange | Text present in the custom range button in presets container.
+
+* Before changing to a culture other than `English`, ensure that locale text for the target culture is loaded through the `load` method of the `L10n` class.
+
+     ```ts
+       //Load the L10n from ej2-base
+       import { L10n } from "@syncfusion/ej2-base";
+
+       //load the locale object to set the localized placeholder value
+     L10n.load({
+        'de': {
+           'daterangepicker': {
+            placeholder: 'Wählen Sie einen Bereich aus',
+            startLabel: 'Wählen Sie Startdatum',
+            endLabel: 'Wählen Sie Enddatum',
+            applyText: 'Sich bewerben',
+            cancelText: 'Stornieren',
+            selectedDays: 'Ausgewählte Tage',
+            days: 'Tage',
+            customRange: 'benutzerdefinierten Bereich'
+           }
+        }
+    });
+
+   ```
+
+* Set the culture by using the `locale` property.
+
+The following example demonstrates the DateRangePicker in `German` culture.
+
+`[Class-component]`
+
+{% tabs %}
+{% highlight json tabtitle="ca-gregorian.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/ca-gregorian.json %}
+{% endhighlight %}
+{% highlight js tabtitle="ca-gregorian.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/ca-gregorian.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="currencies.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/currencies.json %}
+{% endhighlight %}
+{% highlight js tabtitle="currencies.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/currencies.jsx %}
+{% endhighlight %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numberingsystems.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/numberingSystems.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numberingsystems.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/numberingSystems.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numbers.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/numbers.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numbers.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/numbers.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="timezonenames.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/timeZoneNames.json %}
+{% endhighlight %}
+{% highlight js tabtitle="timezonenames.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1/app/timeZoneNames.jsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs1" %}
+
+`[Functional-component]`
+
+{% tabs %}
+{% highlight json tabtitle="ca-gregorian.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/ca-gregorian.json %}
+{% endhighlight %}
+{% highlight js tabtitle="ca-gregorian.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/ca-gregorian.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="currencies.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/currencies.json %}
+{% endhighlight %}
+{% highlight js tabtitle="currencies.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/currencies.jsx %}
+{% endhighlight %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/index.tsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numberingsystems.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/numberingSystems.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numberingsystems.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/numberingSystems.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numbers.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/numbers.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numbers.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/numbers.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="timezonenames.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/timeZoneNames.json %}
+{% endhighlight %}
+{% highlight js tabtitle="timezonenames.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2/app/timeZoneNames.jsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/globalization-cs2" %}
+
+## Right-To-Left
+
+The DateRangePicker supports right-to-left functionality for languages like Arabic, Hebrew, etc. To display the text in the right-to-left direction, use [`enableRtl`](https://ej2.syncfusion.com/react/documentation/api/daterangepicker/#enablertl) property.
+
+The following code example demonstrates the DateRangePicker component in `Hebrew` culture and also explains how to set the localized text to the placeholder using [`load`](http://ej2.syncfusion.com/documentation/api/base/l10n/#load) method of [L10n](http://ej2.syncfusion.com/documentation/api/base/l10n/) class.
+
+`[Class-component]`
+
+{% tabs %}
+{% highlight json tabtitle="ca-gregorian.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/ca-gregorian.json %}
+{% endhighlight %}
+{% highlight js tabtitle="ca-gregorian.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/ca-gregorian.jsx %}
+{% endhighlight %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numberingsystems.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/numberingSystems.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numberingsystems.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/numberingSystems.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numbers.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/numbers.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numbers.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/numbers.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="timezonenames.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/timeZoneNames.json %}
+{% endhighlight %}
+{% highlight js tabtitle="timezonenames.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1/app/timeZoneNames.jsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs1" %}
+
+`[Functional-component]`
+
+{% tabs %}
+{% highlight json tabtitle="ca-gregorian.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/ca-gregorian.json %}
+{% endhighlight %}
+{% highlight js tabtitle="ca-gregorian.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/ca-gregorian.jsx %}
+{% endhighlight %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/index.tsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numberingsystems.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/numberingSystems.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numberingsystems.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/numberingSystems.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="numbers.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/numbers.json %}
+{% endhighlight %}
+{% highlight js tabtitle="numbers.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/numbers.jsx %}
+{% endhighlight %}
+{% highlight json tabtitle="timezonenames.json" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/timeZoneNames.json %}
+{% endhighlight %}
+{% highlight js tabtitle="timezonenames.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2/app/timeZoneNames.jsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/rtl-cs2" %}
+
+## Date Format
+
+Date format is a way of representing the start date, end date strings in different string format in the textbox.
+
+By default, the DateRangePicker's start and end date string format is based on the culture. You can also set the own
+custom format by using the [`format`](https://ej2.syncfusion.com/react/documentation/api/daterangepicker/#format) property.
+
+>Once the date format property has been defined it will be common to all the cultures.
+
+To know more about the date format standards, refer to the [Internationalization Date Format](http://ej2.syncfusion.com/documentation/base/internationalization) section.
+
+The following example demonstrates the DateRangePicker with the custom format (`yyyy-MM-dd`). Also, here the separator of the date values is changed to string "to".
+
+`[Class-component]`
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/default-cs13/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/default-cs13/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/default-cs13" %}
+
+`[Functional-component]`
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/default-cs14/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/default-cs14/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/default-cs14" %}

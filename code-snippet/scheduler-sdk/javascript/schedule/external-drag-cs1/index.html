@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schedule Typescript Control</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typescript Schedule Control">
+    <meta name="author" content="Syncfusion">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-calendars/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-schedule/styles/bootstrap5.3.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="es5-datasource.js" type="text/javascript"></script>
+    <style>
+        .content-wrapper {
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .e-device-hover {
+            background-color: #e0e0e0 !important;
+        }
+
+        .schedule-container {
+            padding-right: 10px
+        }
+
+        .title-container {
+            padding-bottom: 10px;
+        }
+
+        .treeview-external-drag .e-list-text,
+        .e-bigger .treeview-external-drag .e-list-text {
+            background: white;
+            border: 0.5px solid #E1E7EC;
+            height: 30px;
+            line-height: 15px;
+            padding: 5px;
+            width: 220px;
+        }
+
+        .treeview-external-drag .e-list-parent,
+        .e-bigger .treeview-external-drag .e-list-parent {
+            height: 100%;
+            padding: 0 2px;
+        }
+
+        .treeview-external-drag .e-list-item,
+        .e-bigger .treeview-external-drag .e-list-item {
+            height: 100%;
+            padding: 0 0 5px 0;
+        }
+
+        .treeview-external-drag .e-fullrow,
+        .e-bigger .treeview-external-drag .e-fullrow {
+            height: 55px;
+        }
+
+        .treeview-external-drag .e-list-item.e-hover>.e-fullrow,
+        .treeview-external-drag .e-list-item.e-active>.e-fullrow,
+        .treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow,
+        .e-bigger .treeview-external-drag .e-list-item.e-hover>.e-fullrow,
+        .e-bigger .treeview-external-drag .e-list-item.e-active>.e-fullrow,
+        .e-bigger .treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow {
+            background-color: transparent;
+            border-color: transparent;
+            box-shadow: none !important;
+        }
+
+        .treeview-external-drag .e-text-content,
+        .e-bigger .treeview-external-drag .e-text-content {
+            padding: 0;
+        }
+
+        .e-drag-item.e-treeview.treeview-external-drag,
+        .e-bigger .e-drag-item.e-treeview.treeview-external-drag {
+            padding: 0 !important;
+        }
+
+        .title-text {
+            font-size: 18px;
+            margin: 0px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 550px) {
+            .content-wrapper {
+                display: block;
+            }
+
+            .schedule-container {
+                padding-bottom: 10px
+            }
+
+            .treeview-external-drag.e-treeview,
+            .e-bigger .treeview-external-drag.e-treeview {
+                width: 225px;
+            }
+
+            .e-bigger .treeview-external-drag.e-treeview.e-drag-item {
+                position: relative !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container" class="container col-lg-12 custom-tree">
+        <div class="content-wrapper">
+            <div class="schedule-container">
+                <div class="title-container">
+                    <h3 class="title-text">Scheduler</h3>
+                </div>
+                <div id="Schedule">
+                </div>
+            </div>
+            <div class="treeview-container">
+                <div class="title-container">
+                    <h3 class="title-text">Waiting List</h3>
+                </div>
+                <div id="Tree"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var ele = document.getElementById('container');
+        if (ele) {
+            ele.style.visibility = "visible";
+        }   
+    </script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

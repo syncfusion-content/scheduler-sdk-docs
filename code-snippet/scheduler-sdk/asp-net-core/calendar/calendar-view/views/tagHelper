@@ -1,0 +1,5 @@
+@{
+    var value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15);
+}
+
+<ejs-calendar id="calendar" value="@value" start="Year"></ejs-calendar>

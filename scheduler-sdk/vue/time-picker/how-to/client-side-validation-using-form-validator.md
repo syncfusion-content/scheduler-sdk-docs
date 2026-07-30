@@ -1,0 +1,26 @@
+---
+layout: post
+title: Client side validation using form validator in Vue Timepicker component | Syncfusion
+description: Learn here all about Client side validation using form validator in Syncfusion Vue Timepicker component of Syncfusion Essential JS 2 and more.
+control: Client side validation using form validator 
+platform: scheduler-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/scheduler-sdk
+---
+
+# Client side validation using form validator in Vue Timepicker component
+
+To achieve client side validation in a TimePicker component, use [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 FormValidator](https://ej2.syncfusion.com/documentation/form-validator). It provides an option to customize feedback error messages to the corresponding fields for taking action and resolving the issue.
+
+In the following example, the required field validation is implemented by mapping the name attribute value to the rules property. It validates the TimePicker component and displays the validation message when the textbox value is empty during form post back or focus out.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/scheduler-sdk/vue/time-picker/validation-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/scheduler-sdk/vue/time-picker/validation-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/time-picker/validation-cs1" %}

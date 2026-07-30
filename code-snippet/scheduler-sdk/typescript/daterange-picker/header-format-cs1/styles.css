@@ -1,0 +1,36 @@
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    width: 30%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+.e-daterangepicker.e-daterange-day-header-lg.format-wide .e-calendar.e-calendar-day-header-lg{
+    min-width: 490px;
+}
+.e-daterangepicker.e-daterange-day-header-lg.format-wide {
+    max-width: 1000px;
+    left: 0px !important;
+}
+#container {
+    width: 25%;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: inline-flex;
+}
+#format {
+    width: 180px;
+    margin-left: 400px;
+    display: inline-block;
+}
+#wrapper {
+    height: 30px;
+    width: 150px;
+    margin-top: 15px;
+}
+.custom-input-label{
+    font-size: 15px;
+    font-weight: bold
+}

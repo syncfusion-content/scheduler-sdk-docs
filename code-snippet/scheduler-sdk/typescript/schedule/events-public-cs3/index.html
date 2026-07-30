@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schedule Typescript Control</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Schedule Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-calendars/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/fluent2.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-schedule/styles/fluent2.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js" type="text/javascript"></script>
+    <script src="systemjs.config.js" type="text/javascript"></script>
+    <style>
+        .content-wrapper {
+            display: flex;
+        }
+
+        .control-section {
+            padding-right: 10px;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='loader'>LOADING....</div>
+    <div id='container' class="col-lg-12">
+        <div class="content-wrapper">
+            <div class="col-lg-9 control-section">
+                <div id="Schedule"></div>
+            </div>
+            <div class="col-lg-3 property-section">
+                <table id="property" title="Event Trace">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="eventarea" style="height: 245px;overflow: auto">
+                                    <span class="EventLog" id="EventLog" style="word-break: normal;"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="evtbtn" style="padding-bottom: 10px">
+                                    <input id="clear" type="button" value="Clear">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

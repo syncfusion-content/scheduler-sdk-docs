@@ -1,0 +1,22 @@
+#container {
+    margin: 30px auto;
+    width: 60%;
+    display: inline-flex;
+}
+
+#format { 
+    width: 30%;
+    display: inline-block;
+    margin-left: 8%;
+}
+
+#wrapper {
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.custom-input-label{
+    font-size: 16px;
+    font-weight: bold
+}

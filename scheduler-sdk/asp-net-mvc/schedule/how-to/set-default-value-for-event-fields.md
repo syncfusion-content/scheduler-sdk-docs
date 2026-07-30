@@ -1,0 +1,37 @@
+---
+layout: post
+title: Set Default Value For Event Fields in ASP.NET MVC Schedule Component
+description: Learn here all about Set Default Value For Event Fields in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+platform: scheduler-sdk
+control: Set Default Value For Event Fields
+publishingplatform: scheduler-sdk
+documentation: ug
+---
+
+# Set Default Value for Event Fields
+
+Event window default fields name like Title, Location, etc.. can be customized and default value can be set to Subject field using `Default` property which will be added if an appointment is created with empty subject.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/default-subject/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/default-subject/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/default-subject/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/default-subject/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
