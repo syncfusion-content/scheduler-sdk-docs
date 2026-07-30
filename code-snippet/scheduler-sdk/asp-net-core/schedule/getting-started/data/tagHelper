@@ -1,0 +1,17 @@
+@{
+    List<AppointmentData> appData = new List<AppointmentData>();
+    appData.Add(new AppointmentData
+    { Id = 1, Subject = "Explosion of Betelgeuse Star", StartTime = new DateTime(2026, 2, 13, 9, 30, 0), EndTime = new DateTime(2026, 2, 13, 11, 0, 0) });
+    appData.Add(new AppointmentData
+    { Id = 2, Subject = "Thule Air Crash Report", StartTime = new DateTime(2026, 2, 14, 12, 0, 0), EndTime = new DateTime(2026, 2, 14, 14, 0, 0) });
+    appData.Add(new AppointmentData
+    { Id = 3, Subject = "Blue Moon Eclipse", StartTime = new DateTime(2026, 2, 15, 9, 30, 0), EndTime = new DateTime(2026, 2, 15, 11, 0, 0) });
+    appData.Add(new AppointmentData
+    { Id = 4, Subject = "Meteor Showers in 2022", StartTime = new DateTime(2026, 2, 16, 13, 0, 0), EndTime = new DateTime(2026, 2, 16, 14, 30, 0) });
+    appData.Add(new AppointmentData
+    { Id = 5, Subject = "Milky Way as Melting pot", StartTime = new DateTime(2026, 2, 17, 12, 0, 0), EndTime = new DateTime(2026, 2, 17, 14, 0, 0) });
+}
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2026, 2, 17)">
+    <e-schedule-eventsettings dataSource="appData"></e-schedule-eventsettings>
+</ejs-schedule>

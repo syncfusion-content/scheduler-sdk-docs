@@ -1,0 +1,53 @@
+---
+layout: post
+title: Customization using cssclass in React Daterangepicker component | Syncfusion
+description: Learn here all about Customization using cssclass in Syncfusion React Daterangepicker component of Syncfusion Essential JS 2 and more.
+control: Customization using cssclass 
+platform: scheduler-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/scheduler-sdk
+---
+
+# Customization using cssclass in React Daterangepicker component
+
+The [`cssClass`](https://ej2.syncfusion.com/react/documentation/api/daterangepicker#cssclass) property enables UI customization by adding a custom CSS class to the DateRangePicker root element. This allows you to override default component styles with custom styling rules.
+
+The following classes provide flexible customization options for the DateRangePicker component:
+
+| **Class Name** | **Description** |
+| --- | --- |
+| e-date-range-wrapper | Applied to DateRangePicker wrapper |
+| e-range-icon | Applied to the DateRangePicker icon. |
+| e-popup | Applied to DateRangePicker popup wrapper.|
+| e-calendar | Applied to both Calendar element. |
+| e-right-calendar | Applied to right Calendar element. |
+| e-left-calendar | Applied to left Calendar element. |
+| e-start-label | Applied to start label in popup. |
+| e-end-calendar | Applied to end label in a popup. |
+| e-day-span | Applied to day span details label in a popup. |
+| e-footer | Applied to footer elements in a popup. |
+| e-apply | Applied to apply button in footer in a popup. |
+| e-cancel | Applied to cancel button in footer in a popup. |
+| e-header | Applied to Calendar header.|
+| e-title |Applied to Calendar title. |
+| e-icon-container | Applied to Calendar previous and next icon container.|
+| e-prev |  Applied to Calendar previous icon.|
+| e-next | Applied to Calendar next icon.|
+| e-weekend | Applied to Calendar weekend dates.|
+| e-other-month |  Applied to Calendar other month dates.|
+| e-day | Applied to each day cell of the Calendar.|
+| e-selected | Applied to Calendar selected dates.|
+| e-disabled | Applied to Calendar disabled dates.|
+
+In the following example, we have customized the DateRangePicker color of texts, background of selected text using `cssClass`.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/customcss-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/daterange-picker/customcss-cs1/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+ {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/daterange-picker/customcss-cs1" %}
