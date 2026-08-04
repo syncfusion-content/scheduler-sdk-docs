@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Half-yearly view in React Schedule component | Syncfusion
-description: Learn here all about Half yearly view in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: How to show half-yearly view in React Scheduler | Syncfusion
+description: Learn how to render a six-month year view in the React Scheduler using the firstMonthOfYear and monthsCount properties.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Half-yearly view in React Schedule component
+# How to show half-yearly view in React Scheduler
 
 The year view of the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) displays all 365 days and their appointments for a given year. You can customize this view by using the following properties:
 
@@ -20,14 +20,14 @@ In the following code example, you can see how to render only the last six month
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/year-customizations-cs1/app/index.jsx %}
+{% include code-snippet/schedule/year-customizations-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/year-customizations-cs1/app/index.tsx %}
+{% include code-snippet/schedule/year-customizations-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/year-customizations-cs1/index.html %}
+{% include code-snippet/schedule/year-customizations-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/year-customizations-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/year-customizations-cs1" %}

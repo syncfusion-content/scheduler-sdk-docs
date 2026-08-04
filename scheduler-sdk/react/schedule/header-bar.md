@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header bar in React Schedule component | Syncfusion
-description: Learn here all about Header bar in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Header Bar in React Scheduler | Syncfusion
+description: Learn how to show, hide, and customize the Syncfusion React Scheduler header bar with built-in and custom toolbar items.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize header bar in React Schedule component
+# Header Bar in React Scheduler
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
@@ -18,17 +18,17 @@ By default, the header bar holds the date and view navigation options, through w
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs1/app/index.jsx %}
+{% include code-snippet/schedule/timescale-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs1/app/index.tsx %}
+{% include code-snippet/schedule/timescale-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs1/index.html %}
+{% include code-snippet/schedule/timescale-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/timescale-cs1" %}
 
 ## Customizing header bar using template
 
@@ -36,23 +36,23 @@ Apart from the default date navigation and view options on the header bar, you c
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs3/app/index.jsx %}
+{% include code-snippet/schedule/header-bar-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs3/app/index.tsx %}
+{% include code-snippet/schedule/header-bar-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs3/index.html %}
+{% include code-snippet/schedule/header-bar-cs3/index.html %}
 {% endhighlight %}
 {% highlight html tabtitle="datasource.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs3/app/datasource.jsx %}
+{% include code-snippet/schedule/header-bar-cs3/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight html tabtitle="datasource.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs3/app/datasource.tsx %}
+{% include code-snippet/schedule/header-bar-cs3/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs1" %}
 
 ## Customizing header bar using event
 
@@ -60,17 +60,17 @@ Apart from the default date navigation and view options available on the header 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs1/app/index.jsx %}
+{% include code-snippet/schedule/header-bar-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs1/app/index.tsx %}
+{% include code-snippet/schedule/header-bar-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs1/index.html %}
+{% include code-snippet/schedule/header-bar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs1" %}
 
 ## How to display the view options within the header bar popup
 
@@ -78,17 +78,17 @@ By default, the header bar holds the view navigation options, through which the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs2/app/index.jsx %}
+{% include code-snippet/schedule/header-bar-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs2/app/index.tsx %}
+{% include code-snippet/schedule/header-bar-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-bar-cs2/index.html %}
+{% include code-snippet/schedule/header-bar-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs2" %}
 
 > Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
@@ -102,20 +102,20 @@ The [`dateHeaderTemplate`](https://ej2.syncfusion.com/react/documentation/api/sc
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs1/app/index.jsx %}
+{% include code-snippet/schedule/date-header-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs1/app/index.tsx %}
+{% include code-snippet/schedule/date-header-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs1/index.html %}
+{% include code-snippet/schedule/date-header-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs1/index.css %}
+{% include code-snippet/schedule/date-header-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/date-header-cs1" %}
 
 ### Using renderCell event
 
@@ -123,20 +123,20 @@ In month view, the date header template is not applicable and therefore the same
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs2/app/index.jsx %}
+{% include code-snippet/schedule/date-header-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs2/app/index.tsx %}
+{% include code-snippet/schedule/date-header-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs2/index.html %}
+{% include code-snippet/schedule/date-header-cs2/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs2/index.css %}
+{% include code-snippet/schedule/date-header-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/date-header-cs2" %}
 
 ## Customizing the date range text
 
@@ -146,20 +146,20 @@ The [`dateRangeTemplate`](https://ej2.syncfusion.com/react/documentation/api/sch
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs3/app/index.jsx %}
+{% include code-snippet/schedule/date-header-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs3/app/index.tsx %}
+{% include code-snippet/schedule/date-header-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs3/index.html %}
+{% include code-snippet/schedule/date-header-cs3/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/date-header-cs3/index.css %}
+{% include code-snippet/schedule/date-header-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/date-header-cs3" %}
 
 ## Customizing header indent cells
 
@@ -169,16 +169,16 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-indent-cs1/app/index.jsx %}
+{% include code-snippet/schedule/header-indent-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-indent-cs1/app/index.tsx %}
+{% include code-snippet/schedule/header-indent-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/header-indent-cs1/index.html %}
+{% include code-snippet/schedule/header-indent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-indent-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/header-indent-cs1" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

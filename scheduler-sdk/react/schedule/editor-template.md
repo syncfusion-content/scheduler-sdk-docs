@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor template in React Schedule component | Syncfusion
-description: Learn here all about Editor template in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: Editor Template in React Scheduler | Syncfusion
+description: Learn how to customize the Syncfusion React Scheduler editor window with custom fields, validations, header titles, and footer button text.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Editor template in React Schedule component
+# Editor Template in React Scheduler
 
 The Scheduler uses popups and dialogs to display notifications and provides a detailed event editor window to simplify appointment creation and editing. You can customize this editor window, its fields, and apply validations as needed.
 
@@ -26,17 +26,17 @@ You can customize the header title and footer button text by updating the corres
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs8/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs8/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs8/index.html %}
+{% include code-snippet/schedule/local-data-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs8" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs8" %}
 
 ### How to change the label text of default editor fields
 
@@ -44,17 +44,17 @@ To change the default labels such as Subject, Location and other field names in 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs9/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs9/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs9/index.html %}
+{% include code-snippet/schedule/local-data-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs9" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs9" %}
 
 ### Field validation
 
@@ -62,17 +62,17 @@ It is possible to validate the required fields of the editor window from client-
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs10/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs10/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs10/index.html %}
+{% include code-snippet/schedule/local-data-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs10" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs10" %}
 
 > Applicable validation rules can be referred from [form validation](https://ej2.syncfusion.com/react/documentation/form-validator/validation-rules) documentation.
 
@@ -82,17 +82,17 @@ The additional fields can be added to the default event editor by making use of 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs1/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs1/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs1/index.html %}
+{% include code-snippet/schedule/editor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs1" %}
 
 ### Customizing the default time duration in editor window
 
@@ -100,17 +100,17 @@ In default event editor window, start and end time duration are processed based 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs2/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs2/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs2/index.html %}
+{% include code-snippet/schedule/editor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs2" %}
 
 ### How to prevent the display of editor and quick popups
 
@@ -118,17 +118,17 @@ To prevent the editor or quick info popup from appearing, set the `cancel` prope
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs3/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs3/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs3/index.html %}
+{% include code-snippet/schedule/editor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs3" %}
 
 To prevent only specific popups, check the `type` property in the [`popupOpen`](https://ej2.syncfusion.com/react/documentation/api/schedule/popupOpenEventArgs) event arguments. The available popup types are:
 
@@ -150,17 +150,17 @@ By default, the timezone collections in the editor window have been loaded with 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-template-cs2/app/index.jsx %}
+{% include code-snippet/schedule/event-template-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-template-cs2/app/index.tsx %}
+{% include code-snippet/schedule/event-template-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-template-cs2/index.html %}
+{% include code-snippet/schedule/event-template-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-template-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/event-template-cs2" %}
 
 ## Customizing event editor using template
 
@@ -178,17 +178,17 @@ Learn how to customize the event editor window using templates from this video:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs4/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs4/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs4/index.html %}
+{% include code-snippet/schedule/editor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs4" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs4" %}
 
 ### How to customize header and footer using template
 
@@ -198,17 +198,17 @@ In this demo, we tailor the editor's header according to the appointment's subje
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-header-footer-cs1/app/index.jsx %}
+{% include code-snippet/schedule/editor-header-footer-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-header-footer-cs1/app/index.tsx %}
+{% include code-snippet/schedule/editor-header-footer-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-header-footer-cs1/index.html %}
+{% include code-snippet/schedule/editor-header-footer-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-header-footer-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-header-footer-cs1" %}
 
 ### How to add resource options within editor template
 
@@ -216,17 +216,17 @@ You can include a resource field with multiple selection support using a MultiSe
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs5/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs5/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs5/index.html %}
+{% include code-snippet/schedule/editor-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs5" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs5" %}
 
 ### How to add recurrence options within editor template
 
@@ -234,17 +234,17 @@ The following example demonstrates how to include recurrence options in the edit
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs6/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs6/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs6/index.html %}
+{% include code-snippet/schedule/editor-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs6" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs6" %}
 
 ### Apply validations on editor template fields
 
@@ -252,17 +252,17 @@ The following example applies validation to the status field in a custom editor 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs7/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs7/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs7/index.html %}
+{% include code-snippet/schedule/editor-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs7" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs7" %}
 
 ### How to save the customized event editor using template
 
@@ -274,17 +274,17 @@ The following code example shows how to save the customized event editor using a
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs8/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs8/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs8/index.html %}
+{% include code-snippet/schedule/editor-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs8" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs8" %}
 
 In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`popupClose`](https://ej2.syncfusion.com/react/documentation/api/schedule#popupclose) event are as follows.
 
@@ -310,17 +310,17 @@ To disable quick info popups, set [`showQuickInfo`](https://ej2.syncfusion.com/r
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs9/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs9/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs9/index.html %}
+{% include code-snippet/schedule/editor-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs9" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs9" %}
 
 ### How to open QuickInfo popup on multiple cell selection
 
@@ -328,17 +328,17 @@ By default the `QuickInfo` popup will open on single click of the cell. To open 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs10/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs10/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs10/index.html %}
+{% include code-snippet/schedule/editor-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs10" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs10" %}
 
 ### How to change the watermark text of quick popup subject
 
@@ -364,17 +364,17 @@ The look and feel of the built-in quick popup window, which opens when single cl
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/quick-info-cs1/app/index.jsx %}
+{% include code-snippet/schedule/quick-info-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/quick-info-cs1/app/index.tsx %}
+{% include code-snippet/schedule/quick-info-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/quick-info-cs1/index.html %}
+{% include code-snippet/schedule/quick-info-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/quick-info-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/quick-info-cs1" %}
 
 > The quick popup in adaptive mode can also be customized using [`quickInfoTemplates`](https://ej2.syncfusion.com/react/documentation/api/schedule#quickinfotemplates)  using `e-device` class.
 
@@ -390,17 +390,17 @@ The following code example shows how to disable the display of such popups while
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs11/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs11/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs11/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs11/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs11/index.html %}
+{% include code-snippet/schedule/editor-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs11" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs11" %}
 
 ### How to customize the popup that opens on more indicator
 
@@ -408,17 +408,17 @@ The following code example shows you how to customize the default more indicator
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs12/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs12/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs12/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs12/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs12/index.html %}
+{% include code-snippet/schedule/editor-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs12" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs12" %}
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
@@ -426,17 +426,17 @@ It is possible to prevent the display of popup window by passing the value `true
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs13/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs13/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs13/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs13/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs13/index.html %}
+{% include code-snippet/schedule/editor-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs13" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs13" %}
 
 ### How to navigate Day view when clicking on more text indicator
 
@@ -444,17 +444,17 @@ The following code example shows you how to customize the [`MoreEventsClick`](ht
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs14/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs14/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs14/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs14/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs14/index.html %}
+{% include code-snippet/schedule/editor-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs14" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs14" %}
 
 ### How to close the editor window manually
 
@@ -462,17 +462,17 @@ You can close the editor window by using [closeEditor](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs15/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs15/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs15/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs15/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs15/index.html %}
+{% include code-snippet/schedule/editor-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs15" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs15" %}
 
 ### How to open the quick info popup manually
 
@@ -480,17 +480,17 @@ You can open the quick info popup in scheduler by using the [openQuickInfoPopup]
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs16/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs16/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs16/index.html %}
+{% include code-snippet/schedule/editor-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs16" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs16" %}
 
 ### How to close the quick info popup manually
 
@@ -498,16 +498,16 @@ You can close the quick info popup in scheduler by using the [closeQuickInfoPopu
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs17/app/index.jsx %}
+{% include code-snippet/schedule/editor-cs17/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs17/app/index.tsx %}
+{% include code-snippet/schedule/editor-cs17/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-cs17/index.html %}
+{% include code-snippet/schedule/editor-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-cs17" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-cs17" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

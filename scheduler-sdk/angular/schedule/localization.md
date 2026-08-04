@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Schedule component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: Localization in Angular Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion Angular Scheduler with culture-specific date formats, number formatting, and translated static text.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Localization in the Angular Schedule component
+# Localization in Angular Scheduler
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 
@@ -50,15 +50,15 @@ loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/localization-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/localization-cs1/src/main.ts %}
+{% include code-snippet/schedule/localization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/localization-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/localization-cs1" %}
 
 > Refer [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) for common information about globalization.
 
@@ -70,15 +70,15 @@ For example, the following code defines French translations for all static words
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/localization-cs2/src/app.component.ts %}
+{% include code-snippet/schedule/localization-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/localization-cs2/src/main.ts %}
+{% include code-snippet/schedule/localization-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/localization-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/localization-cs2" %}
 
 The localized words for static text in the Scheduler and Recurrence Editor are shown in the following code. You can access the static text for all cultures from [`here`](https://github.com/syncfusion/ej2-locale).
 
@@ -219,15 +219,15 @@ Scheduler supports all valid date formats. By default, it uses the universal dat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs54/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs54/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs54/src/main.ts %}
+{% include code-snippet/schedule/default-cs54/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs54" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs54" %}
 
 ![Date Format](images/schedule-dateformat.png)
 
@@ -241,15 +241,15 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs55/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs55/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs55/src/main.ts %}
+{% include code-snippet/schedule/default-cs55/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs55" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs55" %}
 
 ![Time Format](images/schedule-timeformat.png)
 
@@ -259,15 +259,15 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs56/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs56/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs56/src/main.ts %}
+{% include code-snippet/schedule/default-cs56/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs56" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs56" %}
 
 ![RTL Mode](images/schedule-rtl.png)
 

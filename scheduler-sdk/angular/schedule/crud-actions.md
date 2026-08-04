@@ -1,14 +1,14 @@
 ---
 layout: post
-title: CRUD actions in Angular Schedule component | Syncfusion
-description: Learn here all about CRUD actions in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: CRUD Actions in Angular Scheduler | Syncfusion
+description: Learn how to add, edit, and delete appointments in the Syncfusion Angular Scheduler through the editor window, drag and drop, and resize actions.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# CRUD actions in Angular Schedule component
+# CRUD Actions in Angular Scheduler
 
 Appointments, also known as events, are central to the Scheduler component, allowing users to manage and interact with scheduling data. These appointments can be added, edited, or deleted through the editor window, drag and drop, or resize actions.
 
@@ -36,15 +36,15 @@ Appointments can be dynamically created by using the [`addEvent`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs27/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs27/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs27/src/main.ts %}
+{% include code-snippet/schedule/default-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs27" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs27" %}
 
 ### Inserting events into a database at the server-side
 
@@ -85,29 +85,29 @@ Additionally, a regular expression validation is applied to the Location field. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs28/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs28/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs28/src/main.ts %}
+{% include code-snippet/schedule/default-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs28" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs28" %}
 
 To prevent users from creating appointments on weekends, use the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionbegin) event to check for the desired condition and restrict creation as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs29/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs29/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs29/src/main.ts %}
+{% include code-snippet/schedule/default-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs29" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs29" %}
 
 ## Edit
 
@@ -130,15 +130,15 @@ Appointments can be edited and updated programmatically using the [`saveEvent`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs30/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs30/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs30/src/main.ts %}
+{% include code-snippet/schedule/default-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs30" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs30" %}
 
 **Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely [`RecurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceid) mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the [`RecurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceid) field value. The [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
 
@@ -148,15 +148,15 @@ In case of modifying the single occurrence, it is also necessary to update the [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs31/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs31/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs31/src/main.ts %}
+{% include code-snippet/schedule/default-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs31" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs31" %}
 
 ### Updating events in a database at the server side
 
@@ -380,15 +380,15 @@ To prevent editing appointments during non-working hours, use the [`actionBegin`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs32/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs32/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs32/src/main.ts %}
+{% include code-snippet/schedule/default-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs32" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs32" %}
 
 ## Delete
 
@@ -413,29 +413,29 @@ Appointments can be programmatically removed using the [`deleteEvent`](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs33/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs33/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs33/src/main.ts %}
+{% include code-snippet/schedule/default-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs33" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs33" %}
 
 **Recurring Event** - The recurring events can be removed as an entire series or simply removing single occurrence by using the deleteEvent method which takes in either the `DeleteSeries` or `DeleteOccurrence` parameters. The following code example shows how to delete entire series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs34/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs34/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs34/src/main.ts %}
+{% include code-snippet/schedule/default-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs34" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs34" %}
 
 ### Removing events from a database at the server side
 
@@ -589,15 +589,15 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs35/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs35/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs35/src/main.ts %}
+{% include code-snippet/schedule/default-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs35" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs35" %}
 
 ## Resize
 
@@ -607,14 +607,14 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs36/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs36/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs36/src/main.ts %}
+{% include code-snippet/schedule/default-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs36" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs36" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

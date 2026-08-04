@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timescale in React Schedule component | Syncfusion
-description: Learn here all about Timescale in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: Timescale in React Scheduler | Syncfusion
+description: Learn how to control time slot duration in the Syncfusion React Scheduler with the timeScale interval, slotCount, and template options.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Timescale in React Schedule component
+# Timescale in React Scheduler
 
 Time slots are the cells displayed in the Day, Week, and Work Week views of the Scheduler (in vertical views on the leftmost position and in timeline views at the top). The [`timeScale`](https://ej2.syncfusion.com/react/documentation/api/schedule#timescale) property lets you control the duration of these slots. It includes these sub-options:
 
@@ -24,17 +24,17 @@ The [`interval`](https://ej2.syncfusion.com/react/documentation/api/schedule/tim
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs27/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs27/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs27/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs27/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs27/index.html %}
+{% include code-snippet/schedule/local-data-cs27/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs27" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs27" %}
 
 ## Customizing time cells using template
 
@@ -45,17 +45,17 @@ The [`timeScale`](https://ej2.syncfusion.com/react/documentation/api/schedule/ti
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs2/app/index.jsx %}
+{% include code-snippet/schedule/timescale-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs2/app/index.tsx %}
+{% include code-snippet/schedule/timescale-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs2/index.html %}
+{% include code-snippet/schedule/timescale-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/timescale-cs2" %}
 
 ## Hide the timescale
 
@@ -63,17 +63,17 @@ The grid lines which indicates the exact time duration can be enabled or disable
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs3/app/index.jsx %}
+{% include code-snippet/schedule/timescale-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs3/app/index.tsx %}
+{% include code-snippet/schedule/timescale-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs3/index.html %}
+{% include code-snippet/schedule/timescale-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/timescale-cs3" %}
 
 ## Highlighting current date and time
 
@@ -81,16 +81,16 @@ By default, Scheduler indicates current date with a highlighted date header on a
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs4/app/index.jsx %}
+{% include code-snippet/schedule/timescale-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs4/app/index.tsx %}
+{% include code-snippet/schedule/timescale-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs4/index.html %}
+{% include code-snippet/schedule/timescale-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs4" %}
+{% previewsample "page.domainurl/code-snippet/schedule/timescale-cs4" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/material/schedule/overview) to knows how to present and manipulate data.

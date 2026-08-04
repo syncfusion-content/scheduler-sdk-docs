@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell customization in React Schedule component | Syncfusion
-description: Learn here all about Cell customization in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Cell Customization in React Scheduler | Syncfusion
+description: Learn how to customize Scheduler cell height, width, and content using the cssClass property, renderCell event, and isSlotAvailable method.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Cell customization in React Schedule component
+# Cell Customization in React Scheduler
 
 The cells of the Scheduler can be customized using a template or the [`renderCell`](https://ej2.syncfusion.com/react/documentation/api/schedule#rendercell) event.
 
@@ -18,20 +18,20 @@ The height and width of the Scheduler cells can be customized to increase or red
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1/app/index.jsx %}
+{% include code-snippet/schedule/cell-dimension-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1/app/index.tsx %}
+{% include code-snippet/schedule/cell-dimension-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1/index.html %}
+{% include code-snippet/schedule/cell-dimension-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1/index.css %}
+{% include code-snippet/schedule/cell-dimension-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs1" %}
 
 ## Check for cell availability
 
@@ -41,17 +41,17 @@ You can check whether the given time range slots are available for event creatio
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs1/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs1/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs1/index.html %}
+{% include code-snippet/schedule/local-data-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs1" %}
 
 ## Customizing cells in all views
 
@@ -63,20 +63,20 @@ The [`cellTemplate`](https://ej2.syncfusion.com/react/documentation/api/schedule
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-cs1/app/index.jsx %}
+{% include code-snippet/schedule/cell-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-cs1/app/index.tsx %}
+{% include code-snippet/schedule/cell-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-cs1/index.html %}
+{% include code-snippet/schedule/cell-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-cs1/index.css %}
+{% include code-snippet/schedule/cell-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/cell-cs1" %}
 
 ### Using renderCell event
 
@@ -84,20 +84,20 @@ An alternative to `cellTemplate`[`cellTemplate`](https://ej2.syncfusion.com/reac
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2/app/index.jsx %}
+{% include code-snippet/schedule/cell-dimension-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2/app/index.tsx %}
+{% include code-snippet/schedule/cell-dimension-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2/index.html %}
+{% include code-snippet/schedule/cell-dimension-cs2/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2/index.css %}
+{% include code-snippet/schedule/cell-dimension-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs2" %}
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, and resource header cells using the [`renderCell`](https://ej2.syncfusion.com/react/documentation/api/schedule#rendercell) event by checking the [`elementType`](https://ej2.syncfusion.com/react/documentation/api/schedule/renderCellEventArgs#elementtype) property within the event. You can check `elementType` against any of the following.
 
@@ -121,20 +121,20 @@ The month header of each date cell in the month view can be customized using the
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3/app/index.jsx %}
+{% include code-snippet/schedule/cell-dimension-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3/app/index.tsx %}
+{% include code-snippet/schedule/cell-dimension-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3/index.html %}
+{% include code-snippet/schedule/cell-dimension-cs3/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3/index.css %}
+{% include code-snippet/schedule/cell-dimension-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs3" %}
 
 ## Customizing the minimum and maximum date values
 
@@ -142,20 +142,20 @@ Providing the [`minDate`](https://ej2.syncfusion.com/react/documentation/api/sch
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4/app/index.jsx %}
+{% include code-snippet/schedule/cell-dimension-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4/app/index.tsx %}
+{% include code-snippet/schedule/cell-dimension-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4/index.html %}
+{% include code-snippet/schedule/cell-dimension-cs4/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4/index.css %}
+{% include code-snippet/schedule/cell-dimension-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4" %}
+{% previewsample "page.domainurl/code-snippet/schedule/cell-dimension-cs4" %}
 
 >By default, the [`minDate`](https://ej2.syncfusion.com/react/documentation/api/schedule#mindate) property value is set to new Date(1900, 0, 1) and [`maxDate`](https://ej2.syncfusion.com/react/documentation/api/schedule#maxdate) property value is set to new Date(2099, 11, 31). The user can also set the customized [`minDate`](https://ej2.syncfusion.com/react/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/react/documentation/api/schedule#maxdate) property values.
 
@@ -193,17 +193,17 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/weekend-cell-color/app/index.jsx %}
+{% include code-snippet/schedule/weekend-cell-color/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/weekend-cell-color/app/index.tsx %}
+{% include code-snippet/schedule/weekend-cell-color/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/weekend-cell-color/index.html %}
+{% include code-snippet/schedule/weekend-cell-color/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/weekend-cell-color" %}
+{% previewsample "page.domainurl/code-snippet/schedule/weekend-cell-color" %}
 
 ## How to disable multiple cell and row selection in Schedule
 

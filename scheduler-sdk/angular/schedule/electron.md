@@ -2,10 +2,10 @@
 layout: post
 title: Getting Started with Angular and Electron Scheduler | Syncfusion
 description: Learn how to set up an Angular application with Electron and integrate the Syncfusion Schedule component using a standalone component approach.
-platform: scheduler-sdk
+platform: ej2-angular
 control: Schedule
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 # Getting Started with Angular and Electron with Syncfusion Scheduler
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting in React Schedule component | Syncfusion
-description: Learn here all about Exporting in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: Exporting in React Scheduler | Syncfusion
+description: Learn how to export Syncfusion React Scheduler appointments to Excel or ICS files using exportToExcel, exportToICalendar, and custom field mappings.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Exporting in React Schedule component
+# Exporting in React Scheduler
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or iCal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 
@@ -20,17 +20,17 @@ The Scheduler enables exporting events to an Excel file using the [`exportToExce
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs1/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs1/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs1/index.html %}
+{% include code-snippet/schedule/excel-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs1" %}
 
 ### Exporting with custom fields
 
@@ -38,17 +38,17 @@ By default, Scheduler exports all the default event fields that are mapped to it
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs2/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs2/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs2/index.html %}
+{% include code-snippet/schedule/excel-export-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs2" %}
 
 ### Exporting individual occurrences of a recurring series
 
@@ -56,17 +56,17 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs3/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs3/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs3/index.html %}
+{% include code-snippet/schedule/excel-export-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs3" %}
 
 ### Exporting custom event data
 
@@ -76,17 +76,17 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs4/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs4/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs4/index.html %}
+{% include code-snippet/schedule/excel-export-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs4" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs4" %}
 
 ### Customizing column header with custom fields exporting
 
@@ -94,17 +94,17 @@ Using fields property, we can only export the defined fields into excel without 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs5/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs5/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs5/index.html %}
+{% include code-snippet/schedule/excel-export-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs5" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs5" %}
 
 ### Export with custom file name
 
@@ -112,17 +112,17 @@ The default exported file name is `Schedule.xlsx`. Customize it by setting `file
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs6/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs6/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs6/index.html %}
+{% include code-snippet/schedule/excel-export-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs6" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs6" %}
 
 ### Excel file formats
 
@@ -130,17 +130,17 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs7/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs7/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs7/index.html %}
+{% include code-snippet/schedule/excel-export-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs7" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs7" %}
 
 ### Custom separator in CSV
 
@@ -148,17 +148,17 @@ When exporting to CSV, the default separator is `,`. Change it by setting the [`
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs8/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs8/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs8/index.html %}
+{% include code-snippet/schedule/excel-export-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs8" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs8" %}
 
 ### How to customize the excel sheet on before exporting
 
@@ -176,20 +176,20 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs9/app/index.jsx %}
+{% include code-snippet/schedule/excel-export-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs9/app/index.tsx %}
+{% include code-snippet/schedule/excel-export-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs9/index.html %}
+{% include code-snippet/schedule/excel-export-cs9/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/excel-export-cs9/index.css %}
+{% include code-snippet/schedule/excel-export-cs9/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs9" %}
+{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs9" %}
 
 ## Exporting calendar events as ICS file
 
@@ -199,20 +199,20 @@ The following code example shows how the Scheduler events are exported to a cale
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1/app/index.jsx %}
+{% include code-snippet/schedule/calendar-export-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1/app/index.tsx %}
+{% include code-snippet/schedule/calendar-export-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1/index.html %}
+{% include code-snippet/schedule/calendar-export-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1/index.css %}
+{% include code-snippet/schedule/calendar-export-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs1" %}
 
 ### Exporting calendar with custom file name
 
@@ -222,20 +222,20 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2/app/index.jsx %}
+{% include code-snippet/schedule/calendar-export-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2/app/index.tsx %}
+{% include code-snippet/schedule/calendar-export-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2/index.html %}
+{% include code-snippet/schedule/calendar-export-cs2/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2/index.css %}
+{% include code-snippet/schedule/calendar-export-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs2" %}
 
 ## Import events from other calendars
 
@@ -247,20 +247,20 @@ The following example shows how to import an ICS file into Scheduler, using the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1/app/index.jsx %}
+{% include code-snippet/schedule/calendar-import-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1/app/index.tsx %}
+{% include code-snippet/schedule/calendar-import-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1/index.html %}
+{% include code-snippet/schedule/calendar-import-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1/index.css %}
+{% include code-snippet/schedule/calendar-import-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/calendar-import-cs1" %}
 
 ## How to print the Scheduler element
 
@@ -277,17 +277,17 @@ You can print the Schedule element with the current view by using the[`print`](h
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs1/app/index.jsx %}
+{% include code-snippet/schedule/print-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs1/app/index.tsx %}
+{% include code-snippet/schedule/print-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs1/index.html %}
+{% include code-snippet/schedule/print-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/print-cs1" %}
 
 ### Using a print method with options
 
@@ -295,17 +295,17 @@ You can print the Schedule element based on your needs using the [`print`](https
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs2/app/index.jsx %}
+{% include code-snippet/schedule/print-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs2/app/index.tsx %}
+{% include code-snippet/schedule/print-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs2/index.html %}
+{% include code-snippet/schedule/print-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/print-cs2" %}
 
 ### How to customize the print layout
 
@@ -320,16 +320,16 @@ Here’s an example of how you can add a custom header and footer to the print l
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs3/app/index.jsx %}
+{% include code-snippet/schedule/print-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs3/app/index.tsx %}
+{% include code-snippet/schedule/print-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/print-cs3/index.html %}
+{% include code-snippet/schedule/print-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/print-cs3" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

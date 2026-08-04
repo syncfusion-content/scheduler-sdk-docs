@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting in Angular Schedule component | Syncfusion
-description: Learn here all about Exporting in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: Exporting in Angular Scheduler | Syncfusion
+description: Learn how to export appointments from the Syncfusion Angular Scheduler to Excel and ICS files using client-side export methods.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Exporting in Angular Schedule component
+# Exporting in Angular Scheduler
 
 The Scheduler supports exporting appointments to Excel and ICS files on the client side. It offers client-side methods to export appointments in either Excel or iCal format. Explore how to implement exporting in the Scheduler.
 
@@ -20,15 +20,15 @@ The Scheduler allows you to export events to an Excel file by using the [`export
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs1/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs1" %}
 
 ![Excel Exporting](images/schedule-excel-export.png)
 
@@ -38,15 +38,15 @@ By default, Scheduler exports all the default event fields that are mapped to it
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs2/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs2/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs2" %}
 
 ![Excel Exporting with custom Fields](images/schedule-excel-export-custom-fields.png)
 
@@ -56,15 +56,15 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs3/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs3/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs3" %}
 
 ### Exporting custom event data
 
@@ -74,15 +74,15 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs4/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs4/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs4" %}
 
 ### Customizing column header with custom fields exporting
 
@@ -90,15 +90,15 @@ Using fields property, we can only export the defined fields into excel without 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs5/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs5/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs5" %}
 
 ![Excel Exporting with custom header texts](images/schedule-excel-export-custom-header.png)
 
@@ -108,15 +108,15 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs6/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs6/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs6/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs6" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs6" %}
 
 ### Excel file formats
 
@@ -124,15 +124,15 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs7/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs7/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs7/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs7" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs7" %}
 
 ### Custom separator in CSV
 
@@ -140,15 +140,15 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs8/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs8/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs8/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs8" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs8" %}
 
 ### How to customize the excel sheet on before exporting
 
@@ -166,15 +166,15 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs9/src/app.component.ts %}
+{% include code-snippet/schedule/excel-export-cs9/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/excel-export-cs9/src/main.ts %}
+{% include code-snippet/schedule/excel-export-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs9" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs9" %}
 
 ## Exporting calendar events as ICS file
 
@@ -184,15 +184,15 @@ The following code example shows how the Scheduler events are exported to a cale
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/calendar-export-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/calendar-export-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/calendar-export-cs1/src/main.ts %}
+{% include code-snippet/schedule/calendar-export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/calendar-export-cs1" %}
 
 ### Exporting calendar with custom file name
 
@@ -202,15 +202,15 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/calendar-export-cs2/src/app.component.ts %}
+{% include code-snippet/schedule/calendar-export-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/calendar-export-cs2/src/main.ts %}
+{% include code-snippet/schedule/calendar-export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/calendar-export-cs2" %}
 
 ## Import events from other calendars
 
@@ -222,15 +222,15 @@ The following example shows how to import an ICS file into Scheduler, using the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/calendar-export-cs3/src/app.component.ts %}
+{% include code-snippet/schedule/calendar-export-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/calendar-export-cs3/src/main.ts %}
+{% include code-snippet/schedule/calendar-export-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/calendar-export-cs3" %}
 
 ## How to print the Scheduler element
 
@@ -247,15 +247,15 @@ You can print the Schedule element with the current view by using the [`print`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/print-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/print-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/print-cs1/src/main.ts %}
+{% include code-snippet/schedule/print-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/print-cs1" %}
 
 ### Using print method with options
 
@@ -263,15 +263,15 @@ You can print the Schedule element based on your needs using the [`print`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/print-cs2/src/app.component.ts %}
+{% include code-snippet/schedule/print-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/print-cs2/src/main.ts %}
+{% include code-snippet/schedule/print-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/print-cs2" %}
 
 ### Customizing the print layout
 
@@ -286,14 +286,14 @@ Here’s an example of how you can add a custom header and footer to the print l
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/print-cs3/src/app.component.ts %}
+{% include code-snippet/schedule/print-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/print-cs3/src/main.ts %}
+{% include code-snippet/schedule/print-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/print-cs3" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

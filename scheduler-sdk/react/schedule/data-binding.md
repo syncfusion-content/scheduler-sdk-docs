@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in React Schedule component | Syncfusion
-description: Learn here all about Data binding in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Data Binding in React Scheduler | Syncfusion
+description: Learn how to bind local JSON data or remote REST services to the Syncfusion React Scheduler using DataManager, adaptors, and custom field mapping.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Data binding in React Schedule component
+# Data Binding in React Scheduler
 
 The Scheduler utilizes the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#datasource) property of Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. Scheduler supports the following data binding methods:
 
@@ -21,17 +21,17 @@ o bind local JSON data to the Scheduler, assign a JavaScript object array to the
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/index.html %}
+{% include code-snippet/schedule/local-data-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs2" %}
 
 > By default, `DataManager` uses the `JsonAdaptor` for binding local data.
 
@@ -47,17 +47,17 @@ The Scheduler supports binding to various remote data services. To configure thi
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/index.html %}
+{% include code-snippet/schedule/local-data-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs3" %}
 
 ### Filter events using the in-built query
 
@@ -67,17 +67,17 @@ This method greatly improves the component's performance by reducing the data th
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs41/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs41/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/index.html %}
+{% include code-snippet/schedule/local-data-cs41/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs41" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs41" %}
 
 The image below illustrates how parameters are passed using an ODataV4 filter for remote data binding.
 
@@ -89,17 +89,17 @@ You can create a custom adaptor by extending one of the built-in adaptors. The f
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/index.html %}
+{% include code-snippet/schedule/local-data-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs4" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs4" %}
 
 ## Loading data via AJAX post
 
@@ -156,17 +156,17 @@ To send additional custom parameters in the server-side request, use the `addPar
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/index.html %}
+{% include code-snippet/schedule/local-data-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs5" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs5" %}
 
 > Parameters added using the [`query`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#query) property are sent with the data request to the server on every Scheduler action.
 
@@ -178,17 +178,17 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/react/do
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/index.html %}
+{% include code-snippet/schedule/local-data-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs6" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs6" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/schedule#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs during Scheduler CRUD operations.
 
@@ -327,16 +327,16 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/index.html %}
+{% include code-snippet/schedule/local-data-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs7" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs7" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

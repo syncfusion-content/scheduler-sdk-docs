@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scheduler styling in Angular Schedule component | Syncfusion
-description: Learn here all about Scheduler styling in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: Scheduler Styling in Angular Scheduler | Syncfusion
+description: Learn how to customize the appearance of the Syncfusion Angular Scheduler by overriding default CSS classes and using the Theme Studio.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Scheduler styling in Angular Schedule component
+# Scheduler Styling in Angular Scheduler
 
 To customize the Scheduler's appearance, override its default CSS. You can also create a custom theme using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). Below is a list of Scheduler CSS classes.
 

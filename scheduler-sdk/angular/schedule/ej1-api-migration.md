@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API migration in Angular Schedule component | Syncfusion
-description: Learn here all about EJ1 API migration in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: EJ1 API Migration in Angular Scheduler | Syncfusion
+description: Find API equivalents for migrating from Essential JS 1 Scheduler to the Syncfusion Angular Scheduler (Essential JS 2).
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular Schedule component
+# EJ1 API Migration in Angular Scheduler
 
 This topic shows the API equivalents for Essential<sup style="font-size:70%">&reg;</sup> JS1 Scheduler to Essential<sup style="font-size:70%">&reg;</sup> JS2 Scheduler.
 

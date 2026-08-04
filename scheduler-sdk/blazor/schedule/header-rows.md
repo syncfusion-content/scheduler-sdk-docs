@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Timeline Header Rows in Blazor Scheduler Component | Syncfusion®
-description: This topic helps you to add additional header rows and explain how to customize them in timeline views of Blazor Scheduler component.
+title: Timeline Header Rows in Blazor Scheduler | Syncfusion
+description: Learn how to add additional header rows in timeline views of the Syncfusion Blazor Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Timeline Header Rows in Blazor Scheduler Component
+# Timeline Header Rows in Blazor Scheduler
 
 The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`ScheduleHeaderRow`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleHeaderRows.html) which is applicable only on the timeline views. The possible rows which can be added using [`ScheduleHeaderRow`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleHeaderRows.html) are as follows.
 

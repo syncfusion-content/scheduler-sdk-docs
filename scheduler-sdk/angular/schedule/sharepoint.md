@@ -3,9 +3,9 @@ layout: post
 title: Getting started with SharePoint and Angular Scheduler | Syncfusion
 description: Learn all about integrating Syncfusion Essential JS 2 Angular Schedule component in SharePoint, and much more, here.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-angular
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
 # Getting Started with Angular Scheduler in SharePoint Framework

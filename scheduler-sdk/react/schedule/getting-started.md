@@ -1,22 +1,110 @@
 ---
 layout: post
-title: Getting started with React Schedule component | Syncfusion
-description: Checkout and learn about Getting started with React Schedule component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
-platform: scheduler-sdk
+title: Getting Started with React Scheduler | Syncfusion
+description: Learn how to get started with the Syncfusion React Scheduler and explore setup, configuration, view modes, and core feature examples.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting Started with React Schedule Component
+# Getting Started with React Scheduler
 
 This section briefly explains how to create [**React Scheduler**](https://www.syncfusion.com/react-components/react-scheduler) and configure its available functionalities in React environment.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> React development?** Discover the full potential of React components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistant/overview)
 
-To get started quickly with React Scheduler using the Create React App, you can check on this video
+To get started quickly with React Scheduler using the Create React App, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=iNkryf_TtZw" %}
+
+{% tabcontents %}
+
+{% tabcontent Syncfusion CLI %}
+
+## Prerequisites
+
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- Syncfusion CLI.
+
+## Install the Syncfusion CLI 
+
+Install the Syncfusion CLI globally using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install -g @syncfusion/syncfusion-cli
+{% endhighlight %}
+{% endtabs %}
+
+## Set up the Vite project using Syncfusion CLI
+
+You can create a React Vite application using the Syncfusion CLI. The CLI provides two ways to create a project:
+
+### Non-interactive mode
+
+Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf new my-app --framework react --type ts --template scheduler --theme tailwind3
+{% endhighlight %}
+{% endtabs %}
+
+In this mode, the project configuration is passed directly in the command. The above command creates a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Scheduler` component.
+
+### Interactive mode
+
+Interactive mode guides you through the project creation process with step-by-step prompts.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf
+{% endhighlight %}
+{% endtabs %}
+
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a React Vite application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Scheduler` component, select the following options:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+√ Project name? ... my-app
+√ Choose Framework: » React
+√ Choose Build Tool: » Vite
+√ Choose Language: » TypeScript
+√ Choose Template: » Scheduler
+√ Choose Theme: » Tailwind3
+√ Choose Style Format: » CSS
+√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+√ Install dependencies and start app now? ... no
+
+{% endhighlight %}
+{% endtabs %}
+
+The above selections generate a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Scheduler` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
+
+## Run the project
+
+Once the project is created, navigate to the project directory and run the following commands in your terminal.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+cd my-app
+npm install
+npm run dev
+{% endhighlight %}
+{% endtabs %}
+
+The output will appear as follows:
+
+![Scheduler Component](./images/cli-scheduler.png)
+
+{% endtabcontent %}
+
+{% tabcontent Vite CLI %}
 
 ## Prerequisites
 
@@ -67,14 +155,19 @@ npm create vite@latest my-app -- --template react-ts
 npm create vite@latest my-app -- --template react
 ```
 
-After running the above commands, the project will be created and all required dependencies will be installed automatically.
+After running the above commands, the project will be created and all required dependencies will be installed automatically. Then navigate into the project directory and start the dev server:
+
+```bash
+cd my-app
+npm install
+```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule package
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
 To install the Schedule component, use the following command:
 
-```
+```bash
 cd my-app
 npm install @syncfusion/ej2-react-schedule --save
 ```
@@ -101,7 +194,7 @@ Then add the following CSS reference to the **src/App.css** file:
 @import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css";
 ```
 
-## Initialize the Schedule and configure module injection
+## Initializing the Schedule and configuring module injection
 
 Import the Schedule component into your **src/App.tsx** (or **src/App.jsx**) file and inject the required modules. Since each view in the Schedule is maintained as a separate module, you need to inject the modules required for the desired views.
 
@@ -112,7 +205,7 @@ import './App.css';
 
 function App () {
   return (
-    <ScheduleComponent width="100%" height="550px">
+    <ScheduleComponent>
       <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
     </ScheduleComponent>
   );
@@ -126,7 +219,7 @@ import './App.css';
 
 function App () {
   return (
-    <ScheduleComponent>
+    <ScheduleComponent width="100%" height="550px">
       <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
     </ScheduleComponent>
   );
@@ -173,7 +266,7 @@ import './App.css';
 
 function App () {
   return (
-    <ScheduleComponent selectedDate={new Date(2026, 4, 18)}>
+    <ScheduleComponent width="100%" height="550px" selectedDate={new Date(2026, 4, 18)}>
       <Inject services={[Day, Week, WorkWeek, Agenda, Month]} />
     </ScheduleComponent>
   )
@@ -185,13 +278,15 @@ export default App;
 
 ## Setting the current view
 
-Scheduler displays `week` view by default. To change the current view, define the applicable view name to the `currentView` property. The default applicable view names are:
+The Schedule displays the `Week` view by default. To change the current view, set the desired view name on the `currentView` property. The available view names are:
 
 * Day
 * Week
 * WorkWeek
 * Month
 * Agenda
+
+For more advanced view configuration (such as customizing the time interval or display name per view), use the `views` property. See [views.md](./views.md) for details.
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
@@ -214,7 +309,7 @@ import './App.css';
 
 function App () {
   return (
-    <ScheduleComponent currentView='Day'>
+    <ScheduleComponent width="100%" height="550px" currentView='Day'>
       <Inject services={[Day, Week, WorkWeek, Agenda, Month]} />
     </ScheduleComponent>
   )
@@ -283,6 +378,10 @@ export default App;
 {% endhighlight %}
 {% endtabs %}
 
+{% endtabcontent %}
+
+{% endtabcontents %}
+
 ## Troubleshooting
 
 * **The Schedule is not visible** — make sure you have set `width` and `height` on `ScheduleComponent`, and that the theme CSS has been imported.
@@ -302,3 +401,5 @@ export default App;
 
 * [Explore available views and their customization options](./views.md)
 * [Explore appointments and event data handling](./appointments.md)
+* [Bind data to the Schedule](./data-binding.md)
+* [Configure module injection](./module-injection.md)

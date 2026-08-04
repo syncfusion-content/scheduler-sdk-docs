@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone in React Schedule component | Syncfusion
-description: Learn here all about Timezone in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: Timezone in React Scheduler | Syncfusion
+description: Learn how to set the Scheduler-level and per-appointment timezones in the Syncfusion React Scheduler for accurate event display across regions.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Timezone support in React Schedule component
+# Timezone in React Scheduler
 
 The Scheduler component uses the current system timezone by default. To schedule events according to a different timezone, use the [`timezone`](https://ej2.syncfusion.com/react/documentation/api/schedule#timezone) property. In addition to applying a specific timezone at the Scheduler level, individual appointments can have their own timezones using the [`startTimezone`](https://helpej2.syncfusion.com/react/documentation/api/schedule/field#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/react/documentation/api/schedule/field#endtimezone) properties within the event fields collection.
 
@@ -26,17 +26,17 @@ The following code example displays an appointment from 9:00 AM to 10:00 AM when
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs28/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs28/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs28/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs28/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs28/index.html %}
+{% include code-snippet/schedule/local-data-cs28/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs28" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs28" %}
 
 ## Set a specific timezone for the Scheduler
 
@@ -44,17 +44,17 @@ When a timezone is set through the [`timezone`](https://ej2.syncfusion.com/react
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs29/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs29/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs29/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs29/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs29/index.html %}
+{% include code-snippet/schedule/local-data-cs29/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs29" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs29" %}
 
 ## Display events on same time everywhere with no time difference
 
@@ -62,17 +62,17 @@ Setting [`timezone`](https://ej2.syncfusion.com/react/documentation/api/schedule
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs30/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs30/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs30/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs30/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs30/index.html %}
+{% include code-snippet/schedule/local-data-cs30/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs30" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs30" %}
 
 ## Assign specific timezones to events
 
@@ -80,17 +80,17 @@ It is possible to set different timezone for Scheduler events by setting [`start
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs31/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs31/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs31/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs31/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs31/index.html %}
+{% include code-snippet/schedule/local-data-cs31/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs31" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs31" %}
 
 ## Add or remove timezone names to/from the timezone collection
 
@@ -98,17 +98,17 @@ Instead of displaying all the timezone names within the timezone collection (mor
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs32/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs32/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs32/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs32/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs32/index.html %}
+{% include code-snippet/schedule/local-data-cs32/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs32" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs32" %}
 
 ## Timezone methods
 

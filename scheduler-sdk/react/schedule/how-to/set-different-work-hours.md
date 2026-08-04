@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set different work hours in React Schedule component | Syncfusion
-description: Learn here all about Set different work hours in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: How to set different work hours in React Scheduler | Syncfusion
+description: Learn how to highlight different working hours for specific days in the React Scheduler using the setWorkHours method.
 control: Scheduler 
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Set different work hours in React Schedule component
+# How to set different work hours in React Scheduler
 
 By default, the work hours of the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) are highlighted based on the start and end values provided in the [`workHours`](https://ej2.syncfusion.com/react/documentation/api/schedule#workhours) property, which remains the same for all days. To highlight different work hours range for specific days, use the[`setWorkHours`](https://ej2.syncfusion.com/react/documentation/api/schedule#setworkhours) method.
 
@@ -16,14 +16,14 @@ You can pass date object/ multiple date objects collection as first argument and
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs3/app/index.jsx %}
+{% include code-snippet/schedule/editor-open-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs3/app/index.tsx %}
+{% include code-snippet/schedule/editor-open-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs3/index.html %}
+{% include code-snippet/schedule/editor-open-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/editor-open-cs3" %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Scheduler with GraphQL using Hot Chocolate | Syncfusion®
-description: Connect Syncfusion’s Blazor Scheduler to a Hot Chocolate GraphQL backend for optimized CRUD, typed queries, and a responsive, scalable .NET application.
+title: GraphQL Data Binding in Blazor Scheduler | Syncfusion
+description: Learn how to connect the Syncfusion Blazor Scheduler to a Hot Chocolate GraphQL backend for typed queries, mutations, and full CRUD support.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 ---
 
-# Connect Blazor Scheduler with GraphQL using Hot Chocolate
+# GraphQL Data Binding in Blazor Scheduler
 
 [GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 

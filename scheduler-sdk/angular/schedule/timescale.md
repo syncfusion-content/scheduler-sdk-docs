@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timescale in Angular Schedule component | Syncfusion
-description: Learn here all about Timescale in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: Timescale in Angular Scheduler | Syncfusion
+description: Learn how to customize the time scale in the Syncfusion Angular Scheduler by adjusting the interval, slot count, and major slot display.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Timescale in Angular Schedule component
+# Timescale in Angular Scheduler
 
 Time slots are the cells displayed in the Day, Week, and Work Week views of the Scheduler (in vertical views on the leftmost position and in timeline views at the top). The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#timescale) property lets you control the duration of these slots. It includes these sub-options:
 
@@ -24,15 +24,15 @@ The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs63/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs63/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs63/src/main.ts %}
+{% include code-snippet/schedule/default-cs63/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs63" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs63" %}
 
 ![Time Slot Duration](images/schedule-timeslot.png)
 
@@ -45,18 +45,18 @@ The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs1/src/app.component.html %}
+{% include code-snippet/schedule/timescale-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/timescale-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs1/src/main.ts %}
+{% include code-snippet/schedule/timescale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/timescale-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/timescale-cs1" %}
 
 ![Customizing Time Cells](images/schedule-custom-timecell.png)
 
@@ -66,15 +66,15 @@ The grid lines which indicates the exact time duration can be enabled or disable
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs64/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs64/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs64/src/main.ts %}
+{% include code-snippet/schedule/default-cs64/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs64" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs64" %}
 
 ![Hide Time Scale](images/schedule-hide-timecell.png)
 
@@ -84,15 +84,15 @@ By default, Scheduler indicates current date with a highlighted date header on a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs65/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs65/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs65/src/main.ts %}
+{% include code-snippet/schedule/default-cs65/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs65" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs65" %}
 
 ![Highlight current Time](images/schedule-highlight.png)
 

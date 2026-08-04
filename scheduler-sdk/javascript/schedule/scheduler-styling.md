@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Scheduler styling in JavaScript Schedule Control | Syncfusion
-description: Learn here all about scheduler styling in Syncfusion JavaScript Schedule control, its elements and more.
+title: Scheduler Styling in JavaScript Scheduler | Syncfusion
+description: Learn how to style the Syncfusion JavaScript Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
-control: Scheduler styling 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler styling in JavaScript Schedule Control
+# Scheduler Styling in JavaScript Scheduler
 
 To modify the Scheduler appearance, the default CSS of the Scheduler must be overridden. There is also an option to create a custom theme using the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes used in the Scheduler.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row auto height in React Schedule component | Syncfusion
-description: Learn here all about Row auto height in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Row Auto Height in React Scheduler | Syncfusion
+description: Learn how to enable rowAutoHeight in the Syncfusion React Scheduler to auto-expand Timeline and Month rows and show all overlapping appointments.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Row auto height in React Schedule component
+# Row Auto Height in React Scheduler
 
 By default, the height of the Scheduler rows in Timeline views is static. Therefore, when the same time ranges hold multiple overlapping appointments, a `+n more` text indicator is displayed. With this feature enabled, you can now view all overlapping appointments in a specific time range by auto-adjusting the row height according to the number of appointments, instead of displaying the `+n more` text indicators.
 
@@ -24,17 +24,17 @@ By default, the rows of the calendar Month view can hold only a limited number o
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs23/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs23/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs23/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs23/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs23/index.html %}
+{% include code-snippet/schedule/local-data-cs23/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs23" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs23" %}
 
 ## Timeline views
 
@@ -42,17 +42,17 @@ When the [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/sc
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs24/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs24/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs24/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs24/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs24/index.html %}
+{% include code-snippet/schedule/local-data-cs24/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs24" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs24" %}
 
 ## Timeline views with multiple resources
 
@@ -60,17 +60,17 @@ The following example shows how the auto row adjustment feature works on Timelin
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs25/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs25/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs25/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs25/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs25/index.html %}
+{% include code-snippet/schedule/local-data-cs25/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs25" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs25" %}
 
 ## Appointments occupying entire cell
 
@@ -78,17 +78,17 @@ By default, with the feature [`rowAutoHeight`](https://ej2.syncfusion.com/react/
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/ignore-whitespace-cs1/app/index.jsx %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/ignore-whitespace-cs1/app/index.tsx %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/ignore-whitespace-cs1/index.html %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/ignore-whitespace-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/ignore-whitespace-cs1" %}
 
 **Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#ignorewhitespace) property applies only when the [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 

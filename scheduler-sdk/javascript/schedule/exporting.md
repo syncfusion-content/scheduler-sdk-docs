@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Exporting in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Exporting in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Exporting in JavaScript Scheduler | Syncfusion
+description: Learn how to export and import events in the Syncfusion JavaScript Scheduler to Excel and ICS files using client-side methods and modules.
 platform: scheduler-sdk
-control: Exporting 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Exporting in JavaScript Scheduler control
+# Exporting in JavaScript Scheduler
 
 The Scheduler supports exporting all its appointments both to an `Excel` or `ICS` extension file at client-side. It offers different client-side methods to export its appointments in an `Excel` or `ICal` format file. Let's explore how to implement the exporting functionality in Scheduler.
 

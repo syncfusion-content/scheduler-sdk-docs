@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scheduler interactions in Angular Schedule | Syncfusion
-description: Learn about various interactions in the Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
-control: Schedule
+title: Scheduler Interactions in Angular Scheduler | Syncfusion
+description: Learn about mouse and touch interactions in the Syncfusion Angular Scheduler, including cell selection, event selection, and navigation gestures.
+platform: ej2-angular
+control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Scheduler interactions in Angular Schedule component
+# Scheduler Interactions in Angular Scheduler
 
 The following table outlines common Scheduler actions, detailing how each action is performed using mouse and touch interactions.
 

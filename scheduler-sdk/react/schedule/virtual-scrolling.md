@@ -1,30 +1,30 @@
 ---
 layout: post
-title: Virtual scrolling in React Schedule component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: scheduler
-platform: scheduler-sdk
+title: Virtual Scrolling in React Scheduler | Syncfusion
+description: Learn how to enable virtual scrolling and lazy loading in the Syncfusion React Scheduler to load large numbers of resources and events on demand.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Virtual scrolling in React Schedule component
+# Virtual Scrolling in React Scheduler
 
 Virtual scrolling support in the Scheduler component enhances performance when working with a substantial number of resources and events. This feature allows large sets of resources and events to load dynamically in the timeline views as users scroll, resulting in a seamless user experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://ej2.syncfusion.com/react/documentation/api/schedule/viewsModel#allowvirtualscrolling) property to `true` within the specific timeline view settings. In the Agenda view, enable the same property in the agenda view configuration to allow virtual loading of events.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/app/index.jsx %}
+{% include code-snippet/schedule/events-cs48/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/app/index.tsx %}
+{% include code-snippet/schedule/events-cs48/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/index.html %}
+{% include code-snippet/schedule/events-cs48/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs48" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs48" %}
 
 > For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
 
@@ -40,17 +40,17 @@ Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/app/index.jsx %}
+{% include code-snippet/schedule/events-cs50/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/app/index.tsx %}
+{% include code-snippet/schedule/events-cs50/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/index.html %}
+{% include code-snippet/schedule/events-cs50/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs50" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs50" %}
 
 The following server-side controller code demonstrates how to retrieve appointment data based on resource IDs received as query parameters:
 

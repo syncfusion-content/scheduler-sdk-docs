@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Crud actions in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Crud actions in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: CRUD Operations in JavaScript Scheduler | Syncfusion
+description: Learn how to add, edit, and delete appointments in the Syncfusion JavaScript Scheduler using the editor window, methods, and drag actions.
 platform: scheduler-sdk
-control: Crud actions 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# CRUD operations in JavaScript Scheduler control
+# CRUD Operations in JavaScript Scheduler
 
 Appointments are the core elements of the Scheduler component, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using editor window or through the drag and resize action.
 

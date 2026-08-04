@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with SharePoint and React Scheduler | Syncfusion
-description: Learn all about integrating Syncfusion Essential JS 2 React Schedule component in SharePoint, and much more, here.
+title: SharePoint Integration in React Scheduler | Syncfusion
+description: Learn how to set up a SharePoint Framework (SPFx) project and integrate the Syncfusion React Scheduler as a web part.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting Started with React Scheduler in SharePoint Framework
+# SharePoint Integration in React Scheduler
 
 This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler).
 

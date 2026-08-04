@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in TypeScript Scheduler control | Syncfusion
-description: Learn about localization, globalization, date/time formatting, and RTL mode in the Syncfusion TypeScript Scheduler control (Essential JS 2) with TypeScript.
+title: Localization in TypeScript Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion TypeScript Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
-control: Localization 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Localization in TypeScript Scheduler control
+# Localization in TypeScript Scheduler
 
 The Scheduler supports different date-time formats and cultures, enabling it to function globally and meet the diverse needs of various regions.
 

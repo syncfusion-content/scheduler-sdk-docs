@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Set different event duration in React Schedule | Syncfusion
-description: Learn here all about Set different event time duration in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: How to set different time duration in React Scheduler | Syncfusion
+description: Learn how to change the start and end time interval in the React Scheduler event editor using the timeScale interval and popupOpen event.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Set different event time duration in React Schedule component
+# How to set different time duration in React Scheduler
 
 In event window, start/end time duration will be processed based on the [`interval`](https://ej2.syncfusion.com/react/documentation/api/schedule/timeScaleModel#interval) value within the [`timeScale`](https://ej2.syncfusion.com/react/documentation/api/schedule#timescale) property. By default, [`interval`](https://ej2.syncfusion.com/react/documentation/api/schedule/timeScaleModel#interval) value is 30, therefore in event window start/end time duration will be in 30 minutes duration. You can set custom interval range to the start/end time in event window using `popupOpen` event as shown below.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs18/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs18/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs18/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs18/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs18/index.html %}
+{% include code-snippet/schedule/local-data-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs18" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs18" %}

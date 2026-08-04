@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Frequently asked questions in React Schedule component | Syncfusion
-description: Learn here all about Frequently asked questions in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: FAQ in React Scheduler | Syncfusion
+description: Find common Syncfusion React Scheduler issues and solutions, including the maximum call stack error, module injection, and view configuration.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Frequently asked questions in React Schedule component
+# FAQ in React Scheduler
 
 In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler).
 

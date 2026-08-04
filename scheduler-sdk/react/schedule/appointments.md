@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appointments in React Schedule component | Syncfusion
-description: Learn here all about Appointments in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Appointments in React Scheduler | Syncfusion
+description: Learn how to add and manage normal, spanned, all-day, and recurring appointments in the Syncfusion React Scheduler with default and custom fields.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Appointments in React Schedule component
+# Appointments in React Scheduler
 
 Appointments represent scheduled items for a specific time period within the Scheduler. Appointments can be created for various time ranges, with each appointment categorized according to its duration and recurrence. The Scheduler categorizes events as follows:
 
@@ -31,14 +31,14 @@ The following example demonstrates defining a normal event in the Scheduler usin
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs1/app/App.jsx %}
+{% include code-snippet/schedule/events-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs1/app/App.tsx %}
+{% include code-snippet/schedule/events-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs1" %}
 
 ## Spanned events
 
@@ -70,14 +70,14 @@ To display all all-day appointments in expanded view when the Scheduler loads, u
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs2/app/App.jsx %}
+{% include code-snippet/schedule/events-cs2/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs2/app/App.tsx %}
+{% include code-snippet/schedule/events-cs2/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs2" %}
 
 ## Customize the rendering of spanned events
 
@@ -88,14 +88,14 @@ The following example demonstrates how to render spanned events inside the work 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs3/app/App.jsx %}
+{% include code-snippet/schedule/events-cs3/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs3/app/App.tsx %}
+{% include code-snippet/schedule/events-cs3/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs3" %}
 
 ## Recurring events
 
@@ -107,14 +107,14 @@ The following example illustrates creating a recurring event using a specific re
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs4/app/App.jsx %}
+{% include code-snippet/schedule/events-cs4/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs4/app/App.tsx %}
+{% include code-snippet/schedule/events-cs4/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs4" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs4" %}
 
 ### Adding exceptions
 
@@ -124,14 +124,14 @@ For example, 22nd February 2026 can be represented as 20260222. Also, the time p
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs5/app/App.jsx %}
+{% include code-snippet/schedule/events-cs5/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs5/app/App.tsx %}
+{% include code-snippet/schedule/events-cs5/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs5" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs5" %}
 
 ### Editing an occurrence from a series
 
@@ -141,14 +141,14 @@ In this example, a recurring instance that displays on the date 18th May 2026 is
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs6/app/App.jsx %}
+{% include code-snippet/schedule/events-cs6/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs6/app/App.tsx %}
+{% include code-snippet/schedule/events-cs6/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs6" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs6" %}
 
 ### Edit only the current and following events
 
@@ -164,14 +164,14 @@ To achieve this:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs7/app/App.jsx %}
+{% include code-snippet/schedule/events-cs7/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs7/app/App.tsx %}
+{% include code-snippet/schedule/events-cs7/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs7" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs7" %}
 
 ### Recurrence options and rules
 
@@ -295,14 +295,14 @@ When the fields of event instances has the default mapping name, it is not manda
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs8/app/App.jsx %}
+{% include code-snippet/schedule/events-cs8/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs8/app/App.tsx %}
+{% include code-snippet/schedule/events-cs8/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs8" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs8" %}
 
 > The [id](https://ej2.syncfusion.com/react/documentation/api/schedule/field#id) mapping is a string type with no extra validation, while other fields have object type and additional options.
 
@@ -321,14 +321,14 @@ In following example, the Subject field in event editor will display its appropr
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs9/app/App.jsx %}
+{% include code-snippet/schedule/events-cs9/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs9/app/App.tsx %}
+{% include code-snippet/schedule/events-cs9/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs9" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs9" %}
 
 ## Adding Custom fields
 
@@ -336,14 +336,14 @@ In addition to default fields, you can add any number of custom fields to Schedu
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs10/app/App.jsx %}
+{% include code-snippet/schedule/events-cs10/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs10/app/App.tsx %}
+{% include code-snippet/schedule/events-cs10/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs10" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs10" %}
 
 ## Customize the order of the overlapping events
 
@@ -353,14 +353,14 @@ The following code example shows how to sort the appointments based on the custo
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs11/app/App.jsx %}
+{% include code-snippet/schedule/events-cs11/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs11/app/App.tsx %}
+{% include code-snippet/schedule/events-cs11/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs11" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs11" %}
 
 ## Preventing Overlapping Events
 
@@ -382,14 +382,14 @@ The following code example demonstrates how to enable the [`allowOverlap`](https
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs51/app/App.jsx %}
+{% include code-snippet/schedule/events-cs51/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs51/app/App.tsx %}
+{% include code-snippet/schedule/events-cs51/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs51" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs51" %}
 
 **Limitations**
 
@@ -403,14 +403,14 @@ The following code example demonstrates how to check for overlaps when an event 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs52/app/App.jsx %}
+{% include code-snippet/schedule/events-cs52/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs52/app/App.tsx %}
+{% include code-snippet/schedule/events-cs52/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs52" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs52" %}
 
 ## Drag and drop appointments
 
@@ -424,14 +424,14 @@ Learn more about dragging external items and advanced drag/resize options in thi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs12/app/App.jsx %}
+{% include code-snippet/schedule/events-cs12/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs12/app/App.tsx %}
+{% include code-snippet/schedule/events-cs12/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs12" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs12" %}
 
 ### Drag and drop multiple appointments
 
@@ -443,14 +443,14 @@ We can also drag multiple events from one resource to another resource. In this 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs13/app/App.jsx %}
+{% include code-snippet/schedule/events-cs13/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs13/app/App.tsx %}
+{% include code-snippet/schedule/events-cs13/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs13" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs13" %}
 
 ### Disable the drag action
 
@@ -458,14 +458,14 @@ By default, you can drag and drop the events within any of the applicable Schedu
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs14/app/App.jsx %}
+{% include code-snippet/schedule/events-cs14/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs14/app/App.tsx %}
+{% include code-snippet/schedule/events-cs14/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs14" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs14" %}
 
 ### Preventing drag and drop on specific targets
 
@@ -475,14 +475,14 @@ In this example, we have prevented the drag action on all-day row.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs15/app/App.jsx %}
+{% include code-snippet/schedule/events-cs15/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs15/app/App.tsx %}
+{% include code-snippet/schedule/events-cs15/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs15" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs15" %}
 
 ### Disable scrolling on drag action
 
@@ -490,14 +490,14 @@ By default, while dragging an appointment to the edges, either top or bottom of 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs16/app/App.jsx %}
+{% include code-snippet/schedule/events-cs16/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs16/app/App.tsx %}
+{% include code-snippet/schedule/events-cs16/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs16" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs16" %}
 
 ### Controlling scroll speed while dragging an event
 
@@ -505,14 +505,14 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs17/app/App.jsx %}
+{% include code-snippet/schedule/events-cs17/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs17/app/App.tsx %}
+{% include code-snippet/schedule/events-cs17/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs17" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs17" %}
 
 ### Auto navigation of date ranges on dragging an event
 
@@ -522,14 +522,14 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs18/app/App.jsx %}
+{% include code-snippet/schedule/events-cs18/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs18/app/App.tsx %}
+{% include code-snippet/schedule/events-cs18/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs18" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs18" %}
 
 ### Setting drag time interval
 
@@ -537,14 +537,14 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs19/app/App.jsx %}
+{% include code-snippet/schedule/events-cs19/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs19/app/App.tsx %}
+{% include code-snippet/schedule/events-cs19/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs19" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs19" %}
 
 ### Drag and drop items from external source
 
@@ -558,14 +558,14 @@ Learn how to drag an external item into the React Scheduler by watching this vid
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/external-drag-cs1/app/App.jsx %}
+{% include code-snippet/schedule/external-drag-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/external-drag-cs1/app/App.tsx %}
+{% include code-snippet/schedule/external-drag-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/external-drag-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/external-drag-cs1" %}
 
 ### Opening the editor window on drag stop
 
@@ -573,14 +573,14 @@ There are scenarios where you want to open the editor filled with data on newly 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs20/app/App.jsx %}
+{% include code-snippet/schedule/events-cs20/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs20/app/App.tsx %}
+{% include code-snippet/schedule/events-cs20/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs20" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs20" %}
 
 ## Inline Appointment
 
@@ -605,14 +605,14 @@ While editing the occurrence from the recurrence series, it is only possible to 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs21/app/App.jsx %}
+{% include code-snippet/schedule/events-cs21/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs21/app/App.tsx %}
+{% include code-snippet/schedule/events-cs21/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs21" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs21" %}
 
 ## Appointment Resizing
 
@@ -620,14 +620,14 @@ Another way to reschedule an appointment can be done by resizing it through eith
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs22/app/App.jsx %}
+{% include code-snippet/schedule/events-cs22/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs22/app/App.tsx %}
+{% include code-snippet/schedule/events-cs22/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs22" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs22" %}
 
 ### Disabling resize action
 
@@ -635,14 +635,14 @@ Resize is enabled by default except in Agenda and Month-Agenda views. To disable
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs23/app/App.jsx %}
+{% include code-snippet/schedule/events-cs23/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs23/app/App.tsx %}
+{% include code-snippet/schedule/events-cs23/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs23" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs23" %}
 
 ### Disabling scrolling on resize action
 
@@ -650,14 +650,14 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs24/app/App.jsx %}
+{% include code-snippet/schedule/events-cs24/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs24/app/App.tsx %}
+{% include code-snippet/schedule/events-cs24/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs24" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs24" %}
 
 ### Controlling scroll speed while resizing an event
 
@@ -665,14 +665,14 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs25/app/App.jsx %}
+{% include code-snippet/schedule/events-cs25/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs25/app/App.tsx %}
+{% include code-snippet/schedule/events-cs25/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs25" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs25" %}
 
 ### Setting resize time interval
 
@@ -680,14 +680,14 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs26/app/App.jsx %}
+{% include code-snippet/schedule/events-cs26/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs26/app/App.tsx %}
+{% include code-snippet/schedule/events-cs26/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs26" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs26" %}
 
 ## Appointment customization
 
@@ -706,14 +706,14 @@ Learn how easily you can customize the basic look and feel of React Scheduler ap
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-template-cs1/app/App.jsx %}
+{% include code-snippet/schedule/event-template-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-template-cs1/app/App.tsx %}
+{% include code-snippet/schedule/event-template-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/event-template-cs1" %}
 
 > All the built-in fields that are mapped to the appropriate field properties within the [`eventSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
@@ -723,14 +723,14 @@ The  [`eventRendered`](https://ej2.syncfusion.com/react/documentation/api/schedu
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs27/app/App.jsx %}
+{% include code-snippet/schedule/events-cs27/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs27/app/App.tsx %}
+{% include code-snippet/schedule/events-cs27/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs27" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs27" %}
 
 ### Using cssClass
 
@@ -738,14 +738,14 @@ The customization of events can also be achieved using [`cssClass`](https://ej2.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs28/app/App.jsx %}
+{% include code-snippet/schedule/events-cs28/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs28/app/App.tsx %}
+{% include code-snippet/schedule/events-cs28/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs28" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs28" %}
 
 ## Setting minimum height
 
@@ -753,14 +753,14 @@ It is possible to set minimal height for appointments on Scheduler using [`event
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs29/app/App.jsx %}
+{% include code-snippet/schedule/events-cs29/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs29/app/App.tsx %}
+{% include code-snippet/schedule/events-cs29/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs29" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs29" %}
 
 ## Block Dates and Times
 
@@ -768,27 +768,27 @@ It is possible to block a set of dates or a particular time range on the Schedul
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs30/app/App.jsx %}
+{% include code-snippet/schedule/events-cs30/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs30/app/App.tsx %}
+{% include code-snippet/schedule/events-cs30/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs30" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs30" %}
 
 Block events can also be defined to repeat on several days as shown in the following code example.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs31/app/App.jsx %}
+{% include code-snippet/schedule/events-cs31/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs31/app/App.tsx %}
+{% include code-snippet/schedule/events-cs31/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs31" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs31" %}
 
 ## Readonly
 
@@ -796,14 +796,14 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs32/app/App.jsx %}
+{% include code-snippet/schedule/events-cs32/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs32/app/App.tsx %}
+{% include code-snippet/schedule/events-cs32/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs32" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs32" %}
 
 ## Make specific events readonly
 
@@ -811,14 +811,14 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs33/app/App.jsx %}
+{% include code-snippet/schedule/events-cs33/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs33/app/App.tsx %}
+{% include code-snippet/schedule/events-cs33/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs33" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs33" %}
 
 > By default, the event editor is prevented to open on the read-only events when [`isReadonly`](https://ej2.syncfusion.com/react/documentation/api/schedule/field#isreadonly) field is set to `true`.
 
@@ -830,14 +830,14 @@ You can restrict the users to create and update more than one appointment on spe
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs34/app/App.jsx %}
+{% include code-snippet/schedule/events-cs34/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs34/app/App.tsx %}
+{% include code-snippet/schedule/events-cs34/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs34" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs34" %}
 
 ## Differentiate the past time events
 
@@ -845,14 +845,14 @@ To differentiate the appearance of the appointments based on specific criteria s
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs35/app/App.jsx %}
+{% include code-snippet/schedule/events-cs35/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs35/app/App.tsx %}
+{% include code-snippet/schedule/events-cs35/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs35" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs35" %}
 
 ## Appointments occupying the entire cell
 
@@ -862,14 +862,14 @@ We can show more indicator if more than one appointment is available in a same c
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs36/app/App.jsx %}
+{% include code-snippet/schedule/events-cs36/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs36/app/App.tsx %}
+{% include code-snippet/schedule/events-cs36/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs36" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs36" %}
 
 ## Limiting maximum number of events displayed
 
@@ -884,14 +884,14 @@ The [`maxEventsPerRow`](https://ej2.syncfusion.com/react/documentation/api/sched
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/max-events-per-row-cs1/app/App.jsx %}
+{% include code-snippet/schedule/max-events-per-row-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/max-events-per-row-cs1/app/App.tsx %}
+{% include code-snippet/schedule/max-events-per-row-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/max-events-per-row-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/max-events-per-row-cs1" %}
 
 > The property [`maxEventsPerRow`](https://ej2.syncfusion.com/react/documentation/api/schedule/views#maxeventsperrow) will be applicable only when [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
 
@@ -980,14 +980,14 @@ The tooltip can be displayed for appointments by setting `true` to the [`enableT
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs37/app/App.jsx %}
+{% include code-snippet/schedule/events-cs37/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs37/app/App.tsx %}
+{% include code-snippet/schedule/events-cs37/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs37" %}
+{% previewsample "page.domainurl/code-snippet/schedule/events-cs37" %}
 
 ### Customizing event tooltip using template
 
@@ -995,14 +995,14 @@ After enabling the default tooltip, it is possible to customize the display of n
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/tooltip-cs1/app/App.jsx %}
+{% include code-snippet/schedule/tooltip-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/tooltip-cs1/app/App.tsx %}
+{% include code-snippet/schedule/tooltip-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/tooltip-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/tooltip-cs1" %}
 
 > All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the [`eventSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings) can be accessed within the template.
 
@@ -1014,14 +1014,14 @@ To prevent a tooltip from appearing for certain events, you can set the `cancel`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/tooltip-cs2/app/App.jsx %}
+{% include code-snippet/schedule/tooltip-cs2/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/tooltip-cs2/app/App.tsx %}
+{% include code-snippet/schedule/tooltip-cs2/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/tooltip-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/tooltip-cs2" %}
 
 ## Appointment selection
 
@@ -1044,17 +1044,17 @@ In the following example, the subject of the appointment clicked has been displa
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs1/app/App.jsx %}
+{% include code-snippet/schedule/event-public-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs1/app/App.tsx %}
+{% include code-snippet/schedule/event-public-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs1/index.html %}
+{% include code-snippet/schedule/event-public-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/event-public-cs1" %}
 
 ## Get the current view appointments
 
@@ -1062,17 +1062,17 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs2/app/App.jsx %}
+{% include code-snippet/schedule/event-public-cs2/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs2/app/App.tsx %}
+{% include code-snippet/schedule/event-public-cs2/app/App.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs2/index.html %}
+{% include code-snippet/schedule/event-public-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/event-public-cs2" %}
 
 ## Get the entire appointment collections
 
@@ -1080,17 +1080,17 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs3/app/App.jsx %}
+{% include code-snippet/schedule/event-public-cs3/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs3/app/App.tsx %}
+{% include code-snippet/schedule/event-public-cs3/app/App.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs3/index.html %}
+{% include code-snippet/schedule/event-public-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs3" %}
+{% previewsample "page.domainurl/code-snippet/schedule/event-public-cs3" %}
 
 ## Refresh appointments
 

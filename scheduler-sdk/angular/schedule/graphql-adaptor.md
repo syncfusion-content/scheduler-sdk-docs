@@ -3,9 +3,9 @@ layout: post
 title: Getting Started with Angular Scheduler using GraphQL | Syncfusion.
 description: Integrate Syncfusion Angular Scheduler with Node.js and GraphQL backend to perform CRUD operations seamlessly.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-angular
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
 # Connecting Syncfusion Angular Scheduler to GraphQL backend in Node.js

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone in Angular Schedule component | Syncfusion
-description: Learn here all about Timezone in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
-control: Scheduler 
+title: Timezone in Angular Scheduler | Syncfusion
+description: Learn how to configure timezones in the Syncfusion Angular Scheduler, including Scheduler-level and per-appointment timezone settings.
+platform: ej2-angular
+control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Timezone support in Angular Schedule component
+# Timezone in Angular Scheduler
 
 The Scheduler component uses the current system timezone by default. To schedule events according to a different timezone, use the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) property. In addition to applying a specific timezone at the Scheduler level, individual appointments can have their own timezones using the [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#endtimezone) properties within the event fields collection.
 
@@ -26,15 +26,15 @@ The following code example displays an appointment from 9:00 AM to 10:00 AM when
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs66/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs66/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs66/src/main.ts %}
+{% include code-snippet/schedule/default-cs66/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs66" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs66" %}
 
 ## Set a specific timezone for the Scheduler
 
@@ -42,15 +42,15 @@ When a timezone is set through the [`timezone`](https://helpej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs67/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs67/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs67/src/main.ts %}
+{% include code-snippet/schedule/default-cs67/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs67" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs67" %}
 
 ## Display events on same time everywhere with no time difference
 
@@ -58,15 +58,15 @@ Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/sc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs68/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs68/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs68/src/main.ts %}
+{% include code-snippet/schedule/default-cs68/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs68" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs68" %}
 
 ## Assign specific timezones to events
 
@@ -74,15 +74,15 @@ It is possible to set different timezone for Scheduler events by setting [`start
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs69/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs69/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs69/src/main.ts %}
+{% include code-snippet/schedule/default-cs69/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs69" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs69" %}
 
 ## Add or remove timezone names to/from the timezone collection
 
@@ -90,15 +90,15 @@ Instead of displaying all the timezone names within the timezone collection (mor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs70/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs70/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs70/src/main.ts %}
+{% include code-snippet/schedule/default-cs70/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs70" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs70" %}
 
 ## Timezone methods
 

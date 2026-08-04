@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Timezone in TypeScript Schedule control | Syncfusion
-description: Learn all about timezone handling in the Syncfusion TypeScript Scheduler control of Essential JS 2.
+title: Timezone in TypeScript Scheduler | Syncfusion
+description: Learn how to render appointments in different time zones in the Syncfusion TypeScript Scheduler using timezone, startTimezone, and endTimezone.
 platform: scheduler-sdk
-control: Timezone 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Timezone in TypeScript Schedule control
+# Timezone in TypeScript Scheduler
 
 By default, the Scheduler uses the client system's time zone. To display or process appointments in a specific time zone, use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property. Individual appointments can also carry their own time zone information by using `startTimezone` and `endTimezone` fields in the event data.
 

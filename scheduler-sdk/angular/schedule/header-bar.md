@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header bar in Angular Schedule component | Syncfusion
-description: Learn here all about Header bar in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: Header Bar in Angular Scheduler | Syncfusion
+description: Learn how to customize the header bar in the Syncfusion Angular Scheduler, including showing, hiding, and reordering date and view options.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize header bar in Angular Schedule
+# Header Bar in Angular Scheduler
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
@@ -18,15 +18,15 @@ By default, the header bar holds the date and view navigation options, through w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs1/src/main.ts %}
+{% include code-snippet/schedule/header-bar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-bar-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/header-bar-cs1" %}
 
 ![Hide Header Bar](images/schedule-hide-header-bar.png)
 
@@ -36,15 +36,15 @@ Apart from the default date navigation and view options on the header bar, you c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-template/src/app.component.ts %}
+{% include code-snippet/schedule/header-bar-template/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-template/src/main.ts %}
+{% include code-snippet/schedule/header-bar-template/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-bar-template" %}
+{% previewsample "page.domainurl/samples/schedule/header-bar-template" %}
 
 ## Customizing header bar using event
 
@@ -52,15 +52,15 @@ You can also use the [`actionBegin`](https://ej2.syncfusion.com/angular/document
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs2/src/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs2/src/main.ts %}
+{% include code-snippet/schedule/header-bar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-bar-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/header-bar-cs2" %}
 
 ## How to display the view options within the header bar popup
 
@@ -68,15 +68,15 @@ By default, the header bar holds the view navigation options, through which the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs38/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs38/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs38/src/main.ts %}
+{% include code-snippet/schedule/default-cs38/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs38" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs38" %}
 
 ![Displaying Header Bar Popup](images/schedule-header-bar-popup.png)
 
@@ -92,15 +92,15 @@ The [`dateHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs3/src/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs3/src/main.ts %}
+{% include code-snippet/schedule/header-bar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-bar-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/header-bar-cs3" %}
 
 ![Date Header Customization](images/schedule-customize-dateheader.png)
 
@@ -110,15 +110,15 @@ In month view, the date header template is not applicable and therefore the same
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs4/src/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs4/src/main.ts %}
+{% include code-snippet/schedule/header-bar-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-bar-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/header-bar-cs4" %}
 
 ## Customizing the date range text
 
@@ -128,15 +128,15 @@ The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) property includes 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs5/src/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-bar-cs5/src/main.ts %}
+{% include code-snippet/schedule/header-bar-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-bar-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/header-bar-cs5" %}
 
 ## Customizing header indent cells
 
@@ -146,14 +146,14 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-indent-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/header-indent-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/header-indent-cs1/src/main.ts %}
+{% include code-snippet/schedule/header-indent-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-indent-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/header-indent-cs1" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

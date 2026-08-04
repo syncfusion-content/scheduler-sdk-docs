@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with React Schedule and MongoDB | Syncfusion
-description: Checkout and learn about Getting started with React Schedule component of Syncfusion Essential JS 2 with MongoDB.
+title: MongoDB Integration in React Scheduler | Syncfusion
+description: Learn how to connect the Syncfusion React Scheduler to MongoDB via Node.js and Express for full CRUD on calendar events.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting started with Syncfusion React Scheduler and MongoDB
+# MongoDB Integration in React Scheduler
 
 The [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
 

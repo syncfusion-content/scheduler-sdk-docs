@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with React Schedule and Axios | Syncfusion
-description: Checkout and learn about Getting started with React Schedule component of Syncfusion Essential JS 2 using Axios.
+title: Axios Integration in React Scheduler | Syncfusion
+description: Learn how to connect the Syncfusion React Scheduler to an ASP.NET Core Web API with EF Core and SQL Server using Axios for CRUD on events.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Syncfusion React Scheduler with ASP.NET Core API using Axios
+# Axios Integration in React Scheduler
 
 This section provides a step-by-step guide for setting up a React application and integrating the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) component with an ASP.NET Core Web API backend (using EF Core and SQL Server) through Axios.
 

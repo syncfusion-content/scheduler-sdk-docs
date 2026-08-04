@@ -3,9 +3,9 @@ layout: post
 title: Getting started with Angular Schedule and MongoDB | Syncfusion
 description: Checkout and learn about Getting started with Angular Schedule component of Syncfusion Essential JS 2 with MongoDB.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-angular
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
 # Getting started with Syncfusion Angular Scheduler and MongoDB

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable date navigation in JavaScript Scheduler | Syncfusion
-description: Learn here all about Prevent date navigation in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Prevent Date Navigation in JavaScript Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion JavaScript Scheduler by handling the navigation event to disable the default behavior.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Prevent date navigation in JavaScript Scheduler control
+# Prevent Date Navigation in JavaScript Scheduler
 
 By default, clicking on date headers in the Scheduler control navigates to the corresponding date view. In certain scenarios, you may want to disable this navigation behavior to maintain a fixed view.
 

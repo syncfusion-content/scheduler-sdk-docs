@@ -2,10 +2,10 @@
 layout: post
 title: Google Calendar Integration with EJ2 Angular Scheduler | Syncfusion
 description: This documentation provides a step-by-step guide for integrating EJ2 Angular Scheduler with the Google Calendar API using OAuth Credentials.
-platform: scheduler-sdk
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
 # Google Calendar API Integration with Syncfusion Angular Scheduler

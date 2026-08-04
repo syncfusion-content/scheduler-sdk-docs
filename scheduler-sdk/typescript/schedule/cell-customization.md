@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Cell customization in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Cell customization in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Cell Customization in TypeScript Scheduler | Syncfusion
+description: Learn how to customize work cells in the Syncfusion TypeScript Scheduler using the cellTemplate property and the renderCell event.
 platform: scheduler-sdk
-control: Cell customization 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Cell customization in TypeScript Scheduler control
+# Cell Customization in TypeScript Scheduler
 
 The cells of the Scheduler can be easily customized to modify their appearance, add custom content, or apply conditional styling. This can be achieved using the [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) property or the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event. Cell customization allows you to highlight specific dates, display additional information, or create a unique visual experience for your scheduling application.
 

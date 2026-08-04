@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context menu in Angular Schedule component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: Context Menu in Angular Scheduler | Syncfusion
+description: Learn how to add context menu options to the Syncfusion Angular Scheduler for cells and appointments using the ContextMenu control.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Context menu in Angular Schedule component
+# Context Menu in Angular Scheduler
 
 You can display a context menu on Scheduler work cells and appointments by using the [`ContextMenu`](https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started) control manually in the application. In the following code example, the context menu is added in the example and its target is set to the Scheduler component.
 
@@ -20,18 +20,18 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/context-menu-cs1/src/app.component.html %}
+{% include code-snippet/schedule/context-menu-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/context-menu-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/context-menu-cs1/src/main.ts %}
+{% include code-snippet/schedule/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/context-menu-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/context-menu-cs1" %}
 
 ![Context Menu](images/schedule-contextmenu.png)
 

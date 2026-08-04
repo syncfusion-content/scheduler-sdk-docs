@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context menu in React Schedule component | Syncfusion
-description: Learn here all about Context menu in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Context Menu in React Scheduler | Syncfusion
+description: Learn how to display a Syncfusion ContextMenu on Scheduler cells and appointments with built-in and custom items for creating, editing, and deleting events.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Context menu in React Schedule component
+# Context Menu in React Scheduler
 
 You can display a context menu on scheduler work cells and appointments by using the [`ContextMenu`](https://ej2.syncfusion.com/react/documentation/context-menu/getting-started) control manually in the application. In the following code example, the context menu is added in the example and its target is set to the Scheduler component.
 
@@ -20,19 +20,19 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/app/index.jsx %}
+{% include code-snippet/schedule/context-menu-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/app/index.tsx %}
+{% include code-snippet/schedule/context-menu-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/index.html %}
+{% include code-snippet/schedule/context-menu-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/index.css %}
+{% include code-snippet/schedule/context-menu-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/context-menu-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/context-menu-cs1" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

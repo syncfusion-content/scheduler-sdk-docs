@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in React Schedule component | Syncfusion
-description: Learn here all about Localization in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: Globalization in React Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion React Scheduler with Internationalization, Localization, and CLDR JSON data for global apps.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Localization in React Scheduler
+# Globalization in React Scheduler
 
 The Scheduler supports multiple date-time formats and cultures, enabling global usage and meeting diverse regional requirements.
 
@@ -50,17 +50,17 @@ Once installed, the culture-specific JSON data can be found under `\node_modules
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/localization-cs1/app/index.jsx %}
+{% include code-snippet/schedule/localization-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/localization-cs1/app/index.tsx %}
+{% include code-snippet/schedule/localization-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/localization-cs1/index.html %}
+{% include code-snippet/schedule/localization-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/localization-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/localization-cs1" %}
 
 For more information about globalization, refer to the [Internationalization](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization) section.
 
@@ -72,17 +72,17 @@ For example, the following code defines French translations for all static words
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/localization-cs2/app/index.jsx %}
+{% include code-snippet/schedule/localization-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/localization-cs2/app/index.tsx %}
+{% include code-snippet/schedule/localization-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/localization-cs2/index.html %}
+{% include code-snippet/schedule/localization-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/localization-cs2" %}
+{% previewsample "page.domainurl/code-snippet/schedule/localization-cs2" %}
 
 The localized words for static text used in the Scheduler and Recurrence Editor can be found in the following code. Static text for all cultures is available [`here`](https://github.com/syncfusion/ej2-locale).
 
@@ -218,17 +218,17 @@ The Scheduler supports all valid date formats. By default, it follows the univer
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs19/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs19/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs19/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs19/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs19/index.html %}
+{% include code-snippet/schedule/local-data-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs19" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs19" %}
 
 ## Setting the time format
 
@@ -238,17 +238,17 @@ The following example demonstrates the Scheduler in 24-hour format:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs20/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs20/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs20/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs20/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs20/index.html %}
+{% include code-snippet/schedule/local-data-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs20" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs20" %}
 
 > Note: The [`timeFormat`](https://ej2.syncfusion.com/react/documentation/api/schedule#timeformat) property only accepts valid time formats.
 
@@ -260,17 +260,17 @@ The first day of the week can be set in the Scheduler using the `firstDayOfWeek`
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs21/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs21/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs21/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs21/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs21/index.html %}
+{% include code-snippet/schedule/local-data-cs21/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs21" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs21" %}
 
 ## Displaying Scheduler in RTL mode
 
@@ -278,17 +278,17 @@ The Scheduler layout and behavior can be changed to follow RTL (Right-to-Left) c
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs22/app/index.jsx %}
+{% include code-snippet/schedule/local-data-cs22/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs22/app/index.tsx %}
+{% include code-snippet/schedule/local-data-cs22/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs22/index.html %}
+{% include code-snippet/schedule/local-data-cs22/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs22" %}
+{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs22" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.
 

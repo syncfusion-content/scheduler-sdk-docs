@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Module injection in Angular Schedule component | Syncfusion
-description: Learn here all about Module injection in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
-control: Schedule
+title: Module Injection in Angular Scheduler | Syncfusion
+description: Learn how to inject the required modules to enable specific views and features in the Syncfusion Angular Scheduler.
+platform: ej2-angular
+control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Module Injection in Angular Schedule
+# Module Injection in Angular Scheduler
 
 To customize the Scheduler with specific views and features, you must import and inject the required modules. The Scheduler provides the following modules to enable its functionalities.
 

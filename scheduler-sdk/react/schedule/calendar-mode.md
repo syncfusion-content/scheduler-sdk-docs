@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calendar mode in React Schedule component | Syncfusion
-description: Learn here all about Calendar mode in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in React Scheduler | Syncfusion
+description: Learn how to switch the Syncfusion React Scheduler between Gregorian and Islamic calendar modes and load the required CLDR data.
 control: Scheduler
-platform: scheduler-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Calendar mode in React Schedule component
+# Calendar Mode in React Scheduler
 
 The Scheduler supports two types of calendar modes:
 
@@ -39,16 +39,16 @@ To use the Islamic calendar in Scheduler, import the `Calendar` and `Islamic` mo
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1/app/index.jsx %}
+{% include code-snippet/schedule/calendar-mode-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1/app/index.tsx %}
+{% include code-snippet/schedule/calendar-mode-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1/index.html %}
+{% include code-snippet/schedule/calendar-mode-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/calendar-mode-cs1" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

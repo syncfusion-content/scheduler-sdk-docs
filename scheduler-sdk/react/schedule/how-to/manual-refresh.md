@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manual refresh in React Schedule component | Syncfusion
-description: Learn here all about Manual refresh in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
-platform: scheduler-sdk
+title: How to refresh templates manually in React Scheduler | Syncfusion
+description: Learn how to call the React Scheduler refreshTemplates method to re-render specific templates such as event, dateHeader, and editor without a full reload.
+control: Scheduler
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Manual refresh in React Schedule component
+# How to refresh templates manually in React Scheduler
 
 ## Refresh Template
 
@@ -26,17 +26,17 @@ In the following code example, you can see how to use the refreshTemplates metho
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/refresh-templates-cs1/app/index.jsx %}
+{% include code-snippet/schedule/refresh-templates-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/refresh-templates-cs1/app/index.tsx %}
+{% include code-snippet/schedule/refresh-templates-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/refresh-templates-cs1/index.html %}
+{% include code-snippet/schedule/refresh-templates-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/refresh-templates-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/refresh-templates-cs1" %}
 
 ## Refresh Layout
 
@@ -44,14 +44,14 @@ In Scheduler, we can able to refresh the layout manually without re-render the D
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/refresh-layout-cs1/app/index.jsx %}
+{% include code-snippet/schedule/refresh-layout-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/refresh-layout-cs1/app/index.tsx %}
+{% include code-snippet/schedule/refresh-layout-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/refresh-layout-cs1/index.html %}
+{% include code-snippet/schedule/refresh-layout-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/refresh-layout-cs1" %}
+{% previewsample "page.domainurl/code-snippet/schedule/refresh-layout-cs1" %}

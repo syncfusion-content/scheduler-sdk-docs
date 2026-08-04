@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manual refresh in Angular Schedule component | Syncfusion
-description: Learn here all about Manual refresh in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
-platform: scheduler-sdk
+title: How to manual refresh in Angular Scheduler | Syncfusion
+description: Learn how to perform a manual refresh of templates in the Syncfusion Angular Scheduler using the refreshTemplates method.
+platform: ej2-angular
 control: Scheduler
 documentation: ug
-domainurl: https://help.syncfusion.com/scheduler-sdk
+domainurl: ##DomainURL##
 ---
 
-# Manual refresh in Angular Schedule component
+# How to manual refresh in Angular Scheduler
 
 ## Refresh Template
 
@@ -26,18 +26,18 @@ In the following code example, you can see how to use the refreshTemplates metho
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/refresh-templates-cs1/src/app.component.html %}
+{% include code-snippet/schedule/refresh-templates-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/refresh-templates-cs1/src/app.component.ts %}
+{% include code-snippet/schedule/refresh-templates-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/refresh-templates-cs1/src/main.ts %}
+{% include code-snippet/schedule/refresh-templates-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/refresh-templates-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/refresh-templates-cs1" %}
 
 ## Refresh Layout
 
@@ -45,12 +45,12 @@ In Scheduler, we can able to refresh the layout manually without re-render the D
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs47/src/app.component.ts %}
+{% include code-snippet/schedule/default-cs47/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/default-cs47/src/main.ts %}
+{% include code-snippet/schedule/default-cs47/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs47" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs47" %}

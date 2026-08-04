@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Blazor Scheduler Component | Syncfusion®
-description: Learn here all about available Scheduler Events and customizing Blazor Scheduler component and performing actions within it.
+title: Events in Blazor Scheduler | Syncfusion
+description: Learn how to handle events in the Syncfusion Blazor Scheduler using ScheduleEvents to react to action, cell, popup, and event actions.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Events in Blazor Scheduler Component
+# Events in Blazor Scheduler
 
 In this section, the list of events of the Scheduler component have been provided which will be triggered for appropriate Scheduler actions.
 

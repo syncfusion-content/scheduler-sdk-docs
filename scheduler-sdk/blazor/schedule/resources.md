@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resources and Grouping in Blazor Scheduler Component | Syncfusion®
-description: This article demonstrates how to assign resources and also shows how to group them with customizations in Blazor Scheduler component.
+title: Resources and Grouping in Blazor Scheduler | Syncfusion
+description: Learn how to assign and group resources in the Syncfusion Blazor Scheduler with multi-level grouping, resource fields, and timeline views.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Resources and Grouping in Blazor Scheduler Component
+# Resources and Grouping in Blazor Scheduler
 
 [Resources and grouping](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler/multiple-resources) support allows the Scheduler to be shared by multiple resources. Also, the appointments of each resources are displayed under relevant resources. Each resource in the Scheduler is arranged in a column or row wise order, with individual spacing to display all its respective appointments on a single page. It also supports the multiple levels of grouping of resources, thus enabling the categorization of resources in a hierarchical structure and shows it either in expandable groups (Timeline views) or else vertical hierarchy one after the other (Calendar views).
 
