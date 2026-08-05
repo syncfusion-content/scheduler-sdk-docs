@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Scheduler Interactions in ASP.NET Core Schedule Component | Syncfusion
-description: Learn here all about Scheduler Interactions in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Scheduler Interactions in ASP.NET Core Scheduler | Syncfusion
+description: Learn about mouse and touch interactions in the Syncfusion ASP.NET Core Scheduler, including cell selection, event selection, and date navigation.
 platform: scheduler-sdk
-control: Scheduler Interactions
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Scheduler interactions
+# Scheduler Interactions in ASP.NET Core Scheduler
 
 The following table describes the Scheduler actions and also illustrates how those actions are carried out through mouse and touch interactions on Scheduler.
 

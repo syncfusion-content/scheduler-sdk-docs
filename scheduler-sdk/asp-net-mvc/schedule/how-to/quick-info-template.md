@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Quick Info Template in ASP.NET MVC Schedule Component
-description: Learn here all about Quick Info Template in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Show Quick Info Template in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to customize the Quick Info popup in the Syncfusion ASP.NET MVC Scheduler using a template to change its appearance and content.
 platform: scheduler-sdk
-control: Quick Info Template
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Show quick info Template
+# Show Quick Info Template in ASP.NET MVC Scheduler
 
 This demo showcases the quick popups for cells and appointments with the customized templates.
 

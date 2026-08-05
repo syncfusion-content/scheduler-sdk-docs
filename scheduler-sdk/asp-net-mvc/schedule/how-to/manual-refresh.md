@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Manual Refresh in ASP.NET MVC Schedule Component
-description: Learn here all about Manual Refresh in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Manually Refresh Layout in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to manually refresh the layout in the Syncfusion ASP.NET MVC Scheduler using the refreshLayout public method without re-rendering the DOM.
 platform: scheduler-sdk
-control: Manual Refresh
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Refresh Layout
+# Manually Refresh Layout in ASP.NET MVC Scheduler
 
 In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the `refreshLayout` public method.  The following example code explains to know how to use the refreshLayout method.
 

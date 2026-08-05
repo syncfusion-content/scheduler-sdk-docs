@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calendar Mode in ASP.NET MVC Schedule Component
-description: Learn here all about Calendar Mode in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to render the Syncfusion ASP.NET MVC Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: scheduler-sdk
-control: Calendar Mode
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar Mode in ASP.NET MVC Scheduler
 
 The Scheduler supports the following two types of calendar mode.
 

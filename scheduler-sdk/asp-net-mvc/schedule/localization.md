@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in ASP.NET MVC Schedule Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ASP.NET MVC Schedule control of Syncfusion Essential JS 2 and more.
+title: Globalization in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion ASP.NET MVC Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
-control: Localization
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Globalization and Localization
+# Globalization in ASP.NET MVC Scheduler
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 

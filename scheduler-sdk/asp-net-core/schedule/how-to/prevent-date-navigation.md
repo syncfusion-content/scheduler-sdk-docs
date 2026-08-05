@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent Date Navigation in ASP.NET Core Schedule Component
-description: Learn here all about Prevent Date Navigation in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Prevent Date Navigation in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion ASP.NET Core Scheduler by removing the e-navigate class in the renderCell event.
 platform: scheduler-sdk
-control: Prevent Date Navigation
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Prevent the Date Navigation
+# Prevent Date Navigation in ASP.NET Core Scheduler
 
 We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the `renderCell` event as shown in the following code example.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Manual Refresh in ASP.NET Core Schedule Component
-description: Learn here all about Manual Refresh in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Manually Refresh Layout in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to manually refresh the layout in the Syncfusion ASP.NET Core Scheduler using the refreshLayout public method without re-rendering the DOM.
 platform: scheduler-sdk
-control: Manual Refresh
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Refresh Layout
+# Manually Refresh Layout in ASP.NET Core Scheduler
 
 In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the `refreshLayout` public method.  The following example code explains to know how to use the refreshLayout method.
 

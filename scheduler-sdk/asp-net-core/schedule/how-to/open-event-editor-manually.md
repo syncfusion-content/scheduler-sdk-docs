@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open Event Editor Manually in ASP.NET Core Schedule Component
-description: Learn here all about Open Event Editor Manually in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Open Editor Window Manually in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to open the event editor manually in the Syncfusion ASP.NET Core Scheduler using the openEditor public method on cell or event click.
 platform: scheduler-sdk
-control: Open Event Editor Manually
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Open Editor Window Manually
+# Open Editor Window Manually in ASP.NET Core Scheduler
 
 ## Open Editor Window externally
 

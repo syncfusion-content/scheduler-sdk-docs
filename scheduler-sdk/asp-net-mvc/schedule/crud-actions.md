@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Crud Actions in ASP.NET MVC Schedule Component| Syncfusion
-description: Learn here all about Crud Actions in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: CRUD Actions in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to add, edit, and delete appointments in the Syncfusion ASP.NET MVC Scheduler using the editor window, methods, and drag-and-resize actions.
 platform: scheduler-sdk
-control: Crud Actions
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# CRUD Actions in ASP.NET MVC Schedule Component
+# CRUD Actions in ASP.NET MVC Scheduler
 
 Events, a.k.a. Appointments, play an important role in Scheduler with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
 

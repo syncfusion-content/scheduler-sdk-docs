@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Exporting in ASP.NET MVC Syncfusion Schedule Component
-description: Learn here all about Exporting in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Exporting in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to export and import events in the Syncfusion ASP.NET MVC Scheduler to Excel and ICS files, and print appointments with custom options.
 platform: scheduler-sdk
-control: Exporting
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Exporting in ASP.NET MVC Schedule Component
+# Exporting in ASP.NET MVC Scheduler
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 

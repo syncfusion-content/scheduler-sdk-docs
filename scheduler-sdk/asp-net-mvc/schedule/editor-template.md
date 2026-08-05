@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editor Template in ASP.NET MVC Syncfusion Schedule Component
-description: Learn here all about Editor Template in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Editor Window Customization in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to customize the editor window and quick pop-up in the Syncfusion ASP.NET MVC Scheduler using templates, fields, and validation rules.
 platform: scheduler-sdk
-control: Editor Template
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Editor window and quick popups
+# Editor Window Customization in ASP.NET MVC Scheduler
 
 Scheduler makes use of popups and dialog to display the required notifications, as well as includes an editor window with event fields for making the appointment creation and editing process easier. You can also easily customize the editor window and the fields present in it, and can also apply validations on those fields.
 
