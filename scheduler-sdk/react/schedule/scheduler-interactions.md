@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Scheduler Interactions in React Scheduler | Syncfusion
-description: Learn how to use mouse and touch interactions in the Syncfusion React Scheduler for cell selection, drag-and-drop, resizing, and date navigation.
+description: Learn about mouse and touch interactions in the Syncfusion React Scheduler, including cell selection, event selection, and date navigation.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Scheduler Interactions in React Scheduler

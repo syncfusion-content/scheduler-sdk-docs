@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Recurrence Editor in React Scheduler | Syncfusion
-description: Learn how to use and customize the built-in Recurrence Editor in the Syncfusion React Scheduler for daily, weekly, monthly, and yearly repeat rules.
+description: Learn how to use the Recurrence Editor in the Syncfusion React Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Recurrence Editor in React Scheduler
@@ -28,17 +28,17 @@ You can customize the recurrence editor to display only specific repeat options,
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/events-cs46/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs46/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/events-cs46/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs46/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/events-cs46/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs46/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs46" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs46" %}
 
 The other properties available in recurrence editor are tabulated below:
 
@@ -67,17 +67,17 @@ You can customize the recurrence editor to display only specific end options, su
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/events-cs49/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs49/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/events-cs49/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs49/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/events-cs49/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs49/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs46" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs46" %}
 
 ## Accessing the recurrence rule string
 
@@ -87,17 +87,17 @@ There is a `change` event available in recurrence editor, that triggers on every
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/recur-editor-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/recur-editor-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/recur-editor-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs1" %}
 
 ## Set specific value on recurrence editor
 
@@ -105,17 +105,17 @@ It is possible to display the recurrence editor with specific options loaded ini
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/recur-editor-cs2/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/recur-editor-cs2/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/recur-editor-cs2/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs2" %}
 
 ## Recurrence date generation
 
@@ -131,17 +131,17 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/recur-editor-cs3/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/recur-editor-cs3/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/recur-editor-cs3/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs3" %}
 
 > The above example generates two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilized to create appointments.
 
@@ -157,16 +157,16 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/recur-editor-cs4/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/recur-editor-cs4/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/recur-editor-cs4/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/recur-editor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs4" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

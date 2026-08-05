@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Getting Started with React Scheduler and Next.js | Syncfusion
-description: Learn how to set up a Next.js application and integrate the Syncfusion React Scheduler with views, data binding, and core scheduling features.
+description: Learn how to get started with the Syncfusion React Scheduler in a Next.js project, exploring setup, configuration, and basic usage.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 
 # Getting Started with React Scheduler and Next.js
 
-This section provides a step-by-step guide for setting up a Next.js application and integrating the [React Schedule](https://www.syncfusion.com/react-components/react-scheduler) component.
+This section provides a step-by-step guide for setting up a Next.js application and integrating the [React Schedule ](https://www.syncfusion.com/scheduler-sdk/react-scheduler) component.
 
 ## Prerequisites
 

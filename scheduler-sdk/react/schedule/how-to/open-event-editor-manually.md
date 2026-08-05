@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to open editor window manually in React Scheduler | Syncfusion
-description: Learn how to programmatically open the React Scheduler event editor using the openEditor method on a custom action or single click.
+title: Open Editor Window Manually in React Scheduler | Syncfusion
+description: Learn how to open the event editor manually in the Syncfusion React Scheduler using the openEditor public method on cell or event click.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to open editor window manually in React Scheduler
+# Open Editor Window Manually in React Scheduler
 
 ## Open Editor Window externally
 
@@ -16,17 +16,17 @@ The [React Scheduler](https://www.syncfusion.com/react-components/react-schedule
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/editor-open-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/editor-open-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/editor-open-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/editor-open-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs1" %}
 
 ## Open editor window on single click
 
@@ -34,14 +34,14 @@ By default, the Scheduler editor window opens when double-clicking cells or appo
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/editor-open-cs2/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/editor-open-cs2/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/editor-open-cs2/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/editor-open-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/editor-open-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs2" %}

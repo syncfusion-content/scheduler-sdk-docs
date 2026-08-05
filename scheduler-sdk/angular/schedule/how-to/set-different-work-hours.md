@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to set different working hours in Angular Scheduler | Syncfusion
-description: Learn how to set different working hours on different days in the Syncfusion Angular Scheduler using the setWorkHours method.
-platform: ej2-angular
+title: Set Different Working Hours on Different Days in Angular Scheduler | Syncfusion
+description: Learn how to set different work hours for specific days in the Syncfusion Angular Scheduler using the setWorkHours public method.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to set different working hours in Angular Scheduler
+# Set Different Working Hours on Different Days in Angular Scheduler
 
 By default, the work hours of the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) are highlighted based on the start and end values provided in the [`workHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule#workhours) property, which remains the same for all days. To highlight different work hours range for specific days, use the[`setWorkHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule#setworkhours) method.
 
@@ -16,12 +16,12 @@ You can pass date object/ multiple date objects collection as first argument and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs52/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs52/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs52/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs52/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs52" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs52" %}

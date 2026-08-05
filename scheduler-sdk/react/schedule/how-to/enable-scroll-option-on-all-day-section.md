@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to enable scroll on the all-day section in React Scheduler | Syncfusion
-description: Learn how to enable a separate scroller for the all-day row in the React Scheduler using the enableAllDayScroll property.
+title: Enable Scroll Option on All-Day Section in React Scheduler | Syncfusion
+description: Learn how to enable the scroll option on the all-day section in the Syncfusion React Scheduler when many appointments overflow the row.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to enable scroll on the all-day section in React Scheduler
+# Enable Scroll Option on All-Day Section in React Scheduler
 
 When you have a large number of appointments in the all-day row, it can be difficult to view them properly. In this case, you can enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/react/documentation/api/schedule#enablealldayscroll) property to `true`, whereas its default value is `false`. When set to `true`, the all-day row displays a scroller when expanded beyond its maximum height.
 
@@ -16,14 +16,14 @@ When you have a large number of appointments in the all-day row, it can be diffi
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs15/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs15/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs15/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs15/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs15/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs15" %}

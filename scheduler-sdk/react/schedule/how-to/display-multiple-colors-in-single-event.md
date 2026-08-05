@@ -1,27 +1,27 @@
 ---
 layout: post
-title: How to show multiple colors in event in React Scheduler | Syncfusion
-description: Learn how to render a single Scheduler appointment in multiple colors using the eventSettings template and custom field values in the React Scheduler.
+title: Display Multiple Colors in Single Event in React Scheduler | Syncfusion
+description: Learn how to render a single appointment with multiple colors in the Syncfusion React Scheduler using a custom event template.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to show multiple colors in event in React Scheduler
+# Display Multiple Colors in Single Event in React Scheduler
 
 In [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) we can display the multiple colors within a single event. This can be achieved by using the `template` option available within the [`eventSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings) property. Here, we've used `SubCount` as an additional field. The SubCount field contains the background color and height values. Based on these values, events will be divided into different colors.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/multiple-color-event/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/multiple-color-event/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/multiple-color-event/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/multiple-color-event/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/multiple-color-event/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/multiple-color-event/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-color-event" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/multiple-color-event" %}

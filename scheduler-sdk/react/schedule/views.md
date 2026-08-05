@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Views in React Scheduler | Syncfusion
-description: Learn how to switch between day, week, month, year, agenda, and timeline views in the Syncfusion React Scheduler and configure each view's options.
+description: Learn about the available views in the Syncfusion React Scheduler, including day, week, month, agenda, and timeline view modes and customizations.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Views in React Scheduler
@@ -56,17 +56,17 @@ The following example demonstrates how to configure the Scheduler to display fou
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs7/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs7/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs7/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs7" %}
 
 > `ViewDirective` and `ViewsDirective` must be imported from the package to define views.
 
@@ -74,17 +74,17 @@ The next example shows how to configure two views with different settings. Here,
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs8/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs8/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs8/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs8" %}
 
 ## View-specific configuration
 
@@ -118,17 +118,17 @@ The Day view displays a single day by default. You can configure it to show mult
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs9/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs9/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs9/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs9" %}
 
 > All the properties defined in the table are applicable to the Day view except [`allowVirtualScrolling`](https://helpej2.syncfusion.com/react/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://helpej2.syncfusion.com/react/documentation/api/schedule/views#headerrows).
 
@@ -138,17 +138,17 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs10/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs10/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs10/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs10" %}
 
 ### Work Week view
 
@@ -158,17 +158,17 @@ The following code example demonstrates how to customize the resource header cel
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs11/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs11/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs11/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs11/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs11/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs11" %}
 
 > The Day, Week, and Work Week views can display all-day appointments in a separate row with an expand/collapse option.
 
@@ -182,17 +182,17 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs12/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs12/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs12/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs12/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs12/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs12" %}
 
 ### Year view
 
@@ -202,17 +202,17 @@ The Year view supports both `Horizontal` and `Vertical` orientations, which can 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs13/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs13/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs13/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs13/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs13/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs13" %}
 
 > The Year view has built-in module support, presenting all months of a year in a calendar format where dates with appointments are highlighted.
 
@@ -224,17 +224,17 @@ The following code example shows how to customize the display of events specific
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs14/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs14/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs14/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs14/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs14/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs14" %}
 
 > For the Agenda view, it is mandatory to set a specific height (in pixels) for the Scheduler component.
 
@@ -246,17 +246,17 @@ The following code example shows how to hide weekend days and modify the working
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs15/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs15/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs15/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs15/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs15/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs15" %}
 
 ### Timeline views – Day, Week, Work Week
 
@@ -266,49 +266,49 @@ To use Timeline Day, Timeline Week, and Timeline Work Week views, you must impor
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs16/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs16/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs16/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs16" %}
 
 Similar to the standard Week view, the Timeline Week view shows 7 days with associated appointments and horizontal time slots.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs17/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs17/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs17/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs17/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs17/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs17" %}
 
 The following code example shows how to display the Timeline Work Week view.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs18/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs18/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs18/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs18/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs18/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs18" %}
 
 > Clicking on dates in the header of Timeline Day, Week, and Work Week views navigates to the Agenda view for that day.
 
@@ -318,17 +318,17 @@ A Timeline Month view displays the current month days along with its appointment
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs19/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs19/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs19/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs19/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs19/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs19" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs19" %}
 
 > Clicking a date in the header of the Timeline Month view navigates to the Timeline Day view.
 
@@ -340,17 +340,17 @@ To use the Timeline Year view, import and inject the `TimelineYear` module from 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs20/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs20/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs20/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs20/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs20/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs20" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs20" %}
 
 #### Resource grouping
 
@@ -358,17 +358,17 @@ The following example shows how to group resources in the Timeline Year view. Ev
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs17/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs17/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs17/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs17/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs17/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs17" %}
 
 #### Auto row height
 
@@ -376,17 +376,17 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/events-cs47/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs47/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/events-cs47/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs47/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/events-cs47/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs47/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs47" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs47" %}
 
 ## Extending view intervals
 
@@ -396,17 +396,17 @@ You can provide the alternative display name for such customized views on the Sc
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs21/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs21/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs21/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs21/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs21/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs21/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs21" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs21" %}
 
 > View intervals can be extended on all Scheduler view modes except Agenda and Month-Agenda.
 

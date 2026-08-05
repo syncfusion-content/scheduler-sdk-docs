@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Timeline Header Rows in React Scheduler | Syncfusion
-description: Learn how to add year, month, week, date, and hour header rows in the Syncfusion React Scheduler timeline views using HeaderRowDirective.
+description: Learn how to add additional header rows in timeline views of the Syncfusion React Scheduler, including year, month, week, and date rows.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Timeline Header Rows in React Scheduler
@@ -28,17 +28,17 @@ The example below shows the Scheduler displaying all available header rows in Ti
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs2/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs2/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs2/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs2" %}
 
 > Importing `HeaderRowsDirective` and `HeaderRowDirective` is mandatory.
 
@@ -48,17 +48,17 @@ To display only the year and month header rows in the Scheduler, specify `Year` 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs3/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs3/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs3/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs3" %}
 
 ## Display week numbers in Timeline views
 
@@ -66,17 +66,17 @@ The week number can be displayed in a separate header row of the Timeline Schedu
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs4/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs4/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs4/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs4" %}
 
 ## Timeline view displaying dates of a complete year
 
@@ -84,17 +84,17 @@ You can display a full year in a Timeline view by setting the [`interval`](https
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs5/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs5/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs5/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs5" %}
 
 ## Customizing header rows with templates
 
@@ -102,16 +102,16 @@ You can customize the text of the header rows and display any images or formatte
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/views-cs6/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/views-cs6/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/views-cs6/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/views-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs6" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

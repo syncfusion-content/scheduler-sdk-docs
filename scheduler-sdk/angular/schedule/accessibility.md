@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accessibility in Angular Scheduler | Syncfusion
-description: Learn about the WAI-ARIA compliance, keyboard navigation, and screen reader support in the Syncfusion Angular Scheduler.
-platform: ej2-angular
+description: Learn how the Syncfusion Angular Scheduler meets WAI-ARIA, WCAG 2.2, and Section 508 accessibility standards with screen reader and keyboard support.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Accessibility in Angular Scheduler
@@ -108,7 +108,7 @@ The Scheduler component's accessibility levels are ensured through an [accessibi
 
 The accessibility compliance of the Scheduler component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) in a new window to evaluate the accessibility of the Scheduler component with accessibility tools.
 
-{% previewsample "page.domainurl/samples/schedule/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs1" %}
 
 ## See also
 

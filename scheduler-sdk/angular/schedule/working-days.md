@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Working Days in Angular Scheduler | Syncfusion
-description: Learn how to configure working days, working hours, and the first day of the week in the Syncfusion Angular Scheduler.
-platform: ej2-angular
+title: Working Days and Hours in Angular Scheduler | Syncfusion
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion Angular Scheduler.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Working Days in Angular Scheduler
+# Working Days and Hours in Angular Scheduler
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 
@@ -31,15 +31,15 @@ The following example shows how to configure the Scheduler to use Monday, Wednes
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs89/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs89/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs89/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs89/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs89" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs89" %}
 
 ![Set Working Days](images/schedule-workdays.png)
 
@@ -51,15 +51,15 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs90/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs90/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs90/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs90/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs90" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs90" %}
 
 ![Hiding Weekend Days](images/schedule-hide-weekend.png)
 
@@ -71,15 +71,15 @@ It is possible to show the week number count of a week in the header bar of the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs91/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs91/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs91/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs91/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs91" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs91" %}
 
 ![Week Numbers](images/schedule-weeknumber.png)
 
@@ -97,15 +97,15 @@ For more details refer to [CalendarWeekRule remarks](https://docs.microsoft.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs92/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs92/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs92/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs92/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs92" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs92" %}
 
  **Note**: Enable the [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property to configure the [`weekRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#weekrule) property. Also, the `weekRule` property depends on the value of the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#firstdayofweek) property.
 
@@ -119,15 +119,15 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs93/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs93/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs93/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs93/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs93" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs93" %}
 
 ![Set Working Hours](images/schedule-workhours.png)
 
@@ -139,15 +139,15 @@ The following code example displays the Scheduler starting from the time range 7
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs94/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs94/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs94/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs94/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs94" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs94" %}
 
 ![Displaying Custom Hours](images/schedule-displayhours.png)
 
@@ -159,15 +159,15 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs95/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs95/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs95/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs95/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs95" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs95" %}
 
 ![Start Day of Week](images/schedule-week-firstday.png)
 
@@ -177,17 +177,17 @@ You can manually scroll to a specific time on Scheduler by making use of the [`s
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/scroll-to-cs1/src/app.component.html %}
+{% include code-snippet/scheduler-sdk/angular/schedule/scroll-to-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/scroll-to-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/scroll-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/scroll-to-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/scroll-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/scroll-to-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/scroll-to-cs1" %}
 
 ### How to scroll to current time on initial load
 
@@ -195,15 +195,15 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs96/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs96/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs96/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs96/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs96" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs96" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
 

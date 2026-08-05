@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dimensions in React Scheduler | Syncfusion
-description: Learn how to set the Syncfusion React Scheduler height and width to auto, pixel, or percentage values for responsive layouts.
+title: Scheduler Dimensions in React Scheduler | Syncfusion
+description: Learn how to set the height and width of the Syncfusion React Scheduler using pixel, percentage, or auto values for responsive layouts.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Dimensions in React Scheduler
+# Scheduler Dimensions in React Scheduler
 
 Scheduler dimensions refer to the height and width of the entire layout and support three types of values:
 
@@ -22,17 +22,17 @@ When the [height](https://ej2.syncfusion.com/react/documentation/api/schedule#he
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/events-cs43/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/events-cs43/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/events-cs43/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs43" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs43" %}
 
 ## Height and width in pixels
 
@@ -40,17 +40,17 @@ The Scheduler height and width will render exactly as per the given pixel values
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/events-cs44/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/events-cs44/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/events-cs44/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs44" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs44" %}
 
 ## Height and width in percentages
 
@@ -58,17 +58,17 @@ When the height and width of the Scheduler are given as percentage, it will make
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/events-cs45/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/events-cs45/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/events-cs45/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs45" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs45" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.
 

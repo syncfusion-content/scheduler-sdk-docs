@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Module Injection in React Scheduler | Syncfusion
-description: Learn how to inject Scheduler modules like Day, Week, Month, Agenda, TimelineViews, DragAndDrop, and Resize to enable only the views you need.
+description: Learn how to import and inject modules in the Syncfusion React Scheduler to enable specific views, features, and editor options.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Module Injection in React Scheduler

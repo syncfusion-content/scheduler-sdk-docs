@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resources in React Scheduler | Syncfusion
-description: Learn how to group Scheduler appointments by multiple resources, configure resource fields, and support multi-level hierarchical grouping in the Syncfusion React Scheduler.
+title: Resources and Grouping in React Scheduler | Syncfusion
+description: Learn how to assign and group resources in the Syncfusion React Scheduler with multi-level grouping, resource fields, and timeline views.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Resources in React Scheduler
+# Resources and Grouping in React Scheduler
 
 Resources and grouping support allow the Scheduler to be shared across multiple resources. The appointments of each resource are displayed under the relevant resource. Each resource in the Scheduler is arranged in a column or row order, with dedicated spacing to display all its respective appointments on a single page. The Scheduler also supports multiple levels of resource grouping, enabling hierarchical categorization. Resources can be displayed either in expandable groups (Timeline views) or in vertical hierarchy (Calendar views).
 
@@ -128,17 +128,17 @@ The appointments belonging to the different resources will be displayed altogeth
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs2/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs2/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs2/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs2" %}
 
 > Setting [`allowMultiple`](https://ej2.syncfusion.com/react/documentation/api/schedule/resources#allowmultiple)  to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
@@ -158,17 +158,17 @@ The following code example displays how the multiple resources are grouped and i
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs3/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs3/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs3/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs3" %}
 
 ### Timeline resource view
 
@@ -176,17 +176,17 @@ The following code example depicts how to group the multiple resources on Timeli
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs4/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs4/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs4/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs4" %}
 
 ### Grouping single-level resources
 
@@ -196,17 +196,17 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs5/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs5/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs5/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs5" %}
 
 > The [`name`](https://ej2.syncfusion.com/react/documentation/api/schedule/resources#name) field defined in the **resources** collection namely `Owners` will be mapped within the [`group`](https://ej2.syncfusion.com/react/documentation/api/schedule/group) property, in order to enable the grouping option with those resource levels on the Scheduler.
 
@@ -218,17 +218,17 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs6/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs6/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs6/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs6" %}
 
 ### One-to-One grouping
 
@@ -236,17 +236,17 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs7/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs7/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs7/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs7" %}
 
 ### Grouping resources by date
 
@@ -256,17 +256,17 @@ It groups the number of resources under each date and is applicable only on the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs8/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs8/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs8/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs8" %}
 
 > Grouping by date is not applicable in timeline views.
 
@@ -283,17 +283,17 @@ object will be maintained within the appointment collection, even if it is share
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs9/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs9/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs9/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs9" %}
 
 ## Simple resource header customization
 
@@ -303,17 +303,17 @@ It is possible to customize the resource header cells using built-in template op
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-header-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-header-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-header-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-header-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-header-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-header-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-header-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-header-cs1" %}
 
 > To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
@@ -325,17 +325,17 @@ It is possible to customize the resource headers to display with multiple column
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/multiple-column-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/multiple-column-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/multiple-column-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/multiple-column-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/multiple-column-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/multiple-column-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-column-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/multiple-column-cs1" %}
 
 ## Collapse/Expand child resources in timeline views
 
@@ -343,17 +343,17 @@ It is possible to expand and collapse the resources which have child resource in
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-grouping-cs5/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-grouping-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-grouping-cs5/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-grouping-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-grouping-cs5/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-grouping-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-grouping-cs5" %}
 
 ## Displaying tooltip for resource headers
 
@@ -361,17 +361,17 @@ Tooltips can be displayed over resource headers to show resource information. By
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs10/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs10/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs10/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs10" %}
 
 ## Choosing between resource colors for appointments
 
@@ -381,17 +381,17 @@ In the following example, the colors mentioned in the second level will get appl
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs11/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs11/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs11/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs11/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs11/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs11" %}
 
 > The value of the [`resourceColorField`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#resourcecolorfield) field should be mapped with the [`name`](https://ej2.syncfusion.com/react/documentation/api/schedule/resources#name) value given within the [`resources`](https://ej2.syncfusion.com/react/documentation/api/schedule/resources) property.
 
@@ -403,17 +403,17 @@ To remove the resources dynamically, [`removeResource`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs12/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs12/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs12/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs12/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs12/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs12" %}
 
 ## Setting different working days and hours for resources
 
@@ -429,17 +429,17 @@ Different `working days` can be set for the resources of Scheduler using the [`w
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs13/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs13/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs13/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs13/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs13/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs13" %}
 
 ### Set different work hours
 
@@ -452,17 +452,17 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs14/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs14/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs14/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs14/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs14/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs14" %}
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 7.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
 
@@ -476,17 +476,17 @@ To use the [`hideNonWorkingDays`](https://ej2.syncfusion.com/react/documentation
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs15/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs15/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs15/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs15/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs15/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs15" %}
 
 > The [`hideNonWorkingDays`](https://ej2.syncfusion.com/react/documentation/api/schedule/group#hidenonworkingdays) property only applies when the Scheduler is grouped [`byDate`](https://ej2.syncfusion.com/react/documentation/api/schedule/group#bydate).
 
@@ -514,16 +514,16 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/resource-cs16/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/resource-cs16/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/resource-cs16/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/resource-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/resource-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/resource-cs16" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/material/schedule/overview) to knows how to present and manipulate data.

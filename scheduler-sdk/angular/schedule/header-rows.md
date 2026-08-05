@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header Rows in Angular Scheduler | Syncfusion
-description: Learn how to add additional timeline header rows such as Year, Month, Week, and Date in the Syncfusion Angular Scheduler.
-platform: ej2-angular
+title: Timeline Header Rows in Angular Scheduler | Syncfusion
+description: Learn how to add additional header rows in timeline views of the Syncfusion Angular Scheduler, including year, month, week, and date rows.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Header Rows in Angular Scheduler
+# Timeline Header Rows in Angular Scheduler
 
 The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#headerrows) property. This property is applicable only on the Timeline views. The possible rows which can be added using `headerRows` property are as follows.
 
@@ -28,15 +28,15 @@ The example below shows the Scheduler displaying all available header rows in Ti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs39/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs39/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs39/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs39" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs39" %}
 
 ![Timeline Header Rows](images/schedule-headerrow-default.png)
 
@@ -46,15 +46,15 @@ To display only the year and month header rows in the Scheduler, specify `Year` 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs40/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs40/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs40/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs40" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs40" %}
 
 ![Display Year and Month rows in timeline views](images/schedule-headerrow-month-year.png)
 
@@ -64,15 +64,15 @@ The week number can be displayed in a separate header row of the Timeline Schedu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs41/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs41/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs41/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs41/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs41" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs41" %}
 
 ![Display Week numbers in timeline views](images/schedule-headerrow-weeknumber.png)
 
@@ -82,15 +82,15 @@ You can display a full year in a Timeline view by setting the [`interval`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs42/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs42/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs42/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs42/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs42" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs42" %}
 
 ![Display dates of a complete year in timeline views](images/schedule-headerrow-dates.png)
 
@@ -100,15 +100,15 @@ You can customize the text of the header rows and display any images or formatte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs43/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs43/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs43/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs43/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs43" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs43" %}
 
 ![Display customize header rows using template](images/schedule-headerrow-custom-header.png)
 

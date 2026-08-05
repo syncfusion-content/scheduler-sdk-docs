@@ -1,11 +1,11 @@
 ---
 layout: post
 title: State Persistence in Angular Scheduler | Syncfusion
-description: Learn how to persist the current view, selected date, and scroll position of the Syncfusion Angular Scheduler using enablePersistence and localStorage.
-platform: ej2-angular
+description: Learn how to enable state persistence in the Syncfusion Angular Scheduler to retain current view, selected date, and scroll position.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # State Persistence in Angular Scheduler
@@ -18,14 +18,14 @@ The following sample demonstrates how to set state persistence of the Scheduler 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs62/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs62/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs62/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs62/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs62" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs62" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to know how to present and manipulate data.

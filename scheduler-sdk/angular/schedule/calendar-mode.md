@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Calendar Mode in Angular Scheduler | Syncfusion
-description: Learn how to switch between the Gregorian and Islamic calendar modes in the Syncfusion Angular Scheduler.
-platform: ej2-angular
+description: Learn how to render the Syncfusion Angular Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Calendar Mode in Angular Scheduler
@@ -39,14 +39,14 @@ To use the Islamic calendar in Scheduler, import the `Calendar` and `Islamic` mo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/islamic-calendar-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/islamic-calendar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/islamic-calendar-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/islamic-calendar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/islamic-calendar-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/islamic-calendar-cs1" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Virtual Scrolling in Angular Scheduler | Syncfusion
-description: Learn how to enable virtual scrolling in the Syncfusion Angular Scheduler to dynamically load large sets of resources and events in timeline views.
-platform: ej2-angular
+description: Learn how to enable virtual scrolling in the Syncfusion Angular Scheduler timeline and agenda views to load resources and events on demand.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Virtual Scrolling in Angular Scheduler
@@ -14,15 +14,15 @@ Virtual scrolling support in the Scheduler component enhances performance when w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs88/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs88/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs88/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs88/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs88" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs88" %}
 
 ![Displaying Virtual Scrolling in Schedule](images/schedule-virtualscrolling.gif)
 
@@ -40,15 +40,15 @@ Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs98/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs98/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs98/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs98/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs98" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs98" %}
 
 The following server-side controller code demonstrates how to retrieve appointment data based on resource IDs received as query parameters:
 

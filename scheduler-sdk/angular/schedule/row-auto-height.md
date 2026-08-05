@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row Auto Height in Angular Scheduler | Syncfusion
-description: Learn how to auto-adjust row height in the Syncfusion Angular Scheduler to display overlapping appointments without +n more indicators.
-platform: ej2-angular
+description: Learn how to auto-adjust row height in the Syncfusion Angular Scheduler timeline and month views to display all overlapping appointments.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Row Auto Height in Angular Scheduler
@@ -26,15 +26,15 @@ By default, the rows of the calendar Month view can hold only a limited number o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs59/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs59/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs59/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs59/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs59" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs59" %}
 
 ## Timeline views
 
@@ -42,15 +42,15 @@ When the [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs60/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs60/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs60/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs60/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs60" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs60" %}
 
 ![Timeline Month View](images/schedule-timeline-month.png)
 
@@ -60,15 +60,15 @@ The following example shows how the auto row adjustment feature works on Timelin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs61/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs61/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs61/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs61/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs61" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs61" %}
 
 ![Timeline views with multiple resources](images/schedule-timeline-resource.png)
 
@@ -78,15 +78,15 @@ By default, with the feature [`rowAutoHeight`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/ignore-whitespace-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/ignore-whitespace-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/ignore-whitespace-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/ignore-whitespace-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/ignore-whitespace-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/ignore-whitespace-cs1" %}
 
 ![Ignoring Whitespace](images/schedule-ignore-whitespace.png)
 

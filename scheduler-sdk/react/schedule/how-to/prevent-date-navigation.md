@@ -1,27 +1,27 @@
 ---
 layout: post
-title: How to prevent date navigation in React Scheduler | Syncfusion
-description: Learn how to disable date navigation on the React Scheduler header by removing the e-navigate class in the renderCell event.
+title: Prevent Date Navigation in React Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion React Scheduler by removing the e-navigate class in the renderCell event.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to prevent date navigation in React Scheduler
+# Prevent Date Navigation in React Scheduler
 
 We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`renderCell`](https://ej2.syncfusion.com/react/documentation/api/schedule#rendercell) event as shown in the below demo.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs16/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs16/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs16/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs16" %}

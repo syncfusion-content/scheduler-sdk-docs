@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Preact and React Scheduler | Syncfusion
-description: Learn how to set up a Preact project and integrate the Syncfusion React Scheduler with core scheduling features and module injection.
+title: Getting Started with React Scheduler and Preact | Syncfusion
+description: Learn how to get started with the Syncfusion React Scheduler in a Preact application, exploring setup, configuration, and basic usage.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Getting Started with Preact and React Scheduler
+# Getting Started with React Scheduler and Preact
 
 This article provides a step-by-step guide for setting up a [Preact](https://preactjs.com/) project and integrating the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler).
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Clipboard in Angular Scheduler | Syncfusion
-description: Learn how to enable cut, copy, and paste actions on appointments in the Syncfusion Angular Scheduler using the clipboard feature.
-platform: ej2-angular
+description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion Angular Scheduler using the AllowClipboard property and shortcuts.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Clipboard in Angular Scheduler
@@ -31,17 +31,17 @@ To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **C
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/clipboard-cs1/src/app.component.html %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/clipboard-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/clipboard-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/schedule/clipboard-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs1" %}
 
 > Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste shortcuts.
 
@@ -61,18 +61,18 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/clipboard-cs2/src/app.component.html %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs2/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/clipboard-cs2/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/clipboard-cs2/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/clipboard-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs2" %}
 ## Modifying content before pasting
 
 You can modify the content of an appointment before pasting it by using [`beforePaste`](https://ej2.syncfusion.com/angular/documentation/api/schedule#beforepaste) event accessing the appointment details and making necessary changes.
@@ -90,18 +90,18 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/clipboard-cs3/src/app.component.html %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs3/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/clipboard-cs3/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/clipboard-cs3/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/clipboard-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/clipboard-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs3" %}
 
 
 >  You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

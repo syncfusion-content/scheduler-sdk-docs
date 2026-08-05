@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to open editor window manually in Angular Scheduler | Syncfusion
-description: Learn how to open the event editor window manually in the Syncfusion Angular Scheduler using the openEditor method.
-platform: ej2-angular
+title: Open Editor Window Manually in Angular Scheduler | Syncfusion
+description: Learn how to open the event editor manually in the Syncfusion Angular Scheduler using the openEditor public method on cell or event click.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to open editor window manually in Angular Scheduler
+# Open Editor Window Manually in Angular Scheduler
 
 ## Open Editor Window externally
 
@@ -16,15 +16,15 @@ The [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-sc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs48/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs48/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs48/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs48/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs48" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs48" %}
 
 ## Open editor window on single click
 
@@ -32,12 +32,12 @@ By default, the Scheduler editor window opens when double-clicking cells or appo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs49/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs49/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs49/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs49/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs49" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs49" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Context Menu in React Scheduler | Syncfusion
-description: Learn how to display a Syncfusion ContextMenu on Scheduler cells and appointments with built-in and custom items for creating, editing, and deleting events.
+description: Learn how to integrate the Context Menu in the Syncfusion React Scheduler to perform actions on cells, resource cells, and appointments.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Context Menu in React Scheduler
@@ -20,19 +20,19 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/context-menu-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/context-menu-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/context-menu-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/schedule/context-menu-cs1/index.css %}
+{% include code-snippet/scheduler-sdk/react/schedule/context-menu-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/context-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/context-menu-cs1" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

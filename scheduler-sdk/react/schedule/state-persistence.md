@@ -1,11 +1,11 @@
 ---
 layout: post
 title: State Persistence in React Scheduler | Syncfusion
-description: Learn how to enable persistence in the Syncfusion React Scheduler to retain currentView, selectedDate, and scroll position in localStorage across page refreshes.
+description: Learn how to enable state persistence in the Syncfusion React Scheduler to retain current view, selected date, and scroll position.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # State Persistence in React Scheduler
@@ -18,16 +18,16 @@ The following sample demonstrates how to set state persistence of the Scheduler 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs26/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs26/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs26/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs26/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs26/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs26/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs26" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs26" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/material/schedule/overview) to knows how to present and manipulate data.

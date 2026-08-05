@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Working Days in React Scheduler | Syncfusion
-description: Learn how to configure working days, working hours, week start, and weekend visibility in the Syncfusion React Scheduler.
+title: Working Days and Hours in React Scheduler | Syncfusion
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion React Scheduler.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Working Days in React Scheduler
+# Working Days and Hours in React Scheduler
 
 The Scheduler supports calendar-specific customizations, including:
 
@@ -32,17 +32,17 @@ The following example sets Monday, Wednesday, and Friday as working days.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs33/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs33/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs33/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs33/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs33/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs33/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs33" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs33" %}
 
 ## Hiding weekend days
 
@@ -52,17 +52,17 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs34/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs34/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs34/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs34/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs34/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs34/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs34" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs34" %}
 
 ## Show week numbers
 
@@ -72,17 +72,17 @@ Display week numbers in the header bar by setting [`showWeekNumber`](https://ej2
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs35/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs35/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs35/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs35/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs35/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs35/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs35" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs35" %}
 
 ### Different options in showing week numbers
 
@@ -101,17 +101,17 @@ The following example shows week numbers with the `FirstFourDayWeek` rule.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs36/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs36/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs36/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs36/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs36/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs36/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs36" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs36" %}
 
 ## Set working hours
 
@@ -123,17 +123,17 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs37/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs37/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs37/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs37/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs37/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs37/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs37" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs37" %}
 
 ## Scheduler displaying custom hours
 
@@ -142,17 +142,17 @@ It is possible to display the event Scheduler layout with specific time duration
 The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM and the remaining hours are hidden on the UI.
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs38/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs38/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs38/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs38/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs38/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs38/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs38" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs38" %}
 
 ## Setting start day of the week
 
@@ -163,17 +163,17 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs39/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs39/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs39/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs39/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs39/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs39/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs39" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs39" %}
 
 ## Scroll to specific time and date
 
@@ -181,17 +181,17 @@ You can manually scroll to a specific time on Scheduler by making use of the [`s
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/event-public-cs4/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/event-public-cs4/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/event-public-cs4/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/event-public-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/event-public-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs4" %}
 
 ### How to scroll to current time on initial load
 
@@ -199,17 +199,17 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/local-data-cs40/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs40/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/local-data-cs40/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs40/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/local-data-cs40/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs40/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/local-data-cs40" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs40" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.
 

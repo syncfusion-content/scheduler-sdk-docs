@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Context Menu in Angular Scheduler | Syncfusion
-description: Learn how to add context menu options to the Syncfusion Angular Scheduler for cells and appointments using the ContextMenu control.
-platform: ej2-angular
+description: Learn how to integrate the Context Menu in the Syncfusion Angular Scheduler to perform actions on cells, resource cells, and appointments.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Context Menu in Angular Scheduler
@@ -20,18 +20,18 @@ The deletion of appointments can be done by using the [`deleteEvent`](https://ej
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/context-menu-cs1/src/app.component.html %}
+{% include code-snippet/scheduler-sdk/angular/schedule/context-menu-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/context-menu-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/context-menu-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/context-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/context-menu-cs1" %}
 
 ![Context Menu](images/schedule-contextmenu.png)
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Frequently Asked Questions in Angular Scheduler | Syncfusion
-description: Find answers to common questions and known issues when working with the Syncfusion Angular Scheduler component.
-platform: ej2-angular
+description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion Angular Scheduler control.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Frequently Asked Questions in Angular Scheduler

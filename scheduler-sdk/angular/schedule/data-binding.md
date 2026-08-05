@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data Binding in Angular Scheduler | Syncfusion
-description: Learn how to bind local and remote data to the Syncfusion Angular Scheduler using DataManager or JavaScript object array collections.
-platform: ej2-angular
+description: Learn how to bind data to the Syncfusion Angular Scheduler from local collections and remote REST services using DataManager and adaptors.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Data Binding in Angular Scheduler
@@ -21,15 +21,15 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs1" %}
 
 > By default, `DataManager` uses the `JsonAdaptor` for binding local data.
 
@@ -45,15 +45,15 @@ The Scheduler supports binding to various remote data services. To configure thi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs2/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs2/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs2" %}
 
 ### Filter events using the in-built query
 
@@ -63,15 +63,15 @@ This method greatly improves the component's performance by reducing the data th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs7/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs7/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs7/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs7" %}
 
 The image below illustrates how parameters are passed using an ODataV4 filter for remote data binding.
 
@@ -83,15 +83,15 @@ You can create a custom adaptor by extending one of the built-in adaptors. The f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs3/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs3/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs3" %}
 
 ## Loading data via AJAX post
 
@@ -138,15 +138,15 @@ To send additional custom parameters in the server-side request, use the `addPar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs4/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs4/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs4" %}
 
 > Parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#query) property are sent with the data request to the server on every Scheduler action.
 
@@ -158,15 +158,15 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs5/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs5/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs5" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs during Scheduler CRUD operations.
 
@@ -308,14 +308,14 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/data-bind-cs6/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs6/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/data-bind-cs6/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/data-bind-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/data-bind-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs6" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

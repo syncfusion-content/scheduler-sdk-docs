@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Recurrence Editor in Angular Scheduler | Syncfusion
-description: Learn how to use the built-in recurrence editor in the Syncfusion Angular Scheduler to create and customize recurring event rules.
-platform: ej2-angular
+description: Learn how to use the Recurrence Editor in the Syncfusion Angular Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Recurrence Editor in Angular Scheduler
@@ -28,15 +28,15 @@ You can customize the recurrence editor to display only specific repeat options,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs57/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs57/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs57/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs57/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs57" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs57" %}
 
 The other properties available in recurrence editor are tabulated below:
 
@@ -65,15 +65,15 @@ You can customize the recurrence editor to display only specific end options, su
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs97/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs97/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs97/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs97/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/schedule/default-cs97" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs97" %}
 
 ## Accessing the recurrence rule string
 
@@ -83,15 +83,15 @@ There is a `change` event available in recurrence editor, that triggers on every
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/recur-editor-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs1" %}
 
 ## Set specific value on recurrence editor
 
@@ -99,15 +99,15 @@ It is possible to display the recurrence editor with specific options loaded ini
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs2/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs2/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/recur-editor-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs2" %}
 
 ## Recurrence date generation
 
@@ -123,15 +123,15 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs3/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs3/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/recur-editor-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs3" %}
 
 > The above example generates two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilized to create appointments.
 
@@ -147,14 +147,14 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs4/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs4/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/recur-editor-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/recur-editor-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs4" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

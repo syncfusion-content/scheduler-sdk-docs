@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dimensions in Angular Scheduler | Syncfusion
-description: Learn how to set the height and width of the Syncfusion Angular Scheduler using auto, pixel, and percentage values.
-platform: ej2-angular
+title: Scheduler Dimensions in Angular Scheduler | Syncfusion
+description: Learn how to set the height and width of the Syncfusion Angular Scheduler using pixel, percentage, or auto values for responsive layouts.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Dimensions in Angular Scheduler
+# Scheduler Dimensions in Angular Scheduler
 
 Scheduler dimensions refer to the height and width of the entire layout and support three types of values:
 
@@ -22,15 +22,15 @@ When the height and width of the Scheduler are set to `auto`, it will try as har
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/dimension-cs1/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/dimension-cs1/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/dimension-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/dimension-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs1" %}
 
 ## Height and width in pixels
 
@@ -38,15 +38,15 @@ The Scheduler height and width will render exactly as per the given pixel values
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/dimension-cs2/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/dimension-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/dimension-cs2/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/dimension-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/dimension-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs2" %}
 
 ## Height and width in percentages
 
@@ -54,15 +54,15 @@ When the height and width of the Scheduler are given as percentage, it will make
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/dimension-cs3/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/dimension-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/dimension-cs3/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/dimension-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/dimension-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs3" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
 

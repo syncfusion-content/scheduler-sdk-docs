@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to perform CRUD actions in React Scheduler | Syncfusion
-description: Learn how to add, edit, and remove Scheduler appointments dynamically in React using the addEvent, saveEvent, and deleteEvent public methods.
+title: Perform CRUD Actions Dynamically in React Scheduler | Syncfusion
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion React Scheduler using addEvent, saveEvent, and deleteEvent methods.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# How to perform CRUD actions in React Scheduler
+# Perform CRUD Actions Dynamically in React Scheduler
 
 CRUD actions can be manually performed on appointments using the [`addEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#deleteevent) methods in the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler), as shown below.
 
@@ -16,32 +16,32 @@ CRUD actions can be manually performed on appointments using the [`addEvent`](ht
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/app-crud-cs6/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/app-crud-cs6/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/app-crud-cs6/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/app-crud-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs6" %}
 
 ## Recurring events
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/app-crud-cs7/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/app-crud-cs7/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/app-crud-cs7/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/app-crud-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs7" %}
 
 > When a single occurrence of the recurrence appointment is edited, `recurrenceID` field will be added which holds the `id` value of its parent recurrence appointment. It is applicable only for the edited occurrence appointments. Therefore the collection passing to the `saveEvent` with action as **EditOccurrence** should have `RecurrenceID` field as shown above.

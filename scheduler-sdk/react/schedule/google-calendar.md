@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Google Calendar Integration in React Scheduler | Syncfusion
-description: Learn how to integrate the Syncfusion React Scheduler with the Google Calendar API using OAuth credentials to sync events both ways.
-platform: ej2-react
+title: Integrating React Scheduler with Google Calendar | Syncfusion
+description: Learn how to integrate the Syncfusion React Scheduler with the Google Calendar API using OAuth credentials and a step-by-step flow.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Google Calendar Integration in React Scheduler
+# Integrating React Scheduler with Google Calendar
 
 This integration allows users to manage their Google Calendar events directly within the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler). Changes made in the Scheduler are synced to Google Calendar, and existing Google events are displayed in the Scheduler interface.
 

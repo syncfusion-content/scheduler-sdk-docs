@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Clipboard in React Scheduler | Syncfusion
-description: Learn how to enable clipboard cut, copy, and paste shortcuts (Ctrl+X, Ctrl+C, Ctrl+V) on Scheduler appointments using the allowClipboard property.
-platform: ej2-react
+description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion React Scheduler using the AllowClipboard property and shortcuts.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Clipboard in React Scheduler
@@ -31,20 +31,20 @@ To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **C
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/clipboard-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/clipboard-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/clipboard-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs1/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/schedule/clipboard-cs1/index.css %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/clipboard-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs1" %}
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
@@ -64,20 +64,20 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/clipboard-cs2/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/clipboard-cs2/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/clipboard-cs2/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs2/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/schedule/clipboard-cs2/index.css %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/clipboard-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs2" %}
 
 ## Modifying Content before pasting
 
@@ -96,19 +96,19 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/clipboard-cs3/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/clipboard-cs3/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/clipboard-cs3/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs3/index.html %}
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-{% include code-snippet/schedule/clipboard-cs3/index.css %}
+{% include code-snippet/scheduler-sdk/react/schedule/clipboard-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/clipboard-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs3" %}
 
 >  You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.

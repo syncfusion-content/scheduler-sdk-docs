@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Cell Customization in Angular Scheduler | Syncfusion
-description: Learn how to customize the cells of the Syncfusion Angular Scheduler using templates, the renderCell event, and CSS class overrides.
-platform: ej2-angular
+description: Learn how to customize work cells in the Syncfusion Angular Scheduler using templates, methods, and events for vertical, timeline, and month views.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Cell Customization in Angular Scheduler
@@ -18,15 +18,15 @@ The height and width of the Scheduler cells can be customized to increase or red
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs21/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs21/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs21/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs21" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs21" %}
 
 ![Cell Dimensions in Vertical Views](images/schedule-celldimension-verticalviews.png)
 
@@ -38,15 +38,15 @@ You can check whether the given time range slots are available for event creatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs22/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs22/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs22/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs22" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs22" %}
 
 ## Customizing cells in all views
 
@@ -58,15 +58,15 @@ The [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs23/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs23/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs23/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs23" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs23" %}
 
 ![Using CellTemplate](images/schedule-celldimension-celltemplate.png)
 
@@ -76,15 +76,15 @@ An alternative to [`cellTemplate`](https://ej2.syncfusion.com/angular/documentat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs24/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs24/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs24/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs24" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs24" %}
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, and resource header cells using the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#rendercell) event by checking the [`elementType`](https://ej2.syncfusion.com/angular/documentation/api/schedule/renderCellEventArgs/#elementtype) property within the event. You can check `elementType` against any of the following.
 
@@ -108,15 +108,15 @@ The month header of each date cell in month view can be customized using the [`c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs25/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs25/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs25/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs25" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs25" %}
 
 ## Customizing the minimum and maximum date values
 
@@ -124,15 +124,15 @@ Providing the [`minDate`](https://ej2.syncfusion.com/angular/documentation/api/s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs26/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs26/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs26/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs26" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs26" %}
 
 >By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
 
@@ -169,15 +169,15 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/weekend-cell-color/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/weekend-cell-color/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/weekend-cell-color/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/weekend-cell-color/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/weekend-cell-color" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/weekend-cell-color" %}
 
 ## How to disable multiple cell and row selection in Schedule
 

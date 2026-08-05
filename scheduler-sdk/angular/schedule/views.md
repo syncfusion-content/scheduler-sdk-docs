@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Views in Angular Scheduler | Syncfusion
-description: Learn about the available view modes in the Syncfusion Angular Scheduler, including Day, Week, Month, Timeline, and Agenda views.
-platform: ej2-angular
+description: Learn about the available views in the Syncfusion Angular Scheduler, including day, week, month, agenda, and timeline view modes and customizations.
+platform: scheduler-sdk
 control: Scheduler
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Views in Angular Scheduler
@@ -43,29 +43,29 @@ In the following example, the Scheduler displays four views: Week, Month, Timeli
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs71/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs71/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs71/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs71/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs71" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs71" %}
 
 To configure the Scheduler with two views that each have different configurations, refer to the following example. Here, the Week view displays dates in `dd-MM-yyyy` format, while the Month view hides weekend days and is set to read-only mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs72/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs72/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs72/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs72/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs72" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs72" %}
 
 ## View specific configuration
 
@@ -99,15 +99,15 @@ The Day view displays a single day with its appointments. You can extend the Day
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs73/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs73/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs73/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs73/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs73" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs73" %}
 
 ![Displaying Day View](images/schedule-views-day.png)
 
@@ -119,15 +119,15 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs74/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs74/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs74/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs74/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs74" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs74" %}
 
 ![Displaying Week View](images/schedule-views-week.png)
 
@@ -141,15 +141,15 @@ The following code example depicts how to change the working days only on the `W
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs75/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs75/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs75/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs75/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs75" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs75" %}
 
 ![Displaying Work week View](images/schedule-views-workweek.png)
 
@@ -165,15 +165,15 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs76/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs76/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs76/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs76/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs76" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs76" %}
 
 ![Displaying Month View](images/schedule-views-month.png)
 
@@ -185,15 +185,15 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs77/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs77/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs77/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs77/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs77" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs77" %}
 
 > The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
 
@@ -205,15 +205,15 @@ The following code example depicts how to customize the display of events within
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs78/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs78/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs78/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs78/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs78" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs78" %}
 
 ![Displaying Agenda View](images/schedule-views-agenda.png)
 
@@ -227,15 +227,15 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs79/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs79/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs79/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs79/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs79" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs79" %}
 
 ![Displaying Month agenda View](images/schedule-views-monthagenda.png)
 
@@ -249,29 +249,29 @@ To use timeline views (Timeline Day, Timeline Week, Timeline Work Week), import 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs80/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs80/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs80/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs80/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs80" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs80" %}
 
 Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs81/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs81/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs81/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs81/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs81" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs81" %}
 
 ![Displaying Timeline Week View](images/schedule-views-timelineweek.png)
 
@@ -279,15 +279,15 @@ The following code example depicts how to display the timeline work week view on
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs82/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs82/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs82/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs82/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs82" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs82" %}
 
 > Clicking on dates in the date header bar of Timeline Day, Timeline Week, and Timeline Work Week navigates to the Agenda view.
 
@@ -297,15 +297,15 @@ Timeline Month view displays days of the current month and their appointments ho
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs83/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs83/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs83/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs83/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs83" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs83" %}
 
 ![Displaying Timeline Month View](images/schedule-views-timelinemonth.png)
 
@@ -319,15 +319,15 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs84/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs84/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs84/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs84/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs84" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs84" %}
 
 ![Displaying Timeline Year View](images/schedule-views-timelineyear.png)
 
@@ -337,15 +337,15 @@ The following code example depicts how to group the multiple resources on Timeli
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs85/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs85/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs85/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs85/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs85" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs85" %}
 
 #### Auto row height
 
@@ -353,15 +353,15 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs86/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs86/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs86/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs86/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs86" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs86" %}
 
 ## Extending view intervals
 
@@ -371,15 +371,15 @@ You can provide the alternative display name for such customized views on the Sc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs87/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs87/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs87/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/default-cs87/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/schedule/default-cs87" %}
+{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs87" %}
 
 ![Displaying Extending Intervals](images/schedule-views-interval.png)
 

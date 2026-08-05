@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Calendar Mode in React Scheduler | Syncfusion
-description: Learn how to switch the Syncfusion React Scheduler between Gregorian and Islamic calendar modes and load the required CLDR data.
+description: Learn how to render the Syncfusion React Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 control: Scheduler
-platform: ej2-react
+platform: scheduler-sdk
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
 # Calendar Mode in React Scheduler
@@ -39,16 +39,16 @@ To use the Islamic calendar in Scheduler, import the `Calendar` and `Islamic` mo
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/schedule/calendar-mode-cs1/app/index.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/schedule/calendar-mode-cs1/app/index.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/schedule/calendar-mode-cs1/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/schedule/calendar-mode-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-mode-cs1" %}
 
 > You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.
