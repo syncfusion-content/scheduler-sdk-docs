@@ -568,6 +568,7 @@ The development server will start, typically at `http://localhost:5173`. Open th
 The output will appear as follows:
 
 ![vue3-js-composition](./images/vue3-composition-scheduler.png)
+
 {% endtabcontent %}
 {% endtabcontents %}
 
