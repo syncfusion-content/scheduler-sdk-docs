@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Show quick info template in React Schedule component
 
-This demo showcases the quick popups for cells and appointments using customized templates.
+This demo shows how to customize the quick info popups for cells and appointments using templates.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
