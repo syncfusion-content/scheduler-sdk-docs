@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Actions in Vue Scheduler | Syncfusion
-description: Learn how to add, edit, and delete appointments in the Syncfusion Vue Scheduler using the editor window, methods, and drag actions.
+description: Learn how to add, edit, and delete appointments in the Syncfusion Vue Scheduler using the editor window and drag actions.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

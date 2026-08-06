@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Globalization in Blazor Scheduler | Syncfusion
-description: Learn how to localize the Syncfusion Blazor Scheduler to adapt date formats and culture-specific rendering using Globalization and DateFormat.
+description: Learn how to localize the Syncfusion Blazor Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

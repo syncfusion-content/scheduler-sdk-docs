@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Half-Yearly View in ASP.NET MVC Scheduler | Syncfusion
-description: Learn how to show a half-yearly view in the Syncfusion ASP.NET MVC Scheduler by configuring FirstMonthOfYear and MonthsCount in the year view.
+description: Learn how to show a half-yearly view in the Syncfusion ASP.NET MVC Scheduler by customizing the year view to render a specific range of consecutive months.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Show Half-Yearly View in ASP.NET MVC Scheduler
+# Half-Yearly View in ASP.NET MVC Scheduler
 
 The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
 

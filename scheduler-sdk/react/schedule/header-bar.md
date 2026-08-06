@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Customization in React Scheduler | Syncfusion
-description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion React Scheduler using ShowHeaderBar.
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion React Scheduler.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

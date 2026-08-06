@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Add Multiple Events in Different Slots in Blazor Scheduler | Syncfusion
-description: Learn how to create multiple appointments in different time slots in the Syncfusion Blazor Scheduler using OnCellClick and CTRL key selection.
+description: Learn how to create multiple appointments in different time slots in the Syncfusion Blazor Scheduler using keyboard selection.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# How to Add Multiple Events in Different Slots in Blazor Scheduler
+# Add Multiple Events in Different Slots in Blazor Scheduler
 
 In [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler), we can select the different time slots (10:00 - 10:30, 8:00 - 8:30) by holding CTRL key and click on cells using `OnCellClick` event. In the following code example, events are created on selected timeslots when clicking the **Add Appointments** button.
 

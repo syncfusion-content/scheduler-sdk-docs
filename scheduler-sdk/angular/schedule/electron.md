@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
-# Getting Started with Angular and Electron Scheduler
+# Getting Started with Angular Scheduler and Electron 
 
 This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the Scheduler component.
 

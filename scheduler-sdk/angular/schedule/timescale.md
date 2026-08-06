@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timescale Customization in Angular Scheduler | Syncfusion
-description: Learn how to customize the time slots in the Syncfusion Angular Scheduler using ScheduleTimeScale to set duration, interval, and slot count.
+description: Learn how to customize the time slots in the Syncfusion Angular Scheduler to set the duration, interval, and slot count per row.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

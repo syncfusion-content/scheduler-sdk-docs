@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Date Navigation in JavaScript Scheduler | Syncfusion
-description: Learn how to prevent date navigation in the Syncfusion JavaScript Scheduler by handling the navigation event to disable the default behavior.
+description: Learn how to prevent date navigation in the Syncfusion JavaScript Scheduler to lock the view on a specific date or range.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

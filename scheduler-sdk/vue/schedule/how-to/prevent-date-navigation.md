@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Date Navigation in Vue Scheduler | Syncfusion
-description: Learn how to prevent date navigation in the Syncfusion Vue Scheduler by removing the e-navigate class in the renderCell event.
+description: Learn how to prevent date navigation in the Syncfusion Vue Scheduler to lock the view on a specific date or range.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

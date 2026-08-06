@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Customization in ASP.NET MVC Scheduler | Syncfusion
-description: Learn how to customize work cells in the Syncfusion ASP.NET MVC Scheduler using templates, methods, and events for vertical, timeline, and month views.
+description: Learn how to customize work cells in the Syncfusion ASP.NET MVC Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

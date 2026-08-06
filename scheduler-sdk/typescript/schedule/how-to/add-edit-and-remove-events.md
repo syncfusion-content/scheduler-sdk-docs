@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add, Edit, and Remove Events in TypeScript Scheduler | Syncfusion
-description: Learn how to add, edit, and remove events in the Syncfusion TypeScript Scheduler using addEvent, saveEvent, and deleteEvent public methods.
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion TypeScript Scheduler.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timezone in Angular Scheduler | Syncfusion
-description: Learn how to render appointments in different time zones in the Syncfusion Angular Scheduler using Timezone, StartTimezone, and EndTimezone.
+description: Learn how to render appointments in different time zones in the Syncfusion Angular Scheduler for global users and cross-region scheduling.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

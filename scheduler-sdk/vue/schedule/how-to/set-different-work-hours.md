@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Different Work Hours on Different Days in Vue Scheduler | Syncfusion
-description: Learn how to set different work hours for each day of the week in the Syncfusion Vue Scheduler by configuring the workHours model.
+description: Learn how to set different work hours for each day of the week in the Syncfusion Vue Scheduler to match varied team schedules.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recurring Events in Blazor Scheduler | Syncfusion
-description: Learn how to create recurring events in the Syncfusion Blazor Scheduler using daily, weekly, monthly, and yearly RecurrenceRule patterns.
+description: Learn how to create recurring events in the Syncfusion Blazor Scheduler with daily, weekly, monthly, and yearly recurrence patterns.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

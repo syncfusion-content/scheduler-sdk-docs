@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Open Editor Window Manually in ASP.NET MVC Scheduler | Syncfusion
-description: Learn how to open the event editor manually in the Syncfusion ASP.NET MVC Scheduler using the openEditor public method on cell or event click.
+description: Learn how to open the event editor manually in the Syncfusion ASP.NET MVC Scheduler on cell or event click, including on a single click.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Open Editor Window Manually in ASP.NET MVC Scheduler
+# Open Editor Window Programmatically in ASP.NET MVC Scheduler
 
 ## Open Editor Window Manually
 

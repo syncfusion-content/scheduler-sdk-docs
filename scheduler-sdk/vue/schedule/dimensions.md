@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler Dimensions in Vue Scheduler
+# Dimensions in Vue Scheduler
 
 The dimensions of the Schedule component refer to its overall height and width. These properties accept the following value types:
 

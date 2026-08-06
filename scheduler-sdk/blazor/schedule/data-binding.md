@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Blazor Scheduler | Syncfusion
-description: Learn how to bind data to the Syncfusion Blazor Scheduler from local collections and remote REST services using DataManager and adaptors.
+description: Learn how to bind data to the Syncfusion Blazor Scheduler from local collections and remote REST services for flexible data loading.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scheduler Dimensions in ASP.NET MVC Scheduler
+# Dimensions in ASP.NET MVC Scheduler
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 

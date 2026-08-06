@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Customization in Vue Scheduler | Syncfusion
-description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion Vue Scheduler using showHeaderBar.
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion Vue Scheduler.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

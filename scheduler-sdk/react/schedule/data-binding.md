@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in React Scheduler | Syncfusion
-description: Learn how to bind data to the Syncfusion React Scheduler from local collections and remote REST services using DataManager and adaptors.
+description: Learn how to bind data to the Syncfusion React Scheduler from local collections and remote REST services for flexible data loading.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Scheduler Interactions in Blazor Scheduler
+# Interactions in Blazor Scheduler
 
 The following table describes the Scheduler actions and also illustrates how those actions are carried out through mouse and touch interactions on Scheduler.
 

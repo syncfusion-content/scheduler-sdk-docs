@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Operations in TypeScript Scheduler | Syncfusion
-description: Learn how to add, edit, and delete appointments in the Syncfusion TypeScript Scheduler using the editor window, methods, and drag actions.
+description: Learn how to add, edit, and delete appointments in the Syncfusion TypeScript Scheduler using the editor window and drag actions.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

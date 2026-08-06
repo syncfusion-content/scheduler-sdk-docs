@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler Interactions in Angular Scheduler
+# Interactions in Angular Scheduler
 
 The following table outlines common Scheduler actions, detailing how each action is performed using mouse and touch interactions.
 

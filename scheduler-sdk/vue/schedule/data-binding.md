@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Vue Scheduler | Syncfusion
-description: Learn how to bind data to the Syncfusion Vue Scheduler from local collections and remote REST services using DataManager and adaptors.
+description: Learn how to bind data to the Syncfusion Vue Scheduler from local collections and remote REST services for flexible data loading.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

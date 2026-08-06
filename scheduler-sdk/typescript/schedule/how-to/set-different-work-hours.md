@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Different Work Hours in TypeScript Scheduler | Syncfusion
-description: Learn how to set different work hours for specific days in the Syncfusion TypeScript Scheduler using the setWorkHours public method.
+description: Learn how to set different work hours for specific days in the Syncfusion TypeScript Scheduler to match varied team schedules.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

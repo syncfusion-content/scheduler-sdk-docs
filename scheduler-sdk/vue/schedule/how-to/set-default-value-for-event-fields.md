@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Default Value for Event Fields in Vue Scheduler | Syncfusion
-description: Learn how to set default values for new event fields in the Syncfusion Vue Scheduler editor window using the editorTemplate.
+description: Learn how to set default values for new event fields in the Syncfusion Vue Scheduler editor window to pre-fill data on new appointments.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

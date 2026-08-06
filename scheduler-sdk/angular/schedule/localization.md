@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in Angular Scheduler | Syncfusion
+title: Localization in Angular Scheduler | Syncfusion
 description: Learn how to localize the Syncfusion Angular Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
 control: Scheduler
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Globalization in Angular Scheduler
+# Localization in Angular Scheduler
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 

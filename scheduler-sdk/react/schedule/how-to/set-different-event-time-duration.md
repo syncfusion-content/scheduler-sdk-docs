@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Different Event Time Duration in React Scheduler | Syncfusion
-description: Learn how to set a different event time duration in the Syncfusion React Scheduler by customizing the timeScale interval in the popupOpen event.
+description: Learn how to set a different event time duration in the Syncfusion React Scheduler to control the default appointment length.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

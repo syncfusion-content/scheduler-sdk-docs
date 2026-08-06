@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Customization in Angular Scheduler | Syncfusion
-description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion Angular Scheduler using ShowHeaderBar.
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion Angular Scheduler.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

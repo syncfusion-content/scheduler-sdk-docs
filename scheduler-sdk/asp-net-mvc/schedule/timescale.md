@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timescale Customization in ASP.NET MVC Scheduler | Syncfusion
-description: Learn how to customize the time slots in the Syncfusion ASP.NET MVC Scheduler using ScheduleTimeScale to set duration, interval, and slot count.
+description: Learn how to customize the time slots in the Syncfusion ASP.NET MVC Scheduler to set the duration, interval, and slot count per row.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

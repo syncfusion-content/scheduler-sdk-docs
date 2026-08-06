@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler Interactions in TypeScript Scheduler
+# Interactions in TypeScript Scheduler
 
 The following table describes the Scheduler actions and illustrates how these actions are carried out through mouse and touch interactions on the Scheduler.
 

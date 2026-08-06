@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Angular Scheduler | Syncfusion
-description: Learn how to bind data to the Syncfusion Angular Scheduler from local collections and remote REST services using DataManager and adaptors.
+description: Learn how to bind data to the Syncfusion Angular Scheduler from local collections and remote REST services for flexible data loading.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

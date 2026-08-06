@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Actions in ASP.NET MVC Scheduler | Syncfusion
-description: Learn how to add, edit, and delete appointments in the Syncfusion ASP.NET MVC Scheduler using the editor window, methods, and drag-and-resize actions.
+description: Learn how to add, edit, and delete appointments in the Syncfusion ASP.NET MVC Scheduler using the editor window and drag-and-resize actions.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

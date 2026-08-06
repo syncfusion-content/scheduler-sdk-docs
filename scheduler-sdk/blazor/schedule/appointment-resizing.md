@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resizing in Blazor Scheduler | Syncfusion
-description: Learn how to enable appointment resizing in the Syncfusion Blazor Scheduler by using the AllowResizing property to adjust event duration.
+description: Learn how to enable appointment resizing in the Syncfusion Blazor Scheduler to let users adjust event duration by dragging.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

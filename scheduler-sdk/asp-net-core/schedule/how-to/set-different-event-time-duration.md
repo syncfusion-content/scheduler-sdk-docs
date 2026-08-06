@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Different Event Time Duration in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to set a different event time duration in the Syncfusion ASP.NET Core Scheduler by customizing the timeScale interval in the popupOpen event.
+description: Learn how to set a different event time duration in the Syncfusion ASP.NET Core Scheduler to control the default appointment length.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard in Vue Scheduler | Syncfusion
-description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion Vue Scheduler using the AllowClipboard property and shortcuts.
+description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion Vue Scheduler with built-in clipboard support and keyboard shortcuts.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

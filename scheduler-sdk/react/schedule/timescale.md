@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timescale Customization in React Scheduler | Syncfusion
-description: Learn how to customize the time slots in the Syncfusion React Scheduler using ScheduleTimeScale to set duration, interval, and slot count.
+description: Learn how to customize the time slots in the Syncfusion React Scheduler to set the duration, interval, and slot count per row.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

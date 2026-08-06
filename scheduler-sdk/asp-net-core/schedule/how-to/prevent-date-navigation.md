@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Date Navigation in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to prevent date navigation in the Syncfusion ASP.NET Core Scheduler by removing the e-navigate class in the renderCell event.
+description: Learn how to prevent date navigation in the Syncfusion ASP.NET Core Scheduler to lock the view on a specific date or range.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

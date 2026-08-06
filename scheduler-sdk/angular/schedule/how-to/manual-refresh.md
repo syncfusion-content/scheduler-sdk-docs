@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Manually Refresh Layout in Angular Scheduler | Syncfusion
-description: Learn how to manually refresh the layout in the Syncfusion Angular Scheduler using the refreshLayout public method without re-rendering the DOM.
+description: Learn how to manually refresh specific templates and the overall layout in the Syncfusion Angular Scheduler without re-rendering the entire component.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Manually Refresh Layout in Angular Scheduler
+# Programmatically Refresh Layout in Angular Scheduler
 
 ## Refresh Template
 

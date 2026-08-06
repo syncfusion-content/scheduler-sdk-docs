@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timescale Customization in Vue Scheduler | Syncfusion
-description: Learn how to customize time slots in the Syncfusion Vue Scheduler using the timeScale property to set interval and slot count.
+description: Learn how to customize time slots in the Syncfusion Vue Scheduler to set the interval and slot count per row.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

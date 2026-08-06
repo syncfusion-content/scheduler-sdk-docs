@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editor Template in JavaScript Scheduler | Syncfusion
-description: Learn how to customize the editor window and quick popup in the Syncfusion JavaScript Scheduler using templates, fields, and validation rules.
+description: Learn how to customize the editor window and quick popup in the Syncfusion JavaScript Scheduler to match your data and design needs.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

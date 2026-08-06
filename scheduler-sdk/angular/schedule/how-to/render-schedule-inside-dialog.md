@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Scheduler Inside Dialog in Angular | Syncfusion
+title: Render Angular Scheduler Inside Dialog  | Syncfusion
 description: Learn how to render the Syncfusion Angular Scheduler inside a dialog using an ng-template to avoid layout calculation issues.
 platform: scheduler-sdk
 control: Scheduler
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Render Scheduler Inside Dialog in Angular
+# Render Angular Scheduler Inside a Dialog
 
 Render the Schedule while opening the dialog inside the angular `ng-template`.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scheduler Dimensions in Angular Scheduler | Syncfusion
+title: Dimensions in Angular Scheduler | Syncfusion
 description: Learn how to set the height and width of the Syncfusion Angular Scheduler using pixel, percentage, or auto values for responsive layouts.
 platform: scheduler-sdk
 control: Scheduler
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler Dimensions in Angular Scheduler
+# Dimensions in Angular Scheduler
 
 Scheduler dimensions refer to the height and width of the entire layout and support three types of values:
 

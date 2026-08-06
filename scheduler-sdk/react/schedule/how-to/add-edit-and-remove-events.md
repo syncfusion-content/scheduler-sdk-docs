@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perform CRUD Actions Dynamically in React Scheduler | Syncfusion
-description: Learn how to add, edit, and remove events dynamically in the Syncfusion React Scheduler using addEvent, saveEvent, and deleteEvent methods.
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion React Scheduler.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

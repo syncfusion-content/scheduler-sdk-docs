@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Bar in TypeScript Scheduler | Syncfusion
-description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion TypeScript Scheduler using showHeaderBar.
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion TypeScript Scheduler.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

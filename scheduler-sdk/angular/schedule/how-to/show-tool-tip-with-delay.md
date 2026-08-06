@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Tooltip with Delay in Angular Scheduler | Syncfusion
-description: Learn how to show the Tooltip with a delay in the Syncfusion Angular Scheduler using the Tooltip openDelay property.
+description: Learn how to show the appointment tooltip with a delay in the Syncfusion Angular Scheduler for a smoother user experience.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

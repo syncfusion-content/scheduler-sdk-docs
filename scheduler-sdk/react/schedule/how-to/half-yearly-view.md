@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Half-Yearly View in React Scheduler | Syncfusion
-description: Learn how to show a half-yearly view in the Syncfusion React Scheduler by configuring FirstMonthOfYear and MonthsCount in the year view.
+description: Learn how to show a half-yearly view in the Syncfusion React Scheduler by customizing the year view to render a specific range of consecutive months.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

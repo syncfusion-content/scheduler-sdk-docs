@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Open Editor Window Manually in Angular Scheduler | Syncfusion
-description: Learn how to open the event editor manually in the Syncfusion Angular Scheduler using the openEditor public method on cell or event click.
+description: Learn how to open the event editor manually in the Syncfusion Angular Scheduler on cell or event click, including on a single click.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Open Editor Window Manually in Angular Scheduler
+# Open Editor Window Programmatically in Angular Scheduler
 
 ## Open Editor Window externally
 

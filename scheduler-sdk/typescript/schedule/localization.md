@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Localization in TypeScript Scheduler
+# Globalization in TypeScript Scheduler
 
 The Scheduler supports different date-time formats and cultures, enabling it to function globally and meet the diverse needs of various regions.
 

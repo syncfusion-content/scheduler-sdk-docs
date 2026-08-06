@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Open Editor Window Manually in React Scheduler | Syncfusion
-description: Learn how to open the event editor manually in the Syncfusion React Scheduler using the openEditor public method on cell or event click.
+description: Learn how to open the event editor manually in the Syncfusion React Scheduler on cell or event click, including on a single click.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Open Editor Window Manually in React Scheduler
+# Open Editor Window Programmatically in React Scheduler
 
 ## Open Editor Window externally
 

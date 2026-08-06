@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler Dimensions in React Scheduler
+# Dimensions in React Scheduler
 
 Scheduler dimensions refer to the height and width of the entire layout and support three types of values:
 

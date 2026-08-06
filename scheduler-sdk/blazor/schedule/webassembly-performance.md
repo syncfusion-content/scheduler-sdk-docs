@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebAssembly Performance in Blazor Scheduler | Syncfusion
-description: Learn how to improve performance in Blazor WebAssembly apps with the Syncfusion Scheduler using PreventRender and rendering best practices.
+description: Learn how to improve performance in Blazor WebAssembly apps with the Syncfusion Scheduler using rendering best practices.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

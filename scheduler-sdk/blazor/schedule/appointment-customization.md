@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Customization in Blazor Scheduler | Syncfusion
-description: Learn how to customize the appearance of appointments in the Syncfusion Blazor Scheduler using templates, the EventRendered event, and CssClass.
+description: Learn how to customize the appearance of appointments in the Syncfusion Blazor Scheduler with custom templates and CSS classes.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

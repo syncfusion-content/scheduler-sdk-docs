@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Date Navigation in ASP.NET MVC Scheduler | Syncfusion
-description: Learn how to prevent date navigation in the Syncfusion ASP.NET MVC Scheduler by removing the e-navigate class in the RenderCell event.
+description: Learn how to prevent date navigation in the Syncfusion ASP.NET MVC Scheduler to lock the view on a specific date or range.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

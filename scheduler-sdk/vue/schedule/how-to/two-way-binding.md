@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Two-Way Binding in Vue Scheduler | Syncfusion
-description: Learn how to use two-way binding in the Syncfusion Vue Scheduler to bind and sync data fields with the Vue v-model directive.
+description: Learn how to use two-way binding in the Syncfusion Vue Scheduler to bind and sync data fields seamlessly with the component.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

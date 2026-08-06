@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Actions in Blazor Scheduler | Syncfusion
-description: Learn how to add, edit, and delete appointments in the Syncfusion Blazor Scheduler using editor window, methods, and drag-and-resize actions.
+description: Learn how to add, edit, and delete appointments in the Syncfusion Blazor Scheduler using the editor window and drag-and-resize actions.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Customization in Blazor Scheduler | Syncfusion
-description: Learn how to customize work cells in the Syncfusion Blazor Scheduler using templates, methods, and events for vertical, timeline, and month views.
+description: Learn how to customize work cells in the Syncfusion Blazor Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

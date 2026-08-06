@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Scheduler Dimensions in Blazor Scheduler
+# Dimensions in Blazor Scheduler
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 

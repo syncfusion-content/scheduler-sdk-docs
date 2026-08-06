@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Half-Yearly View in TypeScript Scheduler | Syncfusion
-description: Learn how to show a half-yearly view in the Syncfusion TypeScript Scheduler by configuring FirstMonthOfYear and MonthsCount in the year view.
+description: Learn how to show a half-yearly view in the Syncfusion TypeScript Scheduler by customizing the year view to render a specific range of consecutive months.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Show Half-Yearly View in TypeScript Scheduler
+# Half-Yearly View in TypeScript Scheduler
 
 The **Year view** of the Scheduler displays all 365 days of a year along with their associated appointments. This view can be customized using the following properties:
 

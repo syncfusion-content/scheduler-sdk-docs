@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Blazor Scheduler | Syncfusion
-description: Learn how to handle events in the Syncfusion Blazor Scheduler using ScheduleEvents to react to action, cell, popup, and event actions.
+description: Learn how to handle events in the Syncfusion Blazor Scheduler to react to action, cell, popup, and appointment actions.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

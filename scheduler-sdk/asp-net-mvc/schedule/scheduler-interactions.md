@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scheduler Interactions in ASP.NET MVC Scheduler
+# Interactions in ASP.NET MVC Scheduler
 
 The following table describes the Scheduler actions and also illustrates how those actions are carried out through mouse and touch interactions on Scheduler.
 

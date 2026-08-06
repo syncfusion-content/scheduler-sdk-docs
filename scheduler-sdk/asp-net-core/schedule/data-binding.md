@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to bind data to the Syncfusion ASP.NET Core Scheduler from local collections and remote REST services using DataManager and adaptors.
+description: Learn how to bind data to the Syncfusion ASP.NET Core Scheduler from local collections and remote REST services for flexible data loading.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

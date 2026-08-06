@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Open Editor Window Manually in Vue Scheduler | Syncfusion
-description: Learn how to open the event editor manually in the Syncfusion Vue Scheduler using the openEditor public method on cell or event click.
+description: Learn how to open the event editor manually in the Syncfusion Vue Scheduler on cell or event click, including on a single click.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Open Editor Window Manually in Vue Scheduler
+# Open Editor Window Programmatically in Vue Scheduler
 
 ## Open Editor Window Externally
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timezone in React Scheduler | Syncfusion
-description: Learn how to render appointments in different time zones in the Syncfusion React Scheduler using Timezone, StartTimezone, and EndTimezone.
+description: Learn how to render appointments in different time zones in the Syncfusion React Scheduler for global users and cross-region scheduling.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

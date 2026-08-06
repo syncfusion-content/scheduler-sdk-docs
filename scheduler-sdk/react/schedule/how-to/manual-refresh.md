@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manually Refresh Layout in React Scheduler | Syncfusion
-description: Learn how to manually refresh the layout in the Syncfusion React Scheduler using the refreshLayout public method without re-rendering the DOM.
+description: Learn how to manually refresh specific templates and the overall layout in the Syncfusion React Scheduler without re-rendering the entire component.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

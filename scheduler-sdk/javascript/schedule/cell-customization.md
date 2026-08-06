@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Customization in JavaScript Scheduler | Syncfusion
-description: Learn how to customize work cells in the Syncfusion JavaScript Scheduler using the cellTemplate property and the renderCell event.
+description: Learn how to customize work cells in the Syncfusion JavaScript Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

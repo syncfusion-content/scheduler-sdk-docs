@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timezone in Vue Scheduler | Syncfusion
-description: Learn how to render appointments in different time zones in the Syncfusion Vue Scheduler using timezone, startTimezone, and endTimezone.
+description: Learn how to render appointments in different time zones in the Syncfusion Vue Scheduler for global users and cross-region scheduling.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

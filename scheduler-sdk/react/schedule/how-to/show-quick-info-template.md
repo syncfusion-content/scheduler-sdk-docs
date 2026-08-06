@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Show Quick Info Template in React Scheduler
+# Quick Info Template in React Scheduler
 
 This demo showcases the quick popups for cells and appointments using customized templates.
 

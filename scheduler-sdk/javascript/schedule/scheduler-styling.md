@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler Styling in JavaScript Scheduler
+# Style and Appearance in JavaScript Scheduler
 
 To modify the Scheduler appearance, the default CSS of the Scheduler must be overridden. There is also an option to create a custom theme using the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes used in the Scheduler.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in JavaScript Scheduler | Syncfusion
-description: Learn how to bind data to the Syncfusion JavaScript Scheduler from local JavaScript arrays and remote REST services using DataManager.
+description: Learn how to bind data to the Syncfusion JavaScript Scheduler from local JavaScript arrays and remote REST services for flexible data loading.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

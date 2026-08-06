@@ -8,7 +8,7 @@ publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Show Quick Info Template in ASP.NET Core Scheduler
+# Quick Info Template in ASP.NET Core Scheduler
 
 This demo showcases the quick popups for cells and appointments with the customized templates.
 

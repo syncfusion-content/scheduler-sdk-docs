@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Show Half-Yearly View in Vue Scheduler | Syncfusion
-description: Learn how to show a half-yearly view in the Syncfusion Vue Scheduler by configuring FirstMonthOfYear and MonthsCount in the year view.
+description: Learn how to show a half-yearly view in the Syncfusion Vue Scheduler by customizing the year view to render a specific range of consecutive months.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Show Half-Yearly View in Vue Scheduler
+# Half-Yearly View in Vue Scheduler
 
 The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Date Navigation in React Scheduler | Syncfusion
-description: Learn how to prevent date navigation in the Syncfusion React Scheduler by removing the e-navigate class in the renderCell event.
+description: Learn how to prevent date navigation in the Syncfusion React Scheduler to lock the view on a specific date or range.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

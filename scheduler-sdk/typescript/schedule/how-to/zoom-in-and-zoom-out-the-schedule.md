@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zoom In and Zoom Out in TypeScript Scheduler | Syncfusion
-description: Learn how to zoom in and zoom out in the Syncfusion TypeScript Scheduler by customizing the timeScale and headerRows properties.
+description: Learn how to zoom in and zoom out in the Syncfusion TypeScript Scheduler to give users a flexible view of appointments.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk

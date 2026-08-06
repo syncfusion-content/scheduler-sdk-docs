@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Different Working Hours on Different Days in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to set different work hours for specific days in the Syncfusion ASP.NET Core Scheduler using the setWorkHours public method.
+description: Learn how to set different work hours for specific days in the Syncfusion ASP.NET Core Scheduler to match varied team schedules.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
