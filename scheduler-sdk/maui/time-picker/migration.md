@@ -1,7 +1,7 @@
 ---
 layout: post
 platform: scheduler-sdk
-title: Migrate from Xamarin SfTimePicker to .NET MAUI TimePicker | Syncfusion®
+title: Migrate from Xamarin TimePicker to .NET MAUI TimePicker | Syncfusion®
 description: Migrate from Xamarin SfTimePicker to .NET MAUI Time Picker with API mapping and guidance on renamed properties.
 control: SfTimePicker
 documentation: ug
