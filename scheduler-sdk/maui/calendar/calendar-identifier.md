@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calendar Identifier in .NET MAUI Calendar Control | Syncfusion<sup>&reg;</sup>
-description: Learn here all about the Calendar identifier in the Syncfusion<sup>&reg;</sup> .NET MAUI Calendar (SfCalendar) control and more details.
 platform: scheduler-sdk
+title: Calendar Identifier in .NET MAUI Calendar control | Syncfusion®
+description: Learn about calendar identifier in Syncfusion® .NET MAUI Calendar control to display different calendar types based on cultures.
 control: SfCalendar
 documentation: ug
 ---
 
-# Calendar identifier in .NET MAUI Calendar (SfCalendar)
+# Calendar Identifier in .NET MAUI Calendar control
 The [.NET MAUI Calendar](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Calendar.SfCalendar.html) supports Calendar Identifier to display the different types of calendars based on various cultures and regions. The supported identifiers are Gregorian, Hijri, Korean, Persian, Taiwan, ThaiBuddhist, and UmAlQura. Change the calendar identifier using the [Identifier](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Calendar.SfCalendar.html#Syncfusion_Maui_Calendar_SfCalendar_Identifier) property in the SfCalendar.
 
 <table>
