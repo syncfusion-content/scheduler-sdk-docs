@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Display Multiple Colors in Single Event in Vue Scheduler
+# Multi-Color events in Vue Scheduler
 
 In the Vue Schedule component, multiple colors can be displayed within a single event by using the [`eventTemplate`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#eventtemplate) option available in the views model. This customization is achieved by defining an additional field, such as `SubCount`, in the event data. The `SubCount` field contains background color and height values, and the event is visually divided into segments based on these values.
 

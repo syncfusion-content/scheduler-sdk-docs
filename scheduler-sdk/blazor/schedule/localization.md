@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Globalization in Blazor Scheduler
+# Globalization and Localization in Blazor Scheduler
 
 [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component can be localized. Refer to [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) topic to localize Blazor components.
 

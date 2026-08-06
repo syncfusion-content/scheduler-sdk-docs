@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Show Half-Yearly View in React Scheduler
+# Half-Yearly View in React Scheduler
 
 The year view of the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) displays all 365 days and their appointments for a given year. You can customize this view by using the following properties:
 

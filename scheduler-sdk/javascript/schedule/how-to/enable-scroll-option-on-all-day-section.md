@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Enable Scroll in All-Day Section in JavaScript Scheduler
+# Enable Scrolling in the All-Day Section of the JavaScript Scheduler
 
 When the all-day row contains a large number of appointments, viewing all of them can become difficult due to limited space. To address this, enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/documentation/api/schedule#enablealldayscroll) property to `true` (default value is `false`).
 

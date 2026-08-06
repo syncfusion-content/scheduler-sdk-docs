@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in React Scheduler | Syncfusion
+title: Localization in React Scheduler | Syncfusion
 description: Learn how to localize the Syncfusion React Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 control: Scheduler
 platform: scheduler-sdk
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Globalization in React Scheduler
+# Globalization and Localization in React Scheduler
 
 The Scheduler supports multiple date-time formats and cultures, enabling global usage and meeting diverse regional requirements.
 

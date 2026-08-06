@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in Vue Scheduler | Syncfusion
+title: Localization in Vue Scheduler | Syncfusion
 description: Learn how to localize the Syncfusion Vue Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 control: Scheduler
 platform: scheduler-sdk
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Globalization in Vue Scheduler
+# Globalization and Localization in Vue Scheduler
 
 The Vue Schedule component supports globalization and localization features that allow it to adapt to different cultures, languages, date formats, and time formats. These capabilities enable applications to deliver a consistent and region‑specific scheduling experience for users across the globe.
 

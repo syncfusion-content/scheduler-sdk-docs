@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# About Syncfusion ASP.NET MVC Scheduler Component.
+# Overview
 
 The **Scheduler** component is an event calendar which facilitates user with the common Outlook-calendar features, thus allowing the users to plan and manage their events/appointments and its time in an efficient way.
 

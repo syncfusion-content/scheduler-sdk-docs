@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Display Multiple Colors in Single Event in Angular Scheduler | Syncfusion
-description: Learn how to render a single appointment with multiple colors in the Syncfusion Angular Scheduler using a custom event template.
+description: Learn how to render a single appointment with multiple colors in the Syncfusion Angular Scheduler.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Display Multiple Colors in Single Event in Angular Scheduler
+# Multi-Color events in Angular Scheduler
 
 In [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) we can display the multiple colors within a single event. This can be achieved by using the `template` option available within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property. Here, we've used `SubCount` as an additional field. The SubCount field contains the background color and height values. Based on these values, events will be divided into different colors.
 
