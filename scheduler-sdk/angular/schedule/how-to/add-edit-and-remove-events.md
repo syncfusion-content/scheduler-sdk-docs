@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform CRUD Actions Dynamically in Angular Scheduler | Syncfusion
-description: Learn how to add, edit, and remove events dynamically in the Syncfusion Angular Scheduler using addEvent, saveEvent, and deleteEvent methods.
+title: Add edit and remove events in Angular Scheduler | Syncfusion
+description: Learn here all about Add edit and remove events in Angular Scheduler component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
