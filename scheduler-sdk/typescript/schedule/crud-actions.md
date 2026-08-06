@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Crud actions in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Crud actions in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: CRUD Operations in TypeScript Scheduler | Syncfusion
+description: Learn how to add, edit, and delete appointments in the Syncfusion TypeScript Scheduler using the editor window and drag actions.
 platform: scheduler-sdk
-control: Crud actions 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# CRUD operations in TypeScript Scheduler control
+# CRUD Operations in TypeScript Scheduler
 
 Appointments are the core elements of the Scheduler component, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using editor window or through the drag and resize action.
 

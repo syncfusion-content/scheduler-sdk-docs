@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calendar mode in Angular Schedule component | Syncfusion
-description: Learn here all about Calendar mode in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in Angular Scheduler | Syncfusion
+description: Learn how to render the Syncfusion Angular Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: scheduler-sdk
-control: scheduler
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Calendar mode in Angular Schedule component
+# Calendar Mode in Angular Scheduler
 
 The Scheduler supports two types of calendar modes:
 

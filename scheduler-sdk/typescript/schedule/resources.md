@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Resources in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Resources in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Resources in TypeScript Scheduler | Syncfusion
+description: Learn how to assign and group resources in the Syncfusion TypeScript Scheduler with multi-level grouping and timeline resource views.
 platform: scheduler-sdk
-control: Resources 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Resources in TypeScript Scheduler control
+# Resources in TypeScript Scheduler
 
 Resources and grouping support allows the Scheduler to be shared by multiple resources. Appointments for each resource display under the relevant resource in a column or row layout. Each resource in the Scheduler is arranged in column-wise or row-wise order, with individual spacing to display all respective appointments on a single page. The Scheduler supports both single and multiple levels of resource grouping, enabling the categorization of resources in a hierarchical structure. Resources appear either as expandable groups in Timeline views or as a vertical hierarchy in Calendar views.
 

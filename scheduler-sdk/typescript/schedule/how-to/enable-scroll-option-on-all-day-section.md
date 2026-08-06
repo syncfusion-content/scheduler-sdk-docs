@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Enable all-day section scroll in TypeScript Scheduler | Syncfusion
-description: Learn here all about Enable scroll option on all day section in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Enable Scroll in All-Day Section in TypeScript Scheduler | Syncfusion
+description: Learn how to enable a scroll option on the all-day section in the Syncfusion TypeScript Scheduler when many appointments overflow the row.
 platform: scheduler-sdk
-control: Scheduler 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Enable scroll in all-day section | TypeScript Scheduler
+# Enable Scroll Option on All-Day Section in TypeScript Scheduler
 
 When the all-day row contains a large number of appointments, viewing all of them can become difficult due to limited space. To address this, enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/documentation/api/schedule#enablealldayscroll) property to `true` (default value is `false`).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell customization in Angular Schedule component | Syncfusion
-description: Learn here all about Cell customization in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Cell Customization in Angular Scheduler | Syncfusion
+description: Learn how to customize work cells in the Syncfusion Angular Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Cell customization in Angular Schedule component
+# Cell Customization in Angular Scheduler
 
 The cells of the Scheduler can be customized using a template or the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#rendercell) event.
 

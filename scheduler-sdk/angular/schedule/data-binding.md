@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Schedule | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Scheduler | Syncfusion
+description: Learn how to bind data to the Syncfusion Angular Scheduler from local collections and remote REST services for flexible data loading.
 platform: scheduler-sdk
-control: scheduler
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Data binding in Angular Schedule component
+# Data Binding in Angular Scheduler
 
 The Scheduler utilizes the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) property of Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. Scheduler supports the following data binding methods:
 

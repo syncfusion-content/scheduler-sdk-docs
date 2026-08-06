@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Header Rows in ASP.NET Core Schedule Component | Syncfusion
-description: Learn here all about Header Rows in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Timeline Header Rows in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to add additional header rows in timeline views of the Syncfusion ASP.NET Core Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
-control: Header Rows
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Timeline header rows
+# Timeline Header Rows in ASP.NET Core Scheduler
 
 The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property. This property is applicable only on the timeline views. The possible rows which can be added using `headerRows` property are as follows.
 

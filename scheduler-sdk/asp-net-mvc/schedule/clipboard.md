@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard in ASP.NET MVC Schedule Component| Syncfusion
-description: Learn here all about Clipboard in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Clipboard in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion ASP.NET MVC Scheduler with built-in clipboard support and keyboard shortcuts.
 platform: scheduler-sdk
-control: Clipboard
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Clipboard in ASP.NET MVC Schedule component
+# Clipboard in ASP.NET MVC Scheduler
 
 The Clipboard functionality in the Syncfusion Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
 To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowClipboard) property to **true**.

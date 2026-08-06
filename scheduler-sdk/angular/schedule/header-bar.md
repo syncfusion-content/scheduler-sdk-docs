@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header bar in Angular Schedule component | Syncfusion
-description: Learn here all about Header bar in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Header Customization in Angular Scheduler | Syncfusion
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion Angular Scheduler.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Customize header bar in Angular Schedule
+# Header Customization in Angular Scheduler
 
 The header part of Scheduler can be customized easily with the built-in options available.
 

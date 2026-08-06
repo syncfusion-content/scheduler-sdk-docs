@@ -1,15 +1,15 @@
 ---
 layout: post
-title: JavaScript Scheduler FAQs | Syncfusion
-description: Find solutions to common questions and issues encountered while using the Syncfusion JavaScript Scheduler control (Essential JS 2).
+title: Frequently Asked Questions in JavaScript Scheduler | Syncfusion
+description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion JavaScript Scheduler control.
 platform: scheduler-sdk
-control: Frequently asked questions 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Frequently asked questions in JavaScript Scheduler control
+# Frequently Asked Questions in JavaScript Scheduler
 
 This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control.
 

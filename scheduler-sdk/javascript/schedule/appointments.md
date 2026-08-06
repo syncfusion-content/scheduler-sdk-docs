@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appointments in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Appointments in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Appointments in JavaScript Scheduler | Syncfusion
+description: Learn how to create and manage appointments in the Syncfusion JavaScript Scheduler, including normal, all-day, spanned, and recurring events.
 platform: scheduler-sdk
-control: Appointments 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Appointments in JavaScript Scheduler control
+# Appointments in JavaScript Scheduler
 
 Appointments in the Scheduler represent events scheduled for specific time periods. Each appointment can be configured for various time ranges and categorized based on its duration and recurrence pattern. The Scheduler supports the following appointment types:
 

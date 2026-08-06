@@ -1,12 +1,12 @@
 ---
 layout: post
-title: PostgreSQL Data Binding in Blazor Scheduler Component | Syncfusion
-description: Learn about consuming data from PostgreSQL Server and binding it to Blazor Scheduler Component, and performing CRUD operations.
+title: PostgreSQL Data Binding in Blazor Scheduler | Syncfusion
+description: Learn how to bind the Syncfusion Blazor Scheduler to a PostgreSQL database for typed queries and CRUD operations.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
-# Connecting PostgreSQL to Blazor Scheduler Using Entity Framework
+# PostgreSQL Data Binding in Blazor Scheduler
 
 The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from a PostgreSQL database using Entity Framework Core (EF Core). This modern approach provides a more maintainable and type-safe alternative to raw SQL queries for managing appointments and calendar events.
 

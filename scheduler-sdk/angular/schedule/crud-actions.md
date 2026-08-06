@@ -1,14 +1,14 @@
 ---
 layout: post
-title: CRUD actions in Angular Schedule component | Syncfusion
-description: Learn here all about CRUD actions in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: CRUD Actions in Angular Scheduler | Syncfusion
+description: Learn how to add, edit, and delete appointments in the Syncfusion Angular Scheduler using the editor window and drag-and-resize actions.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# CRUD actions in Angular Schedule component
+# CRUD Actions in Angular Scheduler
 
 Appointments, also known as events, are central to the Scheduler component, allowing users to manage and interact with scheduling data. These appointments can be added, edited, or deleted through the editor window, drag and drop, or resize actions.
 

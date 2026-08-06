@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Recurrence editor in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Recurrence editor in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Recurrence Editor in JavaScript Scheduler | Syncfusion
+description: Learn how to use the Recurrence Editor in the Syncfusion JavaScript Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: scheduler-sdk
-control: Recurrence editor 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Recurrence editor in JavaScript Scheduler control
+# Recurrence Editor in JavaScript Scheduler
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Tt can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 

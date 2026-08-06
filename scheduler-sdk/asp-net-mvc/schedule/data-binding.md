@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC Schedule Component| Syncfusion
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to bind data to the Syncfusion ASP.NET MVC Scheduler from local collections and remote REST services for flexible data loading.
 platform: scheduler-sdk
-control: Data Binding
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Data-binding in ASP.NET MVC Schedule Component
+# Data Binding in ASP.NET MVC Scheduler
 
 The Scheduler uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of data binding method:
 

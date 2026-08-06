@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in React Schedule component | Syncfusion
-description: Learn here all about Localization in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
+title: Localization in React Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion React Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
+control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Localization in React Scheduler
+# Globalization and Localization in React Scheduler
 
 The Scheduler supports multiple date-time formats and cultures, enabling global usage and meeting diverse regional requirements.
 

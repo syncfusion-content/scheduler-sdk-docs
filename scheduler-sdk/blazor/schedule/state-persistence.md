@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State Persistence in Blazor Scheduler Component | Syncfusion®
-description: This section shows the way to maintain and retain the Blazor scheduler component states even after refreshing the page.
+title: State Persistence in Blazor Scheduler | Syncfusion
+description: Learn how to enable state persistence in the Syncfusion Blazor Scheduler to retain current view, selected date, and scroll position.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# State Persistence in Blazor Scheduler Component
+# State Persistence in Blazor Scheduler
 
 State persistence allowed Scheduler to retain the [CurrentView](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CurrentView), [SelectedDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SelectedDate) and Scroll position values in the [localStorage](https://www.w3schools.com/html/html5_webstorage.asp) for state maintenance even if the browser is refreshed or if you move to the next page within the browser. This action is handled through the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnablePersistence) property which is set to false by default. When it is set to true, `CurrentView`, `SelectedDate` and Scroll position values of the scheduler component will be retained even after refreshing the page.
 

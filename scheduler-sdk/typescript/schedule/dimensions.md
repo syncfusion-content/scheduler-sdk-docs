@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dimensions in TypeScript Scheduler Control | Syncfusion
-description: Learn here all about dimensions in Syncfusion TypeScript Scheduler control, its elements and more.
+title: Dimensions in TypeScript Scheduler | Syncfusion
+description: Learn how to set the height and width of the Syncfusion TypeScript Scheduler using pixel, percentage, or auto values for responsive layouts.
 platform: scheduler-sdk
-control: Dimensions 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Dimensions in TypeScript Scheduler Control
+# Dimensions in TypeScript Scheduler
 
 The Scheduler dimensions refer to both the height and width of the entire layout. It accepts the following three types of values:
 

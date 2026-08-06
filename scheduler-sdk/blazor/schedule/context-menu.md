@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in Blazor Scheduler Component | Syncfusion®
-description: Learn here all about how to integrate the context menu manually to a Blazor Scheduler component and use it with required options.
+title: Context Menu in Blazor Scheduler | Syncfusion
+description: Learn how to integrate the Context Menu in the Syncfusion Blazor Scheduler to perform actions on cells, resource cells, and appointments.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Context Menu in Blazor Scheduler Component
+# Context Menu in Blazor Scheduler
 
 The context menu can be displayed on work cells, resource cells and appointments of Scheduler by making use of the [`ContextMenu`](https://blazor.syncfusion.com/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler` and the target element is got by using [GetElementInfoAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetElementInfoAsync_System_Int32_System_Int32_) public method in Blazor.
 

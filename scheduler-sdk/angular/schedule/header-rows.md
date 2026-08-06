@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header rows in Angular Schedule component | Syncfusion
-description: Learn here all about Header rows in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Timeline Header Rows in Angular Scheduler | Syncfusion
+description: Learn how to add additional header rows in timeline views of the Syncfusion Angular Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Header rows in Angular Schedule component
+# Timeline Header Rows in Angular Scheduler
 
 The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#headerrows) property. This property is applicable only on the Timeline views. The possible rows which can be added using `headerRows` property are as follows.
 

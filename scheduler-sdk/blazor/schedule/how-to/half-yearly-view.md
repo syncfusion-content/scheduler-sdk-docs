@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Show half-yearly view in Blazor Scheduler Component | Syncfusion®
-description: Learn how to show half-yearly view in Blazor Scheduler component and limit number of months and customization in year view.
+title: Show Half-Yearly View in Blazor Scheduler | Syncfusion
+description: Learn how to show a half-yearly view in the Syncfusion Blazor Scheduler by customizing the year view to render a specific range of consecutive months.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Show half-yearly view in Blazor Scheduler Component
+# Half-Yearly View in Blazor Scheduler
 
 The year view of the scheduler displays all the 365 days and their related appointments of a particular year. The year view can be customized by using the following properties.
 

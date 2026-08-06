@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting in Angular Schedule component | Syncfusion
-description: Learn here all about Exporting in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Exporting in Angular Scheduler | Syncfusion
+description: Learn how to export and import events in the Syncfusion Angular Scheduler to Excel and ICS files, and print appointments with custom options.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Exporting in Angular Schedule component
+# Exporting in Angular Scheduler
 
 The Scheduler supports exporting appointments to Excel and ICS files on the client side. It offers client-side methods to export appointments in either Excel or iCal format. Explore how to implement exporting in the Scheduler.
 

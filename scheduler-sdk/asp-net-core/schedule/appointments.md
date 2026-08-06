@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Appointments in ASP.NET Core Syncfusion Schedule Component
-description: Learn here all about Appointments in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Appointments in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to create and manage appointments in the Syncfusion ASP.NET Core Scheduler, including normal, all-day, spanned, and recurring events.
 platform: scheduler-sdk
-control: Appointments
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Appointments in ASP.NET Core Schedule Component
+# Appointments in ASP.NET Core Scheduler
 
 Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 

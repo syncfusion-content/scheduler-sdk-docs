@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add edit and remove events in JavaScript Scheduler | Syncfusion
-description: Learn here all about Add edit and remove events in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Add, Edit, and Remove Events in JavaScript Scheduler | Syncfusion
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion JavaScript Scheduler.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Add, edit, and remove events in JavaScript Scheduler control
+# Add, Edit, and Remove Events in JavaScript Scheduler
 
 You can manually perform CRUD (Create, Read, Update, Delete) operations on appointments in the Scheduler by using the following methods:
 

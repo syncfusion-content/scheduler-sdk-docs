@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Scheduler Styling in ASP.NET MVC Schedule Component
-description: Learn here all about Scheduler Styling in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to style the Syncfusion ASP.NET MVC Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
-control: Scheduler Styling
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Styling and appearance
+# Style and Appearance in ASP.NET MVC Scheduler
 
 To modify the Scheduler appearance, you need to override the default CSS of Scheduler. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Scheduler.
 
