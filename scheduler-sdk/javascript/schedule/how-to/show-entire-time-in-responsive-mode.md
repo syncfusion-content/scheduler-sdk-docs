@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show Entire Time in Responsive Mode in JavaScript Scheduler | Syncfusion
+title: Entire Time in Responsive Mode in JavaScript Scheduler | Syncfusion
 description: Learn how to show the entire time label in responsive mode in the Syncfusion JavaScript Scheduler by customizing the time slot display.
 platform: scheduler-sdk
 control: Scheduler

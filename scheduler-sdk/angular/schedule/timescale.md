@@ -38,7 +38,7 @@ The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/t
 
 ## Customizing time cells using template
 
-The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/) property provides template options for custom rendering:
+The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale) property provides template options for custom rendering:
 
 * [`majorSlotTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#majorslottemplate) - The template option to be applied for major time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
 * [`minorSlotTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#minorslottemplate) - The template option to be applied for minor time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.

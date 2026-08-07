@@ -54,7 +54,7 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 When a timezone is set to Scheduler through [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone)  property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In core application, client timezone will be added by default. In order to render the appointments in the timezone which has been set to the scheduler, add the following code snippet in your `Startup.cs` file like below.
 
 {% tabs %}
-{% highlight c# tabtitle=".NET 2.2"%}
+{% highlight c# tabtitle=".NET 2.2" %}
 
 public void ConfigureServices(IServiceCollection services) {
     services.AddDbContext<ScheduleDataContext>(options =>

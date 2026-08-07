@@ -223,4 +223,4 @@ N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspn
 
 ## See Also
 
-* [How to change first day of the week in the Scheduler](./working-days/#setting-start-day-of-the-week)
+* [How to change first day of the week in the Scheduler](./working-days#setting-start-day-of-the-week)
