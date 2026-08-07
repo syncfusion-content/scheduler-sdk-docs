@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF DateTimePicker | Syncfusion
-description: Learn about appearance customization and styling options in WPF DateTimePicker control easily.
+description: Learn about appearance customization and styling options in the Syncfusion WPF DateTimePicker control, including themes and visual settings.
 platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug

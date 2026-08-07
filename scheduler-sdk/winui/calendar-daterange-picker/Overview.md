@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion WinUI Calendar DateRange Picker Control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio WinUI Calendar DateRange Picker control, its key features, date range selection functionality, and more details.
+description: Learn about the Syncfusion Essential Studio WinUI Calendar DateRange Picker control, including its features, date range selection, and customization options.
 platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
