@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enable scroller on all-day section in Blazor Scheduler | Syncfusion®
-description: Learn here all about how to enable scroll option on all-day section in Blazor Scheduler component when you have more number of appointments in a day.
+title: Enable Scroll Option on All-Day Section in Blazor Scheduler | Syncfusion
+description: Learn how to enable the scroll option on the all-day section in the Syncfusion Blazor Scheduler when many appointments overflow the row height.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Enable scroll option on all-day section in Blazor Scheduler Component
+# Enable Scroll Option on All-Day Section in Blazor Scheduler
 
 When there are larger number of appointments in all-day row, it is difficult to view all the appointments properly. In that case you can enable scroller option for all-day row by setting true to `EnableAllDayScroll` whereas its default value is false. When setting this property to true, individual scroller for all-day row is enabled when it reaches its maximum height on expanding.
 

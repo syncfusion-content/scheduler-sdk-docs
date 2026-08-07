@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Resources in ASP.NET Core Schedule Component | Syncfusion
-description: Learn here all about Resources in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Resources and Grouping in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to assign and group resources in the Syncfusion ASP.NET Core Scheduler with multi-level grouping, resource fields, and timeline views.
 platform: scheduler-sdk
-control: Resources
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Multiple resources and grouping
+# Resources and Grouping in ASP.NET Core Scheduler
 
 Resources and grouping support allows the Scheduler to be shared by multiple resources. Also, the appointments of each resources are displayed under relevant resources. Each resource in the Scheduler is arranged in a column/row wise order, with individual spacing to display all its respective appointments on a single page. It also supports the multiple levels of grouping of resources, thus enabling the categorization of resources in a hierarchical structure and shows it either in expandable groups (Timeline views) or else vertical hierarchy one after the other (Calendar views).
 

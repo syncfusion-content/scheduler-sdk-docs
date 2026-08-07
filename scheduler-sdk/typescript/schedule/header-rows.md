@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Header rows in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Header rows in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Header Rows in TypeScript Scheduler | Syncfusion
+description: Learn how to add additional header rows in timeline views of the Syncfusion TypeScript Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
-control: Header rows 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Header rows in TypeScript Scheduler control
+# Header Rows in TypeScript Scheduler
 
 The Timeline views support additional header rows other than its default date and time header rows. To show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property. This property is applicable only on the timeline views. The possible rows which can be added using [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property are as follows.
 

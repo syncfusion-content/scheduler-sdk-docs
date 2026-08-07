@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zoom in and zoom out in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Zoom in and zoom out in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Zoom In and Zoom Out in JavaScript Scheduler | Syncfusion
+description: Learn how to zoom in and zoom out in the Syncfusion JavaScript Scheduler to give users a flexible view of appointments.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Zoom in and zoom out in JavaScript Scheduler control
+# Zoom In and Zoom Out in JavaScript Scheduler
 
 By default, the Scheduler component does not provide built-in zoom in or zoom out support. However, this functionality can be achieved by customizing the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) properties.  
 

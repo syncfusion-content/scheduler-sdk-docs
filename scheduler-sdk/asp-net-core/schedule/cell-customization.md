@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Cell Customization in ASP.NET Core Schedule Component| Syncfusion
-description: Learn here all about Cell Customization in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Cell Customization in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to customize work cells in the Syncfusion ASP.NET Core Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
-control: Cell Customization
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Cell Customization in ASP.NET Core Schedule Component
+# Cell Customization in ASP.NET Core Scheduler
 
 The cells of the Scheduler can be easily customized either using the cell template or [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 

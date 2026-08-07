@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Half yearly view in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Half yearly view in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Show Half-Yearly View in JavaScript Scheduler | Syncfusion
+description: Learn how to show a half-yearly view in the Syncfusion JavaScript Scheduler by customizing the year view to render a specific range of consecutive months.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Half-yearly view in JavaScript Scheduler control
+# Half-Yearly View in JavaScript Scheduler
 
 The **Year view** of the Scheduler displays all 365 days of a year along with their associated appointments. This view can be customized using the following properties:
 

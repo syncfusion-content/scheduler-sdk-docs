@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Header bar in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Header bar in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Header Bar in JavaScript Scheduler | Syncfusion
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion JavaScript Scheduler.
 platform: scheduler-sdk
-control: Header bar 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Header bar in JavaScript Scheduler control
+# Header Bar in JavaScript Scheduler
 
 The header part of Scheduler can be customized easily with the built-in options available.
 

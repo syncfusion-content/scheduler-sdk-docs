@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Dimensions in ASP.NET MVC Schedule Component
-description: Learn here all about Dimensions in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Scheduler Dimensions in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to set the height and width of the Syncfusion ASP.NET MVC Scheduler using pixel, percentage, or auto values for responsive layouts.
 platform: scheduler-sdk
-control: Dimensions
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Scheduler dimensions
+# Dimensions in ASP.NET MVC Scheduler
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 

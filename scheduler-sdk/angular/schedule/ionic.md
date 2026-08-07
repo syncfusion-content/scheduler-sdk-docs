@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Integrating Ionic-Angular with Scheduler | Syncfusion
-description: Learn how to create an Ionic Angular application and integrate the Syncfusion Schedule component for a modern, responsive mobile interface.
+title: Integrating Ionic with Angular Scheduler | Syncfusion
+description: Learn how to create an Ionic Angular application and integrate the Syncfusion Angular Scheduler for a modern, responsive mobile interface.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Getting Started with Ionic and Angular with Syncfusion Scheduler
+# Integrating Ionic with Angular Scheduler
+
 This guide provides a step-by-step walkthrough for creating an Angular application with the [Ionic Framework](https://ionicframework.com), featuring integration of Angular UI components for modern, responsive interfaces.
 
 ## Prerequisites

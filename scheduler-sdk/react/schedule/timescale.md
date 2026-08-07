@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timescale in React Schedule component | Syncfusion
-description: Learn here all about Timescale in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
+title: Timescale Customization in React Scheduler | Syncfusion
+description: Learn how to customize the time slots in the Syncfusion React Scheduler to set the duration, interval, and slot count per row.
+control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Timescale in React Schedule component
+# Timescale Customization in React Scheduler
 
 Time slots are the cells displayed in the Day, Week, and Work Week views of the Scheduler (in vertical views on the leftmost position and in timeline views at the top). The [`timeScale`](https://ej2.syncfusion.com/react/documentation/api/schedule#timescale) property lets you control the duration of these slots. It includes these sub-options:
 

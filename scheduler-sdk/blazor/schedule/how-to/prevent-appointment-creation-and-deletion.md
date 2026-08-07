@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Prevent EventCreation and Deletion in Blazor Scheduler | Syncfusion®
-description: Learn here all about preventing specific CRUD actions instead of setting read only in Blazor Scheduler component and more.
+title: Prevent Appointment Creation and Deletion in Blazor Scheduler | Syncfusion
+description: Learn how to prevent specific CRUD actions in the Syncfusion Blazor Scheduler to lock down appointment changes.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Prevent Event Creation and Deletion in Blazor Scheduler Component
+# Prevent Appointment Creation and Deletion in Blazor Scheduler
 
 By default, Scheduler allows the user to perform all the CRUD actions. The particular action can be prevented by setting `false` to the respective property. In the following code example, only edit actions are allowed as `AllowAdding` and `AllowDeleting` properties are set to `false`.
 

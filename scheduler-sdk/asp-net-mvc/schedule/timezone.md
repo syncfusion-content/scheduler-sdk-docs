@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Timezone in ASP.NET MVC Schedule Component | Syncfusion
-description: Learn here all about Timezone in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Timezone in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to render appointments in different time zones in the Syncfusion ASP.NET MVC Scheduler for global users and cross-region scheduling.
 platform: scheduler-sdk
-control: Timezone
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Timezone Customization
+# Timezone in ASP.NET MVC Scheduler
 
 The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`Timezone`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties [`StartTimezone`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`EndTimezone`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) which can be defined as separate fields within the event fields collection.
 

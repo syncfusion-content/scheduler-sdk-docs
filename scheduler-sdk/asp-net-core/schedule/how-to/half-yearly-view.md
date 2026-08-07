@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Half Yearly View in ASP.NET Core Schedule Component
-description: Learn here all about Half Yearly View in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Show Half-Yearly View in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to show a half-yearly view in the Syncfusion ASP.NET Core Scheduler by customizing the year view to render a specific range of consecutive months.
 platform: scheduler-sdk
-control: Half Yearly View
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Half-yearly view
+# Half-Yearly View in ASP.NET Core Scheduler
 
 The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
 

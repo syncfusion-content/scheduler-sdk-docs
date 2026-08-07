@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quick info template in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Quick info template in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Quick Info Template in TypeScript Scheduler | Syncfusion
+description: Learn how to customize the Quick Info popup in the Syncfusion TypeScript Scheduler using a template to change its appearance and content.
 platform: scheduler-sdk
 control: Scheduler
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Quick Info template in TypeScript Scheduler control
+# Quick Info Template in TypeScript Scheduler
 
 The Scheduler control displays a pop-up window (Quick Info) when users click on cells or appointments. By default, this Quick Info shows standard information. You can customize its appearance and content using templates to better suit your application requirements.
 

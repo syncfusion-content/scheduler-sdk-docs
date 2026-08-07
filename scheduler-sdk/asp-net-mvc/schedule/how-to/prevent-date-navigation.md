@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent Date Navigation in ASP.NET MVC Schedule | Syncfusion
-description: Learn here all about Prevent Date Navigation in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Prevent Date Navigation in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion ASP.NET MVC Scheduler to lock the view on a specific date or range.
 platform: scheduler-sdk
-control: Prevent Date Navigation
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Prevent the Date Navigation
+# Prevent Date Navigation in ASP.NET MVC Scheduler
 
 We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event as shown in the following code example.
 

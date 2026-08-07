@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion TypeScript Scheduler FAQ
-description: Find solutions to common questions and issues encountered while using the Syncfusion TypeScript Scheduler control (Essential JS 2) with TypeScript.
+title: Frequently Asked Questions in TypeScript Scheduler | Syncfusion
+description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion TypeScript Scheduler control.
 platform: scheduler-sdk
-control: Frequently asked questions 
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Frequently asked questions in TypeScript Scheduler control
+# Frequently Asked Questions in TypeScript Scheduler
 
 This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control in TypeScript.
 

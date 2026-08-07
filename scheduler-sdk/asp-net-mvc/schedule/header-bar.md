@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Header Bar in ASP.NET MVC Schedule Component | Syncfusion
-description: Learn here all about Header Bar in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Header Customization in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion ASP.NET MVC Scheduler.
 platform: scheduler-sdk
-control: Header Bar
+control: Scheduler
 publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Header customization
+# Header Customization in ASP.NET MVC Scheduler
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
