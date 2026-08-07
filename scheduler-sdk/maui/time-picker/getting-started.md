@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Time Picker control | Syncfusion®
-description: Learn about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Time Picker (SfTimePicker) control and its basic features.
 platform: scheduler-sdk
+title: Getting Started with .NET MAUI Time Picker | Syncfusion®
+description: Learn how to get started with the Syncfusion<sup>&reg;</sup> .NET MAUI Time Picker control. Explore setup, features, examples, and customization options.
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting started with .NET MAUI Time Picker
+# Getting Started with .NET MAUI Time Picker
 
 This section explains how to add the [.NET MAUI Time Picker](https://www.syncfusion.com/maui-controls/maui-timepicker) control. It covers only the basic features needed to get started with the Syncfusion<sup>&reg;</sup> Time Picker. Follow the steps below to add a .NET MAUI Time Picker to your project.
 
@@ -160,4 +160,8 @@ this.Content = picker;
 
 ![Set header view in .NET MAUI Time Picker.](images/getting-started/maui-time-picker-set-header-view.png)
 
-You can download the TimePicker Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/dotnet-maui-timepicker-sample).
+## Verify installation
+
+Run `dotnet build` and confirm the project compiles without errors. If you see a `TypeInitializationException` referencing `SfTimePicker`, verify that both `Syncfusion.Maui.Picker` and `Syncfusion.Maui.Core` are installed and that `builder.ConfigureSyncfusionCore();` is called in `MauiProgram.cs`.
+
+You can download the Time Picker Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/dotnet-maui-timepicker-sample).
