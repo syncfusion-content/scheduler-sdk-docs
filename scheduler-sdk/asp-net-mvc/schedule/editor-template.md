@@ -108,7 +108,7 @@ It is possible to validate the required fields of the editor window from client-
 
 
 
-N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
+N> Applicable validation rules can be referred from [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) documentation.
 
 ### Add additional fields to the default editor
 
@@ -686,4 +686,4 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
