@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Navigations in WinUI Scheduler control | Syncfusion
-description: Learn here all about Date Navigations feature of Syncfusion WinUI Scheduler(SfScheduler) control and more.
+title: Date Navigations in WinUI Scheduler | Syncfusion
+description: Learn about date navigation features in WinUI Scheduler to navigate between dates with minimum and maximum date support.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Date Navigations in WinUI Scheduler (SfScheduler)
+# Date Navigations in WinUI Scheduler
 
 ## Range for visible dates
 
