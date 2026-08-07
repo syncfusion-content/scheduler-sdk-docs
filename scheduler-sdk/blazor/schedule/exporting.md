@@ -9,11 +9,11 @@ documentation: ug
 
 # Exporting in Blazor Scheduler
 
-The Scheduler supports exporting all its appointments both to an Excel or ICS extension file. It offers different methods to export its appointments in an Excel or iCal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
+Scheduler supports exporting all appointments to either Excel or ICS files. It also provides different methods for exporting appointments in Excel or iCal formats. Let's look at the ways to implement exporting in Scheduler.
 
 ## Excel Exporting
 
-The Scheduler allows to export all its events into an Excel format file by using the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method. By default, it exports all the default fields of Scheduler mapped through `<ScheduleEventSettings>` property.
+Scheduler allows you to export all events to an Excel file by using the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method. By default, it exports all default Scheduler fields mapped through the `<ScheduleEventSettings>` property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -62,7 +62,7 @@ The Scheduler allows to export all its events into an Excel format file by using
 
 ### Exporting with custom fields
 
-By default, Scheduler exports all the default event fields that are mapped to it through the `<ScheduleEventSettings>` property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `Fields` and pass it as argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method as shown in the following example. In the following code example, only 'Id', 'Subject', 'StartTime', 'EndTime' fields were exported.
+By default, Scheduler exports all default event fields mapped through the `<ScheduleEventSettings>` property. To limit the number of fields in the exported Excel file, you can export only the custom fields from the event data. To export only those custom fields, define the required `Fields` and pass them as an argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method, as shown in the following example. In the following code example, only the `Id`, `Subject`, `StartTime`, and `EndTime` fields are exported.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -107,7 +107,7 @@ By default, Scheduler exports all the default event fields that are mapped to it
 
 ### Exporting individual occurrences of a recurring series
 
-By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the [`IncludeOccurrences`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_IncludeOccurrences) option as `true` and pass it as argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method. By default, the [`IncludeOccurrences`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_IncludeOccurrences) option is set to `false`.
+By default, Scheduler exports recurring events as a single record by exporting only the parent record to the Excel file. If you want to export each individual occurrence of a recurring series appointment as separate records in an Excel file, set the [`IncludeOccurrences`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_IncludeOccurrences) option to `true` and pass it as an argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method. By default, the [`IncludeOccurrences`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_IncludeOccurrences) option is `false`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -150,9 +150,9 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 ### Exporting custom event data
 
-By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method as shown in this following example, through the [`CustomData`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_CustomData) option.
+By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific Scheduler events or a custom event collection, pass the custom data collection as a parameter to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method, as shown in the following example, by using the [`CustomData`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_CustomData) option.
 
-N> By default, the event data are taken from Scheduler dataSource.
+Note: By default, the event data is taken from the Scheduler data source.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -219,7 +219,7 @@ N> By default, the event data are taken from Scheduler dataSource.
 
 ### Customizing the column header texts with custom fields exporting
 
-You can change the field names of appointment in the column header when exporting using the [`FieldsInfo`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_FieldsInfo) option through the [`ExportFieldInfo`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportFieldInfo.html) class and pass it as an argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method as shown in the following code example.
+You can change the appointment field names in the column header during export by using the [`FieldsInfo`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_FieldsInfo) option with the [`ExportFieldInfo`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportFieldInfo.html) class and pass it as an argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method, as shown in the following code example.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -275,7 +275,7 @@ You can change the field names of appointment in the column header when exportin
 
 ### Export with custom file name
 
-By default, the Scheduler allows you to download the exported Excel file with a name `Schedule.xlsx`. It also provides an option to export the excel file with a custom file name, define the desired `FileName` and passing it as an argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method.
+By default, Scheduler downloads the exported Excel file as `Schedule.xlsx`. You can also export the Excel file with a custom file name by defining the desired `FileName` and passing it as an argument to the [`ExportToExcelAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToExcelAsync_Syncfusion_Blazor_Schedule_ExportOptions_) method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -323,7 +323,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 
 ### Excel file formats
 
-By default, the Scheduler exports event data to an excel file in the `.xlsx` format. You can also export the Scheduler data in either of the file type such as `.xlsx` or `csv` formats, by defining the [`ExportType`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_ExportType) option as either `csv` or `xlsx`. By default, the [`ExportType`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_ExportType) is set to `xlsx`.
+By default, Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export Scheduler data in either `.xlsx` or `csv` format by setting the [`ExportType`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_ExportType) option to `csv` or `xlsx`. By default, the [`ExportType`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_ExportType) is set to `xlsx`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -371,7 +371,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 ### Export with specific date format
 
-You can export the Scheduler data with specific date format, by defining the [`DateFormat`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_DateFormat) option which accepts the MSDN date format in string type. In the following code example, the scheduler appointments are exported in 24 hour date format.
+You can export Scheduler data with a specific date format by defining the [`DateFormat`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_DateFormat) option, which accepts an MSDN date format string. In the following code example, the Scheduler appointments are exported in 24-hour date format.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -419,19 +419,19 @@ You can export the Scheduler data with specific date format, by defining the [`D
 
 ![Excel Exporting with Date Format in Blazor Scheduler](images/blazor-scheduler-excel-date-format.webp)
 
-### How to customize the excel sheet on before exporting
+### How to customize the excel sheet before exporting
 
-Customizing an Excel sheet before export is made easy with the [`ExcelExport`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExcelExport) API. This API provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+Customizing an Excel sheet before export is straightforward with the [`ExcelExport`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExcelExport) API. This API gives you flexibility to tailor the exported data, format it to match specific needs, and include additional elements for better presentation.
 
 With the [`ExcelExport`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExcelExport) API, you can:
 
 - **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
 
-- **Customize headers and footers:** Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
+- **Customize headers and footers:** Personalize the Excel sheet by modifying the header and footer content to give you more control over the exported document.
 
-- **Cancel the export:** The API supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
+- **Cancel the export:** The API supports cancellation of the export process by setting the `cancel` property to `true`. This lets you prevent export based on specific conditions and gives you full control over the Excel export workflow.
 
-Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the [`ExcelExport`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExcelExport) API:
+Here is an example that adds a custom header and footer to an Excel sheet before exporting by using the [`ExcelExport`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExcelExport) API:
 
 ```cshtml
 @using Syncfusion.Blazor.Buttons
@@ -508,14 +508,14 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 
 ## Exporting calendar events as ICS file
 
-You can export the Scheduler events to a calendar (.ics) file format, and open it on any of the other default calendars such as Google or Outlook.
+You can export Scheduler events to a calendar (.ics) file and open it in other default calendars such as Google Calendar or Outlook.
 
-To get start quickly about exporting and importing calendar events  in our Scheduler, you can check on this video:
+To get started quickly with exporting and importing calendar events in Scheduler, you can watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=YMISOARH8tM-0"%}
 
-The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the [`ExportToICalendarAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToICalendarAsync_System_String_System_Collections_Generic_List__0__) public method.
+The following code example shows how Scheduler events are exported to a calendar (.ics) file by using the [`ExportToICalendarAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ExportToICalendarAsync_System_String_System_Collections_Generic_List__0__) public method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -562,7 +562,7 @@ The following code example shows how the Scheduler events are exported to a cale
 
 ### Exporting calendar with custom file name
 
-By default, the calendar is exported with a file name `Calendar.ics`. To change this file name on export, pass the custom string value as [`FileName`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_FileName) to the method argument so as to get the file downloaded with this provided name.
+By default, the calendar is exported with the file name `Calendar.ics`. To change the file name on export, pass a custom string value as [`FileName`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ExportOptions.html#Syncfusion_Blazor_Schedule_ExportOptions_FileName) to the method argument so the file is downloaded with that name.
 
 The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
@@ -611,7 +611,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 ## Importing events from other calendars
 
-The events from external calendars (ICS files) can be imported into Scheduler by using the [`ImportICalendarAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ImportICalendarAsync_System_String_) method. In the following code example events has been imported from an ICS file into Scheduler with the help of Uploader. In [`ImportICalendarAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ImportICalendarAsync_System_String_) public method, ics file is passed as string format.
+Events from external calendars (ICS files) can be imported into Scheduler by using the [`ImportICalendarAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ImportICalendarAsync_System_String_) method. In the following code example, events are imported from an ICS file into Scheduler with the help of Uploader. In the [`ImportICalendarAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ImportICalendarAsync_System_String_) public method, the ICS file is passed as a string.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -684,14 +684,14 @@ The events from external calendars (ICS files) can be imported into Scheduler by
 
 ## How to print the Scheduler element
 
-The Scheduler allows to print the Scheduler element by using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method. The Print method works in two ways.
+Scheduler allows you to print the Scheduler element by using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method. The print method works in two ways.
 
 * Using Print method without options.
 * Using a Print method with options.
 
 ### Using PrintAsync method without options
 
-You can print the Schedule element with the current view by using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method without passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) options. The following example shows how to print the Scheduler using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method without passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) options.
+You can print the Scheduler with the current view by using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method without passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) options. The following example shows how to print the Scheduler by using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method without passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) options.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -743,7 +743,7 @@ You can print the Schedule element with the current view by using the [`PrintAsy
 
 ### Using a PrintAsync method with options
 
-You can print the Schedule element with customized Width and Height using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method by passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) Height and Width options. The following example shows how to print the Scheduler using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method by passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) options.
+You can print the Scheduler with customized width and height by using the [`PrintAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync) method and passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) height and width options. The following example shows how to print the Scheduler by passing the [`PrintOptions`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_PrintAsync_Syncfusion_Blazor_Schedule_PrintOptions_) options.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
