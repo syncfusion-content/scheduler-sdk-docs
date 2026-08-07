@@ -4,7 +4,6 @@ title: EJ1 API Migration in JavaScript Scheduler | Syncfusion
 description: Learn how to migrate the Syncfusion JavaScript Scheduler from Essential JS 1 to Essential JS 2 by mapping the equivalent APIs and properties.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

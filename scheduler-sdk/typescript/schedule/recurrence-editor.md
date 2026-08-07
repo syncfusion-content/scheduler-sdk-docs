@@ -4,7 +4,6 @@ title: Recurrence Editor in TypeScript Scheduler | Syncfusion
 description: Learn how to use the Recurrence Editor in the Syncfusion TypeScript Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

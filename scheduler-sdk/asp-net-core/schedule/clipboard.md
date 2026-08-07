@@ -4,7 +4,6 @@ title: Clipboard in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion ASP.NET Core Scheduler with built-in clipboard support and keyboard shortcuts.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

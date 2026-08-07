@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Different Working Hours on Different Days in Angular Scheduler | Syncfusion
+title: Different Working Hours per Days in Angular Scheduler | Syncfusion
 description: Learn how to set different work hours for specific days in the Syncfusion Angular Scheduler to match varied team schedules.
 platform: scheduler-sdk
 control: Scheduler

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Enable Scroll Option on All-Day Section in ASP.NET Core Scheduler | Syncfusion
+title: Scroll Option on All-Day Section in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to enable the scroll option on the all-day section in the Syncfusion ASP.NET Core Scheduler when many appointments overflow the row.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

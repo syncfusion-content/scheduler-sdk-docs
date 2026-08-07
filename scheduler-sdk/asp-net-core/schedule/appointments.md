@@ -4,7 +4,6 @@ title: Appointments in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to create and manage appointments in the Syncfusion ASP.NET Core Scheduler, including normal, all-day, spanned, and recurring events.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
