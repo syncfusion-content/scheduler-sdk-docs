@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Migrate from Syncfusion® Xamarin to .NET MAUI SfTimePicker
-description: Learn about migrating from Syncfusion<sup>&reg;</sup> Xamarin TimePicker to Syncfusion<sup>&reg;</sup> .NET MAUI TimePicker control.
 platform: scheduler-sdk
+title: Migrate from Xamarin TimePicker to .NET MAUI TimePicker | Syncfusion®
+description: Migrate from Xamarin SfTimePicker to .NET MAUI Time Picker with API mapping and guidance on renamed properties.
 control: SfTimePicker
 documentation: ug
 ---  
 
-# Migrate from Xamarin.Forms SfTimePicker to .NET MAUI SfTimePicker 
+# Migrate from Xamarin SfTimePicker to .NET MAUI SfTimePicker 
 
 To make the migration from the [Xamarin SfTimePicker](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfTimePicker.html) to [.NET MAUI SfTimePicker](https://www.syncfusion.com/maui-controls/maui-timepicker) easier, most of the APIs from the Xamarin SfTimePicker are kept in the .NET MAUI SfTimePicker. However, to maintain the consistency of API naming in the .NET MAUI SfTimePicker, some of the APIs have been renamed. Please find the difference in the following topics.
 
@@ -411,18 +411,18 @@ this.Content = timePicker;
 </tr>
 <tr>
 <td>{{'[ShowColumnHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowColumnHeaderProperty)'| markdownify }}</td>
-<td>Nil</td>
-<td>Not Supported.</td>
+<td>The column header is always visible.</td>
+<td>Always visible.</td>
 </tr>
 <tr>
 <td>{{'[ShowFooter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowFooterProperty)'| markdownify }}</td>
-<td>Nil</td>
-<td>Not Supported.</td>
+<td>The footer is always visible.</td>
+<td>Always visible.</td>
 </tr>
 <tr>
 <td>{{'[ShowHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_ShowHeaderProperty)'| markdownify }}</td>
-<td>Nil</td>
-<td>Not Supported.</td>
+<td>The header is always visible.</td>
+<td>Always visible.</td>
 </tr>
 <tr>
 <td>{{'[UnSelectedItemFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.PickerHelper.PickerBase.html#Syncfusion_XForms_Pickers_PickerHelper_PickerBase_UnselectedItemFontAttributeProperty)'| markdownify }}</td>

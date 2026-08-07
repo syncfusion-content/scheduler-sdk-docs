@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Time Restriction in .NET MAUI Time Picker Control | Syncfusion®
-description: Learn about time restriction support in Syncfusion<sup>&reg;</sup> .NET MAUI Time Picker (SfTimePicker) control and its basic features.
 platform: scheduler-sdk
+title: Time restriction in .NET MAUI Time Picker control | Syncfusion®
+description: Set minimum and maximum time limits to restrict time selection in the .NET MAUI Time Picker control.
 control: SfTimePicker
 documentation: ug
 ---  
 
-# Time restriction in .NET MAUI Time Picker (SfTimePicker)
+# Time restriction in .NET MAUI Time Picker
 
 ## Minimum Time
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with .NET MAUI Date Time Picker control | Syncfusion
-description: Learn about getting started with Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker (SfDateTimePicker) control and its basic features.
 platform: scheduler-sdk
+title: Getting Started with .NET MAUI Date Time Picker | Syncfusion®
+description: Learn how to get started with the Syncfusion<sup>&reg;</sup> .NET MAUI Date Time Picker control. Explore setup, features, examples, and customization options.
 control: SfDateTimePicker
 documentation: ug
 ---
 
-# Getting Started with the .NET MAUI DateTimePicker
+# Getting Started with .NET MAUI Date Time Picker
 This section explains how to add the Date Time Picker control. It covers only the basic features needed to get started with Syncfusion<sup>&reg;</sup> Date Time Picker. Follow the steps below to add a .NET MAUI Date Time Picker to your project.
 
 To get start quickly with our .NET MAUI Date Time Picker, you can check the below video.
@@ -154,4 +154,4 @@ The following image illustrates the result of the above code.
 
 You can download the DateTimePicker Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/dotnet-maui-datetimepicker-sample)
 
-N> You can refer to our [.NET MAUI Date Time Picker](https://www.syncfusion.com/maui-controls/maui-datetimepicker) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Date Time Picker Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Picker/SampleBrowser.Maui.Picker/Samples/DateTimePicker/GettingStarted) that shows you how to render the Date Time Picker in .NET MAUI.
+N> You can refer to our [.NET MAUI Date Time Picker](https://www.syncfusion.com/maui-controls/maui-datetimepicker) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Date Time Picker Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Picker/SampleBrowser.Maui.Picker/Samples/DateTimePicker) that shows you how to render the Date Time Picker in .NET MAUI.
