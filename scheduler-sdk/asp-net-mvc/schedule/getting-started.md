@@ -246,4 +246,4 @@ public ActionResult Index()
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can also explore our [ASP.NET MVC Scheduler example](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.
+N> You can also explore our [ASP.NET MVC Scheduler example](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) that shows how to use the toolbar buttons to play with Scheduler functionalities.
