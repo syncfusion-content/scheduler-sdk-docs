@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dropdown Header Customization in WinUI DatePicker | Syncfusion
-description: This section describes about how to customize the Date Picker (SfDatePicker) control dropdown header into WinUI application and its basic features.
+title: Dropdown Header Customization in WinUI Date Picker | Syncfusion
+description: Learn how to customize the dropdown header in WinUI Date Picker control for better appearance.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
