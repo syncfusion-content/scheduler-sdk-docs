@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict Date Selection in WinUI Calendar | Syncfusion
-description: Learn how to restrict date selection within a particular range in WinUI Calendar control.
+description: Learn how to restrict date selection within a particular range in WinUI Calendar control with validation.
 platform: scheduler-sdk
 control: SfCalendar
 documentation: ug

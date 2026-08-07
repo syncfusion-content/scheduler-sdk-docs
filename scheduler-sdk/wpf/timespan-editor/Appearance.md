@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF TimeSpan Editor | Syncfusion
-description: Learn about appearance customization and styling options available in WPF TimeSpan Editor control.
+description: Learn about appearance customization and styling options available in WPF TimeSpan Editor control easily.
 platform: scheduler-sdk
 control: TimeSpanEdit
 documentation: ug

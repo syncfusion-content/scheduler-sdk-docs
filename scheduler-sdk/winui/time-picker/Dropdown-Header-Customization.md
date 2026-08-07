@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Header Customization in WinUI Time Picker | Syncfusion
-description: Learn how to customize the dropdown header in WinUI Time Picker control for better appearance.
+description: Learn how to customize the dropdown header in WinUI Time Picker control for better appearance and experience.
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug

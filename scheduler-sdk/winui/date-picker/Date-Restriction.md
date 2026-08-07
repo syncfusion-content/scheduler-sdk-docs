@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Restriction in WinUI Date Picker | Syncfusion
-description: Learn how to restrict date selection within a particular range in WinUI Date Picker control.
+description: Learn how to restrict date selection within a particular range in WinUI Date Picker control with validation.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Week Numbers in WinUI Calendar | Syncfusion
-description: Learn about week number features and customization options in WinUI Calendar control.
+description: Learn about week number features and customization options in WinUI Calendar control for better planning.
 platform: scheduler-sdk
 control: SfCalendar
 documentation: ug

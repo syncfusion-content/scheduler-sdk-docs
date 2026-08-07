@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Customization in Windows Forms Calendar | Syncfusion
-description: Learn how to customize calendar cells to highlight special dates in Windows Forms Calendar control.
+description: Learn how to customize calendar cells to highlight special dates and enhance visual appearance in Windows Forms Calendar control.
 platform: scheduler-sdk
 control: SfCalendar
 documentation: ug

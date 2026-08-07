@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF DatePicker | Syncfusion
-description: Learn about appearance customization and styling options available in WPF DatePicker control.
+description: Learn about appearance customization and styling options available in WPF DatePicker control easily.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
