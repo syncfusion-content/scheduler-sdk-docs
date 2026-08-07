@@ -9,7 +9,7 @@ documentation: ug
 
 # Add Multiple Events to Different Time Slots in the Blazor Scheduler
 
-In [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler), we can select the different time slots (10:00 - 10:30, 8:00 - 8:30) by holding CTRL key and click on cells using `OnCellClick` event. In the following code example, events are created on selected timeslots when clicking the **Add Appointments** button.
+In [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler), you can select different time slots, such as 10:00–10:30 and 8:00–8:30, by holding the CTRL key and clicking cells by using the `OnCellClick` event. In the following code example, events are created in the selected time slots when you click the **Add Appointments** button.
 
 ```cshtml
 @using Syncfusion.Blazor
@@ -34,7 +34,7 @@ In [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler)
     public List<CellClickEventArgs> CellDetails = new List<CellClickEventArgs>();
     public async void OnCellClicked(CellClickEventArgs args)
     {
-        if (args.MouseEventArgs.CtrlKey == true) //to check whether CTRL key is pressed
+        if (args.MouseEventArgs.CtrlKey == true) // to check whether the CTRL key is pressed
         {
             await this.ScheduleObj.CloseQuickInfoPopupAsync();
             CellClickEventArgs cell = await this.ScheduleObj.GetSelectedCellsAsync();
@@ -56,7 +56,7 @@ In [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler)
                 StartTime = CellDetails[i].StartTime,
                 EndTime = CellDetails[i].EndTime
             });
-            await this.ScheduleObj.AddEventAsync(newData);  //to add appointments to the scheduler
+            await this.ScheduleObj.AddEventAsync(newData);  // to add appointments to the Scheduler
         }
         CellDetails.Clear();
     }

@@ -9,7 +9,7 @@ documentation: ug
 
 # Set Different Work Hours for Each Day in Blazor Scheduler
 
-In Blazor, you can set the required work hours on Scheduler, thus visually highlighting the cells underlying the given work hour range. In the following code example, you can set the different work hours for scheduler cells based on the day of the week by using the `SetWorkHoursAsync` method. Before setting up the custom work hours we need to reset the default work hours by using the `ResetWorkHoursAsync` method.
+In Blazor, you can set the required work hours in Scheduler, which visually highlights the cells within the specified work-hour range. In the following code example, you can set different work hours for Scheduler cells based on the day of the week by using the `SetWorkHoursAsync` method. Before setting custom work hours, reset the default work hours by using the `ResetWorkHoursAsync` method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -46,11 +46,11 @@ In Blazor, you can set the required work hours on Scheduler, thus visually highl
         new AppointmentData { Id = 2, Subject = "Weekly Medical check up", StartTime = new DateTime(2022, 7, 17, 15, 30, 0) , EndTime = new DateTime(2022, 7, 17, 15, 45, 0), RecurrenceRule = "FREQ=WEEKLY;BYDAY=SU;INTERVAL=1;", DoctorID = 2 }
     };
     private async Task OnCreated() {
-        await SetWorkHours(); // Setting work hours after the intial rendering
+        await SetWorkHours(); // Setting work hours after the initial rendering
     }
     private void OnActionCompleted(ActionEventArgs<AppointmentData> args)
     {
-        // Enabling the IsLayoutChanged for setting up the work hours
+        // Enable IsLayoutChanged for setting up the work hours
         if (args.ActionType == ActionType.ViewNavigate || args.ActionType == ActionType.DateNavigate)
         {
             IsLayoutChanged = true;
@@ -60,12 +60,12 @@ In Blazor, you can set the required work hours on Scheduler, thus visually highl
     {
         if (IsLayoutChanged)
         {           
-            await SetWorkHours();  // Setting work hours once view or date range changed.
+            await SetWorkHours();  // Setting work hours once the view or date range changes.
         }
     }
     private async Task SetWorkHours()
     {
-        // Getting current view dates
+        // Get current view dates
         List <DateTime> CurrentViewDates = ScheduleRef.GetCurrentViewDates();
         List<DateTime> Sunday = new List<DateTime> { CurrentViewDates[0] };
         List<DateTime> Monday = new List<DateTime> { CurrentViewDates[1] };
@@ -73,17 +73,17 @@ In Blazor, you can set the required work hours on Scheduler, thus visually highl
         List<DateTime> ThursDay = new List<DateTime> { CurrentViewDates[3] };
         List<DateTime> Friday = new List<DateTime> { CurrentViewDates[4] };
 
-        // Removing work hours from the Scheduler
+        // Remove work hours from Scheduler
         await ScheduleRef.ResetWorkHoursAsync(CurrentViewDates);
 
-        // Setting work hours to Doctor one
+        // Set work hours for Doctor one
         await ScheduleRef.SetWorkHoursAsync(Sunday, "07:00", "12:00", 0);
         await ScheduleRef.SetWorkHoursAsync(Monday, "07:00", "12:00", 0);
         await ScheduleRef.SetWorkHoursAsync(TuesDay, "09:00", "14:00", 0);        
         await ScheduleRef.SetWorkHoursAsync(ThursDay, "09:00", "17:00", 0);
         await ScheduleRef.SetWorkHoursAsync(Friday, "09:00", "17:00", 0);
 
-        // Setting work hours to Doctor two
+        // Set work hours for Doctor two
         await ScheduleRef.SetWorkHoursAsync(Sunday, "08:00", "13:00", 1);
         await ScheduleRef.SetWorkHoursAsync(Monday, "08:00", "13:00", 1);
         await ScheduleRef.SetWorkHoursAsync(TuesDay, "10:00", "15:00", 1);        
