@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Module injection in TypeScript Scheduler | Syncfusion
-description: Explore module injection in Syncfusion TypeScript Scheduler (Essential JS 2) with TypeScript, covering required modules for views and features.
+title: Module Injection in TypeScript Scheduler | Syncfusion
+description: Learn how to import and inject modules in the Syncfusion TypeScript Scheduler to enable specific views, features, and editor options.
 platform: scheduler-sdk
-control: Module injection 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Module injection in TypeScript Schedule control
+# Module Injection in TypeScript Scheduler
 
 A crucial step in creating a Scheduler with required views and features is to import and inject the necessary modules. The following modules are available in the Scheduler to enable specific functionalities:
 

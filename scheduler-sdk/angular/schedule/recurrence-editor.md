@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Recurrence editor in Angular Schedule component | Syncfusion
-description: Learn here all about Recurrence editor in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Recurrence Editor in Angular Scheduler | Syncfusion
+description: Learn how to use the Recurrence Editor in the Syncfusion Angular Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Recurrence editor in Angular Schedule component
+# Recurrence Editor in Angular Scheduler
 
 The Recurrence editor is integrated into Scheduler's editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 
@@ -24,7 +24,7 @@ By default, the recurrence editor provides five repeat options:
 * Monthly
 * Yearly
 
-You can customize the recurrence editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the [`frequencies`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor/#frequencies) property.
+You can customize the recurrence editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the [`frequencies`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor#frequencies) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ By default, the recurrence editor provides three end options:
 * Until
 * Count
 
-You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor/#endtypes) property.
+You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor#endtypes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

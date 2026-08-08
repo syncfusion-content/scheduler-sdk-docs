@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Frequently asked questions in React Schedule component | Syncfusion
-description: Learn here all about Frequently asked questions in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Frequently Asked Questions in React Scheduler | Syncfusion
+description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion React Scheduler control.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Frequently asked questions in React Schedule component
+# Frequently Asked Questions in React Scheduler
 
 In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler).
 

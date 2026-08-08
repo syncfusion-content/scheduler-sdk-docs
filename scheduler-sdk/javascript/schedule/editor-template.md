@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor template in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Editor template in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Editor Template in JavaScript Scheduler | Syncfusion
+description: Learn how to customize the editor window and quick popup in the Syncfusion JavaScript Scheduler to match your data and design needs.
 platform: scheduler-sdk
-control: Editor template 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Editor template in JavaScript Scheduler control
+# Editor Template in JavaScript Scheduler
 
 Scheduler provides popups and dialogs to display notifications and includes an editor window with event fields for streamlined appointment creation and editing. The editor window and its fields can be easily customized, and validations can be applied to those fields.
 

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Prioritize Resource Colors For Events in ASP.NET Core Schedule Component
-description: Learn here all about Prioritize Resource Colors For Events in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Apply Resource Colors For Events in ASP.NET Core Schedule | Syncfusion
+description: Learn how to prioritize resource colors for events in the Syncfusion ASP.NET Core Scheduler for better visual grouping.
 platform: scheduler-sdk
-control: Prioritize Resource Colors For Events
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
-# Prioritize the Resource Color for Events
+# Prioritize Resource Colors for Events in ASP.NET Core Scheduler
 
 By default top level resource color will be applied for the events. If user wants to apply specific resource color to events irrespective of its parent resource color, it can be achieved by `resourceColorField` field within `eventSettings` property as shown below.
 

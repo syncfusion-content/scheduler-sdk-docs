@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Localization in JavaScript Scheduler control | Syncfusion
-description: Learn about localization, globalization, date/time formatting, and RTL mode in the Syncfusion JavaScript Scheduler control (Essential JS 2).
+title: Localization in JavaScript Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion JavaScript Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
-control: Localization 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Localization in JavaScript Scheduler control
+# Globalization and Localization in JavaScript Scheduler
 
 The Scheduler supports different date-time formats and cultures, enabling it to function globally and meet the diverse needs of various regions.
 

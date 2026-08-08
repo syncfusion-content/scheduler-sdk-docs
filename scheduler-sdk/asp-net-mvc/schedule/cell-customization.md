@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Cell Customization in ASP.NET MVC Schedule Component| Syncfusion
-description: Learn here all about Cell Customization in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Cell Customization in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to customize work cells in the Syncfusion ASP.NET MVC Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
-control: Cell Customization
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Cell Customization in ASP.NET MVC Schedule Component
+# Cell Customization in ASP.NET MVC Scheduler
 
 The cells of the Scheduler can be easily customized either using the cell template or [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 
@@ -159,8 +158,7 @@ The month header of each date cell in the month view can be customized using the
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/cell-header-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -168,8 +166,7 @@ The month header of each date cell in the month view can be customized using the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/cell-header-customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -246,6 +243,7 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/weekend-cell-color/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weekend-cell-color.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/weekend-cell-color/data.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -255,6 +253,7 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/weekend-cell-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weekend-cell-color.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/weekend-cell-color/data.cs %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 

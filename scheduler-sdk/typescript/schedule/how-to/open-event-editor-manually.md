@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Manual event editor in TypeScript Scheduler | Syncfusion
-description: Learn here all about Open event editor manually in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Open Event Editor Manually in TypeScript Scheduler | Syncfusion
+description: Learn how to open the event editor manually in the Syncfusion TypeScript Scheduler on cell or event click, including on a single click.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Open event editor manually in TypeScript Scheduler control
+# Open Event Editor Programmatically in TypeScript Scheduler
 
 The Scheduler control provides flexibility for event creation and editing. By default, the editor opens when double-clicking on cells or appointments. However, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
 

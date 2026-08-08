@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Views in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Views in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Views in TypeScript Scheduler | Syncfusion
+description: Learn about the available views in the Syncfusion TypeScript Scheduler, including day, week, month, agenda, and timeline view modes.
 platform: scheduler-sdk
-control: Views 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Views in TypeScript Scheduler control
+# Views in TypeScript Scheduler
 
 The Scheduler includes a wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Agenda, Month Agenda, Year, Timeline Day, Timeline Week, Timeline Work Week, Timeline Year, and Timeline Month, of which the `Week` view is set as active by default.
 

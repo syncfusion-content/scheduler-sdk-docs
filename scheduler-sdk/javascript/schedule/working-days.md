@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Working days in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Working days in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Working Days in JavaScript Scheduler | Syncfusion
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion JavaScript Scheduler.
 platform: scheduler-sdk
-control: Working days 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Working days in JavaScript Scheduler control
+# Working Days in JavaScript Scheduler
 
 The Scheduler can be customized on various aspects and inherits almost all calendar-specific features, including options to:
 

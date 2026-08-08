@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in JavaScript Schedule control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion JavaScript Schedule control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in JavaScript Scheduler | Syncfusion
+description: Learn how to migrate the Syncfusion JavaScript Scheduler from Essential JS 1 to Essential JS 2 by mapping the equivalent APIs and properties.
 platform: scheduler-sdk
-control: Ej1 api migration 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Ej1 api migration in JavaScript Schedule control
+# EJ1 API Migration in JavaScript Scheduler
 
 This topic shows the API equivalent of JS2 Scheduler control to be used, while migrating your project that uses JS1 Scheduler.
 

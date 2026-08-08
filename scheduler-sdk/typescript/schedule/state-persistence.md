@@ -1,15 +1,14 @@
 ---
 layout: post
-title: State persistence in TypeScript Scheduler control | Syncfusion
-description: Learn here all about State persistence in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: State Persistence in TypeScript Scheduler | Syncfusion
+description: Learn how to enable state persistence in the Syncfusion TypeScript Scheduler to retain current view, selected date, and scroll position.
 platform: scheduler-sdk
-control: State persistence 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# State persistence in TypeScript Scheduler control
+# State Persistence in TypeScript Scheduler
 
 State persistence allowed Scheduler to retain the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](.https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and Scroll position values in the [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) for state maintenance even if the browser is refreshed or when navigating to another page within the browser. This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/schedule#enablepersistence) property which is set to false by default. When set to true, the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and Scroll position values of the scheduler component will be retained even after refreshing the page.
 

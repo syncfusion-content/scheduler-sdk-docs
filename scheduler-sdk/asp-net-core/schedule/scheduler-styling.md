@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Scheduler Styling in ASP.NET Core Schedule Component
-description: Learn here all about Scheduler Styling in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to style the Syncfusion ASP.NET Core Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
-control: Scheduler Styling
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Styling and appearance
+# Style and Appearance in ASP.NET Core Scheduler
 
 To modify the Scheduler appearance, you need to override the default CSS of Scheduler. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Scheduler.
 

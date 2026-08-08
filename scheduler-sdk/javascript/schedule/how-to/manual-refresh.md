@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Manual refresh in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Manual refresh in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Manually Refresh Layout in JavaScript Scheduler | Syncfusion
+description: Learn how to manually refresh specific templates and the overall layout in the Syncfusion JavaScript Scheduler without re-rendering the entire component.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Manually refresh layout in JavaScript Scheduler control
+# Programmatically Refresh Layout in JavaScript Scheduler
 
 In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](../../api/schedule#refreshlayout) public method.  The following example code explains to know how to use the refreshLayout method.
 
