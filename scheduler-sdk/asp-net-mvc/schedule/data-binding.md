@@ -47,7 +47,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 
 N> By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
-> You can also bind different field names to the default event fields as well as include additional `custom fields` to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
+> You can also bind different field names to the default event fields as well as include additional `custom fields` to the event object collection which can be referred [here](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/appointments#binding-different-field-names).
 
 ## Binding remote data
 

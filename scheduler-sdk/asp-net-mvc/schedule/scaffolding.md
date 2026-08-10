@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scaffolding in ASP.NET MVC Schedule Component
-description: Learn here all about Scaffolding in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Scaffolding in ASP.NET MVC Schedule Control | Syncfusion
+description: Learn here all about Scaffolding in Syncfusion ASP.NET MVC Schedule control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Scaffolding
 publishingplatform: scheduler-sdk
@@ -47,7 +47,7 @@ N> All the model types present in the current application will be listed in the 
 
 * Once the required Scheduler options are configured through the **Scheduler UI Scaffolding**, the respective Scheduler **Controller** and the corresponding **View** files are now generated with the appropriate Scheduler code snippet.
 
-![Solution explorer displaying the newly created Controller and View files](../images/solution-explorer.png)
+![Solution explorer displaying the newly created Controller and View files](images/solution-explorer.png)
 
 N> Ensure that at least one Entity Framework model exists in your active project and also the application gets compiled once. If you make any changes in the Model properties later, compile the application once before performing scaffold.
 

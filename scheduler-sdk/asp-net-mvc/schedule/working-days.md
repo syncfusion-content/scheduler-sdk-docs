@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Setting working days and hours
+# Setting Working Days and Hours in ASP.NET MVC Schedule Control
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 

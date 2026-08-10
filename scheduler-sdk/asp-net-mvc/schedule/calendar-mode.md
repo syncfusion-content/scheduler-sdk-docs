@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Calendar Mode in ASP.NET MVC Schedule Component
-description: Learn here all about Calendar Mode in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in ASP.NET MVC Schedule Control | Syncfusion
+description: Learn here all about Calendar Mode in Syncfusion ASP.NET MVC Schedule control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Calendar Mode
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar Mode in ASP.NET MVC Schedule Control
 
 The Scheduler supports the following two types of calendar mode.
 
