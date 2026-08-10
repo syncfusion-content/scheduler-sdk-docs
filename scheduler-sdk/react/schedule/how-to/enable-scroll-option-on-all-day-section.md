@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll Option on All-Day Section in React Scheduler | Syncfusion
+title: Enable Scroll Option on All-Day Section in React Scheduler | Syncfusion
 description: Learn how to enable the scroll option on the all-day section in the Syncfusion React Scheduler when many appointments overflow the row.
 control: Scheduler
 platform: scheduler-sdk

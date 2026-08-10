@@ -4,6 +4,7 @@ title: State Persistence in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion ASP.NET Core Scheduler to retain current view, selected date, and scroll position.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

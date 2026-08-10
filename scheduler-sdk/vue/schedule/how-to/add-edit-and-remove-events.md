@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add, Edit, and Remove Events in Vue Scheduler | Syncfusion
-description: Learn how to add, edit, and remove events dynamically in the Syncfusion Vue Scheduler component with simple steps.
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion Vue Scheduler.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug

@@ -4,6 +4,7 @@ title: Scheduler Styling in TypeScript Scheduler | Syncfusion
 description: Learn how to style the Syncfusion TypeScript Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

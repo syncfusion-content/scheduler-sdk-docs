@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Different Event Time Duration in ASP.NET MVC Scheduler | Syncfusion
+title: Set Different Event Time Duration in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to set a different event time duration in the Syncfusion ASP.NET MVC Scheduler to control the default appointment length.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

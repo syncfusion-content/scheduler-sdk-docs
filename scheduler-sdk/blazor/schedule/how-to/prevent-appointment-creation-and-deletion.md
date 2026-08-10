@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent Add and Delete Events in Blazor Scheduler | Syncfusion
+title: Prevent Appointment Creation and Deletion in Blazor Scheduler | Syncfusion
 description: Learn how to prevent specific CRUD actions in the Syncfusion Blazor Scheduler to lock down appointment changes.
 platform: scheduler-sdk
 control: Scheduler

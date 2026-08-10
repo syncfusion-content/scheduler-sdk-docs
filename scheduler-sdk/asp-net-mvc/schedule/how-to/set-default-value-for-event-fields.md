@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Set Default Value for Events in ASP.NET MVC Scheduler | Syncfusion
+title: Set Default Value for Event Fields in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to set default values for event fields in the Syncfusion ASP.NET MVC Scheduler editor window to pre-fill data on new appointments.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

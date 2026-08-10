@@ -4,6 +4,7 @@ title: State Persistence in JavaScript Scheduler | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion JavaScript Scheduler to retain current view, selected date, and scroll position.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

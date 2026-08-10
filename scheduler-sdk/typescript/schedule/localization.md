@@ -4,6 +4,7 @@ title: Localization in TypeScript Scheduler | Syncfusion
 description: Learn how to localize the Syncfusion TypeScript Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

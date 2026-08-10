@@ -4,6 +4,7 @@ title: Row Auto Height in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to auto-adjust row height in the Syncfusion ASP.NET MVC Scheduler timeline and month views to display all overlapping appointments.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

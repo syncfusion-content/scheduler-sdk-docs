@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Perform CRUD Actions in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to add, edit, and remove events dynamically in the Syncfusion ASP.NET Core Scheduler control.
+title: Perform CRUD Actions Dynamically in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion ASP.NET Core Scheduler.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
