@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dropdown Header Customization in WinUI DatePicker | Syncfusion
-description: This section describes about how to customize the Date Picker (SfDatePicker) control dropdown header into WinUI application and its basic features.
+title: Dropdown Header Customization in WinUI Date Picker | Syncfusion
+description: Learn how to customize the dropdown header in WinUI Date Picker control for better appearance and experience.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
@@ -80,7 +80,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to hide the dropdown day, month and year spinner's column headers, use the [ShowColumnHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ShowColumnHeaders) property value as `false`. The default value of `ShowColumnHeaders` property is `true`.
 
-N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/date-picker/spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
+N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/date-picker/dropdown-spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}

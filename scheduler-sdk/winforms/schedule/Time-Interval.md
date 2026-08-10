@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Time Interval in Windows Forms Scheduler control | Syncfusion®
-description: Learn about Time Interval support in Syncfusion® Windows Forms Scheduler (Schedule) control and more details.
+title: Time Interval in Windows Forms Scheduler | Syncfusion
+description: Learn about time interval format options for scheduling appointments in Windows Forms Scheduler control.
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
 ---
 
-# Time Interval in Windows Forms Scheduler (Schedule)
+# Time Interval in Windows Forms Scheduler
 
 This topic illustrates the time interval format options for scheduling appointments.
 
