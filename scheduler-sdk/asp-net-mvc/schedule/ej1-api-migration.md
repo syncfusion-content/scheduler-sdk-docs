@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ASP.NET MVC Schedule Control | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET MVC Schedule control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to migrate the Syncfusion ASP.NET MVC Scheduler from Essential JS 1 to Essential JS 2 by mapping the equivalent APIs and properties.
 platform: scheduler-sdk
-control: Ej1 Api Migration
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Migration from Essential® JS 1 in ASP.NET MVC Schedule Control
+# EJ1 API Migration in ASP.NET MVC Scheduler
 
 This topic shows the API equivalent of JS2 Scheduler component to be used, while migrating your project that uses JS1 Scheduler.
 

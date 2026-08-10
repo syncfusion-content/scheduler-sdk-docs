@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Header Bar in ASP.NET Core Schedule Component | Syncfusion
-description: Learn here all about Header Bar in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Header Customization in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion ASP.NET Core Scheduler.
 platform: scheduler-sdk
-control: Header Bar
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Header customization
+# Header Customization in ASP.NET Core Scheduler
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
@@ -132,7 +131,7 @@ By default, the header bar holds the view navigation options, through which the 
 
 ![Display Header Bar Popup in ASP.NET Core Scheduler](images/scheduler-header-popup.png)
 
-N> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
+N> Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
 ## Date header customization
 

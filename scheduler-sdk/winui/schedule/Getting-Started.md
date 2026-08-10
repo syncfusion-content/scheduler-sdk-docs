@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with WinUI Scheduler control | Syncfusion
+title: Getting Started with WinUI Scheduler | Syncfusion
 canonical_url: "https://www.syncfusion.com/scheduler-sdk/winui-scheduler"
-description: Learn here all about getting started with Syncfusion WinUI Scheduler(SfScheduler) control, its elements, and more.
+description: Learn how to get started with the Syncfusion WinUI Scheduler control. Explore setup, features, examples, and customization options.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Getting Started with WinUI Scheduler (SfScheduler)
+# Getting Started with WinUI Scheduler
 
 This section provides an overview of working with [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-scheduler) and also provides a walk-through to configure the WinUI Scheduler control in a real-time scenario.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Module injection in React Schedule component | Syncfusion
-description: Learn here all about Module injection in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Module injection 
+title: Module Injection in React Scheduler | Syncfusion
+description: Learn how to import and inject modules in the Syncfusion React Scheduler to enable specific views, features, and editor options.
+control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Module injection in React Schedule component
+# Module Injection in React Scheduler
 
 The crucial step on creating a Scheduler with required views, is to import and inject the required modules. The modules that are available on Scheduler to work with its related functionalities are as follows.
 

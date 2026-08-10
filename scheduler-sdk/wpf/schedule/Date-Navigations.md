@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Navigations in WPF Scheduler control | Syncfusion
-description: Learn here all about Date Navigations support in Syncfusion WPF Scheduler (SfScheduler) control and more.
+title: Date Navigations in WPF Scheduler | Syncfusion
+description: Learn about date navigation features in WPF Scheduler to navigate between dates with minimum and maximum date support.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Date Navigations in WPF Scheduler (SfScheduler)
+# Date Navigations in WPF Scheduler
 
 ## Range for visible dates
 Visible dates can be restricted between a certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_MinimumDate) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.

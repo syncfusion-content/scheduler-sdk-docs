@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Set Different Event Time Duration in ASP.NET Core Schedule Component
-description: Learn here all about Set Different Event Time Duration in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Different Event Time Duration in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to set a different event time duration in the Syncfusion ASP.NET Core Scheduler to control the default appointment length.
 platform: scheduler-sdk
-control: Set Different Event Time Duration
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
-# Set Different Time Duration on Event Editor
+# Set Different Event Time Duration in ASP.NET Core Scheduler
 
 In event window, start/end time duration will be processed based on the `interval` value within the `timeScale` property. By default, `interval` value is 30, therefore in event window start/end time duration will be in 30 mins duration. You can set custom interval range to the start/end time in event window using `popupOpen` event as shown below.
 

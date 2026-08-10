@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Appointments in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Appointments in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Appointments in TypeScript Scheduler | Syncfusion
+description: Learn how to create and manage appointments in the Syncfusion TypeScript Scheduler, including normal, all-day, spanned, and recurring events.
 platform: scheduler-sdk
-control: Appointments 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Appointments in TypeScript Scheduler control
+# Appointments in TypeScript Scheduler
 
 Appointments in the Scheduler represent events scheduled for specific time periods. Each appointment can be configured for various time ranges and categorized based on its duration and recurrence pattern. The Scheduler supports the following appointment types:
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Scaffolding in ASP.NET MVC Schedule Control | Syncfusion
-description: Learn here all about Scaffolding in Syncfusion ASP.NET MVC Schedule control of Syncfusion Essential JS 2 and more.
+title: Scaffolding in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to use scaffolding in the Syncfusion ASP.NET MVC Scheduler to quickly generate controller and view code for the Scheduler component.
 platform: scheduler-sdk
-control: Scaffolding
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# ASP.NET MVC Scaffolding
+# Scaffolding in ASP.NET MVC Scheduler
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> includes an extension for **Visual Studio** with UI Scaffolding options for the ASP.NET MVC Scheduler to quickly add its code and interact with data models. This allows you to easily create the appropriate **Views** and **Controller** action methods with respective ASP.NET MVC Scheduler code.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Minimal API Data Binding in Blazor Scheduler Component | Syncfusion
-description: Learn about consuming data from ASP.NET Core Minimal API and binding it to Blazor Scheduler Component, and performing CRUD operations.
+title: Minimal API Data Binding in Blazor Scheduler | Syncfusion
+description: Learn how to bind the Syncfusion Blazor Scheduler to ASP.NET Core Minimal API endpoints and perform CRUD operations on appointment data.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Connecting ASP.NET Core Minimal API to Scheduler Component
+# Minimal API Data Binding in Blazor Scheduler
 
 The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from ASP.NET Core [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) endpoints hosted within the same application. This approach enables seamless integration of appointment data with full CRUD (Create, Read, Update, Delete) functionality without requiring a separate backend project.
 

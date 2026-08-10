@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Scheduler Control| Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Scheduler control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Scheduler | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET Core Scheduler, exploring setup, initialization, and basic customization in an ASP.NET Core app.
 platform: scheduler-sdk
-control: Getting Started
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Getting Started with the ASP.NET Core Scheduler Control
+# Getting Started with ASP.NET Core Scheduler
 
 This section briefly explains how to include the [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 

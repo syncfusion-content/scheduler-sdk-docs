@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Overview in ASP.NET Core Schedule Component
-description: Learn here all about Overview in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET Core Scheduler Component | Syncfusion
+description: Learn about the Syncfusion ASP.NET Core Scheduler, its key features, and the common scheduling scenarios it supports for building modern apps.
 platform: scheduler-sdk
-control: Index
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Overview
+# Overview of ASP.NET Core Scheduler
 
 The **Scheduler** component is an event calendar which facilitates user with the common Outlook-calendar features, thus allowing the users to plan and manage their events/appointments and its time in an efficient way.
 

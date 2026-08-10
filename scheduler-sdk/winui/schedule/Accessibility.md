@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility  Support in  WinUI Scheduler control | Syncfusion
-description: Learn here about Accessibility support with the Syncfusion WinUI Scheduler (SfScheduler), its elements and more.
+title: Accessibility Support in WinUI Scheduler | Syncfusion
+description: Learn about accessibility support in WinUI Scheduler including screen readers and keyboard navigation for users.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Accessibility Support in WinUI Scheduler (SfScheduler)
+# Accessibility Support in WinUI Scheduler
 
 ## Screen reader support
 

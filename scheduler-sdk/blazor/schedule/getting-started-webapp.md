@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Blazor Scheduler in Blazor Web App | Syncfusion
-description: Check out and learn the documentation for getting started with Blazor Scheduler Component in Blazor Web App.
+description: Learn how to get started with the Syncfusion Blazor Scheduler in a Blazor Web App, exploring setup, configuration, and core feature examples.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

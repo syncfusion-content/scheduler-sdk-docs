@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Liquid Glass Support for .NET MAUI Scheduler | Syncfusion®
-description: Learn how to enable liquid glass support for the Syncfusion® .NET MAUI Scheduler (SfScheduler) control.
 platform: scheduler-sdk
+title: Liquid Glass Effect in .NET MAUI Scheduler control | Syncfusion®
+description: Enable liquid glass effect with adaptive color tinting and light refraction in the .NET MAUI Scheduler.
 control: SfScheduler
 documentation: ug
 ---

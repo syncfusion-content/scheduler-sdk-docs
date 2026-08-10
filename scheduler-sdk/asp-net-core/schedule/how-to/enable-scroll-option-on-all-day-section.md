@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Enable Scroll Option On All Day Section in ASP.NET Core Schedule Component
-description: Learn here all about Enable Scroll Option On All Day Section in Syncfusion ASP.NET Core Schedule component of syncfusion and more.
+title: Scroller on All-Day Section in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to enable the scroll option on the all-day section in the Syncfusion ASP.NET Core Scheduler when many appointments overflow the row.
 platform: scheduler-sdk
-control: Enable Scroll Option On All Day Section
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Enable scroll option on all-day section
+# Enable Scroll Option on All-Day Section in ASP.NET Core Scheduler
 
 When you have larger number of appointments in all-day row, it is difficult to view all the appointments properly. In that case you can enable scroller option for all-day row by setting true to `enableAllDayScroll` whereas its default value is false. When setting this property to true, individual scroller for all-day row is enabled when it reaches its maximum height on expanding.
 

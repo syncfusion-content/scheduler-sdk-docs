@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Row auto height in TypeScript Schedule control | Syncfusion
-description: Learn here all about Row auto height in Syncfusion TypeScript Schedule control of Syncfusion Essential JS 2 and more.
+title: Row Auto Height in TypeScript Scheduler | Syncfusion
+description: Learn how to auto-adjust row height in the Syncfusion TypeScript Scheduler timeline and month views to display all overlapping appointments.
 platform: scheduler-sdk
-control: Row auto height 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Row auto height in TypeScript Schedule control
+# Row Auto Height in TypeScript Scheduler
 
 By default, the height of the Scheduler rows in Timeline views are static and therefore, when the same time range holds multiple overlapping appointments, a `+n more` text indicator will be displayed. The row auto height feature enabled, able to view all the overlapping appointments present in those specific time range by auto-adjusting the row height based on the presence of the appointments count, instead of displaying the `+n more` text indicators.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resources in React Schedule component | Syncfusion
-description: Learn here all about Resources in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
-control: Scheduler 
+title: Resources and Grouping in React Scheduler | Syncfusion
+description: Learn how to assign and group resources in the Syncfusion React Scheduler with multi-level grouping, resource fields, and timeline views.
+control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Resources in React Scheduler component
+# Resources and Grouping in React Scheduler
 
 Resources and grouping support allow the Scheduler to be shared across multiple resources. The appointments of each resource are displayed under the relevant resource. Each resource in the Scheduler is arranged in a column or row order, with dedicated spacing to display all its respective appointments on a single page. The Scheduler also supports multiple levels of resource grouping, enabling hierarchical categorization. Resources can be displayed either in expandable groups (Timeline views) or in vertical hierarchy (Calendar views).
 

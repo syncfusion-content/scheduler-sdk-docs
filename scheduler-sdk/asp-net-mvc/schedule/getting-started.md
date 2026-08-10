@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Scheduler Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Scheduler control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET MVC Scheduler, exploring setup, initialization, and basic customization in an ASP.NET MVC app.
 platform: scheduler-sdk
-control: Getting Started
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Scheduler Control
+# Getting Started with ASP.NET MVC Scheduler
 
 This section briefly explains how to include [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) control in your ASP.NET MVC application using Visual Studio.
 

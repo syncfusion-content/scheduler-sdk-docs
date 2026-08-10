@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Module injection in EJ2 JavaScript Schedule control | Syncfusion
-description: Learn about module injection in the Syncfusion JavaScript Scheduler control (Essential JS 2), including required modules for views and features.
+title: Module Injection in JavaScript Scheduler | Syncfusion
+description: Learn how to import and inject modules in the Syncfusion JavaScript Scheduler to enable specific views, features, and editor options.
 platform: scheduler-sdk
-control: Module injection 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Module injection in JavaScript Schedule control
+# Module Injection in JavaScript Scheduler
 
 A crucial step in creating a Scheduler with required views and features is to import and inject the necessary modules. The following modules are available in the Scheduler to enable specific functionalities:
 

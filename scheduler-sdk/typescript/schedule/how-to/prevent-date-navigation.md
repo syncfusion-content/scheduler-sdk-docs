@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Disable date navigation in TypeScript Scheduler | Syncfusion
-description: Learn here all about Prevent date navigation in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Prevent Date Navigation in TypeScript Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion TypeScript Scheduler to lock the view on a specific date or range.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Prevent date navigation in TypeScript Scheduler control
+# Prevent Date Navigation in TypeScript Scheduler
 
 By default, clicking on date headers in the Scheduler control navigates to the corresponding date view. In certain scenarios, you may want to disable this navigation behavior to maintain a fixed view.
 

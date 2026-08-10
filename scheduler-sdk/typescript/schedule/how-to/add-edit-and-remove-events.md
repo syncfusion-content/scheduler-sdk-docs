@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Add edit and remove events in TypeScript Scheduler | Syncfusion
-description: Learn here all about Add edit and remove events in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Add, Edit, and Remove Events in TypeScript Scheduler | Syncfusion
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion TypeScript Scheduler control.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Add, edit, and remove events in TypeScript Scheduler control
+# Add, Edit, and Remove Events in TypeScript Scheduler
 
 You can manually perform CRUD (Create, Read, Update, Delete) operations on appointments in the Scheduler by using the following methods:
 

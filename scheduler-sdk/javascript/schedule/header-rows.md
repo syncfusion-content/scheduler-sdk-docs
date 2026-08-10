@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Header rows in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Header rows in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Header Rows in JavaScript Scheduler | Syncfusion
+description: Learn how to add additional header rows in timeline views of the Syncfusion JavaScript Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
-control: Header rows 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Header rows in JavaScript Scheduler control
+# Header Rows in JavaScript Scheduler
 
 The Timeline views support additional header rows other than its default date and time header rows. To show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property. This property is applicable only on the timeline views. The possible rows which can be added using [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property are as follows.
 

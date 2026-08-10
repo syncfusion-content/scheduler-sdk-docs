@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Blazor Scheduler Component | Syncfusion®
-description: This section includes the data binding topics explaining how to bind various data sources to Blazor Scheduler component using DataManager adaptors.
+title: Data Binding in Blazor Scheduler | Syncfusion
+description: Learn how to bind data to the Syncfusion Blazor Scheduler from local collections and remote REST services for flexible data loading.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Data Binding in Blazor Scheduler Component
+# Data Binding in Blazor Scheduler
 
 The Scheduler uses [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html), which supports both RESTful data service binding and datasource collections to bind data to the Scheduler. The [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) property of Scheduler can be assigned either with the instance of `DataManager` or list of datasource collection.
 

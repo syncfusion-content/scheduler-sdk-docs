@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Blazor Scheduler in Blazor MAUI App | Syncfusion
-description: Check out and learn about the documentation for getting started with Blazor Scheduler Component in Blazor MAUI App.
+description: Learn how to get started with the Syncfusion Blazor Scheduler in a Blazor MAUI App, exploring setup, configuration, and core feature examples.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Getting Started with Blazor Scheduler component
+# Getting Started with Blazor Scheduler in Blazor MAUI App
 
 This section briefly explains how to include the [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component in a Blazor MAUI App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Recurrence editor in React Schedule component | Syncfusion
-description: Learn here all about Recurrence editor in Syncfusion React Schedule component of Syncfusion Essential JS 2 and more.
+title: Recurrence Editor in React Scheduler | Syncfusion
+description: Learn how to use the Recurrence Editor in the Syncfusion React Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Recurrence editor in React Schedule component
+# Recurrence Editor in React Scheduler
 
 The Recurrence editor is integrated into Scheduler's editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 

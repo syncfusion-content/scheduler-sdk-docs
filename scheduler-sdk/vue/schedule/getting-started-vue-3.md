@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Vue 3 Scheduler component | Syncfusion
-description: Checkout and learn about Getting started Vue 3 with Vue Scheduler component of Syncfusion Essential JS 2 and more details.
-control: Getting started Vue 3
+title: Getting Started with Vue 3 Scheduler | Syncfusion
+description: Learn how to get started with the Syncfusion Vue Scheduler in Vue 3, exploring setup, initialization, and basic customization in a Vue 3 app.
+control: Scheduler
 platform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Getting Started with the Vue Schedule Component in Vue 3
+# Getting Started with Vue 3 Scheduler
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev) project with a JavaScript environment and integrating the Vue Scheduler component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 
@@ -16,6 +16,92 @@ This article provides a step-by-step guide for setting up a [Vite](https://vitej
 The `Composition API` is a new feature introduced in Vue.js 3 that provides an alternative way to organize and reuse component logic. It allows developers to write components as functions that use smaller, reusable functions called composition functions to manage their properties and behavior.
 
 The `Options API` is the traditional way of writing Vue.js components, where the component logic is organized into a series of options that define the component's properties and behavior. These options include data, methods, computed properties, watchers, life cycle hooks, and more.
+
+{% tabcontents %}
+{% tabcontent Syncfusion CLI %}
+
+## Prerequisites
+
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- Syncfusion CLI.
+
+## Install the Syncfusion CLI 
+
+Install the Syncfusion CLI globally using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install -g @syncfusion/syncfusion-cli
+{% endhighlight %}
+{% endtabs %}
+
+## Set up the Vite project using Syncfusion CLI
+
+You can create a Vue application with [Vite](https://vite.dev/) using the Syncfusion CLI. The CLI provides two ways to create a project:
+
+### Non-interactive mode
+
+Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf new my-project --framework vue --template scheduler
+{% endhighlight %}
+{% endtabs %}
+
+In this mode, the project configuration is passed directly in the command. The above command creates a `Vue` application with Vite and configured it with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Scheduler` component. The generated project uses the TypeScript and the Composition API.
+
+### Interactive mode
+
+Interactive mode guides you through the project creation process with step-by-step prompts.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf
+{% endhighlight %}
+{% endtabs %}
+
+When you run the `sf` command, the CLI prompts you to select the required project configuration options. To create a Vue application with Vite and the Syncfusion<sup style="font-size:70%">&reg;</sup> `Schedule` component, select the following options:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+√ Project name? ... my-project
+√ Choose Framework: » Vue
+√ Choose Language: » JavaScript
+√ Choose Template: » Scheduler
+√ Choose Theme: » Material3
+√ Choose Style Format: » CSS
+√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+√ Install dependencies and start app now? ... no
+
+{% endhighlight %}
+{% endtabs %}
+
+The above selections generate a `Vue` application with Vite and configure it with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Scheduler` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
+
+## Run the project
+
+Once the project is created, navigate to the project directory and run the following commands in your terminal.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+cd my-project
+npm install
+npm run dev
+{% endhighlight %}
+{% endtabs %}
+
+The output will appear as follows:
+
+![Schedule Component](./images/cli-scheduler.png)
+
+{% endtabcontent %}
+
+{% tabcontent Vite CLI %}
 
 ## Prerequisites
 
@@ -482,6 +568,9 @@ The development server will start, typically at `http://localhost:5173`. Open th
 The output will appear as follows:
 
 ![vue3-js-composition](./images/vue3-composition-scheduler.png)
+
+{% endtabcontent %}
+{% endtabcontents %}
 
 Refer the sample [Vue 3 using Composition API Scheduler getting started](https://github.com/SyncfusionExamples/vue3-schedule-getting-started)
 

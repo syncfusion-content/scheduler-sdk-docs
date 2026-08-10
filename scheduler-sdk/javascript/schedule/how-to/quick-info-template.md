@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Quick info template in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Quick info template in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Quick Info Template in JavaScript Scheduler | Syncfusion
+description: Learn how to customize the Quick Info popup in the Syncfusion JavaScript Scheduler using a template to change its appearance and content.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Quick Info template in JavaScript Scheduler control
+# Quick Info Template in JavaScript Scheduler
 
 The Scheduler control displays a pop-up window (Quick Info) when users click on cells or appointments. By default, this Quick Info shows standard information. You can customize its appearance and content using templates to better suit your application requirements.
 

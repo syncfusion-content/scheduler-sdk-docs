@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Blazor Scheduler in Server App | Syncfusion
-description: Check out and learn about getting started with Blazor Scheduler component in Blazor Server Application.
+description: Learn how to get started with the Syncfusion Blazor Scheduler in a Blazor Server App, exploring setup, configuration, and core feature examples.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
