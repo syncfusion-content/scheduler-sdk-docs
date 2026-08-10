@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Scheduler control | Syncfusion®
+title: Getting Started with Windows Forms Scheduler | Syncfusion
 canonical_url: "https://www.syncfusion.com/scheduler-sdk/winforms-scheduler"
-description: Learn here about getting started with Syncfusion® Windows Forms Scheduler (Event Calendar) control, its elements and more details.
+description: Learn how to get started with the Syncfusion Windows Forms Scheduler control. Explore setup, features, examples, and customization options.
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Scheduler (Event Calendar)
+# Getting Started with Windows Forms Scheduler
 
 This section provides the details that you will need to know about getting started with our [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) control. 
 

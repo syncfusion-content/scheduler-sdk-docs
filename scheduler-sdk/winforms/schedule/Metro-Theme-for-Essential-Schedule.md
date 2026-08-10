@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Metro Theme for Essential Schedule in WinForms Scheduler | Syncfusion®
-description: Learn about Metro Theme for Essential® Schedule support in Syncfusion® Windows Forms Scheduler (Schedule) control and more details.
+title: Metro Theme in Windows Forms Scheduler | Syncfusion
+description: Learn how to apply Metro theme to Windows Forms Scheduler control for modern visual appearance and user experience.
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
 ---
 
-# Metro Theme for Schedule in Windows Forms Scheduler
+# Metro Theme in Windows Forms Scheduler
 
 This feature enables you to apply the Metro theme to the Schedule control. 
 

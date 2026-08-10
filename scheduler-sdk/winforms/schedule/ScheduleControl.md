@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ScheduleControl in Windows Forms Scheduler control | Syncfusion®
-description: Learn about ScheduleControl support in Syncfusion® Windows Forms Scheduler (Schedule) control and more details.
+title: ScheduleControl in Windows Forms Scheduler | Syncfusion
+description: Learn about ScheduleControl user control that provides basic scheduling functionality in Windows Forms Scheduler.
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
 ---
 
-# ScheduleControl in Windows Forms Scheduler (Schedule)
+# ScheduleControl in Windows Forms Scheduler
 
 The ScheduleControl is a User Control that provides the basic scheduling functionality.
 
