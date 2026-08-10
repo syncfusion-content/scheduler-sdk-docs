@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor Template in ASP.NET Core Syncfusion Schedule Component
-description: Learn here all about Editor Template in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Editor Window Customization in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to customize the editor window and quick pop-up in the Syncfusion ASP.NET Core Scheduler to match your data and design needs.
 platform: scheduler-sdk
-control: Editor Template
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Editor window and quick popups
+# Editor Window Customization in ASP.NET Core Scheduler
 
 Scheduler makes use of popups and dialog to display the required notifications, as well as includes an editor window with event fields for making the appointment creation and editing process easier. You can also easily customize the editor window and the fields present in it, and can also apply validations on those fields.
 
@@ -111,7 +110,7 @@ It is possible to validate the required fields of the editor window from client-
 
 ![Display Field Validation in ASP.NET Core Scheduler](images/schedule-field-validation.png)
 
-N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
+N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator#validation-rules) documentation.
 
 ### Add additional fields to the default editor
 

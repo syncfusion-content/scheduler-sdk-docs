@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Resources in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Resources in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Resources in JavaScript Scheduler | Syncfusion
+description: Learn how to assign and group resources in the Syncfusion JavaScript Scheduler with multi-level grouping and timeline resource views.
 platform: scheduler-sdk
-control: Resources 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Resources in JavaScript Scheduler control
+# Resources in JavaScript Scheduler
 
 Resources and grouping support allows the Scheduler to be shared by multiple resources. Appointments for each resource display under the relevant resource in a column or row layout. Each resource in the Scheduler is arranged in column-wise or row-wise order, with individual spacing to display all respective appointments on a single page. The Scheduler supports both single and multiple levels of resource grouping, enabling the categorization of resources in a hierarchical structure. Resources appear either as expandable groups in Timeline views or as a vertical hierarchy in Calendar views.
 

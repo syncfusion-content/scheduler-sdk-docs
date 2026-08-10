@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Salesforce integration JavaScript Scheduler control | Syncfusion
-description: Learn here all about salesforce integration in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Salesforce Integration in JavaScript Scheduler | Syncfusion
+description: Learn how to integrate the Syncfusion JavaScript Scheduler into Salesforce apps to schedule and manage appointments within Salesforce.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Salesforce integration in JavaScript Scheduler control
+# Salesforce Integration in JavaScript Scheduler
 
 This topic provides a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance productivity and streamline scheduling processes.
 

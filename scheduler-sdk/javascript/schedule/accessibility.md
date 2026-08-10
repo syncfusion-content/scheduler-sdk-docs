@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility and keyboard navigation for JavaScript Syncfusion
-description: Learn here all about Accessibility in Syncfusion JavaScript Schedule control of Syncfusion Essential JS 2 and more.
+title: Accessibility in JavaScript Scheduler | Syncfusion
+description: Learn how the Syncfusion JavaScript Scheduler meets WAI-ARIA, WCAG 2.2, and Section 508 accessibility standards with screen reader and keyboard support.
 platform: scheduler-sdk
-control: Accessibility 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Accessibility in JavaScript Schedule control
+# Accessibility in JavaScript Scheduler
 
 The Scheduler component is designed following WAI-ARIA specifications, applying appropriate ARIA roles, states, and properties to all interactive elements. This ensures compatibility with assistive technologies such as screen readers. The component includes built-in keyboard navigation support, enabling users who rely on assistive technologies or keyboard-only navigation to interact with all Scheduler features effectively. Assistive technologies announce navigated dates, view changes, and interactive actions performed within the Scheduler, providing clear feedback to users.
 

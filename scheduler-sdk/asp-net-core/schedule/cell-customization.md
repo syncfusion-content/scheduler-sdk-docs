@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Cell Customization in ASP.NET Core Schedule Component| Syncfusion
-description: Learn here all about Cell Customization in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Cell Customization in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to customize work cells in the Syncfusion ASP.NET Core Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
-control: Cell Customization
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Cell Customization in ASP.NET Core Schedule Component
+# Cell Customization in ASP.NET Core Scheduler
 
 The cells of the Scheduler can be easily customized either using the cell template or [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 
@@ -163,8 +162,7 @@ The month header of each date cell in the month view can be customized using the
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-header-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -172,8 +170,7 @@ The month header of each date cell in the month view can be customized using the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-header-customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 

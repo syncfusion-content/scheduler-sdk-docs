@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Scheduler styling in TypeScript Schedule Control | Syncfusion
-description: Learn here all about scheduler styling in Syncfusion TypeScript Schedule control, its elements and more.
+title: Scheduler Styling in TypeScript Scheduler | Syncfusion
+description: Learn how to style the Syncfusion TypeScript Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
-control: Scheduler styling 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Scheduler styling in TypeScript Schedule Control
+# Style and Appearance in TypeScript Scheduler
 
 To modify the Scheduler appearance, the default CSS of the Scheduler must be overridden. There is also an option to create a custom theme using the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes used in the Scheduler.
 

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Add Edit And Remove Events in ASP.NET MVC Schedule Component
-description: Learn here all about Add Edit And Remove Events in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Perform CRUD Actions Dynamically in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to add, edit, and remove events dynamically in the Syncfusion ASP.NET MVC Scheduler control.
 platform: scheduler-sdk
-control: Add Edit And Remove Events
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
-# Perform CRUD Actions Dynamically
+# Perform CRUD Actions Dynamically in ASP.NET MVC Scheduler
 
 CRUD actions can be manually performed on appointments using `addEvent`, `saveEvent` and `deleteEvent` methods as shown below.
 

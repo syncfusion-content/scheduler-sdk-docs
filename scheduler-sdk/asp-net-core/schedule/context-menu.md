@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Context Menu in ASP.NET Core Schedule Component| Syncfusion
-description: Learn here all about Context Menu in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Context Menu in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to integrate the Context Menu in the Syncfusion ASP.NET Core Scheduler to perform actions on cells, resource cells, and appointments.
 platform: scheduler-sdk
-control: Context Menu
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Context menu in ASP.NET Core Schedule Component
+# Context Menu in ASP.NET Core Scheduler
 
 You can display context menu on work cells and appointments of Scheduler by making use of the [`ContextMenu`](https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler`.
 

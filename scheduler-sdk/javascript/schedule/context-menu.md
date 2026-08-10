@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Context menu in JavaScript Scheduler control | Syncfusion
-description: To implement and customize the context menu in the Syncfusion JavaScript Scheduler control for Essential JS 2, with cell and appointment actions.
+title: Context Menu in JavaScript Scheduler | Syncfusion
+description: Learn how to integrate the Context Menu in the Syncfusion JavaScript Scheduler to perform actions on cells, resource cells, and appointments.
 platform: scheduler-sdk
-control: Context menu 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Context menu in JavaScript Scheduler control
+# Context Menu in JavaScript Scheduler
 
 The context menu can be displayed on work cells and appointments within the Scheduler by manually integrating the [`ContextMenu`](https://ej2.syncfusion.com/documentation/context-menu/getting-started) control from the application. In the following example, the ContextMenu control is added and its target is set to the `Scheduler`.
 

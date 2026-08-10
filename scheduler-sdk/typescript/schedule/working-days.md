@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Working days in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Working days in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Working Days in TypeScript Scheduler | Syncfusion
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion TypeScript Scheduler.
 platform: scheduler-sdk
-control: Working days 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Working days in TypeScript Scheduler control
+# Working Days in TypeScript Scheduler
 
 The Scheduler can be customized on various aspects and inherits almost all calendar-specific features, including options to:
 
