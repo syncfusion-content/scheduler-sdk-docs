@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style And Appearance in Blazor Scheduler Component | Syncfusion®
-description: This section shows classes available to add customized CSS to Blazor scheduler component by overriding the default CSS.
+title: Style and Appearance in Blazor Scheduler | Syncfusion
+description: Learn how to style the Syncfusion Blazor Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
  
-# Style And Appearance in Blazor Scheduler Component
+# Style and Appearance in Blazor Scheduler
 
 To modify the Scheduler appearance, you need to override the default CSS of Scheduler. Also, there is an option to create our own custom theme using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Scheduler.
 

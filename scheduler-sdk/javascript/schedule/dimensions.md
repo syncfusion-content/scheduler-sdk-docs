@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Dimensions in JavaScript Scheduler Control | Syncfusion
-description: Learn here all about dimensions in Syncfusion JavaScript Scheduler control, its elements and more.
+title: Dimensions in JavaScript Scheduler | Syncfusion
+description: Learn how to set the height and width of the Syncfusion JavaScript Scheduler using pixel, percentage, or auto values for responsive layouts.
 platform: scheduler-sdk
-control: Dimensions 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Dimensions in JavaScript Scheduler Control
+# Dimensions in JavaScript Scheduler
 
 The Scheduler dimensions refer to both the height and width of the entire layout. It accepts the following three types of values:
 

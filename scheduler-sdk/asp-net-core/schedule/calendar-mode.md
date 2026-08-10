@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Calendar Mode in ASP.NET Core Schedule Component
-description: Learn here all about Calendar Mode in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to render the Syncfusion ASP.NET Core Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: scheduler-sdk
-control: Calendar Mode
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar Mode in ASP.NET Core Scheduler
 
 The Scheduler supports the following two types of calendar mode.
 
@@ -36,7 +35,7 @@ It requires the following CLDR data to be loaded using loadCldr function.
 * timeZoneNames.json
 * ca-islamic.json
 
-N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization/#installing-cldr-data) topic.
+N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#installing-cldr-data) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

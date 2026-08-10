@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WinUI Scheduler control | Syncfusion
-description: Learn here all about how to set calender types and language to localize the scheduler (SfScheduler) control, its elements, and more.
+title: Localization in WinUI Scheduler | Syncfusion
+description: Learn how to localize WinUI Scheduler by setting calendar types and language for different regions and cultures.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Calendar Types in WinUI Scheduler (SfScheduler)
+# Localization in WinUI Scheduler
 This section describes how to localize the scheduler control by using [Language](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.language?view=net-5.0) and [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) properties in [SfScheduler.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html)
 
 ## Types of Calendar

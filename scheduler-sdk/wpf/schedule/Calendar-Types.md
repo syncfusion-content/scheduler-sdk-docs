@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calendar Types in WPF Scheduler control | Syncfusion
-description: Learn here all about how to change the calendar types in the scheduler (SfScheduler) control, its elements, and more.
+title: Calendar Types in WPF Scheduler | Syncfusion
+description: Learn how to change and configure different calendar types in WPF Scheduler including Gregorian, Hebrew, and more.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Calendar Types in WPF Scheduler (SfScheduler)
+# Calendar Types in WPF Scheduler
 This section describes how to change the calendar types of the scheduler control using the [CalendarIdentifier.](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier)
 
 ## Types of Calendar

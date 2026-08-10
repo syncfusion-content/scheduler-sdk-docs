@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Flyout and Commands in WinUI Scheduler | Syncfusion
-description: Learn here all about Context Flyout and Commands support in Syncfusion WinUI Scheduler (SfScheduler) control, its elements, and more.
+description: Learn about context flyout and commands in WinUI Scheduler for handling appointments and time slots efficiently.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Context Flyout and Commands in WinUI Scheduler (SfScheduler)
+# Context Flyout and Commands in WinUI Scheduler
 
 The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) has support to define a context flyout for appointments, time slots, and month cells are right-clicked. It will also have the built-in `DelegateCommand` support for handling the context flyout to add, edit, and delete appointments. There are two types of `Context Flyout.`
 

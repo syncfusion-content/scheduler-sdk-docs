@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Responsive Full Time Display in TypeScript Scheduler | Syncfusion
-description: Learn here all about Show entire time in responsive mode in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Entire Time in Responsive Mode in TypeScript Scheduler | Syncfusion
+description: Learn how to show the entire time label in responsive mode in the Syncfusion TypeScript Scheduler by customizing the time slot display.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Show entire time in responsive mode in TypeScript Scheduler control
+# Show Entire Time in Responsive Mode in TypeScript Scheduler
 
 In responsive mode, time slots may not always display the full time label if the available space is limited. For example, **9 AM** is visible since it has enough space, but if the Scheduler’s start hour is set to **08:45 AM**, the time slot may truncate the label.  
 

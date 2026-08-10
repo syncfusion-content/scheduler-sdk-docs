@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility in Blazor Scheduler Component | Syncfusion®
-description: Describes how the Blazor Scheduler control has been built keeping web accessibility in mind, thus allowing to interact with assistive technologies.
+title: Accessibility in Blazor Scheduler | Syncfusion
+description: Learn how Syncfusion Blazor Scheduler meets WCAG 2.2, Section 508, and ADA accessibility standards with screen reader and keyboard support.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Accessibility in Blazor Scheduler Component
+# Accessibility in Blazor Scheduler
 
 The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

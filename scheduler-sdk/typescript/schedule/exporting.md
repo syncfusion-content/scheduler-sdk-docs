@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Exporting in TypeScript Scheduler control | Syncfusion
-description: Learn here all about Exporting in Syncfusion TypeScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Exporting in TypeScript Scheduler | Syncfusion
+description: Learn how to export and import events in the Syncfusion TypeScript Scheduler to Excel and ICS files, and print appointments with custom options.
 platform: scheduler-sdk
-control: Exporting 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Exporting in TypeScript Scheduler control
+# Exporting in TypeScript Scheduler
 
 The Scheduler supports exporting all its appointments both to an `Excel` or `ICS` extension file at client-side. It offers different client-side methods to export its appointments in an `Excel` or `ICal` format file. Let's explore how to implement the exporting functionality in Scheduler.
 

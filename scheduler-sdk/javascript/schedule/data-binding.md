@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Data binding in JavaScript Scheduler control | Syncfusion
-description: Learn here all about Data binding in Syncfusion JavaScript Scheduler control of Syncfusion Essential JS 2 and more.
+title: Data Binding in JavaScript Scheduler | Syncfusion
+description: Learn how to bind data to the Syncfusion JavaScript Scheduler from local JavaScript arrays and remote REST services for flexible data loading.
 platform: scheduler-sdk
-control: Data binding 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Data binding in JavaScript Scheduler control
+# Data Binding in JavaScript Scheduler
 
 The Scheduler manages data using the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings#datasource) property of the Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. The Scheduler supports two types of data binding methods:
 

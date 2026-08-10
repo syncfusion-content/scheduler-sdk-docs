@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization in Blazor Scheduler Component | Syncfusion®
-description: This section explains how the Blazor Scheduler adapts to various languages and culture by parsing and formatting the date or number appropriately.
+title: Globalization in Blazor Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion Blazor Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Globalization in Blazor Scheduler Component
+# Globalization and Localization in Blazor Scheduler
 
 [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component can be localized. Refer to [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) topic to localize Blazor components.
 

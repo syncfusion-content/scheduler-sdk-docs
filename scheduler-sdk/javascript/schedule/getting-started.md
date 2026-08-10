@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting started with JavaScript Schedule Control | Syncfusion
-description: Learn how to create and configure the JavaScript Scheduler control in your application, including setup, initialization, and basic customization.
+title: Getting Started with JavaScript Scheduler | Syncfusion
+description: Learn how to get started with the Syncfusion JavaScript Scheduler, exploring setup, initialization, and basic customization in a JavaScript app.
 platform: scheduler-sdk
-control: Getting started 
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Getting started with JavaScript Schedule Control
+# Getting Started with JavaScript Scheduler
 
 This guide explains how to create a [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its core features in a JavaScript application.
 

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Set Different Work Hours in ASP.NET MVC Schedule | Syncfusion
-description: Learn here all about Set Different Work Hours in Syncfusion ASP.NET MVC Schedule component of Syncfusion Essential JS 2 and more.
+title: Different Working Hours in ASP.NET MVC Scheduler | Syncfusion
+description: Learn how to set different work hours for specific days in the Syncfusion ASP.NET MVC Scheduler to match varied team schedules.
 platform: scheduler-sdk
-control: Set Different Work Hours
-publishingplatform: scheduler-sdk
+control: Scheduler
 documentation: ug
 ---
 
-# Set Different Working Hours on Different Days
+# Set Different Working Hours on Different Days in ASP.NET MVC Scheduler
 
 By default, the work hours of the Scheduler is highlighted based on the start and end values provided within the [`WorkHours`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_WorkHours) property which remains same for all days. To highlight different work hours range for different days,`setWorkHours` method. You can pass date object/ multiple date objects collection as first argument and start and end time need to be added as work hours should be passed as second and third arguments respectively. In the following code example, on button click 11:00 AM to 08:00 PM of 15th and 17th February has been added in work hours.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resource Grouping in WinUI Scheduler control | Syncfusion
-description:  Learn here all about grouping the appointments based on the resources in the day, week, and timeline views in Syncfusion WinUI Scheduler (SfScheduler) control.
+title: Resource Grouping in WinUI Scheduler | Syncfusion
+description: Learn how to group appointments based on resources in day, week and timeline views in WinUI Scheduler.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Resource Grouping in WinUI Scheduler (SfScheduler)
+# Resource Grouping in WinUI Scheduler
 
 The scheduler resource view will allow the group appointments based on the resources or dates, arranged by the column, or row in the day, week, workweek, timeline day, timeline week, timeline workweek, and timeline month views. It also allows to share the events or appointments to the multiple resources and resource appointment details that can be edited by using a built-in appointment editor dialog.
 

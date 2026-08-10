@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in WPF Scheduler control | Syncfusion
-description: Learn here all about Events support in Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
+title: Events in WPF Scheduler | Syncfusion
+description: Learn about events in WPF Scheduler including cell tapped, appointment selection, and drag drop interactions.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Events in WPF Scheduler (SfScheduler)
+# Events in WPF Scheduler
 
 ## CellTapped
 

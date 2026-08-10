@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set different work hours in Angular Schedule component | Syncfusion
-description: Learn here all about Set different work hours in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Different Working Hours per Days in Angular Scheduler | Syncfusion
+description: Learn how to set different work hours for specific days in the Syncfusion Angular Scheduler to match varied team schedules.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Set different work hours in Angular Schedule component
+# Set Different Working Hours on Different Days in Angular Scheduler
 
 By default, the work hours of the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) are highlighted based on the start and end values provided in the [`workHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule#workhours) property, which remains the same for all days. To highlight different work hours range for specific days, use the[`setWorkHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule#setworkhours) method.
 

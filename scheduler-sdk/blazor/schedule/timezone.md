@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timezone in Blazor Scheduler Component | Syncfusion®
-description: This section includes the timezone topics explaining how to render the appointments in different timezones.
+title: Timezone in Blazor Scheduler | Syncfusion
+description: Learn how to render appointments in different time zones in the Syncfusion Blazor Scheduler for global users and cross-region scheduling.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

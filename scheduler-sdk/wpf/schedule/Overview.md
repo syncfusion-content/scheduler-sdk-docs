@@ -1,13 +1,13 @@
 ---
-title: About WPF Scheduler control | Syncfusion
+title: About Syncfusion WPF Scheduler Control | Syncfusion
 canonical_url: "https://www.syncfusion.com/scheduler-sdk/wpf-scheduler"
-description: Learn here all about introduction of Syncfusion WPF Scheduler (SfScheduler) control, its elements and more.
+description: Learn about introduction of Syncfusion Essential Studio WPF Scheduler control, its key features, scheduling capabilities, and more details.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# WPF Scheduler (SfScheduler) Overview
+# About Syncfusion WPF Scheduler Control
 
 The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
 

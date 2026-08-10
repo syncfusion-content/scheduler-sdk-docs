@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dropdown Spinner Customization in WinUI DatePicker | Syncfusion
-description: This section describes about how to customize the Date Picker (SfDatePicker) control dropdown spinner into WinUI application and its basic features.
+title: Dropdown Spinner Customization in WinUI Date Picker | Syncfusion
+description: Learn how to customize the dropdown spinner in WinUI Date Picker control for better user experience.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug

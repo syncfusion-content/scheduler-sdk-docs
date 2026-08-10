@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtual Scrolling in Blazor Scheduler Component | Syncfusion®
-description: This section demonstrates how to dynamically load the resources and events to the DOM as you scroll through the Blazor scheduler component.
+title: Virtual Scrolling in Blazor Scheduler | Syncfusion
+description: Learn how to enable virtual scrolling in the Syncfusion Blazor Scheduler timeline and agenda views to load resources and events on demand.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
 
-# Virtual Scrolling in Blazor Scheduler Component
+# Virtual Scrolling in Blazor Scheduler
 
 To achieve better performance in the Scheduler when loading a large number of resources and events, virtual scrolling support has been added in the timeline views to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in timeline view of the Scheduler by setting `true` to the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view specific settings.
 
