@@ -4,7 +4,6 @@ title: Display Multi-Color Events in TypeScript Scheduler | Syncfusion
 description: Learn how to render a single appointment in multiple colors in the Syncfusion TypeScript Scheduler using a custom event template.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
