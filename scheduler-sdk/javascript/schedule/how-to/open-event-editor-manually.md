@@ -4,7 +4,6 @@ title: Open Event Editor Manually in JavaScript Scheduler | Syncfusion
 description: Learn how to open the event editor manually in the Syncfusion JavaScript Scheduler on cell or event click, including on a single click.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

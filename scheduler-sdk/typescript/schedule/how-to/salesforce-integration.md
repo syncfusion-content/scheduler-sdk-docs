@@ -4,7 +4,6 @@ title: Salesforce Integration in TypeScript Scheduler | Syncfusion
 description: Learn how to integrate the Syncfusion TypeScript Scheduler into Salesforce apps to schedule and manage appointments within Salesforce.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
@@ -33,7 +32,7 @@ After login, search for **Dev Hub** in the quick find search box and select **De
 
 ## Creating a Salesforce project
 
-Now you have have Salesforce configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for our integration. 
+Now you have have Salesforce configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for our integration.
 
 In your preferred location, create a base directory for your Salesforce project. For example, you can create a directory named `salesforceApp` using the following command:
 

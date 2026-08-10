@@ -4,7 +4,6 @@ title: Set Different Work Hours in JavaScript Scheduler | Syncfusion
 description: Learn how to set different work hours for specific days in the Syncfusion JavaScript Scheduler to match varied team schedules.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
