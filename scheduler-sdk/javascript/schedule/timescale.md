@@ -4,7 +4,6 @@ title: Timescale in JavaScript Scheduler | Syncfusion
 description: Learn how to customize time slots in the Syncfusion JavaScript Scheduler to set the interval and slot count per row.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

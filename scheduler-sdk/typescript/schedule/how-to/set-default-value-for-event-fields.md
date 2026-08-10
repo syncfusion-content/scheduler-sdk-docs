@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Set Default Value for Event Fields in TypeScript Scheduler | Syncfusion
+title: Set Default Value for Events in TypeScript Scheduler | Syncfusion
 description: Learn how to set default values for event fields in the Syncfusion TypeScript Scheduler editor window to pre-fill data on new appointments.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

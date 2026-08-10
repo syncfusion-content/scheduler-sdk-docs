@@ -4,7 +4,6 @@ title: Salesforce Integration in JavaScript Scheduler | Syncfusion
 description: Learn how to integrate the Syncfusion JavaScript Scheduler into Salesforce apps to schedule and manage appointments within Salesforce.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

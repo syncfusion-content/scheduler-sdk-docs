@@ -4,7 +4,6 @@ title: Editor Window Customization in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to customize the editor window and quick pop-up in the Syncfusion ASP.NET MVC Scheduler to match your data and design needs.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -108,7 +107,7 @@ It is possible to validate the required fields of the editor window from client-
 
 
 
-N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
+N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator#validation-rules) documentation.
 
 ### Add additional fields to the default editor
 

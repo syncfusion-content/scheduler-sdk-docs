@@ -4,7 +4,6 @@ title: Calendar Mode in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to render the Syncfusion ASP.NET MVC Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -36,7 +35,7 @@ It requires the following CLDR data to be loaded using loadCldr function.
 * timeZoneNames.json
 * ca-islamic.json
 
-N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization/#installing-cldr-data) topic.
+N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#installing-cldr-data) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

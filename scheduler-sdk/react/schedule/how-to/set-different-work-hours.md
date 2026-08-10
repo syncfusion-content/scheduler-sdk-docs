@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Different Working Hours on Different Days in React Scheduler | Syncfusion
+title: Set Different Working Hours per Days in React Scheduler | Syncfusion
 description: Learn how to set different work hours for specific days in the Syncfusion React Scheduler to match varied team schedules.
 control: Scheduler
 platform: scheduler-sdk

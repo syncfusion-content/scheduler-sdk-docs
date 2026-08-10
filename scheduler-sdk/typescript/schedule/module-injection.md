@@ -4,7 +4,6 @@ title: Module Injection in TypeScript Scheduler | Syncfusion
 description: Learn how to import and inject modules in the Syncfusion TypeScript Scheduler to enable specific views, features, and editor options.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

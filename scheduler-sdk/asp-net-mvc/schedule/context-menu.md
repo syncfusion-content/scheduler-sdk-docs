@@ -4,7 +4,6 @@ title: Context Menu in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to integrate the Context Menu in the Syncfusion ASP.NET MVC Scheduler to perform actions on cells, resource cells, and appointments.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

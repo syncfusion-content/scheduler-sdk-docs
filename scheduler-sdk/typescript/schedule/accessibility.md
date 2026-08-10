@@ -4,7 +4,6 @@ title: Accessibility in TypeScript Scheduler | Syncfusion
 description: Learn how the Syncfusion TypeScript Scheduler meets WAI-ARIA, WCAG 2.2, and Section 508 accessibility standards with screen reader and keyboard support.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

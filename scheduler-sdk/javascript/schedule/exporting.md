@@ -4,7 +4,6 @@ title: Exporting in JavaScript Scheduler | Syncfusion
 description: Learn how to export and import events in the Syncfusion JavaScript Scheduler to Excel and ICS files, and print appointments with custom options.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
