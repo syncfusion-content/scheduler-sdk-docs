@@ -146,14 +146,14 @@ Initialize the `SfTimePicker` control and configure its properties. The `SfTimeP
 using Syncfusion.Maui.Picker;
 . . .
 
-SfTimePicker picker = new SfTimePicker();
-picker.HeaderView = new PickerHeaderView()
+SfTimePicker timePicker = new SfTimePicker();
+timepicker.HeaderView = new PickerHeaderView()
 {
     Text = "Time Picker",
     Height = 40,
 };
 
-this.Content = picker;
+this.Content = timePicker;
 
 {% endhighlight %}
 {% endtabs %}

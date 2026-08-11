@@ -34,11 +34,11 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfDateTimePicker picker = new SfDateTimePicker()
+        SfDateTimePicker dateTimePicker = new SfDateTimePicker()
         {
             SelectedDate = new DateTime(2023, 09, 07, 10, 15, 22),
         };
-        this.Content = picker;
+        this.Content = dateTimePicker;
     }
 }
 
@@ -70,7 +70,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.picker.SelectedDate = null;
+        this.dateTimePicker.SelectedDate = null;
     }
 }
 

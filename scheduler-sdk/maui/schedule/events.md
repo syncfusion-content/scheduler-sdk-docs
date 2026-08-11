@@ -28,14 +28,14 @@ A [Tapped](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfSched
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        Tapped="OnSchedulerTapped" >
 </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.Scheduler.Tapped += this.OnSchedulerTapped;
+this.scheduler.Tapped += this.OnSchedulerTapped;
 
 private void OnSchedulerTapped(object sender, SchedulerTappedEventArgs e)
 {
@@ -72,12 +72,12 @@ The [SchedulerRightTappedEventArgs](https://help.syncfusion.com/cr/maui/Syncfusi
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        RightTapped="Scheduler_RightTapped" >
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1 3 5 6 7 8 9" %}
-this.Scheduler.RightTapped += Scheduler_RightTapped;
+this.scheduler.RightTapped += Scheduler_RightTapped;
 
 private void Scheduler_RightTapped(object sender, SchedulerRightTappedEventArgs e)
 {
@@ -107,14 +107,14 @@ Whenever the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.S
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        DoubleTapped="OnSchedulerDoubleTapped" >
 </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.Scheduler.DoubleTapped += this.OnSchedulerDoubleTapped;
+this.scheduler.DoubleTapped += this.OnSchedulerDoubleTapped;
 
 private void OnSchedulerDoubleTapped(object sender, SchedulerDoubleTappedEventArgs e)
 {
@@ -148,14 +148,14 @@ Whenever the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.S
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        LongPressed="OnSchedulerLongPressed" >
 </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.Scheduler.LongPressed += this.OnSchedulerLongPressed;
+this.scheduler.LongPressed += this.OnSchedulerLongPressed;
 
 private void OnSchedulerLongPressed(object sender, SchedulerLongPressedEventArgs e)
 {
@@ -186,14 +186,14 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sched
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        SelectionChanged="OnSchedulerSelectionChanged" >
 </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.Scheduler.SelectionChanged += this.OnSchedulerSelectionChanged;
+this.scheduler.SelectionChanged += this.OnSchedulerSelectionChanged;
 
 private void OnSchedulerSelectionChanged(object sender, SchedulerSelectionChangedEventArgs e)
 {
@@ -223,14 +223,14 @@ The [ViewChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="2" %}
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        ViewChanged="OnSchedulerViewChanged" >
 </scheduler:SfScheduler>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="1" %}
 
-this.Scheduler.ViewChanged += this.OnSchedulerViewChanged;
+this.scheduler.ViewChanged += this.OnSchedulerViewChanged;
 
 private void OnSchedulerViewChanged(object sender, SchedulerViewChangedEventArgs e)
 {
@@ -257,7 +257,7 @@ The [TappedCommand](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Schedule
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
 
-<scheduler:SfScheduler x:Name="Scheduler"
+<scheduler:SfScheduler x:Name="scheduler"
                        View="Month"
                        AllowedViews="Day,Month,TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek,Agenda"
                        TappedCommand="{Binding SchedulerTappedCommand}">
@@ -294,7 +294,7 @@ The [RightTappedCommand](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Scheduler"
+<scheduler:SfScheduler x:Name="scheduler"
                        View="Month"
                        AllowedViews="Day,Week,WorkWeek,Month,TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek,Agenda"
                        RightTappedCommand="{Binding SchedulerRightTappedCommand}">
@@ -337,7 +337,7 @@ The [DoubleTappedCommand](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sc
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
 
-<scheduler:SfScheduler x:Name="Scheduler"
+<scheduler:SfScheduler x:Name="scheduler"
                        View="Month"
                        AllowedViews="Day,Month,TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek,Agenda"
                        DoubleTappedCommand="{Binding SchedulerDoubleTappedCommand}">
@@ -376,7 +376,7 @@ The [LongPressedCommand](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
 
-<scheduler:SfScheduler x:Name="Scheduler"
+<scheduler:SfScheduler x:Name="scheduler"
                        View="Month"
                        AllowedViews="Day,Month,TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek,Agenda"
                        LongPressedCommand="{Binding SchedulerLongPressedCommand}">
@@ -414,7 +414,7 @@ The [ViewChangedCommand](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
 
-<scheduler:SfScheduler x:Name="Scheduler"
+<scheduler:SfScheduler x:Name="scheduler"
                        View="Month"
                        AllowedViews="Day,Month,TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek,Agenda"
                        ViewChangedCommand="{Binding SchedulerViewChangedCommand}">
@@ -455,7 +455,7 @@ The [SelectionChangedCommand](https://help.syncfusion.com/cr/maui/Syncfusion.Mau
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
 
-<scheduler:SfScheduler x:Name="Scheduler"
+<scheduler:SfScheduler x:Name="scheduler"
                        View="Month"
                        AllowedViews="Day,Month,TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek,Agenda"
                        SelectionChangedCommand="{Binding SchedulerSelectionChangedCommand}">
