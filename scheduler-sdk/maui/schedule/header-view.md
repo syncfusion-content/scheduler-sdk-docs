@@ -22,7 +22,7 @@ You can customize the default [Height](https://help.syncfusion.com/cr/maui/Syncf
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.HeaderView>
             <scheduler:SchedulerHeaderView 
@@ -66,7 +66,7 @@ The header date format can be customized by using the [TextFormat](https://help.
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.HeaderView>
             <scheduler:SchedulerHeaderView 
@@ -114,7 +114,7 @@ You can style the background color and textStyle by using the properties such as
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.HeaderView>
             <scheduler:SchedulerHeaderView 
@@ -141,9 +141,9 @@ public partial class MainPage : ContentPage
             FontSize = 14,
         };
 
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.HeaderView.TextStyle = textStyle;
-        this.Scheduler.HeaderView.Background = Brush.LightGreen;
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.HeaderView.TextStyle = textStyle;
+        this.scheduler.HeaderView.Background = Brush.LightGreen;
     }
 }
 
@@ -163,7 +163,7 @@ You can customize the header appearance by using the [HeaderTemplate](https://he
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.HeaderView>
             <scheduler:SchedulerHeaderView>
@@ -233,7 +233,7 @@ You can customize the header appearance by using the [HeaderTemplate](https://he
             </DataTemplate>
             <local:HeaderTemplateSelector x:Key="headerTemplateSelector" TodayDatesTemplate="{StaticResource todayDatesTemplate}"  NormaldatesTemplate="{StaticResource normaldatesTemplate}" />
         </Grid.Resources>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                                View="Week">
             <scheduler:SfScheduler.HeaderView>
                 <scheduler:SchedulerHeaderView HeaderTemplate = "{StaticResource headerTemplateSelector}" />

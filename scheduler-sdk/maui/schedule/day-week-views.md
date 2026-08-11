@@ -29,7 +29,7 @@ The [.NET MAUI Scheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sc
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -71,7 +71,7 @@ The time interval between the time slots in the day, week, and workweek views ca
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -116,7 +116,7 @@ The time interval height can be customized for each time slot cell of the day, w
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView       
@@ -160,7 +160,7 @@ The [NonWorkingDays](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Schedul
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="WorkWeek">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView       
@@ -204,7 +204,7 @@ The default values for [StartHour](https://help.syncfusion.com/cr/maui/Syncfusio
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView       
@@ -257,7 +257,7 @@ The [AllDayAppointmentHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Mau
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView AllDayAppointmentHeight="50" />
@@ -297,7 +297,7 @@ The [AllowSpannedAppointmentsInTimeSlots](https://help.syncfusion.com/cr/maui/Sy
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView AllowSpannedAppointmentsInTimeSlots="True" />
@@ -332,7 +332,7 @@ The user interaction such as selection and highlights specific regions of day, w
 
 ![special-time-region-in-timeslots-views-in-maui-scheduler](images/day-week-views/special-time-region-in-timeslots-views-in-maui-scheduler.png)
 
-Watch the video below for a step-by-step guide on adding and customizing TimeRegions in .NET MAUI SfScheduler
+Watch the video below for a step-by-step guide on adding and customizing TimeRegions in .NET MAUI Scheduler
 
 {% youtube "https://www.youtube.com/watch?v=ru06fr9jo5Q" %}
 
@@ -357,8 +357,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -408,8 +408,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -457,8 +457,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -513,8 +513,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -556,7 +556,7 @@ You can customize the time region appearance by using the [TimeRegionTemplate](h
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
@@ -584,8 +584,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -634,7 +634,7 @@ You can customize the time region appearance by using the [TimeRegionTemplate](h
             </DataTemplate>
             <local:TimeRegionTemplateSelector x:Key="timeRegionTemplateSelector"  TimeRegionsTemplate="{StaticResource timeRegiontemplate}"  TimeRegionsTemplate1="{StaticResource timeRegiontemplate1}" />
         </Grid.Resources>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                                 View="Week">
             <scheduler:SfScheduler.DaysView>
                 <scheduler:SchedulerDaysView 
@@ -675,8 +675,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -723,7 +723,7 @@ The [.NET MAUI Scheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sc
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -765,7 +765,7 @@ You can show or hide the current time indicator in day, week, and workweek views
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -806,7 +806,7 @@ The current time indicator can be customized by using the [CurrentTimeIndicatorB
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -851,7 +851,7 @@ The [TimeRulerWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Schedul
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -893,7 +893,7 @@ The [MinimumAppointmentDuration](https://help.syncfusion.com/cr/maui/Syncfusion.
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -945,7 +945,7 @@ You can customize the all-day appointment appearance by using the [AllDayAppoint
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Week">
+    <scheduler:SfScheduler x:Name="scheduler" View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
                 <scheduler:SchedulerDaysView.AllDayAppointmentTemplate>
@@ -972,7 +972,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
         // Creating an instance for the scheduler appointment collection.
         var appointments = new ObservableCollection<SchedulerAppointment>();
         for (int i = 1; i <= 5; i++)
@@ -988,7 +988,7 @@ public partial class MainPage : ContentPage
         });
         }
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointments;
+        this.scheduler.AppointmentsSource = appointments;
     }
 }
 
@@ -1004,7 +1004,7 @@ You can customize the default appearance of more appointments indicator in an al
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Week">
+    <scheduler:SfScheduler x:Name="scheduler" View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
                 <scheduler:SchedulerDaysView.MoreAppointmentsTemplate>
@@ -1031,7 +1031,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
         // Creating an instance for the scheduler appointment collection.
         var appointments = new ObservableCollection<SchedulerAppointment>();
         for (int i = 1; i <= 5; i++)
@@ -1048,7 +1048,7 @@ public partial class MainPage : ContentPage
         });
         }
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointments;
+        this.scheduler.AppointmentsSource = appointments;
     }
 }
 
@@ -1070,7 +1070,7 @@ The date and day format of SfScheduler ViewHeader can be customized by using the
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
@@ -1118,7 +1118,7 @@ The height of the ViewHeader in a day, week, and work week views can be customiz
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
@@ -1167,7 +1167,7 @@ The background color and text style for the labels mentioning the time can be cu
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
@@ -1190,20 +1190,20 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
         var dateTextStyle = new SchedulerTextStyle()
         {
         TextColor = Colors.Red,
         FontSize = 12,
         };
-        this.Scheduler.DaysView.ViewHeaderSettings.DateTextStyle = dateTextStyle;
+        this.scheduler.DaysView.ViewHeaderSettings.DateTextStyle = dateTextStyle;
         var dayTextStyle = new SchedulerTextStyle()
         {
         TextColor = Colors.Red,
         FontSize = 12,
         };
-        this.Scheduler.DaysView.ViewHeaderSettings.DayTextStyle = dayTextStyle;
-        this.Scheduler.DaysView.ViewHeaderSettings.Background = Brush.LightGreen;
+        this.scheduler.DaysView.ViewHeaderSettings.DayTextStyle = dayTextStyle;
+        this.scheduler.DaysView.ViewHeaderSettings.Background = Brush.LightGreen;
     }
 }
 
@@ -1223,7 +1223,7 @@ You can customize the view header appearance by using the [ViewHeaderTemplate](h
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="WorkWeek">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView>
@@ -1288,7 +1288,7 @@ You can customize the view header appearance by using the [ViewHeaderTemplate](h
         </DataTemplate>
         <local:ViewHeaderTemplateSelector x:Key="viewHeaderTemplateSelector" TodayDateTemplate="{StaticResource todayDateTemplate}" NormalDateTemplate="{StaticResource normalDateTemplate}"/>
     </Grid.Resources>
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week" >
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView ViewHeaderTemplate="{StaticResource viewHeaderTemplateSelector}" />
@@ -1327,7 +1327,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
     }
 }
 
@@ -1350,7 +1350,7 @@ The format for the labels mentioning the time can be customized by setting the [
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week">
         <scheduler:SfScheduler.DaysView>
             <scheduler:SchedulerDaysView 
@@ -1404,13 +1404,13 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
         var timeRulerTextStyle = new SchedulerTextStyle()
         {
         TextColor = Colors.Red,
         FontSize = 12,
         };
-        this.Scheduler.DaysView.TimeRulerTextStyle = timeRulerTextStyle;
+        this.scheduler.DaysView.TimeRulerTextStyle = timeRulerTextStyle;
     }
 }
 

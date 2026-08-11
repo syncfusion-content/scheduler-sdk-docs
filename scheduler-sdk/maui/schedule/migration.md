@@ -1,15 +1,15 @@
 ---
 layout: post
 platform: scheduler-sdk
-title: Migrate from Xamarin SfSchedule to .NET MAUI Scheduler | Syncfusion®
-description: Migrate from Xamarin SfSchedule to .NET MAUI Scheduler with API mapping and guidance on renamed properties and methods.
+title: Migrate from Xamarin Schedule to .NET MAUI Scheduler | Syncfusion®
+description: Migrate from Xamarin Schedule to .NET MAUI Scheduler with API mapping and guidance on renamed properties and methods.
 control: SfScheduler
 documentation: ug
 ---  
 
-# Migrate from Xamarin SfSchedule to .NET MAUI SfScheduler 
+# Migrate from Xamarin Schedule to .NET MAUI Scheduler 
 
-To make migrating from the Xamarin [Xamarin SfSchedule](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) to the [.NET MAUI SfScheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler) easier, most of the APIs from the Xamarin SfSchedule were kept in the .NET MAUI SfScheduler. However, to maintain consistency in API naming in the .NET MAUI SfScheduler, some of the APIs have been renamed. The following topics describe these differences.
+To make migrating from the Xamarin [Xamarin Schedule](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) to the [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler) easier, most of the APIs from the Xamarin Schedule were kept in the .NET MAUI Scheduler. However, to maintain consistency in API naming in the .NET MAUI Scheduler, some of the APIs have been renamed. The following topics describe these differences.
 
 ## Namespaces 
 
@@ -268,7 +268,7 @@ this.Content = scheduler;
 
 ### SfSchedule
 
-The following code example, explains how to initialize the properties of the Xamarin SfSchedule and .NET MAUI SfScheduler class.
+The following code example, explains how to initialize the properties of the Xamarin Schedule and .NET MAUI Scheduler class.
 
 <table>
 <tr>
@@ -518,7 +518,7 @@ this.Content = scheduler;
 
 ### Scheduler Resource 
 
-The following code example explains how to add the scheduler resource in the Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to add the scheduler resource in the Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -622,7 +622,7 @@ var Resources = new ObservableCollection<SchedulerResource>()
 };
 
 //Adding the scheduler resource collection to the schedule resources of the SfSchedule.
-this.Scheduler.ResourceView.Resources = Resources;
+this.scheduler.ResourceView.Resources = Resources;
 
 {% endhighlight %}
 
@@ -725,7 +725,7 @@ schedule.ScheduleResources = Employees;
 {% tabs %}
 
 {% highlight xaml tabtitle="MainPage.xaml" %}
-<schedule:SfScheduler x:Name="Scheduler"  View="TimelineWeek" 
+<schedule:SfScheduler x:Name="scheduler"  View="TimelineWeek" 
                             AppointmentsSource="{Binding Meetings}"
                             AllowedViews="TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek" >
 <schedule:SfScheduler.ResourceView>
@@ -762,7 +762,7 @@ meeting.EventName = "Meeting";
 meeting.Resources = new ObservableCollection<object> { "1000" };
 var Meetings = new ObservableCollection<Meeting>();
 Meetings.Add(meeting);
-this.Scheduler.AppointmentsSource = Meetings;
+this.scheduler.AppointmentsSource = Meetings;
 
 /// <summary>   
 /// Represents custom data properties.   
@@ -779,7 +779,7 @@ resourceMapping.Name = "Name";
 resourceMapping.Id = "Id";
 resourceMapping.Background = "BackgroundColor";
 resourceMapping.Foreground = "ForegroundColor";
-this.Scheduler.ResourceView.Mapping = resourceMapping;
+this.scheduler.ResourceView.Mapping = resourceMapping;
 
 var Resources = new ObservableCollection<Employee>()
 {
@@ -787,7 +787,7 @@ var Resources = new ObservableCollection<Employee>()
 };
 
 //Adding the scheduler resource collection to the schedule resources of the SfSchedule.
-this.Scheduler.ResourceView.Resources = Resources;
+this.scheduler.ResourceView.Resources = Resources;
 
 {% endhighlight %}
 
@@ -797,7 +797,7 @@ this.Scheduler.ResourceView.Resources = Resources;
 
 ### SchedulerAppointment
 
-The following code example explains how to create the scheduler appointments in the Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to create the scheduler appointments in the Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -978,7 +978,7 @@ this.Content = scheduler;
 
 ### SchedulerAppointmentMapping
 
-The following code example explains how to map the custom appointments data in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to map the custom appointments data in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -1198,7 +1198,7 @@ this.Content = scheduler;
 
 ### MonthView
 
-The following code example explains how to configure the month view settings in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to configure the month view settings in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -1351,7 +1351,7 @@ this.Content = scheduler;
  
 ### DayView
 
-The following code example explains how to configure the day view settings in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to configure the day view settings in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -1521,7 +1521,7 @@ this.Content = scheduler;
 
 ### TimelineView
 
-The following code example explains how to configure the timeline view settings in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to configure the timeline view settings in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -1675,7 +1675,7 @@ this.Content = scheduler;
  
 ### SchedulerTimeRegion
 
-The following code example, explains how to configure the special time regions in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example, explains how to configure the special time regions in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -1819,7 +1819,7 @@ this.Content = scheduler;
 
 ### HeaderView
 
-The following code example explains how to customize the appearance of the header in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to customize the appearance of the header in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -1924,7 +1924,7 @@ this.Content = scheduler;
 
 ### ViewHeaderSettings
 
-The following code example explains how to customize the appearance of the view header in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to customize the appearance of the view header in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -2068,7 +2068,7 @@ this.Content = scheduler;
 
 ### AppointmentTextStyle
 
-The following code example explains how to customize the appearance of the appointment in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to customize the appearance of the appointment in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -2225,7 +2225,7 @@ this.Content = scheduler;
 
 ### CellStyle
 
-The following code example explains how to customize the appearance of the month cell in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to customize the appearance of the month cell in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>
@@ -2371,7 +2371,7 @@ this.Content = scheduler;
 
 ### WeekNumberStyle
 
-The following code example explains how to customize the appearance of the cell in Xamarin SfSchedule and .NET MAUI SfScheduler.
+The following code example explains how to customize the appearance of the cell in Xamarin Schedule and .NET MAUI Scheduler.
 
 <table>
 <tr>

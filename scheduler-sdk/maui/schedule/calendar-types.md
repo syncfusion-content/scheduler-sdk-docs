@@ -53,7 +53,7 @@ N>
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler"  View="TimelineMonth" CalendarType="Hijri">
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineMonth" CalendarType="Hijri">
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
@@ -110,7 +110,7 @@ public partial class MainPage : ContentPage
         });
 
         // Adding the schedule appointment collection to the ItemsSource.
-        this.Scheduler.AppointmentsSource = appointments;
+        this.scheduler.AppointmentsSource = appointments;
     }
 }
 {% endhighlight %}
@@ -145,7 +145,7 @@ public partial class MainPage : ContentPage
         });
 
         // Adding the schedule appointment collection to the ItemsSource.
-        this.Scheduler.AppointmentsSource = appointments;
+        this.scheduler.AppointmentsSource = appointments;
     }
 }
 {% endhighlight %}

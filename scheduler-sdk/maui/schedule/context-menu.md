@@ -338,7 +338,7 @@ The [AppointmentContextMenu](https://help.syncfusion.com/cr/maui/Syncfusion.Maui
     . . .
     xmlns:schedule="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <schedule:SfScheduler x:Name="Scheduler" 
+    <schedule:SfScheduler x:Name="scheduler" 
                           x:DataType="local:SchedulerClipboardViewModel"
                           AppointmentsSource="{Binding Events}"
                           AppointmentEditorMode="Add,Edit"

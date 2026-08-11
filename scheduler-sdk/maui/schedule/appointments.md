@@ -21,7 +21,7 @@ The [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.S
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Week" />
+    <scheduler:SfScheduler x:Name="scheduler" View="Week" />
 </ContentPage>
 
 {% endhighlight %}
@@ -49,7 +49,7 @@ public partial class MainPage : ContentPage
         });
 
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 
@@ -142,7 +142,7 @@ The [AppointmentMapping](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week" >
         <scheduler:SfScheduler.AppointmentMapping>
             <scheduler:SchedulerAppointmentMapping
@@ -218,7 +218,7 @@ public partial class MainPage : ContentPage
         // Adding a business object to the business object Collection.
         Meetings.Add(meeting);
         // Adding business object in the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = Meetings;
+        this.scheduler.AppointmentsSource = Meetings;
     }
 }
 
@@ -243,7 +243,7 @@ A spanned appointment is one that lasts longer than 24 hours. The spanned appoin
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week" >
         <scheduler:SfScheduler.AppointmentMapping>
             <scheduler:SchedulerAppointmentMapping
@@ -287,7 +287,7 @@ public partial class MainPage : ContentPage
         // Adding a business object to the business object Collection.
         Meetings.Add(meeting);
         // Adding business object in the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = Meetings;
+        this.scheduler.AppointmentsSource = Meetings;
     }
 }
 
@@ -331,7 +331,7 @@ public partial class MainPage : ContentPage
         });
 
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 
@@ -364,7 +364,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
         // Creating an instance for the scheduler appointment collection.
         var appointment = new ObservableCollection<SchedulerAppointment>();
 
@@ -380,7 +380,7 @@ public partial class MainPage : ContentPage
         });
 
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 
@@ -456,7 +456,7 @@ public partial class MainPage : ContentPage
         //Adding the scheduler appointment to the scheduler appointment collection.
         appointment.Add(schedulerAppointment);
         //Adding the appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 
@@ -510,7 +510,7 @@ The [AppointmentMapping](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Week" >
         <scheduler:SfScheduler.AppointmentMapping>
             <scheduler:SchedulerAppointmentMapping
@@ -595,7 +595,7 @@ public partial class MainPage : ContentPage
         // Adding a business object to the business object Collection.
         Meetings.Add(meeting);
         // Adding business object in the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = Meetings;
+        this.scheduler.AppointmentsSource = Meetings;
     }
 }
 
@@ -791,7 +791,7 @@ schedulerAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTim
 appointment.Add(schedulerAppointment);
 
 //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-this.Scheduler.AppointmentsSource = appointment;
+this.scheduler.AppointmentsSource = appointment;
 
 {% endhighlight %}
 {% endtabs %}
@@ -857,7 +857,7 @@ var exceptionAppointment = new SchedulerAppointment()
 appointment.Add(exceptionAppointment);
 
 //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-this.Scheduler.AppointmentsSource = appointment;
+this.scheduler.AppointmentsSource = appointment;
 
 {% endhighlight %}
 {% endtabs %}
@@ -918,7 +918,7 @@ The property `RecurrenceExceptionDates` should map with the business object clas
 <ContentPage 
 . . .
              xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                         View="Week" >
         <scheduler:SfScheduler.AppointmentMapping>
             <scheduler:SchedulerAppointmentMapping
@@ -974,7 +974,7 @@ var Meetings = new ObservableCollection<Meeting>();
 // Adding a business object to the business object Collection.
 Meetings.Add(recurrenceAppointment);
 // Adding business object in the AppointmentsSource of .NET MAUI Scheduler.
-this.Scheduler.AppointmentsSource = Meetings;
+this.scheduler.AppointmentsSource = Meetings;
 
 {% endhighlight %}
 {% endtabs %}
@@ -997,7 +997,7 @@ Add the created exception recurrence appointment to the SfScheduler `Appointment
 <ContentPage 
 . . .
              xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                         View="Week" >
         <scheduler:SfScheduler.AppointmentMapping>
             <scheduler:SchedulerAppointmentMapping
@@ -1062,7 +1062,7 @@ Meeting changedEvent = new Meeting
 
 recursiveAppointmentCollection.Add(changedEvent);
 // Adding business object in the AppointmentsSource of .NET MAUI Scheduler.
-this.Scheduler.AppointmentsSource = recursiveAppointmentCollection;
+this.scheduler.AppointmentsSource = recursiveAppointmentCollection;
 
 {% endhighlight %}
 {% endtabs %}
@@ -1101,15 +1101,15 @@ appointment.Add(new SchedulerAppointment()
 });
  
 //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-this.Scheduler.AppointmentsSource = appointment;
+this.scheduler.AppointmentsSource = appointment;
  
-this.Scheduler.ViewChanged += Scheduler_ViewChanged;
+this.scheduler.ViewChanged += Scheduler_ViewChanged;
  
  
 private void Scheduler_ViewChanged(object? sender, SchedulerViewChangedEventArgs e)
 {
     // Suspends the Appointment Update.
-    this.Scheduler.SuspendAppointmentViewUpdate();
+    this.scheduler.SuspendAppointmentViewUpdate();
  
     for (int i = 0; i < e.NewVisibleDates.Count; i++)
     {
@@ -1125,7 +1125,7 @@ private void Scheduler_ViewChanged(object? sender, SchedulerViewChangedEventArgs
     }
  
     // Resumes the Appointment Update.
-    this.Scheduler.ResumeAppointmentViewUpdate();
+    this.scheduler.ResumeAppointmentViewUpdate();
 }
 
 {% endhighlight %}  
@@ -1159,13 +1159,13 @@ appointments.Add(new SchedulerAppointment()
     StartTime = DateTime.Now,
     EndTime = DateTime.Now.AddHours(1),
 });
-this.Scheduler.AppointmentsSource = appointments;
+this.scheduler.AppointmentsSource = appointments;
 var appointmentTextStyle = new SchedulerTextStyle()
 {
     TextColor = Colors.Red,
     FontSize = 12,
 };
-this.Scheduler.AppointmentTextStyle = appointmentTextStyle;
+this.scheduler.AppointmentTextStyle = appointmentTextStyle;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -1190,7 +1190,7 @@ You can customize the appointment appearance by using the [AppointmentTemplate](
                 </Grid>
             </DataTemplate>
         </Grid.Resources>
-        <scheduler:SfScheduler  x:Name="Scheduler" 
+        <scheduler:SfScheduler  x:Name="scheduler" 
                                 View="Day"
                                 AllowedViews="Day,Week,WorkWeek,Month,Agenda,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth">
             <scheduler:SfScheduler.DaysView>
@@ -1214,7 +1214,7 @@ using System.Collections.ObjectModel;
 
 . . .
 
-this.Scheduler.AllowedViews = SchedulerViews.Day | SchedulerViews.Week | SchedulerViews.WorkWeek | SchedulerViews.Month | SchedulerViews.Agenda | SchedulerViews.TimelineDay | SchedulerViews.TimelineWeek | SchedulerViews.TimelineWorkWeek | SchedulerViews.TimelineMonth;
+this.scheduler.AllowedViews = SchedulerViews.Day | SchedulerViews.Week | SchedulerViews.WorkWeek | SchedulerViews.Month | SchedulerViews.Agenda | SchedulerViews.TimelineDay | SchedulerViews.TimelineWeek | SchedulerViews.TimelineWorkWeek | SchedulerViews.TimelineMonth;
 var appointments = new ObservableCollection<SchedulerAppointment>();
 appointments.Add(new SchedulerAppointment()
 {
@@ -1222,7 +1222,7 @@ appointments.Add(new SchedulerAppointment()
     StartTime = DateTime.Now,
     EndTime = DateTime.Now.AddHours(1),
 });
-this.Scheduler.AppointmentsSource = appointments;
+this.scheduler.AppointmentsSource = appointments;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -1257,7 +1257,7 @@ You can customize the appointment appearance by using the [AppointmentTemplate](
             </DataTemplate>
             <local:AppointmentTemplateSelector x:Key="appointmentTemplateSelector" TodayDateTemplate="{StaticResource todayDateTemplate}" NormalDateTemplate="{StaticResource normalDateTemplate}"/>
         </Grid.Resources>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                             View="Week" >
             <scheduler:SfScheduler.DaysView>
                 <scheduler:SchedulerDaysView AppointmentTemplate="{StaticResource appointmentTemplateSelector}" />
@@ -1300,7 +1300,7 @@ using System.Collections.ObjectModel;
 
 . . .
 
-this.Scheduler.View = SchedulerView.Week;
+this.scheduler.View = SchedulerView.Week;
 var appointments = new ObservableCollection<SchedulerAppointment>();
 appointments.Add(new SchedulerAppointment()
 {
@@ -1314,7 +1314,7 @@ appointments.Add(new SchedulerAppointment()
     StartTime = DateTime.Today.Date.AddDays(1).AddHours(10),
     EndTime = DateTime.Today.Date.AddDays(1).AddHours(11),
 });
-this.Scheduler.AppointmentsSource = appointments;
+this.scheduler.AppointmentsSource = appointments;
 
 {% endhighlight %} 
 {% endtabs %}
@@ -1334,7 +1334,7 @@ The selection view of appointment can be customized by using the [SelectedAppoin
 . . .
         xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-<scheduler:SfScheduler x:Name="Scheduler" 
+<scheduler:SfScheduler x:Name="scheduler" 
                        SelectedAppointmentBackground="Orange">
 </scheduler:SfScheduler>
 </ContentPage>
@@ -1346,7 +1346,7 @@ using Syncfusion.Maui.Scheduler;
 
 . . .
 
-this.Scheduler.SelectedAppointmentBackground = Brush.Orange;
+this.scheduler.SelectedAppointmentBackground = Brush.Orange;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -1380,14 +1380,14 @@ appointments.Add(new SchedulerAppointment()
     EndTime = DateTime.Now.AddHours(1),
 });
 
-this.Scheduler.AppointmentsSource = appointments;
+this.scheduler.AppointmentsSource = appointments;
 var appointmentBorderStyle = new SchedulerAppointmentBorderStyle ()
 {
     Stroke = Colors.Red,
     CornerRadius = 5,
     StrokeThickness = 2
 };
-this.Scheduler.AppointmentBorderStyle  = appointmentBorderStyle;
+this.scheduler.AppointmentBorderStyle  = appointmentBorderStyle;
 
 {% endhighlight %}  
 {% endtabs %}
@@ -1427,13 +1427,13 @@ appointments.Add(new SchedulerAppointment()
     Stroke = Colors.Blue,
 });
 
-this.Scheduler.AppointmentsSource = appointments;
+this.scheduler.AppointmentsSource = appointments;
 var appointmentBorderStyle = new SchedulerAppointmentBorderStyle ()
 {
     CornerRadius = 5,
     StrokeThickness = 2
 };
-this.Scheduler.AppointmentBorderStyle  = appointmentBorderStyle;
+this.scheduler.AppointmentBorderStyle  = appointmentBorderStyle;
 
 {% endhighlight %}  
 {% endtabs %}

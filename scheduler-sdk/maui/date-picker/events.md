@@ -27,7 +27,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picke
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          SelectionChanged="OnDatePickerSelectionChanged">
     </picker:SfDatePicker>
 </ContentPage>
@@ -39,7 +39,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picke
 using Syncfusion.Maui.Picker;
 
 . . .
-this.picker.SelectionChanged += this.OnDatePickerSelectionChanged;
+this.datepicker.SelectionChanged += this.OnDatePickerSelectionChanged;
 
 private void OnDatePickerSelectionChanged(object sender, DatePickerSelectionChangedEventArgs e)
 {
@@ -78,7 +78,7 @@ The [Opened](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerBa
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          Opened="OnDatePickerPopUpOpened">
     </picker:SfDatePicker>
 </ContentPage>
@@ -90,12 +90,12 @@ The [Opened](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerBa
 using Syncfusion.Maui.Picker;
 
 . . .
-this.picker.Opened += this.OnDatePickerPopUpOpened;
+this.datepicker.Opened += this.OnDatePickerPopUpOpened;
 
 private void OnDatePickerPopUpOpened(object sender, EventArgs e)
 {
     // If you need to open the picker, set IsOpen property to true.
-    this.picker.IsOpen = true;
+    this.datepicker.IsOpen = true;
 }
 
 {% endhighlight %}
@@ -118,7 +118,7 @@ The [Closing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerB
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          Closing="OnDatePickerPopUpClosing">
     </picker:SfDatePicker>
 </ContentPage>
@@ -130,7 +130,7 @@ The [Closing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerB
 using Syncfusion.Maui.Picker;
 
 . . .
-this.picker.Closing += this.OnDatePickerPopUpClosing;
+this.datepicker.Closing += this.OnDatePickerPopUpClosing;
 
 private void OnDatePickerPopUpClosing(object sender, CancelEventArgs e)
 {
@@ -157,7 +157,7 @@ The [Closed](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerBa
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          Closed="OnDatePickerPopUpClosed">
     </picker:SfDatePicker>
 </ContentPage>
@@ -169,12 +169,12 @@ The [Closed](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerBa
 using Syncfusion.Maui.Picker;
 
 . . .
-this.picker.Closed += this.OnDatePickerPopUpClosed;
+this.datepicker.Closed += this.OnDatePickerPopUpClosed;
 
 private void OnDatePickerPopUpClosed(object sender, EventArgs e)
 {
     // If you need to close the picker, set the IsOpen property to false.
-    this.picker.IsOpen = false;
+    this.datepicker.IsOpen = false;
 }
 
 {% endhighlight %}
@@ -203,7 +203,7 @@ The `SfDatePicker` footer view provides two events. These events are not applica
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          OkButtonClicked="OnDatePickerOkButtonClicked">
     </picker:SfDatePicker>
 </ContentPage>
@@ -215,7 +215,7 @@ The `SfDatePicker` footer view provides two events. These events are not applica
 using Syncfusion.Maui.Picker;
 
 . . .
-this.picker.OkButtonClicked += this.OnDatePickerOkButtonClicked;
+this.datepicker.OkButtonClicked += this.OnDatePickerOkButtonClicked;
 
 private void OnDatePickerOkButtonClicked(object sender, EventArgs e)
 {
@@ -241,7 +241,7 @@ private void OnDatePickerOkButtonClicked(object sender, EventArgs e)
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          CancelButtonClicked="OnDatePickerCancelButtonClicked">
     </picker:SfDatePicker>
 </ContentPage>
@@ -253,7 +253,7 @@ private void OnDatePickerOkButtonClicked(object sender, EventArgs e)
 using Syncfusion.Maui.Picker;
 
 . . .
-this.picker.CancelButtonClicked += this.OnDatePickerCancelButtonClicked;
+this.datepicker.CancelButtonClicked += this.OnDatePickerCancelButtonClicked;
 
 private void OnDatePickerCancelButtonClicked(object sender, EventArgs e)
 {
@@ -276,7 +276,7 @@ The SfDatePicker includes a built-in event called `SelectionChanged` that is tri
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          SelectionChangedCommand="{Binding SelectionChangedCommand}">
     </picker:SfDatePicker>
 </ContentPage>
@@ -313,7 +313,7 @@ The SfDatePicker includes a built-in event called `OkButtonClicked`, which is tr
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          AcceptCommand="{Binding AcceptCommand}">
     </picker:SfDatePicker>
 </ContentPage>
@@ -350,7 +350,7 @@ The SfDatePicker includes a built-in event called `CancelButtonClicked`, which i
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="picker"
+    <picker:SfDatePicker x:Name="datepicker"
                          DeclineCommand="{Binding DeclineCommand}">
     </picker:SfDatePicker>
 </ContentPage>
