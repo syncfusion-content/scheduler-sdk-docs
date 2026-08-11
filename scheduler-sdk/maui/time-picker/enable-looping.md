@@ -98,7 +98,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.timepicker.SelectedTime = null;
+        this.timePicker.SelectedTime = null;
     }
 }
 

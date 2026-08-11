@@ -31,7 +31,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.MinimumTime = new TimeSpan(7, 40, 0);
+timePicker.MinimumTime = new TimeSpan(7, 40, 0);
 this.Content = timePicker;
 
 {% endhighlight %}  
@@ -61,7 +61,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.MaximumTime = new TimeSpan(20, 15, 0);
+timePicker.MaximumTime = new TimeSpan(20, 15, 0);
 this.Content = timePicker;
 
 {% endhighlight %}  
@@ -100,14 +100,14 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 28, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 26, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 24, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 22, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 37, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 35, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 33, 0));
-timepicker.BlackoutTimes.Add(new TimeSpan(12, 32, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 28, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 26, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 24, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 22, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 37, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 35, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 33, 0));
+timePicker.BlackoutTimes.Add(new TimeSpan(12, 32, 0));
 this.Content = timePicker;
 
 {% endhighlight %}  
