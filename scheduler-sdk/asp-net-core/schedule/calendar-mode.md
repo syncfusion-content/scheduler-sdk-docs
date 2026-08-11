@@ -36,7 +36,7 @@ It requires the following CLDR data to be loaded using loadCldr function.
 * timeZoneNames.json
 * ca-islamic.json
 
-N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization/#installing-cldr-data) topic.
+N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#installing-cldr-data) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -65,4 +65,4 @@ N> To know more information on, how to install the CLDR data, refer the [`Intern
 
 N> However, this feature does not yet support recurrence options, which we are planning to add them in the next release.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.
