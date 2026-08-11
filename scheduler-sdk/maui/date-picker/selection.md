@@ -19,7 +19,7 @@ The SfDatePicker control allows you to select the date using the [SelectedDate](
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="datepicker"
+    <picker:SfDatePicker x:Name="datePicker"
                          SelectedDate="9/7/2023">
     </picker:SfDatePicker>
 </ContentPage>
@@ -30,12 +30,12 @@ The SfDatePicker control allows you to select the date using the [SelectedDate](
 using Syncfusion.Maui.Picker;
 
 . . .
-SfDatePicker datepicker = new SfDatePicker()
+SfDatePicker datePicker = new SfDatePicker()
 {
     SelectedDate = new DateTime(2023, 9, 7).Date,
 };
 
-this.Content = datepicker;
+this.Content = datePicker;
 
 {% endhighlight %}
 {% endtabs %}
@@ -52,7 +52,7 @@ The SfDatePicker provides clear selection support, allowing you to clear the sel
 <ContentPage
              . . .
              xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker">
-    <picker:SfDatePicker x:Name="datepicker" />
+    <picker:SfDatePicker x:Name="datePicker" />
 </ContentPage>
 
 {% endhighlight %}
@@ -61,7 +61,7 @@ The SfDatePicker provides clear selection support, allowing you to clear the sel
 using Syncfusion.Maui.Picker;
 
 . . .
-this.datepicker.SelectedDate = null;
+this.datePicker.SelectedDate = null;
 
 {% endhighlight %}
 {% endtabs %}

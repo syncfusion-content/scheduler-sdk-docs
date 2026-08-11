@@ -58,7 +58,7 @@ The following code snippet demonstrates how to apply the Liquid Glass Effect to 
                 CornerRadius="20"
                 WidthRequest="350"
                 HeightRequest="350">
-                <picker:SfDatePicker x:Name="datepicker"
+                <picker:SfDatePicker x:Name="datePicker"
                                      EnableLiquidGlassEffect="True"
                                      Background="Transparent">
                     <picker:SfDatePicker.ColumnHeaderView>
