@@ -4,6 +4,7 @@ title: Virtual Scrolling in TypeScript Scheduler | Syncfusion
 description: Learn how to enable virtual scrolling in the Syncfusion TypeScript Scheduler timeline and agenda views to load resources and events on demand.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

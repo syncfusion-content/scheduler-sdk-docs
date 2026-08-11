@@ -4,6 +4,7 @@ title: Recurrence Editor in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to use the Recurrence Editor in the Syncfusion ASP.NET MVC Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

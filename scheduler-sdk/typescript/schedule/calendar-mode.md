@@ -4,6 +4,7 @@ title: Calendar Mode in TypeScript Scheduler | Syncfusion
 description: Learn how to render the Syncfusion TypeScript Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

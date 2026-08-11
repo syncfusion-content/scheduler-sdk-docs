@@ -4,6 +4,7 @@ title: Frequently Asked Questions in JavaScript Scheduler | Syncfusion
 description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion JavaScript Scheduler control.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

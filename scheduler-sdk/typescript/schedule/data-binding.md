@@ -4,6 +4,7 @@ title: Data Binding in TypeScript Scheduler | Syncfusion
 description: Learn how to bind data to the Syncfusion TypeScript Scheduler from local JavaScript arrays and remote REST services for flexible data loading.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

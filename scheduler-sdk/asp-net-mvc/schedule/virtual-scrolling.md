@@ -4,6 +4,7 @@ title: Virtual Scrolling in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to enable virtual scrolling in the Syncfusion ASP.NET MVC Scheduler timeline and agenda views to load resources and events on demand.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

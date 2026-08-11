@@ -4,6 +4,7 @@ title: Context Menu in JavaScript Scheduler | Syncfusion
 description: Learn how to integrate the Context Menu in the Syncfusion JavaScript Scheduler to perform actions on cells, resource cells, and appointments.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

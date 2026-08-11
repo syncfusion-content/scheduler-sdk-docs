@@ -4,6 +4,7 @@ title: Scheduler Dimensions in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to set the height and width of the Syncfusion ASP.NET MVC Scheduler using pixel, percentage, or auto values for responsive layouts.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -107,4 +108,4 @@ N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspne
 
 ## See Also
 
-* [How to Change Scheduler Cell Dimensions](./cell-customization#setting-cell-dimensions-in-all-views)
+* [How to Change Scheduler Cell Dimensions](./cell-customization/#setting-cell-dimensions-in-all-views)
