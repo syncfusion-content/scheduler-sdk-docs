@@ -5,14 +5,12 @@ import {
 } from '@syncfusion/ej2-react-schedule';
 import { scheduleData } from './datasource';
 
-const App = () => {
+function App() {
   const eventSettings: EventSettingsModel = { dataSource: scheduleData }
 
-  return <ScheduleComponent height='100%' width='100%' selectedDate={new Date(2018, 1, 15)} eventSettings={eventSettings}>
+  return <ScheduleComponent height='100%' width='100%' selectedDate={new Date(2026, 1, 15)} eventSettings={eventSettings}>
     <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
-  </ScheduleComponent>
+  </ScheduleComponent>;
 };
-const root = ReactDOM.createRoot(document.getElementById('schedule'));
-root.render(<App />);
 
-
+export default App;

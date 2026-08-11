@@ -51,14 +51,11 @@ The Scheduler height and width will render exactly as per the given pixel values
 When the height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
