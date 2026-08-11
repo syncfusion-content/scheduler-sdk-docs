@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion Scheduler SDK Linux Installer - Syncfusion
 description: Learn here about how to download the Syncfusion Scheduler SDK Linux installer from our Syncfusion website with license.
-platform: Scheduler SDK
+platform: scheduler-sdk
 control: Installation and Deployment
 documentation: ug
 
