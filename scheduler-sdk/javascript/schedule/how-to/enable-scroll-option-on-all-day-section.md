@@ -4,7 +4,6 @@ title: Enable Scroll in All-Day Section in JavaScript Scheduler | Syncfusion
 description: Learn how to enable a scroll option on the all-day section in the Syncfusion JavaScript Scheduler when many appointments overflow the row.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

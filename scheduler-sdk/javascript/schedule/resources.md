@@ -4,7 +4,6 @@ title: Resources in JavaScript Scheduler | Syncfusion
 description: Learn how to assign and group resources in the Syncfusion JavaScript Scheduler with multi-level grouping and timeline resource views.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

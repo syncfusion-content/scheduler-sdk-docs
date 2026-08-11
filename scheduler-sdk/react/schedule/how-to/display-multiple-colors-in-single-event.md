@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Multiple Colors in Single Event in React Scheduler | Syncfusion
+title: Multi-Colors in Single Event in React Scheduler | Syncfusion
 description: Learn how to render a single appointment with multiple colors in the Syncfusion React Scheduler using a custom event template.
 control: Scheduler
 platform: scheduler-sdk

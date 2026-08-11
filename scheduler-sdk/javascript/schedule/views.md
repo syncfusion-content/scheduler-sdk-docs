@@ -4,7 +4,6 @@ title: Views in JavaScript Scheduler | Syncfusion
 description: Learn about the available views in the Syncfusion JavaScript Scheduler, including day, week, month, agenda, and timeline view modes.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

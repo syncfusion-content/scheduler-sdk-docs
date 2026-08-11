@@ -4,7 +4,6 @@ title: Manually Refresh Layout in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to manually refresh specific templates and the overall layout in the Syncfusion ASP.NET MVC Scheduler without re-rendering the entire component.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
