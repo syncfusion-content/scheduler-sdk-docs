@@ -139,8 +139,8 @@ Create an instance of the Date Picker control and add it to your page.
 using Syncfusion.Maui.Picker;
 
 . . .
-SfDatePicker datepicker = new SfDatePicker();
-this.Content = datepicker;
+SfDatePicker datePicker = new SfDatePicker();
+this.Content = datePicker;
 
 {% endhighlight %}
 {% endtabs %}
