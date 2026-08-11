@@ -42,7 +42,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.datetimepicker.SelectionChanged += this.OnDateTimePickerSelectionChanged;
+        this.dateTimePicker.SelectionChanged += this.OnDateTimePickerSelectionChanged;
     }
     private void OnDateTimePickerSelectionChanged(object sender, DateTimePickerSelectionChangedEventArgs e)
     {
@@ -96,12 +96,12 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.datetimepicker.Opened += this.OnDateTimePickerPopUpOpened;
+        this.dateTimePicker.Opened += this.OnDateTimePickerPopUpOpened;
     }
     private void OnDateTimePickerPopUpOpened(object sender, EventArgs e)
     {
         // If you need to open the picker, set IsOpen property to true.
-        this.datetimepicker.IsOpen = true;
+        this.dateTimePicker.IsOpen = true;
     }
 }
 
@@ -139,7 +139,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.datetimepicker.Closing += this.OnDateTimePickerPopUpClosing;
+        this.dateTimePicker.Closing += this.OnDateTimePickerPopUpClosing;
     }
     private void OnDateTimePickerPopUpClosing(object sender, CancelEventArgs e)
     {
@@ -180,12 +180,12 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.datetimepicker.Closed += this.OnDateTimePickerPopUpClosed;
+        this.dateTimePicker.Closed += this.OnDateTimePickerPopUpClosed;
     }
     private void OnDateTimePickerPopUpClosed(object sender, EventArgs e)
     {
         // If you need to close the picker, set IsOpen property to false.
-        this.datetimepicker.IsOpen = false;
+        this.dateTimePicker.IsOpen = false;
     }
 }
 
@@ -228,7 +228,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.datetimepicker.OkButtonClicked += this.OnDateTimePickerOkButtonClicked;
+        this.dateTimePicker.OkButtonClicked += this.OnDateTimePickerOkButtonClicked;
     }
     private void OnDateTimePickerOkButtonClicked(object sender, EventArgs e)
     {
@@ -268,7 +268,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.datetimepicker.CancelButtonClicked += this.OnDateTimePickerCancelButtonClicked;
+        this.dateTimePicker.CancelButtonClicked += this.OnDateTimePickerCancelButtonClicked;
     }
     private void OnDateTimePickerCancelButtonClicked(object sender, EventArgs e)
     {

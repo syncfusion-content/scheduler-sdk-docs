@@ -136,7 +136,7 @@ using Syncfusion.SfPicker.XForms;
 ...
 
 SfTimePicker timePicker = new SfTimePicker();
-timetimepicker.Format = TimeFormat.HH_mm_ss;
+timepicker.Format = TimeFormat.HH_mm_ss;
 this.Content = timePicker;
 
 {% endhighlight %}
@@ -164,7 +164,7 @@ using Syncfusion.Maui.Picker;
 ...
 
 SfTimePicker timePicker = new SfTimePicker();
-timetimepicker.Format = PickerTimeFormat.h_mm_ss_tt;
+timepicker.Format = PickerTimeFormat.h_mm_ss_tt;
 this.Content = timePicker;
 
 {% endhighlight %}

@@ -147,7 +147,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.HeaderView = new PickerHeaderView()
+timePicker.HeaderView = new PickerHeaderView()
 {
     Text = "Time Picker",
     Height = 40,

@@ -41,7 +41,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.SelectionChanged += this.OnTimePickerSelectionChanged;
+timePicker.SelectionChanged += this.OnTimePickerSelectionChanged;
 this.Content = timePicker;
 
 private void OnTimePickerSelectionChanged(object sender, TimePickerSelectionChangedEventArgs e)
@@ -95,13 +95,13 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.Opened += this.OnTimePickerPopUpOpened;
+timePicker.Opened += this.OnTimePickerPopUpOpened;
 this.Content = timePicker;
 
 private void OnTimePickerPopUpOpened(object sender, EventArgs e)
 {
     // If you need to open the picker, set the IsOpen property to true.
-    this.timepicker.IsOpen = true;
+    this.timePicker.IsOpen = true;
 }
 
 {% endhighlight %}
@@ -138,7 +138,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-this.timepicker.Closing += this.OnTimePickerPopUpClosing;
+this.timePicker.Closing += this.OnTimePickerPopUpClosing;
 this.Content = timePicker;
 
 private void OnTimePickerPopUpClosing(object sender, CancelEventArgs e)
@@ -179,13 +179,13 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.Closed += this.OnTimePickerPopUpClosed;
+timePicker.Closed += this.OnTimePickerPopUpClosed;
 this.Content = timePicker;
 
 private void OnTimePickerPopUpClosed(object sender, EventArgs e)
 {
     // If you need to close the picker, set the IsOpen property to false.
-    this.timepicker.IsOpen = false;
+    this.timePicker.IsOpen = false;
 }
 
 {% endhighlight %}
@@ -227,7 +227,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.OkButtonClicked += this.OnTimePickerOkButtonClicked;
+timePicker.OkButtonClicked += this.OnTimePickerOkButtonClicked;
 this.Content = timePicker;
 
 private void OnTimePickerOkButtonClicked(object sender, EventArgs e)
@@ -267,7 +267,7 @@ using Syncfusion.Maui.Picker;
 . . .
 
 SfTimePicker timePicker = new SfTimePicker();
-timepicker.CancelButtonClicked += this.OnTimePickerCancelButtonClicked;
+timePicker.CancelButtonClicked += this.OnTimePickerCancelButtonClicked;
 this.Content = timePicker;
 
 private void OnTimePickerCancelButtonClicked(object sender, EventArgs e)
