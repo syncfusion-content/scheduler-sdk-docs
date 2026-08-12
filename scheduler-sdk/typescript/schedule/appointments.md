@@ -4,6 +4,7 @@ title: Appointments in TypeScript Scheduler | Syncfusion
 description: Learn how to create and manage appointments in the Syncfusion TypeScript Scheduler, including normal, all-day, spanned, and recurring events.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

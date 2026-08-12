@@ -4,6 +4,7 @@ title: Working Days and Hours in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion ASP.NET MVC Scheduler.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

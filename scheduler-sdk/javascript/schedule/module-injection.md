@@ -4,6 +4,7 @@ title: Module Injection in JavaScript Scheduler | Syncfusion
 description: Learn how to import and inject modules in the Syncfusion JavaScript Scheduler to enable specific views, features, and editor options.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

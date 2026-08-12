@@ -4,6 +4,7 @@ title: Getting Started with ASP.NET Core Scheduler | Syncfusion
 description: Learn how to get started with the Syncfusion ASP.NET Core Scheduler, exploring setup, initialization, and basic customization in an ASP.NET Core app.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

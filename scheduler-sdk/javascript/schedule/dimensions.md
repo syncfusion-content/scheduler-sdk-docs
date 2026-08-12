@@ -4,6 +4,7 @@ title: Dimensions in JavaScript Scheduler | Syncfusion
 description: Learn how to set the height and width of the Syncfusion JavaScript Scheduler using pixel, percentage, or auto values for responsive layouts.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Events in Different Slots in Blazor Scheduler | Syncfusion
+title: Add Multiple Events in Different Slots in Blazor Scheduler | Syncfusion
 description: Learn how to create multiple appointments in different time slots in the Syncfusion Blazor Scheduler using keyboard selection.
 platform: scheduler-sdk
 control: Scheduler

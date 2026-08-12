@@ -2,7 +2,7 @@
 layout: post
 title: Installation Errors in Scheduler SDK - Syncfusion
 description: Learn here about the common installation errors and solution to those errors in Syncfusion Scheduler SDK Components installation.
-platform: file-formats
+platform: scheduler-sdk
 control: Installation and Deployment
 documentation: ug
 

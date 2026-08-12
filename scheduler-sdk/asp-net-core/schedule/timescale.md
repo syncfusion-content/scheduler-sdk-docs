@@ -4,6 +4,7 @@ title: Timescale Customization in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to customize the time slots in the Syncfusion ASP.NET Core Scheduler to set the duration, interval, and slot count per row.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

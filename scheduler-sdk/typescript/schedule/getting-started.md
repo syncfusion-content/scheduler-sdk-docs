@@ -4,6 +4,7 @@ title: Getting Started with TypeScript Scheduler | Syncfusion
 description: Learn how to get started with the Syncfusion TypeScript Scheduler, exploring setup, initialization, and basic customization in a TypeScript app.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

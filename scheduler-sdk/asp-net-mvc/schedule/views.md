@@ -4,6 +4,7 @@ title: Views in ASP.NET MVC Scheduler | Syncfusion
 description: Learn about the available views in the Syncfusion ASP.NET MVC Scheduler, including day, week, month, agenda, and timeline view modes and customizations.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -4,6 +4,7 @@ title: Header Customization in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to show or hide the header bar and customize date and view navigation in the Syncfusion ASP.NET MVC Scheduler.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -99,11 +100,7 @@ By default, the header bar holds the view navigation options, through which the 
 
 
 
-<<<<<<< HEAD
 N> Refer [here](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
-=======
-N> Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
->>>>>>> ea67f23cd29b78ce8148964df6f85768ba8f0471
 
 ## Date header customization
 

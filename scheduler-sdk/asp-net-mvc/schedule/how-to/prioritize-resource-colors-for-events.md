@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Apply Resource Colors for Events in ASP.NET MVC Scheduler | Syncfusion
+title: Prioritize Resource Colors for Events in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to prioritize resource colors for events in the Syncfusion ASP.NET MVC Scheduler for better visual grouping.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -4,6 +4,7 @@ title: Clipboard in TypeScript Scheduler | Syncfusion
 description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion TypeScript Scheduler with built-in clipboard support and keyboard shortcuts.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Different Working Hours in ASP.NET MVC Scheduler | Syncfusion
+title: Set Different Working Hours on Different Days in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to set different work hours for specific days in the Syncfusion ASP.NET MVC Scheduler to match varied team schedules.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

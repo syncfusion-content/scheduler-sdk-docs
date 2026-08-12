@@ -4,6 +4,7 @@ title: Row Auto Height in JavaScript Scheduler | Syncfusion
 description: Learn how to auto-adjust row height in the Syncfusion JavaScript Scheduler timeline and month views to display all overlapping appointments.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

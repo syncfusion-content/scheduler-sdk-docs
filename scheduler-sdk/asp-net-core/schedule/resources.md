@@ -4,6 +4,7 @@ title: Resources and Grouping in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to assign and group resources in the Syncfusion ASP.NET Core Scheduler with multi-level grouping, resource fields, and timeline views.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion Scheduler SDK Web Installer - Syncfusion
 description: Learn here about how to download Syncfusion Scheduler SDK Web Installer from our Syncfusion website with license.
-platform: Scheduler SDK
+platform: scheduler-sdk
 control: Installation and Deployment
 documentation: ug
 

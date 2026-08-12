@@ -4,6 +4,7 @@ title: Editor Window Customization in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to customize the editor window and quick pop-up in the Syncfusion ASP.NET MVC Scheduler to match your data and design needs.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

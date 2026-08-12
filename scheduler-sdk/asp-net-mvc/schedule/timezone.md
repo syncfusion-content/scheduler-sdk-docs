@@ -4,6 +4,7 @@ title: Timezone in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to render appointments in different time zones in the Syncfusion ASP.NET MVC Scheduler for global users and cross-region scheduling.
 platform: scheduler-sdk
 control: Scheduler
+publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
