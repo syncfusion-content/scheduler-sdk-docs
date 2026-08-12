@@ -4,7 +4,6 @@ title: Exporting in ASP.NET Core Syncfusion Schedule Component
 description: Learn here all about Exporting in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Exporting
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

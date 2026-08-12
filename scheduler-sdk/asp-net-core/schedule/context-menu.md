@@ -4,7 +4,6 @@ title: Context Menu in ASP.NET Core Schedule Component| Syncfusion
 description: Learn here all about Context Menu in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Context Menu
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

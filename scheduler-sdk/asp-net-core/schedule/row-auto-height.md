@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Row Auto Height in ASP.NET Core Schedule Component
+title: Row Auto Height in ASP.NET Core Scheduler | Syncfusion
 description: Learn here all about Row Auto Height in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Row Auto Height
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Row Auto Height
+# Row Auto Height in ASP.NET Core Scheduler
 
 By default, the height of the Scheduler rows in Timeline views are static and therefore, when the same time range holds multiple overlapping appointments, a `+n more` text indicator will be displayed. With this feature enabled, you can now view all the overlapping appointments present in those specific time range by auto-adjusting the row height based on the presence of the appointments count, instead of displaying the `+n more` text indicators.
 

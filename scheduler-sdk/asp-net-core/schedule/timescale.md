@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Timescale in ASP.NET Core Schedule Component
+title: Timescale Customization in ASP.NET Core Scheduler | Syncfusion
 description: Learn here all about Timescale in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Timescale
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# TimeScale Customization
+# Timescale Customization in ASP.NET Core Scheduler
 
 The time slots are usually the time cells that are displayed on the Day, Week and Work Week views of both the calendar (to the left most position) and timeline views (at the top position). The [`timeScale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeScale) property allows you to control and set the required time slot duration for the work cells displayed on Scheduler. It includes the following sub-options such as,
 

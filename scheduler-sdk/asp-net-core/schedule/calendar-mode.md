@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Calendar Mode in ASP.NET Core Schedule Component
+title: Calendar Mode in ASP.NET Core Schedule Control | Syncfusion
 description: Learn here all about Calendar Mode in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Calendar Mode
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar Mode in ASP.NET Core Schedule Control
 
 The Scheduler supports the following two types of calendar mode.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Timepicker Control
+title: Getting Started with ASP.NET Core Timepicker | Syncfusion
 description: Checkout and learn about getting started with ASP.NET Core Timepicker control of Syncfusion Essential JS 2 and more details.
 platform: scheduler-sdk
 control: Getting Started
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core TimePicker Control
+# Getting Started with ASP.NET Core TimePicker
 
 This section briefly explains how to include the [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in an ASP.NET Core application using Visual Studio.
 

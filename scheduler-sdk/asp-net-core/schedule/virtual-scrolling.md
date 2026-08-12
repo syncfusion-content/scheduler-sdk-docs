@@ -4,7 +4,6 @@ title: Virtual Scrolling in ASP.NET Core Schedule Component | Syncfusion
 description: Learn here all about Virtual Scrolling in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Virtual Scrolling
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

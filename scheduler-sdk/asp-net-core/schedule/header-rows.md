@@ -4,7 +4,6 @@ title: Header Rows in ASP.NET Core Schedule Component | Syncfusion
 description: Learn here all about Header Rows in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Header Rows
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

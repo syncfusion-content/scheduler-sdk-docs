@@ -4,7 +4,6 @@ title: Clipboard in ASP.NET Core Schedule Component| Syncfusion
 description: Learn here all about Clipboard in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Clipboard
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

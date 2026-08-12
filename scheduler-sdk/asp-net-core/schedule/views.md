@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Views in ASP.NET Core Schedule Component
+title: Views in ASP.NET Core Scheduler | Syncfusion
 description: Learn here all about Views in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Views
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Views
+# Views in ASP.NET Core Scheduler
 
 The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week and Timeline Month, Timeline Year, out of which the `Week` view is set as active.
 

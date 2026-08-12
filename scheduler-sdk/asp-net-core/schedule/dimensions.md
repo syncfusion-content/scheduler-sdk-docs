@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Dimensions in ASP.NET Core Schedule Component
+title: Dimensions in ASP.NET Core Schedule Control | Syncfusion
 description: Learn here all about Dimensions in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Dimensions
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Scheduler dimensions
+# Dimensions in ASP.NET Core Schedule Control
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 
@@ -108,4 +107,4 @@ N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/sche
 
 ## See Also
 
-* [How to Change Scheduler Cell Dimensions](./cell-customization/#setting-cell-dimensions-in-all-views)
+* [How to Change Scheduler Cell Dimensions](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/cell-customization#setting-cell-dimensions-in-all-views)

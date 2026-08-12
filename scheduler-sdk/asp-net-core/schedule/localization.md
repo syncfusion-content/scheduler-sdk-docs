@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Localization in ASP.NET Core Schedule Control | Syncfusion
+title: Globalization and Localization in ASP.NET Core Scheduler | Syncfusion
 description: Learn here all about Localization in Syncfusion ASP.NET Core Schedule control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Localization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Globalization and Localization
+# Globalization and Localization in ASP.NET Core Scheduler
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 
@@ -224,4 +223,4 @@ N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/sche
 
 ## See Also
 
-* [How to change first day of the week in the Scheduler](./working-days/#setting-start-day-of-the-week)
+* [How to change first day of the week in the Scheduler](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/working-days#setting-start-day-of-the-week)

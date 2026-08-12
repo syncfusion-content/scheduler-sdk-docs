@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Working Days in ASP.NET Core Schedule Control | Syncfusion
+title: Working Days and Hours in ASP.NET Core Scheduler | Syncfusion
 description: Learn here all about Working Days in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Working Days
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Setting working days and hours
+# Working Days and Hours in ASP.NET Core Scheduler
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 
@@ -92,7 +91,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `showWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
 
-N> The `showWeekNumber` property is not applicable on Timeline views, as it has the equivalent [`headerRows`](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
+N> The `showWeekNumber` property is not applicable on Timeline views, as it has the equivalent [`headerRows`](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/header-rows#display-week-numbers-in-timeline-views) property to handle such requirement with additional customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -319,7 +318,7 @@ N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/sche
 
 ## See Also
 
-* [To display the current time indicator](./timescale/#highlighting-current-date-and-time)
-* [To set different working hours dynamically](./how-to/set-different-work-hours)
-* [To set different working hours for each resources](./resources/#set-different-work-hours)
-* [To set different working days for each resources](./resources/#set-different-work-days)
+* [To display the current time indicator](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/timescale#highlighting-current-date-and-time)
+* [To set different working hours dynamically](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/how-to/set-different-work-hours)
+* [To set different working hours for each resources](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/resources#set-different-work-hours)
+* [To set different working days for each resources](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/resources#set-different-work-days)

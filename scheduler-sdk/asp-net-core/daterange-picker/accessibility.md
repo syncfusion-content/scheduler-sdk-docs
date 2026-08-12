@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in ASP.NET Core Daterangepicker Component | Syncfusion
+title: Accessibility in ASP.NET Core Daterangepicker Control | Syncfusion
 description: Learn here all about accessibility in Syncfusion ASP.NET Core Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Accessibility in DateRangePicker Control
+# Accessibility in ASP.NET Core Daterangepicker Control
 
 The DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

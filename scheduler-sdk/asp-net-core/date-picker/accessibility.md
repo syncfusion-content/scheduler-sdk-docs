@@ -4,12 +4,11 @@ title: Accessibility in ASP.NET Core Datepicker Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Accessibility in DatePicker Control
+# Accessibility in ASP.NET Core Datepicker Component
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 

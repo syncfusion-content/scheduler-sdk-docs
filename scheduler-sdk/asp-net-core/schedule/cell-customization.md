@@ -4,7 +4,6 @@ title: Cell Customization in ASP.NET Core Schedule Component| Syncfusion
 description: Learn here all about Cell Customization in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Cell Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -164,7 +163,8 @@ The month header of each date cell in the month view can be customized using the
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-header-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -173,7 +173,8 @@ The month header of each date cell in the month view can be customized using the
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-header-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
