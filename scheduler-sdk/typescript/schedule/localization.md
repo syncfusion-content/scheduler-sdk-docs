@@ -10,30 +10,30 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Globalization and Localization in TypeScript Scheduler
 
-The Scheduler supports different date-time formats and cultures, enabling it to function globally and meet the diverse needs of various regions.
+Scheduler supports different date-time formats and cultures, enabling it to work for users in different regions.
 
-You can adapt the Scheduler to different languages by parsing and formatting dates and numbers ([`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization)), and by adding culture-specific customization and translation for text ([`Localization`](https://ej2.syncfusion.com/documentation/common/localization)).
+Adapt the Scheduler to different languages by formatting and parsing dates and numbers ([`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization)) and by providing culture-specific translations for static text ([`Localization`](https://ej2.syncfusion.com/documentation/common/localization)).
 
 ## Globalization
 
 The Internationalization library provides support for formatting and parsing numbers, dates, and times using official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data. It also provides the `loadCldr` method to load culture-specific CLDR JSON data.
 
-By default, the Scheduler follows English culture ('en-US'). To use a different culture, follow these steps:
+By default, Scheduler uses the English culture (`en-US`). To use a different culture, follow these steps:
 
-* Install the `ej2-cldr-data` package using the Syncfusion<sup style="font-size:70%">&reg;</sup> npm package with the following command:
+* Install the `ej2-cldr-data` package:
 
-  ```
-  npm install @syncfusion/ej2-cldr-data
-  ```
+```bash
+npm install @syncfusion/ej2-cldr-data
+```
 
-Once installed, you can find culture-specific JSON data under `\node_modules\@syncfusion\ej2-cldr-data`.
+After installation, culture-specific JSON data is available under `node_modules/@syncfusion/ej2-cldr-data`.
 
-* Import the required culture files from the installed location into your `app.ts` file:
+* Import the required culture files into your `app.ts` file, for example:
 
-    1. numberingSystems.json
-    2. ca-gregorian.json
-    3. numbers.json
-    4. timeZoneNames.json
+        1. numberingSystems.json
+        2. ca-gregorian.json
+        3. numbers.json
+        4. timeZoneNames.json
 
 ```typescript
 //import the loadCldr from ej2-base
@@ -46,7 +46,7 @@ import frNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingS
 loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 ```
 
-* Set the culture for the Scheduler using the `locale` property.
+* Set the Scheduler's locale using the `locale` property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -59,11 +59,11 @@ loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs1" %}
 
-> Refer to the [common internationalization documentation](https://ej2.syncfusion.com/documentation/common/internationalization) for additional information about globalization.
+> Refer to the [common internationalization documentation](https://ej2.syncfusion.com/documentation/common/internationalization) for more information about globalization.
 
 ## Localizing static Scheduler text
 
-The [`Localization`](https://ej2.syncfusion.com/documentation/common/localization) library allows you to display all static text, date content, and time mode of the Scheduler in a localized language. To achieve this, set the `locale` property of the Scheduler and define translation text for static words through the `load` method.
+The [`Localization`](https://ej2.syncfusion.com/documentation/common/localization) library lets you display static text, date content, and time strings in a localized language. Set the Scheduler's `locale` and provide translations using `L10n.load`.
 
 For example, the following code defines French translations for all static words used in the Scheduler:
 
@@ -208,7 +208,7 @@ L10n.load({
 
 ## Setting date format
 
-The Scheduler supports all valid date formats and uses the universal format "MM/dd/yyyy" by default. If the [`dateFormat`](https://ej2.syncfusion.com/documentation/api/schedule#dateformat) property is not specified, the Scheduler will use the format based on the assigned locale. Since the default locale is "en-US", it follows the "MM/dd/yyyy" pattern automatically.
+Scheduler supports standard date formats and uses `MM/dd/yyyy` by default. If you do not set [`dateFormat`](https://ej2.syncfusion.com/documentation/api/schedule#dateformat), the Scheduler derives the format from the assigned locale (the default locale is `en-US`).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -223,7 +223,7 @@ The Scheduler supports all valid date formats and uses the universal format "MM/
 
 ## Setting time format
 
-Time formats control how time values are displayed as strings in the Scheduler. By default, the Scheduler's time mode is either 12-hour or 24-hour format based on the [`locale`](https://ej2.syncfusion.com/documentation/api/schedule#locale) setting. Since the default locale value is "en-US", the time mode is automatically set to 12-hour format. You can customize this using the [`timeFormat`](https://ej2.syncfusion.com/documentation/api/schedule#timeformat) property. For more information about time format standards, refer to the [`Date and Time Format`](https://ej2.syncfusion.com/documentation/common/internationalization#custom-formats) section.
+Time formats control how time values are displayed. By default, the Scheduler uses either a 12-hour or 24-hour mode based on the [`locale`](https://ej2.syncfusion.com/documentation/api/schedule#locale). Since the default locale is `en-US`, the time mode is 12-hour. Customize the display using the [`timeFormat`](https://ej2.syncfusion.com/documentation/api/schedule#timeformat) property. See [`Date and Time Format`](https://ej2.syncfusion.com/documentation/common/internationalization#custom-formats) for more details.
 
 The following example demonstrates the Scheduler control in 24-hour format:
 
@@ -238,11 +238,11 @@ The following example demonstrates the Scheduler control in 24-hour format:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs4" %}
 
-> Note: The `timeFormat` property only accepts valid time format strings.
+> Note: The `timeFormat` property accepts valid time format strings only.
 
 ## Displaying Scheduler in RTL mode
 
-The Scheduler layout and behavior can be changed to follow RTL (Right-to-Left) conventions by setting [`enableRtl`](https://ej2.syncfusion.com/documentation/api/schedule#enablertl) to `true`. This displays the Scheduler layout from right to left. The default value is `false`.
+Set [`enableRtl`](https://ej2.syncfusion.com/documentation/api/schedule#enablertl) to `true` to render the Scheduler in RTL (right-to-left) mode. The default value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -255,7 +255,7 @@ The Scheduler layout and behavior can be changed to follow RTL (Right-to-Left) c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs5" %}
 
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how to present and manipulate data.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see practical examples.
 
 ## See Also
 

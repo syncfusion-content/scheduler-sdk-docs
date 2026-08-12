@@ -90,7 +90,7 @@ The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#renderc
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5" %}
 {% endif %}
 
-The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event allows you to customize different types of cells such as work cells, month cells, all-day cells, header cells, resource header cells by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs#elementtype) property within the event arguments. The following table describes the available element types:
+The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event allows you to customize different types of cells, such as work cells, month cells, all-day cells, header cells, and resource header cells, by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs#elementtype) property within the event arguments. The following table describes the available element types:
 
 | Element type | Description |
 |-------|---------|
@@ -147,7 +147,7 @@ The height and width of Scheduler cells can be adjusted using the [`cssClass`](h
 
 The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method verifies whether a specific time range is available for creating new appointments or is already occupied by existing events. This method is useful for implementing custom validation logic or preventing double-booking scenarios. In the following example, the method prevents adding new appointments to time slots that already contain events.
 
->Note: The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method verifies appointments within the current view's date range only. It does not evaluate availability for recurrence occurrences that fall outside the visible date range.
+> Note: The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method verifies appointments within the current view's date range only. It does not evaluate availability for recurrence occurrences that fall outside the visible date range.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -274,7 +274,7 @@ renderCell: function (args) {
 
 ```
 
-And, the background color for weekend cells in the Month view, apply custom CSS through the through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+To change the background color for weekend cells in Month view, apply custom CSS through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default styles applied to cells.
 
 ```css
 
@@ -313,6 +313,6 @@ And, the background color for weekend cells in the Month view, apply custom CSS 
 
 ## How to disable multiple cell and row selection in Schedule
 
-By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows to select multiple cells and rows.If multiple cell and row selection needs to be disabled, this feature can be turned off by setting these properties to `false`.
+The [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Schedule are set to `true`, allowing multiple cells and rows to be selected. To disable multiple cell or row selection, set these properties to `false`.
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to know how to present and manipulate data.

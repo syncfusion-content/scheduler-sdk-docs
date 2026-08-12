@@ -10,17 +10,17 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Header Rows in TypeScript Scheduler
 
-The Timeline views support additional header rows other than its default date and time header rows. To show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property. This property is applicable only on the timeline views. The possible rows which can be added using [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property are as follows.
+Timeline views support additional header rows beyond the default date and time headers. Use the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property to add rows such as:
 
-* `Year`
-* `Month`
-* `Week`
-* `Date`
-* `Hour`
+- `Year`
+- `Month`
+- `Week`
+- `Date`
+- `Hour`
 
-> The `Hour` row is not applicable for Timeline month view.
+Note: the `Hour` row is not applicable for the Timeline month view.
 
-The following example demonstrates the Scheduler displaying all the available header rows on timeline views.
+The following example shows all available header rows in timeline views.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -129,9 +129,9 @@ Week numbers can be displayed in a dedicated header row of the timeline Schedule
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs3" %}
 {% endif %}
 
-## Timeline view displaying dates of a complete year
+## Display a complete year in Timeline view
 
-A complete year can be displayed in a Timeline view by setting [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) value as 12 and defining **TimelineMonth** view option within the `views` property of Scheduler.
+To display a complete year in a Timeline view, set the [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) to `12` and include the `TimelineMonth` view in the Scheduler's `views` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -166,9 +166,9 @@ A complete year can be displayed in a Timeline view by setting [`interval`](http
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs4" %}
 {% endif %}
 
-## Customizing the header rows using template
+## Customize header rows using a template
 
-The header row text can be customized and formatted content or images can be displayed using the [`template`](https://ej2.syncfusion.com/documentation/api/schedule/headerRows#template) option available within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
+You can customize header row text and display formatted content or images using the [`template`](https://ej2.syncfusion.com/documentation/api/schedule/headerRows#template) option within the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -203,4 +203,4 @@ The header row text can be customized and formatted content or images can be dis
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs5" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

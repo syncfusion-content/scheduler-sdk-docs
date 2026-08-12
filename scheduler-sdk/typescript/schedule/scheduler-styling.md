@@ -14,9 +14,9 @@ To modify the Scheduler appearance, the default CSS of the Scheduler must be ove
 
 | CSS class | Purpose |
 |-------|---------|
-| .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of scheduler |
-| .e-schedule .e-month-view .e-work-cells | Work cells in month view of scheduler |
-| .e-schedule .e-month-view .e-other-month | Work cells of other month in month view of scheduler |
+| .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of the Scheduler |
+| .e-schedule .e-month-view .e-work-cells | Work cells in month view of the Scheduler |
+| .e-schedule .e-month-view .e-other-month | Work cells of the other month in month view of the Scheduler |
 | .e-schedule .e-timeline-view .e-work-cells | Work cells in timeline views of scheduler |
 | .e-schedule .e-timeline-month-view .e-work-cells | Work cells in timeline month view of scheduler |
 | .e-schedule .e-timeline-year-view .e-work-cells | Work cells in timeline year view of scheduler |
@@ -42,9 +42,9 @@ To modify the Scheduler appearance, the default CSS of the Scheduler must be ove
 | .e-schedule .e-month-agenda-view .e-appointment-indicator | Appointment in month agenda view of scheduler |
 | .e-schedule .e-block-appointment | Block appointment in scheduler |
 | .e-schedule .e-read-only | Read only appointment in scheduler. |
-| e-appointment-border | Appointment which are currently selected, use the appointment class hierarchical based on the active view. |
-| e-selected-cells | work cells which are currently selected, use the work cell class hierarchical based on the active view. |
-| e-header-cells | Header cells of scheduler, use the work cells hierarchical based on the active view. |
+| e-appointment-border | Appointments that are currently selected; use the appointment class hierarchy based on the active view. |
+| e-selected-cells | Work cells that are currently selected; use the work cell class hierarchy based on the active view. |
+| e-header-cells | Header cells of the Scheduler; use the work cell hierarchy based on the active view. |
 | .e-schedule .e-vertical-view .e-resource-cells| Resource cells in vertical views of scheduler. |
 | .e-schedule .e-month-view .e-resource-cells| Resource cells in month view of scheduler. |
 | .e-schedule .e-timeline-view .e-resource-cells | Resource cells in timeline views of scheduler. |

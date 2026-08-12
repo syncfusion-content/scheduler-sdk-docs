@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Header Bar in TypeScript Scheduler
 
-The header part of Scheduler can be customized easily with the built-in options available.
+The Scheduler header bar can be customized using the built-in options.
 
-## Show or Hide header bar
+## Show or hide header bar
 
-By default, the header bar displays the date and view navigation options, through which the user can switch between the dates and various views. This header bar can be hidden from the UI by setting `false` to the [`showHeaderBar`](https://ej2.syncfusion.com/documentation/api/schedule#showheaderbar) property. It's default value is `true`.
+By default, the header bar displays the date and view navigation options that let the user switch between dates and views. Hide the header bar by setting [`showHeaderBar`](https://ej2.syncfusion.com/documentation/api/schedule#showheaderbar) to `false`. Its default value is `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +51,7 @@ By default, the header bar displays the date and view navigation options, throug
 
 ## Customizing header bar using template
 
-Apart from the default date navigation and view options available on the header bar, the custom items can be add into the Scheduler header bar using the [`toolbarItems`](https://ej2.syncfusion.com/documentation/api/schedule#toolbaritems) property. To display the default items, it's Essential<sup style="font-size:70%">&reg;</sup> to assign a [`name`](https://ej2.syncfusion.com/documentation/api/schedule/toolbarItem#name) field to each item. The names of the default items are `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`. For custom items you can give the name as `Custom` to the [`name`](https://ej2.syncfusion.com/documentation/api/schedule/toolbarItem#name) field. Here, the default items such as previous, next, date range text, and today have been used along with external dropdown list as custom items.
+In addition to the default date navigation and view options, you can add custom items to the Scheduler header bar using the [`toolbarItems`](https://ej2.syncfusion.com/documentation/api/schedule#toolbaritems) property. To display default items, assign a `name` field to each item (for example: `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`). For custom items, set the `name` to `Custom`. The example below shows default items used alongside a custom external dropdown list.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -88,7 +88,7 @@ Apart from the default date navigation and view options available on the header 
 
 ## Customizing header bar using events
 
-Apart from the default date navigation and view options available on the header bar, the =custom items can be add into the Scheduler header bar using the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/schedule#actionbegin) event. Here, an employee image is added to the header bar, clicking on which will open the popup showing that person's short profile information.
+You can also add custom items to the Scheduler header bar by handling the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/schedule#actionbegin) event. In the example below, an employee image is added to the header bar; clicking it opens a popup that shows the person's profile information.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -125,7 +125,7 @@ Apart from the default date navigation and view options available on the header 
 
 ## How to display the view options within the header bar popup
 
-By default, the header bar displays the view navigation options, through which the user can switch between various views. View options can be moved to the header bar popup by setting `true` to the [`enableAdaptiveUI`](https://ej2.syncfusion.com/documentation/api/schedule#enableadaptiveui) property.
+By default, the header bar displays view navigation options that let the user switch between views. Move these view options to the header bar popup by setting [`enableAdaptiveUI`](https://ej2.syncfusion.com/documentation/api/schedule#enableadaptiveui) to `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -160,11 +160,11 @@ By default, the header bar displays the view navigation options, through which t
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-bar-cs3" %}
 {% endif %}
 
-> Refer to the [here](./resources#adaptive-ui-in-desktop) to learn more about adaptive UI in resources scheduler.
+> Refer to [resources](./resources#adaptive-ui-in-desktop) to learn more about adaptive UI in the Resources scheduler.
 
 ## Date header customization
 
-The Scheduler UI that displays the date text on all views are considered as the date header cells. Customize the date header cells of Scheduler either using [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) or [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
+The Scheduler UI that displays date text in views is the date header. Customize date header cells either using the [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) option or the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
 
 ### Using date header template
 
@@ -203,9 +203,9 @@ The [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) option is used to
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/date-header-cs1" %}
 {% endif %}
 
-### Using renderCell event
+### Using `renderCell` event
 
-In month view, the date header template is not applicable and therefore the same customization can be added beside the date text in month cells by making use of the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event.
+In month view, the `dateHeaderTemplate` is not applicable. Use the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event to add custom content beside the date text in month cells.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -242,9 +242,9 @@ In month view, the date header template is not applicable and therefore the same
 
 ## Customizing the date range text
 
-The [`dateRangeTemplate`](../api/schedule#daterangetemplate) option allows to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, using the [`dateRangeTemplate`](../api/schedule#daterangetemplate) option to override the default text and specify your own custom text to be displayed.
+The [`dateRangeTemplate`](../api/schedule#daterangetemplate) option customizes the date range text displayed in the Scheduler. By default, the date range text is determined by the current view; use `dateRangeTemplate` to override the default text.
 
-The [`dateRangeTemplate`](../api/schedule#daterangetemplate) property includes `startDate`, `endDate` and `currentView` options. The date range text can be customized using these available options.
+The `dateRangeTemplate` receives `startDate`, `endDate`, and `currentView` as input, which you can use to compose a custom date range string.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -281,9 +281,9 @@ The [`dateRangeTemplate`](../api/schedule#daterangetemplate) property includes `
 
 ## Customizing header indent cells
 
-Customize the header indent cells using the [`headerIndentTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#headerindenttemplate) option and change the look and appearance in both the vertical and timeline views. In vertical views, the template customizes the indent area at the top-left corner where the time column header meets the date headers. In timeline views, it customizes the left indent area that appears before the resource headers.
+Use the [`headerIndentTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#headerindenttemplate) option to customize the header indent cells in both vertical and timeline views. In vertical views, the template customizes the top-left indent where the time column header meets the date headers. In timeline views, it customizes the left indent that appears before the resource headers.
 
-**Example:** To customize the header left indent cell to display resources text, refer to the below code example.
+**Example:** To customize the left header indent cell to display resource text, refer to the code example below.
 
 {% if page.publishingplatform == "typescript" %}
 
