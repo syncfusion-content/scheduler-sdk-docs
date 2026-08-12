@@ -23,7 +23,7 @@ In the **Day**, **Week**, **Work Week**, and **Month** views, resources are disp
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineWeek">
+    <scheduler:SfScheduler x:Name="scheduler" View="TimelineWeek">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView Resources="{Binding Resources}" />
         </scheduler:SfScheduler.ResourceView>
@@ -51,7 +51,7 @@ public partial class MainPage : ContentPage
         };
 
         // Adding the scheduler resource collection to the schedule resources of SfScheduler.
-        this.Scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.Resources = Resources;
     }
 }
 
@@ -69,7 +69,7 @@ Appointments associated with the `ResourceView` [Resources](https://help.syncfus
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineWeek" AppointmentsSource="{Binding Appointments}">
+    <scheduler:SfScheduler x:Name="scheduler" View="TimelineWeek" AppointmentsSource="{Binding Appointments}">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView Resources="{Binding Resources}" />
         </scheduler:SfScheduler.ResourceView>
@@ -98,7 +98,7 @@ public partial class MainPage : ContentPage
         };
 
         // Adding the scheduler resource collection to the schedule resources of SfScheduler.
-        this.Scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.Resources = Resources;
 
         var appointment = new ObservableCollection<SchedulerAppointment>();
 
@@ -113,7 +113,7 @@ public partial class MainPage : ContentPage
         });
 
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 
@@ -133,7 +133,7 @@ Multiple resources can share the same events or appointments by declaring resour
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"  View="TimelineWeek">
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineWeek">
     </scheduler:SfScheduler>
 </ContentPage>
 
@@ -163,7 +163,7 @@ public partial class MainPage : ContentPage
         });
 
         //Adding the scheduler appointment collection to the AppointmentsSource of .NET MAUI Scheduler.
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 
@@ -189,7 +189,7 @@ The [`ResourceGroupType`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sc
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+    <scheduler:SfScheduler x:Name="scheduler" View="Day">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView ResourceGroupType="Resource"/>
         </scheduler:SfScheduler.ResourceView>
@@ -215,8 +215,8 @@ public partial class MainPage : ContentPage
            new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.ResourceGroupType = SchedulerResourceGroupType.Resource;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.ResourceGroupType = SchedulerResourceGroupType.Resource;
     }
 }
 
@@ -236,7 +236,7 @@ In [Month]((https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.Schedu
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Month">
+    <scheduler:SfScheduler x:Name="scheduler" View="Month">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView ResourceGroupType="Resource"/>
         </scheduler:SfScheduler.ResourceView>
@@ -262,8 +262,8 @@ public partial class MainPage : ContentPage
                 new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.ResourceGroupType = SchedulerResourceGroupType.Resource;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.ResourceGroupType = SchedulerResourceGroupType.Resource;
     }
 }
 
@@ -283,7 +283,7 @@ When the [`ResourceGroupType`](https://help.syncfusion.com/cr/maui/Syncfusion.Ma
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+    <scheduler:SfScheduler x:Name="scheduler" View="Day">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView ResourceGroupType="Date"/>
         </scheduler:SfScheduler.ResourceView>
@@ -309,8 +309,8 @@ public partial class MainPage : ContentPage
            new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.ResourceGroupType = SchedulerResourceGroupType.Date;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.ResourceGroupType = SchedulerResourceGroupType.Date;
     }
 }
 
@@ -336,7 +336,7 @@ In Day view, resources are presented through an adaptive resource panel on mobil
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day"/>
+    <scheduler:SfScheduler x:Name="scheduler" View="Day"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -358,7 +358,7 @@ public partial class MainPage : ContentPage
                 new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.Resources = Resources;
     }
 }
 
@@ -378,7 +378,7 @@ In Month view, resources are presented through an adaptive resource panel on mob
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Month"/>
+    <scheduler:SfScheduler x:Name="scheduler" View="Month"/>
 </ContentPage>
 
 {% endhighlight %}
@@ -400,7 +400,7 @@ public partial class MainPage : ContentPage
                 new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.Resources = Resources;
     }
 }
 
@@ -420,7 +420,7 @@ The hamburger icon color can be customized by using the [HamburgerIconColor](htt
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+    <scheduler:SfScheduler x:Name="scheduler" View="Day">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView HamburgerIconColor="Red" />
         </scheduler:SfScheduler.ResourceView>
@@ -446,8 +446,8 @@ public partial class MainPage : ContentPage
            new SchedulerResource() { Name = "James William", Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.HamburgerIconColor = Colors.Red;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.HamburgerIconColor = Colors.Red;
     }
 }
 
@@ -467,7 +467,7 @@ The drawer resource selection color can be customized by using the [DrawerResour
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+    <scheduler:SfScheduler x:Name="scheduler" View="Day">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView DrawerResourceSelectionColor="DodgerBlue" />
         </scheduler:SfScheduler.ResourceView>
@@ -493,8 +493,8 @@ public partial class MainPage : ContentPage
            new SchedulerResource() { Name = "James William", Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.DrawerResourceSelectionColor = Brush.DodgerBlue;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.DrawerResourceSelectionColor = Brush.DodgerBlue;
     }
 }
 
@@ -514,7 +514,7 @@ The drawer background can be customized by using the [DrawerBackground](https://
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+    <scheduler:SfScheduler x:Name="scheduler" View="Day">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView DrawerBackground="LightGoldenrodYellow" />
         </scheduler:SfScheduler.ResourceView>
@@ -540,8 +540,8 @@ public partial class MainPage : ContentPage
            new SchedulerResource() { Name = "James William", Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.DrawerBackground = Brush.LightGoldenrodYellow;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.DrawerBackground = Brush.LightGoldenrodYellow;
     }
 }
 
@@ -561,7 +561,7 @@ The adaptive header appearance customization can be achieved by using the [Adapt
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+    <scheduler:SfScheduler x:Name="scheduler" View="Day">
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView>
                 <scheduler:SchedulerResourceView.AdaptiveHeaderTemplate>
@@ -610,8 +610,8 @@ public partial class MainPage : ContentPage
            new SchedulerResource() { Name = "James William", Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.AdaptiveHeaderTemplate = new DataTemplate(() =>
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.AdaptiveHeaderTemplate = new DataTemplate(() =>
         {
             var grid = new Grid
             {
@@ -756,7 +756,7 @@ The number of resources shown in the day, week, work week, month, timelineday, t
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Day" >
+    <scheduler:SfScheduler x:Name="scheduler" View="Day" >
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView VisibleResourceCount="6"/>
         </scheduler:SfScheduler.ResourceView>
@@ -789,8 +789,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource { Name = "Isabella Moore", Foreground = Colors.White, Background = Colors.MediumOrchid,Id = "1009" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.VisibleResourceCount = 6;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.VisibleResourceCount = 6;
     }
 }
 
@@ -808,7 +808,7 @@ public partial class MainPage : ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Month" >
+    <scheduler:SfScheduler x:Name="scheduler" View="Month" >
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView VisibleResourceCount="2"/>
         </scheduler:SfScheduler.ResourceView>
@@ -834,8 +834,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.VisibleResourceCount = 2;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.VisibleResourceCount = 2;
     }
 }
 
@@ -853,7 +853,7 @@ public partial class MainPage : ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay" >
+    <scheduler:SfScheduler x:Name="scheduler" View="TimelineDay" >
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView VisibleResourceCount="4"/>
         </scheduler:SfScheduler.ResourceView>
@@ -882,8 +882,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource() { Name = "Elena",  Foreground = Colors.White, Background = Colors.Pink, Id = "1005" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.VisibleResourceCount = 4;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.VisibleResourceCount = 4;
     }
 }
 
@@ -907,7 +907,7 @@ In the day, week, work week, and month views, resources are arranged horizontall
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day"
                            AllowedViews="Day,Week,WorkWeek,Month" >
         <scheduler:SfScheduler.ResourceView>
@@ -935,8 +935,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.ResourceHeaderHeight = 100;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.ResourceHeaderHeight = 100;
     }
 }
 
@@ -958,7 +958,7 @@ In the timeline day, timeline week, and timeline work week views, resources are 
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay" >
+    <scheduler:SfScheduler x:Name="scheduler" View="TimelineDay" >
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView ResourceHeaderWidth="250"/>
         </scheduler:SfScheduler.ResourceView>
@@ -984,8 +984,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.ResourceView.ResourceHeaderWidth = 250;
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.ResourceHeaderWidth = 250;
     }
 }
 
@@ -1005,7 +1005,7 @@ You can customize resource minimum row height of visible resources in timeline d
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"  View="TimelineWeek"
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineWeek"
                            AllowedViews="TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek" >
         <scheduler:SfScheduler.ResourceView>
             <scheduler:SchedulerResourceView MinimumRowHeight="90"/>
@@ -1057,7 +1057,7 @@ In the timeline views (timeline day, timeline week, and timeline work week), spe
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"  View="TimelineWeek"
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineWeek"
                            AllowedViews="TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek" >
     </scheduler:SfScheduler>
 </ContentPage>
@@ -1081,8 +1081,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.TimelineView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.TimelineView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -1117,7 +1117,7 @@ In Days View (day, week, and work week) special time regions can be applied to v
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"  View="Day"
+    <scheduler:SfScheduler x:Name="scheduler"  View="Day"
                            AllowedViews="Day,Week,WorkWeek" >
     </scheduler:SfScheduler>
 </ContentPage>
@@ -1141,8 +1141,8 @@ public partial class MainPage : ContentPage
             new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
         };
 
-        this.Scheduler.ResourceView.Resources = Resources;
-        this.Scheduler.DaysView.TimeRegions = this.GetTimeRegion();
+        this.scheduler.ResourceView.Resources = Resources;
+        this.scheduler.DaysView.TimeRegions = this.GetTimeRegion();
     }
 
     private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
@@ -1292,7 +1292,7 @@ public partial class MainPage : ContentPage
         };
 
         // Adding the scheduler resource collection to the schedule resources of SfSchedule.
-        this.Scheduler.ResourceView.Resources = Resources;
+        this.scheduler.ResourceView.Resources = Resources;
     }
 }
 
@@ -1328,7 +1328,7 @@ Map those properties of the `Meeting` class to schedule appointments by using th
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"  View="TimelineWeek"
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineWeek"
                            AppointmentsSource="{Binding Events}"
                            AllowedViews="TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek" >
         <scheduler:SfScheduler.AppointmentMapping>
@@ -1363,7 +1363,7 @@ public partial class MainPage : ContentPage
         dataMapping.EndTime = "To";
         dataMapping.Background = "Color";
         dataMapping.ResourceIds = "Resources";
-        this.Scheduler.AppointmentMapping = dataMapping;
+        this.scheduler.AppointmentMapping = dataMapping;
     }
 }
 
@@ -1423,7 +1423,7 @@ The resource appearance customization can be achieved by using the [HeaderTempla
     </ContentPage.Behaviors>
         
     <Grid>
-        <scheduler:SfScheduler x:Name="Scheduler"  View="TimelineMonth"
+        <scheduler:SfScheduler x:Name="scheduler"  View="TimelineMonth"
                                AppointmentsSource="{Binding Events}"
                                AllowedViews="TimelineDay,TimelineMonth,TimelineWeek,TimelineWorkWeek" >
 

@@ -745,13 +745,13 @@ The `SfTimePicker` control allows you to change the height and width by using th
 using Syncfusion.Maui.Picker;
 . . .
 
-SfTimePicker picker = new SfTimePicker()
+SfTimePicker timePicker = new SfTimePicker()
 {
     HeightRequest = 280,
     WidthRequest = 300,
 };
 
-this.Content = picker;
+this.Content = timePicker;
 
 {% endhighlight %}  
 {% endtabs %}
