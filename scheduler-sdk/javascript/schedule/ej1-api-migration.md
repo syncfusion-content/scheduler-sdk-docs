@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # EJ1 API Migration in JavaScript Scheduler
 
-This topic shows the API equivalent of JS2 Scheduler control to be used, while migrating your project that uses JS1 Scheduler.
+This topic lists the equivalent EJ2 APIs and properties for projects migrating from EJ1 Scheduler.
 
 ## Properties
 
@@ -191,4 +191,4 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 | Fires on rendering of every scheduler elements | **Event:** *queryCellInfo* <br/><br/> `$("#Schedule").ejSchedule({` <br> `queryCellInfo: function onQueryCellInfo (args) {}` <br> | **Event:** *renderCell* <br/><br/> `var schObj = new ej.schedule.Schedule({` <br>  `renderCell: function onRenderCell (args) {}` <br> `});` |
 | Fires before the event rendering on UI | Not applicable | **Event:** *eventRendered* <br/><br/>  `var schObj = new ej.schedule.Schedule({` <br>  `eventRendered: function  onEventRendered (args) {}` <br> `});` |
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/javascript/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

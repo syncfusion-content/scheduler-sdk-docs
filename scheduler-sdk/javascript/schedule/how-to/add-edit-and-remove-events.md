@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Add, Edit, and Remove Events in JavaScript Scheduler
 
-You can manually perform CRUD (Create, Read, Update, Delete) operations on appointments in the Scheduler by using the following methods:
+Perform CRUD (Create, Read, Update, Delete) operations on Scheduler appointments programmatically using these methods:
 
-- [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) – to create new event(s)
-- [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) – to update or create an event
-- [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) – to remove event(s)
+- [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) — create new event(s).
+- [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) — update or create an event.
+- [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) — remove event(s).
 
-These methods are especially useful when you want to programmatically manage appointments without using the built-in event editor.
+These methods are useful when you need to manage appointments without the built-in event editor.
 
 ## Normal event
 

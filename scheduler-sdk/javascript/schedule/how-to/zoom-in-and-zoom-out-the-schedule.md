@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Zoom In and Zoom Out in JavaScript Scheduler
 
-By default, the Scheduler component does not provide built-in zoom in or zoom out support. However, this functionality can be achieved by customizing the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) properties.  
+The Scheduler does not provide built-in zoom controls, but you can implement zooming by adjusting the `timeScale` and `headerRows` properties programmatically.
 
-Refer to the following code example for implementation.
+See the example below for an implementation approach.
 
 {% if page.publishingplatform == "typescript" %}
 

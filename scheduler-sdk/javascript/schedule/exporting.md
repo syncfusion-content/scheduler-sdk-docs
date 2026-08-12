@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Exporting in JavaScript Scheduler
 
-The Scheduler supports exporting all its appointments both to an `Excel` or `ICS` extension file at client-side. It offers different client-side methods to export its appointments in an `Excel` or `ICal` format file. Let's explore how to implement the exporting functionality in Scheduler.
+The Scheduler supports exporting appointments to Excel (.xlsx or .csv) and ICS files on the client. This topic explains how to implement exporting and importing features.
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events to an Excel format file by using the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property.
+Use the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method to export Scheduler events to an Excel file. By default, it exports the fields specified in the Scheduler's [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings).
 
 > Before using the Excel exporting functionality, you need to import and inject the `ExcelExport` module from the `@syncfusion/ej2-schedule` package using the `Inject` method of Scheduler.
 
@@ -90,7 +90,7 @@ By default, Scheduler exports all default event fields mapped through the `event
 
 ### Exporting individual occurrences of a recurring series
 
-By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#includeoccurrences) option as `true` through the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface and pass it as argument to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method. By default, the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#includeoccurrences) option is set to `false`.
+By default, the Scheduler exports recurring events as a single record by exporting only the parent recurrence into the Excel file. To export each individual occurrence of a recurring series as separate records, set the [`includeOccurrences`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#includeoccurrences) option to `true` in the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) and pass it to [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel). The default value for `includeOccurrences` is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -295,19 +295,17 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/excel-export-cs8" %}
 {% endif %}
 
-### How to customize the excel sheet on before exporting
+### How to customize the Excel sheet before exporting
 
-Customizing an Excel sheet before export is made easy with the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event. This event provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+Use the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event to customize the exported workbook and formatting before export.
 
-With the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event, you can:
+With the `excelExport` event you can:
 
-- **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
+- **Adjust the formatting:** Apply styles such as font, size, color, and cell formatting.
+- **Customize headers and footers:** Modify header and footer content for the exported sheet.
+- **Cancel the export:** Cancel the export by setting the `cancel` property to `true`.
 
-- **Customize headers and footers:** Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
-
-- **Cancel the export:** The event supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
-
-Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event.
+Here’s an example of adding a custom header and footer to an Excel sheet using the `excelExport` event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -457,16 +455,13 @@ The following example shows how to import an ICS file into Scheduler, using the 
 
 ## How to print the Scheduler element
 
-The Scheduler allows you to print the Scheduler element by using the `print` client-side method. The print method works in two ways. You can find it below.
+Use the `print` client-side method to print the Scheduler element. The method can be used without options or with a set of print options.
 
-* Using print method without options.
-* Using a print method with options.
-
-> To print the Schedule, you need to import the `Print` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(Print)` method.
+To print the Scheduler, import the `Print` module from `@syncfusion/ej2-schedule` and inject it using `Schedule.Inject(Print)`.
 
 ### Using print method without options
 
-You can print the Schedule element with the current view by using the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method without passing the options. The following example shows how to print the Scheduler using the `print` method without passing options.
+Use the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method without options to print the current view. The following example shows how to print the Scheduler using `print` without options.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -503,7 +498,7 @@ You can print the Schedule element with the current view by using the [`print`](
 
 ### Using a print method with options
 
-You can print the Schedule element based on your needs using the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method by passing the options.
+You can print the Scheduler using the [`print`](https://ej2.syncfusion.com/documentation/api/schedule#print) method by passing print options. The following example shows how to print the Scheduler with options.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -540,14 +535,14 @@ You can print the Schedule element based on your needs using the [`print`](https
 
 ### How to customize the print layout
 
-The [`beforePrint`](https://ej2.syncfusion.com/documentation/api/schedule#beforePrint) event enables users to customize the print layout of the Scheduler control without altering the actual schedule layout or data. This event returns the HTML element used for printing, which can be tailored based on specific requirements before the print operation is triggered. Additionally, users can prevent the print action by setting the `cancel` property to `true`, giving them full control over when and how the print operation takes place.
+The [`beforePrint`](https://ej2.syncfusion.com/documentation/api/schedule#beforePrint) event lets you customize the print layout without altering the Scheduler's data. It provides the HTML element used for printing and lets you cancel the print by setting `cancel` to `true`.
 
-Key customization options include:
+Key customization examples:
 
-- **Customizing the header and footer:** Add custom header and footer content of the print layout to include additional information.
-- **Controlling print output:** Fine-tune the layout to ensure that only the necessary details are printed, ensuring a clean and structured printout.
+- **Custom header and footer:** Add header/footer content to the print layout.
+- **Control print output:** Fine-tune which elements appear in the printed output.
 
-Here’s an example of how you can add a custom header and footer to the print layout using the [`beforePrint`](https://ej2.syncfusion.com/documentation/api/schedule#beforePrint) event.
+Here’s an example of adding a custom header and footer to the print layout using `beforePrint`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -582,4 +577,4 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/before-print" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

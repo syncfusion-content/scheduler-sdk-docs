@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Prevent Date Navigation in JavaScript Scheduler
 
-By default, clicking on date headers in the Scheduler control navigates to the corresponding date view. In certain scenarios, you may want to disable this navigation behavior to maintain a fixed view.
+By default, clicking a date header navigates the Scheduler to that date. To keep the view fixed, disable this behavior.
 
-You can prevent date navigation by removing the `e-navigate` CSS class from the header cells. This can be achieved using the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event, as shown in the following example.
+Prevent date navigation by removing the `e-navigate` CSS class from header cells via the [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event. Example:
 
 {% if page.publishingplatform == "typescript" %}
 
