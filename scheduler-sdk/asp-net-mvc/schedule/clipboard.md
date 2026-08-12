@@ -4,7 +4,6 @@ title: Clipboard in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion ASP.NET MVC Scheduler with built-in clipboard support and keyboard shortcuts.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -130,6 +129,6 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 {% endif %}
 
 
->  You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+>  You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
 
 

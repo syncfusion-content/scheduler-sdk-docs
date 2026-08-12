@@ -4,7 +4,6 @@ title: Resources and Grouping in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to assign and group resources in the Syncfusion ASP.NET MVC Scheduler with multi-level grouping, resource fields, and timeline views.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -27,7 +26,7 @@ The default options available within the [`Resources`](https://help.syncfusion.c
 | `Title` | String | It holds the title of the resource field to be displayed on the event editor window. |
 | `Name` | String | A unique resource name used for differentiating various resource objects while grouping. |
 | `AllowMultiple` | Boolean | When set to `true`, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources. |
-| `DataSource` | Object | Assigns the resource `DataSource`, where data can be passed either as an array of JavaScript objects, or else can create an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) in case of processing remote data and can be assigned to the `DataSource` property. With the remote data assigned to `DataSource`, check the available [adaptors](http://ej2.syncfusion.com/documentation/data/adaptors) to customize the data processing. |
+| `DataSource` | Object | Assigns the resource `DataSource`, where data can be passed either as an array of JavaScript objects, or else can create an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) in case of processing remote data and can be assigned to the `DataSource` property. With the remote data assigned to `DataSource`, check the available [adaptors](https://ej2.syncfusion.com/documentation/data/adaptors) to customize the data processing. |
 | `Query` | Query | Defines the external [`Query`](https://ej2.syncfusion.com/documentation/api/data/query) that will be executed along with the data processing. |
 | `IdField` | String | Binds the resource ID field name from the resources `DataSource`. |
 | `ExpandedField` | String | Binds the `ExpandedField` name from the resources `DataSource`. It usually holds boolean value which decide whether the resource of timeline views is in collapse or expand state on initial load. |
@@ -727,4 +726,4 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
