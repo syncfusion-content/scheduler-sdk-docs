@@ -4,7 +4,6 @@ title: Timeline Header Rows in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to add additional header rows in timeline views of the Syncfusion ASP.NET MVC Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
