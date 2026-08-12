@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in ASP.NET Core Daterangepicker Component | Syncfusion
+title: Accessibility in ASP.NET Core Daterangepicker Control | Syncfusion
 description: Learn here all about accessibility in Syncfusion ASP.NET Core Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Accessibility in DateRangePicker Control
+# Accessibility in ASP.NET Core Daterangepicker Control
 
 The DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -40,7 +39,7 @@ The accessibility compliance for the DateRangePicker component is outlined below
 
 ## WAI-ARIA attributes
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
+The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
 
 To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility) section.
 
@@ -52,7 +51,7 @@ It helps people with disabilities by providing information about the widget for 
 
 ## Keyboard Interaction
 
-Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 It supports the following list of shortcut keys:
 

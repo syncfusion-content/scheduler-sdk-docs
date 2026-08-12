@@ -692,7 +692,7 @@ For this project, the **bootstrap5.3** theme is used. A different theme can be s
 
 > **Critical**: The Syncfusion JavaScript file (`syncfusion-blazor.min.js`) is **REQUIRED** for Blazor components to work with InteractiveServer render mode. Without this script, you'll see JavaScript interop errors.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the [Scheduler component's getting-started documentation](https://blazor.syncfusion.com/documentation/scheduler/getting-started).
+Blazor components are now configured and ready to use. For additional guidance, refer to the [Scheduler component's getting-started documentation](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started).
 
 ### Step 2: Create and Apply Database Migrations
 
@@ -1051,8 +1051,8 @@ The application now provides a professional appointment scheduling system with:
 
 ## Additional Resources
 
-- [Blazor Scheduler Documentation](https://blazor.syncfusion.com/documentation/scheduler/getting-started)
-- [Entity Framework Core Documentation](https://docs.microsoft.com/en-us/ef/core/)
+- [Blazor Scheduler Documentation](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started)
+- [Entity Framework Core Documentation](https://learn.microsoft.com/en-us/ef/core/)
 - [Npgsql Entity Framework Core Provider](https://www.npgsql.org/efcore/)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 

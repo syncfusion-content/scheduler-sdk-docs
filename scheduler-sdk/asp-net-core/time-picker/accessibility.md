@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in ASP.NET Core Timepicker Component
+title: Accessibility in ASP.NET Core Timepicker | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Accessibility in TimePicker Control
+# Accessibility in ASP.NET Core Timepicker
 
 The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. It especially it tracks the dynamic value changes and DOM changes.
 
@@ -42,7 +41,7 @@ The accessibility compliance for the TimePicker component is outlined below.
 
 ## WAI-ARIA attributes
 
-The TimePicker control has covered the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications with the following list of WAI-ARIA attributes: `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
+The TimePicker control has covered the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications with the following list of WAI-ARIA attributes: `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
 
 Here in TimePicker, the `combobox` plays the role of input element, and the `listbox` plays the role of popup element.
 
@@ -66,7 +65,7 @@ Here in TimePicker, the `combobox` plays the role of input element, and the `lis
 
 Keyboard accessibility is one of the most important aspects of web accessibility. Disabled people like blind and those who have motor disabilities or birth defects use keyboard shortcuts more than the mouse.
 
-The TimePicker control has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The TimePicker control has built-in keyboard accessibility support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 N> It supports the following list of shortcut keys to interact with the TimePicker control.
 
@@ -92,7 +91,8 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/accessibility/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -101,7 +101,8 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/accessibility/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## Ensuring accessibility
