@@ -51,7 +51,7 @@ To modify the Scheduler appearance, override its default CSS. You can also creat
 | .e-parent-node | Parent resource cells in timeline views of Scheduler |
 | .e-child-node | Child resource cells in timeline views of Scheduler |
 
-### Work cells in vertical views of Scheduler
+## Work cells in vertical views of Scheduler
 
 This CSS selector targets the work cells in the vertical views (Day, Week, and WorkWeek) of the Scheduler component. These cells represent the individual time slots arranged vertically where appointments are displayed.
 
@@ -98,7 +98,7 @@ This CSS selector targets the work cells in the vertical views (Day, Week, and W
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXLdZcWchbLFYygM?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" backgroundimage "[Work cells in vertical views](images/blazor-scheduler-verticalview-workcells.webp)" %}
 
-### Work cells in month view of Scheduler
+## Work cells in month view of Scheduler
 
 This CSS selector targets the work cells in the month view of the Scheduler that belong to the current month. These cells represent the individual days of the displayed month where users can schedule and view appointments.
 
