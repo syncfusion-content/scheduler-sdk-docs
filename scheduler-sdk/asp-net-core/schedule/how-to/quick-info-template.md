@@ -4,7 +4,6 @@ title: Show Quick Info Template in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to customize the Quick Info popup in the Syncfusion ASP.NET Core Scheduler using a template to change its appearance and content.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

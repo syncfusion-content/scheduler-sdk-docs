@@ -3,12 +3,12 @@ layout: post
 title: Virtual Scrolling in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to enable virtual scrolling in the Syncfusion ASP.NET Core Scheduler timeline and agenda views to load resources and events on demand.
 platform: scheduler-sdk
-control: Virtual Scrolling
+control: Scheduler
 documentation: ug
 ---
 
 
-# Virtual Scrolling in ASP.NET Core Scheduler
+# Virtual Scrolling in ASP.NET Core Scheduler 
 
 To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in the Scheduler by setting `true` to the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view specific settings.
 
@@ -115,4 +115,4 @@ namespace LazyLoadingServices.Controllers
 * The property will be effective, when large number of resources and appointments bound to the Scheduler.
 * This property is applicable only when [resource grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) is enabled in Scheduler.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

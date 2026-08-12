@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in ASP.NET Core Scheduler | Syncfusion
 description: Learn how the Syncfusion ASP.NET Core Scheduler meets WAI-ARIA, WCAG 2.2, and Section 508 accessibility standards with screen reader and keyboard support.
 platform: scheduler-sdk
-control: Accessibility
+control: Scheduler
 documentation: ug
 ---
 
@@ -80,7 +80,7 @@ All the Scheduler actions can be controlled via keyboard keys by using the `allo
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | To navigate to today date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | To open editor window. |
 
-> N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.
+> N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
 
 ## Ensuring accessibility
 

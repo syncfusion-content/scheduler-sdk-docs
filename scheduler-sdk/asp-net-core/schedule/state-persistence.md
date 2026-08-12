@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion ASP.NET Core Scheduler to retain current view, selected date, and scroll position.
 platform: scheduler-sdk
-control: State Persistence
+control: Scheduler
 documentation: ug
 ---
 
@@ -41,4 +41,4 @@ The following sample demonstrates how to set state persistence of the Scheduler 
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

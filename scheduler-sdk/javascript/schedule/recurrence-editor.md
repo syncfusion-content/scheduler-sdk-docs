@@ -4,7 +4,6 @@ title: Recurrence Editor in JavaScript Scheduler | Syncfusion
 description: Learn how to use the Recurrence Editor in the Syncfusion JavaScript Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

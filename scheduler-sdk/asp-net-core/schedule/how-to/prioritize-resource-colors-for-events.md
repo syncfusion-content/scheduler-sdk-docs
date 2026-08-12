@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Prioritize Resource Colors for Events in ASP.NET Core Scheduler | Syncfusion
+title: Apply Resource Colors For Events in ASP.NET Core Schedule | Syncfusion
 description: Learn how to prioritize resource colors for events in the Syncfusion ASP.NET Core Scheduler for better visual grouping.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

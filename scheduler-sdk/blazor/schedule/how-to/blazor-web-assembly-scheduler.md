@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Blazor Scheduler in Blazor WebAssembly
-description: Learn how to get started with the Syncfusion Blazor Scheduler in a Blazor WebAssembly App, exploring setup, configuration, and core feature examples.
+title: Getting Started With Blazor Scheduler in Web Assembly | Syncfusion
+description: Step-by-step instructions for integrating Syncfusion Blazor Scheduler in a WebAssembly App with practical configuration examples.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
 ---
  
-# Getting Started with Blazor Scheduler in Blazor WebAssembly
+# Blazor Scheduler Component in WebAssembly App using Visual Studio
 
 This article provides a step-by-step instructions for building Blazor WebAssembly App with [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -132,4 +132,4 @@ Add the Blazor Scheduler component in the **~/Pages/Index.razor** file.
 
 ![Blazor Scheduler with Appointments](../images/blazor-scheduler-appointments.webp)
 
-N> Refer to our [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Scheduler example](https://blazor.syncfusion.com/demos/scheduler/overview?theme=fluent2) to understand how to manage appointments with multiple resources.
+N> Refer to our [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Scheduler example](https://blazor.syncfusion.com/demos/scheduler/overview) to understand how to manage appointments with multiple resources.
