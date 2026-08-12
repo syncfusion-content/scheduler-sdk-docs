@@ -19,7 +19,8 @@ Before beginning, ensure the following are installed:
 * [System requirements for Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * Ionic CLI version `^8.0.0` or later
 * Node.js (latest LTS version is recommended)
-* Angular CLI compatible with your Ionic version
+* Angular 19 (compatible with Ionic 8.0.0)
+* Angular CLI compatible with your Angular version
 
 ## Create an Application
 
@@ -36,7 +37,11 @@ Once the development setup is complete, create a new project by running:
 ionic start syncfusion-angular-ionic blank --type=angular 
 ```
 
-This creates an Ionic application in the `syncfusion-angular-ionic` directory with default npm packages.
+This creates an Ionic application in the `syncfusion-angular-ionic` directory with default npm packages. Navigate into the project directory before installing additional packages:
+
+```bash
+cd syncfusion-angular-ionic
+```
 
 > Refer to this [Ionic getting started guide](https://ionicframework.com/docs/intro/cli) for more framework installation details.
 
@@ -49,7 +54,7 @@ npm install @syncfusion/ej2-angular-schedule --save
 ```
 ## Adding CSS References
 
-To apply the required styles for the Schedule component, update `src/global` file with the following imports:
+To apply the required styles for the Schedule component, update the `src/global.scss` file with the following imports:
 
 {% tabs %}
 {% highlight css tabtitle="~/src/global.scss" %}
@@ -82,9 +87,7 @@ import {
   EventSettingsModel,
 
   // View services
-  DayService, WeekService, WorkWeekService, MonthService, AgendaService,
-
-  DragAndDropService, ResizeService
+  DayService, WeekService, WorkWeekService, MonthService, AgendaService
 } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
@@ -162,6 +165,7 @@ ionic serve
 ```
 
 ## Output
-![image](images/schedule-ionic-output.png)
+
+![Ionic Angular Scheduler output](images/schedule-ionic-output.png)
 
 > For additional help, see the [Angular sample with Ionic framework on GitHub](https://github.com/SyncfusionExamples/How-to-integrate-Syncfusion-Angular-Scheduler-with-Ionic)

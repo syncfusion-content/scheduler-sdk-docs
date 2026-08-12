@@ -28,7 +28,7 @@ The [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-sc
 
 ## Open editor window on single click
 
-By default, the Scheduler editor window opens when double-clicking cells or appointments. To open the editor window with a single click, use the [`openEditor`](https://ej2.syncfusion.com/angular/documentation/api/schedule#openeditor) method in [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventclick) and [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cellclick) events handlers, and set the [`showQuickInfo`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showquickinfo) property to `false`. The following example shows how to open editor window on single click of cells and appointments.
+By default, the Scheduler editor window opens when cells or appointments are double-clicked. To open the editor with a single click, use the [`openEditor`](https://ej2.syncfusion.com/angular/documentation/api/schedule#openeditor) method in the `eventClick` and `cellClick` event handlers, and set the [`showQuickInfo`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showquickinfo) property to `false`. The example below shows how to open the editor window with a single click on cells and appointments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

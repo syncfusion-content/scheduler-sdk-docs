@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Appointments in Angular Scheduler
 
-Appointments represent scheduled items for a specific time period within the Scheduler. Appointments can be created for various time ranges, with each appointment categorized according to its duration and recurrence. The Scheduler categorizes events as follows:
+Appointments represent scheduled items for a specific time period within the Scheduler. Appointments can be created for various time ranges, with each appointment categorized according to its duration and recurrence. The Scheduler categorizes appointments as follows:
 
 * [Normal events](#normal-events)
 * [Spanned events](#spanned-events)
@@ -23,7 +23,7 @@ To see how to add appointments to the Angular Scheduler and utilize its advanced
 
 ## Normal events
 
-Represents an appointment that is created for any specific time interval within a day.
+Represents an appointment that is created for a specific time interval within a day.
 
 ### Creating a normal event
 
@@ -85,7 +85,7 @@ To display all all-day appointments in expanded view when the Scheduler loads, u
 
 ## Customize the rendering of spanned events
 
-By default, Scheduler will renders the spanned events (appointment with more than 24 hours duration) in the all-day row by setting `AllDayRow` will the default type renders to the [`spannedEventPlacement`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#spannedeventplacement) option within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property. Now we can customize rendering of the that events inside the work cells itself by modifying the [`spannedEventPlacement`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#spannedeventplacement) option as `TimeSlot`. In this following example, shows how to render the spanned appointments inside the work cells as follows.
+By default, the Scheduler renders spanned events (appointments with more than 24 hours duration) in the all-day row by setting `AllDayRow` as the default value of the [`spannedEventPlacement`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#spannedeventplacement) option within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property. You can customize the rendering of these events inside the work cells by modifying the [`spannedEventPlacement`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#spannedeventplacement) option to `TimeSlot`. The following example shows how to render spanned appointments inside the work cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -195,7 +195,7 @@ There are four repeat types:
 
 The following table summarizes the properties for creating recurring appointments. Valid rule strings follow [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) standards.
 
- > Refer [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+> Refer to the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specification for valid recurrence rule strings.
 
  Property | Purpose | Example |
 |----------|---------|---------|
@@ -264,7 +264,7 @@ The built-in validation support has been added by default for recurring appointm
 
 ## Event fields
 
-The Scheduler's dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://ej2.syncfusion.com/angular/documentation/api/schedule/field). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
+The Scheduler's dataSource usually holds event instances, where each instance includes a collection of appropriate [fields](https://ej2.syncfusion.com/angular/documentation/api/schedule/field). It is mandatory to map these fields to the equivalent database fields when remote data is bound. When local JSON data is bound, the field names defined within the instances need to be mapped correctly to the Scheduler event fields.
 
 > To create an event, both [`startTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#starttime) and [`endTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#endtime) are required. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#id) field is mandatory for all CRUD actions.
 
@@ -305,7 +305,7 @@ When the fields of event instances has the default mapping name, it is not manda
 
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs8" %}
 
-> The [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#id) mapping is a string type with no extra validation, while other fields have object type and additional options.
+> The [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#id) mapping is a string type with no extra validation, while other fields support object-type settings and additional options.
 
 ### Event field settings
 
@@ -599,24 +599,24 @@ There are scenarios where you want to open the editor filled with data on newly 
 
 ## Inline Appointment
 
-In Scheduler, another easier way for `adding` or `editing` the appointment’s subject alone can be achieved by using the inline Add/Edit support. It allows the user to add and edit the appointments inline. To get familiar with the inline Add mode, single click on any of the Scheduler cells or press enter key on the selected cells.
+In Scheduler, another easier way to add or edit only the appointment's subject is through inline Add/Edit support. It allows users to add and edit appointments inline. To use inline Add mode, single-click any Scheduler cell or press the Enter key on the selected cells.
 
 When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it, requiring the user to enter the subject of an appointment. Once the subject is entered, the appointment will be saved on pressing the enter key.
 
 To enable the inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment will be updated on pressing the enter key.
 
-The inline option can be enabled/disabled on the Scheduler by using the allowInline API, whereas its default value is set to false.
+The inline option can be enabled or disabled on the Scheduler by using the [`allowInline`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowinline) property, whereas its default value is set to `false`.
 
-While using the [`allowInline`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowinline) the [`showQuickInfo`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showquickinfo) will be turned off. The `quickPopup` will not show on clicking the work cell or clicking the appointment when the `allowInline` property is set to `true`.
-In work cells, select multiple cells using keyboard, and then press enter key. The appointment wrapper will be created, and focus will be on the subject field. Also, consider the overlapping scenarios when creating an inline event.
+When using [`allowInline`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowinline), [`showQuickInfo`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showquickinfo) is turned off. The `quickPopup` does not show when clicking a work cell or appointment while [`allowInline`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowinline) is set to `true`.
+In work cells, select multiple cells using the keyboard and then press Enter. The appointment wrapper is created, and focus moves to the subject field. Consider overlapping scenarios when creating an inline event.
 
 ### Normal Event
 
-While editing appointments, single-click the appointment subject, the `editable` option will be enabled in UI and the cursor will focus at the end of the text. Inline editing will be considered for all possible views.
+While editing appointments, single-click the appointment subject and the `editable` option is enabled in the UI. The cursor focuses at the end of the text. Inline editing is supported in all views.
 
 ### Recurrence Event
 
-While editing the occurrence from the recurrence series, it is only possible to edit a `single occurrence`, not an entire series.
+While editing an occurrence from a recurrence series, it is only possible to edit a `single occurrence`, not the entire series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -761,7 +761,7 @@ The [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/sched
 
 ### Using cssClass
 
-The customization of events can also be achieved using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property of the Scheduler. In the following example, the background of appointments has been changed using the cssClass.
+The customization of events can also be achieved using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property of the Scheduler. In the following example, the appointment background is changed using `cssClass`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -777,7 +777,7 @@ The customization of events can also be achieved using [`cssClass`](https://ej2.
 
 ## Setting minimum height
 
-It is possible to set minimal height for appointments on Scheduler using [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventrendered) event, when its start and end time duration is less than the default duration of a single slot.
+It is possible to set a minimum height for appointments in the Scheduler using the [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventrendered) event when the start and end time duration is less than the default duration of a single slot.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -793,7 +793,7 @@ It is possible to set minimal height for appointments on Scheduler using [`event
 
 ## Block Dates and Times
 
-It is possible to block a set of dates or a particular time ranges on the Scheduler. To do so, define an appointment object within [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) along with the required time range to block and set the [`isBlock`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#isblock) field to true. Usually, the event objects defined with isBlock field set to true will block the entire time cells lying within the appropriate time ranges specified through [`startTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#starttime) and [`endTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#endtime) fields.
+It is possible to block a set of dates or particular time ranges in the Scheduler. To do so, define an appointment object within [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) along with the required time range to block and set the [`isBlock`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#isblock) field to `true`. Events defined with `isBlock` set to `true` block the entire time cells within the specified [`startTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#starttime) and [`endTime`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#endtime) range.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

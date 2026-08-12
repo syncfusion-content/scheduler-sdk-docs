@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Set Default Value for Event Fields in Angular Scheduler
 
-Event window default fields name like Title, Location, etc.. can be customized and default value can be set to Subject field using `default` property which will be added if an appointment is created with empty subject.
+You can set default values for editor fields such as `Subject`, `Location`, and other event fields. Use the `default` property to populate the `Subject` field when a new appointment is created with an empty subject.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

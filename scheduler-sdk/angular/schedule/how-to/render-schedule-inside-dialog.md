@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Render Angular Scheduler Inside a Dialog
 
-Render the Schedule while opening the dialog inside the angular `ng-template`.
+Render the Scheduler inside an Angular `ng-template` when opening the dialog.
 
-If you render the Schedule before the dialog is opened it will cause wrong calculations on layout and appointment rendering. To avoid this problem render the Schedule only when the dialog is opened.
+Rendering the Scheduler before the dialog opens can cause incorrect layout and appointment rendering. To avoid this problem, render the Scheduler only when the dialog is opened.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

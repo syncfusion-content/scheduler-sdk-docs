@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 To customize the Scheduler's appearance, override its default CSS. You can also create a custom theme using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material). Below is a list of Scheduler CSS classes.
 
-| Css class | Purpose |
+| CSS class | Purpose |
 |-------|---------|
 | .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of scheduler |
 | .e-schedule .e-month-view .e-work-cells | Work cells in month view of scheduler |
@@ -32,24 +32,24 @@ To customize the Scheduler's appearance, override its default CSS. You can also 
 | .e-schedule .e-timeline-month-view .e-work-days | Work day cells in timeline month view of scheduler |
 | .e-schedule .e-timeline-year-view .e-work-cells.e-work-days | Work day cells in timeline year view of scheduler |
 | .e-schedule .e-vertical-view .e-day-wrapper .e-appointment | Appointment in vertical views of scheduler |
-| .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment | All day Appointment in vertical views of scheduler |
-| .e-schedule .e-month-view .e-appointment | Appointment in month view of scheduler |
-| .e-schedule .e-timeline-view .e-appointment | Appointment in timeline views of scheduler |
+| .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment | All-day appointment in vertical views of Scheduler |
+| .e-schedule .e-month-view .e-appointment | Appointment in month view of Scheduler |
+| .e-schedule .e-timeline-view .e-appointment | Appointment in timeline views of Scheduler |
 | .e-schedule .e-timeline-month-view .e-appointment | Appointment in timeline month view of scheduler |
 | .e-schedule .e-timeline-year-view .e-event-table .e-appointment | Appointment in timeline year view of scheduler |
 | .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-appointment | Appointment in year view of scheduler |
 | .e-schedule .e-agenda-view .e-appointment | Appointment in agenda view of scheduler |
 | .e-schedule .e-month-agenda-view .e-appointment-indicator | Appointment in month agenda view of scheduler |
-| .e-schedule .e-block-appointment | Block appointment in scheduler |
-| .e-schedule .e-read-only | Read only appointment in scheduler. |
-| e-appointment-border | Appointment which are currently selected, use the appointment class hierarchical based on your views. |
-| e-selected-cells | work cells which are currently selected, use the work cell class hierarchical based on your views. |
-| e-header-cells | Header cells of scheduler, use the work cells hierarchical based on your views. |
-| .e-schedule .e-vertical-view .e-resource-cells| Resource cells in vertical views of scheduler. |
-| .e-schedule .e-month-view .e-resource-cells| Resource cells in month view of scheduler. |
-| .e-schedule .e-timeline-view .e-resource-cells | Resource cells in timeline views of scheduler. |
-| .e-schedule .e-timeline-month-view .e-resource-cells| Resource cells in timeline month view of scheduler. |
-| e-parent-node | Parent resource cells in timeline views of scheduler. |
-| e-child-node | Child resource cells in timeline views of scheduler. |
+| .e-schedule .e-block-appointment | Block appointment in Scheduler |
+| .e-schedule .e-read-only | Read-only appointment in Scheduler |
+| .e-appointment-border | Selected appointment border in Scheduler |
+| .e-selected-cells | Selected work cells in Scheduler |
+| .e-header-cells | Scheduler header cells |
+| .e-schedule .e-vertical-view .e-resource-cells | Resource cells in vertical views of Scheduler |
+| .e-schedule .e-month-view .e-resource-cells | Resource cells in month view of Scheduler |
+| .e-schedule .e-timeline-view .e-resource-cells | Resource cells in timeline views of Scheduler |
+| .e-schedule .e-timeline-month-view .e-resource-cells | Resource cells in timeline month view of Scheduler |
+| .e-parent-node | Parent resource cells in timeline views of Scheduler |
+| .e-child-node | Child resource cells in timeline views of Scheduler |
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.

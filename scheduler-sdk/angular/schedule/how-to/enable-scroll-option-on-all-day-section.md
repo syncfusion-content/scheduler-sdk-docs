@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Enable Scroll Option on All-Day Section in Angular Scheduler
 
-When you have a large number of appointments in the all-day row, it can be difficult to view them properly. In this case, you can enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enablealldayscroll) property to `true`, whereas its default value is `false`. When set to `true`, the all-day row displays a scroller when expanded beyond its maximum height.
+When a large number of appointments overflow the all-day row, enable a dedicated scrollbar by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enablealldayscroll) property to `true`. The default value is `false`. When enabled, the all-day row displays a scrollbar if its content exceeds the maximum height.
 
-> Note: This property is not applicable for Scheduler with height `auto`.
+> Note: This property is not applicable when Scheduler height is set to `auto`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
