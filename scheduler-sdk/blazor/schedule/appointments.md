@@ -9,22 +9,22 @@ documentation: ug
 
 # Appointments in Blazor Scheduler
 
-Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. 
+Appointments can be anything that are scheduled for a specific time period. It can be created over varied time ranges, and each appointment is categorized based on this range. 
 
-To get start quickly about appointments and how to customize it, you can check on this video:
+To get started quickly with appointments and how to customize them, you can watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=Vtl1Wyuwt-0"%}
 
 ## Event fields
 
-The Scheduler dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
+The Scheduler data source usually holds the event instances, where each instance includes a collection of appropriate [fields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html). It is mandatory to map these fields with the equivalent database fields when remote data is bound to it. When local data is bound, the field names defined within the instances need to be mapped correctly with the Scheduler event fields.
 
-N> To create an event on Scheduler, it is enough to define the `StartTime` and `EndTime` fields. In case, if remote data is bound to Scheduler, then `Id` field becomes mandatory to process the CRUD actions on appropriate events.
+Note: To create an event in the Scheduler, it is enough to define the `StartTime` and `EndTime` fields. If remote data is bound to the Scheduler, the `Id` field becomes mandatory to process CRUD actions on the appropriate events.
 
 ### Built-in fields
 
-The built-in fields available on Scheduler event object are as follows.
+The built-in fields available on the Scheduler event object are as follows.
 
 | Field name | Description |
 |-------|---------|
@@ -46,7 +46,7 @@ The built-in fields available on Scheduler event object are as follows.
 
 ### Binding different field names
 
-When the fields of event instances has the default mapping name, it is not mandatory to map them manually. If a Scheduler's dataSource holds the events collection with different field names, then it is necessary to map them with its equivalent field name within the [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings) property.
+When the fields of event instances have the default mapping names, it is not mandatory to map them manually. If a Scheduler's data source holds the events collection with different field names, then it is necessary to map them to the equivalent field names within the [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -98,11 +98,11 @@ When the fields of event instances has the default mapping name, it is not manda
 }
 ```
 
-N> The mapper field [`Id`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_Id) is of string type and has no additional validation options, whereas all other fields has additional options.
+Note: The mapper field [`Id`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_Id) is of string type and has no additional validation options, whereas all other fields have additional options.
 
 ### Event field settings
 
-Each field of the Scheduler events are provided with additional settings such as options to set default value, to map with appropriate data source fields, to validate every event fields and to provide label values for those fields in the event window.
+Each field of the Scheduler events is provided with additional settings such as options to set default values, map to appropriate data source fields, validate event fields, and provide label values for those fields in the event window.
 
 | Options | Description |
 | ------- | ----------- |
@@ -111,7 +111,7 @@ Each field of the Scheduler events are provided with additional settings such as
 | Title | Accepts the label values to be displayed for the fields of event editor. |
 | Validation | Defines the validation rules to be applied on the event fields within the event editor. |
 
-In following example, the Subject field in event editor will display its appropriate label as **Summary**. When no subject value is provided while saving an event, then the appointment will be saved with the default subject value as **Add Summary**.
+In the following example, the Subject field in the event editor will display its label as **Summary**. When no subject value is provided while saving an event, the appointment will be saved with the default subject value **Add Summary**.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -158,7 +158,7 @@ In following example, the Subject field in event editor will display its appropr
 
 ### Adding Custom fields
 
-Apart from the default Scheduler fields, the user can include 'n' number of custom fields for appointments. The following code example shows how to include two custom fields namely **Status** and **Priority** within event collection. It is not necessary to bind the custom fields within the [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings). However, those additional fields can be accessed easily, for internal processing as well as from application end.
+Apart from the default Scheduler fields, the user can include any number of custom fields for appointments. The following code example shows how to include two custom fields, **Status** and **Priority**, within the event collection. It is not necessary to bind the custom fields within the [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings). However, those additional fields can be accessed easily for internal processing as well as from the application end.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -246,9 +246,9 @@ N> For example, in week view if an appointment is created for two days say from 
 
 ## All-day events
 
-It represents an appointment that is created for an entire day such as holiday events. It is usually displayed separately in an all-day row, a separate row for all-day appointments below the date header section. In Timeline views, the all-day appointments displays in the working space area, and no separate all-day row is present in that view.
+It represents an appointment that is created for an entire day, such as a holiday event. It is usually displayed separately in an all-day row below the date header section. In Timeline views, all-day appointments display in the working space area, and no separate all-day row is present in that view.
 
-N> To change normal appointment into all-day event, set [`IsAllDay`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldIsAllDay.html) field to true.
+Note: To change a normal appointment into an all-day event, set the [`IsAllDay`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldIsAllDay.html) field to true.
 
 ### Hide all-day row events
 
@@ -262,7 +262,7 @@ The CSS customization can be used to prevent the display of all-day row appointm
 
 ## Block Date and Time
 
-It is possible to block a set of dates or a particular time ranges on the Scheduler. To do so, define an appointment object within [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings) along with the required time range to block and set the [IsBlock](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_IsBlock) field to **true**. Usually, the event objects defined with `IsBlock` field set to true will block the entire time cells lying within the appropriate time ranges specified through `StartTime` and `EndTime` fields.
+It is possible to block a set of dates or particular time ranges on the Scheduler. To do so, define an appointment object within [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings) along with the required time range to block and set the [IsBlock](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_IsBlock) field to **true**. Usually, event objects defined with the `IsBlock` field set to true will block the entire time cells lying within the appropriate time ranges specified through the `StartTime` and `EndTime` fields.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -348,7 +348,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 
 ## Readonly
 
-An interaction with the appointments of Scheduler can be enabled/disabled using the [Readonly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_Readonly) property. With this property enabled, you can simply navigate between the Scheduler dates, views and can be able to view the appointment details in the quick info window. Most importantly, the users are not allowed to perform any CRUD actions on Scheduler, when this property is set to true. By default, it is set as **false**.
+Interaction with Scheduler appointments can be enabled or disabled using the [Readonly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_Readonly) property. With this property enabled, you can navigate between the Scheduler dates and views and view the appointment details in the quick info window. Most importantly, users are not allowed to perform any CRUD actions on the Scheduler when this property is set to true. By default, it is set to **false**.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -388,7 +388,7 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 
 ## Make specific events readonly
 
-There are scenarios where you need to restrict the CRUD action on specific appointments alone based on certain conditions. In the following example, the events that has occurred on the past hours from the current date of the Scheduler are made as read-only and the CRUD actions has been prevented only on those appointments. This can be achieved by setting [IsReadonly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_IsReadonly) field of read-only events to `true`.
+There are scenarios where you need to restrict CRUD actions on specific appointments based on certain conditions. In the following example, events that have occurred in the past hours from the current date of the Scheduler are made read-only, and CRUD actions are prevented only on those appointments. This can be achieved by setting the [IsReadonly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_IsReadonly) field of read-only events to `true`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -433,7 +433,7 @@ N> By default, the event editor is prevented to open on the read-only events whe
 
 ## Customize the order of the overlapping events
 
-By default, the scheduler will render the overlapping events based on the start and end time. Now, the order of the overlapping events can be customized based on the custom fields by using the [SortBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_SortBy) property grouped under the [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings) property. The following code example shows how to sort the appointments based on the custom field **RankId** as follows.
+By default, the Scheduler renders overlapping events based on the start and end time. The order of overlapping events can be customized based on custom fields by using the [SortBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_SortBy) property grouped under the [EventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ISchedule.html#Syncfusion_Blazor_Schedule_ISchedule_EventSettings) property. The following code example shows how to sort the appointments based on the custom field **RankId**.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -482,7 +482,7 @@ By default, the scheduler will render the overlapping events based on the start 
 
 ## Preventing Overlapping Events
 
-By default, the scheduler displays overlapping events according to their start and end times. To prevent overlapping, you can set the [AllowOverlap](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowOverlap) property to `false`.
+By default, the Scheduler displays overlapping events according to their start and end times. To prevent overlapping, you can set the [AllowOverlap](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowOverlap) property to `false`.
 
 When this property is set to `false`, any new or updated events that overlap with existing ones will trigger an overlap alert. The overlapping events will be collected in the [OverlapCollection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.PopupOpenEventArgs-1.html#Syncfusion_Blazor_Schedule_PopupOpenEventArgs_1_OverlapCollection) within the [PopupOpenEventArgs](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.PopupOpenEventArgs-1.html).
 
@@ -1024,7 +1024,7 @@ With the options available to select multiple appointments, it is also possible 
 
 ## Retrieve event details from the UI of an event
 
-It is possible to access the information about the event fields of an appointment based on the X and Y co-ordinates. This can be achieved by passing an X and Y co-ordinates to the public method [GetTargetEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetTargetEventAsync_System_Int32_System_Int32_). You can also get the selected appointment details using [GetSelectedEventsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetSelectedEventsAsync) method.
+It is possible to access the information about the event fields of an appointment based on the X and Y co-ordinates. This can be achieved by passing an X and Y co-ordinates to the public method [GetTargetEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetTargetEventAsync_System_Int32_System_Int32_). You can also get the selected appointment details using the [GetSelectedEventsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetSelectedEventsAsync) method.
 
 ## Get the current view appointments
 
@@ -1125,7 +1125,7 @@ N> You can also get the specific range of appointments by passing the start and 
 
 ## Appointment filtering
 
-The appointments can be filtered by passing the predicate value to [Query](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_Query) option in `ScheduleEventSettings`. The following code example shows how to filter and render the selected appointments alone in the Scheduler.
+Appointments can be filtered by passing the predicate value to the [Query](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_Query) option in `ScheduleEventSettings`. The following code example shows how to filter and render the selected appointments alone in the Scheduler.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

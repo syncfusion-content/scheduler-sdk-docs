@@ -9,15 +9,15 @@ documentation: ug
 
 # Events in Blazor Scheduler
 
-In this section, the list of events of the Scheduler component have been provided which will be triggered for appropriate Scheduler actions.
+This section lists the Scheduler component events that are triggered for the appropriate Scheduler actions.
 
-The events should be provided to the Scheduler using **ScheduleEvents** tag. When using events of Scheduler, **TValue** must be provided in the **ScheduleEvents** tag.
+Provide the events to the Scheduler by using the **ScheduleEvents** tag. When using Scheduler events, **TValue** must also be provided in the **ScheduleEvents** tag.
 
 ## ActionCompleted
 
 [`ActionCompleted`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_ActionCompleted) event triggers on successful completion of the Scheduler actions.
 
-The action type that can be checked within the [`ActionCompleted`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_ActionCompleted) event are as follows.
+The action types that can be checked within the [`ActionCompleted`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_ActionCompleted) event are as follows.
 
 | ActionType | Description |
 |------|-------------|
@@ -52,7 +52,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     {
         if (args.ActionType == ActionType.EventCreate || args.ActionType == ActionType.EventChange)
         {
-            Status = "Success";   //Status become success on create and update of an event.
+            Status = "Success";   // Status becomes success on event create and update.
         }
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -98,7 +98,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnCreated()
     {
-        //Here you can customize your code
+        // Add custom logic here.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -122,7 +122,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
 
 ## DataBinding
 
-[`DataBinding`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_DataBinding) event triggers before the data binds to the Scheduler.
+[`DataBinding`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_DataBinding) event triggers before the data is bound to the Scheduler.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -143,7 +143,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void DataBindHandler(DataBindingEventArgs<AppointmentData> args)
     {
-        //Triggers before the data binds to the scheduler, while performing CRUD actions, View and Date navigations
+        // Triggers before the data binds to the Scheduler while performing CRUD actions, view navigation, and date navigation.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -189,7 +189,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     SfSchedule<AppointmentData> ScheduleRef;
     public async Task OnDataBound(DataBoundEventArgs<AppointmentData> args)
     {
-        List<AppointmentData> eventCollection = await ScheduleRef.GetEvents();   //You can get the entire appointment collections in the EventCollection variable
+        List<AppointmentData> eventCollection = await ScheduleRef.GetEvents();   // You can get the entire appointment collection in the eventCollection variable.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -258,7 +258,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
 
 ## Dragged
 
-[`Dragged`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Dragged) event triggers when the dragging of appointment is stopped.
+[`Dragged`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Dragged) event triggers when appointment dragging is stopped.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -280,7 +280,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     SfSchedule<AppointmentData> ScheduleObj;
     public async Task OnDragged(DragEventArgs<AppointmentData> args)
     {
-        await ScheduleObj.OpenEditorAsync(args.Data, CurrentAction.Save);   //To open the editor window at drag stop
+        await ScheduleObj.OpenEditorAsync(args.Data, CurrentAction.Save);   // Open the editor window when dragging stops.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -304,7 +304,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
 
 ## EventRendered
 
-[`EventRendered`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_EventRendered) event triggers before each of the event getting rendered on the Scheduler user interface.
+[`EventRendered`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_EventRendered) event triggers before each event is rendered on the Scheduler user interface.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -358,7 +358,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
 
 ## MoreEventsClicked
 
-[`MoreEventsClicked`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_MoreEventsClicked) event triggers when the more events indicator are clicked.
+[`MoreEventsClicked`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_MoreEventsClicked) event triggers when the more events indicator is clicked.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -380,7 +380,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     View CurrentView = View.Month;
     public void OnMoreEventsClick(MoreEventsClickArgs args)
     {
-        args.Cancel = true;   //To prevent showing the appointments in more indiactor
+        args.Cancel = true;   // Prevent showing appointments in the more indicator.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -406,7 +406,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
 
 ## Navigating
 
-[`Navigating`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Navigating) event triggers before the date or view navigation takes place on Scheduler.
+[`Navigating`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Navigating) event triggers before date or view navigation takes place in Scheduler.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -428,7 +428,7 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
     public void OnNavigating(NavigatingEventArgs args)
     {
         if (args.ActionType == ActionType.DateNavigate) {
-            args.Cancel = true;   //To prevent date navigation
+            args.Cancel = true;   // Prevent date navigation.
         }
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -453,19 +453,19 @@ The action type that can be checked within the [`ActionCompleted`](https://help.
 
 ## OnActionBegin
 
-[`OnActionBegin`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnActionBegin) event triggers on beginning of every Scheduler action.
+[`OnActionBegin`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnActionBegin) event triggers at the beginning of every Scheduler action.
 
-The request type that can be checked within the [`OnActionBegin`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnActionBegin) event are as follows.
+The request types that can be checked within the [`OnActionBegin`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnActionBegin) event are as follows.
 
 | ActionType | Description |
 |------|-------------|
-| `EventCreate` | Triggers on Creating new event.|
-| `EventChange` | Triggers on updating an event.|
-| `EventRemove` | Triggers on Deleting an event.|
-| `DateNavigate` | Triggers while performing date navigations.|
-| `ViewNavigate` | Triggers while performing view navigations.|
-| `ResourceExpand` | Triggers while expanding resource on timeline views.|
-| `ViewNavigate` | Triggers while collapsing resource on timeline views.|
+| `EventCreate` | Triggers when creating a new event.|
+| `EventChange` | Triggers when updating an event.|
+| `EventRemove` | Triggers when deleting an event.|
+| `DateNavigate` | Triggers while performing date navigation.|
+| `ViewNavigate` | Triggers while performing view navigation.|
+| `ResourceExpand` | Triggers while expanding a resource in timeline views.|
+| `ViewNavigate` | Triggers while collapsing a resource in timeline views.|
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -486,9 +486,9 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnActionBegin(ActionEventArgs<AppointmentData> args)
     {
-        if (args.ActionType == ActionType.EventRemove)   //To check for request type is event delete
+        if (args.ActionType == ActionType.EventRemove)   // Check whether the request type is event delete.
         {
-            args.Cancel = true;   //To prevent the appointment deletion
+            args.Cancel = true;   // Prevent appointment deletion.
         }
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -513,7 +513,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnActionFailure
 
-[`OnActionFailure`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnActionFailure) event triggers when a Scheduler action gets failed or interrupted.
+[`OnActionFailure`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnActionFailure) event triggers when a Scheduler action fails or is interrupted.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -534,7 +534,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnActionFailure(ActionEventArgs<AppointmentData> args)
     {
-        //args.Error catches the failure details.
+        // args.Error contains the failure details.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -558,7 +558,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnCellClick
 
-[`OnCellClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnCellClick) event triggers when the Scheduler cells are single clicked or on single tap on the same cells in mobile devices.
+[`OnCellClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnCellClick) event triggers when Scheduler cells are single-clicked or tapped on mobile devices.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -581,7 +581,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     public async Task OnCellClick(CellClickEventArgs args)
     {
         args.Cancel = true;
-        await ScheduleRef.OpenEditorAsync(args, CurrentAction.Add);   //To open editor window on cell click
+        await ScheduleRef.OpenEditorAsync(args, CurrentAction.Add);   // Open the editor window on cell click.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -605,7 +605,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnCellDoubleClick
 
-[`OnCellDoubleClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnCellDoubleClick) event triggers when the Scheduler cells are double clicked.
+[`OnCellDoubleClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnCellDoubleClick) event triggers when Scheduler cells are double-clicked.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -626,7 +626,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnCellDoubleClick(CellClickEventArgs args)
     {
-        args.Cancel = true;   //To prevent the opening of editor window on cells alone.
+        args.Cancel = true;   // Prevent the editor window from opening for cells only.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -650,7 +650,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnDragStart
 
-[`OnDragStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event triggers when an appointment is started to drag.
+[`OnDragStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event triggers when appointment dragging starts.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -671,7 +671,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnDragStart(DragEventArgs<AppointmentData> args)
     {
-        args.Scroll.Enable = false;   //To prevent scroll action on dragging
+        args.Scroll.Enable = false;   // Prevent scrolling while dragging.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -695,7 +695,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnEventClick
 
-[`OnEventClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnEventClick) event triggers when the events are single clicked or on single tapping the events on the mobile devices.
+[`OnEventClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnEventClick) event triggers when events are single-clicked or tapped on mobile devices.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -718,7 +718,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     public async Task OnEventClick(EventClickArgs<AppointmentData> args)
     {
         args.Cancel = true;
-        await ScheduleRef.OpenEditorAsync(args.Event, CurrentAction.Save);   //To open the editor on event click
+        await ScheduleRef.OpenEditorAsync(args.Event, CurrentAction.Save);   // Open the editor on event click.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -742,7 +742,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnEventDoubleClick
 
-[`OnEventDoubleClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnEventDoubleClick) event triggers when the events are double clicked.
+[`OnEventDoubleClick`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnEventDoubleClick) event triggers when events are double-clicked.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -765,7 +765,7 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
     public async Task OnEventDoubleClick(EventClickArgs<AppointmentData> args)
     {
         args.Cancel = true;
-        await ScheduleRef.OpenQuickInfoPopupAsync(args.Event); //To open Quick popup on double click
+        await ScheduleRef.OpenQuickInfoPopupAsync(args.Event); // Open the quick popup on double click.
     }
 
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -790,21 +790,21 @@ The request type that can be checked within the [`OnActionBegin`](https://help.s
 
 ## OnPopupClose
 
-[`OnPopupClose`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupClose) event triggers before any of the Scheduler popups close on the page.
+[`OnPopupClose`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupClose) event triggers before any Scheduler popup closes on the page.
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`OnPopupClose`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupClose) event are as follows.
+If you need to prevent only specific Scheduler popups, check the popup type in the condition. The popup types that can be checked within the [`OnPopupClose`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupClose) event are as follows.
 
 | PopupType | Description |
 |------|-------------|
 | `Editor` | For Detailed editor window.|
-| `QuickInfo` | For Quick popup which opens on cell click.|
-| `EditEventInfo` |For  Quick popup which opens on event click.|
-| `ViewEventInfo` | For Quick popup which opens on responsive mode.|
-| `EventContainer` | For more event indicator popup.|
-| `RecurrenceAlert` | For edit recurrence event alert popup.|
-| `DeleteAlert` | For delete confirmation popup.|
-| `ValidationAlert` | For validation alert popup.|
-| `RecurrenceValidationAlert` | For recurrence validation alert popup.|
+| `QuickInfo` | For the quick popup that opens on cell click.|
+| `EditEventInfo` | For the quick popup that opens on event click.|
+| `ViewEventInfo` | For the quick popup that opens in responsive mode.|
+| `EventContainer` | For the more events indicator popup.|
+| `RecurrenceAlert` | For the recurrence edit alert popup.|
+| `DeleteAlert` | For the delete confirmation popup.|
+| `ValidationAlert` | For the validation alert popup.|
+| `RecurrenceValidationAlert` | For the recurrence validation alert popup.|
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -827,7 +827,7 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
     {
         if (args.Type == PopupType.Editor || args.Type == PopupType.QuickInfo)
         {
-            args.Data.Subject = (args.Data.Subject == "Add title") ? "New event" : args.Data.Subject;   //The default subject is changed from Add Title to New event
+            args.Data.Subject = (args.Data.Subject == "Add title") ? "New event" : args.Data.Subject;   // Change the default subject from Add Title to New event.
         }
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -852,21 +852,21 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
 
 ## OnPopupOpen
 
-[`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event triggers before any of the Scheduler popups opens on the page.
+[`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event triggers before any Scheduler popup opens on the page.
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event are as follows.
+If you need to prevent only specific Scheduler popups, check the popup type in the condition. The popup types that can be checked within the [`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event are as follows.
 
 | PopupType | Description |
 |------|-------------|
 | `Editor` | For Detailed editor window.|
-| `QuickInfo` | For Quick popup which opens on cell click.|
-| `EditEventInfo` |For  Quick popup which opens on event click.|
-| `ViewEventInfo` | For Quick popup which opens on responsive mode.|
-| `EventContainer` | For more event indicator popup.|
-| `RecurrenceAlert` | For edit recurrence event alert popup.|
-| `DeleteAlert` | For delete confirmation popup.|
-| `ValidationAlert` | For validation alert popup.|
-| `RecurrenceValidationAlert` | For recurrence validation alert popup.|
+| `QuickInfo` | For the quick popup that opens on cell click.|
+| `EditEventInfo` | For the quick popup that opens on event click.|
+| `ViewEventInfo` | For the quick popup that opens in responsive mode.|
+| `EventContainer` | For the more events indicator popup.|
+| `RecurrenceAlert` | For the recurrence edit alert popup.|
+| `DeleteAlert` | For the delete confirmation popup.|
+| `ValidationAlert` | For the validation alert popup.|
+| `RecurrenceValidationAlert` | For the recurrence validation alert popup.|
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -889,7 +889,7 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
     {
         if (args.Type == PopupType.ValidationAlert)
         {
-            args.Cancel = true;   //To prevent start and end time validation alert
+            args.Cancel = true;   // Prevent the start and end time validation alert.
         }
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -914,9 +914,9 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
 
 ## OnRenderCell
 
-[`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event triggers before each element of the Schedule rendering on the page.
+[`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event triggers before each Scheduler element is rendered on the page.
 
-The ElementType that can be checked within the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event are as follows.
+The `ElementType` values that can be checked within the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event are as follows.
 
 | ElementType | Description |
 |------|-------------|
@@ -958,7 +958,7 @@ The ElementType that can be checked within the [`OnRenderCell`](https://help.syn
     {
         if (args.ElementType == ElementType.WorkCells)
         {
-            args.CssClasses = new List<string>(CustomClass); //The default work hours color is changed to ivory color
+            args.CssClasses = new List<string>(CustomClass); // Change the default work hours color to ivory.
         }
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
@@ -983,7 +983,7 @@ The ElementType that can be checked within the [`OnRenderCell`](https://help.syn
 
 ## OnResizeStart
 
-[`OnResizeStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event triggers when an appointment is started to resize.
+[`OnResizeStart`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event triggers when appointment resizing starts.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -1004,8 +1004,8 @@ The ElementType that can be checked within the [`OnRenderCell`](https://help.syn
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnResizeStart(ResizeEventArgs<AppointmentData> args)
     {
-        args.Scroll.Enable = false;   //To prevent scrolling will resize the event
-        args.Interval = 10;   //To change the resizing time imterval from 30 minutes(default) to 10 minutes
+        args.Scroll.Enable = false;   // Prevent scrolling while resizing the event.
+        args.Interval = 10;   // Change the resizing time interval from 30 minutes (default) to 10 minutes.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
@@ -1029,7 +1029,7 @@ The ElementType that can be checked within the [`OnRenderCell`](https://help.syn
 
 ## Resized
 
-[`Resized`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Resized) event triggers when the resizing of appointment is stopped.
+[`Resized`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Resized) event triggers when appointment resizing stops.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -1050,7 +1050,7 @@ The ElementType that can be checked within the [`OnRenderCell`](https://help.syn
     DateTime CurrentDate = new DateTime(2020, 3, 10);
     public void OnResized(ResizeEventArgs<AppointmentData> args)
     {
-        args.Cancel = true;   //To prevent resize action
+        args.Cancel = true;   // Prevent the resize action.
     }
     List<AppointmentData> DataSource = new List<AppointmentData>
     {
