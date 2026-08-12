@@ -1,10 +1,9 @@
 ---
 layout: post
 title: EJ1 API Migration in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to migrate the Syncfusion ASP.NET Core Scheduler from Essential JS 1 to Essential JS 2 by mapping the equivalent APIs and properties.
+description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Ej1 Api Migration
 documentation: ug
 ---
 
@@ -194,4 +193,4 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 | Fires on rendering of every scheduler elements | **Event:** *query-cell-info* <br/><br/> `<ej-schedule id="schedule" query-cell-info="onQueryCellInfo">` <br> `</ej-schedule>` <br> <br> **Script:** <br> `<script>` <br> `function onQueryCellInfo(args) {` <br> `}` <br> `</script>` | **Event:** *renderCell* <br/><br/> `<ejs-schedule  id="schedule" renderCell="onRenderCell">` <br> `</ejs-schedule >` <br> <br> **Script:** <br> `<script>` <br> `function onRenderCell(args) {` <br> `}` <br> `</script>` <br><br> |
 | Fires before the event rendering on UI | Not applicable | **Event:** *eventRendered* <br/><br/> `<ejs-schedule  id="schedule" eventRendered="onEventRendered">` <br> `</ejs-schedule >` <br> <br> **Script:** <br> `<script>` <br> `function onEventRendered(args) {` <br> `}` <br> `</script>` |
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.

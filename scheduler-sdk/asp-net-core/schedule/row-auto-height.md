@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Row Auto Height in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to auto-adjust row height in the Syncfusion ASP.NET Core Scheduler timeline and month views to display all overlapping appointments.
+description: Learn here all about Row Auto Height in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Row Auto Height
 documentation: ug
 ---
 
@@ -141,4 +140,4 @@ By default, with the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/as
 
 **Note**: The property [`ignoreWhitespace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_IgnoreWhitespace) will be applicable only when [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is enabled in the Scheduler.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.

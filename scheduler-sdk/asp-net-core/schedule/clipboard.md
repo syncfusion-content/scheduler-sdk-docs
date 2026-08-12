@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Clipboard in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to enable cut, copy, and paste for appointments in the Syncfusion ASP.NET Core Scheduler with built-in clipboard support and keyboard shortcuts.
+title: Clipboard in ASP.NET Core Schedule Component| Syncfusion
+description: Learn here all about Clipboard in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Clipboard
 documentation: ug
 ---
 
-# Clipboard in ASP.NET Core Scheduler
+# Clipboard in ASP.NET Core Schedule component
 
 The Clipboard functionality in the Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
 To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowClipboard) property to **true**.
@@ -130,5 +129,5 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 {% endif %}
 
 
->  You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+>  You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.
 

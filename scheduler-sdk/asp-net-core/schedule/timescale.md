@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Timescale Customization in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to customize the time slots in the Syncfusion ASP.NET Core Scheduler to set the duration, interval, and slot count per row.
+description: Learn here all about Timescale in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Timescale
 documentation: ug
 ---
 
@@ -142,4 +141,4 @@ By default, Scheduler indicates current date with a highlighted date header on a
 
 ![Display Highlighting Current Date and Time in ASP.NET Core Scheduler](images/scheduler-highlight-date-time.png)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.

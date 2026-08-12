@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Exporting in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to export and import events in the Syncfusion ASP.NET Core Scheduler to Excel and ICS files, and print appointments with custom options.
+title: Exporting in ASP.NET Core Syncfusion Schedule Component
+description: Learn here all about Exporting in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Exporting
 documentation: ug
 ---
 
 
-# Exporting in ASP.NET Core Scheduler
+# Exporting in ASP.NET Core Schedule Component
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 
@@ -453,4 +452,4 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% endtabs %}
 {% endif %}
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.

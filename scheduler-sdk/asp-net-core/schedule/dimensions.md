@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Scheduler Dimensions in ASP.NET Core Scheduler | Syncfusion
-description: Learn how to set the height and width of the Syncfusion ASP.NET Core Scheduler using pixel, percentage, or auto values for responsive layouts.
+title: Dimensions in ASP.NET Core Schedule Control | Syncfusion
+description: Learn here all about Dimensions in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Dimensions
 documentation: ug
 ---
 
 
-# Dimensions in ASP.NET Core Scheduler
+# Dimensions in ASP.NET Core Schedule Control
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 
@@ -104,8 +103,8 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.
 
 ## See Also
 
-* [How to Change Scheduler Cell Dimensions](./cell-customization/#setting-cell-dimensions-in-all-views)
+* [How to Change Scheduler Cell Dimensions](https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/cell-customization#setting-cell-dimensions-in-all-views)
