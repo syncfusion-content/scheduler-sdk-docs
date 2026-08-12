@@ -4,7 +4,6 @@ title: Cell Customization in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to customize work cells in the Syncfusion ASP.NET MVC Scheduler for vertical, timeline, and month views with custom content and styling.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -160,7 +159,8 @@ The month header of each date cell in the month view can be customized using the
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/cell-header-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -169,7 +169,8 @@ The month header of each date cell in the month view can be customized using the
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/cell-header-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -246,7 +247,8 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/weekend-cell-color/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weekend-cell-color.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -255,11 +257,12 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/customization/weekend-cell-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weekend-cell-color.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## How to disable multiple cell and row selection in Schedule
 
 By default, the [`AllowMultiCellSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiCellSelection) and [`AllowMultiRowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiRowSelection) properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.

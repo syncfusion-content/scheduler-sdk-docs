@@ -3,8 +3,7 @@ layout: post
 title: Style and Appearance in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to style the Syncfusion ASP.NET Core Scheduler by overriding default CSS classes and creating custom themes with Theme Studio.
 platform: scheduler-sdk
-control: Scheduler
-publishingplatform: scheduler-sdk
+control: Scheduler Styling
 documentation: ug
 ---
 
@@ -53,4 +52,4 @@ To modify the Scheduler appearance, you need to override the default CSS of Sche
 | e-parent-node | Parent resource cells in timeline views of scheduler. |
 | e-child-node | Child resource cells in timeline views of scheduler. |
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.

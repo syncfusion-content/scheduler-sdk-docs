@@ -4,7 +4,6 @@ title: State Persistence in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion ASP.NET MVC Scheduler to retain current view, selected date, and scroll position.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -42,4 +41,4 @@ The following sample demonstrates how to set state persistence of the Scheduler 
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
