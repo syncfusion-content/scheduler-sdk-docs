@@ -101,7 +101,7 @@ The [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.
             <RowDefinition />
             <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                                View="Week" >
         </scheduler:SfScheduler>
         <Button x:Name="button" Text="Forward" Clicked="OnButtonClicked" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
@@ -123,7 +123,7 @@ public partial class MainPage : ContentPage
 
     private void OnButtonClicked(object sender, EventArgs e)
     {
-        this.Scheduler.Forward();
+        this.scheduler.Forward();
     }
 }
 
@@ -146,7 +146,7 @@ The [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.
             <RowDefinition />
             <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                                View="Week" >
         </scheduler:SfScheduler>
         <Button x:Name="button" Text="Backward" Clicked="OnButtonClicked" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
@@ -168,7 +168,7 @@ public partial class MainPage : ContentPage
 
     private void OnButtonClicked(object sender, EventArgs e)
     {
-        this.Scheduler.Backward();
+        this.scheduler.Backward();
     }
 }
 
@@ -186,7 +186,7 @@ By using the [AllowViewNavigation](https://help.syncfusion.com/cr/maui/Syncfusio
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                             AllowViewNavigation="True">
     </scheduler:SfScheduler>
 </ContentPage>
@@ -228,7 +228,7 @@ You can enable the date picker for the scheduler by using the [ShowDatePickerBut
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            ShowDatePickerButton="True">
     </scheduler:SfScheduler>
 </ContentPage>
@@ -269,7 +269,7 @@ The default value of [AllowedViews](https://help.syncfusion.com/cr/maui/Syncfusi
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            AllowedViews="Day,Week,WorkWeek,Month,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
     </scheduler:SfScheduler>
 </ContentPage>
@@ -307,7 +307,7 @@ N> When [ShowAllowedViews](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.S
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            AllowedViews="Day,Week,WorkWeek,Month,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" 
                            ShowAllowedViews="false">
     </scheduler:SfScheduler>
@@ -448,7 +448,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.SelectableDayPredicate = (date) =>
+        this.scheduler.SelectableDayPredicate = (date) =>
         {
             if (date.DayOfWeek == DayOfWeek.Sunday || date.DayOfWeek == DayOfWeek.Saturday)
             {
@@ -489,8 +489,8 @@ public partial class MainPage : ContentPage
             FontSize = 12,
         };
 
-        this.Scheduler.DisabledDateTextStyle = disabledDateTextStyle;
-        this.Scheduler.DisabledDateBackground = Brush.LightSkyBlue;
+        this.scheduler.DisabledDateTextStyle = disabledDateTextStyle;
+        this.scheduler.DisabledDateBackground = Brush.LightSkyBlue;
     }
 }
 

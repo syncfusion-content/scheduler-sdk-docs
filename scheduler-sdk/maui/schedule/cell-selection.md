@@ -22,7 +22,7 @@ The cell selection border color can be customized by using the [Stroke](https://
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler">
         <scheduler:SfScheduler.CellSelectionView>
                 <scheduler:SchedulerCellSelectionView Stroke="Red"/>
         </scheduler:SfScheduler.CellSelectionView>
@@ -40,7 +40,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.CellSelectionView.Stroke = Brush.Green;
+        this.scheduler.CellSelectionView.Stroke = Brush.Green;
     }
 }
 
@@ -63,7 +63,7 @@ N> By default, the [Stroke](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler">
         <scheduler:SfScheduler.CellSelectionView>
                 <scheduler:SchedulerCellSelectionView Background="Red" Stroke="Transparent"/>
         </scheduler:SfScheduler.CellSelectionView>
@@ -81,7 +81,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.CellSelectionView.Background = Brush.Green;
+        this.scheduler.CellSelectionView.Background = Brush.Green;
     }
 }
 
@@ -101,7 +101,7 @@ The corner radius of cell selection view can be customized by using the [CornerR
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler">
         <scheduler:SfScheduler.CellSelectionView>
                 <scheduler:SchedulerCellSelectionView  Background="Red" CornerRadius="2"/>
         </scheduler:SfScheduler.CellSelectionView>
@@ -119,8 +119,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.CellSelectionView.Stroke = Brush.Green;
-        this.Scheduler.CellSelectionView.CornerRadius = 2;
+        this.scheduler.CellSelectionView.Stroke = Brush.Green;
+        this.scheduler.CellSelectionView.CornerRadius = 2;
     }
 }
 
@@ -142,7 +142,7 @@ N> The [StrokeWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Schedul
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler">
         <scheduler:SfScheduler.CellSelectionView>
                 <scheduler:SchedulerCellSelectionView  Stroke="Red" StrokeWidth="2"/>
         </scheduler:SfScheduler.CellSelectionView>
@@ -160,8 +160,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.CellSelectionView.Stroke = Brush.Green;
-        this.Scheduler.CellSelectionView.StrokeWidth = 2;
+        this.scheduler.CellSelectionView.Stroke = Brush.Green;
+        this.scheduler.CellSelectionView.StrokeWidth = 2;
     }
 }
 
@@ -181,7 +181,7 @@ The scheduler allows you to use the custom view as a selection view by using the
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler">
         <scheduler:SfScheduler.CellSelectionView>
             <scheduler:SchedulerCellSelectionView>
                 <scheduler:SchedulerCellSelectionView.Template>

@@ -39,7 +39,7 @@ This [QueryAppointments](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week"
                            QueryAppointments="OnSchedulerQueryAppointments">
     </scheduler:SfScheduler>
@@ -58,27 +58,27 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.QueryAppointments += OnSchedulerQueryAppointments;
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.QueryAppointments += OnSchedulerQueryAppointments;
     }
 
     private async void OnSchedulerQueryAppointments(object sender, SchedulerQueryAppointmentsEventArgs e)
     {
-        this.Scheduler.ShowBusyIndicator = true;
+        this.scheduler.ShowBusyIndicator = true;
         await Task.Delay(1500);
         var appCollection = this.GenerateSchedulerAppointments(e.VisibleDates);
-        if (this.Scheduler.View != SchedulerView.Agenda)
+        if (this.scheduler.View != SchedulerView.Agenda)
         {
-            this.Scheduler.AppointmentsSource = appCollection;
+            this.scheduler.AppointmentsSource = appCollection;
         }
         else
         {
             foreach (var app in appCollection)
             {
-                ((ObservableCollection<SchedulerAppointment>)this.Scheduler.AppointmentsSource).Add(app);
+                ((ObservableCollection<SchedulerAppointment>)this.scheduler.AppointmentsSource).Add(app);
             }
         }
-        this.Scheduler.ShowBusyIndicator = false;
+        this.scheduler.ShowBusyIndicator = false;
     }
 
     private ObservableCollection<SchedulerAppointment> GenerateSchedulerAppointments(List<DateTime> visibleDates)
@@ -157,7 +157,7 @@ The [ShowBusyIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sche
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week"
                            AppointmentsSource="{Binding Events}"
                            ShowBusyIndicator="{Binding ShowBusyIndicator}"
@@ -300,7 +300,7 @@ The `Scheduler` supports to show the busy indicator view by using the [ShowBusyI
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week"
                            ShowBusyIndicator="True">
     </scheduler:SfScheduler>
@@ -342,7 +342,7 @@ You can customize the busy indicator appearance by using the [BusyIndicatorTempl
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Week"
                            ShowBusyIndicator="True">
         <scheduler:SfScheduler.BusyIndicatorTemplate>

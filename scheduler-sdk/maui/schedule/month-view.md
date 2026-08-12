@@ -35,7 +35,7 @@ You can set the month view appointments display as follows.
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView 
@@ -82,7 +82,7 @@ The scheduler month view appointment indicator count allows you to customize the
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Month" >
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView AppointmentDisplayMode="Indicator" 
@@ -102,9 +102,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Month;
-        this.Scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
-        this.Scheduler.MonthView.AppointmentIndicatorCount = 2;
+        this.scheduler.View = SchedulerView.Month;
+        this.scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
+        this.scheduler.MonthView.AppointmentIndicatorCount = 2;
     }
 }
 
@@ -124,7 +124,7 @@ The scheduler month view allows you to customize the size of the appointment ind
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Month" >
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView AppointmentDisplayMode="Indicator" AppointmentIndicatorSize="10"/>
@@ -143,9 +143,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Month;
-        this.Scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
-        this.Scheduler.MonthView.AppointmentIndicatorSize = 10;
+        this.scheduler.View = SchedulerView.Month;
+        this.scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
+        this.scheduler.MonthView.AppointmentIndicatorSize = 10;
     }
 }
 
@@ -165,7 +165,7 @@ The scheduler month view allows you to customize the appointment indicator rende
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Month" >
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView AppointmentIndicatorRenderMode="Stroke" AppointmentDisplayMode="Indicator" AppointmentIndicatorSize="15" AppointmentIndicatorCount="2" />
@@ -184,11 +184,11 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Month;
-        this.Scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
-        this.Scheduler.MonthView.AppointmentIndicatorRenderMode = AppointmentIndicatorRenderMode.Stroke;
-        this.Scheduler.MonthView.AppointmentIndicatorSize = 15;
-        this.Scheduler.MonthView.AppointmentIndicatorCount = 2;
+        this.scheduler.View = SchedulerView.Month;
+        this.scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
+        this.scheduler.MonthView.AppointmentIndicatorRenderMode = AppointmentIndicatorRenderMode.Stroke;
+        this.scheduler.MonthView.AppointmentIndicatorSize = 15;
+        this.scheduler.MonthView.AppointmentIndicatorCount = 2;
     }
 }
 
@@ -208,7 +208,7 @@ The scheduler month view allows you to customize the appointment indicator strok
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Month" >
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView AppointmentIndicatorStrokeThickness="4" AppointmentDisplayMode="Indicator" AppointmentIndicatorSize="20" AppointmentIndicatorRenderMode="Stroke" />
@@ -227,11 +227,11 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Month;
-        this.Scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
-        this.Scheduler.MonthView.AppointmentIndicatorRenderMode = AppointmentIndicatorRenderMode.Stroke;
-        this.Scheduler.MonthView.AppointmentIndicatorSize = 20;
-        this.Scheduler.MonthView.AppointmentIndicatorStrokeThickness = 4;
+        this.scheduler.View = SchedulerView.Month;
+        this.scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Indicator;
+        this.scheduler.MonthView.AppointmentIndicatorRenderMode = AppointmentIndicatorRenderMode.Stroke;
+        this.scheduler.MonthView.AppointmentIndicatorSize = 20;
+        this.scheduler.MonthView.AppointmentIndicatorStrokeThickness = 4;
     }
 }
 
@@ -251,7 +251,7 @@ The previous and next month dates from a Scheduler month view can be hidden by u
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView  
@@ -294,7 +294,7 @@ The [DateHorizontalAlignment](https://help.syncfusion.com/cr/maui/Syncfusion.Mau
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView DateHorizontalAlignment="Left"/>
@@ -336,7 +336,7 @@ The number of week visible in the month view can be changed by setting the [Numb
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView  
@@ -379,7 +379,7 @@ The scheduler allows you to define non-working days in the Month view using the 
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView NonWorkingDays="Saturday,Sunday"/>
@@ -419,7 +419,7 @@ The [HideNonWorkingDays](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView NonWorkingDays="Saturday,Sunday" HideNonWorkingDays="True"/>
@@ -526,7 +526,7 @@ Appointments can be displayed inline within the [Month](https://help.syncfusion.
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView ShowAppointmentsInline="True"/>
@@ -779,7 +779,7 @@ This event provides details about the tapped appointment and the selected date t
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month" 
                            MonthInlineAppointmentTapped="Scheduler_MonthInlineAppointmentTapped" >
     </scheduler:SfScheduler>
@@ -796,7 +796,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.MonthInlineAppointmentTapped += Scheduler_MonthInlineAppointmentTapped;
+        this.scheduler.MonthInlineAppointmentTapped += Scheduler_MonthInlineAppointmentTapped;
     }
 
     private void Scheduler_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs e)
@@ -824,7 +824,7 @@ Customize the day format of Scheduler view header by using the [DayFormat](https
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView>
@@ -870,7 +870,7 @@ The height of the ViewHeader can be customized by setting the [Height](https://h
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView>
@@ -919,7 +919,7 @@ Customize the month view header day text style, day format and background color 
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView>
@@ -967,7 +967,7 @@ You can customize the view header appearance by using the [ViewHeaderTemplate](h
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView>
@@ -1013,7 +1013,7 @@ You can customize the view header appearance by using the [ViewHeaderTemplate](h
             </DataTemplate>
             <local:MonthViewHeaderTemplateSelector x:Key="monthViewHeaderTemplateSelector"  TodayDatesTemplate="{StaticResource todayDatesTemplate}"  NormaldatesTemplate="{StaticResource normaldatesTemplate}" />
         </Grid.Resources>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                                View="Month">
             <scheduler:SfScheduler.MonthView>
                 <scheduler:SchedulerMonthView ViewHeaderTemplate = "{StaticResource monthViewHeaderTemplateSelector}"/>
@@ -1100,7 +1100,7 @@ By using the [CellStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sch
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
     </scheduler:SfScheduler>
 </ContentPage>
@@ -1116,7 +1116,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Month;
+        this.scheduler.View = SchedulerView.Month;
         var textStyle = new SchedulerTextStyle()
         {
             TextColor = Colors.DarkBlue,
@@ -1146,7 +1146,7 @@ public partial class MainPage : ContentPage
             TrailingMonthTextStyle = trailingMonthTextStyle
         };
 
-        this.Scheduler.MonthView.CellStyle = monthCellStyle;
+        this.scheduler.MonthView.CellStyle = monthCellStyle;
     }
 }
 
@@ -1166,7 +1166,7 @@ You can customize the month cell appearance by using the [CellTemplate](https://
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Month">
         <scheduler:SfScheduler.MonthView>
             <scheduler:SchedulerMonthView>
@@ -1215,7 +1215,7 @@ You can customize the month cell appearance by using the [CellTemplate](https://
             </DataTemplate>
             <local:MonthCellTemplateSelector x:Key="monthCellTemplateSelector" TodayDateTemplate="{StaticResource todayDateTemplate}" NormalDateTemplate="{StaticResource normalDateTemplate}"/>
         </Grid.Resources>
-        <scheduler:SfScheduler x:Name="Scheduler" 
+        <scheduler:SfScheduler x:Name="scheduler" 
                                View="Month" >
             <scheduler:SfScheduler.MonthView>
                 <scheduler:SchedulerMonthView CellTemplate="{StaticResource monthCellTemplateSelector}" />
@@ -1255,7 +1255,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Month;
+        this.scheduler.View = SchedulerView.Month;
     }
 }
 {% endhighlight %} 

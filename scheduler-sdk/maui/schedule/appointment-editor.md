@@ -150,7 +150,7 @@ The [AppointmentEditorOpening](https://help.syncfusion.com/cr/maui/Syncfusion.Ma
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Day"
                            AppointmentEditorMode="Add,Edit"
                            AppointmentEditorOpening="Scheduler_AppointmentEditorOpening">
@@ -189,7 +189,7 @@ The [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/maui/Sync
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Day"
                            AppointmentEditorMode="Add,Edit"
                            AppointmentEditorOpening="Scheduler_AppointmentEditorOpening">
@@ -229,7 +229,7 @@ The [AppointmentEditorClosing](https://help.syncfusion.com/cr/maui/Syncfusion.Ma
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Day"
                            AppointmentEditorMode="Add,Edit"
                            AppointmentEditorClosing="Scheduler_AppointmentEditorClosing">
@@ -268,7 +268,7 @@ The [AppointmentEditorClosingEventArgs](https://help.syncfusion.com/cr/maui/Sync
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Day"
                            AppointmentEditorMode="Add,Edit"
                            AppointmentEditorClosing="Scheduler_AppointmentEditorClosing">
