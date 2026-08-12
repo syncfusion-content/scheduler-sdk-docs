@@ -84,9 +84,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfDateTimePicker picker = new SfDateTimePicker();
-        picker.DateFormat = PickerDateFormat.dd_MMM_yyyy;
-        this.Content = picker;
+        SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+        datetimepicker.DateFormat = PickerDateFormat.dd_MMM_yyyy;
+        this.Content = dateTimePicker;
     }
 }
 
@@ -152,9 +152,9 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        SfDateTimePicker picker = new SfDateTimePicker();
-        picker.TimeFormat = PickerTimeFormat.hh_mm_ss_tt;
-        this.Content = picker;
+        SfDateTimePicker dateTimePicker = new SfDateTimePicker();
+        datetimepicker.TimeFormat = PickerTimeFormat.hh_mm_ss_tt;
+        this.Content = dateTimePicker;
     }
 }
 

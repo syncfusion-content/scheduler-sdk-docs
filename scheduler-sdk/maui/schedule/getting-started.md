@@ -164,7 +164,7 @@ public partial class MainPage : ContentPage
             Location = "Hutchison road",
         });
 
-        this.Scheduler.AppointmentsSource = appointment;
+        this.scheduler.AppointmentsSource = appointment;
     }
 }
 

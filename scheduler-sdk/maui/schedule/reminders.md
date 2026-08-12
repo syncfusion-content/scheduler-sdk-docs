@@ -49,7 +49,7 @@ Reminders can be enabled by setting the [EnableReminder](https://help.syncfusion
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View ="Week"
                            EnableReminder="True" >
     </scheduler:SfScheduler>
