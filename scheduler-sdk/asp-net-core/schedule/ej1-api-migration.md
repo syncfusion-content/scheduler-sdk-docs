@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ASP.NET Core Scheduler | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+description: Learn how to migrate the Syncfusion ASP.NET Core Scheduler from Essential JS 1 to Essential JS 2 by mapping the equivalent APIs and properties.
 platform: scheduler-sdk
 control: Ej1 Api Migration
 documentation: ug

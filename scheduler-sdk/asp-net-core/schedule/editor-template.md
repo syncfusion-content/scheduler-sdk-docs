@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editor Template in ASP.NET Core Syncfusion Schedule | Syncfusion
-description: Learn here all about Editor Template in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+title: Editor Window Customization in ASP.NET Core Scheduler | Syncfusion
+description: Learn how to customize the editor window and quick pop-up in the Syncfusion ASP.NET Core Scheduler to match your data and design needs.
 platform: scheduler-sdk
 control: Editor Template
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Globalization and Localization in ASP.NET Core Scheduler | Syncfusion
-description: Learn here all about Localization in Syncfusion ASP.NET Core Schedule control of Syncfusion Essential JS 2 and more.
+escription: Learn how to localize the Syncfusion ASP.NET Core Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: scheduler-sdk
 control: Localization
 documentation: ug

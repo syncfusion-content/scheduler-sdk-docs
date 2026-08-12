@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Views in ASP.NET Core Scheduler | Syncfusion
-description: Learn here all about Views in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+description: Learn about the available views in the Syncfusion ASP.NET Core Scheduler, including day, week, month, agenda, and timeline view modes and customizations.
 platform: scheduler-sdk
 control: Views
 documentation: ug

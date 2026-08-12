@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recurrence Editor in ASP.NET Core Scheduler | Syncfusion
-description: Learn here all about Recurrence Editor in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+description: Learn how to use the Recurrence Editor in the Syncfusion ASP.NET Core Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: scheduler-sdk
 control: Recurrence Editor
 documentation: ug

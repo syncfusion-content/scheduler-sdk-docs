@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timeline Header Rows in ASP.NET Core Scheduler | Syncfusion
-description: Learn here all about Header Rows in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+description: Learn how to add additional header rows in timeline views of the Syncfusion ASP.NET Core Scheduler, including year, month, week, and date rows.
 platform: scheduler-sdk
 control: Header Rows
 documentation: ug

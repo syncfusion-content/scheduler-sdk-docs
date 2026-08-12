@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working Days and Hours in ASP.NET Core Scheduler | Syncfusion
-description: Learn here all about Working Days in Syncfusion ASP.NET Core Schedule component of Syncfusion Essential JS 2 and more.
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion ASP.NET Core Scheduler.
 platform: scheduler-sdk
 control: Working Days
 documentation: ug
