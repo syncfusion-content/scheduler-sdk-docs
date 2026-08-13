@@ -620,4 +620,4 @@ A complete, working sample implementation is available in the [GitHub repository
 - Clear browser cache
 - Check Syncfusion.Blazor.Themes package is installed
 
-To learn more about the Schedule component, refer to the [documentation](https://blazor.syncfusion.com/documentation/scheduler/getting-started).
+To learn more about the Schedule component, refer to the [documentation](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started).

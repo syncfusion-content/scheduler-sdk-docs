@@ -20,7 +20,7 @@ documentation: ug
 - **Resolvers**: Each query or mutation is handled by a resolver, which is a function responsible for fetching data or executing an operation. **Query resolvers** handle **read operations**, while **mutation resolvers** handle **write operations**.
 - **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify how data can be retrieved, and mutation definitions specify how data can be modified.
 
-[Hot Chocolate](https://chillicream.com/docs/hotchocolate/v15) is an open‑source GraphQL server framework for .NET. Hot Chocolate enables the creation of GraphQL APIs using ASP.NET Core and integrates seamlessly with modern .NET applications, including Blazor.
+[Hot Chocolate](https://chillicream.com/docs/hotchocolate) is an open‑source GraphQL server framework for .NET. Hot Chocolate enables the creation of GraphQL APIs using ASP.NET Core and integrates seamlessly with modern .NET applications, including Blazor.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ This creates a minimal ASP.NET Core app with just `Program.cs`.
 
 ### Step 2: Install the required backend package
 
-To add the [HotChocolate](https://chillicream.com/docs/hotchocolate/v15) package to the server project, open NuGet Package Manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search for and install [HotChocolate.AspNetCore](https://www.nuget.org/packages/HotChocolate.AspNetCore).
+To add the [HotChocolate](https://chillicream.com/docs/hotchocolate) package to the server project, open NuGet Package Manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search for and install [HotChocolate.AspNetCore](https://www.nuget.org/packages/HotChocolate.AspNetCore).
 
 Alternatively, run the following commands in the Package Manager Console to achieve the same.
 
@@ -599,7 +599,6 @@ var app = builder.Build();
 ```
 
 Blazor components are now configured and ready to use. For additional guidance, refer to the Scheduler component’s [getting-started](https://blazor.syncfusion.com/documentation/scheduler/getting-started-webapp) documentation.
-
 ### Step 3: Create the Data Model
 
 A data model is a C# class that represents the structure of a database table. This model defines the properties that correspond to the columns in the `Appointments` table.
