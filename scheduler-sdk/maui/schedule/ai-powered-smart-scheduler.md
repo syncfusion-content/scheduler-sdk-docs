@@ -361,7 +361,7 @@ private async Task<string> GetRecommendation(string userInput)
                     $"Provide ResourceID for Doctor1 as 1000 and for Doctor2 as 1001." +
                     $"Do not repeat the same time. Generate the following fields: StartDate, EndDate, Subject, Location, and ResourceID." +
                     $"The return format should be the following JSON format: Doctor1[StartDate, EndDate, Subject, Location, ResourceID], Doctor2[StartDate, EndDate, Subject, Location, ResourceID]." +
-                    $"Condition: provide details without any explanation. Don't include any special characters like ```";
+                    $"Condition: provide details without any explanation. Don't include any special characters like";
 
     returnMessage = await azureAIServices.GetResultsFromAI(prompt);
     var jsonObj = JObject.Parse(returnMessage);
