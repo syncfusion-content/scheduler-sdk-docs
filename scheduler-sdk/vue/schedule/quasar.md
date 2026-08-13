@@ -44,7 +44,7 @@ Now that `quasar-project` is ready to run with the default settings, let's add S
 
 ## Add the Vue packages
 
-Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Vue components in the project, install the corresponding npm package.
+Vue component packages are available at [`npmjs.com`](https://www.npmjs.com/search?q=ej2-vue). To use Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) component as an example. To use the Vue Scheduler component in the project, install the `@syncfusion/ej2-vue-schedule` package using the following command:
 
