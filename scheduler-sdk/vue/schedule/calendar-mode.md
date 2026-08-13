@@ -29,11 +29,11 @@ The Schedule component includes a `calendarMode` property that switches between 
 
 To enable Islamic calendar functionality, import the `Calendar` and `Islamic` modules from the `ej2-calendars` package and inject them using the `Calendar.Inject` method. Additionally, the Islamic calendar requires the following CLDR data to be loaded using the `loadCldr` function:
 
-- `numberingSystems.json`
-- `ca-gregorian.json`
-- `numbers.json`
-- `timeZoneNames.json`
-- `ca-islamic.json`
+- numberingSystems.json
+- ca-Gregorian.json
+- numbers.json
+- timeZoneNames.json
+- ca-islamic.json
 
 > For detailed guidance on installing CLDR data, refer to the  [`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization#installing-cldr-data) documentation.
 

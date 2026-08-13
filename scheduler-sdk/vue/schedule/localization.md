@@ -30,10 +30,10 @@ Once the package is installed, you can find the culture specific JSON data under
 
 * Import the required culture files from the installed location into the `App.vue` file as shown in the following code example.
 
-    1. `numberingSystems.json`
-    2. `ca-gregorian.json`
-    3. `numbers.json`
-    4. `timeZoneNames.json`
+    1. numberingSystems.json
+    2. ca-Gregorian.json
+    3. numbers.json
+    4. timeZoneNames.json
 
      ```ts
      // import loadCldr from ej2-base
