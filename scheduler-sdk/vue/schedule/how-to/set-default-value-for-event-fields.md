@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Set Default Value for Event Fields in Vue Scheduler
 
-Event window default fields name like Title, Location, etc.. can be customized and default value can be set to Subject field using `default` property which will be added if an appointment is created with empty subject.
+You can customize the default field names, such as Title and Location, and set a default value for the Subject field by using the `default` property. This value is applied when an appointment is created with an empty subject.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Calendar Mode in Vue Scheduler
 
-The Scheduler supports the following two types of calendar mode.
+The Scheduler supports the following two calendar modes.
 
 * Gregorian Calendar
 * Islamic Calendar
@@ -23,9 +23,9 @@ The Schedule component displays Gregorian calendar dates by default. The Gregori
 
 The Islamic calendar, also known as the Hijri or Muslim calendar, is a lunar-based system consisting of 12 months with 354 or 355 days. Each month begins with the sighting of the new moon; therefore, months may contain either 29 or 30 days. Odd‑numbered months have 30 days, and even‑numbered months have 29 days.
 
-> The current Islamic year is 1440 AH. Usually the Gregorian calendar runs from approximately 11 September 2018 to 30 August 2019 for this 1440 AH year.
+> The current Islamic year is 1440 AH. Usually, the Gregorian calendar runs from approximately 11 September 2018 to 30 August 2019 for this 1440 AH year.
 
-The Schedule component includes a `calendarMode` property that switches between `Gregorian` and `Islamic` modes. The default value is `Gregorian`. To display Islamic calendar dates, set `calendarMode` to `Islamic`. The following example depicts, how to display the Islamic calendar dates on Scheduler.
+The Schedule component includes a `calendarMode` property that switches between `Gregorian` and `Islamic` modes. The default value is `Gregorian`. To display Islamic calendar dates, set `calendarMode` to `Islamic`. The following example shows how to display Islamic calendar dates in the Scheduler.
 
 To enable Islamic calendar functionality, import the `Calendar` and `Islamic` modules from the `ej2-calendars` package and inject them using the `Calendar.Inject` method. Additionally, the Islamic calendar requires the following CLDR data to be loaded using the `loadCldr` function:
 
@@ -36,6 +36,8 @@ To enable Islamic calendar functionality, import the `Calendar` and `Islamic` mo
 * ca-islamic.json
 
 > For detailed guidance on installing CLDR data, refer to the  [`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization#installing-cldr-data) documentation.
+
+Ensure the required CLDR files are available before loading the Scheduler example.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

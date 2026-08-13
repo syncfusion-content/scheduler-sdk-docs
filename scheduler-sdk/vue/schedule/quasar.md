@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 This article provides a step-by-step guide for setting up a [Quasar](https://quasar.dev) project and integrating the Vue Schedule component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
 
-Quasar is a Vue.js–based open-source framework designed to build high‑performance, responsive applications for web, mobile, and desktop platforms from a single code base.
+Quasar is a Vue.js-based open-source framework designed to build high-performance, responsive applications for web, mobile, and desktop platforms from a single code base.
 
 ## Prerequisites
 
@@ -20,13 +20,13 @@ Quasar is a Vue.js–based open-source framework designed to build high‑perfor
 
 ## Set up the Quasar project
 
-To initiate the creation of a new [Quasar](https://quasar.dev/start/quick-start) project, use the following commands:
+To create a new [Quasar](https://quasar.dev/start/quick-start) project, use the following command:
 
 ```bash
 npm init quasar
 ```
 
-This command prompts additional configurations. Follow the steps outlined in the images below:
+This command prompts additional configuration. Follow the steps shown in the images below:
 
 ![quasar-setup1](./images/quasar-setup1.png)
 
@@ -40,13 +40,13 @@ Navigate to your project directory:
 cd quasar-project
 ```
 
-Now that `quasar-project` is ready to run with default settings, let's add Syncfusion<sup style="font-size:70%">&reg;</sup> components to the project.
+Now that `quasar-project` is ready to run with the default settings, let's add Syncfusion<sup style="font-size:70%">&reg;</sup> components to the project.
 
 ## Add the Vue packages
 
 Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Vue components in the project, install the corresponding npm package.
 
-This article uses the [Vue Schedule](https://www.syncfusion.com/vue-components/vue-scheduler) component as an example. To use the Vue Schedule component in the project, the `@syncfusion/ej2-vue-schedule` package needs to be installed using the following command:
+This article uses the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) component as an example. To use the Vue Scheduler component in the project, install the `@syncfusion/ej2-vue-schedule` package using the following command:
 
 ```bash
 npm install @syncfusion/ej2-vue-schedule --save
@@ -56,7 +56,7 @@ npm install @syncfusion/ej2-vue-schedule --save
 
 You can import themes for the Vue component in various ways, such as using CSS or SASS styles from npm packages, CDN, CRG and [Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio). Refer to the [themes topic](https://ej2.syncfusion.com/vue/documentation/appearance/theme) to learn more about built-in themes and different ways to refer to themes in a Vue project.
 
-In this article, the `Tailwind3` theme is applied using CSS styles, which are available in installed packages. The necessary `Tailwind3` CSS styles for the Schedule component and its dependents were imported into the `<style>` section of the **src/app.vue** file.
+In this article, the `Tailwind3` theme is applied using CSS styles available in the installed packages. The necessary `Tailwind3` CSS styles for the Schedule component and its dependencies are imported into the `<style>` section of the **src/App.vue** file.
 
 {% tabs %}
 {% highlight html tabtitle="~/src/app.vue" %}
@@ -114,14 +114,14 @@ export default {
   },
   provide: {
     schedule: [Day, Week, WorkWeek, Month, Agenda]
-  }
+  },
 }
 </script>
 
 {% endhighlight %}
 {% endtabs %}
 
-2\. Then, define the Schedule component in the **src/app.vue** file, as shown below:
+2\. Then, define the Schedule component in the **src/App.vue** file, as shown below:
 
 {% tabs %}
 {% highlight html tabtitle="~/src/app.vue" %}
@@ -146,7 +146,7 @@ export default {
 {% endhighlight %}
 {% endtabs %}
 
-3\. Declare the values for the `selectedDate`, `eventSettings` and `dataSource` properties in the `script` section.
+3\. Declare the values for the `selectedDate`, `eventSettings`, and `dataSource` properties in the `script` section.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -238,7 +238,7 @@ export default {
 {% endhighlight %}
 {% endtabs %}
 
-Here is the summarized code for the above steps in the **src/app.vue** file:
+Here is the summarized code for the above steps in the **src/App.vue** file:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -415,6 +415,6 @@ To run the project, use the following command:
 npm run dev
 ```
 
-The application launches and displays the Vue Schedule component as shown below:
+The application launches and displays the Vue Scheduler component as shown below:
 
 ![Quasar output](./images/quasar.png)

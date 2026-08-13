@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Half-Yearly View in Vue Scheduler
 
-The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
+The Year view displays all 365 days and their related appointments for a given year. You can customize the Year view by using the following properties:
 
 * [`firstMonthOfYear`](https://ej2.syncfusion.com/vue/documentation/api/schedule#firstmonthofyear)
 * [`monthsCount`](https://ej2.syncfusion.com/vue/documentation/api/schedule#monthscount)
 * [`monthHeaderTemplate`](https://ej2.syncfusion.com/vue/documentation/api/schedule#monthheadertemplate)
 
-The following example demonstrates how to render only the last six months of a year in the Schedule. To begin the view from June, the `firstMonthOfYear` property is set to `6`, and `monthsCount` is set to `6` to display six months in total.
+The following example demonstrates how to render only the last six months of a year in the Scheduler. To begin the view from June, set `firstMonthOfYear` to `6` and `monthsCount` to `6` to display six months in total.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

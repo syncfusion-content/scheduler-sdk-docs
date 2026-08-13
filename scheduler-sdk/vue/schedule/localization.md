@@ -12,15 +12,15 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 The Vue Schedule component supports globalization and localization features that allow it to adapt to different cultures, languages, date formats, and time formats. These capabilities enable applications to deliver a consistent and region‑specific scheduling experience for users across the globe.
 
-You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization)), adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/documentation/common/localization)).
+You can adapt the Scheduler to various languages by parsing and formatting dates or numbers using [`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization), and by adding culture-specific customization and text translation using [`Localization`](https://ej2.syncfusion.com/documentation/common/localization).
 
 ## Globalization
 
 The Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](https://cldr.unicode.org) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
 
-By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
+By default, Scheduler is set to follow the English culture (`en-US`). If you want to use a culture other than English, follow the steps below.
 
-* Install the `ej2-cldr-data` package using the Syncfusion<sup style="font-size:70%">&reg;</sup> npm package by running the command below..
+* Install the `ej2-cldr-data` package by running the following command:
 
   ```
   npm install @syncfusion/ej2-cldr-data
@@ -28,16 +28,16 @@ By default, Scheduler is set to follow the English culture ('en-US'). If you wan
 
 Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\@syncfusion\ej2-cldr-data`.
 
-* Now import the required cultures from the installed location to `app.vue` file as given in the following code example.
+* Import the required culture files from the installed location into the `App.vue` file as shown in the following code example.
 
     1. numberingSystems.json
     2. ca-gregorian.json
     3. numbers.json
     4. timeZoneNames.json
 
-   ```ts
-    //import the loadCldr from ej2-base
-    import { loadCldr} from '@syncfusion/ej2-base';
+     ```ts
+     // import loadCldr from ej2-base
+     import { loadCldr } from '@syncfusion/ej2-base';
 
     import { loadCldr} from '@syncfusion/ej2-base';
     import frNumberData from '@syncfusion/ej2-cldr-data/main/fr-CH/numbers.json';
@@ -61,13 +61,13 @@ Once the package is installed, you can find the culture specific JSON data under
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs1" %}
 
-> Refer [here](https://ej2.syncfusion.com/vue/documentation/common/internationalization) for common information about globalization.
+> Refer [here](https://ej2.syncfusion.com/vue/documentation/common/internationalization) for more information about globalization.
 
 ## Localizing the static Scheduler text
 
-[`Localization`](https://ej2.syncfusion.com/documentation/common/localization) library allows to display all the static text, date content, and time mode of the Scheduler following the localized language. To achieve this, set the `locale` property of Scheduler, as well as define the translation text of static words of Scheduler through the `load` method.
+The [`Localization`](https://ej2.syncfusion.com/documentation/common/localization) library allows you to display all the static text, date content, and time mode of the Scheduler in the localized language. To achieve this, set the `locale` property of Scheduler and define the translation text for the static words through the `load` method.
 
-For example, the following code example lets you to define the French translation words for all the static words used in Scheduler. You can access the static text for all cultures from [`here`](https://github.com/syncfusion/ej2-locale).
+For example, the following code example lets you define the French translation words for all static words used in Scheduler. You can access the static text for all cultures [here](https://github.com/syncfusion/ej2-locale).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -210,7 +210,7 @@ L10n.load({
 
 ## Setting date format
 
-Scheduler can be used with all valid date formats and by default it follows the universal date format "MM/dd/yyyy". If the [`dateFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#dateformat) property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is "en-US", this makes it to follow the "MM/dd/yyyy" pattern.
+Scheduler can be used with all valid date formats, and by default it follows the universal date format `MM/dd/yyyy`. If the [`dateFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#dateformat) property is not specified, it uses the locale assigned to the Scheduler. Because the default locale is `en-US`, this results in the `MM/dd/yyyy` pattern.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -223,9 +223,9 @@ Scheduler can be used with all valid date formats and by default it follows the 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs3" %}
 
-## Setting the time format
+## Setting the Time Format
 
-Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the [`timeFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#timeformat) property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/vue/documentation/common/internationalization#custom-formats) section.
+Time format is a way of representing time values in different string formats in the Scheduler. By default, the Scheduler time mode can be either 12-hour or 24-hour format, depending on the `locale` set for the Scheduler. Since the default `locale` value is `en-US`, the time mode is automatically set to 12-hour format. You can also customize the format by using the [`timeFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#timeformat) property. To know more about time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/vue/documentation/common/internationalization#custom-formats) section.
 
 The following example demonstrates the Scheduler component in 24 hours format.
 
@@ -240,11 +240,11 @@ The following example demonstrates the Scheduler component in 24 hours format.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs4" %}
 
->Note: [`timeFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#timeformat) property only accepts the valid time format's.
+> Note: The [`timeFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#timeformat) property accepts only valid time formats.
 
 ## Displaying Scheduler in RTL mode
 
-The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting [`enableRtl`](../api/schedule#enablertl) to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
+The Scheduler layout and behavior can be changed according to RTL (Right to Left) conventions by setting [`enableRtl`](../api/schedule#enablertl) to `true`. By doing so, the Scheduler displays its layout from right to left. Its default value is `false`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -257,7 +257,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs5" %}
 
-> Visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for a complete overview. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for a complete overview. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 
