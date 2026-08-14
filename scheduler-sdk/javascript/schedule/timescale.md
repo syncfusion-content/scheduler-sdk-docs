@@ -8,19 +8,20 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
+
 # Timescale in JavaScript Scheduler
 
-Time slots are the individual time cells displayed in the Day, Week, and Work Week views of the Scheduler—positioned to the left in calendar views and at the top in timeline views. The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property enables precise control over the time slot duration and appearance for Scheduler work cells. The `timeScale` property includes the following sub-options:
+Time slots are the individual time cells displayed in Day, Week, and Work Week views (left in calendar views; top in timeline views). Use the [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property to control slot duration and appearance. The main options are:
 
-* [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#enable) – When set to `true`, the Scheduler displays appointments accurately against the exact time duration, with grid lines indicating each slot. If set to `false`, all appointments for a day are shown one below the other without grid lines. Default is `true`.
-* [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) – Defines the duration of each major time slot in minutes (e.g., 60 for 1 hour, 30 for 30 minutes). Default is 60.
-* [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) – Specifies how many minor slots each major interval is divided into. Default is 2, so each hour is split into two 30-minute slots.
+- [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#enable) — When `true`, grid lines indicate each slot and appointments align to precise durations; when `false`, slots are not shown. Default: `true`.
+- [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) — Major slot duration in minutes (e.g., `60` for one hour). Default: `60`.
+- [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) — Number of minor slots per major interval. Default: `2` (each hour split into two 30-minute slots).
 
-> **Note:** The maximum number of slots that can be rendered in a single day using the **interval** and **slotCount** properties is 1000. This limit matches the maximum **colspan** value allowed for the HTML **table** element. This restriction applies only to the `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.
+Note: the maximum number of slots rendered per day (interval × slotCount) is 1000 due to HTML table colspan limits. This restriction applies to `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.
 
 ## Setting different time slot durations
 
-The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) properties can be combined to set custom time slot durations. For example, setting `interval` to 60 and `slotCount` to 6 creates six 10-minute slots per hour, as shown in the following example.
+Combine `interval` and `slotCount` to create custom slot durations. For example, `interval: 60` with `slotCount: 6` produces six 10-minute slots per hour.
 
 {% if page.publishingplatform == "typescript" %}
 

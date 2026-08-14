@@ -14,7 +14,7 @@ The Scheduler component is designed following WAI-ARIA specifications, applying 
 
 The Scheduler implements essential ARIA attributes including `aria-label` and `role` to ensure comprehensive accessibility support. For optimal accessibility, use the Scheduler with ARIA-compliant browsers in conjunction with screen readers.
 
-The accessibility compliance for the Schedule control is outlined below.
+The accessibility compliance for the Scheduler control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -43,7 +43,7 @@ The accessibility compliance for the Schedule control is outlined below.
 
 ## ARIA attributes
 
-The Scheduler's parent element is assigned with the role of `main`, identifying it as the primary content area of the control and a unique element within the document structure. These ARIA attributes provide essential context for assistive technologies to interpret the Scheduler's structure and functionality.
+The Scheduler's parent element is assigned the role of `main`, identifying it as the primary content area and a unique element within the document structure. These ARIA attributes provide essential context for assistive technologies to interpret the Scheduler's structure and functionality.
 
 The following ARIA attributes are implemented in the Scheduler to ensure comprehensive accessibility:
 
@@ -99,7 +99,7 @@ The Scheduler provides comprehensive keyboard navigation support through the `al
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | Navigates to today's date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Opens the appointment editor window to create a new appointment. |
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of key capabilities. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## Ensuring accessibility
 

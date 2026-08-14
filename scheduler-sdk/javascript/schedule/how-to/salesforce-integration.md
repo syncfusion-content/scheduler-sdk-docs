@@ -10,40 +10,38 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Salesforce Integration in JavaScript Scheduler
 
-This topic provides a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance productivity and streamline scheduling processes.
+This topic provides a step-by-step guide to integrating the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) into Salesforce.
 
 ## Prerequisites
 
-Before getting started, ensure the following prerequisite is installed:
+Before getting started, make sure the following prerequisite is installed:
 
-* [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli)
+- [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli)
 
 ## Configuring Salesforce
 
-To begin the integration process, configure Salesforce by following these steps:
+To begin, configure Salesforce:
 
-[Sign up](https://www.salesforce.com/form/developer-signup/) with salesforce developer account, if you don’t have salesforce account, sign up for one to access the necessary tools and resources for integration.
-
-[Log in](https://login.salesforce.com/) with salesforce account. 
-
-After login, search for **Dev Hub** in the quick find search box and select **Dev Hub**. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled.
+- If you don't have a Salesforce developer account, sign up at https://www.salesforce.com/form/developer-signup/.
+- Sign in at https://login.salesforce.com/.
+- In Setup, search for **Dev Hub** and enable the **Enable Dev Hub** option.
 
 ![Enable Dev Hub](../images/Salesforce-enable-dev-hub.png)
 
 ## Creating a Salesforce project
 
-Now you have have Salesforce configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for our integration. 
+With Salesforce configured, create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for the integration.
 
-In your preferred location, create a base directory for your Salesforce project. For example, you can create a directory named `salesforceApp` using the following command:
+Create a base directory (for example, `salesforceApp`):
 
 ```bash
 mkdir salesforceApp 
 ```
 
-Navigate to the base directory you created in the previous step and generate a Salesforce DX project using the following CLI command.
+Navigate to that directory and generate a Salesforce DX project:
 
 ```bash
-sf project:generate -n scheduler-salesforce-app 
+sf project:generate -n scheduler-salesforce-app
 ```
 
 ![Salesforce App](../images/Salesforce-app.png)
@@ -52,10 +50,10 @@ sf project:generate -n scheduler-salesforce-app
 
 Before proceeding further, you need to authorize your Salesforce project by following these steps
 
-Run the following command to authorize your Salesforce project with your Salesforce account in the browser.
+Authorize the project with your Salesforce account in the browser:
 
 ```bash
-sf org:login:web -d 
+sf org:login:web -d
 ```
 
 ![Salesforce Authorization](../images/Salesforce-authorization.png)
@@ -72,10 +70,10 @@ fig 2
 
 To facilitate development and testing, the creation of a scratch organization will be done using the following steps.
 
-Run the following command to create a new scratch organization, which will provide a fresh Salesforce environment for development and testing with organization id and username as link below image.
+Create a scratch organization for development and testing:
 
 ```bash
-sf org:create:scratch -f config/project-scratch-def.json 
+sf org:create:scratch -f config/project-scratch-def.json
 ```
 
 ![Salesforce create scratch organization](../images/Salesforce-create-scratch.png)
@@ -84,19 +82,19 @@ sf org:create:scratch -f config/project-scratch-def.json
 
 To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and styles as static resource files within Salesforce, follow these steps.  
  
-Use the following command to open the scratch project in the browser
+Open the scratch org in the browser:
 
 ```bash
-sf org:open -o <stratch org user name> 
+sf org:open -o <scratch_org_username>
 ```
 
-Replace <scratch org username> with the username of your scratch organization, which was generated during the scratch organization creation process.  
+Replace `<scratch_org_username>` with the username generated for your scratch org.
  
 In the Salesforce setup menu, search for `Static Resources` and click on **New** button in the static resources tab. 
 
 ![Salesforce Setup menu](../images/Salesforce-setup-menu.png)
 
-Load the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and styles as static files in a zip format, which you can obtain from the [CRG](https://crg.syncfusion.com/).
+Load the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and styles as a zip static resource (obtain from the [CRG](https://crg.syncfusion.com/)).
 
 In the static resource tab, provide a name for the static resource files, upload the zip file, and change the cache control to `Public`. Click **Save** button to add the static resources to your Salesforce project.
 
@@ -110,12 +108,10 @@ In the Salesforce setup menu, search for `CSP Trusted Sites` and click New Trust
 
 ![Salesforce CSP trusted sites](../images/Salesforce-CSP-trusted-sites.png)
 
-Enter the trusted site name and URL. For example, if the Syncfusion<sup style="font-size:70%">&reg;</sup> static styles refer to https://fonts.googleapis.com, enter that URL as the trusted site URL.  
- 
-Enable the following options to bypass the CSP issues and Click Save button to apply the changes. 
- 
-    * Allow site for font-src 
-    * Allow site for style-src 
+Enter the trusted site name and URL (for example, `https://fonts.googleapis.com` if required). Enable the following options and save:
+
+- Allow site for `font-src`
+- Allow site for `style-src`
 
 ![CSP trusted sites](../images/CSP-trusted-sites.png)
 
@@ -167,10 +163,10 @@ let's configure the fields and relationships for the `SchedulerEvent` object. To
 
 To integrate the **JavaScript Scheduler** into your Salesforce project, we will create a [Lightning web component](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-introduction.html).
 
-1. In your Salesforce project, run the following command to generate a Lightning web component named scheduler.
+1. Generate an LWC named `scheduler`:
 
 ```bash
-sf lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
+sf lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc
 ```
 
 ![Salesforce Creating Lightning web component](../images/Salesforce-creating-lightning-web.png)
@@ -178,27 +174,27 @@ sf lightning:generate:component --type lwc -n scheduler -d force-app/main/defaul
 2. Open the `scheduler.js-meta.xml` file located in `force-app/main/default/lwc/scheduler` and modify the component definition to expose it in the Lightning App Builder. Here's an example of the modified file. 
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata"> 
-    <apiVersion>57.0</apiVersion> 
-    <isExposed>true</isExposed> 
-    <targets> 
-        <target>lightning__AppPage</target> 
-    </targets> 
-    <targetConfigs> 
-        <targetConfig targets="lightning__AppPage"> 
-            <property name="height" label="Height" type="Integer" default="800" /> 
-        </targetConfig> 
-    </targetConfigs> 
-</LightningComponentBundle> 
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>57.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightning__AppPage</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__AppPage">
+      <property name="height" label="Height" type="Integer" default="800" />
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
 ```
 
 3. Open the `scheduler.html` file located in `force-app/main/default/lwc/scheduler` and add an element with a class name to append the scheduler. Here's an example of the modified file.
 
 ```html
-<template> 
-    <div class="syncfusionscheduler" lwc:dom="manual" style='width: 100%;'></div> 
-</template> 
+<template>
+  <div class="syncfusionscheduler" lwc:dom="manual" style="width:100%;"></div>
+</template>
 ```
 
 4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in renderedCallback function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.

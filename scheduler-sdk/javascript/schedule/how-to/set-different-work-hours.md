@@ -10,14 +10,14 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Set Different Work Hours in JavaScript Scheduler
 
-By default, the work hours in the Scheduler are highlighted based on the start and end values defined within the [`workHours`](https://ej2.syncfusion.com/documentation/api/schedule#workhours) property, which applies uniformly to all days. If you need to highlight different work hour ranges for specific days, you can use the [`setWorkHours`](https://ej2.syncfusion.com/documentation/api/schedule#setworkhours) method.  
+By default, work hours are defined by the [`workHours`](https://ej2.syncfusion.com/documentation/api/schedule#workhours) property and apply to all days. To highlight different work-hour ranges for specific dates, use the [`setWorkHours`](https://ej2.syncfusion.com/documentation/api/schedule#setworkhours) method.
 
-This method accepts:  
-- A single date object or a collection of date objects as the first argument.  
-- The start time as the second argument.  
-- The end time as the third argument.  
+`setWorkHours` accepts:
+- a single `Date` or an array of `Date` objects,
+- a start time value,
+- an end time value.
 
-In the following example, clicking the button sets the work hours for **February 15th and 17th** to **11:00 AM – 8:00 PM**, while other days continue to display their default work hours.
+The example below sets work hours for February 15 and 17 to 11:00 AM–8:00 PM while leaving other days at their default hours.
 
 {% if page.publishingplatform == "typescript" %}
 

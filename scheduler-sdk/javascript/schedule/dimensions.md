@@ -18,7 +18,7 @@ The Scheduler dimensions refer to both the height and width of the entire layout
 
 ## Auto Height and Width
 
-When the [`height`](../api/schedule#height) and [`width`](../api/schedule#width) of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler the component adjusts its dimensions to fit the parent container. By default, the Scheduler is assigned `auto` values for both the height and width properties.
+When the [`height`](../api/schedule#height) and [`width`](../api/schedule#width) of the Scheduler are set to `auto`, the component sizes itself to match its parent container. By default, the Scheduler uses `auto` values for both height and width properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -109,7 +109,7 @@ When the height and width of the Scheduler are defined as percentages, the compo
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs3" %}
 {% endif %}
 
-> Can refer our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its comprehensive feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature information. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 

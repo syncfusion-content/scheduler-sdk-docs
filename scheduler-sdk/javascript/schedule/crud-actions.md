@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # CRUD Operations in JavaScript Scheduler
 
-Appointments are the core elements of the Scheduler component, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using editor window or through the drag and resize action.
+Appointments are the core elements of the Scheduler, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using the editor window or via drag and resize actions.
 
 ## Add
 
@@ -278,15 +278,15 @@ Recurring appointments can be edited in two ways:
 * Single occurrence
 * Entire series
 
-**Editing single occurrence** - When double click on a recurring event, a popup prompts to choose either to edit the single event or entire series. From this, if **EDIT EVENT** option is selected, a single occurrence of the recurring appointment alone will be edited. The following process takes place while editing a single occurrence,
+**Editing single occurrence** - When double-clicking a recurring event, a popup prompts whether to edit the single occurrence or the entire series. If **EDIT EVENT** is selected, only the single occurrence will be edited. The following process takes place when editing a single occurrence:
 
 * A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`recurrenceID`](../api/schedule/field#recurrenceid) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
 * The parent recurring event needs to be updated with appropriate [`recurrenceException`](../api/schedule/field#recurrenceexception) field to hold the edited occurrence appointment's date collection.
 
-Therefore, when a single occurrence is edited from a recurring event, the batch action takes place by allowing both the `Add` and `Edit` action requests to take place together.
+Therefore, editing a single occurrence may involve a batch action that includes both `Add` and `Edit` requests.
 
-> In case, if existing occurrence of a recurring event edited, only those edited occurrence which present in the database as an individual event object will get updated. In this case, `update` action alone takes place on the edited occurrence object on the database.
+> If an existing edited occurrence of a recurring event is present in the database as a separate event object, only that edited occurrence will be updated (an `update` action on that occurrence).
 
 ```ts
 if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
@@ -386,13 +386,13 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 Recurring appointments can be edited from the current event onwards when the [`editFollowingEvents`](../api/schedule/eventSettings#editfollowingevents) property is enabled.
 
-**Editing Following Events** - When double click on a recurring event, a popup prompts to choose either to edit the single event or Edit Following Events or entire series. From this, if **EDIT FOLLOWING EVENTS** option is selected, a current and following events of the recurring appointment will be edited. The following process takes place while editing a following events,
+**Editing Following Events** - When double-clicking a recurring event, a popup prompts whether to edit the single occurrence, edit following events, or edit the entire series. If **EDIT FOLLOWING EVENTS** is selected, the current and following occurrences in the series will be edited. The following process takes place when editing following events:
 
 * A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the `followingID` field will be added to it, that holds the `id` value of the immediate parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
 * The parent recurring event needs to be updated with appropriate `recurrenceRule` field to hold the modified occurrence appointment's end date.
 
-Therefore, when a following events are edited from a recurring event, the batch action takes place by allowing the `Add`, `Edit` and `Delete` action requests to take place together.
+Therefore, editing following events may involve a batch action that includes `Add`, `Edit`, and `Delete` requests.
 
 ```ts
 if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
@@ -721,9 +721,9 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ## Drag and drop
 
-When a normal event on the Scheduler is dropped, the event editing action takes place. When a recurring event is drag and dropped on a desired time range, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
+When a normal event is dropped, the event editing action occurs. When a recurring event is dragged and dropped, the batch action described in `Editing a single occurrence` will take place — allowing both `Add` and `Edit` actions to occur.
 
-> By default, when drag a recurring instance, only the occurrence of the event gets edited and not a whole series.
+> By default, when dragging a recurring instance, only the occurrence is edited; the whole series is not modified.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -760,9 +760,9 @@ When a normal event on the Scheduler is dropped, the event editing action takes 
 
 ## Resize
 
-When normal event on the Scheduler is resized, the event editing action takes place. When a recurring event is resized to a new desired time, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
+When a normal event is resized, the event editing action occurs. When a recurring event is resized, the batch action described in `Editing a single occurrence` will take place — allowing both `Add` and `Edit` actions to occur.
 
-> By default, when resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
+> By default, when resizing a recurring instance, only the occurrence is edited; the whole series is not modified.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -797,4 +797,4 @@ When normal event on the Scheduler is resized, the event editing action takes pl
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs38" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
