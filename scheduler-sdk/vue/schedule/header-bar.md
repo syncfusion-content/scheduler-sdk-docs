@@ -106,7 +106,7 @@ The [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) property customiz
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/date-header-cs1" %}
 
-### Using `renderCell` Event
+### Using renderCell Event
 
 In month view, the date header template is not applicable, so the same customization can be added beside the date text in month cells by using the `renderCell` event.
 

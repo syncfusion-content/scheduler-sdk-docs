@@ -53,7 +53,7 @@ Any kind of remote data service can be bound to the Scheduler. To do so, create 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs2" %}
 
-### Filter Events Using the In-built Query
+### Filter Events using the in-built Query
 
 To enable server-side filtering operations based on predetermined conditions, set the [`includeFiltersInQuery`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventsettingsmodel#includefiltersinquery) API to **true**. This constructs a filter query using the start date, end date, and recurrence rule, ensuring that only relevant data is requested from the server.
 
@@ -111,7 +111,7 @@ import { ScheduleComponent as EjsSchedule, Day, Week, WorkWeek, Month, Agenda } 
 let dataManager = ref([]);
 let ajax = new Ajax('Home/GetData', 'GET', false);
 ajax.onSuccess = function (value) {
-  dataManager.value = value;
+  dataManager = value;
 };
 ajax.send();
 
