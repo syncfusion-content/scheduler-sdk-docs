@@ -18,7 +18,7 @@ The Scheduler dimensions refer to both the height and width of the entire layout
 
 ## Auto Height and Width
 
-When the [`height`](../api/schedule#height) and [`width`](../api/schedule#width) of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler the component adjusts its dimensions to fit the parent container. By default, the Scheduler is assigned `auto` values for both the height and width properties.
+When the Scheduler's [`height`](../api/schedule#height) and [`width`](../api/schedule#width) are set to `auto`, it expands to fill the available space inside its parent container. In other words, the Scheduler adapts its dimensions to match the parent container. By default, Scheduler uses `auto` values for both height and width.
 
 {% if page.publishingplatform == "typescript" %}
 

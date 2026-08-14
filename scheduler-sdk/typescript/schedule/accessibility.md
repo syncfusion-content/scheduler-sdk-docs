@@ -76,7 +76,21 @@ The tabbable element's role cell is not a widget role, which can trigger errors 
 
 ## Keyboard interaction
 
-The Scheduler provides comprehensive keyboard navigation support through the `allowKeyboardInteraction` property, which is enabled by default. This feature allows users to perform all Scheduler operations using keyboard shortcuts, ensuring full accessibility for keyboard-only users. The following keyboard shortcuts enable efficient navigation and interaction with the Scheduler:
+The Scheduler provides comprehensive keyboard navigation support through the `allowKeyboardInteraction` property, which is enabled by default. This feature allows users to perform all Scheduler operations using keyboard shortcuts, ensuring full accessibility for keyboard-only users.
+
+```ts
+import { Schedule } from '@syncfusion/ej2-schedule';
+
+const schedule = new Schedule({
+  height: '550px',
+  allowKeyboardInteraction: true,
+  views: ['Day', 'Week', 'Month'],
+  selectedDate: new Date()
+});
+schedule.appendTo('#Schedule');
+```
+
+The following keyboard shortcuts enable efficient navigation and interaction with the Scheduler:
 
 | Keys | Description |
 |-----|-----|
@@ -84,7 +98,7 @@ The Scheduler provides comprehensive keyboard navigation support through the `al
 | <kbd>Tab</kbd> | Moves focus to the first or currently active item in the Scheduler header bar, then progressively to each appointment element in the visible view. When no appointments are present, focus moves beyond the control. |
 | <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverses the Tab key's focus order, moving backward through appointment elements, then to the active or first item in the header bar, and finally out of the control. |
 | <kbd>Enter</kbd> | Opens the quick info popup for the currently selected cell or appointment, providing details and action options. |
-| <kbd>Escape</kbd> | Closes any of the popup that are in open state. |
+| <kbd>Escape</kbd> | Closes any popup that is in an open state. |
 | <kbd>Arrow</kbd> | Navigates to adjacent cells in the current view. Use Left/Right arrows for horizontal navigation and Up/Down arrows for vertical navigation across time slots or dates. |
 | <kbd>Shift</kbd> + <kbd>Arrow</kbd> | Extends the selection to multiple cells in the direction of the arrow key, enabling multi-cell selection for creating appointments spanning multiple time slots or days. |
 | <kbd>Delete</kbd> | Deletes the currently selected appointment or multiple selected appointments. |
@@ -99,13 +113,13 @@ The Scheduler provides comprehensive keyboard navigation support through the `al
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | Navigates to today's date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Opens the appointment editor window to create a new appointment. |
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to know how to present and manipulate data.
 
 ## Ensuring accessibility
 
 The accessibility compliance of the Scheduler control is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing to ensure adherence to accessibility standards.
 
-The accessibility compliance of the Scheduler control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) in a new window to evaluate the accessibility of the Scheduler control with accessibility tools.
+The following sample demonstrates Scheduler accessibility compliance. Open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) in a new window to evaluate the Scheduler control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/schedule.html" %}
 

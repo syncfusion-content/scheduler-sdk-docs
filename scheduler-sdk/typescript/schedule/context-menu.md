@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Context Menu in TypeScript Scheduler
 
-The context menu can be displayed on work cells and appointments within the Scheduler by manually integrating the [`ContextMenu`](https://ej2.syncfusion.com/documentation/context-menu/getting-started) control from the application. In the following example, the ContextMenu control is added and its target is set to the `Scheduler`.
+The context menu can be displayed on work cells and appointments within the Scheduler by integrating the [`ContextMenu`](https://ej2.syncfusion.com/documentation/context-menu/getting-started) control in your application. In the following example, the ContextMenu target is set to the Scheduler element.
 
 On Scheduler cells, menu items such as `New Event`, `New Recurring Event`, and `Today` can be displayed. For appointments, relevant options like `Edit Event` and `Delete Event` are available. The default event window for creating or editing appointments can be opened using the [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method of the Scheduler.
 
-Appointments can be deleted using the [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) public method. The [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) property allows navigation between different dates.
+Appointments can be deleted using the [`deleteEvent`](https://ej2.syncfusion.com/documentation/api/schedule#deleteevent) public method. The [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) property can be used to navigate to a different date.
 
 > Custom menu options can also be displayed on Scheduler cells and appointments. In responsive mode, the context menu opens with a tap-and-hold gesture.
 

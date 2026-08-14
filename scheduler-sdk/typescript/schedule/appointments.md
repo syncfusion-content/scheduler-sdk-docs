@@ -179,9 +179,9 @@ The following example demonstrates how to create a recurring event in the Schedu
 
 ### Adding exceptions
 
-Specific dates can be excluded from a recurrence series by adding them to the [`recurrenceException`](../api/schedule/field#recurrenceexception) field. Exception dates must be provided in ISO date-time format without hyphens (-) separating date elements.
+Specific dates can be excluded from a recurrence series by adding them to the [`recurrenceException`](../api/schedule/field#recurrenceexception) field. Exception dates should be provided in basic UTC date format without hyphens.
 
-> For example, February 22, 2018, should be represented as "20180222". The time component in UTC format requires a "Z" suffix without spaces. For instance, "07:30:00 UTC" becomes "073000Z".
+> For example, February 22, 2018, should be represented as `20180222`. The time component in UTC format requires a `Z` suffix without spaces, so `07:30:00 UTC` becomes `073000Z`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -542,7 +542,7 @@ When [`allowOverlap`](../api/schedule#allowoverlap) is set to `false`, the Sched
 
 **Dynamic Recurrence Series Creation or Editing:** When users create or edit a recurrence series dynamically, the Scheduler prevents any occurrences from being added if a conflict is found within the series.
 
-The following code example demonstrates how to enable the [`allowOverlap`](../api/schedule#allowoverlap) property:
+The following code example demonstrates how to disable overlap checking by setting the [`allowOverlap`](../api/schedule#allowoverlap) property to `false`:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1530,7 +1530,7 @@ In some scenarios, CRUD actions on specific appointments may need to be restrict
 
 ## Restricting appointment creation on specific time slots
 
-Restrict users from creating and updating more than one appointment on specific time slots using the Scheduler's public method [`isSlotAvailable`](../api/schedule#isslotavailable). CRUD actions also be disabled on occupied time slots using the Scheduler's public method [`isSlotAvailable`](../api/schedule#isslotavailable).
+Restrict users from creating and updating more than one appointment on specific time slots using the Scheduler's public method [`isSlotAvailable`](../api/schedule#isslotavailable). CRUD actions can also be disabled on occupied time slots using this method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1565,7 +1565,7 @@ Restrict users from creating and updating more than one appointment on specific 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs1" %}
 {% endif %}
 
-> The **isSlotAvailable** method focuses on verifies appointments within the current view's date range. It does not evaluate availability for recurrence occurrences outside this particular date range.
+> The **isSlotAvailable** method focuses on verifying appointment availability within the current view's date range. It does not evaluate availability for recurrence occurrences outside this date range.
 
 ## Differentiate the past time appointments
 
@@ -1652,7 +1652,7 @@ In the Scheduler, you can limit the number of concurrent events displayed in eac
 In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as 
 `+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views#maxeventsperrow) property, which is defaulted to the [views](https://ej2.syncfusion.com/documentation/api/schedule/views) property.
 
-The [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views#maxeventsperrow) property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
+The [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views#maxeventsperrow) property is specific to month, timeline month, and timeline year views. Below is a code example that demonstrates how to use this constraint.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1907,7 +1907,7 @@ Note: When deleting multiple selected occurrences of a recurring event series, o
 
 Access information about an appointment's fields directly from its UI element using the public method [`getEventDetails`](../api/schedule#geteventdetails). Pass the appointment element as an argument to this method.
 
-The following example displays the subject of a clicked appointment:
+The following example shows how to display the subject of a clicked appointment:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -2026,4 +2026,4 @@ scheduleObj.refreshEvents();
 
 This method is useful when changes have been made to the appointment data and those changes need to be reflected in the UI without a full Scheduler refresh.
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to know how to present and manipulate data.

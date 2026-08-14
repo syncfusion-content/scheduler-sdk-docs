@@ -10,17 +10,17 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Frequently Asked Questions in TypeScript Scheduler
 
-This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control in TypeScript.
+This article answers common questions and provides solutions for issues encountered when using the Scheduler control in TypeScript.
 
 ## Maximum call stack size exceeded
 
-**Error Image:**
+**Error image:**
 
 ![Maximum call stack size exceeded](images/max-call-stack-size.png)
 
 **Problem:** This error occurs when using Scheduler views that have not been imported and injected into the project.
 
-**Solution:** Import and inject the required view modules. In the example below, the `Day` option is used without injecting the `Day` module, which causes the error. Resolve this by injecting the `Day` module:
+**Solution:** Import and inject the required view modules. In the example below, the `Day` option is used without injecting the `Day` module, which causes the error. Resolve it by injecting the `Day` module:
 
 ```typescript
 import { Schedule, Day, TimelineViews, TimelineMonth, Agenda, Resize, DragAndDrop } from '@syncfusion/ej2-schedule';
@@ -114,7 +114,7 @@ function onClick(args) {
 }
 ```
 
-Optionally, add CSS to ensure minimum height:
+Optionally, add CSS to ensure a minimum height:
 
 ```css
 .e-schedule .e-quick-popup-wrapper {
@@ -124,11 +124,11 @@ Optionally, add CSS to ensure minimum height:
 
 ## Culture files not imported for localization
 
-**Error Image:**
+**Error image:**
 
 ![Locale import issue](images/locale-import-issue.png)
 
-**Problem:** When using the [`locale`](https://ej2.syncfusion.com/documentation/schedule/localization) property, localization fails if the required culture files are not imported correctly.
+**Problem:** When using the [`locale`](https://ej2.syncfusion.com/documentation/schedule/localization) property, localization may fail if required CLDR culture files are not imported and loaded correctly.
 
 **Solution:** Import all required CLDR culture files and load them using `loadCldr`, then load locale strings using `L10n.load`:
 

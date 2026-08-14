@@ -10,15 +10,15 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Views in TypeScript Scheduler
 
-The Scheduler includes a wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Agenda, Month Agenda, Year, Timeline Day, Timeline Week, Timeline Work Week, Timeline Year, and Timeline Month, of which the `Week` view is set as active by default.
+The Scheduler includes a wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Agenda, Month Agenda, Year, Timeline Day, Timeline Week, Timeline Work Week, Timeline Year, and Timeline Month. By default, the `Week` view is active.
 
-To navigate between different views and dates, navigation options are available at the Scheduler header bar. The active view option is highlighted by default. The date range of the active view is displayed at the left corner of the header bar. Clicking on the date range opens a calendar popup for easy date selection.
+To navigate between different views and dates, navigation options are available in the Scheduler header bar. The active view option is highlighted by default. The date range of the active view is displayed at the left corner of the header bar. Clicking the date range opens a calendar popup for easy date selection.
 
-> By default, the Scheduler displays the calendar views such as Day, Week, Work Week, Month, and Agenda.
+> By default, the Scheduler displays calendar views such as Day, Week, Work Week, Month, and Agenda.
 
 ## Setting specific view on scheduler
 
-As the Scheduler displays the `week` view by default, therefore to change the active view, set the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview)property with the desired view name. The applicable view names that the Scheduler accepts are as follows:
+As the Scheduler displays the `Week` view by default, set the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview) property with the desired view name to change the active view. The view names accepted by the Scheduler are as follows:
 
 * Day
 * Week
@@ -111,12 +111,12 @@ There are scenarios where each view may need different configurations. For such 
 
 | Property | Type | Description | Applicable views |
 |----------|------|-------------|------------------|
-| [`option`](https://ej2.syncfusion.com/documentation/api/schedule/views#option)| View | It accepts the Scheduler view name, based on which we can define its related properties. The view names can be `Day`, `Week` and so on. | All views.|
+| [`option`](https://ej2.syncfusion.com/documentation/api/schedule/views#option) | View | It accepts the Scheduler view name, based on which related properties can be defined. The view names can be `Day`, `Week`, and so on. | All views. |
 | [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#isselected) | Boolean | Acts similar to the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview) property and defines the active view of the Scheduler.| All views. |
 | [`dateFormat`](https://ej2.syncfusion.com/documentation/api/schedule#dateformat) | Date | By default, the Scheduler follows the date format as per the default culture assigned to it. When defined under a specific view, only those assigned views follow this date format. | All views. |
 | [`readonly`](https://ej2.syncfusion.com/documentation/api/schedule/views#readonly) | Boolean | When set to `true`, prevents the CRUD actions on the respective view where it is defined. | All views. |
-| [`resourceHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views#resourceheadertemplate) | String | The template option used to customize the resource header cells on the Scheduler. Applied only on the views, where it is defined.| All views. |
-| [`dateHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views#dateheadertemplate) | String | The template option which is used to customize the date header cells and is applied only on the views, wherever it is defined. | All views. |
+| [`resourceHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views#resourceheadertemplate) | String | The template option used to customize the resource header cells on the Scheduler. Applied only to the views where it is defined. | All views. |
+| [`dateHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views#dateheadertemplate) | String | The template option used to customize the date header cells and is applied only to the views where it is defined. | All views. |
 | [`eventTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/views#eventtemplate) | String | The template option to customize the events content and appearance. It will get applied to the events of the view where it is currently being defined. | All views. |
 | [`showWeekend`](https://ej2.syncfusion.com/documentation/api/schedule/views#showweekend) | Boolean | When set to `false`, it hides the weekend days of a week from the views on which it is defined.| All views. |
 | [`group`](https://ej2.syncfusion.com/documentation/api/schedule/views#group) | [GroupModel](../api/schedule/groupModel) | Allows setting different resource grouping options on all available Scheduler view modes. | All views. |
@@ -256,7 +256,7 @@ The Month view displays the entire days of a particular month and all its relate
 
 By default, when creating an appointment through the Month view, it is considered as created for an entire day. Explicitly change this behavior by unchecking the `All-day` option from editor window, which defaults to the start time duration as 9.00 AM and end time as 9.30 AM.
 
-The `+ more` text indicator appears on each day cell of a Month view. Clicking on it allows you to viewing the hidden appointments of a day.
+The `+ more` text indicator appears on each day cell of a Month view. Clicking on it allows you to view the hidden appointments for that day.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -328,13 +328,13 @@ The Year view displays all the days of a particular year with months and all its
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs7" %}
 {% endif %}
 
- > The year view also has module support. In displays all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. Clicking on the date, the event popup will be displayed and the events will be listed.
+> The Year view also has module support. It displays all the months of a particular year in a calendar view format. In that calendar view, dates that contain appointments are highlighted with dots placed under the individual date. Clicking on a date displays the event popup and lists the events.
 
 ### Agenda view
 
-The Agenda view lists appointments in a grid-like view for the next 7 days by default from the current date. The count of the days can be changed using the API [`agendaDaysCount`](https://ej2.syncfusion.com/documentation/api/schedule#agendadayscount). It allows virtual scrolling of dates by enabling the [`allowVirtualScrolling`]([`allowVirtualScrolling`](https://ej2.syncfusion.com/documentation/api/schedule/views#allowvirtualscrolling)) property. Also, you can enable or disable the display of days on Scheduler that has no appointments by setting true or false to the [`hideEmptyAgendaDays`](https://ej2.syncfusion.com/documentation/api/schedule#hideemptyagendadays) property.
+The Agenda view lists appointments in a grid-like layout for the next 7 days by default from the current date. The number of days can be changed using the API [`agendaDaysCount`](https://ej2.syncfusion.com/documentation/api/schedule#agendadayscount). It supports virtual scrolling of dates by enabling the [`allowVirtualScrolling`](https://ej2.syncfusion.com/documentation/api/schedule/views#allowvirtualscrolling) property. Also, you can enable or disable the display of days on the Scheduler that have no appointments by setting the [`hideEmptyAgendaDays`](https://ej2.syncfusion.com/documentation/api/schedule#hideemptyagendadays) property to `true` or `false`.
 
-The following code example depicts how to customize the display of events within Agenda view alone.
+The following code example depicts how to customize the display of events within the Agenda view alone.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -375,7 +375,7 @@ The following code example depicts how to customize the display of events within
 
 A Month-Agenda view shows a month calendar, where clicking on a particular day will display the appointments present on that date below the calendar. The day with appointments are differentiated with a circular dot below the date of the calendar.
 
-The following code example shows how to hide the weekend days on `MonthAgenda` view as well as the working days list is modified on Month Agenda view alone.
+The following code example shows how to hide the weekend days in the `MonthAgenda` view and modify the working days list for the Month Agenda view alone.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -412,7 +412,7 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 
 ### Timeline views – Day, Week, Work Week
 
-Similar to the day view, timeline day view shows a single day with all its appointments where the time slots are displayed horizontally. By default, the cell height adjusts as per the height set to Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator will be displayed at the bottom to denote the presence of few more appointments in that time range.
+Similar to the Day view, the Timeline Day view shows a single day with all its appointments, where the time slots are displayed horizontally. By default, the cell height adjusts according to the height set for the Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator is displayed at the bottom to denote the presence of a few more appointments in that time range.
 
 To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work Week) on Scheduler, import and inject the module `TimelineViews` from the `ej2-schedule` package.
 
@@ -484,7 +484,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs11" %}
 {% endif %}
 
-The following code example depicts how to display the timeline work week view on Scheduler,
+The following code example depicts how to display the Timeline Work Week view on the Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -519,11 +519,11 @@ The following code example depicts how to display the timeline work week view on
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs12" %}
 {% endif %}
 
-> Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week allows to navigate to the Agenda view.
+> Clicking the dates in the date header bar of the Timeline Day, Timeline Week, and Timeline Work Week views navigates to the Agenda view.
 
 ### Timeline Month view
 
-A Timeline Month view displays the current month days along with its appointments. To make use of the timeline Month view on Scheduler, import and inject `TimelineMonth` module from the `ej2-schedule` package.
+A Timeline Month view displays the current month's days along with its appointments. To make use of the Timeline Month view on the Scheduler, import and inject the `TimelineMonth` module from the `ej2-schedule` package.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -558,11 +558,11 @@ A Timeline Month view displays the current month days along with its appointment
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs13" %}
 {% endif %}
 
-> Clicking on the dates in the date header bar of Timeline month will allows navigation to the Timeline day view.
+> Clicking the dates in the date header bar of Timeline Month navigates to the Timeline Day view.
 
 ### Timeline Year view
 
-In Timeline Year view, each row depicts a single resource. Whereas in the vertical view, each resource is grouped parallelly as columns. Here, the resource grouping follows the tree-view like hierarchical grouping structure and can contain any level of child resources.
+In Timeline Year view, each row depicts a single resource. In the vertical view, each resource is grouped in parallel as columns. Here, the resource grouping follows a tree-view-like hierarchical structure and can contain any level of child resources.
 
 To make use of the timeline Year view on Scheduler, import and inject `TimelineYear` module from the `ej2-schedule` package.
 
@@ -599,11 +599,11 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs14" %}
 {% endif %}
 
-Timeline Year view is available in both the `Horizontal` and `Vertical` orientations. You can manage the orientation of Timeline Year view through `views` property.
+Timeline Year view is available in both the `Horizontal` and `Vertical` orientations. You can manage the orientation of the Timeline Year view through the `views` property.
 
 #### Resource grouping
 
-The following code example depicts how to group the multiple resources on Timeline Year view and its relevant events are displayed accordingly under those resources.
+The following code example depicts how to group multiple resources in the Timeline Year view and display the relevant events under those resources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -640,7 +640,7 @@ The following code example depicts how to group the multiple resources on Timeli
 
 #### Auto row height
 
-Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied in the same time range. If auto row height is disabled, the `+ more` text indicator on each day cell of a Timeline Year view, clicking on which will allow you to view the hidden appointments of a day.
+Timeline Year view supports auto row height. When the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is enabled, the row height is automatically adjusted based on the number of overlapping events in the same time range. If auto row height is disabled, the `+ more` text indicator appears on each day cell of the Timeline Year view. Clicking on it allows you to view the hidden appointments for that day.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -677,9 +677,9 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 
 ## Extending view intervals
 
-Customize the display of the default number of days on different Scheduler view modes. For example, extend the Day view to display 3 days by setting the `interval` option as 3 for the `Day` option within the `views` property as depicted in the following code example. In the same way, you can also display 2 weeks by setting interval 2 for the `Week` option.
+Customize the display of the default number of days on different Scheduler view modes. For example, extend the Day view to display 3 days by setting the `interval` option to 3 for the `Day` option within the `views` property as shown in the following code example. In the same way, you can also display 2 weeks by setting `interval` to 2 for the `Week` option.
 
-Provide an alternative display name for such customized views on the Scheduler header bar, by setting the appropriate [`displayName`](https://ej2.syncfusion.com/documentation/api/schedule/views#displayname) property.
+Provide an alternative display name for such customized views on the Scheduler header bar by setting the appropriate [`displayName`](https://ej2.syncfusion.com/documentation/api/schedule/views#displayname) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -716,7 +716,7 @@ Provide an alternative display name for such customized views on the Scheduler h
 
 > The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
 
-The [`isSelected`]((https://ej2.syncfusion.com/documentation/api/schedule/views#isselected)) property can be used to set the current view of the scheduler. The below code sample demonstrates that how to use [`isSelected`]((https://ej2.syncfusion.com/documentation/api/schedule/views#isselected)) property.
+The [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#isselected) property can be used to set the current view of the Scheduler. The following code sample demonstrates how to use the [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#isselected) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -751,7 +751,7 @@ The [`isSelected`]((https://ej2.syncfusion.com/documentation/api/schedule/views#
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs18" %}
 {% endif %}
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of the available features. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 

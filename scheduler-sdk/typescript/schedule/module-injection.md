@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Module Injection in TypeScript Scheduler
 
-A crucial step in creating a Scheduler with required views and features is to import and inject the necessary modules. The following modules are available in the Scheduler to enable specific functionalities:
+Import and inject the required modules to enable specific Scheduler views and features. The following modules are available:
 
 * `Day` - Inject this module to enable the Day view.
 * `Week` - Inject this module to enable the Week view.
@@ -31,7 +31,7 @@ A crucial step in creating a Scheduler with required views and features is to im
 
 ## Module injection
 
-The required modules should be injected into the Scheduler using the `Schedule.Inject` method within the `app.ts` file as shown below. Only the injected module functionalities will be loaded and available for use in the Scheduler.
+Inject required modules into the Scheduler using `Schedule.Inject` (for example, in `app.ts`). Only injected modules are loaded and available at runtime.
 
 `[src/app/app.ts]`
 
@@ -51,13 +51,13 @@ import { Schedule, Day, Week, Month, DragAndDrop, Resize, ExcelExport } from '@s
 Schedule.Inject(Day, Week, Month, DragAndDrop, Resize, ExcelExport);
 ```
 
-This approach ensures that only the necessary functionality is loaded, optimizing the application bundle size and performance.
+This approach ensures only necessary functionality is loaded, which helps optimize bundle size and performance.
 
 ## Important considerations
 
-**Note:** If a Scheduler's `currentView` is set to any of the available views without injecting the respective view module, a script error will occur and the Scheduler will not render. Always ensure that the required view modules are injected before using them.
+**Note:** If `currentView` references a view whose module is not injected, the Scheduler will throw a script error and may fail to render. Always inject the view modules you use.
 
-For example, if you set `currentView: 'TimelineWeek'`, you must inject the `TimelineViews` module:
+For example, if `currentView` is `TimelineWeek`, inject `TimelineViews`:
 
 ```typescript
 import { Schedule, TimelineViews } from '@syncfusion/ej2-schedule';
@@ -70,4 +70,4 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 ```
 
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how to present and manipulate data.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for practical demos.
