@@ -9,9 +9,9 @@ documentation: ug
 
 # Virtual Scrolling in Blazor Scheduler
 
-To achieve better performance in the Scheduler when loading a large number of resources and events, virtual scrolling support has been added in the timeline views to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in timeline view of the Scheduler by setting `true` to the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view specific settings.
+To improve performance when loading a large number of resources and events, Scheduler supports virtual scrolling in timeline views. It loads large sets of resources and events as you scroll. You can dynamically load large numbers of resources and events in timeline views by setting the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` in the view-specific settings. Virtual loading of events is also available in Agenda view by setting the same property to `true` in the Agenda view-specific settings.
 
-To get start quickly about virtual scrolling in our Scheduler, you can check on this video:
+To get started quickly with virtual scrolling in Scheduler, watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=yAtUHA2CieI-0"%}
@@ -235,18 +235,18 @@ In [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler)
 }
 ```
 
-N>  For now, the virtual loading of resources and events is not supported in `Month Agenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
-By default Virtual scrolling displays only 30 resources. You can increase or decrease the number of resources by using [VirtualResourceCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_VirtualResourceCount) property.
+N> For now, virtual loading of resources and events is not supported in `Month Agenda`, `Year`, and `TimelineYear` (horizontal orientation) views.
+By default, virtual scrolling displays only 30 resources. You can increase or decrease the number of resources by using the [VirtualResourceCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_VirtualResourceCount) property.
 
 ## Enabling lazy loading for appointments
 
-The lazy loading feature provides a convenient way to efficiently load resource appointments into the Scheduler using an on-demand approach. With this feature, you can seamlessly load a large volume of appointment data into the Scheduler without experiencing any performance degradation.
+The lazy loading feature provides a convenient way to load resource appointments into Scheduler on demand. With this feature, you can load a large volume of appointment data without affecting performance.
 
-By default, the Scheduler fetches all the relevant appointments from the server with in the current date range. However, enabling this feature will trigger query requests to the server for appointment retrieval whenever new resources are rendered due to scroll actions. These queries contain the resource IDs of currently displayed resources along with current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the necessary appointments to render in the scheduler. 
+By default, Scheduler fetches all relevant appointments from the server within the current date range. When this feature is enabled, Scheduler sends query requests to the server for appointment retrieval whenever new resources are rendered during scroll actions. These queries contain the resource IDs of the currently displayed resources along with the current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the appointments needed for rendering.
 
-When you enable this feature, the Scheduler becomes capable of fetching events from remote services only for the current view port alone to optimize the data retrieval. The remaining appointment data is fetched form the server on-demand based on currently rendered view port resources as you scroll's through the scheduler content.
+When you enable this feature, Scheduler fetches events from remote services only for the current viewport to optimize data retrieval. The remaining appointment data is fetched from the server on demand based on the currently rendered viewport resources as you scroll through Scheduler content.
 
-To enable this feature, you have to set the [`EnableLazyLoading`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_Enablelazyloading) property to `true` within the view specific settings.
+To enable this feature, set the [`EnableLazyLoading`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_Enablelazyloading) property to `true` in the view-specific settings.
 
 ```cshtml
 @using Syncfusion.Blazor
@@ -317,7 +317,7 @@ To enable this feature, you have to set the [`EnableLazyLoading`](https://help.s
 }
 ```
 
-Here's the server-side controller code that retrieves appointment data based on the resource IDs provided as query parameters:
+The following server-side controller code retrieves appointment data based on the resource IDs provided as query parameters:
 
 ```c#
 using Microsoft.AspNetCore.Mvc;
@@ -340,7 +340,7 @@ namespace LazyLoadingServices.Controllers
         public IActionResult GetData([FromQuery] Params param)
         {
             IQueryable<EventData> query = dbContext.Events;
-            // Filter the appointment data based on the ResourceId query params.
+            // Filter the appointment data based on the ResourceId query parameters.
             if (!string.IsNullOrEmpty(param.ResourceId))
             {
                 string[] resourceId = param.ResourceId.Split(',');
@@ -358,6 +358,6 @@ namespace LazyLoadingServices.Controllers
 }
 ```
 
-**Note:** 
-* The property will be effective, when large number of resources and appointments bound to the Scheduler.
-* This property is applicable only when [resource grouping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleGroup.html#Syncfusion_Blazor_Schedule_ScheduleGroup_Resources) is enabled in Scheduler.
+**Note:**
+* This property is effective when a large number of resources and appointments are bound to Scheduler.
+* This property applies only when [resource grouping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleGroup.html#Syncfusion_Blazor_Schedule_ScheduleGroup_Resources) is enabled in Scheduler.

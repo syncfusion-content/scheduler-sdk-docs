@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessibility in Blazor Scheduler
 
-The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Blazor Scheduler component is outlined below.
 
@@ -45,12 +45,12 @@ The following ARIA attributes are used in the Scheduler:
 
 | Attributes | Purpose |
 |-------|---------|
-| role="main" |  Attribute added to the Scheduler element describes the actual role of the element and denote it as a main and unique content. |
-| role="button" | Attribute is assigned to the appointments of Scheduler, to denote it as a clickable element. |
-| aria-label | Attribute is set to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
-| aria-labelledby | It indicates editor dialog title to the user through assistive technologies. |
-| aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
-| aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler. |
+| role="main" | Attribute added to the Scheduler element describes the actual role of the element and denotes it as the main and unique content. |
+| role="button" | Attribute is assigned to the appointments of Scheduler to denote them as clickable elements. |
+| aria-label | Attribute is set to the Scheduler parent element and its default value is the Scheduler's current date. Whenever the date is navigated, this attribute is updated with the appropriate current date values. It is also assigned to other Scheduler UI elements such as previous and next date navigation buttons, the div element displaying the date range in the header bar, and appointment elements. |
+| aria-labelledby | It indicates the editor dialog title to users through assistive technologies. |
+| aria-describedby | It indicates the editor dialog content description to users through assistive technologies. |
+| aria-disabled | Attribute is set on the appointment element to indicate the disabled state of the Scheduler. |
 
 The Syncfusion® Blazor Scheduler component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
 

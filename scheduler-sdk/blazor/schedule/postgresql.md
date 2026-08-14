@@ -8,11 +8,11 @@ documentation: ug
 ---
 # PostgreSQL Data Binding in Blazor Scheduler
 
-The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from a PostgreSQL database using Entity Framework Core (EF Core). This modern approach provides a more maintainable and type-safe alternative to raw SQL queries for managing appointments and calendar events.
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from a PostgreSQL database by using Entity Framework Core (EF Core). This approach provides a maintainable and type-safe alternative to raw SQL queries for managing appointments and calendar events.
 
 ## What is Entity Framework Core?
 
-Entity Framework Core (EF Core) is a software tool that simplifies database operations in .NET applications. It serves as a bridge between C# code and databases like PostgreSQL.The key benefits of Entity Framework Core are:
+Entity Framework Core (EF Core) is a software tool that simplifies database operations in .NET applications. It serves as a bridge between C# code and databases like PostgreSQL. The key benefits of EF Core are:
 
 **Automatic SQL Generation**: Entity Framework Core generates optimized SQL queries automatically, eliminating the need to write raw SQL code.
 
@@ -26,11 +26,11 @@ Entity Framework Core (EF Core) is a software tool that simplifies database oper
 
 ## What is Npgsql Entity Framework Core Provider?
 
-The `Npgsql.EntityFrameworkCore.PostgreSQL` package is the official Entity Framework Core provider for PostgreSQL. It acts as a bridge between Entity Framework Core and PostgreSQL, allowing applications to read, write, update, and delete appointment data in a PostgreSQL database.
+The `Npgsql.EntityFrameworkCore.PostgreSQL` package is the official Entity Framework Core provider for PostgreSQL. It acts as a bridge between EF Core and PostgreSQL, allowing applications to read, write, update, and delete appointment data in a PostgreSQL database.
 
 ## Prerequisites
 
-Ensure the following software and packages are installed before proceeding:
+Ensure the following software and packages are installed before you proceed:
 
 | Software/Package | Version | Purpose |
 |-----------------|---------|---------|
@@ -47,7 +47,7 @@ Ensure the following software and packages are installed before proceeding:
 
 ### Step 1: Create a Blazor Web App
 
-Create a **Blazor Web App** using Visual Studio 2026 or .NET CLI.
+Create a **Blazor Web App** by using Visual Studio 2026 or the .NET CLI.
 
 **Using Visual Studio 2026 or later:**
 1. Open Visual Studio 2026
@@ -66,13 +66,13 @@ cd BlazorSchedulerApp
 ```
 
 
-> Configure the Interactive render mode to **InteractiveServer** during project creation as the Scheduler requires interactivity for CRUD operations.
+> Configure the interactive render mode to **InteractiveServer** during project creation, as the Scheduler requires interactivity for CRUD operations.
 
 ### Step 2: Install Required NuGet Packages
 
-Before installing the necessary NuGet packages, a new Blazor Web Application must be created using the default template. This template automatically generates essential starter files—such as `Program.cs`, `appsettings.json`, the `wwwroot` folder, and the `Components` folder.
+Before installing the required NuGet packages, create a new Blazor Web Application by using the default template. This template automatically generates the starter files, such as `Program.cs`, `appsettings.json`, the `wwwroot` folder, and the `Components` folder.
 
-For this guide, a Blazor application named **BlazorSchedulerApp** has been created. Once the project is set up, the next step involves installing the required NuGet packages. NuGet packages are software libraries that add functionality to the application. These packages enable Entity Framework Core and PostgreSQL integration.
+For this guide, a Blazor application named **BlazorSchedulerApp** has been created. After the project is set up, install the required NuGet packages. These packages enable EF Core and PostgreSQL integration.
 
 #### Method 1: Using Package Manager Console
 
@@ -100,7 +100,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 
 #### Project File Reference
 
-The installed packages are reflected in the `BlazorSchedulerApp.csproj` file:
+The installed packages appear in the `BlazorSchedulerApp.csproj` file:
 
 ```xml
 <ItemGroup>
@@ -117,7 +117,7 @@ The installed packages are reflected in the `BlazorSchedulerApp.csproj` file:
 
 All required packages are now installed.
 
-> **Note**: After installing packages, build the project to ensure all dependencies are restored correctly: `dotnet build`
+> **Note**: After installing the packages, build the project to ensure that all dependencies are restored correctly: `dotnet build`
 
 ### Step 3: Create the Data Model
 
@@ -219,7 +219,7 @@ A data model is a C# class that represents the structure of a database table. Th
 
 #### Explanation:
 
-- The `[Key]` attribute marks the `Id` property as the primary key (a unique identifier for each record).
+- The `[Key]` attribute marks the `Id` property as the primary key, which is a unique identifier for each record.
 - Each property represents a column in the database table.
 - The `?` symbol indicates that a property is nullable (can be empty).
 - The model includes comprehensive XML documentation for each property.
@@ -228,11 +228,11 @@ A data model is a C# class that represents the structure of a database table. Th
 
 The data model has been successfully created.
 
-> **Note**: The `Subject` property does not have the `[Required]` attribute to allow empty titles. The service layer will provide a default value "Add Title" if the subject is empty.
+> **Note**: The `Subject` property does not have the `[Required]` attribute so that empty titles are allowed. The service layer provides the default value "Add Title" when the subject is empty.
 
 ### Step 4: Configure the DbContext
 
-A `DbContext` is a special class that manages the connection between the application and the PostgreSQL database. It handles all database operations such as saving, updating, deleting, and retrieving appointment data.
+A `DbContext` is a special class that manages the connection between the application and the PostgreSQL database. It handles database operations such as saving, updating, deleting, and retrieving appointment data.
 
 #### Instructions:
 
@@ -326,7 +326,7 @@ A `DbContext` is a special class that manages the connection between the applica
 - The `OnModelCreating` method configures how the database columns should behave (maximum length, required/optional).
 - By convention, Entity Framework Core will create a table named `Appointments` based on the `DbSet<Appointment>` property name.
 
-#### Why the DbContext is Required:
+#### Why the DbContext is required:
 
 1. It connects the application to the PostgreSQL database.
 2. It manages all database operations.
@@ -372,7 +372,7 @@ A connection string contains the information needed to connect the application t
 
 > **Important**: Replace `your_password` with your actual PostgreSQL password.
 
-> **Security Note**: For production environments, store sensitive credentials in environment variables or Azure Key Vault instead of storing them in `appsettings.json`. Example: `Password=${DB_PASSWORD}` and set the environment variable `DB_PASSWORD` on the deployment server.
+> **Security Note**: For production environments, store sensitive credentials in environment variables or Azure Key Vault instead of storing them in `appsettings.json`. For example, use `Password=${DB_PASSWORD}` and set the `DB_PASSWORD` environment variable on the deployment server.
 
 The database connection string has been configured successfully.
 
@@ -553,7 +553,7 @@ The service class has been created successfully.
 
 ### Step 7: Register Services in Program.cs
 
-The `Program.cs` file is where application services are registered and configured. This file must be updated to enable Entity Framework Core with PostgreSQL and the service pattern.
+The `Program.cs` file is where application services are registered and configured. Update this file to enable EF Core with PostgreSQL and the service pattern.
 
 #### Instructions:
 
@@ -584,7 +584,7 @@ The `Program.cs` file is where application services are registered and configure
 
     builder.Services.AddSyncfusionBlazor();
 
-    // Get connection string from appsettings.json
+    // Get the connection string from appsettings.json
 
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -634,7 +634,7 @@ The `Program.cs` file is where application services are registered and configure
 
 #### Explanation:
 
-- **`AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true)`**: Prevents PostgreSQL from automatically converting DateTime to UTC, avoiding timezone offset issues.
+- **`AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true)`**: Prevents PostgreSQL from automatically converting `DateTime` values to UTC, avoiding timezone offset issues.
 - **`AddSyncfusionBlazor()`**: Registers Blazor components (Scheduler, themes, etc.).
 - **`AddDbContext<ApplicationDbContext>`**: Registers the DbContext with PostgreSQL as the database provider using `UseNpgsql()`.
 - **Connection String Validation**: Ensures the connection string is configured before attempting to connect.
@@ -642,7 +642,7 @@ The `Program.cs` file is where application services are registered and configure
 - **`EnableDetailedErrors()`**: Provides more detailed error messages during development.
 - **`AddScoped<AppointmentService>`**: Registers the service as a scoped service, creating a new instance for each HTTP request.
 - **`AddRazorComponents()` and `AddInteractiveServerComponents()`**: Enables Blazor server-side rendering with interactive components.
-- **`AppServices.Root`**: app.Services: Stores the application's root service provider so the CustomAdaptor can create new DI scopes for resolving services at runtime.
+- **`AppServices.Root`**: `app.Services` stores the application's root service provider so the `CustomAdaptor` can create new DI scopes for resolving services at runtime.
 
 The service registration has been completed successfully.
 
@@ -650,7 +650,7 @@ The service registration has been completed successfully.
 
 ### Step 1: Install and Configure Blazor Scheduler Components
 
-Syncfusion is a library that provides pre-built UI components like Scheduler, which is used to display and manage calendar events and appointments.
+Syncfusion provides pre-built UI components such as Scheduler, which is used to display and manage calendar events and appointments.
 
 #### Instructions:
 
@@ -667,7 +667,7 @@ Syncfusion is a library that provides pre-built UI components like Scheduler, wh
     @using Syncfusion.Blazor.Data
     ```
 
-3. Add the stylesheet and scripts in the `Components/App.razor` file. Find the `<head>` and `<body>`section to add:
+3. Add the stylesheet and scripts in the `Components/App.razor` file. Find the `<head>` and `<body>` sections and add the following:
 
     
     ```html
@@ -690,7 +690,7 @@ Syncfusion is a library that provides pre-built UI components like Scheduler, wh
 
 For this project, the **bootstrap5.3** theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance documentation](https://blazor.syncfusion.com/documentation/appearance/themes) to learn more about theming and customization options.
 
-> **Critical**: The Syncfusion JavaScript file (`syncfusion-blazor.min.js`) is **REQUIRED** for Blazor components to work with InteractiveServer render mode. Without this script, you'll see JavaScript interop errors.
+> **Critical**: The Syncfusion JavaScript file (`syncfusion-blazor.min.js`) is **required** for Blazor components to work with InteractiveServer render mode. Without this script, you will see JavaScript interop errors.
 
 Blazor components are now configured and ready to use. For additional guidance, refer to the [Scheduler component's getting-started documentation](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started).
 
@@ -700,7 +700,7 @@ Before creating the Scheduler component, generate Entity Framework Core migratio
 
 #### Instructions:
 
-1. **use pgAdmin or psql to create database**:
+1. **Use pgAdmin or psql to create the database**:
 
     ```sql
     CREATE DATABASE "SchedulerEvents";
@@ -735,7 +735,7 @@ Before creating the Scheduler component, generate Entity Framework Core migratio
 3. Executes the Up() method from InitialCreate migration
 4. Creates `Appointments` table with all columns and constraints
 
-    > **Note**: The "Failed executing DbCommand" message on first run is normal. It means the `__EFMigrationsHistory` table doesn't exist yet. EF Core will create it automatically.
+    > **Note**: The "Failed executing DbCommand" message on the first run is normal. It means the `__EFMigrationsHistory` table does not exist yet. EF Core creates it automatically.
 
 5. **Verify migration success** using pgAdmin or psql:
 
@@ -747,11 +747,11 @@ The database schema has been created successfully.
 
 ### Step 3: Create the Scheduler Component
 
-The Scheduler component will display appointment data in a Blazor Scheduler with full CRUD (Create, Read, Update, Delete) capabilities and multiple calendar views.
+The Scheduler component displays appointment data in a Blazor Scheduler with full CRUD (Create, Read, Update, Delete) capabilities and multiple calendar views.
 
 #### Instructions:
 
-1. Replace the contents of `Home.razor` in the `Components/Pages` folder with the following Blazor Scheduler component that provides full CRUD functionality.
+1. Replace the contents of `Home.razor` in the `Components/Pages` folder with the following Blazor Scheduler component.
 
     [Home.razor]
 
@@ -900,20 +900,20 @@ The Scheduler component will display appointment data in a Blazor Scheduler with
   Defines the list of calendar views (Day, Week, WorkWeek, Month, Agenda) available for selection.
 
 - **`<ScheduleEventSettings>`**  
-  Configures the appointment model, enables create/edit/delete actions, and connects the Scheduler to the data source.
+    Configures the appointment model, enables create, edit, and delete actions, and connects the Scheduler to the data source.
 
 - **`<SfDataManager>`**  
-  Binds the Scheduler to the **CustomAdaptor**, which handles data communication.  
-  It enables automatic calls for Read, Insert, Update, and Delete operations.
+    Binds the Scheduler to the **CustomAdaptor**, which handles data communication.  
+    It enables automatic calls for read, insert, update, and delete operations.
 
 - **`CustomAdaptor`**  
-  A custom class derived from `DataAdaptor` that executes all database operations by using the `AppointmentService`.  
-  It handles `ReadAsync`, `InsertAsync`, `UpdateAsync`,`RemoveAsync`, and `BatchUpdateAsync`.
+    A custom class derived from `DataAdaptor` that executes all database operations by using the `AppointmentService`.  
+    It handles `ReadAsync`, `InsertAsync`, `UpdateAsync`, `RemoveAsync`, and `BatchUpdateAsync`.
 
 
 #### Key Implementation Details:
 
-- **CustomAdaptor**: Handles all database operations (Read, Insert, Update, Delete) directly through EF Core  
+- **CustomAdaptor**: Handles all database operations (read, insert, update, and delete) directly through EF Core  
 - **SfDataManager**: Automatically triggers the adaptor methods whenever the Scheduler performs an action  
 - **Scheduler UI**: Updates immediately, while the adaptor persists changes to PostgreSQL
 
@@ -923,8 +923,7 @@ The Scheduler component will display appointment data in a Blazor Scheduler with
 2. **SfDataManager** detects the action and triggers the corresponding method in the **CustomAdaptor**  
 3. The Scheduler UI updates immediately without waiting for any database response  
 4. **CustomAdaptor** executes the required database operation (`InsertAsync`, `UpdateAsync`, `RemoveAsync`,and `BatchUpdateAsync`) through `AppointmentService`  
-5. After saving, the updated appointment data (including database-generated ID) is returned to the Scheduler for syncing
-``
+5. After saving, the updated appointment data, including the database-generated ID, is returned to the Scheduler for syncing.
 The Scheduler component has been created successfully.
 
 ### Step 4: Build and Run the Application

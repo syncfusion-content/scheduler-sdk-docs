@@ -9,20 +9,20 @@ documentation: ug
 
 # Recurring Events in Blazor Scheduler
 
-It represents an appointment that is created for a certain time interval and occurring repeatedly on a daily, weekly, monthly or yearly basis at the same time interval based on the provided recurrence rule. Usually, the recurring events are indicated by a repeat marker added at the bottom-right position.
+Recurring events represent appointments that occur repeatedly at a fixed interval on a daily, weekly, monthly, or yearly basis, based on the provided recurrence rule. Recurring events are usually indicated by a repeat marker in the bottom-right corner.
 
-N>Set [`RecurrenceRule`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceRule.html) property to create recurring events.
+N> Set the [`RecurrenceRule`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceRule.html) property to create recurring events.
 
 ## Recurrence options and rules
 
-Events can be repeated on a daily, weekly, monthly or yearly basis based on the recurrence rule which accepts the string value. The following details should be assigned to the [`RecurrenceRule`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceRule.html) property to generate the recurring instances.
+Events can be repeated on a daily, weekly, monthly, or yearly basis by using a recurrence rule string. The following details should be assigned to the [`RecurrenceRule`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceRule.html) property to generate recurring instances.
 
 * Repeat type - daily/weekly/monthly/yearly.
 * How many times it needs to be repeated?
 * The interval duration.
 * The time period to render the appointment, etc.
 
-There are four repeat types available namely,
+There are four repeat types available:
 
 * **Daily** - Creates the recurring instances on daily basis.
 * **Weekly** - Creates the recurring instances on weekly basis for the selected days.
@@ -31,26 +31,26 @@ There are four repeat types available namely,
 
 ## Recurrence properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [iCalendar](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
+The following table shows the properties used to create recurrence appointments for the respective time period. The valid rule string can be referenced from the [iCalendar](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specification.
 
- N> Refer [iCalendar](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+N> Refer to the [iCalendar](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specification for valid recurrence rule strings.
 
 | Property | Purpose | Example |
 |-------|---------| --------- |
-| FREQ | Maintains the repeat type (Daily, Weekly, Monthly, Yearly) value of the appointment. | FREQ=DAILY;INTERVAL=1|
-| INTERVAL | Maintains the interval value of the appointments. When the daily appointment is created at an interval of 2, the appointments are rendered on the days Monday, Wednesday and Friday (Creates an appointment on all days by leaving the interval of one day gap). | FREQ=DAILY;INTERVAL=2|
-| COUNT | It holds the appointment’s count value. When the COUNT value is 10, then 10 instances of appointments are created in the recurrence series. | FREQ=DAILY;INTERVAL=1;COUNT=10|
-| UNTIL | This property holds the end date value (in ISO format) denoting when the recurrence actually ends. | FREQ=DAILY;INTERVAL=1;UNTIL=20200530T041343Z;|
-| BYDAY | It holds the day value(s), representing on which the appointments actually renders. Create the weekly appointment, and select the day(s) from the day options (Monday/Tuesday/Wednesday/Thursday/Friday/Saturday/Sunday). When Monday is selected, the first two letters of the selected day "MO" is saved in the BYDAY property. When multiple days are selected, the values are separated by commas. | FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,WE;COUNT=10|
-| BYMONTHDAY | This property is used to store the date value of the Month, while creating the Month recurrence appointment. When a Monthly recurrence appointment is created for every 3rd day of the month, then BYMONTHDAY holds the value 3 and creates the appointment on 3rd day of every month. | FREQ=MONTHLY;BYMONTHDAY=3;INTERVAL=1;COUNT=10|
-| BYMONTH | This property is used to store the index value of the selected Month while creating the yearly appointments. When the yearly appointment is created on June month, the index value of June month 6 will get stored in the BYMONTH field. The appointment is created on every 6th month of a year. | FREQ=YEARLY;BYMONTHDAY=16;BYMONTH=6;INTERVAL=1;COUNT=10|
-| BYSETPOS | This property is used to store the index value of the week. When the monthly appointment is created in second week of a month, the index value of the second week (2) is stored in BYSETPOS. | FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2;COUNT=10|
+| FREQ | Stores the repeat type value of the appointment, such as daily, weekly, monthly, or yearly. | FREQ=DAILY;INTERVAL=1|
+| INTERVAL | Stores the interval value of the appointment. For example, a daily appointment with an interval of 2 is rendered every other day. | FREQ=DAILY;INTERVAL=2|
+| COUNT | Stores the number of occurrences in the recurrence series. For example, a `COUNT` value of 10 creates 10 instances. | FREQ=DAILY;INTERVAL=1;COUNT=10|
+| UNTIL | Stores the end date value in ISO format to indicate when recurrence ends. | FREQ=DAILY;INTERVAL=1;UNTIL=20200530T041343Z;|
+| BYDAY | Stores the day values that determine when appointments are rendered. For weekly appointments, selected days such as Monday or Wednesday are saved as `MO` or `WE`. Multiple days are separated by commas. | FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,WE;COUNT=10|
+| BYMONTHDAY | Stores the day of the month for monthly recurring appointments. For example, `3` creates the appointment on the third day of every month. | FREQ=MONTHLY;BYMONTHDAY=3;INTERVAL=1;COUNT=10|
+| BYMONTH | Stores the month value for yearly appointments. For example, `6` represents June. | FREQ=YEARLY;BYMONTHDAY=16;BYMONTH=6;INTERVAL=1;COUNT=10|
+| BYSETPOS | Stores the index of the selected week. For example, `2` represents the second week of the month. | FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2;COUNT=10|
 
-N> The default recurrence related validation has been included for recurrence appointments similar to the one available in Outlook. The validation usually occurs during the recurrence appointment creation, editing, drag and drop or resizing of the recurrence appointments and also if any single occurrence changes.
+N> Default recurrence validation is included for recurring appointments, similar to Outlook. The validation usually occurs during recurrence appointment creation, editing, drag and drop, resizing, or when a single occurrence changes.
 
 ## Creating a recurring event
 
-The following example depicts how to create a recurring event on Scheduler with the specific recurrence rule. In the following example, an event is made to repeat on daily mode and ends after 5 occurrences.
+The following example shows how to create a recurring event in Scheduler with a specific recurrence rule. In this example, the event repeats daily and ends after five occurrences.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -89,9 +89,9 @@ The following example depicts how to create a recurring event on Scheduler with 
 
 ## Adding exceptions
 
-A few instance of the recurrence series can be excluded on specific dates, by adding those exceptional dates to the [`RecurrenceException`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceException.html) field. These date values should be given in the ISO date time format with no hyphens(-) separating the date elements.
+A few instances of the recurrence series can be excluded on specific dates by adding those exception dates to the [`RecurrenceException`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceException.html) field. These date values should be given in ISO date-time format with no hyphens separating the date elements.
 
-For example, 7th January 2020 can be represented as 20200107. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "09:30 AM" is therefore represented as "040000Z".
+For example, 7 January 2020 can be represented as 20200107. The UTC time portion needs a `Z` suffix with no space. "09:30 AM" is therefore represented as "040000Z".
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -130,9 +130,9 @@ For example, 7th January 2020 can be represented as 20200107. Also, the time par
 
 ## Editing an occurrence from a series
 
-To dynamically edit a particular occurrence from an event series and display it on the initial load of Scheduler, the edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field defined to it. The [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field of edited occurrence usually maps the ID value of the parent event.
+To edit a specific occurrence from an event series and display it on the initial load of Scheduler, add the edited occurrence as a new event to the data source collection with an additional [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field. The [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field of the edited occurrence usually maps to the ID value of the parent event.
 
-In this example, a recurring instance that displays on the date 30th January 2020 is edited with different timings. Therefore, this particular date is excluded from the parent recurring event that repeats from 28th January 2020 to 1st February 2020. This can be done by adding the [`RecurrenceException`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceException.html) field with the excluded date value on the parent event. Also, the edited occurrence event which is created as a new event should carry the [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field pointing to the parent event's [`Id`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_Id) value.
+In this example, a recurring instance that appears on 30 January 2020 is edited with different timings. That date is excluded from the parent recurring event that repeats from 28 January 2020 to 1 February 2020. Add the [`RecurrenceException`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceException.html) field with the excluded date value on the parent event. The edited occurrence, created as a new event, should also carry the [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field pointing to the parent event's [`Id`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleField.html#Syncfusion_Blazor_Schedule_ScheduleField_Id) value.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -172,9 +172,9 @@ In this example, a recurring instance that displays on the date 30th January 202
 
 ## Edit/Delete following recurrence events
 
-The Scheduler allows the user to edit the following recurrence events by setting true value to [AllowEditFollowingEvents](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) within the [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html) tag. Once the recurrence events are edited/ deleted as following events, then the following recurrence events will be considered as separate series, the changes will not reflect to parent series. In the following code example, if any of the recurrence event is edited or deleted with the following events option, then the edit or delete action is applied to further recurrence events.
+The Scheduler lets users edit following recurrence events by setting the [AllowEditFollowingEvents](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) property to `true` within the [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html) tag. Once recurrence events are edited or deleted as following events, they are treated as a separate series and the changes do not affect the parent series. In the following code example, if any recurrence event is edited or deleted with the following events option, the change is applied to later recurrence events.
 
-N>To edit/delete following recurrence events into the scheduler, set [`AllowEditFollowingEvents`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) field to **true** in [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html).
+N> To edit or delete following recurrence events in the Scheduler, set [`AllowEditFollowingEvents`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) to `true` in [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html).
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -221,47 +221,47 @@ N>To edit/delete following recurrence events into the scheduler, set [`AllowEdit
 | Daily recurring event that never ends | FREQ=DAILY; INTERVAL=1 |
 | Daily recurring event that ends after 5 occurrences | FREQ=DAILY; INTERVAL=1; COUNT=5 |
 | Daily recurring event that ends exactly on 12/12/2020 | FREQ=DAILY; INTERVAL=1; UNTIL=20201212T041343Z |
-| Daily event that recurs on alternative days and repeats for 10 occurrences | FREQ=DAILY; INTERVAL=2; COUNT=10 |
+| Daily event that recurs on alternate days and repeats for 10 occurrences | FREQ=DAILY; INTERVAL=2; COUNT=10 |
 
 ## Weekly Frequency
 
 | Description | Example |
 |-------------|---------|
 | Weekly recurring event that repeats on every Monday, Wednesday and Friday and never ends | FREQ=WEEKLY; INTERVAL=1; BYDAY=MO,WE,FR |
-| Repeats every week Thursday and ends after 10 occurrences | FREQ=WEEKLY; INTERVAL=1; BYDAY=TH; COUNT=10 |
-| Repeats every week Monday and ends on 12/12/2020 | FREQ=WEEKLY; INTERVAL=1; BYDAY=MO; UNTIL=20201212T041343Z |
-| Repeats on Monday, Wednesday and Friday of alternative weeks and ends after 10 occurrences | FREQ=WEEKLY; INTERVAL=2; BYDAY=MO, WE, FR; COUNT=10 |
+| Repeats every Thursday and ends after 10 occurrences | FREQ=WEEKLY; INTERVAL=1; BYDAY=TH; COUNT=10 |
+| Repeats every Monday and ends on 12/12/2020 | FREQ=WEEKLY; INTERVAL=1; BYDAY=MO; UNTIL=20201212T041343Z |
+| Repeats on Monday, Wednesday, and Friday of alternate weeks and ends after 10 occurrences | FREQ=WEEKLY; INTERVAL=2; BYDAY=MO, WE, FR; COUNT=10 |
 
 ## Monthly Frequency
 
 | Description | Example |
 |-------------|---------|
-| Monthly recurring event that repeats on every 15th day of a month and never ends | FREQ=MONTHLY; BYMONTHDAY=15; INTERVAL=1 |
-| Monthly recurring event that repeats on every 16th day of a month and ends after 10 occurrences | FREQ=MONTHLY; BYMONTHDAY=16; INTERVAL=1; COUNT=10 |
-| Repeats every 17th day of a month and ends on 12/12/2020 | FREQ=MONTHLY; BYMONTHDAY=17; INTERVAL=1; UNTIL=20201212T041343Z |
-| Repeats every 2nd Friday of a month and never ends | FREQ=MONTHLY; BYDAY=FR; BYSETPOS=2; INTERVAL=1 |
-| Repeats every 4th Wednesday of a month and ends after 10 occurrences | FREQ=MONTHLY; BYDAY=WE; BYSETPOS=4; INTERVAL=1; COUNT=10 |
-| Repeats every 4th Friday of a month and ends on 12/12/2020 | FREQ=MONTHLY; BYDAY=FR; BYSETPOS=4; INTERVAL=1; UNTIL=20201212T041343Z; |
+| Monthly recurring event that repeats on the 15th day of a month and never ends | FREQ=MONTHLY; BYMONTHDAY=15; INTERVAL=1 |
+| Monthly recurring event that repeats on the 16th day of a month and ends after 10 occurrences | FREQ=MONTHLY; BYMONTHDAY=16; INTERVAL=1; COUNT=10 |
+| Repeats on the 17th day of a month and ends on 12/12/2020 | FREQ=MONTHLY; BYMONTHDAY=17; INTERVAL=1; UNTIL=20201212T041343Z |
+| Repeats on the second Friday of a month and never ends | FREQ=MONTHLY; BYDAY=FR; BYSETPOS=2; INTERVAL=1 |
+| Repeats on the fourth Wednesday of a month and ends after 10 occurrences | FREQ=MONTHLY; BYDAY=WE; BYSETPOS=4; INTERVAL=1; COUNT=10 |
+| Repeats on the fourth Friday of a month and ends on 12/12/2020 | FREQ=MONTHLY; BYDAY=FR; BYSETPOS=4; INTERVAL=1; UNTIL=20201212T041343Z; |
 
 ## Yearly Frequency
 
 | Description | Example |
 |-------------|---------|
-| Yearly event that repeats on every 15th day of December month and never ends | FREQ=YEARLY; BYMONTHDAY=15; BYMONTH=12; INTERVAL=1 |
-| Event that repeats on every 10th day of December month and ends after 10 occurrences | FREQ=YEARLY; BYMONTHDAY=10; BYMONTH=12; INTERVAL=1; COUNT=10 |
-| Repeats on every 12th day of December month and ends on 12/12/2025 | FREQ=YEARLY; BYMONTHDAY=12; BYMONTH=12; INTERVAL=1; UNTIL=20251212T041343Z |
-| Repeats on every 3rd Friday of December month and never ends | FREQ=YEARLY; BYDAY=FR; BYMONTH=12; BYSETPOS=3; INTERVAL=1 |
-| Repeats on every 3rd Tuesday of December month and ends after 10 occurrences | FREQ=YEARLY; BYDAY=TU; BYMONTH=12; BYSETPOS=3; INTERVAL=1; COUNT=10 |
-| Repeats on every 4th Wednesday of December month and ends on 12/12/2028 | FREQ=YEARLY; BYDAY=WE; BYMONTH=12; BYSETPOS=4; INTERVAL=1; UNTIL=20281212T041343Z |
+| Yearly event that repeats on the 15th day of December and never ends | FREQ=YEARLY; BYMONTHDAY=15; BYMONTH=12; INTERVAL=1 |
+| Event that repeats on the 10th day of December and ends after 10 occurrences | FREQ=YEARLY; BYMONTHDAY=10; BYMONTH=12; INTERVAL=1; COUNT=10 |
+| Repeats on the 12th day of December and ends on 12/12/2025 | FREQ=YEARLY; BYMONTHDAY=12; BYMONTH=12; INTERVAL=1; UNTIL=20251212T041343Z |
+| Repeats on the third Friday of December and never ends | FREQ=YEARLY; BYDAY=FR; BYMONTH=12; BYSETPOS=3; INTERVAL=1 |
+| Repeats on the third Tuesday of December and ends after 10 occurrences | FREQ=YEARLY; BYDAY=TU; BYMONTH=12; BYSETPOS=3; INTERVAL=1; COUNT=10 |
+| Repeats on the fourth Wednesday of December and ends on 12/12/2028 | FREQ=YEARLY; BYDAY=WE; BYMONTH=12; BYSETPOS=4; INTERVAL=1; UNTIL=20281212T041343Z |
 
 ## Recurrence Validation
 
-The built-in validation support has been added by default for recurring appointments during its creation, edit, drag and drop or resize action. The following are the possible validation alerts that displays on Scheduler while creating or editing the recurring events.
+Built-in validation support is available for recurring appointments during creation, editing, drag and drop, or resize actions. The following are the possible validation alerts displayed in Scheduler while creating or editing recurring events.
 
 | Validation messages | Description |
 |-------|---------|
-| The recurrence pattern is not valid. | This alert will raise, when the selected recurrence rule value is not a valid one. For example, when you try to select the end date value (using `Until` option) for a recurring event, which occurs before the start date, an alert will popup out saying that the chosen pattern is invalid. |
-| The changes made to specific instances of this series will be canceled and those events will match the series again. | This alert will raise, when you try to edit the whole series, whose occurrence might have been already edited. For example, If there are five occurrences and one of the occurrence is already edited. Now, when you try to edit the entire series, you will get this validation alert. |
-| The duration of the event must be shorter than how frequently it occurs. Shorten the duration, or change the recurrence pattern in the recurrence event editor. | This validation will occur, if the event duration is longer than the selected frequency. For example, if you create a recurring appointment with two days duration in `Daily` frequency with no intervals set to it, you may get this alert. |
-| Some months have fewer than the selected date. For these months, the occurrence will fall on the last date of the month. | When you try to create a recurring appointment on 31st of every month, where few months won’t have 31 days and in this scenario, you will get this alert. |
-| Two occurrences of the same event cannot occur on the same day. | This validation will occur, when you try to edit or move any single occurrence to some other date, where another occurrence of the same event is already present. |
+| The recurrence pattern is not valid. | This alert appears when the selected recurrence rule is not valid. For example, if the end date selected by using the `Until` option occurs before the start date, Scheduler shows this validation message. |
+| The changes made to specific instances of this series will be canceled and those events will match the series again. | This alert appears when you try to edit the whole series after one or more occurrences have already been edited. For example, if one of five occurrences has already been edited and you try to edit the entire series, this validation message appears. |
+| The duration of the event must be shorter than how frequently it occurs. Shorten the duration, or change the recurrence pattern in the recurrence event editor. | This validation appears when the event duration is longer than the selected frequency. For example, a recurring appointment with a two-day duration in `Daily` frequency without an interval can trigger this alert. |
+| Some months have fewer than the selected date. For these months, the occurrence will fall on the last date of the month. | This validation appears when you create a recurring appointment on the 31st of every month, because some months do not have 31 days. |
+| Two occurrences of the same event cannot occur on the same day. | This validation appears when you try to edit or move a single occurrence to a date where another occurrence of the same event already exists. |

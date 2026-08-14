@@ -9,17 +9,17 @@ documentation: ug
 
 # Clipboard in Blazor Scheduler
 
-The Clipboard functionality in the [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
+The Clipboard functionality in the [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for users managing multiple appointments, as it eliminates the need for repetitive data entry and allows them to quickly adjust their schedules.
 
-To activate the clipboard feature in the scheduler, simply set the [`AllowClipboard`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowKeyboardInteraction) property to **true**.
+To activate the clipboard feature in the Scheduler, simply set the [`AllowClipboard`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowClipboard) property to **true**.
 
-N> The [`AllowKeyboardInteraction`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowKeyboardInteraction) property must be true for proper functionality of the clipboard feature.
+Note: The [`AllowKeyboardInteraction`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowKeyboardInteraction) property must be true for proper functionality of the clipboard feature.
 
-## Cut, copy and paste using keyboard
+## Cut, copy, and paste using keyboard
 
-The Blazor Scheduler supports keyboard shortcuts to streamline the process of managing appointments.
+The Blazor Scheduler supports keyboard shortcuts to streamline appointment management.
 
-These keyboard shortcuts enable users to efficiently manage their schedules:
+These keyboard shortcuts enable users to manage their schedules efficiently:
 
 | Operation | Shortcut | Description                                                      |
 |-----------|----------|------------------------------------------------------------------|
@@ -27,7 +27,7 @@ These keyboard shortcuts enable users to efficiently manage their schedules:
 | Cut       | Ctrl+X   | Move appointments to a new time slot without duplicates.         |
 | Paste     | Ctrl+V   | Place copied or cut appointments into the desired time slot.     |
 
-To use these shortcuts, simply click on the appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. To paste the copied or cut appointment, click on the desired time slot and press **Ctrl+V**.
+To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. To paste the copied or cut appointment, click the desired time slot and press **Ctrl+V**.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -113,17 +113,17 @@ N> For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste opera
 
 ## Cut, copy, and paste using context menu
 
-You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
+You can programmatically manage appointments by using the public methods `CutAsync`, `CopyAsync`, and `PasteAsync`. These methods allow you to perform the same actions as the context menu or external buttons.
 
-Utilize these public methods to manage appointments programmatically in Blazor Schedule:
+Use these public methods to manage appointments programmatically in Blazor Scheduler:
 
 | Method          | Parameters                            | Description                                                        |
 |-----------------|---------------------------------------|--------------------------------------------------------------------|
 | `CopyAsync`   | None                                  | Duplicate the selected appointment for reuse.                      |
 | `CutAsync`    | None                                  | Remove the selected appointment from its current slot for moving.  |
-| `PasteAsync`  | targetElement (Scheduler's work-cell) | Insert the copied or cut appointment into the specified time slot. |
+| `PasteAsync`  | targetElement (Scheduler work cell)   | Insert the copied or cut appointment into the specified time slot. |
 
-By using these methods, you can programmatically cut, copy, and paste appointments in the scheduler, providing more control over the appointment management process.
+By using these methods, you can programmatically cut, copy, and paste appointments in the Scheduler, providing more control over appointment management.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -291,16 +291,16 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 
 ## Modifying content before pasting
 
-You can modify the content of an appointment before pasting it by using `Paste` event accessing the appointment details and making necessary changes.
+You can modify the content of an appointment before pasting it by using the `Paste` event to access the appointment details and make the necessary changes.
 
-The following example demonstrates how to seamlessly copy and paste content from a grid to a scheduler. To do this, follow these steps:
+The following example demonstrates how to seamlessly copy and paste content from a grid to a Scheduler. To do this, follow these steps:
 
 1. **Select an Item**: Click on an item in the grid.
 2. **Copy the Details**: Press **Ctrl + C** to copy the selected event details.
 3. **Choose a Time Slot**: Click on the desired time slot in the scheduler.
 4. **Paste the Details**: Press **Ctrl + V** to paste the copied appointment details into the selected time slot.
 
-In this example, the `Paste` event can be utilized to intercept the event details before they are pasted. This allows you to modify the content as needed. Such modifications could include adjusting the time, adding notes, or altering other specifics of the appointment.
+In this example, the `Paste` event can be used to intercept the event details before they are pasted. This allows you to modify the content as needed, such as adjusting the time, adding notes, or changing other appointment details.
 
 ```cshtml
 
