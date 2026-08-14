@@ -10,12 +10,12 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Google Calendar Integration in Angular Scheduler
 
-This [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) allows users to manage their [Google Calendar](https://www.google.com/calendar/about/) events directly within the Scheduler. Changes made in the Scheduler are synced to Google Calendar, and existing Google events are displayed in the Scheduler interface.
+This [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) lets users manage their [Google Calendar](https://www.google.com/calendar/about/) events directly within the Scheduler. Changes made in the Scheduler are synced to Google Calendar, and existing Google events are displayed in the Scheduler interface.
 
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/download) & [Angular CLI](https://angular.dev/installation): Must be installed on your local machine to create, manage, and run the Angular application.
+- [Node.js](https://nodejs.org/en/download) and [Angular CLI](https://angular.dev/installation): Must be installed on your local machine to create, manage, and run the Angular application.
 - **Google Account:** Required to access the Google Cloud Console to enable APIs and generate [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) credentials.
 
 
@@ -24,25 +24,25 @@ This [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-s
 1. The Scheduler displays events using data from Google Calendar.
 2. The app uses Google Identity Services (GIS) to obtain short-lived access tokens.
 3. CRUD operations from the Scheduler are converted into [Google Calendar API](https://developers.google.com/calendar/api/v3/reference) calls.
-4. After each successful operation the app reload events from Google.
+4. After each successful operation, the app reloads events from Google.
 
 
 ## Create Google Cloud credentials
 
-### Step 1: Setup Google Calendar API
-- Open [Google Cloud Console](https://console.cloud.google.com)..
+### Step 1: Set up Google Calendar API
+- Open [Google Cloud Console](https://console.cloud.google.com).
 - Click the **Project Dropdown** > **New Project**.
 - Name it (e.g., Scheduler-Integration) and click **Create**.
 
 ### Step 2: Enable the Google Calendar API
 - Navigate to **APIs & Services** → **Library** → search **"Calendar"** → Click **Enable**.
 
-### Step 3: Configure OAuth consent screen (External or Internal depending on your audience).
+### Step 3: Configure OAuth consent screen (External or Internal depending on your audience)
 - Navigate to **APIs & Services** → **OAuth consent screen** → select **External** → Click **Create**.
-- Provide the **App name** and **Support email**
+- Provide the **App name** and **Support email**.
 
 ### Step 4: Add Test Users
-- Navigate to **APIs & Services** → **Audience** → Add mail in **Test User** → Click **Save**.
+- Navigate to **APIs & Services** → **Audience** → add mail in **Test User** → click **Save**.
 ### Step 5: Generate Credentials
 - Navigate to **APIs & Services** → **Credentials** → Click **Create Credentials** → **OAuth client ID**.
 - Set Application Type to **Web application**.
@@ -50,7 +50,7 @@ This [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-s
 - **Note**: Copy the generated **Client ID** for your Angular configuration.
 
 ## Scaffold the Angular project and install packages
-Create a new angular application with the following commands.
+Create a new Angular application with the following commands.
 ```bash
 ng new sf-scheduler-google --routing=false --style=css
 cd sf-scheduler-google
@@ -63,13 +63,13 @@ npm install @syncfusion/ej2-angular-schedule
 
 The Google Identity Services (GIS) script enables OAuth authentication in your app.
 
-Add the GIS script in the `<head>` section of `public/index.html` file:
+Add the GIS script in the `<head>` section of the `public/index.html` file:
 
 ```html
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 ```
 
-## Add the Syncfusion CSS References
+## Add the Syncfusion CSS references
 Styles make your Scheduler look professional. Add these imports at the top of `src/styles.css`:
 
 ```css
@@ -86,7 +86,7 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
 ```
 
 ## Configuring the Syncfusion Angular Scheduler
-1. Adding the **Syncfusion Angular Scheduler** in `src/app.ts`
+1. Add the **Syncfusion Angular Scheduler** in `src/app.ts`.
 
       This part adds the core Scheduler component with toolbar controls for signing in, reloading events, and signing out.
     ```ts
@@ -127,22 +127,22 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
     })
     ```
 
-2. Configure Your **Google Calendar** with the **Syncfusion Scheduler** using the **API key**, **Client-id** and **Calendar-id** in the `src/app.ts` file.
-    > All credential values are case-sensitive.Paste the Google OAuth Client ID, API Key, and Calendar ID exactly as issued
+2. Configure your **Google Calendar** with the **Syncfusion Scheduler** using the **API key**, **Client ID**, and **Calendar ID** in the `src/app.ts` file.
+  > All credential values are case-sensitive. Paste the Google OAuth Client ID, API key, and Calendar ID exactly as issued.
 
     ```ts
     export const CONFIG = {
-      clientId: 'YOUR_CLIENT_ID',//Enter Your Client-ID
-      apiKey: 'YOUR_API_KEY',//Enter Your API Key
-      calendarId: 'YOUR_CALENDAR_ID'//Enter Your Calendar-ID
+      clientId: 'YOUR_CLIENT_ID', // Enter your client ID
+      apiKey: 'YOUR_API_KEY', // Enter your API key
+      calendarId: 'YOUR_CALENDAR_ID' // Enter your calendar ID
     };
     ```
 
-3. **Integration of Google Calendar**
+3. **Integrate Google Calendar**
 
-    Integrating the **Google Calendar** with the **Syncfusion Scheduler** in the `src/app.ts` file using the **GoogleCalendarService** class.
+    Integrate the **Google Calendar** with the **Syncfusion Scheduler** in the `src/app.ts` file by using the **GoogleCalendarService** class.
 
-    The service handles **OAuth token generation**,Fetching logged-in **user info**, Initializing the **Google Identity Token Client**
+    The service handles **OAuth token generation**, fetching logged-in **user info**, and initializing the **Google Identity Token Client**.
 
     ```ts
     import { Component, OnInit, Injectable, ViewChild } from '@angular/core';
@@ -238,9 +238,9 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
       }
     ```
 
-4. Configuring the **CRUD** Operations with the **Syncfusion Scheduler** in the `src/app.ts` file in **GoogleCalendarService** class.
+4. Configure the **CRUD** operations with the **Syncfusion Scheduler** in the `src/app.ts` file in the **GoogleCalendarService** class.
 
-    To **load events** from **Google Calendar** into the **Syncfusion Scheduler**, the application uses the **getEvents** method from the **GoogleCalendarService**
+  To **load events** from **Google Calendar** into the **Syncfusion Scheduler**, the application uses the **getEvents** method from the **GoogleCalendarService**.
     ```ts
     public getEvents(timeMin?: string, timeMax?: string, expandRecurring: boolean = true): Observable<any> {
         const params: any = { 
@@ -254,21 +254,21 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
         return this.http.get(url, { headers: this.authHeaders(), params });
       }
     ```
-    To **insert events** between **Google Calendar** and **Syncfusion Scheduler**, the application uses the **insertEvent** method from the **GoogleCalendarService**
+    To **insert events** between **Google Calendar** and **Syncfusion Scheduler**, the application uses the **insertEvent** method from the **GoogleCalendarService**.
     ```ts
       public insertEvent(event: any): Observable<any> {
         const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(this.calendarId)}/events`;
         return this.http.post(url, event, { headers: this.authHeaders() });
       }
     ```
-    To **update events** between **Google Calendar** and **Syncfusion Scheduler**, the application uses the **updateEvent** method from the **GoogleCalendarService**
+    To **update events** between **Google Calendar** and **Syncfusion Scheduler**, the application uses the **updateEvent** method from the **GoogleCalendarService**.
     ```ts
       public updateEvent(eventId: string, event: any): Observable<any> {
         const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(this.calendarId)}/events/${encodeURIComponent(eventId)}`;
         return this.http.patch(url, event, { headers: this.authHeaders() });
       }
     ```
-    To **delete events** between **Google Calendar** and **Syncfusion Scheduler**, the application uses the **deleteEvent** method from the **GoogleCalendarService**
+    To **delete events** between **Google Calendar** and **Syncfusion Scheduler**, the application uses the **deleteEvent** method from the **GoogleCalendarService**.
     ```ts
       public deleteEvent(eventId: string): Observable<any> {
         const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(this.calendarId)}/events/${encodeURIComponent(eventId)}`;
@@ -277,8 +277,8 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
     }
     ```
 
-5. To **load google events** into the scheduler and syncs all **create/update/delete** actions back to **Google Calendar** after user sign-in, using **App** class.
-    >  Handled the AllDay conversion between Syncfusion Scheduler and Google Calendar.
+5. Load Google events into the Scheduler and sync all **create/update/delete** actions back to **Google Calendar** after user sign-in by using the **App** class.
+  > Handle the all-day conversion between the Syncfusion Scheduler and Google Calendar.
     ```ts
     export class App implements OnInit {
       @ViewChild('scheduleObj') public scheduleObj?: ScheduleComponent;
@@ -402,9 +402,9 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
     }
     ```
 
-6. Performing **CRUD** operations in the **App** class using **onActionComplete** method in `src/app.ts file`
+6. Perform **CRUD** operations in the **App** class by using the **onActionComplete** method in `src/app.ts`.
 
-    To **insert** the **created events** form **Syncfusion Scheduler** to **Google Calendar**, the application uses the **eventCreated** requesttype.
+  To **insert** the **created events** from the **Syncfusion Scheduler** to **Google Calendar**, the application uses the **eventCreated** request type.
     ```ts
     public onActionComplete(args: any) {
         if (args.requestType === 'eventCreated') {
@@ -435,7 +435,7 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
           }
         }
     ```
-    To **update** the events form **Syncfusion Scheduler** to **Google Calendar**, the application uses the **eventChanged** requesttype.
+    To **update** the events from the **Syncfusion Scheduler** to **Google Calendar**, the application uses the **eventChanged** request type.
     ```ts
         if (args.requestType === 'eventChanged') {
           const changed = args.changedRecords || [];
@@ -451,7 +451,7 @@ Styles make your Scheduler look professional. Add these imports at the top of `s
           }
         }
     ```
-    To **delete** the events form **Syncfusion Scheduler** to **Google Calendar**, the application uses the **eventRemoved** requesttype.
+    To **delete** the events from the **Syncfusion Scheduler** to **Google Calendar**, the application uses the **eventRemoved** request type.
     ```ts
         if (args.requestType === 'eventRemoved') {
           const removed =
@@ -487,30 +487,30 @@ ng serve
 - Use `ng serve` to run locally: `http://localhost:4200`.
 - Verify OAuth consent and that `http://localhost:4200` appears in Authorized JavaScript origins.
 
-## TroubleShooting
-### Google Sign‑In Button Does Not Work
-**Problem :**
+## Troubleshooting
+### Google Sign-In button does not work
+**Problem:**
 - Clicking “Sign In with Google” does nothing.
 - No popup appears.
 
-**Errors :**
+**Errors:**
 ```bash
 google is not defined
 accounts.oauth2 is undefined
 ```
-**Solution :**
+**Solution:**
 
-Make sure this **script** exists inside `index.html`
+Make sure this **script** exists inside `index.html`.
 ```html
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 ```
-Make sure the application in running on the exact URL `http://localhost:4200`
+Make sure the application is running on the exact URL `http://localhost:4200`.
 
-### Origin mismatch Error During Sign‑In
-**Problem :**
+### Origin mismatch error during sign-in
+**Problem:**
 - origin_mismatch
 - Unauthorized origin
 
-**Solution :**
+**Solution:**
 
-Add the `http://localhost:4200` URL to **Authorized JavaScript origins** on the **Google Cloud Console**
+Add the `http://localhost:4200` URL to **Authorized JavaScript origins** in the **Google Cloud Console**.

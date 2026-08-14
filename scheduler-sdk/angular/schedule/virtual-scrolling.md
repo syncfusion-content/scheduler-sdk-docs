@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Virtual Scrolling in Angular Scheduler
 
-Virtual scrolling support in the Scheduler component enhances performance when working with a substantial number of resources and events. This feature allows large sets of resources and events to load dynamically in the timeline views as users scroll, resulting in a seamless user experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views#allowvirtualscrolling) property to `true` within the specific timeline view settings. In the Agenda view, enable the same property in the agenda view configuration to allow virtual loading of events.
+Virtual scrolling support in the Scheduler component enhances performance when working with a large number of resources and events. This feature allows resources and events to load dynamically in the timeline views as users scroll, resulting in a seamless experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://ej2.syncfusion.com/angular/documentation/api/schedule/views#allowvirtualscrolling) property to `true` within the specific timeline view settings. In the Agenda view, enable the same property in the agenda view configuration to allow virtual loading of events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,11 +92,11 @@ namespace LazyLoadingServices.Controllers
 ```
 
 **Note:**  
-* The property will be effective, when large number of resources and appointments bound to the Scheduler.
-* This property is applicable only when [resource grouping](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#resources) is enabled in Scheduler.
+* The property is most effective when a large number of resources and appointments are bound to the Scheduler.
+* This property is applicable only when [resource grouping](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#resources) is enabled in the Scheduler.
 
 ## See Also
 
 * [Virtual scrolling in Agenda view](./views#agenda-view)
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.

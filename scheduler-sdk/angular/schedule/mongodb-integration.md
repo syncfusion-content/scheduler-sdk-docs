@@ -86,11 +86,11 @@ cd angular-app
 {% endtabs %}
 
 The Angular application is now created with default settings.
-Next, we will proceed with integrating Syncfusion® Angular Scheduler component into the project after setting up the server.
+Next, we will proceed with integrating the Syncfusion® Angular Scheduler component into the project after setting up the server.
 
 ## Create a Server Application
 ### Step 1: Install required libraries
-To set up the backend for the application, Install the required packages and make a new directory for server in the Angular project folder itself.
+To set up the backend for the application, install the required packages and create a new directory for the server in the Angular project folder.
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -102,7 +102,7 @@ npm install express mongodb cors
 
 * Express – A minimal and flexible web framework used to build API endpoints
 * MongoDB (Node.js Driver) – The official MongoDB driver that allows your server to communicate with the database
-* CORS – A package that enables your application (running on a different port) to access the server’s API
+* CORS – A package that enables your application (running on a different port) to access the server's API
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -112,8 +112,8 @@ mkdir server
 {% endhighlight %}
 {% endtabs %}
 
-### Step 2: Create a file server.js
-Create a new file named `server.js` inside the directory `server` created above and add the following code to set up the server.
+### Step 2: Create a file `server.js`
+Create a new file named `server.js` inside the `server` directory created above and add the following code to set up the server.
     
 {% tabs %}
 {% highlight js tabtitle="server.js" %}
@@ -166,9 +166,9 @@ app.listen(PORT, () => {
             if (body.action === 'insert' || (body.added && body.added.length)) {
                 events = body.added || [body.value];
                 for (const e of events) {
-                e.StartTime = new Date(e.StartTime);
-                e.EndTime = new Date(e.EndTime);
-                await collection.insertOne(e);
+                    e.StartTime = new Date(e.StartTime);
+                    e.EndTime = new Date(e.EndTime);
+                    await collection.insertOne(e);
                 }
             }
 
@@ -176,13 +176,13 @@ app.listen(PORT, () => {
             if (body.action === 'update' || (body.changed && body.changed.length)) {
                 events = body.changed || [body.value];
                 for (const e of events) {
-                delete e._id; // Critical: remove _id to avoid immutable field error
-                e.StartTime = new Date(e.StartTime);
-                e.EndTime = new Date(e.EndTime);
-                await collection.updateOne(
-                    { Id: e.Id },
-                    { $set: e }
-                );
+                    delete e._id; // Critical: remove _id to avoid immutable field error
+                    e.StartTime = new Date(e.StartTime);
+                    e.EndTime = new Date(e.EndTime);
+                    await collection.updateOne(
+                        { Id: e.Id },
+                        { $set: e }
+                    );
                 }
             }
 
@@ -190,7 +190,7 @@ app.listen(PORT, () => {
             if (body.action === 'remove' || (body.deleted && body.deleted.length)) {
                 events = body.deleted || [{ Id: body.key }];
                 for (const e of events) {
-                await collection.deleteOne({ Id: e.Id });
+                    await collection.deleteOne({ Id: e.Id });
                 }
             }
             res.json(body);
@@ -204,10 +204,10 @@ app.listen(PORT, () => {
 {% endhighlight %}
 {% endtabs %}
 
-Here database name is `mydb` and collection name is `ScheduleData`, both were previously created during the database setup process.
+Here the database name is `mydb` and the collection name is `ScheduleData`, both of which were previously created during the database setup process.
     
 ### Step 3: Add server script to package.json
-To enable running the Node.js backend directly from the Angular project’s root, add the following script inside your root `package.json` under the "scripts" section.
+To enable running the Node.js backend directly from the Angular project's root, add the following script inside your root `package.json` under the "scripts" section.
 
 {% tabs %}
 {% highlight json tabtitle="package.json" %}
@@ -220,7 +220,7 @@ To enable running the Node.js backend directly from the Angular project’s root
 {% endtabs %}
 
 ## Integrating Syncfusion Angular Scheduler
-This section integrates [Syncfusion Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) to the above created application.
+This section integrates [Syncfusion Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) into the application created above.
 
 ### Step 1: Install required libraries
 Install the required [Syncfusion Angular Scheduler package](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule) by the following command.
@@ -263,6 +263,7 @@ import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService,
 
 @Component({
 selector: 'app-root',
+standalone: true,
 templateUrl: 'app.html',
 imports: [ScheduleModule],
 providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
@@ -275,7 +276,7 @@ export class App {
 {% endhighlight %}
 {% endtabs %}
 
-Create a template for the component in `src/app/app.html` and make reference in `src/app/app.ts`.
+Create a template for the component in `src/app/app.html` and reference it in `src/app/app.ts`.
 
 {% tabs %}
 {% highlight html tabtitle="app.html" %}
@@ -297,6 +298,7 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
 selector: 'app-root',
+standalone: true,
 templateUrl: 'app.html',
 imports: [ScheduleModule],
 providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
@@ -306,13 +308,13 @@ export class App implements OnInit {
     private dataManager: DataManager = new DataManager({
         url: 'http://localhost:5000/GetData',
         crudUrl: 'http://localhost:5000/BatchData',
-        adaptor: new UrlAdaptor,
+        adaptor: new UrlAdaptor(),
         crossDomain: true
     });
     public eventSettings: EventSettingsModel = { dataSource: this.dataManager };
     public selectedDate: Date | undefined;
     ngOnInit(): void {
-            this.selectedDate = new Date(2026, 0, 1);
+        this.selectedDate = new Date(2026, 0, 1);
     }
 }
 
@@ -329,13 +331,13 @@ Modify the template of the component to perform CRUD operations.
 {% endhighlight %}
 {% endtabs %}
 
-* The Scheduler is connected to a backend service using **Syncfusion’s DataManager**, a powerful data-handling component built to seamlessly manage remote data operations.
+* The Scheduler is connected to a backend service using **Syncfusion's DataManager**, a powerful data-handling component built to manage remote data operations.
 * DataManager is configured with two API endpoints:
     * url → to read event data
     * crudUrl → to handle create, update, and delete actions
 * The UrlAdaptor ensures standard REST-style communication with your server.
 * Once this is set, the Scheduler automatically sends requests when users add, edit, drag, resize, or delete events.
-* The server processes these operations and returns updated event data, allowing the Scheduler to stay perfectly in sync with the backend.
+* The server processes these operations and returns updated event data, allowing the Scheduler to stay in sync with the backend.
 
 ## Run the Application
 ### Step 1: Start the backend server
@@ -384,7 +386,7 @@ All changes will be reflected in the connected **MongoDB** database in real time
 
 3. **Immutable _id on update:** Remove _id from payload prior to updateOne (MongoDB forbids changing _id).
 
-4. **Missing CSS → broken editor/pickers:** Include Scheduler CSS (via ng add or styles.css) per [getting‑started docs](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started#adding-css-reference).
+4. **Missing CSS → broken editor/pickers:** Include Scheduler CSS (via ng add or styles.css) per [getting-started docs](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started#adding-css-reference).
 
 <br>
 

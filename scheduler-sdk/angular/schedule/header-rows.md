@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Timeline Header Rows in Angular Scheduler
 
-The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerrows) property. This property is applicable only on the Timeline views. The possible rows which can be added using `headerRows` property are as follows.
+The Timeline views can have additional header rows other than their default date and time header rows. It is possible to show individual header rows for displaying year, month, and week separately using the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerrows) property. This property is applicable only on the Timeline views. The possible rows that can be added using the `headerRows` property are:
 
 * `Year`
 * `Month`
@@ -60,7 +60,7 @@ To display only the year and month header rows in the Scheduler, specify `Year` 
 
 ## Display week numbers in Timeline views
 
-The week number can be displayed in a separate header row of the Timeline Scheduler by setting `Week` option within [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerrows) property.
+The week number can be displayed in a separate header row of the Timeline Scheduler by setting the `Week` option within the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerrows) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ You can display a full year in a Timeline view by setting the [`interval`](https
 
 ## Customizing header rows with templates
 
-You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in [`template`](https://ej2.syncfusion.com/angular/documentation/api/schedule/headerRowDirective#template) option available within the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerrows) property.
+You can customize the text of the header rows and display any images or formatted text on each individual header row using the built-in [`template`](https://ej2.syncfusion.com/angular/documentation/api/schedule/headerRowDirective#template) option available within the [`headerRows`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerrows) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,6 +110,6 @@ You can customize the text of the header rows and display any images or formatte
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs43" %}
 
-![Display customize header rows using template](images/schedule-headerrow-custom-header.png)
+![Customized header rows using template](images/schedule-headerrow-custom-header.png)
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to know how to present and manipulate data.

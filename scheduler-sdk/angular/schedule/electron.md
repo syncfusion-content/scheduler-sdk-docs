@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 # Getting Started with Angular Scheduler and Electron 
 
-This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the Scheduler component.
+This guide explains how to build a basic Angular application using a standalone component structure with Electron and integrate the Scheduler component.
 
 ## Prerequisites
 
@@ -30,14 +30,14 @@ Create an **Angular Application**
 ng new my-app
 ```
 
-Install the Electron framework with the following command:
+Install Electron with the following command:
 
 ```bash
 npm install -g electron
 ```
 > Note: See the [getting started guide](https://electronjs.org/docs/tutorial/installation) to learn more about Electron installation.
 
-## Installing Schedule package
+## Installing the Schedule package
 
 Angular packages are available on npm under the `@syncfusion` scope. Explore all Angular packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
@@ -61,7 +61,7 @@ To incorporate styles for the Schedule component, add the following imports to `
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material3.css';
 ```
-## Adding Angular Schedule Component
+## Adding the Angular Scheduler component
 To integrate the Scheduler component, update the template in `app.ts`.
 
 ```typescript
@@ -131,7 +131,7 @@ export class App {
 }
 
 ```
-## Create main.js File
+## Create a main.js file
 Create a `main.js` file in your project's root directory and add the following code:
 ```javascript
 const { app, BrowserWindow } = require('electron');
@@ -163,7 +163,7 @@ app.on('window-all-closed', () => {
 });
 ```
 ## Update index.html
-In `/src/index.html`, change `<base href="/">` to `<base href="./">` to ensure Electron locates the built Angular files correctly.
+In /src/index.html, change `<base href="/">` to `<base href="./">` to ensure Electron locates the built Angular files correctly.
 
 ## Update package.json
 Modify `package.json` to include the `main` entry and update scripts:
@@ -185,13 +185,13 @@ Modify `package.json` to include the `main` entry and update scripts:
 
 ## Running the application
 
-To build and launch the application, execute these commands sequentially:
+To build and launch the application, run these commands sequentially:
 
 ```bash
 npm run electron-build
 npm run electron
 ```
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Schedule component will render within the Electron window.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Schedule component renders within the Electron window.
 
 ## Output
 ![image](images/schedule-electron-output.png)
@@ -201,10 +201,10 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Schedule component will
 
 ## Troubleshooting
 **Problem:**
-Angular **Bundle Exceeded Maximum Budget** Error
+Angular **Bundle Exceeded Maximum Budget** error
 
 **Solution:**
-Change the budget of the **maximumWarning** and **maximumError** size to high.
+Increase the **maximumWarning** and **maximumError** size limits.
  
 ```bash
 "maximumWarning": "5MB",
