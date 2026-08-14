@@ -34,7 +34,7 @@ The Islamic Calendar, also called the Hijri calendar, is a lunar calendar with 1
 
 ## Implementation
 
-The Scheduler provides the [`calendarMode`](https://ej2.syncfusion.com/react/documentation/api/schedule#calendarmode) property to switch between calendar types. Set it to `Islamic` to display Islamic calendar dates; the default is `Gregorian`.
+For complete instructions on installing and loading CLDR data, refer to the [Internationalization guide](https://ej2.syncfusion.com/documentation/common/internationalization#installing-cldr-data) topic.
 
 ### Requirements for Islamic calendar mode
 
@@ -98,7 +98,7 @@ For complete CLDR installation and setup instructions, refer to the [Internation
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Internationalization and Localization](https://ej2.syncfusion.com/documentation/common/internationalization)
 * [CLDR Data Installation](https://ej2.syncfusion.com/documentation/common/internationalization#installing-cldr-data)
 * [Scheduler API - calendarMode](https://ej2.syncfusion.com/react/documentation/api/schedule#calendarmode)

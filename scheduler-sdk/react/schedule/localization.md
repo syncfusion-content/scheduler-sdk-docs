@@ -357,7 +357,7 @@ The Scheduler layout and behavior can be changed to follow RTL (Right-to-Left) c
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) - Component homepage
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete API documentation
 * [Localization Library Documentation](https://ej2.syncfusion.com/documentation/common/localization) - Text translation configuration
 * [Working Days Configuration](./working-days.md#setting-start-day-of-the-week) - Set first day of the week

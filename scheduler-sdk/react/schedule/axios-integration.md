@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with React Scheduler and Axios
 
-This section provides a step-by-step guide for setting up a React application and integrating the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) component with an ASP.NET Core Web API backend (using EF Core and SQL Server) through Axios.
+This section provides a step-by-step guide for setting up a React application and integrating the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) component with an ASP.NET Core Web API backend (using EF Core and SQL Server) through Axios.
 
 ## What is Axios?
 

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 ## Refresh template
 
-In the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler), you can refresh specific template elements without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/react/documentation/api/schedule#refreshtemplates) public method. You can use this method to refresh specific templates or all templates together. The following template names are accepted as arguments when you want to refresh them individually:
+In the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler), you can refresh specific template elements without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/react/documentation/api/schedule#refreshtemplates) public method. You can use this method to refresh specific templates or all templates together. The following template names are accepted as arguments when you want to refresh them individually:
 
 * `eventTemplate`
 * `dateHeaderTemplate`

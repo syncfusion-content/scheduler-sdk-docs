@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 ## Open editor window externally
 
-The [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) allows you to manually open the event editor at a specific time or in response to certain events by using the [`openEditor`](https://ej2.syncfusion.com/react/documentation/api/schedule#openeditor) method, as shown below.
+The [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) allows you to manually open the event editor at a specific time or in response to certain events by using the [`openEditor`](https://ej2.syncfusion.com/react/documentation/api/schedule#openeditor) method, as shown below.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

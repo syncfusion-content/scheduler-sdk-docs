@@ -212,7 +212,7 @@ In some scenarios, you may want the Scheduler to load with the system's current 
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)
 

@@ -646,7 +646,7 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Appointments and Events](https://ej2.syncfusion.com/react/documentation/schedule/appointments)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

@@ -139,7 +139,7 @@ You can customize the text of the header rows and display any images or formatte
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Header Bar Customization](./header-bar.md)
 * [Views Configuration](./views.md)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)

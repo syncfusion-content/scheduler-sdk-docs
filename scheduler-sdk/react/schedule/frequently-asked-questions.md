@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Frequently Asked Questions in React Scheduler
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler).
+In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler).
 
 ## Maximum call stack size exceeded
 
@@ -190,7 +190,7 @@ L10n.load({
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Editor Template Customization](https://ej2.syncfusion.com/react/documentation/schedule/editor-template)
 * [Scheduler Localization Guide](https://ej2.syncfusion.com/react/documentation/schedule/localization)

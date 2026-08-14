@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with React Scheduler and Preact
 
-This article provides a step-by-step guide for setting up a [Preact](https://preactjs.com/) project and integrating the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler). The sample demonstrates how to use Syncfusion Scheduler components in a lightweight Preact application with minimal configuration.
+This article provides a step-by-step guide for setting up a [Preact](https://preactjs.com/) project and integrating the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler). The sample demonstrates how to use Syncfusion Scheduler components in a lightweight Preact application with minimal configuration.
 
 `Preact` is a fast and lightweight JavaScript library for building user interfaces. It's often used as an alternative to larger frameworks like React. The key difference is that Preact is designed to be smaller in size and faster in performance, making it a good choice for projects where file size and load times are critical factors.
 
@@ -100,7 +100,7 @@ Now that `my-project` is ready to run with default settings, let's add Syncfusio
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-react).
 
-This article uses the [React Schedule component](https://www.syncfusion.com/react-components/react-scheduler) as an example. Install the `@syncfusion/ej2-react-schedule` package using the following command:
+This article uses the [React Schedule component](https://www.syncfusion.com/scheduler-sdk/react-scheduler) as an example. Install the `@syncfusion/ej2-react-schedule` package using the following command:
 
 > **Important:** Install the Scheduler package inside the Preact project directory so the module resolves correctly at build time.
 

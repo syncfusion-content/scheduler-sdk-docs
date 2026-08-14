@@ -14,8 +14,6 @@ When you have many appointments in the all-day row, they can be difficult to vie
 
 When set to `true`, the all-day row displays a scroller when it expands beyond its maximum height. The default value is `false`.
 
-> **Note:** This property is not applicable when the Scheduler height is set to `auto`.
-
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
 {% include code-snippet/scheduler-sdk/react/schedule/local-data-cs15/app/index.jsx %}

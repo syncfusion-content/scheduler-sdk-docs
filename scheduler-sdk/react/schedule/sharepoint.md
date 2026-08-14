@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with React Scheduler and SharePoint
 
-This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler).
+This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler).
 
 SharePoint Framework (SPFx) is a modern client-side development model provided by Microsoft for building custom solutions and extensions for SharePoint and Microsoft Teams.
 
@@ -339,6 +339,6 @@ The output appears as follows:
 
 ## See also
 
-* [React Schedule component](https://www.syncfusion.com/react-components/react-scheduler) - Component homepage
+* [React Schedule component](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Getting Started with the React Schedule component](https://ej2.syncfusion.com/react/documentation/schedule/getting-started) - Basic setup guide
 * [Getting Started with the Syncfusion<sup style="font-size:70%">&reg;</sup> React UI component](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start) - Quick start guide

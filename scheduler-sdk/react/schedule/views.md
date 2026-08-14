@@ -416,4 +416,4 @@ You can provide an alternate display name for customized views in the Scheduler 
 
 * [How to restrict view navigation while clicking on dates](./how-to/prevent-date-navigation)
 
-> You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for a quick overview of its capabilities. You can also explore the [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to learn how to present and manipulate data.
+> You can refer to our [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) feature tour page for a quick overview of its capabilities. You can also explore the [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to learn how to present and manipulate data.

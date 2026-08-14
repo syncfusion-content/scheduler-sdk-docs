@@ -82,7 +82,7 @@ The required modules should be injected into the Scheduler using the `Inject` co
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) - Component homepage
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Scheduler Views Documentation](./views.md) - View types and configuration
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete module API reference
 * [Drag and Drop Interactions](./scheduler-interactions.md#drag-and-drop) - Enable drag and drop functionality

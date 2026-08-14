@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with React Scheduler and MongoDB
 
-The [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) combined with MongoDB provides a robust, scalable, and flexible data-driven architecture for modern event-management systems. This integration enables real-time CRUD operations, persistent event storage, and a clean separation between the UI and backend services.
+The [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) combined with MongoDB provides a robust, scalable, and flexible data-driven architecture for modern event-management systems. This integration enables real-time CRUD operations, persistent event storage, and a clean separation between the UI and backend services.
 
 MongoDB's schema-less design seamlessly supports complex scheduling data, making it ideal for storing events, resources, recurrence rules, and user-specific calendar configurations.
 
@@ -307,7 +307,7 @@ To enable running the Node.js backend directly from the React project’s root, 
 
 ## Integrating Syncfusion React Scheduler
 
-This section integrates [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) into the application created above. The Scheduler uses `DataManager` to communicate with the backend and synchronize event data with MongoDB.
+This section integrates [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) into the application created above. The Scheduler uses `DataManager` to communicate with the backend and synchronize event data with MongoDB.
 
 ### Step 1: Install required libraries
 Install the required [Syncfusion React Scheduler package](https://www.npmjs.com/package/@syncfusion/ej2-react-schedule) by the following command.
@@ -524,7 +524,7 @@ The following screenshots show the Scheduler UI and the corresponding MongoDB re
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) - Component homepage
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete API documentation
 * [DataManager Documentation](https://ej2.syncfusion.com/react/documentation/schedule/data-binding#binding-remote-data) - Remote data operations
 * [MongoDB Documentation](https://www.mongodb.com/docs/) - Database reference   

@@ -227,7 +227,7 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Views Configuration](./views.md)
 * [Resources](./resources.md)

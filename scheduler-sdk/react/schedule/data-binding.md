@@ -345,7 +345,7 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [CRUD Actions Guide](https://ej2.syncfusion.com/react/documentation/schedule/crud-actions)
 * [Event Fields Documentation](https://ej2.syncfusion.com/react/documentation/schedule/appointments#event-fields)

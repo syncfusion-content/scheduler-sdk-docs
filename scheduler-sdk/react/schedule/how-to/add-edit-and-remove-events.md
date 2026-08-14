@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Perform CRUD Actions Dynamically in React Scheduler
 
-You can perform CRUD actions on appointments manually by using the [`addEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#deleteevent) methods in the [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler), as shown below.
+You can perform CRUD actions on appointments manually by using the [`addEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#deleteevent) methods in the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler), as shown below.
 
 ## Normal events
 

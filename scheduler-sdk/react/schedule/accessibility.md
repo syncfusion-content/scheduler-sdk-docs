@@ -99,7 +99,7 @@ All Scheduler actions can be controlled via keyboard using the `allowKeyboardInt
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | Navigates to today. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Opens the editor window. |
 
-> You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for a quick overview of its capabilities. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to learn how to present and manipulate data.
+> You can refer to our [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) feature tour page for a quick overview of its capabilities. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to learn how to present and manipulate data.
 
 ## Ensuring accessibility
 

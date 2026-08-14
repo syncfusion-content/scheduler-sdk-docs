@@ -189,7 +189,7 @@ If the rule is in the "NEVER ENDS" category, you can specify a maximum count to 
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) - Component homepage
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Recurring Events](https://ej2.syncfusion.com/react/documentation/schedule/appointments) - Recurrence and appointment rules
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete API documentation
 * [Recurrence Editor API Reference](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor) - Recurrence editor properties and methods

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # React Scheduler with Django REST Framework
 
-The Syncfusion [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) combined with Django REST Framework and MySQL provides a robust, scalable data‑driven application architecture. The Syncfusion React Scheduler delivers a rich, high‑performance client‑side experience.
+The Syncfusion [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) combined with Django REST Framework and MySQL provides a robust, scalable data‑driven application architecture. The Syncfusion React Scheduler delivers a rich, high‑performance client‑side experience.
 
 **What is Django REST Framework?**
 
@@ -608,7 +608,7 @@ The application now offers a reliable, scalable solution for managing scheduler 
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [DataManager Documentation](https://ej2.syncfusion.com/react/documentation/data/getting-started)
 * [Django REST Framework Official Docs](https://www.django-rest-framework.org/)

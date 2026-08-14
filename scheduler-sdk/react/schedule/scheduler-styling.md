@@ -56,6 +56,6 @@ To customize the Scheduler's appearance, override its default CSS. You can also 
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) - Component homepage
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete API documentation
 * [Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) - Interactive Scheduler demos

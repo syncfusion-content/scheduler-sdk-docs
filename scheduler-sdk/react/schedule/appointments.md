@@ -1177,4 +1177,4 @@ To refresh events only (without re-rendering the Scheduler UI), call the [`refre
 this.scheduleObj.refreshEvents();
 ```
 
-> You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to know how to present and manipulate data.
+> You can refer to our [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to know how to present and manipulate data.

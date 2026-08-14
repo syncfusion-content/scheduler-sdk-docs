@@ -359,7 +359,7 @@ Use the [`beforePrint`](https://ej2.syncfusion.com/react/documentation/api/sched
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Excel Export Documentation](https://ej2.syncfusion.com/react/documentation/schedule/exporting)
 * [ICalendar Export/Import](https://ej2.syncfusion.com/react/documentation/api/schedule/index-default#exporttoicalendar)

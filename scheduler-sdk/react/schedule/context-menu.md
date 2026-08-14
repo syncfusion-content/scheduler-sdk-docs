@@ -54,7 +54,7 @@ The following example demonstrates how to implement a context menu for the Sched
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [ContextMenu Component Documentation](https://ej2.syncfusion.com/react/documentation/context-menu/getting-started)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

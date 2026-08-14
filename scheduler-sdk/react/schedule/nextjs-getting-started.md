@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with React Scheduler and Next.js
 
-This section provides a step-by-step guide for setting up a Next.js application and integrating the [React Schedule](https://www.syncfusion.com/react-components/react-scheduler) component. The sample uses the App Router, client components, and resource-based scheduling to demonstrate a modern Next.js integration.
+This section provides a step-by-step guide for setting up a Next.js application and integrating the [React Schedule](https://www.syncfusion.com/scheduler-sdk/react-scheduler) component. The sample uses the App Router, client components, and resource-based scheduling to demonstrate a modern Next.js integration.
 
 > **Tip:** Use this pattern when you need server-side rendering for the page shell but client-side rendering for the Scheduler itself.
 
@@ -92,7 +92,7 @@ The application is ready to run with default settings. Now, let's add Syncfusion
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> React packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-react). This example uses the [React Schedule component](https://www.syncfusion.com/react-components/react-scheduler), so navigate into the project directory and run one of the following commands:
+Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-react). This example uses the [React Schedule component](https://www.syncfusion.com/scheduler-sdk/react-scheduler), so navigate into the project directory and run one of the following commands:
 
 > **Important:** Install the package in the project directory before importing the Scheduler component. Missing package installation will result in unresolved import errors.
 

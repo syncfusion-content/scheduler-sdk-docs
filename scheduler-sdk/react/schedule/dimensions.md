@@ -78,7 +78,7 @@ When the height and width of the Scheduler are specified as percentages, the Sch
 
 ## See also
 
-* [Syncfusion React Scheduler](https://www.syncfusion.com/react-components/react-scheduler)
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Cell Customization Guide](./cell-customization)
 * [Setting Cell Dimensions in All Views](./cell-customization#setting-cell-dimensions-in-all-views)
