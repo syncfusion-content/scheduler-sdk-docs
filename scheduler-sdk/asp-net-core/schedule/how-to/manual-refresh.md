@@ -4,7 +4,6 @@ title: Manually Refresh Layout in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to manually refresh specific templates and the overall layout in the Syncfusion ASP.NET Core Scheduler without re-rendering the entire component.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -21,7 +21,7 @@ N> When the desktop view width is less than 600, the scheduler will display the 
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda" />
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda" />
 </ContentPage>
 
 {% endhighlight %}
@@ -37,7 +37,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        this.Scheduler.View = SchedulerView.Agenda;
+        this.scheduler.View = SchedulerView.Agenda;
         // Creating an instance for the scheduler appointment collection.
         var appointments = new ObservableCollection<SchedulerAppointment>();
         // Adding scheduler appointment in the scheduler appointment collection.
@@ -49,7 +49,7 @@ public partial class MainPage : ContentPage
             Background = Brush.Orange,
         });
         // Adding scheduler appointment into the AppointmentsSource.
-        this.Scheduler.AppointmentsSource = appointments;
+        this.scheduler.AppointmentsSource = appointments;
     }
 }
 
@@ -72,7 +72,7 @@ You can style the date format, height, text style, and background color by using
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
         <scheduler:SfScheduler.AgendaView>
             <scheduler:SchedulerAgendaView>
                 <scheduler:SchedulerAgendaView.MonthHeaderSettings>
@@ -97,17 +97,17 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        this.Scheduler.View = SchedulerView.Agenda;
+        this.scheduler.View = SchedulerView.Agenda;
         var textStyle = new SchedulerTextStyle()
         {
             TextColor = Colors.Red,
             FontSize = 25,
         };
 
-        this.Scheduler.AgendaView.MonthHeaderSettings.DateFormat = "MMM yyy";
-        this.Scheduler.AgendaView.MonthHeaderSettings.Height = 200;
-        this.Scheduler.AgendaView.MonthHeaderSettings.TextStyle = textStyle;
-        this.Scheduler.AgendaView.MonthHeaderSettings.Background = Brush.LightGreen;
+        this.scheduler.AgendaView.MonthHeaderSettings.DateFormat = "MMM yyy";
+        this.scheduler.AgendaView.MonthHeaderSettings.Height = 200;
+        this.scheduler.AgendaView.MonthHeaderSettings.TextStyle = textStyle;
+        this.scheduler.AgendaView.MonthHeaderSettings.Background = Brush.LightGreen;
     }
 }
 
@@ -126,7 +126,7 @@ You can customize the month header appearance of scheduler by using the [MonthHe
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
         <scheduler:SfScheduler.AgendaView>
             <scheduler:SchedulerAgendaView>
                 <scheduler:SchedulerAgendaView.MonthHeaderTemplate>
@@ -175,7 +175,7 @@ You can customize the month header appearance by using the [MonthHeaderTemplate]
             </DataTemplate>
             <local:AgendaViewTemplateSelector x:Key="agendaViewTemplateSelector" TodayDateTemplate="{StaticResource todayDateTemplate}" NormalDateTemplate="{StaticResource normalDateTemplate}"/>
         </Grid.Resources>
-        <scheduler:SfScheduler x:Name="Scheduler" View="Agenda" >
+        <scheduler:SfScheduler x:Name="scheduler" View="Agenda" >
             <scheduler:SfScheduler.AgendaView>
                 <scheduler:SchedulerAgendaView MonthHeaderTemplate="{StaticResource agendaViewTemplateSelector}" />
             </scheduler:SfScheduler.AgendaView>
@@ -221,7 +221,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        this.Scheduler.View = SchedulerView.Agenda;
+        this.scheduler.View = SchedulerView.Agenda;
     }
 }
 
@@ -245,7 +245,7 @@ You can style the date format, height, text style, and background color by using
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
         <scheduler:SfScheduler.AgendaView>
             <scheduler:SchedulerAgendaView>
                 <scheduler:SchedulerAgendaView.WeekHeaderSettings>
@@ -271,17 +271,17 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        this.Scheduler.View = SchedulerView.Agenda;
+        this.scheduler.View = SchedulerView.Agenda;
         var textStyle = new SchedulerTextStyle()
         {
             TextColor = Colors.Red,
             FontSize = 12,
         };
 
-        this.Scheduler.AgendaView.WeekHeaderSettings.DateFormat = "MM, ddd";
-        this.Scheduler.AgendaView.WeekHeaderSettings.Height = 100;
-        this.Scheduler.AgendaView.WeekHeaderSettings.TextStyle = textStyle;
-        this.Scheduler.AgendaView.WeekHeaderSettings.Background = Brush.LightGreen;
+        this.scheduler.AgendaView.WeekHeaderSettings.DateFormat = "MM, ddd";
+        this.scheduler.AgendaView.WeekHeaderSettings.Height = 100;
+        this.scheduler.AgendaView.WeekHeaderSettings.TextStyle = textStyle;
+        this.scheduler.AgendaView.WeekHeaderSettings.Background = Brush.LightGreen;
     }
 }
 
@@ -306,7 +306,7 @@ You can style the day format, day text style, date text style, and background co
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
         <scheduler:SfScheduler.AgendaView>
             <scheduler:SchedulerAgendaView>
                 <scheduler:SchedulerAgendaView.DayHeaderSettings>
@@ -330,17 +330,17 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        this.Scheduler.View = SchedulerView.Agenda;
+        this.scheduler.View = SchedulerView.Agenda;
         var textStyle = new SchedulerTextStyle()
         {
             TextColor = Colors.Red,
             FontSize = 12,
         };
 
-        this.Scheduler.AgendaView.DayHeaderSettings.DayFormat = "MM, ddd";
-        this.Scheduler.AgendaView.DayHeaderSettings.DayTextStyle = textStyle;
-        this.Scheduler.AgendaView.DayHeaderSettings.DateTextStyle = textStyle;
-        this.Scheduler.AgendaView.DayHeaderSettings.Background = Brush.LightGreen;
+        this.scheduler.AgendaView.DayHeaderSettings.DayFormat = "MM, ddd";
+        this.scheduler.AgendaView.DayHeaderSettings.DayTextStyle = textStyle;
+        this.scheduler.AgendaView.DayHeaderSettings.DateTextStyle = textStyle;
+        this.scheduler.AgendaView.DayHeaderSettings.Background = Brush.LightGreen;
     }
 }
 
@@ -362,7 +362,7 @@ The appointment text style can be customized by using the [AppointmentTextStyle]
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda" />
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda" />
 
 </ContentPage>
 
@@ -379,7 +379,7 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        this.Scheduler.View = SchedulerView.Agenda;
+        this.scheduler.View = SchedulerView.Agenda;
         // Creating an instance for the scheduler appointment collection.
         var appointments = new ObservableCollection<SchedulerAppointment>();
         // Adding scheduler appointment in the scheduler appointment collection.
@@ -392,7 +392,7 @@ public partial class MainPage : ContentPage
             Background = Brush.Orange,
         });
         // Adding scheduler appointment into the AppointmentsSource.
-        this.Scheduler.AppointmentsSource = appointments;
+        this.scheduler.AppointmentsSource = appointments;
         // Creating the text style for the appointments.
         var appointmentTextStyle = new SchedulerTextStyle()
         {
@@ -400,7 +400,7 @@ public partial class MainPage : ContentPage
             FontSize = 12,
         };
         // Setting the text style for the appointments.
-        this.Scheduler.AppointmentTextStyle = appointmentTextStyle;
+        this.scheduler.AppointmentTextStyle = appointmentTextStyle;
     }
 }
 
@@ -477,7 +477,7 @@ You can customize the appointment time format of the scheduler by using the [App
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
         <scheduler:SfScheduler.AgendaView>
             <scheduler:SchedulerAgendaView AppointmentTimeFormat="HH:mm:tt" />
         </scheduler:SfScheduler.AgendaView>
@@ -518,7 +518,7 @@ The [HideEmptyDays](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Schedule
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
         <scheduler:SfScheduler.AgendaView>
             <scheduler:SchedulerAgendaView HideEmptyDays="True" />
         </scheduler:SfScheduler.AgendaView>

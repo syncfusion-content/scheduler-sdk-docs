@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Reminder in WinUI Scheduler control | Syncfusion
-description: Learn here all about the Reminder support in the Syncfusion WinUI Scheduler (SfScheduler) control, its elements and more.
+title: Reminder in WinUI Scheduler | Syncfusion
+description: Learn about reminder functionality in WinUI Scheduler to alert users for appointments with customizable options.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
-# Reminder in WinUI Scheduler (SfScheduler)
+# Reminder in WinUI Scheduler
 The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) notify an appointment reminder by using the [ReminderAlertOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ReminderAlertOpening) event. An appointment can have one or more reminders. 
 
 ## Enable reminder

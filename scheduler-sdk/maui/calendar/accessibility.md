@@ -170,7 +170,7 @@ Enhance .NET MAUI Calendar's accessibility with a user-friendly design, ensuring
 ![Century view accessibility in .NET MAUI Calendar.](images/accessibility/maui-century-view-accessibility.png)
 
 ## Keyboard
-`SfCalendar` supports selection using keyboard interactions.
+`.NET MAUI Calendar` supports selection using keyboard interactions.
 
 ### Selection
 <table>

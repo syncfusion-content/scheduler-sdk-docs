@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Multiple Colors in Single Event in Angular Scheduler | Syncfusion
-description: Learn how to render a single appointment with multiple colors in the Syncfusion Angular Scheduler.
+title: Multi-Color Events in Angular Schedule | Syncfusion
+description: Learn how to render a single appointment with multiple colors in the Syncfusion Angular Scheduler component.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug

@@ -242,7 +242,7 @@ The [AppointmentResizeStart](https://help.syncfusion.com/cr/maui/Syncfusion.Maui
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day" 
                            AppointmentResizeStart="Scheduler_AppointmentResizeStart">
     </scheduler:SfScheduler>
@@ -278,7 +278,7 @@ The [AppointmentResizeStartEventArgs](https://help.syncfusion.com/cr/maui/Syncfu
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day" 
                            AppointmentResizeStart="Scheduler_AppointmentResizeStart">
     </scheduler:SfScheduler>
@@ -314,7 +314,7 @@ The [AppointmentResizing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sc
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day" 
                            AppointmentResizing="Scheduler_AppointmentResizing">
     </scheduler:SfScheduler>
@@ -355,7 +355,7 @@ The [AppointmentResizeEnd](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.S
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day" 
                            AppointmentResizeEnd="Scheduler_AppointmentResizeEnd">
     </scheduler:SfScheduler>
@@ -392,7 +392,7 @@ The [AppointmentResizeEndEventArgs](https://help.syncfusion.com/cr/maui/Syncfusi
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="Scheduler" 
+    <scheduler:SfScheduler x:Name="scheduler" 
                            View="Day" 
                            AppointmentResizeEnd="Scheduler_AppointmentResizeEnd">
     </scheduler:SfScheduler>

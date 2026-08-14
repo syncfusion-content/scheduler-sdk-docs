@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Enable Scroll Option on All-Day Section in ASP.NET MVC Scheduler | Syncfusion
+title: Scroll Option on All-Day Section in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to enable the scroll option on the all-day section in the Syncfusion ASP.NET MVC Scheduler when many appointments overflow the row.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

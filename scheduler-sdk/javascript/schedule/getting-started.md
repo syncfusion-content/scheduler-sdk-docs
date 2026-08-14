@@ -4,7 +4,6 @@ title: Getting Started with JavaScript Scheduler | Syncfusion
 description: Learn how to get started with the Syncfusion JavaScript Scheduler, exploring setup, initialization, and basic customization in a JavaScript app.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

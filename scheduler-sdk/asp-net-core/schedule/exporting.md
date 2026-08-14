@@ -4,7 +4,6 @@ title: Exporting in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to export and import events in the Syncfusion ASP.NET Core Scheduler to Excel and ICS files, and print appointments with custom options.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

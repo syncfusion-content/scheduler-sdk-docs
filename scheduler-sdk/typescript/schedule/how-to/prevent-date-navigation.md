@@ -4,7 +4,6 @@ title: Prevent Date Navigation in TypeScript Scheduler | Syncfusion
 description: Learn how to prevent date navigation in the Syncfusion TypeScript Scheduler to lock the view on a specific date or range.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

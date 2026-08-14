@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Scroll Option on All-Day Section in Blazor Scheduler | Syncfusion
+title: Scroll Option on All-Day Section in Blazor Scheduler | Syncfusion
 description: Learn how to enable the scroll option on the all-day section in the Syncfusion Blazor Scheduler when many appointments overflow the row height.
 platform: scheduler-sdk
 control: Scheduler

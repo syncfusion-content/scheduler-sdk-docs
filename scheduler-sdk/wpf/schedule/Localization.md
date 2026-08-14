@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in WPF Scheduler control | Syncfusion
-description: Learn here all about Localization support in Syncfusion WPF Scheduler (SfScheduler) control and more.
+title: Localization in WPF Scheduler | Syncfusion
+description: Learn about localization in WPF Scheduler to customize user interface for different languages and cultures.
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
 ---
 
-# Localization in WPF Scheduler (SfScheduler)
+# Localization in WPF Scheduler
 
 Localization is the process of customizing the user interface, based on a culture specific to a particular country or region in order to display the regional data. The culture is represented by a unique string, for example, "en-US" for U.S. English and "fr-FR" for French (common).
 

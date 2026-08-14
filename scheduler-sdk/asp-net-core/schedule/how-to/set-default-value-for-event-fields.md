@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Set Default Value for Event Fields in ASP.NET Core Scheduler | Syncfusion
+title: Default Value for Event Fields in ASP.NET Core Scheduler | Syncfusion
 description: Learn how to set default values for event fields in the Syncfusion ASP.NET Core Scheduler editor window to pre-fill data on new appointments.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Scheduler Interactions in TypeScript Scheduler | Syncfusion
 description: Learn about mouse and touch interactions in the Syncfusion TypeScript Scheduler, including cell selection, event selection, and date navigation.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---

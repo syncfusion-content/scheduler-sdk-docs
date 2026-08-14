@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to get started with the Syncfusion ASP.NET MVC Scheduler, exploring setup, initialization, and basic customization in an ASP.NET MVC app.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -246,4 +245,4 @@ public ActionResult Index()
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can also explore our [ASP.NET MVC Scheduler example](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.
+N> You can also explore our [ASP.NET MVC Scheduler example](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) that shows how to use the toolbar buttons to play with Scheduler functionalities.

@@ -261,7 +261,7 @@ Using the [AllowNavigation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Week">
         <scheduler:SfScheduler.DragDropSettings>
             <scheduler:DragDropSettings AllowNavigation="False">
@@ -281,8 +281,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DragDropSettings.AllowNavigation = false;
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DragDropSettings.AllowNavigation = false;
     }
 }
 
@@ -303,8 +303,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DragDropSettings.AutoNavigationDelay = new TimeSpan(0, 0, 0, 0, 2000);
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DragDropSettings.AutoNavigationDelay = new TimeSpan(0, 0, 0, 0, 2000);
     }
 }
 
@@ -321,7 +321,7 @@ Using the [AllowScroll](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Sche
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Week">
         <scheduler:SfScheduler.DragDropSettings>
             <scheduler:DragDropSettings AllowScroll="False">
@@ -341,8 +341,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DragDropSettings.AllowScroll = false;
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DragDropSettings.AllowScroll = false;
     }
 }
 
@@ -361,7 +361,7 @@ You can handle whether the drag and drop indicator should be displayed within th
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="Scheduler"
+    <scheduler:SfScheduler x:Name="scheduler"
                            View="Week">
         <scheduler:SfScheduler.DragDropSettings>
             <scheduler:DragDropSettings ShowTimeIndicator="False">
@@ -381,8 +381,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DragDropSettings.ShowTimeIndicator = false;
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DragDropSettings.ShowTimeIndicator = false;
     }
 }
 
@@ -425,12 +425,12 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
+        this.scheduler.View = SchedulerView.Week;
         var timeIndicatorStyle = new SchedulerTextStyle()
         {
            TextColor = Colors.Green,
         };
-        this.Scheduler.DragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
+        this.scheduler.DragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
     }
 }
 
@@ -451,8 +451,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        this.Scheduler.View = SchedulerView.Week;
-        this.Scheduler.DragDropSettings.TimeIndicatorTextFormat = "hh:mm";
+        this.scheduler.View = SchedulerView.Week;
+        this.scheduler.DragDropSettings.TimeIndicatorTextFormat = "hh:mm";
     }
 }
 

@@ -4,7 +4,6 @@ title: Scaffolding in ASP.NET MVC Scheduler | Syncfusion
 description: Learn how to use scaffolding in the Syncfusion ASP.NET MVC Scheduler to quickly generate controller and view code for the Scheduler component.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -21,7 +20,7 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 * Create an ASP.NET MVC application and add an Entity Framework data model referring from the [documentation](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) with Scheduler related fields such as Id, Subject, Location, Start Date, End Date and All-day. Once the model file is added, ensure the required DBContext and all its related properties are added.
 
-* Refer the [Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application) to know about how to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 for ASP.NET MVC in your web application.
+* Refer the [Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017#configure-essential-js-2-in-the-application) to know about how to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 for ASP.NET MVC in your web application.
 
 * Right-click on the **Controllers** folder in the Solution Explorer and select **Add → New Scaffolded Item** from the menu options.
 
@@ -47,7 +46,7 @@ N> All the model types present in the current application will be listed in the 
 
 * Once the required Scheduler options are configured through the **Scheduler UI Scaffolding**, the respective Scheduler **Controller** and the corresponding **View** files are now generated with the appropriate Scheduler code snippet.
 
-![Solution explorer displaying the newly created Controller and View files](../images/solution-explorer.png)
+![Solution explorer displaying the newly created Controller and View files](images/solution-explorer.png)
 
 N> Ensure that at least one Entity Framework model exists in your active project and also the application gets compiled once. If you make any changes in the Model properties later, compile the application once before performing scaffold.
 
