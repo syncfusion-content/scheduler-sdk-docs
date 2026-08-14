@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Customize the Overlap Popup Message in React Scheduler
 
-When the React Scheduler is configured with [`allowOverlap`](https://ej2.syncfusion.com/react/documentation/api/schedule#allowoverlap) set to `false`, any drag-and-drop, resize, or create action that would cause an appointment to overlap with an existing one is rejected. By default, the Scheduler displays the built-in warning dialog whose title is taken from the [`alert`](https://ej2.syncfusion.com/react/documentation/api/base/l10n#alert) localization key and whose body is taken from the [`overlapAlert`](https://ej2.syncfusion.com/react/documentation/api/base/l10n#overlapalert) key (default text: *"Events cannot overlap"*). Choose one of the approaches below based on how much of that default experience you want to replace.
+When the React Scheduler is configured with [`allowOverlap`](https://ej2.syncfusion.com/react/documentation/api/schedule#allowoverlap) set to `false`, any drag-and-drop, resize, or create action that would cause an appointment to overlap with an existing one is rejected. By default, the Scheduler displays the built-in warning dialog whose title is taken from the `alert` localization key and whose body is taken from the `overlapAlert` key. Choose one of the approaches below based on how much of that default experience you want to replace.
 
 The simplest hook for any of the approaches is the [`popupOpen`](https://ej2.syncfusion.com/react/documentation/api/schedule#popupopen) event. The `args.type` is set to `'OverlapAlert'` whenever the Scheduler opens the overlap alert, so you can target that one type without affecting the editor, quick info, or other popups. For the default alert, `args.element` is the wrapping dialog HTMLElement and `args.data` is the array of overlapping appointments.
 
@@ -95,11 +95,11 @@ If you want to keep the default alert dialog and only change the text, hook the 
 
 ## Customize via Localization
 
-If you only need to change the text of the default alert (and support multiple languages), use Syncfusion's [`L10n`](https://ej2.syncfusion.com/react/documentation/api/base/l10n) loader to override the `schedule.overlapAlert` (body) and `schedule.alert` (title) keys for the desired culture. The Scheduler then uses your strings inside the default dialog.
+If you only need to change the text of the default alert (and support multiple languages), use Syncfusion's [`Localization`](https://help.syncfusion.com/scheduler-sdk/react/schedule/localization) loader to override the `schedule.overlapAlert` (body) and `schedule.alert` (title) keys for the desired culture. The Scheduler then uses your strings inside the default dialog.
 
 `L10n.load` must be called **before** the ScheduleComponent renders, so place the call at module scope (outside the component). Only the keys you specify are overridden; default strings remain for any key omitted from the loaded object.
 
-To switch languages at runtime, set the [`locale`](https://ej2.syncfusion.com/react/documentation/api/schedule#locale) property of the Scheduler to the matching culture code (for example, `'fr'`, `'de'`, `'ar'`).
+To switch languages at runtime, set the [`locale`](https://ej2.syncfusion.com/react/documentation/api/schedule#locale) property of the Scheduler to the matching culture code.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
