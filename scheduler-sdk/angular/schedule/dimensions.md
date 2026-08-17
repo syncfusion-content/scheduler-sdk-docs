@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Dimensions in Angular Scheduler
 
-Scheduler dimensions refer to the height and width of the entire layout and support three types of values:
+Scheduler dimensions refer to the height and width of the entire layout and support three value types:
 
 * `auto`
 * `pixel`
@@ -18,7 +18,7 @@ Scheduler dimensions refer to the height and width of the entire layout and supp
 
 ## Auto height and width
 
-When the height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When the height and width of the Scheduler are set to `auto`, it tries to keep the component sized to its parent container. In other words, the parent container that holds the Scheduler will size itself based on its children. By default, the Scheduler uses `auto` for both the height and width properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ When the height and width of the Scheduler are set to `auto`, it will try as har
 
 ## Height and width in pixels
 
-The Scheduler height and width will render exactly as per the given pixel values. You can provide pixel values as numbers (for example, `500`) or as strings with a `px` suffix (for example, `'500px'`).
+The Scheduler height and width render exactly as the given pixel values. You can provide pixel values as numbers (for example, `500`) or as strings with a `px` suffix (for example, `'500px'`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ The Scheduler height and width will render exactly as per the given pixel values
 
 ## Height and width in percentages
 
-When the height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
+When the height and width of the Scheduler are given as percentages, the Scheduler expands to match the parent container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ When the height and width of the Scheduler are given as percentage, it will make
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs3" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for an overview of its features. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.
 
 ## See Also
 

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 ## Refresh Template
 
-In the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler), you can refresh specific template element without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshtemplates) public method. We can provide an additional option to refresh specific templates alone or all templates together by using this method. The following template names are accepted as an argument to refresh it specifically.
+In the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler), you can refresh specific template elements without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshtemplates) public method. Use this method to refresh one or more specific templates, or all templates at once. The following template names are accepted as arguments.
 
 * `eventTemplate`
 * `dateHeaderTemplate`
@@ -22,7 +22,7 @@ In the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular
 * `tooltipTemplate`
 * `headerTooltipTemplate`
 
-In the following code example, you can see how to use the refreshTemplates method to refresh multiple templates. Here, we have added the following scheduler templates such as [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#celltemplate), [`dateHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dateheadertemplate), [`eventTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventtemplate) and [`resourceHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#resourceheadertemplate)
+The example below shows how to use `refreshTemplates` to refresh multiple templates. It uses scheduler templates such as [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#celltemplate), [`dateHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dateheadertemplate), [`eventTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventtemplate), and [`resourceHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#resourceheadertemplate).
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -41,7 +41,7 @@ In the following code example, you can see how to use the refreshTemplates metho
 
 ## Refresh Layout
 
-In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshlayout) public method. The following example code explains to know how to use the refreshLayout method.
+In Scheduler, you can refresh the layout manually without re-rendering DOM elements by using the [`refreshLayout`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshlayout) public method. The example below shows how to use `refreshLayout`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

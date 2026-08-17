@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Cell Customization in Angular Scheduler
 
-The cells of the Scheduler can be customized using a template or the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event.
+The Scheduler cells can be customized using a template or the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event.
 
 ## Setting cell dimensions in all views
 
-The height and width of the Scheduler cells can be customized to increase or reduce their size through the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+The height and width of the Scheduler cells can be customized through the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property, which overrides the default CSS applied to cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ The height and width of the Scheduler cells can be customized to increase or red
 
 You can check whether the given time range slots are available for event creation or already occupied by other events using the [`isSlotAvailable`](https://ej2.syncfusion.com/angular/documentation/api/schedule#isslotavailable) method. In the following code example, if a specific time slot already contains an appointment, no more appointments can be added to that cell.
 
->Note: The **isSlotAvailable** is centered around verifying appointments within the present view's date range. Yet, it does not encompass an evaluation of availability for recurrence occurrences that fall beyond this particular date range.
+> Note: [`isSlotAvailable`](https://ej2.syncfusion.com/angular/documentation/api/schedule#isslotavailable) checks appointments only within the current view's date range. It does not evaluate recurrence occurrences outside that range.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ You can check whether the given time range slots are available for event creatio
 
 ## Customizing cells in all views
 
-It is possible to customize the appearance of cells using both template options and [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event in all views.
+It is possible to customize the appearance of cells using both template options and the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event in all views.
 
 ### Using template
 
@@ -120,7 +120,7 @@ The month header of each date cell in month view can be customized using the [`c
 
 ## Customizing the minimum and maximum date values
 
-Providing the [`minDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
+Providing the [`minDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#maxdate) properties with date values allows the Scheduler to set the minimum and maximum date range. Dates beyond this range are disabled, and date navigation is blocked beyond the specified range.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,11 +134,11 @@ Providing the [`minDate`](https://ej2.syncfusion.com/angular/documentation/api/s
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs26" %}
 
->By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
+> By default, the `minDate` property value is set to new Date(1900, 0, 1), and the `maxDate` property value is set to new Date(2099, 11, 31). Users can also set custom `minDate` and `maxDate` property values.
 
 ## Customizing the weekend cells background color
 
-You can customize the background color of weekend cells by utilizing the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event and checking the [`elementType`](https://ej2.syncfusion.com/angular/documentation/api/schedule/renderCellEventArgs#elementtype) option within the event. 
+You can customize the background color of weekend cells by using the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event and checking the [`elementType`](https://ej2.syncfusion.com/angular/documentation/api/schedule/renderCellEventArgs#elementtype) option within the event.
 
 ```typescript
 
@@ -157,7 +157,7 @@ public onRenderCell(args: RenderCellEventArgs): void {
 
 ```
 
-And, the background color for weekend cells in the Month view through the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+You can also change the background color for weekend cells in Month view through the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cssclass) property, which overrides the default CSS applied to cells.
 
 ```CSS
 
@@ -181,6 +181,6 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 ## How to disable multiple cell and row selection in Schedule
 
-By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowmulticellselection) and [`allowMultiCellSelection`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowmulticellselection) properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
+By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowmulticellselection) property of the Scheduler is set to `true`. So, the Scheduler allows users to select multiple cells and rows. If users want to disable multiple cell and row selection, they can set this property to `false`.
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature overview. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.
