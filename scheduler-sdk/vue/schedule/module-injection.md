@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Module Injection in Vue Scheduler
 
-The crucial step on creating a Scheduler with required views, is to import and inject the required modules. The modules that are available on Scheduler to work with its related functionalities are as follows.
+The crucial step in creating a Scheduler with the required views is to import and inject the necessary modules. The modules available in Scheduler for related functionality are as follows.
 
 * `Day` - Inject this module to work with day view.
 * `Week` - Inject this module to work with week view.
@@ -30,9 +30,9 @@ The crucial step on creating a Scheduler with required views, is to import and i
 
 ## Module injection
 
-The required modules should be injected into the Scheduler using the `provide` method of Scheduler within the `app.vue` file as shown below. On doing so, only the injected module functionalities will be loaded and can be worked with Scheduler.
+The required modules should be injected into the Scheduler using the `provide` method within the `App.vue` file as shown below. When you do this, only the injected module functionality will be loaded and available in the Scheduler.
 
-`[src/app.vue]`
+`[src/App.vue]`
 
 ```html
   provide: {
@@ -40,6 +40,6 @@ The required modules should be injected into the Scheduler using the `provide` m
   },
 ```
 
-**Note:** If a Scheduler [`currentView`](https://ej2.syncfusion.com/vue/documentation/api/schedule#currentview) is set to any one of the available views without injecting that respective view module, then a script error will occur and the Scheduler will not render.
+**Note:** If a Scheduler [`currentView`](https://ej2.syncfusion.com/vue/documentation/api/schedule#currentview) is set to one of the available views without injecting the corresponding view module, a script error will occur and the Scheduler will not render.
 
-> Visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for a complete overview. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for a complete overview. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

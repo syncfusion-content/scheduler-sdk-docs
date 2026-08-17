@@ -52,7 +52,7 @@ The following ARIA attributes are used in the Scheduler.
 | aria-label | Attribute is set to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
 | aria-labelledby | It indicates editor dialog title to the user through assistive technologies. |
 | aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
-| aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler.
+| aria-disabled | Attribute is set to the appointment element to indicate the disabled state of the Scheduler. |
 
 The [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
 
@@ -79,23 +79,23 @@ All Schedule component actions can be performed using keyboard input when the `a
 | Keys | Description |
 |-----|-----|
 | <kbd>Alt</kbd> + <kbd>j</kbd> | Focuses the Scheduler element [provided from application end]. |
-| <kbd>Tab</kbd> | Focuses the first or active item on the Scheduler header bar and then move the focus to the next available event elements. If no events present, then focus moves out of the component. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverse focusing of the `Tab` key functionality. Inverse focusing of event elements from the last one and then move onto the first or active item on Scheduler header bar and then moves out of the component.
+| <kbd>Tab</kbd> | Focuses the first or active item on the Scheduler header bar and then moves the focus to the next available event elements. If no events are present, focus moves out of the component. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverses the `Tab` key behavior. Focus moves from the last event element to the first or active item on the Scheduler header bar and then moves out of the component. |
 | <kbd>Enter</kbd> | Opens the quick info popup on the selected cells or events. |
 | <kbd>Escape</kbd> | Closes any of the popup that are in open state. |
-| <kbd>Arrow</kbd> | To move onto the next available cells in either of the needed directions. (left, right, top and right) |
-| <kbd>Shift</kbd> + <kbd>Arrow</kbd> | For multiple cell selection on either direction. |
+| <kbd>Arrow</kbd> | Moves to the next available cell in the required direction (left, right, up, or down). |
+| <kbd>Shift</kbd> + <kbd>Arrow</kbd> | Selects multiple cells in any direction. |
 | <kbd>Delete</kbd> | Deletes one or more selected events. |
 | <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | To select multiple events. |
-| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) |To switch between the views of Scheduler. |
+| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) | Switches between the Scheduler views. |
 | <kbd>Ctrl</kbd> + <kbd>Left Arrow</kbd> | To navigate to the previous date period. |
 | <kbd>Ctrl</kbd> + <kbd>Right Arrow</kbd> | To navigate to the next date period. |
 | <kbd>Left</kbd> or <kbd>Right Arrow</kbd> | On pressing any of these keys, when focus is currently on the Schedule header bar, moves the focus to the previous or next items in the header bar. |
-| <kbd>Space</kbd> or <kbd>Enter</kbd> | It activates any of the focused items. |
+| <kbd>Space</kbd> or <kbd>Enter</kbd> | Activates the focused item. |
 | <kbd>Page Up</kbd> & <kbd>Page Down</kbd> | To scroll through the work cells area. |
-| <kbd>Home</kbd> | To move the selection to the first cell of Scheduler. |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | To navigate to today date. |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | To open editor window. |
+| <kbd>Home</kbd> | Moves the selection to the first cell of the Scheduler. |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | Navigates to today's date. |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Opens the editor window. |
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for comprehensive feature representations. Additional examples are available in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) page, demonstrating data presentation and manipulation.
 

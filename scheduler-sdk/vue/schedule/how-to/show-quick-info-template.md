@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Quick Info Template in Vue Scheduler
 
-Quick info popups for cells and appointments can be customized through templates to display tailored information. The following example demonstrates the usage of customized quick info templates rendered through the built‑in popup behavior.
+Quick info popups for cells and appointments can be customized through templates to display tailored information. The following example demonstrates customized quick info templates rendered through the built-in popup behavior.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

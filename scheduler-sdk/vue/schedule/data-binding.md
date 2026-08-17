@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Data Binding in Vue Scheduler
 
-The Schedule component supports data binding through `DataManager`, which provides both RESTful data-service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings#datasource) property can be assigned either a `DataManager` instance or a JavaScript object array. The component supports the following types of data binding:
+The Schedule component supports data binding through `DataManager`, which provides both RESTful service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings#datasource) property can be assigned either a `DataManager` instance or a JavaScript object array. The component supports the following types of data binding:
 
 * Local data
 * Remote data
@@ -32,11 +32,11 @@ To bind local JSON data to the Schedule component, assign a JavaScript object ar
 
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
-> You can also bind different field names to the default event fields as well as include additional `custom fields` to the event object collection which can be referred [here](./appointments#event-fields).
+> You can also bind different field names to the default event fields and include additional custom fields in the event object collection, as described [here](./appointments#event-fields).
 
 ## Binding Remote Data
 
-Any kind of remote data services can be bound to the Scheduler. To do so, create an instance of `DataManager` and provide the service URL to the `url` option of `DataManager` and then assign it to the [`dataSource`](../api/schedule/eventSettings#datasource) property within [`eventSettings`](../api/schedule/eventSettings).
+Any kind of remote data service can be bound to the Scheduler. To do so, create an instance of `DataManager`, provide the service URL to the `url` option, and assign it to the [`dataSource`](../api/schedule/eventSettings#datasource) property within [`eventSettings`](../api/schedule/eventSettings).
 
 ### Using ODataV4Adaptor
 
@@ -55,9 +55,9 @@ Any kind of remote data services can be bound to the Scheduler. To do so, create
 
 ### Filter Events using the in-built Query
 
-To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventsettingsmodel#includefiltersinquery) API to **true**. This constructs a filter query using the start date, end date, and recurrence rule, ensuring that only relevant data is requested from the server.
+To enable server-side filtering operations based on predetermined conditions, set the [`includeFiltersInQuery`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventsettingsmodel#includefiltersinquery) API to **true**. This constructs a filter query using the start date, end date, and recurrence rule, ensuring that only relevant data is requested from the server.
 
-This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
+This method improves performance by reducing the data transferred to the client side. As a result, efficiency and responsiveness improve. However, longer query strings may exceed maximum URL length limits or server query string limits.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -76,7 +76,7 @@ The following image represents how the parameters are passed using ODataV4 filte
 
 ### Using Custom Adaptor
 
-Custom adaptors can be created by extending available built‑in adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `EventID` for the appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`.
+Custom adaptors can be created by extending the available built-in adaptors. The following example demonstrates how to use a custom adaptor and how to add a custom field `EventID` for appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -91,7 +91,7 @@ Custom adaptors can be created by extending available built‑in adaptors. The f
 
 ## Loading Data via AJAX Post
 
-The event data can be loaded using an external AJAX request and assigned to the [`dataSource`](../api/schedule/eventSettings#datasource) property of Scheduler. In the following example, data is retrieved from the server through an AJAX call and assigned to the Schedule component inside the `onSuccess` callback.
+Event data can be loaded using an external AJAX request and assigned to the [`dataSource`](../api/schedule/eventSettings#datasource) property of Scheduler. In the following example, data is retrieved from the server through an AJAX call and assigned to the Schedule component inside the `onSuccess` callback.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -163,7 +163,7 @@ export default {
 {% endtabs %}
 
 
-> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+> The controller method for `GetData` is provided in [Scheduler CRUD Actions](#scheduler-crud-actions).
 
 ## Passing Additional Parameters to the Server
 
@@ -180,11 +180,11 @@ To send an additional custom parameter to the server-side post, you need to make
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs4" %}
 
-> The parameters added using the [`query`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#query) property will be sent along with the data request sent to the server on every scheduler actions.
+> The parameters added using the [`query`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#query) property will be sent with every data request to the server during Scheduler actions.
 
 ## Handling Failure Actions
 
-During the time of Scheduler interacting with server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details in client-side using the [`actionFailure`](../api/schedule#actionfailure) event of Scheduler.
+When the Scheduler interacts with the server, server-side exceptions may occur. You can access those error messages or exception details on the client side using the [`actionFailure`](../api/schedule#actionfailure) event of Scheduler.
 
 The argument passed to the [`actionFailure`](../api/schedule#actionfailure) event contains the error details returned from the server.
 
@@ -199,11 +199,11 @@ The argument passed to the [`actionFailure`](../api/schedule#actionfailure) even
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs5" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/schedule#actionfailure) event will be triggered not only on server returning errors, but also when there is an exception while processing any of the Scheduler CRUD actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/schedule#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs while processing any Scheduler CRUD action.
 
 ## Scheduler CRUD Actions
 
-The CRUD (Create, Read, Update and Delete) actions can be performed easily on Scheduler appointments using the various adaptors available within the `DataManager`. Most preferably, we will be using `UrlAdaptor` for performing CRUD actions on scheduler appointments.
+The CRUD (Create, Read, Update, and Delete) actions can be performed on Scheduler appointments using the various adaptors available within `DataManager`. Most often, `UrlAdaptor` is used for performing CRUD actions on Scheduler appointments.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -272,7 +272,7 @@ export default {
 {% endhighlight %}
 {% endtabs %}
 
-The server-side controller code to handle the CRUD operations are as follows.
+The following server-side controller code handles the CRUD operations.
 
 ```c#
 using System;
@@ -291,7 +291,7 @@ namespace ScheduleSample.Controllers
         {
             return View();
         }
-        public JsonResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
+        public JsonResult LoadData()  // Retrieves the data and returns it to Scheduler
         {
             var data = db.ScheduleEventDatas.ToList();
             return Json(data, JsonRequestBehavior.AllowGet);
@@ -300,7 +300,7 @@ namespace ScheduleSample.Controllers
         [HttpPost]
         public JsonResult UpdateData(EditParams param)
         {
-            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
+            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // This block inserts appointments
             {
                 var value = (param.action == "insert") ? param.value : param.added[0];
                 int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
@@ -322,7 +322,7 @@ namespace ScheduleSample.Controllers
                 db.ScheduleEventDatas.InsertOnSubmit(appointment);
                 db.SubmitChanges();
             }
-            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
+            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // This block updates appointments
             {
                 var value = (param.action == "update") ? param.value : param.changed[0];
                 var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
@@ -343,7 +343,7 @@ namespace ScheduleSample.Controllers
                 }
                 db.SubmitChanges();
             }
-            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
+            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // This block removes appointments
             {
                 if (param.action == "remove")
                 {
@@ -378,9 +378,9 @@ namespace ScheduleSample.Controllers
 }
 ```
 
-## Configuring Scheduler with Google API service
+## Configuring Scheduler with Google API Service
 
-A custom Google Calendar URL can be assigned to the DataManager, which is then used as the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#datasource). Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/vue/documentation/api/schedule#databinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
+A custom Google Calendar URL can be assigned to `DataManager`, which is then used as the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#datasource). Since event data retrieved from Google Calendar uses its own object format, it must be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/vue/documentation/api/schedule#databinding) event. Within this event, the event fields need to be mapped properly and assigned to the result.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -393,4 +393,4 @@ A custom Google Calendar URL can be assigned to the DataManager, which is then u
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs6" %}
 
-> For more information, refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for its groundbreaking feature representations and explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> For more information, refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page and explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

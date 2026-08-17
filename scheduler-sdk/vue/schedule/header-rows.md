@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Timeline Header Rows in Vue Scheduler
 
-Timeline views in the Vue Schedule component support additional header rows beyond the default date and time headers. Using the [`headerRows`](../api/schedule/headerRows) property, multiple header rows can be displayed to represent different calendar units such as year, month, week, and date. This feature is applicable only to **timeline views**.
+Timeline views in the Vue Schedule component support additional header rows beyond the default date and time headers. Using the [`headerRows`](../api/schedule/headerRows) property, multiple header rows can be displayed to represent different calendar units such as year, month, week, and date. This feature applies only to **timeline views**.
 
 The following header row types are supported:
 
@@ -20,9 +20,9 @@ The following header row types are supported:
 * `Date`
 * `Hour`
 
-> The `Hour` row is not applicable for Timeline month view.
+> The `Hour` row is not applicable to the Timeline Month view.
 
-Check out this video to learn about customizing header rows of the timeline views in [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler).
+Watch this video to learn about customizing header rows in timeline views of the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler).
 
 {% youtube "https://www.youtube.com/watch?v=cqMLo9Yr_0s" %}
 
@@ -56,7 +56,7 @@ To display only the **Year** and **Month** header rows in timeline views, includ
 
 ## Display week numbers in timeline views
 
-The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within [`headerRows`](../api/schedule/headerRows) property.
+The week number can be displayed in a separate header row of the timeline Scheduler by setting the `Week` option within the [`headerRows`](../api/schedule/headerRows) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -71,7 +71,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 
 ## Timeline view displaying dates of a complete year
 
-It is possible to display a complete year in a timeline view by setting `interval`[`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#interval) value as 12 and defining **TimelineMonth** view option within the [`views`](../api/schedule/views) property of Scheduler.
+It is possible to display a complete year in a timeline view by setting the [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#interval) value to 12 and defining the **TimelineMonth** view option within the [`views`](../api/schedule/views) property of Scheduler.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -86,7 +86,7 @@ It is possible to display a complete year in a timeline view by setting `interva
 
 ## Customizing header rows using template
 
-The appearance and content of individual header rows can be customized using the `template` option within the [`headerRows`](../api/schedule/headerRows) property. Templates allow inserting formatted text, images, or custom markup for each header row.
+The appearance and content of individual header rows can be customized using the `template` option within the [`headerRows`](../api/schedule/headerRows) property. Templates allow you to insert formatted text, images, or custom markup for each header row.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -99,4 +99,4 @@ The appearance and content of individual header rows can be customized using the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs5" %}
 
-> For a comprehensive overview of Scheduler features, visit the  [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) demo to see timeline header rows in action.
+> For a comprehensive overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) demo to see timeline header rows in action.
