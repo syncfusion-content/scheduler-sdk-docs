@@ -20,14 +20,11 @@ The Scheduler utilizes the `DataManager`, which supports both RESTful data servi
 To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#datasource) option within the [`eventSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings) property. Alternatively, you can provide the JSON data as a `DataManager` instance and assign it to the Scheduler `dataSource` property.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs2/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -50,14 +47,11 @@ The Scheduler supports binding to various remote data services. To configure rem
 [ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. The following example demonstrates how to retrieve data from an ODataV4 service using DataManager. To connect with ODataV4 service endpoints, utilize the `ODataV4Adaptor` within `DataManager`.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs3/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -70,14 +64,11 @@ To enable server-side filtering operations based on specific conditions, set the
 This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs41/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -92,14 +83,11 @@ The image below illustrates how parameters are passed using an ODataV4 filter fo
 You can create a custom adaptor by extending one of the built-in adaptors. The following example demonstrates how to use a custom adaptor and add a custom field, such as `EventID`, to the appointments by overriding the response processing using the `processResponse` method of the `ODataV4Adaptor`.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs4/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -116,7 +104,6 @@ You can bind the event data through external ajax request and assign it to the `
 ```ts
 
 import * as React from 'react';
-import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { Ajax } from '@syncfusion/ej2-base';
 import {
@@ -124,10 +111,10 @@ import {
 } from '@syncfusion/ej2-react-schedule';
 import { DataManager } from '@syncfusion/ej2-data';
 
-const App = () => {
-  const [dataManager, setDataManager] = useState<DataManager | null>(null);
+function App() {
+  const [dataManager, setDataManager] = React.useState<DataManager | null>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const ajax = new Ajax('Home/GetData', 'GET', false);
     ajax.send();
     ajax.onSuccess = function (value: DataManager) {
@@ -138,14 +125,13 @@ const App = () => {
   const eventSettings: EventSettingsModel = { dataSource: dataManager };
 
   return (
-    <ScheduleComponent height='550px' selectedDate={new Date(2017, 5, 11)} eventSettings={eventSettings}>
+    <ScheduleComponent height='550px' selectedDate={new Date(2026, 5, 11)} eventSettings={eventSettings}>
       <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
     </ScheduleComponent>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('schedule'));
-root.render(<App />);
+export default App;
 
 ```
 
@@ -159,14 +145,11 @@ root.render(<App />);
 To send additional custom parameters in the server-side request, use the `addParams` method of `Query`. Assign this `Query` object with the custom parameters to the [`query`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#query) property of Scheduler.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs5/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -181,14 +164,11 @@ When Scheduler interacts with the server, server-side exceptions may occur. Thes
 The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/schedule#actionfailure) event contains all error details returned from the server.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs6/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -213,7 +193,7 @@ let dataManager: DataManager = new DataManager({
 
 let scheduleObj: Schedule = new Schedule({
     height: '550px',
-    selectedDate: new Date(2017, 5, 5),
+    selectedDate: new Date(2026, 5, 5),
     eventSettings: { dataSource: dataManager }
 });
 scheduleObj.appendTo('#Schedule');
@@ -330,14 +310,11 @@ namespace ScheduleSample.Controllers
 We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler `dataSource`. Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/react/documentation/api/schedule#databinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/local-data-cs7/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         

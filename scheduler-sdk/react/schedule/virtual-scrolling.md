@@ -13,14 +13,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 Virtual scrolling improves Scheduler performance when you work with a large number of resources and events. It loads resources and appointments dynamically in timeline views as users scroll, which provides a smoother experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://ej2.syncfusion.com/react/documentation/api/schedule/views#allowvirtualscrolling) property to `true` in the required timeline view settings. In Agenda view, set the same property in the agenda view configuration to enable virtual loading of events.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs48/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -39,14 +36,11 @@ With this feature enabled, the Scheduler fetches data from remote services only 
 Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.com/react/documentation/api/schedule/views#enablelazyloading) property to `true` in the appropriate view settings.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs50/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         

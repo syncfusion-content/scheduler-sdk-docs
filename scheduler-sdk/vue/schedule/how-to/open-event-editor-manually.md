@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 ## Open Editor Window Externally
 
-The Vue Schedule component allows manually opening the event editor for a specific time range or an existing event by using the [`openEditor`](../api/schedule#openeditor) method. To open the editor for a selected time range, pass the cell details as the first argument and **Add** as the second argument. To open the editor for an existing event, pass that event’s details as the first argument and **Save** as the second argument. In the following example, clicking the corresponding button opens the respective editor window manually.
+The Vue Scheduler component lets you open the event editor for a specific time range or an existing event by using the [`openEditor`](../api/schedule#openeditor) method. To open the editor for a selected time range, pass the cell details as the first argument and **Add** as the second argument. To open the editor for an existing event, pass that event's details as the first argument and **Save** as the second argument. In the following example, clicking the corresponding button opens the editor window manually.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

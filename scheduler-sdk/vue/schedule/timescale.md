@@ -10,17 +10,17 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Timescale Customization in Vue Scheduler
 
-The time slots are usually the time cells that are displayed on the Day, Week and Work Week views of both the calendar (to the left most position) and timeline views (at the top position). The [`timeScale`](../api/schedule/timeScale) property allows you to control and set the required time slot duration for the work cells displayed on Scheduler. It includes the following sub-options such as,
+The time slots are usually the time cells displayed in the Day, Week, and Work Week views of both the calendar (leftmost position) and timeline views (top position). The [`timeScale`](../api/schedule/timeScale) property allows you to control and set the required time-slot duration for the work cells displayed in the Scheduler. It includes the following sub-options:
 
-* [`enable`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#enable) - When set to `true`, allows the Scheduler to display the appointments accurately against the exact time duration. If set to `false`, all the appointments of a day will be displayed one below the other with no grid lines displayed. Its default value is `true`.
-* [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#interval) – Defines the time duration on which the time axis to be displayed either in 1 hour or 30 minutes interval and so on. It accepts the values in minutes and defaults to 60.
-* [`slotCount`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#slotcount) – Decides the number of slot count to be split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour(each slot depicting 30 minutes duration).
+* [`enable`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#enable) - When set to `true`, allows the Scheduler to display appointments accurately against the exact time duration. If set to `false`, all the appointments of a day are displayed one below the other with no grid lines. Its default value is `true`.
+* [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#interval) - Defines the time duration at which the time axis is displayed, such as 1 hour or 30 minutes. It accepts values in minutes and defaults to 60.
+* [`slotCount`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#slotcount) - Decides how many slots are split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour, with each slot depicting 30 minutes.
 
->Note: The upper limit for rendering slots within a single day, utilizing the **interval** and **slotCount** properties of the **timeScale**, stands at 1000. This constraint aligns with the maximum **colspan** value permissible for the **table** element, also capped at 1000. This particular restriction is relevant exclusively to the `TimelineDay`, `TimelineWeek` and `TimelineWorkWeek` views.
+> Note: The upper limit for rendering slots within a single day, using the **interval** and **slotCount** properties of **timeScale**, is 1000. This constraint aligns with the maximum **colspan** value permissible for the **table** element, which is also capped at 1000. This restriction applies only to the `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.
 
 ## Setting different time slot duration
 
-The [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#slotcount) properties can be used together on the Scheduler to set different time slot duration which is depicted in the following code example. Here, six time slots together represents an hour.
+The [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#slotcount) properties can be used together in the Scheduler to set a different time-slot duration, as shown in the following code example. Here, six time slots together represent an hour.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -35,11 +35,11 @@ The [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeS
 
 ## Customizing time cells using template
 
-The [`timeScale`](../api/schedule/timeScale) property also supports templates that allow complete customization of time slot appearance. These templates can be defined using either strings or HTML elements and have access to time-related details.
+The [`timeScale`](../api/schedule/timeScale) property also supports templates that allow complete customization of time-slot appearance. These templates can be defined using either strings or HTML elements and have access to time-related details.
 
 
-* [`majorSlotTemplate`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#majorslottemplate) - The template option to be applied for major time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
-* [`minorSlotTemplate`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#minorslottemplate) - The template option to be applied for minor time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
+* [`majorSlotTemplate`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#majorslottemplate) - The template option applied to major time slots. The template accepts either a string or an HTMLElement as the template design, and the parsed design is displayed on the time cells. The time details can be accessed within this template.
+* [`minorSlotTemplate`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeScale#minorslottemplate) - The template option applied to minor time slots. The template accepts either a string or an HTMLElement as the template design, and the parsed design is displayed on the time cells. The time details can be accessed within this template.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -86,4 +86,4 @@ To disable the current time indicator, set the [`showTimeIndicator`](../api/sche
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs4" %}
 
-> For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

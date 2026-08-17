@@ -46,7 +46,7 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/data-bind-cs1" %}
 {% endif %}
 
-> By default, `DataManager` uses `JsonAdaptor` for binding local data.
+> Note: By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 Bind different field names to the default event fields and include additional custom fields in the event object collection, as described [here](./appointments#event-fields).
 
@@ -59,8 +59,8 @@ The Scheduler supports binding to remote data services. To implement this:
 3. Assign the `DataManager` instance to the [`dataSource`](../api/schedule/eventSettings#datasource) property within `eventSettings`.
 
 ### Using ODataV4Adaptor
-s
-[ODataV4](https://www.odata.org/documentation) is a standardized protocol for creating and consuming data. To connect with ODataV4 service endpoints, use the `ODataV4Adaptor` within the `DataManager`. Refer to the following code example to retrieve data from an ODataV4 service using the DataManager. 
+
+[ODataV4](https://www.odata.org/documentation) is a standardized protocol for creating and consuming data. To connect with ODataV4 service endpoints, use the `ODataV4Adaptor` within the `DataManager`. Refer to the following code example to retrieve data from an ODataV4 service using the DataManager.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -182,7 +182,7 @@ let scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 ```
 
-> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+> Refer to the Scheduler CRUD actions section for the controller method definition.
 
 ## Passing additional parameters to the server
 
@@ -251,7 +251,7 @@ You can handle server-side exceptions and error messages on the client-side usin
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/data-bind-cs6" %}
 {% endif %}
 
-> The [`actionFailure`](../api/schedule#actionfailure) event triggers when the server returns errors or when an exception occurs while processing any Scheduler CRUD action.
+> Note: The [`actionFailure`](../api/schedule#actionfailure) event triggers when the server returns errors or when an exception occurs while processing any Scheduler CRUD action.
 
 ## Scheduler CRUD actions
 
@@ -416,4 +416,4 @@ A custom Google Calendar URL is assigned to the `DataManager` and then to the Sc
 
 [Salesforce Integration](./how-to/salesforce-integration.md)
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to know how to present and manipulate data.

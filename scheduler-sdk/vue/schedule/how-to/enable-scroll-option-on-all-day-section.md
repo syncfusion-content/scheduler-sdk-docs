@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Enable Scroll Option on All-Day Section in Vue Scheduler
 
-When a large number of appointments are added to the all-day row, it becomes difficult to view all of them within the available space. In such cases, you can enable the scroll option for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/vue/documentation/api/schedule#enablealldayscroll) property to `true`, as its default value is `false`. When this property is enabled, an individual scroll bar appears for the all-day row once it reaches its maximum allowed height.
+When many appointments are added to the all-day row, it can be difficult to view them within the available space. In such cases, enable scrolling for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/vue/documentation/api/schedule#enablealldayscroll) property to `true`. By default, this property is `false`. When enabled, a separate scroll bar appears for the all-day row after it reaches its maximum allowed height.
 
 > Note: This property is not applicable when the Scheduler height is set to `auto`.
 

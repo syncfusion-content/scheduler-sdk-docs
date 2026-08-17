@@ -14,16 +14,16 @@ By default, row heights in **Timeline views** of the Vue Schedule component are 
 
 The **row auto height** feature dynamically increases the height of Scheduler rows based on the number of overlapping appointments. This allows all events within the same time range to be displayed without using the “+n more” indicator.
 
-To enable auto row height adjustments on Scheduler Timeline views and Month view, set `true` to the [`rowAutoHeight`](../api/schedule#rowautoheight) property whose default value is `false`.
+To enable auto row height adjustments in Scheduler Timeline views and Month view, set the [`rowAutoHeight`](../api/schedule#rowautoheight) property to `true`. Its default value is `false`.
 
-> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
+> This auto row height adjustment applies only to Timeline views and the calendar Month view.
 
-Now, let's see how it works on those applicable views with examples.
+Now, let's see how it works in those applicable views with examples.
 
 ## Calendar month view
 
-In the Calendar Month view, each date cell has a fixed height by default. When multiple appointments overlap, excess events are collapsed and represented by a “+n more” indicator.
-When [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) is enabled, the height of each date row expands automatically to accommodate all appointments in that cell. This ensures that all events are visible within the month view without requiring additional interaction.
+In the Month view, each date cell has a fixed height by default. When multiple appointments overlap, excess events are collapsed and represented by a “+n more” indicator.
+When [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) is enabled, the height of each date row expands automatically to accommodate all appointments in that cell. This ensures that all events are visible within the Month view without requiring additional interaction.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -38,7 +38,7 @@ When [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule
 
 ## Timeline views
 
-When the feature [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) is enabled in Timeline views, the row height gets auto-adjusted based on the number of overlapping events occupied on the same time range, which is demonstrated in the following example.
+When the [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) feature is enabled in Timeline views, the row height is adjusted automatically based on the number of overlapping events in the same time range, as demonstrated in the following example.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -71,7 +71,7 @@ The following example shows how the auto row adjustment feature works on timelin
 
 ## Appointments occupying entire cell
 
-By default, with the feature [`rowAutoHeight`](../api/schedule#rowautoheight), there will be a space in the bottom of the cell when appointment is rendered. To avoid this space, we can set true to the property [`ignoreWhitespace`](../api/schedule/eventSettings#ignorewhitespace) with in [`eventSettings`](../api/schedule/eventSettings) whereas its default property value is false. The following example demonstrates how appointments fill the available cell space by ignoring the default bottom whitespace.
+By default, when the [`rowAutoHeight`](../api/schedule#rowautoheight) feature is enabled, there is space at the bottom of the cell when an appointment is rendered. To avoid this space, set the [`ignoreWhitespace`](../api/schedule/eventSettings#ignorewhitespace) property to `true` within [`eventSettings`](../api/schedule/eventSettings); its default value is `false`. The following example demonstrates how appointments fill the available cell space by ignoring the default bottom whitespace.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -84,6 +84,6 @@ By default, with the feature [`rowAutoHeight`](../api/schedule#rowautoheight), t
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/ignore-whitespace-cs1" %}
 
-**Note**: The property [`ignoreWhitespace`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#ignorewhitespace) will be applicable only when [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler
+**Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#ignorewhitespace) property is applicable only when the [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 
-> For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

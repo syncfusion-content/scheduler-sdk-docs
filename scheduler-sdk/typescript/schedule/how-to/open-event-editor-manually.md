@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Open Event Editor Programmatically in TypeScript Scheduler
 
-The Scheduler control provides flexibility for event creation and editing. By default, the editor opens when double-clicking on cells or appointments. However, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
+The Scheduler control provides flexibility for event creation and editing. By default, the editor opens when you double-click cells or appointments. However, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
 
 ## Open editor window externally
 

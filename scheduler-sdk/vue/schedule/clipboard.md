@@ -10,10 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Clipboard in Vue Scheduler
 
-The Clipboard functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
-To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/vue/documentation/api/schedule#allowclipboard) property to **true**.
+The Clipboard functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle. To activate the clipboard feature in the Scheduler, set the [`allowClipboard`](https://ej2.syncfusion.com/vue/documentation/api/schedule#allowclipboard) property to `true`.
 
->Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/vue/documentation/api/schedule#allowkeyboardinteraction) property must also be set to **true** for clipboard operations to function correctly.
+> Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/vue/documentation/api/schedule#allowkeyboardinteraction) property must also be set to `true` for clipboard operations to function correctly.
 
 ## Cut, Copy and Paste using Keyboard
 
@@ -40,7 +39,7 @@ When an appointment is selected, pressing **Ctrl+C** copies it, while **Ctrl+X**
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs1" %}
 
->Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
+> Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
 ## Cut, Copy, and Paste using Context Menu
 
@@ -52,7 +51,7 @@ Utilize these public methods to manage appointments programmatically in Syncfusi
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|
 | [`copy`](https://ej2.syncfusion.com/vue/documentation/api/schedule#copy)   | None                           | Duplicate the selected appointment for reuse.                                                   |
 | [`cut`](https://ej2.syncfusion.com/vue/documentation/api/schedule#cut)    | None                           | Remove the selected appointment from its current slot for moving.                               |
-| [`paste`](https://ej2.syncfusion.com/vue/documentation/api/schedule#paste)  | targetElement (Scheduler's work-cell) | Insert the copied or cut appointment into the specified time slot.                              |
+| [`paste`](https://ej2.syncfusion.com/vue/documentation/api/schedule#paste)  | targetElement (Scheduler work cell) | Insert the copied or cut appointment into the specified time slot.                               |
 
 These methods enable direct programmatic control over appointment manipulation, replicating the behavior of context menu actions and keyboard shortcuts.
 
@@ -80,7 +79,7 @@ The following workflow outlines how data copied from an external source, such as
 
 By using the `beforePaste` event, the copied details can be intercepted and updated before insertion to match required field mappings, such as adjusting start and end times or adding additional descriptive fields.
 
->Note: Ensure that the field mapping matches with the fields in the scheduler.
+> Note: Ensure that the field mapping matches the fields in the Scheduler.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -95,4 +94,4 @@ By using the `beforePaste` event, the copied details can be intercepted and upda
 
 
 
->  For more information on Schedule component capabilities, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview) for more usage scenarios.
+> For more information on Schedule component capabilities, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview) for more usage scenarios.

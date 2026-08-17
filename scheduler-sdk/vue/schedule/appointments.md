@@ -64,6 +64,8 @@ Apply the following CSS customization to prevent the display of all‑day row ap
 
 ```
 
+  This customization applies only to the all-day row header area and does not remove the all-day appointments themselves.
+
 Expand All‑Day Appointments on Initial Load
 
 A large number of all‑day appointments can be expanded initially using the [`dataBound`](../api/schedule#databound) event, avoiding the need for manual expansion.
@@ -81,7 +83,7 @@ A large number of all‑day appointments can be expanded initially using the [`d
 
 ## Customize the Rendering of the Spanned Events
 
-By default, Scheduler will renders the spanned events (appointment with more than 24 hours duration) in the all-day row by setting `AllDayRow` will the default type renders to the [`spannedEventPlacement`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#spannedeventplacement) option within the [`eventSettings`](../api/schedule/eventSettings) property. Now we can customize rendering of the that events inside the work cells itself by modifying the [`spannedEventPlacement`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#spannedeventplacement) option as `TimeSlot`. In this following example, shows how to render the spanned appointments inside the work cells as follows.
+By default, Scheduler renders spanned events (appointments with more than 24 hours duration) in the all-day row by setting the [`spannedEventPlacement`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#spannedeventplacement) option within the [`eventSettings`](../api/schedule/eventSettings) property to `AllDayRow`. You can customize the rendering of these events inside the work cells by setting [`spannedEventPlacement`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#spannedeventplacement) to `TimeSlot`. The following example shows how to render spanned appointments inside the work cells.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -96,7 +98,7 @@ By default, Scheduler will renders the spanned events (appointment with more tha
 
 ## Recurring Events
 
-Represents an appointment created for a specific time interval and occurring repeatedly on a daily, weekly, monthly, or yearly basis based on the provided recurrence rule. Recurring events are indicated by a repeat marker at the bottom‑right of the appointment.position.
+Represents an appointment created for a specific time interval and occurring repeatedly on a daily, weekly, monthly, or yearly basis based on the provided recurrence rule. Recurring events are indicated by a repeat marker at the bottom-right of the appointment.
 
 ### Creating a Recurring Event
 
@@ -117,7 +119,7 @@ The following example shows how to create a recurring event with a specific recu
 
 Specific instances of a recurrence series can be excluded by adding dates to the [`recurrenceException`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceexception)  field. Dates must be in ISO date‑time format without hyphens in the date portion.
 
-For example, 22nd February 2018 can be represented as 20180222. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
+For example, 22 February 2018 can be represented as 20180222. Also, when the time part is represented in UTC format, add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -132,7 +134,7 @@ For example, 22nd February 2018 can be represented as 20180222. Also, the time p
 
 ### Editing an occurrence from a Series
 
-To dynamically edit a particular occurrence from an event series and display it on the initial load of Scheduler, the edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`recurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) field defined to it. The [`recurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) field of edited occurrence usually maps the ID value of the parent event.
+To dynamically edit a particular occurrence from an event series and display it on the initial load of Scheduler, the edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`recurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) field defined for it. The [`recurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) field of the edited occurrence usually maps to the ID value of the parent event.
 
 In the example below, a recurring instance displayed on January 30, 2018 is edited with different timings. The parent recurring event (January 28, 2018 to February 4, 2018) excludes this occurrence by adding the corresponding date to [`recurrenceException`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceexception). The edited occurrence is created as a new event and carries [`recurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) pointing to the parent event's [`Id`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#id) value.
 
@@ -149,7 +151,7 @@ In the example below, a recurring instance displayed on January 30, 2018 is edit
 
 ### Edit only the Current and Following Events
 
-To edit only the current and following events enable the property [`editFollowingEvents`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#editfollowingevents) within [`eventSettings`](../api/schedule/eventSettings) property. The edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`followingID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#followingid) field defined to it. The [`followingID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#followingid) field of edited occurrence usually maps the ID value of the immediate parent event.
+To edit only the current and following events, enable the [`editFollowingEvents`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#editfollowingevents) property within the [`eventSettings`](../api/schedule/eventSettings) property. The edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`followingID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#followingid) field defined for it. The [`followingID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#followingid) field of the edited occurrence usually maps to the ID value of the immediate parent event.
 
 In this example, a recurring instance that displays on the date 30th Jan 2018 and its following dates are edited with different subject. Therefore, this particular date and its following dates are excluded from the parent recurring event that repeats from 28th January 2018 to 4th February 2018. This can be done by updating the [`recurrenceRule`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrencerule) field with the until date value on the parent event. Also, the edited events which is created as a new event should carry the [`followingID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#followingid) field pointing to the immediate parent event's [`Id`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#id) value.
 
@@ -179,11 +181,11 @@ There are four repeat types available namely,
 * **Monthly** - Creates the recurring instances on monthly basis for the selected months and other provided recurrence criteria.
 * **Yearly** - Creates the recurring instances on yearly basis.
 
-### Recurrence properties
+## Recurrence Properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications.
+The properties used to create recurrence appointments with their respective time periods are listed in the following table. The valid rule string can be referred from [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications.
 
- > Refer [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+> Refer to the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications for valid recurrence rule strings.
 
 | Property   | Purpose                                                                                                                                                                                                                                                                                                                                                                                                | Example                                                 |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
@@ -250,11 +252,11 @@ Built‑in validation is applied to recurring appointments during creation, edit
 | Some months have fewer than the selected date. For these months, the occurrence will fall on the last date of the month.                                        | When you try to create a recurring appointment on 31st of every month, where few months won’t have 31 days and in this scenario, you will get this alert.                                                                                                                                      |
 | Two occurrences of the same event cannot occur on the same day.                                                                                                 | This validation will occur, when you try to edit or move any single occurrence to some other date, where another occurrence of the same event is already present.                                                                                                                              |
 
-## Event fields
+## Event Fields
 
-The Scheduler dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://ej2.syncfusion.com/vue/documentation/api/schedule/field). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
+The Scheduler dataSource usually holds the event instances, where each instance includes a collection of appropriate [fields](https://ej2.syncfusion.com/vue/documentation/api/schedule/field). It is mandatory to map these fields to the equivalent database fields when remote data is bound. When local JSON data is bound, the field names defined within the instances need to be mapped correctly to the Scheduler event fields.
 
-> To create an event on Scheduler, it is enough to define the [`startTime`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#starttime) and [`endTime`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#endtime). Also [`id`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#id) field becomes mandatory to process CRUD actions on appropriate events.
+> To create an event in Scheduler, it is enough to define the [`startTime`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#starttime) and [`endTime`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#endtime). Also, the [`id`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#id) field becomes mandatory to process CRUD actions on the events.
 
 ### Built-in Fields
 
@@ -318,9 +320,9 @@ In following example, the Subject field in event editor will display its appropr
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs9" %}
 
-## Adding Custom fields
+### Adding Custom Fields
 
-Apart from the default Scheduler fields, the user can include 'n' number of custom fields for appointments. The following code example shows how to include two custom fields namely **Status** and **Priority** within event collection. It is not necessary to bind the custom fields within the [`eventSettings`](../api/schedule/eventSettings). However, those additional fields can be accessed easily, for internal processing as well as from application end.
+Apart from the default Scheduler fields, the user can include any number of custom fields for appointments. The following code example shows how to include two custom fields, namely **Status** and **Priority**, within the event collection. It is not necessary to bind the custom fields within the [`eventSettings`](../api/schedule/eventSettings). However, those additional fields can be accessed easily for internal processing as well as from the application end.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -333,9 +335,9 @@ Apart from the default Scheduler fields, the user can include 'n' number of cust
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs10" %}
 
-## Customize the order of the overlapping events
+## Customize the Order of the Overlapping Events
 
-By default, the scheduler will render the overlapping events based on the start and end time. Now we can customize the order of the overlapping events based on the custom fields by using the [`sortComparer`](../api/schedule/eventSettings#sortcomparer) property grouped under the [`eventSettings`](../api/schedule/eventSettings) property. The following code example shows how to sort the appointments based on the custom field as follows.
+By default, the Scheduler renders overlapping events based on the start and end time. You can customize the order of the overlapping events based on custom fields by using the [`sortComparer`](../api/schedule/eventSettings#sortcomparer) property within the [`eventSettings`](../api/schedule/eventSettings) property. The following code example shows how to sort appointments based on a custom field.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -356,7 +358,7 @@ When this property is set to `false`, any new or updated events that overlap wit
 
 When the [`allowOverlap`](https://ej2.syncfusion.com/vue/documentation/api/schedule#allowoverlap) property is set to `false`, the scheduler behaves as follows:
 
-**Initial Load Behavior:**  Upon initial loading, the scheduler prioritizes non-overlapping events based on their duration and all-day status. Events with longer durations and those marked as all-day receive higher priority to ensure there are no overlaps.
+**Initial Load Behavior:** Upon initial loading, the Scheduler prioritizes non-overlapping events based on their duration and all-day status. Events with longer durations and those marked as all-day receive higher priority to avoid overlaps.
 
 **Recurring Appointments:**  If there are conflicts within a recurring appointment series during the initial load, the scheduler will display all occurrences of the series, except for the conflicting instance.
 
@@ -564,24 +566,24 @@ There are scenarios where you want to open the editor filled with data on newly 
 
 ## Inline Appointment
 
-In Scheduler, another easier way for `adding` or `editing` the appointment’s subject alone can be achieved by using the inline Add/Edit support. It allows the user to add and edit the appointments inline. To get familiar with the inline Add mode, single click on any of the Scheduler cells or press enter key on the selected cells.
+In Scheduler, another way to add or edit only the appointment’s subject is through inline add/edit support. It allows the user to add and edit appointments inline. To use inline add mode, single-click any Scheduler cell or press the Enter key on the selected cells.
 
-When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it, requiring the user to enter the subject of an appointment. Once the subject is entered, the appointment will be saved on pressing the enter key.
+When inline adding mode is on, a text box is created within the clicked Scheduler cells with a blinking cursor, requiring the user to enter the subject of an appointment. Once the subject is entered, the appointment is saved when the Enter key is pressed.
 
-To enable the inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment will be updated on pressing the enter key.
+To enable inline edit mode, single-click an existing appointment’s subject so the user can edit it. The edited subject is updated when the Enter key is pressed.
 
-The inline option can be enabled/disabled on the Scheduler by using the allowInline API, whereas its default value is set to false.
+The inline option can be enabled or disabled in Scheduler by using the [`allowInline`](../api/schedule#allowinline) API, and its default value is `false`.
 
-While using the [`allowInline`](../api/schedule#allowinline) the [`showQuickInfo`](https://ej2.syncfusion.com/vue/documentation/api/schedule#showquickinfo) will be turned off. The `quickPopup` will not show on clicking the work cell or clicking the appointment when the `allowInline` property is set to `true`.
-In work cells, select multiple cells using keyboard, and then press enter key. The appointment wrapper will be created, and focus will be on the subject field. Also, consider the overlapping scenarios when creating an inline event.
+While using [`allowInline`](../api/schedule#allowinline), [`showQuickInfo`](https://ej2.syncfusion.com/vue/documentation/api/schedule#showquickinfo) is turned off. The `quickPopup` does not show when clicking a work cell or an appointment while [`allowInline`](../api/schedule#allowinline) is `true`.
+In work cells, select multiple cells using the keyboard and then press the Enter key. The appointment wrapper is created, and focus is placed on the subject field. Also, consider overlap scenarios when creating an inline event.
 
 ### Normal Event
 
-While editing appointments, single-click the appointment subject, the `editable` option will be enabled in UI and the cursor will focus at the end of the text. Inline editing will be considered for all possible views.
+While editing appointments, single-click the appointment subject and the `editable` option is enabled in the UI, with the cursor focused at the end of the text. Inline editing is supported in all available views.
 
 ### Recurrence Event
 
-While editing the occurrence from the recurrence series, it is only possible to edit a `single occurrence`, not an entire series.
+When editing an occurrence from a recurrence series, it is only possible to edit a single occurrence, not the entire series.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -596,7 +598,7 @@ While editing the occurrence from the recurrence series, it is only possible to 
 
 ## Appointment Resizing
 
-Another way of rescheduling an appointment can be done by resizing it through either of its handlers. To work with resizing functionality, it is necessary to inject the module `Resize` and make sure that [`allowResizing`](../api/schedule#allowresizing) property is set to `true`.
+Another way to reschedule an appointment is by resizing it through either of its handlers. To work with resizing functionality, inject the `Resize` module and make sure that the [`allowResizing`](../api/schedule#allowresizing) property is set to `true`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -611,7 +613,7 @@ Another way of rescheduling an appointment can be done by resizing it through ei
 
 ### Disable the Resize Action
 
-By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set `false` to the [`allowResizing`](../api/schedule#allowresizing) property.
+By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda views. To disable this event resizing action, set the [`allowResizing`](../api/schedule#allowresizing) property to `false`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -626,7 +628,7 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
 
 ### Disable Scrolling on Resize Action
 
-By default, while resizing an appointment, when its handler reaches the extreme edges of the Scheduler, scrolling action will takes place along with event resizing. To prevent this scrolling action, set `false` to [`scroll`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resizeEventArgs#scroll) value within the [`resizeStart`](../api/schedule#resizestart) event.
+By default, while resizing an appointment, when its handler reaches the extreme edges of the Scheduler, scrolling takes place along with event resizing. To prevent this scrolling action, set the [`scroll`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resizeEventArgs#scroll) value to `false` within the [`resizeStart`](../api/schedule#resizestart) event.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -641,7 +643,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 
 ### Controlling Scroll Speed While Resizing an Event
 
-The speed of the scrolling action while resizing an appointment to the Scheduler edges, can be controlled within the [`resizeStart`](../api/schedule#resizestart) event by setting the desired value to the [`scrollBy`](https://ej2.syncfusion.com/vue/documentation/api/schedule/scrollOptions#scrollby) option.
+The speed of the scrolling action while resizing an appointment to the Scheduler edges can be controlled within the [`resizeStart`](../api/schedule#resizestart) event by setting the desired value to the [`scrollBy`](https://ej2.syncfusion.com/vue/documentation/api/schedule/scrollOptions#scrollby) option.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -656,7 +658,7 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 
 ### Setting Resize Time Interval
 
-By default, while resizing an appointment, it extends or shrinks at an interval of 30 minutes. To change this default resize interval, set appropriate values to [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resizeEventArgs#interval) option within the [`resizeStart`](../api/schedule#resizestart) event.
+By default, while resizing an appointment, it extends or shrinks at an interval of 30 minutes. To change this default resize interval, set the appropriate value to the [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resizeEventArgs#interval) option within the [`resizeStart`](../api/schedule#resizestart) event.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -678,7 +680,7 @@ The look and feel of Scheduler events can be customized in the following ways:
 
 ### Using Template
 
-Any kind of text, images and links can be added to customize the look of the events. The user can format and change the default appearance of the events by making use of the `template` option available within the [`eventSettings`](../api/schedule/eventSettings) property.
+Any kind of text, images, and links can be added to customize the look of the events. The user can format and change the default appearance of the events by using the `template` option available within the [`eventSettings`](../api/schedule/eventSettings) property.
 
 Check out the following video to learn how to customize events using templates in the Vue Scheduler:
 
@@ -701,7 +703,7 @@ The following code example customizes the appointment's default color and time f
 
 ### Using eventRendered Event
 
-The [`eventRendered`](https://ej2.syncfusion.com/vue/documentation/api/schedule#eventrendered) event triggers before the appointment renders on the Scheduler. Therefore, this client-side event can be utilized to customize the look of events based on any specific criteria, before rendering them on the scheduler.
+The [`eventRendered`](https://ej2.syncfusion.com/vue/documentation/api/schedule#eventrendered) event triggers before the appointment renders in the Scheduler. Therefore, this client-side event can be used to customize the look of events based on specific criteria before rendering them in the Scheduler.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

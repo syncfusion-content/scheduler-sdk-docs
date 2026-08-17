@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Recurrence Editor in TypeScript Scheduler
 
-The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Tt can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
+The Recurrence Editor is integrated into the Scheduler's editor window by default to generate recurrence rules for events. It can also be used as a standalone component for recurrence-related workflows.
 
-> All the valid recurrence rule string mentioned in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
+> All valid recurrence rule strings mentioned in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specification apply to the Recurrence Editor.
 
 ## Customizing the repeat type option in editor
 
@@ -59,20 +59,20 @@ The Recurrence editor can be customized to display only the specific repeat opti
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs1" %}
 {% endif %}
 
-The other properties available in recurrence editor are tabulated below,
+Other recurrence editor properties are listed below:
 
 | Properties | Type | Description |
 |------------|------|-------------|
-| firstDayOfWeek | number | Sets the first day of the week on recurrence editor.|
-| startDate | Date | Sets the start date from which date the recurrence event starts. |
-| dateFormat | string | Sets the specific date format on recurrence editor.|
-| locale | string | Sets the locale to be applied on recurrence editor.|
-| cssClass | string | Allows styling to be applied on recurrence editor with custom class names.|
-| enableRtl | boolean | Allows recurrence editor to render in RTL mode.|
-| minDate | Date | Sets the minimum date on recurrence editor.|
-| maxDate | Date | Sets the maximum date on recurrence editor.|
-| value | string | Sets the recurrence rule value on recurrence editor. |
-| selectedType | number | Sets the specific repeat type on the recurrence editor.|
+| firstDayOfWeek | number | Sets the first day of the week for the recurrence editor. |
+| startDate | Date | Sets the start date for recurrence calculations. |
+| dateFormat | string | Sets the date format used in the recurrence editor. |
+| locale | string | Sets the locale for the recurrence editor. |
+| cssClass | string | Applies custom CSS classes to the recurrence editor. |
+| enableRtl | boolean | Renders the recurrence editor in RTL mode when true. |
+| minDate | Date | Sets the minimum selectable date. |
+| maxDate | Date | Sets the maximum selectable date. |
+| value | string | Gets or sets the recurrence rule string value. |
+| selectedType | number | Sets the currently selected repeat type. |
 
 ## Customizing the End Type Option in Editor
 
@@ -113,9 +113,9 @@ The Recurrence editor can be customized to display only the specific end options
 
 ## Accessing the recurrence rule string
 
-The recurrence rule is generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
+The Recurrence Editor generates a recurrence rule from the selected options. The generated rule follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specification and can be used as the Scheduler event's `recurrenceRule` value.
 
-The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event that triggers every time the fields are modified. The generated recurrence value can be accessed through the [`value`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#value) option in the event argument.
+Use the Recurrence Editor's [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event to read the generated rule; the rule value is available via the event argument's `value` option.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -144,9 +144,9 @@ The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs1" %}
 {% endif %}
 
-## Set specific value on recurrence editor
+## Set a specific value on the recurrence editor
 
-The Recurrence editor can be displayed with specific options loaded initially based on a provided rule string. The fields of the recurrence editor will change their values accordingly when you provide a particular rule through the `setRecurrenceRule` method.
+You can initialize the Recurrence Editor with a specific rule string. Call `setRecurrenceRule` to populate the editor fields according to the provided recurrence rule.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -177,7 +177,7 @@ The Recurrence editor can be displayed with specific options loaded initially ba
 
 ## Recurrence date generation
 
-The `recurrenceRule` of an event can be parsed to generate the date instances on which that particular event will occur, using the `getRecurrenceDates` method. It generates the dates based on the `recurrenceRule` that we provide. The parameters to be provided for `getRecurrenceDates` method are as follows.
+Use `getRecurrenceDates` to parse an event's `recurrenceRule` and generate the occurrence dates. The method generates dates based on the provided recurrence rule. The `getRecurrenceDates` parameters are:
 
 | Field name | Type | Description |
 |------------|------|-------------|
@@ -214,15 +214,15 @@ The `recurrenceRule` of an event can be parsed to generate the date instances on
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs3" %}
 {% endif %}
 
-## Recurrence date generation in server-side
+## Generate recurrence dates on server-side
 
-Recurrence date instances can also be generated from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referenced from application end to handle this date generation process.
+You can also generate recurrence dates server-side by using the `RecurrenceHelper` class (or a similar server-side implementation). This allows you to reproduce the recurrence logic outside the browser.
 
-> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step-by-step procedure to achieve date generation in server-side.
+> See this KB article for a server-side parsing example: https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side
 
-## Restrict date generation with specific count
+## Restrict date generation with a specific count
 
-If the rule is given in the "NEVER ENDS" category, the maximum count can be specified to stop the date generation starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
+If a rule is in the "NEVER ENDS" category, specify `maximumCount` in `getRecurrenceDates` to limit the number of generated dates starting from the provided `startDate`.
 
 {% if page.publishingplatform == "typescript" %}
 

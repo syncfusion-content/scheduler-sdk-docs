@@ -23,14 +23,11 @@ When the [height](https://ej2.syncfusion.com/react/documentation/api/schedule#he
 > **Note:** By default, the Scheduler is assigned with `auto` values for both height and width properties, making it responsive to its parent container.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs43/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -43,14 +40,11 @@ The Scheduler height and width will render exactly as per the given pixel values
 > **Note:** Pixel values can be provided either as numbers (for example, `500`) or as strings with a `px` suffix (for example, `'500px'`).
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs44/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -63,14 +57,11 @@ When the height and width of the Scheduler are specified as percentages, the Sch
 > **Tip:** Percentage-based dimensions are useful for responsive designs that need to adapt to different screen sizes.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs45/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         

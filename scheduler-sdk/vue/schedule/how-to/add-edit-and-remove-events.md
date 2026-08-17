@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Add, Edit, and Remove Events in Vue Scheduler
 
-CRUD actions can be manually performed on events using [`addEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#saveevent) and [`deleteEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#deleteevent) methods. These methods allow creating new events, updating existing ones, and removing events from the Schedule.
+CRUD actions can be performed on events using the [`addEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#deleteevent) methods. These methods let you create new events, update existing ones, and remove events from the Scheduler.
 
 ## Normal Event
 
