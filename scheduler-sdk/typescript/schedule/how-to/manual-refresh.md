@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Programmatically Refresh Layout in TypeScript Scheduler
 
-In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](../../api/schedule#refreshlayout) public method.  The following example code explains to know how to use the refreshLayout method.
+In the Scheduler, you can refresh the layout manually without re-rendering the DOM element by using the [`refreshLayout`](../../api/schedule#refreshlayout) public method. The following code example explains how to use the `refreshLayout` method.
 
 {% if page.publishingplatform == "typescript" %}
 

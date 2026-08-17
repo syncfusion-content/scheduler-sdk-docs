@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Enable Scroll Option on All-Day Section in TypeScript Scheduler
 
-When the all-day row contains a large number of appointments, viewing all of them can become difficult due to limited space. To address this, enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/documentation/api/schedule#enablealldayscroll) property to `true` (default value is `false`).
+When the all-day row contains a large number of appointments, viewing all of them can become difficult due to limited space. To address this, enable an individual scroller for the all-day row by setting the [`enableAllDayScroll`](https://ej2.syncfusion.com/documentation/api/schedule#enablealldayscroll) property to `true` (the default value is `false`).
 
->Note: This property is not applicable for Scheduler with height `auto`.
+> Note: This property is not applicable for a Scheduler with height `auto`.
 
 {% if page.publishingplatform == "typescript" %}
 

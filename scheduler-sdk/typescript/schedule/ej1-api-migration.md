@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # EJ1 API Migration in TypeScript Scheduler
 
-This topic shows the API equivalent of JS2 Scheduler control to be used, while migrating your project that uses JS1 Scheduler.
+This topic shows the equivalent JS2 Scheduler APIs to use when migrating a project from EJ1 Scheduler.
 
 ## Properties
 
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
-| To change the display of days count in agenda view | **Property:** *daysInAgenda* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`currentView: "Agenda",` <br>`daysInAgenda: 7` <br>`});` | **Property:** *agendaDaysCount* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br>`currentView: 'Agenda',`<br> `agendaDaysCount: 7`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
+| To change the number of days displayed in Agenda view | **Property:** *daysInAgenda* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`currentView: "Agenda",` <br>`daysInAgenda: 7` <br>`});` | **Property:** *agendaDaysCount* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br>`currentView: 'Agenda',`<br>`agendaDaysCount: 7`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Preventing deletion of appointment | **Property:** *allowDelete* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`allowDelete: false`<br>`});` | Not applicable |
 | Allows dragging and dropping of appointments | **Property:** *allowDragAndDrop* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br> `allowDragAndDrop: false`<br>`});` | **Property:**  *allowDragAndDrop* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br>`allowDragAndDrop: false`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Enabling inline editing of appointments | **Property:** *allowInline* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br> `allowInline: true`<br>`});` | Not applicable |
@@ -58,7 +58,7 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 | Show week number | Not Applicable | **Property:** *showWeekNumber* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br> `showWeekNumber: false`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Show weekend days | **Property:** *showWeekend* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`showWeekend: false`<br>`});` | **Property:** *showWeekend* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br> `showWeekend: false`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Setting start hour of the scheduler | **Property:** *startHour* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`startHour:9`<br>`});` | **Property:** *startHour* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br> `startHour:'09:00'`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
-| Setting time mode on scheduler | **Property:** *timeMode* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`timeMode:ej.Schedule.TimeMode.Hour24`<br>`});` | not applicable |
+| Setting time mode on scheduler | **Property:** *timeMode* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`timeMode: ej.Schedule.TimeMode.Hour24`<br>`});` | Not applicable |
 | Setting timezone for scheduler | **Property:** *timeZone* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`timeZone: "UTC -5:00"`<br>`});` | **Property:** *timezone* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br> `timezone:'UTC'`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Views in scheduler | **Property:** *views* <br/> <br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br>`views: ["Day", "Week", "WorkWeek", "Month"]`<br>`});` | **Property:** *views* <br/><br/> `let scheduleObj: Schedule = new Schedule({`<br>`views: ['Day','Week','WorkWeek','Month']`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
 | Width of the scheduler | **Property:** *width* <br/> <br/>  `var scheduleObj = new ej.Schedule($("#Schedule"), {`<br> `width: "100%"`<br>`});` | **Property:** *width* <br/><br/>  `let scheduleObj: Schedule = new Schedule({`<br> `width:'100%'`<br>`});`<br>`scheduleObj.appendTo('#Schedule');` |
@@ -191,4 +191,4 @@ This topic shows the API equivalent of JS2 Scheduler control to be used, while m
 | Fires on rendering of every scheduler elements | **Event:** *queryCellInfo* <br/><br/> `var scheduleObj = new ej.Schedule($("#Schedule"), {` <br> `queryCellInfo: function onQueryCellInfo (args) {}` <br> | **Event:** *renderCell* <br/><br/> `let schedule: Schedule = new Schedule({` <br> `renderCell: function onRenderCell (args) {}` <br> `});` |
 | Fires before the event rendering on UI | Not applicable |  **Event:** *eventRendered* <br/><br/>  `let schedule: Schedule = new Schedule({` <br> `eventRendered: function  onEventRendered (args) {}` <br> `});` |
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to learn how to present and manipulate data.

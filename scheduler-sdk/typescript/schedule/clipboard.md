@@ -14,7 +14,7 @@ The Clipboard functionality in the Scheduler control enhances scheduling efficie
 
 To activate clipboard functionality in the Scheduler, set the [`allowClipboard`](https://ej2.syncfusion.com/documentation/api/schedule#allowclipboard) property to **true**.
 
->Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/documentation/api/schedule#allowkeyboardinteraction) property is set to **true** for proper clipboard functionality through keyboard shortcuts.
+> Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/documentation/api/schedule#allowkeyboardinteraction) property is set to **true** for proper clipboard functionality through keyboard shortcuts.
 
 ## Cut, copy, and paste using keyboard
 
@@ -65,7 +65,7 @@ To perform these operations, select an appointment and press **Ctrl+C** to copy 
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
-## Cut, copy, and paste using context menu
+## Cut, copy, and paste using public methods
 
 You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
 
@@ -75,7 +75,7 @@ Use these public methods to programmatically control appointment operations in t
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|
 | [`copy`](https://ej2.syncfusion.com/documentation/api/schedule#copy)   | None                           | Duplicate the selected appointment for reuse.                                                   |
 | [`cut`](https://ej2.syncfusion.com/documentation/api/schedule#cut)    | None                           | Remove the selected appointment from its current slot for moving.                               |
-| [`paste`](https://ej2.syncfusion.com/documentation/api/schedule#paste)  | targetElement (Scheduler's work-cell) | Insert the copied or cut appointment into the specified time slot.                              |
+| [`paste`](https://ej2.syncfusion.com/documentation/api/schedule#paste)  | targetElement (Scheduler work cell element) | Insert the copied or cut appointment into the specified time slot.                              |
 
 By using these methods, you can programmatically cut, copy, and paste appointments in the scheduler, providing more control over the appointment management process.
 
@@ -114,7 +114,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 
 ## Modifying content before pasting
 
-You can modify the content of an appointment before pasting it by using [`beforePaste`](https://ej2.syncfusion.com/documentation/api/schedule#beforepaste) event accessing the appointment details and making necessary changes.
+You can modify the content of an appointment before pasting it by using the [`beforePaste`](https://ej2.syncfusion.com/documentation/api/schedule#beforepaste) event to access the appointment details and make necessary changes.
 
 The following example demonstrates how to copy content from a Grid control and paste it into the Scheduler. Follow these steps:
 
@@ -125,7 +125,7 @@ The following example demonstrates how to copy content from a Grid control and p
 
 The `beforePaste` event intercepts the appointment data before insertion, allowing you to map Grid fields to Scheduler fields and modify properties as needed.
 
->Note: Ensure that the field mapping matches with the fields in the scheduler.
+> Note: Ensure that the field mapping matches the fields in the Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -161,4 +161,4 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 {% endif %}
 
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to know how to present and manipulate data.
