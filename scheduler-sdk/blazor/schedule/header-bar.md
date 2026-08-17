@@ -9,11 +9,11 @@ documentation: ug
  
 # Header Customization in Blazor Scheduler
 
-The header part of Scheduler can be customized easily with the built-in options available.
+The Scheduler header can be customized with the built-in options.
 
 ## Show or Hide header bar
 
-By default, the header bar holds the date and view navigation options, through which the user can switch between the dates and various views. This header bar can be hidden from the UI by setting `false` to the [`ShowHeaderBar`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowHeaderBar) property. It's default value is `true`.
+By default, the header bar holds the date and view navigation options, which let users switch between dates and views. You can hide the header bar by setting the [`ShowHeaderBar`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowHeaderBar) property to `false`. Its default value is `true`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -50,14 +50,14 @@ By default, the header bar holds the date and view navigation options, through w
 
 ## Toolbar customization
 
-[Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) enables comprehensive toolbar customization to match your application's navigation and filtering requirements. By using the `ScheduleToolBar` component and its child items, you can:
+[Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) supports toolbar customization to match your application's navigation and filtering requirements. By using the `ScheduleToolBar` component and its child items, you can:
 
 - Integrate built-in navigation controls (Previous, Next, Today, Views).
 - Embed custom elements, such as dropdowns and buttons.
 - Rearrange, add, or remove toolbar items to streamline user workflows.
 - Apply adaptive spacing or separators for a responsive layout.
 
-Use these configuration options to deliver an intuitive and branded scheduling experience.
+Use these options to deliver an intuitive and branded scheduling experience.
 
 ### Built-in toolbar items
 
@@ -74,7 +74,7 @@ The Scheduler provides the following built-in toolbar components:
 
 ### Custom toolbar item
 
-For more advanced scenarios, the `ScheduleToolBarCustom` component allows you to add custom content to the toolbar. It supports different item types through the `Type` property to accommodate various UI elements.
+For more advanced scenarios, the `ScheduleToolBarCustom` component lets you add custom content to the toolbar. It supports different item types through the `Type` property.
 
 | Type                | Description                                                                           |
 | ------------------- | ------------------------------------------------------------------------------------- |
@@ -83,11 +83,11 @@ For more advanced scenarios, the `ScheduleToolBarCustom` component allows you to
 | `ItemType.Spacer`   | Adds an adaptive space that pushes subsequent items, creating horizontal separation. |
 | `ItemType.Separator`| Adds a vertical divider line to visually separate groups of toolbar items.            |
 
-N> When adding input elements such as dropdowns or textboxes within `ScheduleToolBarCustom`, the `Type` property must be set to `ItemType.Input` to ensure proper rendering and interaction behavior.
+N> When adding input elements such as dropdowns or textboxes within `ScheduleToolBarCustom`, set the `Type` property to `ItemType.Input` to ensure proper rendering and interaction behavior.
 
-### Configuring Custom Toolbar
+### Configuring custom toolbar
 
-In this comprehensive example, we create a custom toolbar that enhances navigation and adds resource-based filtering within the Blazor Scheduler. The toolbar includes built-in navigation controls (previous/next, date range, and today) along with a custom dropdown for selecting a resource. When the dropdown value changes, the `OnOwnerChange` event updates the `EventQuery` filter, which is bound to both the `ScheduleResource` and the `ScheduleEventSettings`. This dynamic binding ensures the scheduler displays appointments only for the selected resource.
+This example creates a custom toolbar that enhances navigation and adds resource-based filtering in the Blazor Scheduler. The toolbar includes built-in navigation controls (previous, next, date range, and today) along with a custom dropdown for selecting a resource. When the dropdown value changes, the `OnOwnerChange` event updates the `EventQuery` filter, which is bound to both the `ScheduleResource` and the `ScheduleEventSettings`. This binding ensures that the Scheduler displays appointments only for the selected resource.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -174,7 +174,7 @@ In this comprehensive example, we create a custom toolbar that enhances navigati
         };
     }
 
-    private async void OnOwnerChange(ChangeEventArgs<int, OwnerData> args)
+    private void OnOwnerChange(ChangeEventArgs<int, OwnerData> args)
     {
         SelectedOwner = args.Value;
         EventQuery = new Query().Where("OwnerId", "equal", SelectedOwner);
@@ -207,7 +207,7 @@ In this comprehensive example, we create a custom toolbar that enhances navigati
 
 ## How to display the view options within the header bar popup
 
-By default, the header bar holds the view navigation options, through which the user can switch between various views. You can move this view options to the header bar popup by setting `true` to the [`EnableAdaptiveUI`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAdaptiveUI) property.
+By default, the header bar holds the view navigation options, which let users switch between views. You can move these view options to the header bar popup by setting the [`EnableAdaptiveUI`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAdaptiveUI) property to `true`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -249,11 +249,11 @@ The Scheduler with view options within the header bar popup will be rendered as 
 
 ![Displaying Header Bar Popup in Blazor Scheduler](images/blazor-scheduler-header-bar-popup.webp)
 
-N> Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
+N> Refer [here](./resources#adaptive-ui-in-desktop) to learn more about adaptive UI in the resources scheduler.
 
 ## Date header customization
 
-The Scheduler UI that displays the date text on all views are considered as the date header cells. You can customize the date header cells of Scheduler using [`DateHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate ). The [`DateHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate) option is used to customize the date header cells of day, week and work-week views.
+The cells that display the date text in Scheduler views are called date header cells. You can customize them by using [`DateHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate). This option is used to customize the date header cells in day, week, and work-week views.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -348,9 +348,9 @@ The Scheduler UI that displays the date text on all views are considered as the 
 
 ![Date Header Customization in Blazor Scheduler](images/blazor-scheduler-customize-dateheader.webp)
 
-### Customization using OnRenderCell event
+### Customization using `OnRenderCell` event
 
-The date header can be customized by using [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event. In the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell), the argument `RenderCellEventArgs` returns the `ElementType` as `DateHeader` when the date header is rendering.
+You can also customize the date header by using the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event. In `RenderCellEventArgs`, the `ElementType` value is `DateHeader` when the date header is rendered.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -405,9 +405,9 @@ The date header can be customized by using [`OnRenderCell`](https://help.syncfus
 
 ## Customizing the date range text
 
-The [`dateRangeTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate) option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the [`dateRangeTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate) option to override the default text and specify your own custom text to be displayed.
+The [`dateRangeTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate) option lets you customize the date range text displayed in the Scheduler. By default, the text is based on the current view, but you can override it with your own content.
 
-The [`dateRangeTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate) property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+The [`dateRangeTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate) property includes `startDate`, `endDate`, and `currentView` options.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -447,7 +447,7 @@ The [`dateRangeTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 
 ## TimelineYear header customization
 
-The day header cells and month header cells can be customized in the TimelineYear view of the Scheduler using [`DayHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DayHeaderTemplate) and [`MonthHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_MonthHeaderTemplate). The [`DayHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DayHeaderTemplate) option is used to customize the day header cells of the TimelineYear view in both Vertical and Horizontal orientations. The [`MonthHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_MonthHeaderTemplate) option is used to customize the month header cells of the TimelineYear view in both Vertical and Horizontal orientations.
+The day header cells and month header cells can be customized in the TimelineYear view by using [`DayHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DayHeaderTemplate) and [`MonthHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_MonthHeaderTemplate). These templates customize the day and month header cells in both vertical and horizontal orientations.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -509,9 +509,9 @@ The day header cells and month header cells can be customized in the TimelineYea
 
 ## Customizing header indent cells
 
-It is possible to customize the header indent cells using the [`HeaderIndentTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_HeaderIndentTemplate) option and change the look and appearance in both the vertical and timeline views. In vertical views, the header indent cells can be customized at the hierarchy level and the resource header left indent cell can be customized in timeline views using the template option.
+You can customize the header indent cells by using the [`HeaderIndentTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_HeaderIndentTemplate) option. In vertical views, the header indent cells can be customized at the hierarchy level, and in timeline views, the resource header left indent cell can be customized using this template.
 
-**Example:** To customize the header left indent cell to display resources text, refer to the below code example.
+**Example:** To customize the header left indent cell to display resource text, refer to the code example below.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

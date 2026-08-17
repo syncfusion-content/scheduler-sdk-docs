@@ -10,19 +10,19 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Editor Template in JavaScript Scheduler
 
-Scheduler provides popups and dialogs to display notifications and includes an editor window with event fields for streamlined appointment creation and editing. The editor window and its fields can be easily customized, and validations can be applied to those fields.
+The Scheduler provides popups and dialogs to display notifications and includes an editor window with event fields for streamlined appointment creation and editing. The editor window and its fields can be customized, and validations can be applied.
 
 ## Event editor
 
-The editor window opens on the Scheduler when a cell or event is double-clicked. Double-clicking a cell opens the detailed editor window in "Add new" mode, while double-clicking an event opens it in "Edit" mode.
+The editor window opens when a cell or event is double-clicked. Double-clicking a cell opens the detailed editor in "Add new" mode, while double-clicking an event opens it in "Edit" mode.
 
-On mobile devices, the detailed editor window opens in edit mode by clicking the edit icon on the popup that appears when single-tapping an event. It can also be opened in add mode by single-tapping a cell, which displays a `+` indication. Clicking this indication again opens the editor window.
+On mobile devices, tap the edit icon on the popup that appears when single-tapping an event to open the editor in Edit mode. To open the editor in Add mode, single-tap a cell and tap the `+` indicator.
 
-> The editor window can be prevented from opening by rendering Scheduler in [`readonly`](../api/schedule#readonly) mode or by using code customization within the [`popupOpen`](../api/schedule#popupopen) event.
+> The editor window will not open when the Scheduler is in [`readonly`](../api/schedule#readonly) mode, and you can also cancel it in the [`popupOpen`](../api/schedule#popupopen) event.
 
 ### Change the editor window header title and footer button text
 
-The header title and footer button text of the editor window can be changed by modifying the appropriate localized word collection used in the Scheduler.
+Change the editor window header title and footer button text by modifying the appropriate localized word collection used by the Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -59,7 +59,7 @@ The header title and footer button text of the editor window can be changed by m
 
 ### Change the label text of default editor fields
 
-To change the default labels such as Subject, Location, and other field names in the editor window, use the [`title`](../api/schedule/fieldOptionsModel#title) property available within the field option of [`eventSettings`](../api/schedule#eventsettings).
+To change default labels such as Subject and Location, use the [`title`](../api/schedule/fieldOptionsModel#title) property inside the `eventSettings` field options.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -96,7 +96,7 @@ To change the default labels such as Subject, Location, and other field names in
 
 ### Field validation
 
-Required fields in the editor window can be validated on the client-side before submission by adding appropriate validation rules to each field using the [`validation`](../api/schedule/fieldOptionsModel#validation) property available within the field option of [`eventSettings`](../api/schedule#eventsettings). The appointment fields have been extended to accept both `string` and `object` type values. To perform validations, specify object values for the event fields.
+Required fields in the editor window can be validated on the client side by adding validation rules via the [`validation`](../api/schedule/fieldOptionsModel#validation) property in the `eventSettings` field options. Appointment fields accept both `string` and `object` values; use object values to define validation rules.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -131,11 +131,11 @@ Required fields in the editor window can be validated on the client-side before 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs3" %}
 {% endif %}
 
-> Applicable validation rules can be referred from [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) documentation.
+> See the [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) documentation for applicable validation rules.
 
 ### Add additional fields to the default editor
 
-Additional fields can be added to the default event editor by using the [`popupOpen`](../api/schedule#popupopen) event which is triggered before the event editor opens on the Scheduler. The [`popupOpen`](../api/schedule#popupopen) is a client-side event that triggers before any of the generic popups opens on the Scheduler. The additional field (any of the form elements) should be added with the common class name `e-field`, so as to handle and process that additional data along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor and its value is processed accordingly.
+Additional fields can be added to the default event editor using the [`popupOpen`](../api/schedule#popupopen) event, which triggers before the editor opens. Add form elements with the `e-field` class so their values are included in the event object. The example below adds an `Event Type` field and processes its value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -172,7 +172,7 @@ Additional fields can be added to the default event editor by using the [`popupO
 
 ### Customize the default time duration in editor window
 
-In the default event editor window, start and end time duration are processed based on the [`interval`](../api/schedule/timeScaleModel#interval) value set within the [`timeScale`](../api/schedule#timescale) property. By default, the [`interval`](../api/schedule/timeScaleModel#interval) value is set to `30`, and therefore the start/end time duration within the event editor will be in 30-minute intervals. This duration value can be changed by modifying the `duration` option within the [`popupOpen`](../api/schedule#popupopen) event as shown in the following code example.
+In the default editor, start and end times are based on the [`interval`](../api/schedule/timeScaleModel#interval) value in the [`timeScale`](../api/schedule#timescale) property. By default this is `30` (minutes). Change the duration by modifying the `duration` option in the [`popupOpen`](../api/schedule#popupopen) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -333,9 +333,9 @@ The event editor window can be customized using the [`editorTemplate`](../api/sc
 
 Each field defined within the template should contain the **e-field** class, to allow the processing of those field values internally. The ID of this customized script template section is assigned to the [`editorTemplate`](../api/schedule#editortemplate) option, so that these customized fields will be replaced onto the default editor window.
 
->Note: The **e-field** class is only applicable for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox** and **TextBox** components. Since we have processed, as field values are processed internally for these components.
+> Note: the `e-field` class is applicable for DropDownList, DateTimePicker, MultiSelect, DatePicker, CheckBox, and TextBox components because their values are processed internally.
 
-When using our Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within the editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](../api/schedule#popupopen) event. This particular step can be skipped, if using standard form elements.
+When using Syncfusion sub-components inside the editor template, initialize those components (for example, DropDownList or DateTimePicker) in the [`popupOpen`](../api/schedule#popupopen) event. This is not necessary for standard HTML form elements.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -517,9 +517,9 @@ In the following code example, validation has been added to the `EventType` fiel
 
 ### How to save the customized event editor using template
 
-If the **e-field** class is not added to each field defined within the template, so you should allow setting those field values should be set externally using the [`popupClose`](../api/schedule#popupclose) event.
+If the `e-field` class is not added to each field in the template, set those field values externally using the [`popupClose`](../api/schedule#popupclose) event.
 
-Note: Data can be retrieved only on the `save` and `delete` options. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+Note: Data can be retrieved only on the `save` and `delete` actions; data is not available on the `close` or `cancel` actions.
 
 The following code example shows how to save the customized event editor using a template with the [`popupClose`](../api/schedule#popupclose) event.
 
@@ -573,11 +573,11 @@ To prevent only specific popup closures on Scheduler, check the condition based 
 
 ## Quick popups
 
-Quick info popups are displayed when a cell or appointment is single-clicked on desktop mode. Single-clicking a cell allows providing a subject and saving it quickly. Single-clicking an event displays a popup with an overview of the event information, along with options to edit or delete the event.
+Quick info popups appear when a cell or appointment is single-clicked on desktop. Single-clicking a cell allows adding a subject and saving quickly. Single-clicking an event shows an overview popup with options to edit or delete the event.
 
-By default, these popups are displayed over cells and appointments of Scheduler. To disable this action, set `false` to [`showQuickInfo`](../api/schedule#showquickinfo) property.
+By default, these popups are displayed over Scheduler cells and appointments. To disable them, set the [`showQuickInfo`](../api/schedule#showquickinfo) property to `false`.
 
-> The quick popup that opens when single-clicking cells is not applicable on mobile devices.
+> The quick popup that opens when single-clicking cells is not available on mobile devices.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -614,7 +614,7 @@ By default, these popups are displayed over cells and appointments of Scheduler.
 
 ### Open quick popup on multiple cell selection
 
-The quick popup can be displayed immediately after multiple cells are selected in Scheduler by setting the [`quickInfoOnSelectionEnd`](../api/schedule#quickinfoonselectionend) property to `true`. By default, it's value is set to `false`.
+The quick popup can be displayed immediately after multiple cells are selected in Scheduler by setting the [`quickInfoOnSelectionEnd`](../api/schedule#quickinfoonselectionend) property to `true`. By default, its value is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -922,4 +922,4 @@ The following code example shows how to customize the [`moreEventsClick`](../api
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs14" %}
 {% endif %}
 
-> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

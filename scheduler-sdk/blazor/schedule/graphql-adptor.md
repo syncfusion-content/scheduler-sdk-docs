@@ -9,18 +9,18 @@ documentation: ug
 
 # GraphQL Data Binding in Blazor Scheduler
 
-[GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
+[GraphQL](https://graphql.org/learn/introduction/) is a query language that lets applications request exactly the data they need. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
-**Traditional REST APIs** and **GraphQL** differ mainly in how data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while **GraphQL** uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes **GraphQL** especially useful for **Blazor Scheduler integration**, the **reason** is data‑centric UI components require well‑structured and selective datasets to support efficient operations, reduce network calls, and improve overall performance.
+**Traditional REST APIs** and **GraphQL** differ mainly in how data is requested and returned. **REST APIs** expose multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data. **GraphQL** uses a single endpoint where queries define the exact fields needed, enabling precise responses and efficient retrieval in one request. This makes **GraphQL** especially useful for **Blazor Scheduler integration** because data-centric UI components need well-structured, selective datasets to support efficient operations, reduce network calls, and improve overall performance.
 
 **Key GraphQL Concepts**
 
 - **Queries**: A query is a request to read data. Queries do not modify data; they only retrieve it.
 - **Mutations**: A mutation is a request to modify data. Mutations create, update, or delete records.
 - **Resolvers**: Each query or mutation is handled by a resolver, which is a function responsible for fetching data or executing an operation. **Query resolvers** handle **read operations**, while **mutation resolvers** handle **write operations**.
-- **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify how data can be retrieved, and mutation definitions specify how data can be modified. 
+- **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify how data can be retrieved, and mutation definitions specify how data can be modified.
 
-[Hot Chocolate](https://chillicream.com/docs/hotchocolate) is an open‑source GraphQL server framework for .NET. Hot Chocolate enables the creation of GraphQL APIs using ASP.NET Core and integrates seamlessly with modern .NET applications, including Blazor.
+[Hot Chocolate](https://chillicream.com/docs/hotchocolate/v15) is an open‑source GraphQL server framework for .NET. Hot Chocolate enables the creation of GraphQL APIs using ASP.NET Core and integrates seamlessly with modern .NET applications, including Blazor.
 
 ## Prerequisites
 
@@ -36,21 +36,21 @@ documentation: ug
 
 ### Step 1: Create a New ASP.NET Core Project as the GraphQL Server
 
-Create a **ASP.NET Core Empty** server project using Visual Studio
+Create an **ASP.NET Core Empty** server project using Visual Studio.
 
 1. Open **Visual Studio**.
 2. Go to **File → New → Project**.
 3. Search for and select **ASP.NET Core Empty** (C#).
 4. Name the project (example: `GraphQLServer`).
-5. Select **.NET 8.0 or compatible ** as the target framework
-6. Click **Create**
+5. Select **.NET 8.0 or compatible** as the target framework.
+6. Click **Create**.
 
 This creates a minimal ASP.NET Core app with just `Program.cs`.
 
 
-### Step 2: Install required backend package
+### Step 2: Install the required backend package
 
-To add the [HotChocolate](https://chillicream.com/docs/hotchocolate) package to the server project, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search and install  [HotChocolate.AspNetCore](https://www.nuget.org/packages/HotChocolate.AspNetCore).
+To add the [HotChocolate](https://chillicream.com/docs/hotchocolate/v15) package to the server project, open NuGet Package Manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search for and install [HotChocolate.AspNetCore](https://www.nuget.org/packages/HotChocolate.AspNetCore).
 
 Alternatively, run the following commands in the Package Manager Console to achieve the same.
 
@@ -92,10 +92,10 @@ Install-Package HotChocolate.AspNetCore -Version 15.1.12
     app.Run();
     ```
     
-### Step 4: Create a Data Source for Appointments and define resolver
+### Step 4: Create a data source for appointments and define the resolver
 
-The following code creates a simple in-memory data source with a list of `Appointment` objects in the `GraphQLQuery` class and define the return type to bind data to the Blazor Scheduler, the resolver must return data using the `ReturnType<T>` class with `Count`, `Result`, and `Aggregates` properties.  
-This data will be used to populate the Blazor Scheduler.
+The following code creates a simple in-memory data source with a list of `Appointment` objects in the `GraphQLQuery` class and defines the return type used to bind data to the Blazor Scheduler. The resolver must return data using the `ReturnType<T>` class with `Count` and `Result` properties.
+This data is used to populate the Blazor Scheduler.
 
 [`GraphQLQuery.cs`]
 
@@ -155,14 +155,14 @@ public class GraphQLQuery
 ```
 **Explanation**
 
-- Appointments is a static list that holds all appointment records.
-- GetAppointmentsList() creates sample data with 4 appointments in February 2026.
+- `Appointments` is a static list that holds all appointment records.
+- `GetAppointmentsList()` creates sample data with four appointments in February 2026.
 - Dates are adjusted to IST (Indian Standard Time) by subtracting the 5.5-hour offset from UTC.
-- This in-memory list serves as your data source — later you can replace it with a database or external service.
-- The Scheduler will read from this list via the GraphQL query resolver.
+- This in-memory list serves as the data source; later you can replace it with a database or external service.
+- The Scheduler reads from this list through the GraphQL query resolver.
 
 ### Step 5: Return data with required format
-To bind data to the Blazor Scheduler component, the resolver function must return the data in a specific structure using the `ReturnType<T>` class.This class tells the Scheduler how many appointments exist (`Count`) and which appointments to show (`Result`).
+To bind data to the Blazor Scheduler component, the resolver function must return the data in a specific structure using the `ReturnType<T>` class. This class tells the Scheduler how many appointments exist (`Count`) and which appointments to show (`Result`).
 
 [ReturnType.cs]
 ```csharp
@@ -174,17 +174,17 @@ public class ReturnType<T>
 ```
 **Why this format is required**
 
-- Count - Tells the Scheduler how many appointments match the current view/date range.
-- Result - The actual list of appointments the Scheduler will show as events on the calendar.
+- `Count` tells the Scheduler how many appointments match the current view or date range.
+- `Result` contains the list of appointments the Scheduler shows as events on the calendar.
 
 ### Step 6: Create resolver function argument classes
-The GraphQL query will be passed from the Scheduler with the dataManager property. So, to accept this parameter in the resolver function, we have to create the DataManagerRequest class, and the necessary classes required for the DataManagerRequest properties.
+The GraphQL query is passed from the Scheduler through the `dataManager` property. To accept this parameter in the resolver function, create the `DataManagerRequest` class and the supporting classes required for its properties.
 
 Refer to the following code examples.
 
 [DataManagerRequest.cs]
 
-DataManagerRequest class
+`DataManagerRequest` class
 
 ```csharp
 public class DataManagerRequest {
@@ -215,7 +215,7 @@ public class DataManagerRequest {
 }
 ```
 
-Appointment class
+`Appointment` class
 
 ```csharp
 public class Appointment
@@ -253,9 +253,9 @@ public class Appointment
 ```
 ### Step 7: GraphQL Mutation Resolvers
 
-A **GraphQL mutation resolver** is a method in the backend that handles write requests (data modifications) from the client. While queries only read data, mutations create, update, or delete records. When the Blazor Scheduler performs add, edit, or delete operations, it sends a GraphQL mutation to the server. The mutation resolver receives this request, processes it, and persists the changes to the data source.
+A **GraphQL mutation resolver** is a backend method that handles write requests from the client. While queries only read data, mutations create, update, or delete records. When the Blazor Scheduler performs add, edit, or delete operations, it sends a GraphQL mutation to the server. The mutation resolver receives the request, processes it, and persists the changes to the data source.
 
-In simple terms, a **GraphQL mutation** asks for a change, and a **resolver** is the one who makes it.
+In simple terms, a **GraphQL mutation** asks for a change, and a **resolver** performs it.
 
 [GraphQLMutation.cs]
 
@@ -333,7 +333,7 @@ public class GraphQLMutation
         return toDelete ?? new Appointment();
     }
 
-    // BATCH - Handle multiple adds, changes, deletes in one call 
+    // BATCH - Handle multiple adds, changes, and deletes in one call
     public List<Appointment> BatchAppointment(
         List<Appointment>? added,
         List<Appointment>? changed,
@@ -488,10 +488,10 @@ public class GraphQLMutation
 ```
 A mutation resolver is a C# method decorated with GraphQL attributes that:
 
-- **Receives input parameters** from the Scheduler (new/modified appointment data, primary key value, etc.).
-- **Processes the operation** (validation, time conflict checks, data modification).
-- **Persists changes** to the data source (in-memory list, database, file, external service).
-- **Returns results** to the client (updated appointment record or success/failure status).
+- **Receives input parameters** from the Scheduler, such as new or modified appointment data and the primary key value.
+- **Processes the operation** through validation, conflict checks, and data modification.
+- **Persists changes** to the data source, such as an in-memory list, database, file, or external service.
+- **Returns results** to the client, such as the updated appointment record or success or failure status.
 
 **Typical operations handled by mutation resolvers in Scheduler:**
 
@@ -500,9 +500,9 @@ A mutation resolver is a C# method decorated with GraphQL attributes that:
 | **Create**      | User clicks "Add" or double-clicks to create     | `CreateAppointment`         | `appointment` (new record), `index`, `action`   |
 | **Update**      | User edits an existing appointment and saves     | `UpdateAppointment`         | `appointment` (updated record), `primaryColumnValue` (Id), `primaryColumnName` |
 | **Delete**      | User selects appointment and clicks "Delete"     | `DeleteAppointment`         | `primaryColumnValue` (Id), `primaryColumnName`  |
-| **BatchUpdate** |Editing/deleting **single occurrence** of recurring event<br>| `BatchAppointment`          | `added`: [AppointmentInput!]<br>`changed`: [AppointmentInput!]<br>`deleted`: [AppointmentInput!]<br>`action`: String (optional, e.g. "batch")<br>`primaryColumnName`: String (optional)<br>`additionalParameters`: Any (optional) |
+| **BatchUpdate** | Editing or deleting a **single occurrence** of a recurring event | `BatchAppointment` | `added`: [AppointmentInput!]<br>`changed`: [AppointmentInput!]<br>`deleted`: [AppointmentInput!]<br>`action`: String (optional, e.g. "batch")<br>`primaryColumnName`: String (optional)<br>`additionalParameters`: Any (optional) |
 
-The GraphQL Mutation class has been successfully created and is ready to handle all data modification operations from the [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler).
+The GraphQL mutation class is now ready to handle all data modification operations from the [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler).
 
 ---
 
@@ -510,24 +510,24 @@ The GraphQL Mutation class has been successfully created and is ready to handle 
 
 ### Step 1: Create a Blazor Web App using Visual Studio
 
-1. Open Visual Studio
+1. Open Visual Studio.
 2. Click **Create a new project**
-3. Search for **Blazor Web App** template
-4. Configure project name as **BlazorSchedulerApp**
-5. Select **.NET 8.0** as the target framework
-6. Set **Interactive render mode** to **Server**
-7. Set **Interactivity location** to **Per page/component**
-8. Click **Create**
+3. Search for the **Blazor Web App** template.
+4. Configure the project name as **BlazorSchedulerApp**.
+5. Select **.NET 8.0** as the target framework.
+6. Set **Interactive render mode** to **Server**.
+7. Set **Interactivity location** to **Per page/component**.
+8. Click **Create**.
 
-> Configure the Interactive render mode to **InteractiveServer** during project creation as the Scheduler requires interactivity for CRUD operations.
+> Configure the Interactive render mode as **InteractiveServer** during project creation because the Scheduler requires interactivity for CRUD operations.
 
 ### Step 2: Install Required NuGet Packages and Configure Blazor Scheduler Component with GraphQL
 
-Before installing the necessary NuGet packages, a new Blazor Web Application must be created using the default template. This template automatically generates essential starter files—such as `Program.cs`, `appsettings.json`, the `wwwroot` folder, and the `Components` folder.
+Before installing the necessary NuGet packages, create a new Blazor Web App by using the default template. This template automatically generates essential starter files such as `Program.cs`, `appsettings.json`, the `wwwroot` folder, and the `Components` folder.
 
-For this guide, a Blazor application named **BlazorSchedulerApp** has been created. Once the project is set up, the next step involves installing the required NuGet packages. NuGet packages are software libraries that add functionality to the application.
+For this guide, a Blazor application named **BlazorSchedulerApp** has been created. Once the project is set up, install the required NuGet packages. NuGet packages are software libraries that add functionality to the application.
 
-To add the **Blazor Scheduler** component in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search and install [Syncfusion.Blazor.Schedule](https://www.nuget.org/packages/Syncfusion.Blazor.Schedule) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/).
+To add the **Blazor Scheduler** component to the app, open NuGet Package Manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search for and install [Syncfusion.Blazor.Schedule](https://www.nuget.org/packages/Syncfusion.Blazor.Schedule) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/).
 
 
 Alternatively, run the following commands in the Package Manager Console to achieve the same.
@@ -550,9 +550,9 @@ The installed packages are reflected in the `BlazorSchedulerApp.csproj` file:
 
 All required packages are now installed.
 
-> **Note**: After installing packages, build the project to ensure all dependencies are restored correctly: `dotnet build`
+> **Note**: After installing the packages, build the project to ensure all dependencies are restored correctly: `dotnet build`.
 
-#### Import the required namespaces in the `Components/_Imports.razor` file:
+#### Import the required namespaces in the `Components/_Imports.razor` file
 
 ```csharp
 @using Syncfusion.Blazor
@@ -560,7 +560,9 @@ All required packages are now installed.
 @using Syncfusion.Blazor.Data
 ```
 
-#### Add the stylesheet and scripts in the `Components/App.razor` file. Find the `<head>` section and `<body>`section to add:
+#### Add the stylesheet and scripts in the `Components/App.razor` file
+
+Find the `<head>` and `<body>` sections and add the following:
 
 ```html
 <head>
@@ -574,11 +576,11 @@ All required packages are now installed.
 
 </body>
 ```
-For this project, the bootstrap5.3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
+For this project, the bootstrap5.3 theme is used. You can select a different theme or customize the existing one based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation for more information about theming and customization options.
 
 #### Register Blazor Service
 
-Register the Blazor Service in the **Program.cs** file of your Blazor Web App.
+Register the Blazor service in the **Program.cs** file of your Blazor Web App.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -596,7 +598,7 @@ var app = builder.Build();
 
 ```
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Scheduler component’s [getting‑started](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started-webapp) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Scheduler component’s [getting-started](https://blazor.syncfusion.com/documentation/scheduler/getting-started-webapp) documentation.
 
 ### Step 3: Create the Data Model
 
@@ -628,9 +630,9 @@ public class Appointment
 }
 ```
 
-#### Explanation:
+#### Explanation
 
-- The `[Key]` attribute marks the `Id` property as the primary key (a unique identifier for each record).
+- The `[Key]` attribute marks the `Id` property as the primary key, which is a unique identifier for each record.
 - Each property represents a column in the database table.
 - The `?` symbol indicates that a property is nullable (can be empty).
 
@@ -638,11 +640,11 @@ The data model has been successfully created.
 
 ### Step 4: Update the Blazor Scheduler
 
-The `Home.razor` component will display the appointment data in a Blazor Scheduler with CRUD operations capabilities.
+The `Home.razor` component displays the appointment data in a Blazor Scheduler with CRUD operation support.
 
 **Instructions:**
 
-1. Open the file named `Home.razor` in the `Components/Pages` folder.
+1. Open the `Home.razor` file in the `Components/Pages` folder.
 2. Add the following code to create a basic Scheduler:
 [Home.razor]
 
@@ -677,15 +679,15 @@ The `Home.razor` component will display the appointment data in a Blazor Schedul
     }
     ```
 
-### Component Explanation:
+### Component Explanation
 
-- **`@rendermode InteractiveServer`**: Enables interactive server-side rendering for the component, allowing real-time updates and user interactions (such as adding, editing, or deleting appointments) without full page reloads.
-- **`<SfSchedule>`**: The main Scheduler component that displays appointments in various calendar views (Day, Week, Work Week, Month, Agenda, etc.).
-- **`<ScheduleViews>`**: Defines the available view options for the Scheduler. Each `<ScheduleView>` specifies a supported calendar layout (e.g., Day, Week, Month).
-- **`<ScheduleEventSettings>`**: Configures how events (appointments) are bound and managed. This is where data binding (via `SfDataManager`) and CRUD settings are typically placed.
+- **`@rendermode InteractiveServer`**: Enables interactive server-side rendering for the component and allows real-time updates and user interactions without full page reloads.
+- **`<SfSchedule>`**: The main Scheduler component that displays appointments in calendar views such as Day, Week, Work Week, Month, and Agenda.
+- **`<ScheduleViews>`**: Defines the available view options for the Scheduler. Each `<ScheduleView>` specifies a supported calendar layout.
+- **`<ScheduleEventSettings>`**: Configures how events are bound and managed. This is where data binding through `SfDataManager` and CRUD settings are typically placed.
 
 
-In the `Home.razor`, `SfDataManager` component connects the Scheduler to the GraphQL backend using the adaptor options configured below:
+In `Home.razor`, the `SfDataManager` component connects the Scheduler to the GraphQL backend by using the adaptor options configured below:
 
 ```cshtml
 <SfDataManager Url="http://localhost:5070/graphql" 
@@ -706,13 +708,13 @@ In the `Home.razor`, `SfDataManager` component connects the Scheduler to the Gra
 
 ### Step 5: Configure GraphQL Adaptor and Data Binding
 
-The GraphQL adaptor is a bridge that connects the Blazor Scheduler with the GraphQL backend. The adaptor translates Scheduler operations into GraphQL queries and mutations. When the user interacts with the Scheduler, the adaptor automatically sends the appropriate GraphQL request to the backend, receives the response, and updates the Scheduler display.
+The GraphQL adaptor connects the Blazor Scheduler to the GraphQL backend. It translates Scheduler operations into GraphQL queries and mutations. When the user interacts with the Scheduler, the adaptor sends the appropriate GraphQL request to the backend, receives the response, and updates the Scheduler display.
 
 **What is a GraphQL Adaptor?**
 
 An adaptor is a translator between two different systems. The GraphQL adaptor specifically:
 
-- Receives interaction events generated by the Scheduler, including Add, Edit, Delete operations.
+- Receives interaction events generated by the Scheduler, including add, edit, and delete operations.
 - Converts these actions into GraphQL query or mutation syntax.
 - Sends the **GraphQL request** to the backend **GraphQL endpoint**.
 - Receives the response data from the backend.
@@ -725,7 +727,7 @@ The adaptor enables bidirectional communication between the frontend (Scheduler)
 
 **GraphQL Adaptor Configuration**
 
-The `@code` block in `Home.razor` contains C# code that configures how the adaptor behaves. This configuration is critical because it defines:
+The `@code` block in `Home.razor` contains the C# code that configures how the adaptor behaves. This configuration defines:
 
 - Which GraphQL query to use for reading data.
 - Which GraphQL mutations to use for creating, updating, and deleting data.
@@ -733,7 +735,7 @@ The `@code` block in `Home.razor` contains C# code that configures how the adapt
 
 **Instructions:**
 
-1. Open the `Home.razor` file located at `Components/Pages/Home.razor`.
+1. Open the `Home.razor` file in `Components/Pages/Home.razor`.
 2. Scroll to the `@code` block at the bottom of the file.
 3. Add the following complete configuration:
 
@@ -840,7 +842,7 @@ query appointmentsData($dataManager: DataManagerRequestInput!){}
 - `($dataManager: DataManagerRequestInput!)` - Parameter declaration
   - `$dataManager` - Variable name (referenced as $dataManager throughout the query)
   - `: DataManagerRequestInput!` - Type specification
-  - `!` - Exclamation mark means this parameter is **required** (not optional)
+    - `!` - Exclamation mark means this parameter is **required**.
 
 ```
 appointmentsData(dataManager: $dataManager) {}
@@ -862,26 +864,26 @@ appointmentsData(dataManager: $dataManager) {}
         IsAllDay
     }
     ```
-- **`count`**  
-  Returns the **total number of appointments** that match the current query criteria.  
-  - Example: If 30 total appointments exist in the visible date range, `count = 30`.  
-  - The Scheduler uses this to understand the scope of data (though it usually loads only the visible window and relies on date-range filtering).
+- **`count`**
+    Returns the **total number of appointments** that match the current query criteria.
+    - Example: If 30 appointments exist in the visible date range, `count = 30`.
+    - The Scheduler uses this to understand the scope of data, although it usually loads only the visible window and relies on date-range filtering.
 
-- **`result`**  
-  Contains the **array of appointment records** that match the current request (typically filtered by the visible date range).  
-  - `{ ... }` — List of fields to return for each appointment.  
-  - **Each field must exactly match** the property names in your C# `Appointment` class (case-sensitive).  
-  - Only the requested fields are returned (no over-fetching).  
-  - The Scheduler binds these fields directly to render events on the calendar:  
-    - `Id` → unique identifier  
-    - `Subject` → event title  
-    - `Location` → optional event location  
-    - `StartTime` / `EndTime` → event timing (must be ISO 8601 format)  
-    - `Description` → optional event details  
-    - `IsAllDay` → determines if the event spans the full day
-    - `RecurrenceRule` → string that defines the repeat pattern (iCalendar RRULE format, e.g., "FREQ=DAILY;INTERVAL=1;COUNT=10")
-    - `RecurrenceException` → string containing comma-separated dates/times (in UTC format like yyyyMMdd or yyyyMMddTHHmmssZ) to exclude from the series
-    - `RecurrenceID` → nullable integer (int?) that links an edited/deleted occurrence back to its parent recurring series
+- **`result`**
+    Contains the **array of appointment records** that match the current request, typically filtered by the visible date range.
+    - `{ ... }` indicates the fields returned for each appointment.
+    - **Each field must exactly match** the property names in your C# `Appointment` class.
+    - Only the requested fields are returned.
+    - The Scheduler binds these fields directly to render events on the calendar:
+        - `Id` → unique identifier
+        - `Subject` → event title
+        - `Location` → optional event location
+        - `StartTime` / `EndTime` → event timing (must be in ISO 8601 format)
+        - `Description` → optional event details
+        - `IsAllDay` → determines whether the event spans the full day
+        - `RecurrenceRule` → string that defines the repeat pattern (iCalendar RRULE format, for example, "FREQ=DAILY;INTERVAL=1;COUNT=10")
+        - `RecurrenceException` → string containing comma-separated dates or times in UTC format, such as yyyyMMdd or yyyyMMddTHHmmssZ, to exclude from the series
+        - `RecurrenceID` → nullable integer (`int?`) that links an edited or deleted occurrence back to its parent recurring series
 
 ---
 
@@ -955,66 +957,66 @@ When the backend executes the query, it returns a **JSON response** in this exac
 | `data` | Root object containing the query result | Always present in successful response |
 | `appointmentsData` | Matches the query name (camelCase) | Contains count and result |
 | `count` | Total number of records available | 4 (in this example) |
-| `result` | Array of AppointmentRecord objects | [ {...}, {...}, {...}, {...} ] |
+| `result` | Array of appointment objects | [ {...}, {...}, {...}, {...} ] |
 | Each field in result | Matches GraphQL query field names | Field values from database |
 
 **Understanding GraphQL Mutations for the Scheduler**
 
 **What is a mutation?**  
-A mutation is just a way to **change data** on the server — like adding a new appointment, editing one, or deleting one.
+A mutation is a way to **change data** on the server, such as adding a new appointment, editing one, or deleting one.
 
 In your Scheduler app:
 
 - When you **create** a new appointment → you use a **create** mutation.
 - When you **edit** an existing appointment → you use an **update** mutation.
 - When you **delete** an appointment → you use a **delete** mutation.
-- When you **create**, **edit**, and **delete** collections of an appointment → you use a **batch** mutation.
+- When you **create**, **edit**, and **delete** collections of an appointment, you use a **batch** mutation.
 
 ## Running the Application
 
 **Build the Application**
 
 1. Open the terminal.
-2. Navigate to the **GraphQL server project** directory (e.g., `GraphQLServer`)..
+2. Navigate to the **GraphQL server project** directory (for example, `GraphQLServer`).
 3. Run the following command:
 
     ```powershell
     dotnet build
     ```
-4. Navigate to the **Blazor App project** directory (e.g., `BlazorSchedulerApp`) and Build the Blazor project:
+4. Navigate to the **Blazor App project** directory (for example, `BlazorSchedulerApp`) and build the Blazor project:
     ```powershell
     dotnet build
     ```
 
 **Run the Application**
 
-1. First, run the GraphQL server (this must be running before the Blazor app):
-    - Navigate to the GraphQL server project folder(e.g., GraphQLServer).
+1. First, run the GraphQL server. It must be running before the Blazor app:
+    - Navigate to the GraphQL server project folder (for example, `GraphQLServer`).
     - Execute:
 
 
     ```powershell
     dotnet run
     ```
-    - Now listening on: http://localhost:5070 (or similar — check the console output)
-    - Note the HTTP port (e.g. 5070) — you'll need it for the Blazor app.
+    - Now listening on: http://localhost:5070 (or similar; check the console output).
+    - Note the HTTP port (for example, 5070); you will need it for the Blazor app.
 
 
 2. In a separate terminal, run the Blazor Scheduler application:
-    - Navigate to the Blazor project folder (e.g., BlazorSchedulerApp).
+    - Navigate to the Blazor project folder (for example, `BlazorSchedulerApp`).
     - Execute:
 
 
     ```powershell
         dotnet run
     ```
-    - The Blazor app will typically start on http://localhost:5194 (or similar — check the console output).
+    - The Blazor app usually starts on http://localhost:5194 (or similar; check the console output).
 
 **Access the Application**
 
 1. Open a web browser.
 2. Navigate to `https://localhost:5194` (or the port shown in the terminal).
-3. The Scheduler Application is now running and ready to use.
+3. The Scheduler application is now running and ready to use.
 
     ![Basic Scheduler displaying appointments from the GraphQL Server](./images/blazor-scheduler-graphql-frontend.webp)
 
@@ -1029,9 +1031,9 @@ A complete, working sample implementation is available in the [GitHub repository
 
 This guide demonstrates how to:
 
-1. Setting Up the GraphQL Backend. [🔗](#setting-up-the-graphql-backend)
-2. Integrating Blazor Scheduler. [🔗](#integrating-syncfusion-blazor-scheduler)
-3. Running the Application. [🔗](#running-the-application)
-4. Complete Sample Repository. [🔗](#complete-sample-repository)
+1. Set up the GraphQL backend. [🔗](#setting-up-the-graphql-backend)
+2. Integrate Blazor Scheduler. [🔗](#integrating-blazor-scheduler)
+3. Run the application. [🔗](#running-the-application)
+4. Open the complete sample repository. [🔗](#complete-sample-repository)
 
-The application now provides a complete solution for managing Appointments with a modern Blazor Scheduler integrated with a Hot Chocolate GraphQL backend.
+The application now provides a complete solution for managing appointments with a modern Blazor Scheduler integrated with a Hot Chocolate GraphQL backend.

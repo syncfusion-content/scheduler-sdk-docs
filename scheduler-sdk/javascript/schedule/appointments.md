@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Appointments in JavaScript Scheduler
 
-Appointments in the Scheduler represent events scheduled for specific time periods. Each appointment can be configured for various time ranges and categorized based on its duration and recurrence pattern. The Scheduler supports the following appointment types:
+Appointments represent events scheduled for specific time periods. Each appointment can be configured with various durations and recurrence patterns. The Scheduler supports the following appointment types:
 
 * Normal events
 * Spanned events
@@ -23,7 +23,7 @@ Normal events are appointments scheduled within a specific time interval on a si
 
 ### Creating a normal event
 
-Here's an example of how to create a normal event in the Scheduler using simple JSON data:
+Example: create a normal event using JSON data:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -54,9 +54,9 @@ Here's an example of how to create a normal event in the Scheduler using simple 
 
 ## Spanned events
 
-Spanned events are appointments that extend beyond 24 hours. By default, these events display in the all-day row. This category also includes events spanning multiple days but lasting less than 24 hours, which appear appropriately on both days.
+Spanned events extend beyond 24 hours. By default, these events display in the all-day row. This also includes events that cross midnight but last less than 24 hours; such events display across both days.
 
-> For example, an appointment scheduled from November 25, 2018, at 11:00 PM to November 26, 2018, at 2:00 AM (spanning less than 24 hours) will be split and displayed across both days.
+> Example: an appointment from November 25, 2018 at 11:00 PM to November 26, 2018 at 2:00 AM will be split and shown on both days.
 
 ### Customize the rendering of the spanned events
 
@@ -358,7 +358,7 @@ Built-in validation support is enabled by default for recurring appointments dur
 
 | Validation messages | Description |
 |-------|---------|
-| The recurrence pattern is not valid. | This alert will raise, when the selected recurrence rule value is not a valid one. For example, when you try to select the end date value (using `Until` option) for a recurring event, which occurs before the start date, an alert will popup out saying that the chosen pattern is invalid. |
+| The recurrence pattern is not valid. | This alert appears when the selected recurrence rule is invalid. For example, if the `Until` date is before the start date, an alert notifies that the chosen pattern is invalid. |
 | The changes made to specific instances of this series will be cancelled and those events will match the series again. | This alert will raise, when you try to edit the whole series, whose occurrence might have been already edited. For example, If there are five occurrences and one of the occurrence is already edited. Now, when you try to edit the entire series, you will get this validation alert. |
 | The duration of the event must be shorter than how frequently it occurs. Shorten the duration, or change the recurrence pattern in the recurrence event editor. | This validation will occur, if the event duration is longer than the selected frequency. For example, if you create a recurring appointment with two days duration in `Daily` frequency with no intervals set to it, you may get this alert. |
 | Some months have fewer than the selected date. For these months, the occurrence will fall on the last date of the month. | When you try to create a recurring appointment on 31st of every month, where few months won't have 31 days and in this scenario, you will get this alert. |
@@ -366,9 +366,9 @@ Built-in validation support is enabled by default for recurring appointments dur
 
 ## Event fields
 
-The Scheduler dataSource contains event instances, where each instance includes a collection of appropriate [`fields`](../api/schedule/field). When binding remote data, these fields must be mapped to their equivalent database fields. For local JSON data, the field names defined within instances must be correctly mapped with the Scheduler event fields.
+The Scheduler `dataSource` contains event objects, each with a set of [`fields`](../api/schedule/field). When binding remote data, map these fields to the corresponding database columns. For local JSON data, ensure the event field names match the Scheduler's field mapping.
 
-> To create an event in the Scheduler, defining `startTime` and `endTime` is sufficient. The `id` field becomes mandatory for processing CRUD actions on appropriate events.
+> To create an event, `startTime` and `endTime` are required. The `id` field is mandatory for processing CRUD operations.
 
 ### Built-in fields
 
@@ -376,20 +376,20 @@ The built-in [`fields`](../api/schedule/field) available on Scheduler event obje
 
 | Field name | Description |
 |-------|---------|
-| id | The `id` field needs to be defined as mandatory and this field usually assigns a unique ID value to each of the events.|
-| subject | The `subject` field is optional, and usually assigns the summary text to each of the events.|
-| startTime | The `startTime` field defines the start time of an event and it is mandatory to provide it for any of the valid event objects.|
-| endTime | The `endTime` field defines the end time of an event and it is mandatory to provide the end time for any of the valid event objects.|
-| startTimezone | It maps the `startTimezone` field from the dataSource and usually accepts the valid IANA timezone names. It is assumed that the value provided for this field is taken into consideration while processing the `startTime` field. When this field is not mapped with any timezone names, then the events will be processed based on the timezone assigned to the Scheduler.|
-| endTimezone | It maps the `endTimezone` field from the dataSource and usually accepts the valid IANA timezone names. It is assumed that the value provided for this field is taken into consideration while processing the `endTime` field. When this field is not mapped with any timezone names, then the events will be processed based on the timezone assigned to the Scheduler.|
-| location | It maps the `location` field from the dataSource and the location text value will be displayed over the events.|
-| description | It maps the `description` field from the dataSource and denotes the event description which is optional.|
-| isAllDay | The `isAllDay` field is mapped from the dataSource and is used to denote whether an event is created for an entire day or for specific time alone. Usually, an event with `isAllDay` field set to true will be considered as an all-day event. |
-| recurrenceID | It maps the `recurrenceID` field from dataSource and usually holds the ID value of the parent recurrence event. This field is applicable only for the edited occurrence events.|
-| recurrenceRule | It maps the `recurrenceRule` field from dataSource and holds the recurrence rule value in a string format. Also, it uniquely identifies whether the event belongs to a recurring type or normal ones. |
-| recurrenceException | It maps the `recurrenceException` field from dataSource and is used to hold the collection of exception dates, on which the recurring occurrences needs to be excluded. The `recurrenceException` should be specified in UTC format. |
-| isReadonly | It maps the `isReadonly` field from dataSource. It is mainly used to make specific appointments as readonly when set to `true`. |
-| isBlock | It maps the `isBlock` field from dataSource. It is used to block the particular time ranges in the Scheduler and prevents the event creation on those time slots. |
+| id | The `id` field is mandatory and must be unique for each event. |
+| subject | The `subject` field is optional; it holds the event summary. |
+| startTime | The `startTime` field defines an event's start time and is required. |
+| endTime | The `endTime` field defines an event's end time and is required. |
+| startTimezone | Maps the `startTimezone` field and accepts valid IANA timezone names. This timezone applies to the `startTime`; if not provided, the Scheduler's timezone is used. |
+| endTimezone | Maps the `endTimezone` field and accepts valid IANA timezone names. This timezone applies to the `endTime`; if not provided, the Scheduler's timezone is used. |
+| location | Maps the `location` field and displays location text on events. |
+| description | Maps the `description` field and contains the event description (optional). |
+| isAllDay | Maps the `isAllDay` field and denotes whether an event occupies a full day. |
+| recurrenceID | Maps the `recurrenceID` field and holds the parent recurring event's ID for edited occurrences. |
+| recurrenceRule | Maps the `recurrenceRule` field and holds the recurrence rule string for recurring events. |
+| recurrenceException | Maps the `recurrenceException` field and contains exception dates to exclude from a recurrence; specify dates in UTC format. |
+| isReadonly | Maps the `isReadonly` field; set to `true` to make events read-only. |
+| isBlock | Maps the `isBlock` field; used to block specific time ranges and prevent event creation on those slots. |
 
 ### Binding different field names
 

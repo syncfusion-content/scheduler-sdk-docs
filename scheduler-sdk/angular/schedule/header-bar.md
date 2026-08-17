@@ -14,7 +14,7 @@ The header part of Scheduler can be customized easily with the built-in options 
 
 ## Show or hide header bar
 
-By default, the header bar holds the date and view navigation options, through which the user can switch between dates and various views. This header bar can be hidden from the UI by setting `false` to the [`showHeaderBar`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showheaderbar) property. It's default value is `true`.
+By default, the header bar holds the date and view navigation options, through which the user can switch between dates and various views. This header bar can be hidden from the UI by setting `false` to the [`showHeaderBar`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showheaderbar) property. Its default value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ You can also use the [`actionBegin`](https://ej2.syncfusion.com/angular/document
 
 ## How to display the view options within the header bar popup
 
-By default, the header bar holds the view navigation options, through which the user can switch between various views. You can move this view options to the header bar popup by setting `true` to the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enableadaptiveui) property.
+By default, the header bar holds the view navigation options, through which the user can switch between various views. You can move these view options to the header bar popup by setting `true` to the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enableadaptiveui) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,9 +122,7 @@ In month view, the date header template is not applicable and therefore the same
 
 ## Customizing the date range text
 
-The [`dateRangeTemplate`](../api/schedule#daterangetemplate) option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the [`dateRangeTemplate`](../api/schedule#daterangetemplate) option to override the default text and specify your own custom text to be displayed.
-
-The [`dateRangeTemplate`](../api/schedule#daterangetemplate) property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+The [`dateRangeTemplate`](../api/schedule#daterangetemplate) option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the [`dateRangeTemplate`](../api/schedule#daterangetemplate) option to override the default text and specify your own custom text to be displayed. The `dateRangeTemplate` property includes `startDate`, `endDate`, and `currentView` options, which you can use to customize the date range text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,7 +138,7 @@ The [`dateRangeTemplate`](../api/schedule#daterangetemplate) property includes `
 
 ## Customizing header indent cells
 
-It is possible to customize the header indent cells using the [`headerIndentTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerindenttemplate) option and change the look and appearance in both the vertical and timeline views. In vertical views, You can customize the header indent cells at the hierarchy level and you can customize the resource header left indent cell in timeline views using the template option.
+It is possible to customize the header indent cells using the [`headerIndentTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#headerindenttemplate) option and change the look and appearance in both the vertical and timeline views. In vertical views, you can customize the header indent cells at the hierarchy level and you can customize the resource header left indent cell in timeline views using the template option.
 
 **Example:** To customize the header left indent cell to display resources text, refer to the below code example.
 
@@ -156,4 +154,4 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/header-indent-cs1" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to know how to present and manipulate data.

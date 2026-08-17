@@ -9,7 +9,7 @@ documentation: ug
 
 # Open Editor Window on Single Click in Blazor Scheduler
 
-By default, the editor window will open on double clicking the cell or appointment. In the following code example, we have opened the editor window on single click using `OpenEditorAsync` public method within `OnCellClick` and `OnEventClick` Scheduler events.
+By default, the editor window opens when you double-click a cell or appointment. In the following code example, the editor window is opened on a single click by using the `OpenEditorAsync` public method within the `OnCellClick` and `OnEventClick` Scheduler events.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -38,7 +38,7 @@ By default, the editor window will open on double clicking the cell or appointme
     {
         args.Cancel = true;
         CurrentAction action = CurrentAction.Save;
-        if(args.Event.RecurrenceRule != null)
+        if (args.Event.RecurrenceRule != null)
         {
             action = CurrentAction.EditOccurrence;
         }

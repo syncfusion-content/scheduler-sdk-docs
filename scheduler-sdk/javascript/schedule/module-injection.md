@@ -10,52 +10,59 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Module Injection in JavaScript Scheduler
 
-A crucial step in creating a Scheduler with required views and features is to import and inject the necessary modules. The following modules are available in the Scheduler to enable specific functionalities:
+Import and inject the modules required to enable specific Scheduler views and features. Injecting only the modules you need can reduce bundle size and improve performance.
 
-* `Day` - Inject this module to enable the Day view.
-* `Week` - Inject this module to enable the Week view.
-* `WorkWeek` - Inject this module to enable the Work Week view.
-* `Month` - Inject this module to enable the Month view.
-* `Agenda` - Inject this module to enable the Agenda view.
-* `MonthAgenda` - Inject this module to enable the Month Agenda view.
-* `TimelineViews` - Inject this module to enable Timeline Day, Timeline Week, and Timeline Work Week views.
-* `TimelineMonth` - Inject this module to enable the Timeline Month view.
-* `TimelineYear` - Inject this module to enable the Timeline Year view.
-* `Year` - Inject this module to enable the Year view.
-* `DragAndDrop` - Inject this module to enable drag-and-drop functionality for appointments.
-* `Resize` - Inject this module to enable resizing functionality for appointments.
-* `ExcelExport` - Inject this module to export Scheduler events data as Excel file format.
-* `ICalendarExport` - Inject this module to export Scheduler events data to an ICS file.
-* `ICalendarImport` - Inject this module to import Scheduler events data from an ICS file.
-* `Print` - Inject this module to enable print functionality for the Scheduler.
+Available modules include:
+
+- `Day` — enables Day view
+- `Week` — enables Week view
+- `WorkWeek` — enables Work Week view
+- `Month` — enables Month view
+- `Agenda` — enables Agenda view
+- `MonthAgenda` — enables Month Agenda view
+- `TimelineViews` — enables Timeline Day/Week/WorkWeek views
+- `TimelineMonth` — enables Timeline Month view
+- `TimelineYear` — enables Timeline Year view
+- `Year` — enables Year view
+- `DragAndDrop` — enables drag-and-drop for appointments
+- `Resize` — enables resizing of appointments
+- `ExcelExport` — enables exporting events to Excel
+- `ICalendarExport` — enables exporting events to ICS
+- `ICalendarImport` — enables importing events from ICS
+- `Print` — enables print functionality
 
 ## Module injection
 
-The required modules should be injected into the Scheduler using the `ej.schedule.Schedule.Inject` method within the `index.js` file as shown below. Only the injected module functionalities will be loaded and available for use in the Scheduler.
+Inject required modules into the Scheduler. Only injected modules are loaded when using individual module files or ES module imports.
 
-`[myapp/index.js]`
+Example (legacy global usage):
 
 ```js
-ej.schedule.Schedule.Inject(ej.schedule.Day, ej.schedule.Week, ej.schedule.WorkWeek, ej.schedule.Month, ej.schedule.Agenda, ej.schedule.MonthAgenda);
+ej.schedule.Schedule.Inject(
+    ej.schedule.Day,
+    ej.schedule.Week,
+    ej.schedule.WorkWeek,
+    ej.schedule.Month,
+    ej.schedule.Agenda,
+    ej.schedule.MonthAgenda
+);
 ```
 
 ## Loading specific features
 
-To use advanced features such as drag-and-drop, resizing, or exporting, inject the corresponding modules along with the view modules:
+Include feature modules with view modules to enable advanced capabilities:
 
-```javascript
+```js
 ej.schedule.Schedule.Inject(
-    ej.schedule.Day, 
-    ej.schedule.Week, 
+    ej.schedule.Day,
+    ej.schedule.Week,
     ej.schedule.Month,
-    ej.schedule.DragAndDrop, 
+    ej.schedule.DragAndDrop,
     ej.schedule.Resize,
     ej.schedule.ExcelExport
 );
 ```
 
-This approach ensures that only the necessary functionality is loaded, optimizing the application bundle size and performance.
+Note: Module injection is not required when using the full `ej2.min.js` bundle because it includes all modules. When using ES imports or separate module files, explicit injection is needed.
 
-> **Note:** Module injection is not mandatory in plain JavaScript applications when using the complete `ej2.min.js` bundle, as all modules are included. However, when using individual module files or ES6 imports, explicit injection is required.
-
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/javascript/demos/#/material/schedule/overview.html) to see how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for practical examples.

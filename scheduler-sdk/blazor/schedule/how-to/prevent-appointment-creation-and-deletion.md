@@ -9,7 +9,7 @@ documentation: ug
 
 # Prevent Appointment Creation and Deletion in Blazor Scheduler
 
-By default, Scheduler allows the user to perform all the CRUD actions. The particular action can be prevented by setting `false` to the respective property. In the following code example, only edit actions are allowed as `AllowAdding` and `AllowDeleting` properties are set to `false`.
+By default, Scheduler allows users to perform all CRUD actions. A specific action can be prevented by setting the respective property to `false`. In the following code example, only edit actions are allowed because the `AllowAdding` and `AllowDeleting` properties are set to `false`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

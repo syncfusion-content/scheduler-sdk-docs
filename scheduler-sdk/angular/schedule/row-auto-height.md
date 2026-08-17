@@ -14,7 +14,7 @@ By default, the height of the Scheduler rows in Timeline views is static. Theref
 
 To enable auto row height adjustments on Scheduler Timeline views and the Month view, set the [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight) property to `true` (default is `false`).
 
-> This auto row height adjustment applies only to all Timeline views and the calendar Month view.
+> This auto row height adjustment applies only to Timeline views and the calendar Month view.
 
 Now, let us see how it works on those applicable views with examples.
 
@@ -74,7 +74,7 @@ The following example shows how the auto row adjustment feature works on Timelin
 
 ## Appointments occupying entire cell
 
-By default, with the feature [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight), there will be a space in the bottom of the cell when appointment is rendered. To avoid this space, we can set true to the property [`ignoreWhitespace`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#ignorewhitespace) with in [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) whereas its default property value is false. In the following code example, the whitespace below the appointments has been ignored.
+By default, when [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight) is enabled, there may be space at the bottom of the cell when an appointment is rendered. To avoid this space, set [`ignoreWhitespace`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#ignorewhitespace) to `true` within [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings). The default value is `false`. In the following code example, the whitespace below the appointments has been ignored.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,4 +92,4 @@ By default, with the feature [`rowAutoHeight`](https://ej2.syncfusion.com/angula
 
 **Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#ignorewhitespace) property applies only when the [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.

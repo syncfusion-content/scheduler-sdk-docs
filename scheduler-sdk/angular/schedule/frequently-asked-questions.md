@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Frequently Asked Questions in Angular Scheduler
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the Scheduler component.
+In this article, you can find frequently asked questions and their corresponding solutions while working with the Scheduler component.
 
 ## Maximum call stack size exceeded
 
@@ -20,9 +20,9 @@ In this article, you can find some frequently asked questions and corresponding 
 
 **Solution:**
 
-This error occurs when a scheduler views that were not imported into the project. You can resolve this issue by importing the required view modules.
+This error occurs when Scheduler views are not imported into the project. You can resolve this issue by importing the required view modules.
 
-In the below code, `Day` option is used without injecting, So, it throws the above error. You can resolve this problem by simply injecting the day module in below code.
+In the following code, the `Day` option is used without injecting the day module, so it throws the above error. You can resolve this problem by injecting the day module in the code below.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -63,9 +63,9 @@ export class AppComponent {
 
 ## Grouping with empty resources
 
-Grouping without providing any resource data will throw the following problems.
+Grouping without providing any resource data will cause the following issues:
 
-* Normal (vertical) views are rendered, but you are not able to perform CRUD operations
+* Normal (vertical) views are rendered, but you cannot perform CRUD operations.
 * Timeline views do not render and display an empty scheduler table.
 
 To avoid this, do not enable grouping when no resources are defined.
@@ -74,7 +74,7 @@ To avoid this, do not enable grouping when no resources are defined.
 
 **Error:** When using a custom editor template, the `e-field` attribute value is missing in the input elements.
 
-**Solution:** The `e-field` attribute is mandatory for each form element in the editor template. Please refer [here](https://ej2.syncfusion.com/angular/documentation/schedule/editor-template#customizing-event-editor-using-template) for more info.
+**Solution:** The `e-field` attribute is mandatory for each form element in the editor template. For more information, refer to [customizing event editor using template](https://ej2.syncfusion.com/angular/documentation/schedule/editor-template#customizing-event-editor-using-template).
 
 ## Missing CSS reference
 
@@ -84,7 +84,7 @@ To avoid this, do not enable grouping when no resources are defined.
 
 **Solution:**
 
-The above problem occurs when missing CSS references for the scheduler in a project. You can resolve this issue by providing proper CSS for the scheduler.
+This issue occurs when the Scheduler CSS references are missing in a project. You can resolve it by including the proper Scheduler CSS.
 
 ```html
 <!doctype html>
@@ -93,7 +93,7 @@ The above problem occurs when missing CSS references for the scheduler in a proj
   <meta charset="utf-8">
   <title>EJ2 Angular Schedule Sample</title>
   
-      <! –– scheduler CSS is referred from this link ––>
+      <!-- Scheduler CSS is referenced from this link -->
   <link href="https://cdn.syncfusion.com/ej2/tailwind3.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -106,11 +106,11 @@ The above problem occurs when missing CSS references for the scheduler in a proj
 
 ## QuickInfoTemplate at bottom
 
-When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cellclick) and [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventclick) events and below code snippet.
+When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) in the Scheduler, the quick info popup may not be shown fully at the bottom of the Scheduler. You can resolve this by using the [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cellclick) and [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventclick) events and the following code snippet.
 
 ```typescript
 
- template: "<ejs-schedule #schedule height="650px" (cellClick)="onClick($event)" (eventClick)="onClick($event)"></ejs-schedule>"
+ template: "<ejs-schedule #schedule height=\"650px\" (cellClick)=\"onClick($event)\" (eventClick)=\"onClick($event)\"></ejs-schedule>"
   .
   .
   .
@@ -133,18 +133,18 @@ When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/document
 
 ![Locale import issue](./images/locale-import-issue.png)
 
- While using [`locale`](https://ej2.syncfusion.com/angular/documentation/schedule/localization) in scheduler, not importing the required culture files properly throws the problem.
+While using [`locale`](https://ej2.syncfusion.com/angular/documentation/schedule/localization) in the Scheduler, not importing the required culture files properly causes this issue.
 
-**Solution:** Properly add and import the culture files(numberingSystems, timeZoneNames, loadCldr, L10n etc.,) in your project will resolve the problem.
+**Solution:** Properly add and import the culture files, such as `numberingSystems`, `timeZoneNames`, `loadCldr`, and `L10n`, in your project to resolve the issue.
 
 ```typescript
 import { loadCldr, L10n } from '@syncfusion/ej2-base';
 import enNumberData from '@syncfusion/ej2-cldr-data/main/en-GB/numbers.json';
-import entimeZoneData from '@syncfusion/ej2-cldr-data/main/en-GB/timeZoneNames.json';
+import enTimeZoneData from '@syncfusion/ej2-cldr-data/main/en-GB/timeZoneNames.json';
 import enGregorian from '@syncfusion/ej2-cldr-data/main/en-GB/ca-gregorian.json';
 import enNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
 
-loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
+loadCldr(enNumberData, enTimeZoneData, enGregorian, enNumberingSystem);
 
 L10n.load({
   'en-GB': {

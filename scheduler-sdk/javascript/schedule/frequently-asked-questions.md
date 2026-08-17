@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Frequently Asked Questions in JavaScript Scheduler
 
-This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler control.
+This article provides answers to frequently asked questions and solutions to common issues encountered while working with the Scheduler.
 
 ## Grouping with empty resources
 

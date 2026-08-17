@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with SharePoint and Angular Scheduler
 
-This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev) project and integrating the [Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler).
+This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev) project and integrating the [Angular Scheduler component](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 SharePoint Framework (SPFx) is a development model and framework provided by Microsoft for building custom solutions and extensions for SharePoint and Microsoft Teams. It is a modern, client-side framework that allows developers to create web parts, extensions, and customizations that can be deployed and used within SharePoint sites and Teams applications.
 
@@ -22,7 +22,7 @@ SharePoint Framework (SPFx) is a development model and framework provided by Mic
 
 ## Set up the SharePoint project
 
-Create a new SPFx project using the following command,
+Create a new SPFx project using the following command:
 
 **Step 1:** To initiate the creation of a new [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project, use the following command:
 
@@ -49,9 +49,9 @@ heft trust-dev-cert
 
 With these steps complete, your `my-project` SharePoint Framework solution is ready for Angular component integration.
 
-## Add Angular Schedule packages
+## Add Angular Scheduler packages
 
-Angular component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Angular Schedule component in the project, install the corresponding npm package along with Angular framework dependencies:
+Angular component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use the Angular Scheduler component in the project, install the required npm packages and Angular framework dependencies:
 
 ```bash
 npm install @angular/core @angular/common @angular/platform-browser @angular/compiler rxjs zone.js --save
@@ -60,9 +60,9 @@ npm install @syncfusion/ej2-angular-schedule @syncfusion/ej2-angular-base --save
 
 ## Add Angular Schedule component
 
-Follow the below steps to add the component,
+Follow the steps below to add the component:
 
-**Step 1:** Create Angular component files inside the `~/src/webparts/app` folder.
+**Step 1:** Create Angular component files inside the `src/webparts/app` folder.
 
 Create `app/scheduler.component.ts`:
 
@@ -116,8 +116,7 @@ export function bootstrapAngular(): void{
 {% endhighlight %}
 {% endtabs %}
 
-Update the main web part file `AppWebPart.ts` inside the `~/src/webparts/app` folder to bootstrap Angular:
-
+Update the main web part file `AppWebPart.ts` inside the `src/webparts/app` folder to bootstrap Angular:
 {% tabs %}
 {% highlight ts tabtitle="AppWebPart.ts" %}
 
@@ -347,14 +346,13 @@ export class SchedulerComponent{
 The following configuration ensures that your SPFx solution loads the SharePoint Workbench for your specific tenant. Replace {tenantDomain} with your actual SharePoint tenant domain.
 
 `config/serve.json`
-```bash
+```json
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
   "initialPage": "https://{tenantDomain}/_layouts/workbench.aspx"
 }
-
 ```
 
 ## Run the project
@@ -369,7 +367,7 @@ The output will appear as follows:
 
 ![Scheduler Component](./images/schedule-sharepoint-output.png)
 
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/How-to-integrate-Syncfusion-Angular-Scheduler-with-Sharepoint.git)
+> Find the sample in this [GitHub location](https://github.com/SyncfusionExamples/How-to-integrate-Syncfusion-Angular-Scheduler-with-Sharepoint.git)
 
 ## See also
 

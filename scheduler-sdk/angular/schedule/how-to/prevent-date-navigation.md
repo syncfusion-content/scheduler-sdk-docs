@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Prevent Date Navigation in Angular Scheduler
 
-We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event as shown in the below demo.
+Prevent navigation when clicking the date header by removing the `e-navigate` class from header cells in the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event. The demo below shows how to implement this.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

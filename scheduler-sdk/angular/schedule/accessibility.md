@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Accessibility in Angular Scheduler
 
-The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
+The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It also includes built-in keyboard navigation support, making it easier for people who use assistive technologies or who rely completely on keyboard support. As per the accessibility standard, the navigated dates, views, and other interactive actions performed on the Scheduler will be read out to users who use assistive technologies such as screen readers.
 
-The Scheduler makes use of the most required ARIA attributes such as `aria-label` and `role` to support the accessibility in it. To be more accurate, it must be used with an ARIA compliant browser along with the screen reader running from backend.
+The Scheduler makes use of the required ARIA attributes such as `aria-label` and `role` to support accessibility. For accurate results, it must be used with an ARIA-compliant browser and a screen reader running in the background.
 
 The accessibility compliance for the Schedule component is outlined below.
 
@@ -52,9 +52,9 @@ The following ARIA attributes are used in the Scheduler.
 | role="main" |  Attribute added to the Scheduler element describes the actual role of the element and denote it as a main and unique content. |
 | role="button" | Attribute is assigned to the appointments of Scheduler, to denote it as a clickable element. |
 | aria-label | Attribute is set to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
-| aria-labelledby | It indicates editor dialog title to the user through assistive technologies. |
-| aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
-| aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler.
+| aria-labelledby | It indicates the editor dialog title to users through assistive technologies. |
+| aria-describedby | It indicates the editor dialog content description to users through assistive technologies. |
+| aria-disabled | Attribute is set on the appointment element to indicate the disabled state of the Scheduler. |
 
 The Syncfusion® Angular Scheduler component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
 
@@ -86,11 +86,11 @@ All the Scheduler actions can be controlled via keyboard keys by using the `allo
 | <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverse focusing of the `Tab` key functionality. Inverse focusing of event elements from the last one and then move onto the first or active item on Scheduler header bar and then moves out of the component.
 | <kbd>Enter</kbd> | Opens the quick info popup on the selected cells or events. |
 | <kbd>Escape</kbd> | Closes any of the popup that are in open state. |
-| <kbd>Arrow</kbd> | To move onto the next available cells in either of the needed directions. (left, right, top and right) |
+| <kbd>Arrow</kbd> | To move onto the next available cells in either of the needed directions. (left, right, top, and bottom) |
 | <kbd>Shift</kbd> + <kbd>Arrow</kbd> | For multiple cell selection on either direction. |
 | <kbd>Delete</kbd> | Deletes one or more selected events. |
 | <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | To select multiple events. |
-| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) |To switch between the views of Scheduler. |
+| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) | To switch between the views of Scheduler. |
 | <kbd>Ctrl</kbd> + <kbd>Left Arrow</kbd> | To navigate to the previous date period. |
 | <kbd>Ctrl</kbd> + <kbd>Right Arrow</kbd> | To navigate to the next date period. |
 | <kbd>Left</kbd> or <kbd>Right Arrow</kbd> | On pressing any of these keys, when focus is currently on the Schedule header bar, moves the focus to the previous or next items in the header bar. |
@@ -100,13 +100,15 @@ All the Scheduler actions can be controlled via keyboard keys by using the `allo
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | To navigate to today date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | To open editor window. |
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature overview. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.
 
 ## Ensuring accessibility
 
 The Scheduler component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Scheduler component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) in a new window to evaluate the accessibility of the Scheduler component with accessibility tools.
+
+> Note: The accessibility examples and warnings described here are based on the current Scheduler implementation and automated checker behavior; results may vary by theme, view, and configuration.
 
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs1" %}
 
