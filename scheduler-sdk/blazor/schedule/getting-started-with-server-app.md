@@ -389,4 +389,4 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 1. [Getting Started with Blazor Web App](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
 2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
 3. [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/markdown-editor/getting-started)
-4. [Scheduler Interactions](https://blazor.syncfusion.com/documentation/scheduler/scheduler-interactions)
+4. [Scheduler Interactions](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/scheduler-interactions)
