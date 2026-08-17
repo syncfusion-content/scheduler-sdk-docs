@@ -78,8 +78,9 @@ The following code example depicts how to bind the local JSON data to the `DataS
 
 The following code example depicts how to bind the remote data for resources `dataSource`.
 
-* Give the resource datasource in Index method
-* Add the Scheduler code in View page
+* Define the controller action `GetResourceData` that returns the resource data as JSON (must allow `GET` requests; for cross-domain scenarios ensure CORS is enabled).
+* Reference the controller action URL in the `DataSource` of the `Resources` collection using `UrlAdaptor`.
+* Add the Scheduler code in View page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -141,6 +142,8 @@ The appointments belonging to the different resources will be displayed altogeth
 
 N> Setting `AllowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
+![Multiple resources without grouping in ASP.NET MVC Scheduler](images/scheduler-multiple-resource.png)
+
 ## Resource grouping
 
 Resource grouping support allows the Scheduler to group the resources in a hierarchical structure both as an expandable groups (Timeline views) and as vertical hierarchy displaying resources one after the other (Resources view).
@@ -174,6 +177,8 @@ The following code example displays how the multiple resources are grouped and i
 {% endtabs %}
 {% endif %}
 
+![Vertical Resource View in ASP.NET MVC Scheduler](images/scheduler-resource-verticalview.png)
+
 
 
 ### Timeline resource view
@@ -202,6 +207,8 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Displaying Timeline Resource View in ASP.NET MVC Scheduler](images/scheduler-resource-timelineview.png)
 
 
 
@@ -234,7 +241,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% endtabs %}
 {% endif %}
 
-
+![Grouping Single-level Resources in ASP.NET MVC Scheduler](images/scheduler-resource-singlelevel.png)
 
 N> The `Name` field defined in the **resources** collection namely `Owners` will be mapped within the [`Group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property, in order to enable the grouping option with those resource levels on the Scheduler.
 
@@ -265,7 +272,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% endtabs %}
 {% endif %}
 
-
+![Display Grouping Multi-level Resources in ASP.NET MVC Scheduler](images/scheduler-resource-grouping.png)
 
 ### One-to-One grouping
 
@@ -294,7 +301,7 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% endtabs %}
 {% endif %}
 
-
+![One-to-One grouping in ASP.NET MVC Scheduler](images/scheduler-resource-one-to-one.png)
 
 ### Grouping resources by date
 
@@ -325,7 +332,7 @@ It groups the number of resources under each date and is applicable only on the 
 {% endtabs %}
 {% endif %}
 
-
+![Grouping Resources by Date in ASP.NET MVC Scheduler](images/scheduler-resource-bydate.png)
 
 N> This kind of grouping by date is not applicable on any of the **timeline views**.
 
@@ -355,6 +362,8 @@ In timeline view work cells of parent resource can be customized by checking the
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Customizing parent resource cells in ASP.NET MVC Scheduler](images/scheduler-custom-parentcell.png)
 
 
 
@@ -388,6 +397,8 @@ N> Any actions such as create, edit or delete held on any one of the shared even
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Working with shared events in ASP.NET MVC Scheduler](images/scheduler-shared-event.png)
 
 
 
@@ -424,6 +435,8 @@ It is possible to customize the resource header cells using built-in template op
 
 N> To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
+![Resource Header Customization in ASP.NET MVC Scheduler](images/scheduler-custom-resource-header.png)
+
 ![Resource header template in compact mode](images/header-template.png)
 
 ## Customizing resource header with multiple columns
@@ -452,6 +465,8 @@ It is possible to customize the resource headers to display with multiple column
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Resource header with multiple columns in ASP.NET MVC Scheduler](images/scheduler-custom-resource-header-multiple-column.png)
 
 ## Collapse/Expand child resources in timeline views
 
@@ -510,6 +525,8 @@ It is possible to display tooltip over the resource headers showing the resource
 {% endtabs %}
 {% endif %}
 
+![Displaying tooltip for resource headers in ASP.NET MVC Scheduler](images/scheduler-resource-tooltip.png)
+
 
 
 ## Choosing between resource colors for appointments
@@ -541,7 +558,7 @@ In the following example, the colors mentioned in the second level will get appl
 {% endtabs %}
 {% endif %}
 
-
+![Choosing between resource colors for appointments in ASP.NET MVC Scheduler](images/scheduler-resource-colour.png)
 
 N> The value of the `ResourceColorField` field should be mapped with the `Name` value given within the [`Resources`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Resources) property.
 
@@ -610,7 +627,7 @@ Different `working days` can be set for the resources of Scheduler using the `Wo
 {% endtabs %}
 {% endif %}
 
-
+![Set Different Work Days in ASP.NET MVC Scheduler](images/scheduler-resource-custom-workdays.png)
 
 ### Set different work hours
 
@@ -644,7 +661,7 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% endtabs %}
 {% endif %}
 
-
+![Set Different Work Hours in ASP.NET MVC Scheduler](images/scheduler-resource-custom-workhours.png)
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
 
@@ -724,6 +741,6 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 {% endtabs %}
 {% endif %}
 
-
+![Adaptive UI in ASP.NET MVC Scheduler](images/scheduler-resource-verticalview.png)
 
 N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
