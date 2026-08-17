@@ -9,7 +9,7 @@ documentation: ug
 
 # Set Default Value for Event Fields in ASP.NET Core Scheduler
 
-Event window default fields name like Title, Location, etc. can be customized and default value can be set to Subject field using `default` property which will be added if an appointment is created with empty subject.
+The default field names displayed in the event editor window (such as Title, Location, etc.) can be customized, and a default value can be set for the Subject field using the `Default` property. This default value is applied to an appointment when it is created with an empty Subject.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

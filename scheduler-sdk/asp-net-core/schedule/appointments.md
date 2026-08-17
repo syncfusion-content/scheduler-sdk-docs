@@ -10,7 +10,7 @@ documentation: ug
 
 # Appointments in ASP.NET Core Scheduler
 
-Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
+Appointments can be anything scheduled for a specific time period. They can be created across varying time ranges, and each appointment is categorized based on this range. The Scheduler events can be categorized as follows:
 
 * Normal events
 * Spanned events
@@ -52,13 +52,13 @@ The following example depicts how to define a normal event on the Scheduler, wit
 
 ## Spanned events
 
-Represents an appointment that is created for more than 24 hours, and usually displayed on the all-day row. Also, represents another type of appointment that is created for more than one day but less than 24 hours, and usually displayed appropriately on both the days.
+Represents an appointment that is created for more than 24 hours and is usually displayed on the all-day row. It also represents another type of appointment that spans more than one day but less than 24 hours and is usually displayed appropriately on both days.
 
-N> For example, if an appointment is created for two days say from November 25, 2018 – 11.00 PM to November 26, 2018 2.00 AM but less than 24 hours time interval, then the appointment is split into two partitions and will be displayed on both the days.
+N> For example, if an appointment is created for two days, say from November 25, 2018, 11:00 PM to November 26, 2018, 2:00 AM, but lasts less than 24 hours, then the appointment is split into two parts and is displayed on both days.
 
 ## All-day events
 
-Represents an appointment that is created for an entire day such as holiday events. It is usually displayed separately in an all-day row, a separate row for all-day appointments below the date header section. In Timeline views, the all-day appointments displays in the working space area, and no separate all-day row is present in that view.
+Represents an appointment that is created for an entire day, such as holiday events. It is usually displayed separately in an all-day row below the date header section. In Timeline views, all-day appointments are displayed in the working space area, and no separate all-day row is present in that view.
 
 N> To change normal appointment into all-day event, set [`isAllDay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsAllDay) field to true.
 
@@ -76,7 +76,7 @@ N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-
 
 ## Customize the rendering of the spanned events
 
-By default, Scheduler will renders the spanned events (appointment with more than 24 hours duration) in the all-day row by setting `AllDayRow` will the default type renders to the [`spannedEventPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option within the `e-schedule-eventsettings` tag helper. Now we can customize rendering of the that events inside the work cells itself by modifying the [`spannedEventPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option as `TimeSlot`. In this following example, shows how to render the spanned appointments inside the work cells as follows.
+By default, the Scheduler renders spanned events (appointments with more than 24 hours duration) in the all-day row by setting `AllDayRow` as the default value for the [`spannedEventPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option within the `e-schedule-eventsettings` tag helper. You can customize the rendering of these events inside the work cells by setting the [`spannedEventPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option to `TimeSlot`. The following example shows how to render spanned appointments inside the work cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -138,9 +138,9 @@ The following example depicts how to create a recurring event on Scheduler with 
 
 ### Adding exceptions
 
-A few instance of the recurrence series can be excluded on specific dates, by adding those exceptional dates to the [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field. These date values should be given in the ISO date time format with no hyphens(-) separating the date elements.
+A few instances of the recurrence series can be excluded on specific dates by adding those exception dates to the [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field. These date values should be given in ISO date-time format with no hyphens (-) separating the date elements.
 
-For example, 22nd February 2018 can be represented as 20180222. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
+For example, 22 February 2018 can be represented as 20180222. Also, the time portion in UTC format needs to add "Z" after the time with no space. "07:30:00 UTC" is therefore represented as "073000Z".
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -169,9 +169,9 @@ For example, 22nd February 2018 can be represented as 20180222. Also, the time p
 
 ### Editing an occurrence from a series
 
-To dynamically edit a particular occurrence from an event series and display it on the initial load of Scheduler, the edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field defined to it. The [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field of edited occurrence usually maps the ID value of the parent event.
+To dynamically edit a particular occurrence from an event series and display it on the initial load of Scheduler, add the edited occurrence as a new event to the dataSource collection with an additional [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field. The [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field of the edited occurrence usually maps to the ID value of the parent event.
 
-In this example, a recurring instance that displays on the date 30th Jan 2018 is edited with different timings. Therefore, this particular date is excluded from the parent recurring event that repeats from 28th January 2018 to 4th February 2018. This can be done by adding the [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field with the excluded date value on the parent event. Also, the edited occurrence event which is created as a new event should carry the [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field pointing to the parent event's [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) value.
+In this example, a recurring instance that displays on 30 Jan 2018 is edited with different timings. Therefore, this date is excluded from the parent recurring event that repeats from 28 January 2018 to 4 February 2018. This can be done by adding the [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field with the excluded date value on the parent event. Also, the edited occurrence event created as a new event should carry the [`recurrenceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field pointing to the parent event's [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -200,9 +200,9 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 is
 
 ### Edit only the current and following events
 
-To edit only the current and following events enable the property [`editFollowingEvents`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_EditFollowingEvents) within [`eventSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. The edited occurrence needs to be added as a new event to the dataSource collection, with an additional [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field defined to it. The [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field of edited occurrence usually maps the ID value of the immediate parent event.
+To edit only the current and following events, enable the [`editFollowingEvents`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_EditFollowingEvents) property within the [`eventSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. Add the edited occurrence as a new event to the dataSource collection with an additional [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field. The [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field of the edited occurrence usually maps to the ID value of the immediate parent event.
 
-In this example, a recurring instance that displays on the date 30th Jan 2018 and its following dates are edited with different subject. Therefore, this particular date and its following dates are excluded from the parent recurring event that repeats from 28th January 2018 to 4th February 2018. This can be done by updating the [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field with the until date value on the parent event. Also, the edited events which is created as a new event should carry the [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field pointing to the immediate parent event's [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) value.
+In this example, a recurring instance that displays on 30 Jan 2018 and its following dates are edited with a different subject. Therefore, this date and its following dates are excluded from the parent recurring event that repeats from 28 January 2018 to 4 February 2018. This can be done by updating the [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field with the until date value on the parent event. Also, the edited events created as new events should carry the [`followingID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field pointing to the immediate parent event's [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -247,9 +247,9 @@ There are four repeat types available namely,
 
 ### Recurrence properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
+The following table lists the properties used to create recurrence appointments for their respective time periods. The valid rule string can be referred from the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specification.
 
- N> Refer [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+N> Refer to the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specification for a valid recurrence rule string.
 
 | Property | Purpose | Example |
 |-------|---------| --------- |
@@ -412,9 +412,9 @@ In following example, the Subject field in event editor will display its appropr
 
 
 
-## Adding Custom fields
+## Adding custom fields
 
-Apart from the default Scheduler fields, the user can include 'n' number of custom fields for appointments. The following code example shows how to include two custom fields namely **Status** and **Priority** within event collection. It is not necessary to bind the custom fields within the `e-schedule-eventsettings`. However, those additional fields can be accessed easily, for internal processing as well as from application end.
+Apart from the default Scheduler fields, the user can include any number of custom fields for appointments. The following code example shows how to include two custom fields, namely **Status** and **Priority**, within the event collection. It is not necessary to bind the custom fields within the `e-schedule-eventsettings`. However, those additional fields can be accessed easily for internal processing as well as from the application end.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
