@@ -42,7 +42,7 @@ The accessibility compliance for the Schedule component is outlined below.
 
 ## ARIA attributes
 
-The Scheduler parent element is assigned with a role of `main`, to denote it as the main content of a component as well as a unique element of the entire document.
+The Scheduler parent element is assigned a role of `main` to denote it as the main content of the component and a unique element of the entire document.
 
 The following ARIA attributes are used in the Scheduler.
 
@@ -53,7 +53,7 @@ The following ARIA attributes are used in the Scheduler.
 | aria-label | Attribute is set to the Scheduler parent element and its default value is Scheduler's current date. On every time, the date is navigated, this attribute is updated with appropriate current date values. It is also assigned to other scheduler UI elements such as previous and next date navigation buttons depicting its purpose, div element displaying date range in the header bar and appointment elements. |
 | aria-labelledby | It indicates editor dialog title to the user through assistive technologies. |
 | aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
-| aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler.
+| aria-disabled | Attribute is set to the appointment element to indicate the disabled state of the Scheduler. |
 
 ## Keyboard interaction
 
@@ -63,14 +63,14 @@ All the Scheduler actions can be controlled via keyboard keys by using the `allo
 |-----|-----|
 | <kbd>Alt</kbd> + <kbd>j</kbd> | Focuses the Scheduler element [provided from application end]. |
 | <kbd>Tab</kbd> | Focuses the first or active item on the Scheduler header bar and then move the focus to the next available event elements. If no events present, then focus moves out of the component. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverse focusing of the `Tab` key functionality. Inverse focusing of event elements from the last one and then move onto the first or active item on Scheduler header bar and then moves out of the component.
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Reverses the `Tab` key functionality. It shifts focus from the last event element to the first or active item on the Scheduler header bar and then moves out of the component. |
 | <kbd>Enter</kbd> | Opens the quick info popup on the selected cells or events. |
 | <kbd>Escape</kbd> | Closes any of the popup that are in open state. |
-| <kbd>Arrow</kbd> | To move onto the next available cells in either of the needed directions. (left, right, top and right) |
+| <kbd>Arrow</kbd> | Moves to the next available cells in the required directions (left, right, top, and down). |
 | <kbd>Shift</kbd> + <kbd>Arrow</kbd> | For multiple cell selection on either direction. |
 | <kbd>Delete</kbd> | Deletes one or more selected events. |
-| <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | To select multiple events. |
-| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) |To switch between the views of Scheduler. |
+| <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | Selects multiple events. |
+| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) | Switches between the Scheduler views. |
 | <kbd>Ctrl</kbd> + <kbd>Left Arrow</kbd> | To navigate to the previous date period. |
 | <kbd>Ctrl</kbd> + <kbd>Right Arrow</kbd> | To navigate to the next date period. |
 | <kbd>Left</kbd> or <kbd>Right Arrow</kbd> | On pressing any of these keys, when focus is currently on the Schedule header bar, moves the focus to the previous or next items in the header bar. |
@@ -80,7 +80,7 @@ All the Scheduler actions can be controlled via keyboard keys by using the `allo
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | To navigate to today date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | To open editor window. |
 
-> N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+> Note: You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its feature highlights. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
 
 ## Ensuring accessibility
 

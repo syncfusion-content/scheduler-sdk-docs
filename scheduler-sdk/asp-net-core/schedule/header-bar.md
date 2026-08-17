@@ -10,11 +10,11 @@ documentation: ug
 
 # Header Customization in ASP.NET Core Scheduler
 
-The header part of Scheduler can be customized easily with the built-in options available.
+The header part of Scheduler can be customized easily with the built-in options available. Before using the samples, ensure the Scheduler project is configured with the appropriate Syncfusion ASP.NET Core package and a data source.
 
 ## Show or Hide header bar
 
-By default, the header bar holds the date and view navigation options, through which the user can switch between the dates and various views. This header bar can be hidden from the UI by setting `false` to the [`showHeaderBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowHeaderBar) property. It's default value is `true`.
+By default, the header bar holds the date and view navigation options, through which the user can switch between the dates and various views. This header bar can be hidden from the UI by setting `false` to the [`showHeaderBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowHeaderBar) property. Its default value is `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ By default, the header bar holds the date and view navigation options, through w
 
 ## Customizing header bar using template
 
-Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the [`toolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleToolbarItem.html#properties) property. To display the default items, it’s essential to assign a [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleToolbarItem.html#Syncfusion_EJ2_Schedule_ScheduleToolbarItem_Name) field to each item. The names of the default items are `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`. For custom items you can give the name as `Custom` to the name field. Here, the default items such as previous, next, date range text, and today have been used along with external dropdown list as custom items.
+Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the [`toolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleToolbarItem.html#properties) property. To display the default items, it is essential to assign a [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleToolbarItem.html#Syncfusion_EJ2_Schedule_ScheduleToolbarItem_Name) field to each item. The names of the default items are `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`. For custom items, use `Custom` as the name value. Here, the default items such as Previous, Next, DateRangeText, and Today are used along with an external dropdown list as custom items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,7 +73,7 @@ Apart from the default date navigation and view options available on the header 
 
 ## Customizing header bar using event
 
-Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the `actionBegin` event. Here, an employee image is added to the header bar, clicking on which will open the popup showing that person's short profile information.
+Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the `actionBegin` event. Here, an employee image is added to the header bar; clicking it opens a popup showing that person's short profile information.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +103,7 @@ Apart from the default date navigation and view options available on the header 
 
 ## How to display the view options within the header bar popup
 
-By default, the header bar holds the view navigation options, through which the user can switch between various views. You can move this view options to the header bar popup by setting `true` to the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableAdaptiveUI) property.
+By default, the header bar holds the view navigation options, through which the user can switch between various views. You can move these view options to the header bar popup by setting `true` for the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableAdaptiveUI) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,7 +135,7 @@ N> Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive 
 
 ## Date header customization
 
-The Scheduler UI that displays the date text on all views are considered as the date header cells. You can customize the date header cells of Scheduler either using [`dateHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateHeaderTemplate) or [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
+The Scheduler UI that displays the date text on all views is considered the date header cells. You can customize the date header cells of Scheduler using either [`dateHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateHeaderTemplate) or the [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 
 ### Using date header template
 
@@ -198,9 +198,9 @@ In month view, the date header template is not applicable and therefore the same
 
 ## Customizing the date range text
 
-The [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateRangeTemplate) option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateRangeTemplate) option to override the default text and specify your own custom text to be displayed.
+The [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateRangeTemplate) option allows you to customize the text content of the date range displayed in the Scheduler. By default, the date range text is determined by the current Scheduler view. You can use [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateRangeTemplate) to override the default text and specify custom content.
 
-The [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateRangeTemplate) property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+The [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateRangeTemplate) property provides `startDate`, `endDate`, and `currentView` options. Use these values to format the date range text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -229,9 +229,9 @@ The [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Customizing header indent cells
 
-It is possible to customize the header indent cells using the [`headerIndentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderIndentTemplate) option and change the look and appearance in both the vertical and timeline views. In vertical views, You can customize the header indent cells at the hierarchy level and you can customize the resource header left indent cell in timeline views using the template option.
+It is possible to customize the header indent cells using the [`headerIndentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderIndentTemplate) option and change the look and appearance in both the vertical and timeline views. In vertical views, you can customize the header indent cells at the hierarchy level, and in timeline views you can customize the resource header left indent cell using the template option.
 
-**Example:** To customize the header left indent cell to display resources text, refer to the below code example.
+**Example:** To customize the header left indent cell to display resource text, refer to the code example below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -259,4 +259,4 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 
 ![Display Customizing Header Indent Cells in ASP.NET Core Scheduler](images/scheduler-header-indent-cell.png)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its feature overview. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

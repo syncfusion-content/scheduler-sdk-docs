@@ -10,30 +10,30 @@ documentation: ug
 
 # Globalization and Localization in ASP.NET Core Scheduler
 
-The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
+The Scheduler supports different date and time formats as well as cultures, which helps it work across regions. Before using the samples, install the required CLDR data and ensure the Scheduler is configured with the appropriate locale.
 
-You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)), adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)).
+You can adapt the Scheduler to various languages by parsing and formatting the date or number using [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization), and by adding culture-specific customization and text translation using [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
 ## Globalization
 
 The Internationalization library provides support for formatting and parsing the number, date, and time by using the official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data.
 
-By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
+By default, Scheduler is set to follow the English culture ('en-US'). If you want to use a culture other than English, follow these steps.
 
-Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
+Install the `cldr-data` package by using the following command. For more information about CLDR data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `node_modules/cldr-data`.
+Once the package is installed, you can find the culture-specific JSON data under `node_modules/cldr-data`.
 
-Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
+After installing `cldr-data`, create a `cldr-data` folder inside `wwwroot` and add the following subfolders:
 
 * `wwwroot/cldr-data/supplemental`
 * `wwwroot/cldr-data/main`
 
-The files named as below are required to setup the specific culture to the Schedule.
+The following files are required to set up the specific culture for the Scheduler.
 
 * numberingSystems.json
 * ca-gregorian.json
@@ -45,7 +45,7 @@ The file named `numberingSystems.json` is available in the location `node_module
 
 The other required files mentioned above are available in the location `node_modules/cldr-data/main/culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules/cldr-data/main/de`. Now create a folder named `de` inside the location `wwwroot/cldr-data/main` and move the files inside it.
 
-Now use the `loadCultureFiles` method to load the culture specific CLDR JSON data.
+Then use the `loadCultureFiles` method to load the culture-specific CLDR JSON data.
 
 ```sh
     loadCultureFiles('de');
@@ -96,9 +96,9 @@ Set the culture to Scheduler by using the `locale` property.
 
 ## Localizing the static Scheduler text
 
-[`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows to display all the static text, date content, and time mode of the Scheduler following the localized language. To achieve this, set the `locale` property of Scheduler, as well as define the translation text of static words of Scheduler through the `load` method of `L10n` class.
+The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to display all static text, date content, and time mode in the localized language. To achieve this, set the `locale` property of Scheduler and define the translation text for the static words of Scheduler through the `load` method of the `L10n` class.
 
-For example, the following code example lets you to define the Hungarian translation words for all the static words used in Scheduler.
+For example, the following code example lets you define the Hungarian translation words for all the static words used in Scheduler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,7 +127,7 @@ For example, the following code example lets you to define the Hungarian transla
 
 ## Setting date format
 
-Scheduler can be used with all valid date formats and by default it follows the universal date format "MM/dd/yyyy". If the [`dateFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateFormat) property is not specified particularly, then it will work based on the locale that is assigned to the Scheduler. As the default locale applied on Scheduler is "en-US", this makes it to follow the "MM/dd/yyyy" pattern.
+Scheduler can be used with all valid date formats and, by default, follows the universal date format "MM/dd/yyyy". If the [`dateFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateFormat) property is not specified, it uses the locale assigned to Scheduler. Because the default locale is "en-US", it follows the "MM/dd/yyyy" pattern.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,9 +157,9 @@ Scheduler can be used with all valid date formats and by default it follows the 
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12 or 24 hours format which is completely based on the `locale` set to the Scheduler. Since the default `locale` value of the Scheduler is en-US, the time mode will be set to 12 hours format automatically. You can also customize the format by using the [`timeFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property. To know more about the time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#custom-formats) section.
+Time format is a way of representing time values in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12-hour or 24-hour format, depending on the `locale` set on the Scheduler. Since the default `locale` value is `en-US`, the time mode is set to 12-hour format automatically. You can also customize the format by using the [`timeFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property. To learn more about time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#custom-formats) section.
 
-The following example demonstrates the Scheduler component in 24 hours format.
+The following example demonstrates the Scheduler component in 24-hour format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,11 +187,11 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 ![Display Setting Time Format in ASP.NET Core Scheduler](images/schedule-time-format.png)
 
-N> [`timeFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property only accepts the valid time format's.
+N> The [`timeFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property accepts only valid time formats.
 
 ## Displaying Scheduler in RTL mode
 
-The Scheduler layout and its behavior can be changed as per the common RTL (Right to Left) conventions by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableRtl) to `true`. By doing so, the Scheduler will display its usual layout from right to left. It's default value is `false`.
+The Scheduler layout and its behavior can be changed according to the common RTL (right-to-left) conventions by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableRtl) to `true`. By doing so, the Scheduler displays its layout from right to left. Its default value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -219,7 +219,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 ![Display RTL Mode in ASP.NET Core Scheduler](images/schedule-rtl.png)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
 
 ## See Also
 
