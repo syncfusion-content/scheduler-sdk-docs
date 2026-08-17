@@ -9,7 +9,7 @@ documentation: ug
 
 # Add a Custom Header in Blazor Scheduler
 
-The Scheduler header bar can be hidden by setting `false` to `ShowHeaderBar` and use Blazor Toolbar component to customize our own header. In the following code example, the Scheduler views can be changed by using the Dropdowns available in the custom Header.
+The Scheduler header bar can be hidden by setting `ShowHeaderBar` to `false`, and you can use the Blazor Toolbar component to create a custom header. In the following code example, Scheduler views are changed by using the dropdown list in the custom header.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

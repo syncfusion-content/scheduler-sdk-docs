@@ -9,17 +9,17 @@ documentation: ug
 
 # Row Auto Height in Blazor Scheduler
 
-By default, the height of the Scheduler rows in Timeline views are static and therefore, when the same time range holds multiple overlapping appointments, a `+n more` text indicator will be displayed. With this feature enabled, you can now view all the overlapping appointments present in those specific time range by auto-adjusting the row height based on the presence of the appointments count, instead of displaying the `+n more` text indicators.
+By default, the height of Scheduler rows in timeline views is static. When the same time range contains multiple overlapping appointments, a `+n more` indicator is displayed. With this feature enabled, you can view all overlapping appointments in that time range by auto-adjusting the row height instead of showing the `+n more` indicator.
 
-To enable auto row height adjustments on Scheduler Timeline views and Month view, set `true` to the [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) property whose default value is `false`.
+To enable auto row height adjustments in Scheduler timeline views and the Month view, set the [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) property to `true`. The default value is `false`.
 
-N> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
+N> This auto row height adjustment is applicable only to timeline views and the calendar Month view.
 
-Now, let's see how it works on those applicable views with examples.
+The following sections show how it works in the supported views.
 
-When the feature [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied on the same time range, which is demonstrated in the following example.
+When [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) is enabled, the row height is automatically adjusted based on the number of overlapping events in the same time range, as shown in the following example.
 
-To get start quickly about row auto height in our Scheduler, you can check on this video:
+To get started quickly with row auto height in Scheduler, watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=qFQvbFQbxPk-0"%}
@@ -62,9 +62,11 @@ To get start quickly about row auto height in our Scheduler, you can check on th
 
 ![Row Auto Height in Blazor Scheduler](images/blazor-scheduler-row-auto-height.webp)
 
-![Blazor Scheduler in Timeleine Month View](images/blazor-scheduler-timeline-month.webp)
+![Blazor Scheduler in Timeline Month View](images/blazor-scheduler-timeline-month.webp)
 
 ## Timeline views with multiple resources
+
+In timeline views with multiple resources, auto row height adjusts each resource row based on the overlapping appointments it contains.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -123,7 +125,7 @@ To get start quickly about row auto height in our Scheduler, you can check on th
 
 ## Appointments occupying entire cell
 
-By default, with the feature [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight), there will be a space in the bottom of the cell when appointment is rendered. To avoid this space, set true to the property [`IgnoreWhitespace`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.IScheduleEventSettings.html#Syncfusion_Blazor_Schedule_IScheduleEventSettings_IgnoreWhitespace) with [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.IScheduleEventSettings.html) tag helper whereas its default property value is false.
+By default, when [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) is enabled, some space remains at the bottom of the cell when an appointment is rendered. To remove this space, set the [`IgnoreWhitespace`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.IScheduleEventSettings.html#Syncfusion_Blazor_Schedule_IScheduleEventSettings_IgnoreWhitespace) property in the [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.IScheduleEventSettings.html) tag helper to `true`. The default value is `false`.
 
 ```cshtml
 
@@ -183,4 +185,4 @@ By default, with the feature [`EnableAutoRowHeight`](https://help.syncfusion.com
 
 ![Ignoring Whitespace in Blazor Scheduler](images/blazor-scheduler-ignore-whitespace.webp)
 
-N> The property [`IgnoreWhitespace`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.IScheduleEventSettings.html#Syncfusion_Blazor_Schedule_IScheduleEventSettings_IgnoreWhitespace) will be applicable only when [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) feature is enabled in the Scheduler.
+N> The [`IgnoreWhitespace`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.IScheduleEventSettings.html#Syncfusion_Blazor_Schedule_IScheduleEventSettings_IgnoreWhitespace) property is applicable only when [`EnableAutoRowHeight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableAutoRowHeight) is enabled.

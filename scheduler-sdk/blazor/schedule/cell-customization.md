@@ -9,11 +9,11 @@ documentation: ug
 
 # Cell Customization in Blazor Scheduler
 
-The cells of the Scheduler can be easily customized using the cell template.
+The cells of the Scheduler can be easily customized using templates and the `OnRenderCell` event.
 
 ## Setting cell dimensions in Vertical Views
 
-The height and width of the Scheduler cells can be customized either to increase or reduce its size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of vertical views.
+The height and width of the Scheduler cells can be customized either to increase or reduce their size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of vertical views.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -69,7 +69,7 @@ The height and width of the Scheduler cells can be customized either to increase
 
 ## Setting cell dimensions in Timeline Views
 
-The height and width of the Scheduler cells can be customized either to increase or reduce its size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of timeline views.
+The height and width of the Scheduler cells can be customized either to increase or reduce their size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of timeline views.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -113,7 +113,7 @@ The height and width of the Scheduler cells can be customized either to increase
 
 ## Customizing cells using CellTemplate
 
-The [`CellTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_CellTemplate) is used to customize the cell background with specific images or appropriate text on the given date values.
+The [`CellTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_CellTemplate) is used to customize the cell background with specific images or appropriate text for the given date values.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -203,7 +203,7 @@ The [`CellTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Sch
 
 ## Customizing cell header in month view
 
-The month header of each date cell in the month view can be customized using the [CellHeaderTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_CellHeaderTemplate)
+The month header of each date cell in the Month view can be customized using the [`CellHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_CellHeaderTemplate).
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -244,7 +244,7 @@ The month header of each date cell in the month view can be customized using the
 
 ## Customizing cells using OnRenderCell event
 
-The cells can also be customized by using [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event. In the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell), the argument [`RenderCellEventArgs`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.RenderCellEventArgs.html#properties) returns the [`ElementType`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.RenderCellEventArgs.html#Syncfusion_Blazor_Schedule_RenderCellEventArgs_ElementType) as `WorkCells` and `AllDayCells` when the cell is rendering.
+The cells can also be customized by using the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event. In the [`OnRenderCell`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnRenderCell) event, the [`RenderCellEventArgs`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.RenderCellEventArgs.html#properties) argument returns the [`ElementType`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.RenderCellEventArgs.html#Syncfusion_Blazor_Schedule_RenderCellEventArgs_ElementType) as `WorkCells` and `AllDayCells` when the cell is rendered.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -387,7 +387,7 @@ You can customize the background color of weekend cells by utilizing the [`OnRen
 }
 ```
 
-And, the background color for weekend cells in the Month view through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells.
+The background color for weekend cells in the Month view can also be customized through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells.
 
 ```CSS
 

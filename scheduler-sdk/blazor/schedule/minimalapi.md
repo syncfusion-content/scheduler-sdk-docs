@@ -9,13 +9,13 @@ documentation: ug
 
 # Minimal API Data Binding in Blazor Scheduler
 
-The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from ASP.NET Core [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) endpoints hosted within the same application. This approach enables seamless integration of appointment data with full CRUD (Create, Read, Update, Delete) functionality without requiring a separate backend project.
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from ASP.NET Core [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) endpoints hosted in the same application. This approach provides seamless integration of appointment data with full CRUD (Create, Read, Update, Delete) functionality without requiring a separate backend project.
 
-This documentation explains how to create a Blazor Server application that hosts Minimal API endpoints in the same project, enabling the Scheduler component to perform CRUD operations on in-memory appointment data through RESTful HTTP requests.
+This documentation explains how to create a Blazor Server application that hosts Minimal API endpoints in the same project, allowing the Scheduler component to perform CRUD operations on in-memory appointment data through RESTful HTTP requests.
 
 ## Prerequisites
 
-Install the following software and packages before starting the process:
+Install the following software and packages before starting:
 
 | Software/Package | Version | Purpose |
 |-----------------|---------|---------|
@@ -26,11 +26,11 @@ Install the following software and packages before starting the process:
 
 ## Binding data from Minimal API endpoints
 
-This section explains how to create an ASP.NET Core Minimal API backend within a Blazor Server application and bind appointment data to the Blazor Scheduler component. The following steps demonstrate the actual project creation flow.
+This section explains how to create an ASP.NET Core Minimal API backend within a Blazor Server application and bind appointment data to the Blazor Scheduler component. The steps below show the complete project setup flow.
 
 ### Step 1: Create a Blazor Web App
 
-Create a **Blazor Web App** using Visual Studio 2026 or .NET CLI.
+Create a **Blazor Web App** by using Visual Studio 2026 or the .NET CLI.
 
 **Using Visual Studio 2026:**
 1. Open Visual Studio 2026
@@ -48,18 +48,18 @@ dotnet new blazor -n BlazorSchedulerApp --interactivity Server
 cd BlazorSchedulerApp
 ```
 
-> Configure the Interactive render mode to **InteractiveServer** during project creation as the Scheduler requires interactivity for CRUD operations.
+> Configure the interactive render mode to **InteractiveServer** during project creation, as the Scheduler requires interactivity for CRUD operations.
 
 ### Step 2: Install Required NuGet Packages
 
-Install the Blazor packages using the .NET CLI:
+Install the required Blazor packages by using the .NET CLI:
 
 **Using .NET CLI:**
 ```bash
 dotnet add package Syncfusion.Blazor.Schedule
 dotnet add package Syncfusion.Blazor.Themes
 ```
-The installed packages are reflected in the `BlazorSchedulerApp.csproj` file:
+The installed packages appear in the `BlazorSchedulerApp.csproj` file:
 
 ```xml
 <ItemGroup>
@@ -67,7 +67,7 @@ The installed packages are reflected in the `BlazorSchedulerApp.csproj` file:
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="*" />
 </ItemGroup>
 ```
-> After installing packages, build the project to ensure all dependencies are restored correctly: `dotnet build`
+> After installing the packages, build the project to ensure that all dependencies are restored correctly: `dotnet build`
 
 ### Step 3: Add Import Namespaces
 
@@ -80,7 +80,7 @@ Open the **Components/_Imports.razor** file and import the `Syncfusion.Blazor` a
 
 ### Step 4: Add stylesheet and script resources
 
-The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the stylesheet reference in the `<head>` section and the script reference at the end of the `<body>` in the **/Components/App.razor** file as shown below:
+The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the stylesheet reference in the `<head>` section and the script reference at the end of the `<body>` in the **/Components/App.razor** file, as shown below:
 
 ```html
 <head>
@@ -96,7 +96,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 
 ### Step 5: Create the Appointment Model
 
-Create a model class to represent scheduler appointments with all required properties.
+Create a model class to represent Scheduler appointments with the required properties.
 
 
 [Models/AppointmentData.cs]
@@ -119,7 +119,7 @@ public class AppointmentData
 }
 ```
 
-Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.Models` namespaces.
+Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.Models` namespace.
 
 ```cshtml
 @using BlazorSchedulerApp.Models
@@ -136,7 +136,7 @@ Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.M
 - **RecurrenceID**: Links recurring appointment instances
 - **RecurrenceException**: Handles exceptions in recurring series
 
-> **Note**: All properties use default values to avoid null reference issues. The API will handle generating unique IDs for new appointments.
+> **Note**: All properties use default values to avoid null reference issues. The API handles generating unique IDs for new appointments.
 
 ### Step 6: Create the Appointment Service
 
@@ -249,7 +249,7 @@ public class AppointmentService
 }
 ```
 
-Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.Services` namespaces.
+Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.Services` namespace.
 
 ```cshtml
 @using BlazorSchedulerApp.Services
@@ -257,7 +257,7 @@ Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.S
 
 ### Step 7: Configure Application Services
 
-The `Program.cs` file must be updated to register required services, including Blazor components, HttpClient, CORS, and Razor components.This section configures the foundational services used across the Scheduler application.
+Update the `Program.cs` file to register the required services, including Blazor components, `HttpClient`, CORS, and Razor components. This section configures the foundational services used across the Scheduler application.
 
 [Program.cs]
 
@@ -588,7 +588,7 @@ A complete, working sample implementation is available in the [GitHub repository
 
 **Issue**: Errors like `Could not find 'sfBlazor.Toolbar.initialize'`
 
-**Fix**: Add script in `App.razor` before `</body>`:
+**Fix**: Add the script in `App.razor` before `</body>`:
 ```html
 <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
 ```
@@ -597,7 +597,7 @@ A complete, working sample implementation is available in the [GitHub repository
 
 **Issue**: API calls fail with 404 errors
 
-**Fix**: 
+**Fix**:
 - Ensure endpoints are defined **before** `app.MapRazorComponents<App>()` in `Program.cs`
 - Verify routes match (e.g., `/api/appointments`)
 - Check browser console for actual URL
@@ -606,7 +606,7 @@ A complete, working sample implementation is available in the [GitHub repository
 
 **Issue**: `Cannot provide a value for property 'AppointmentService'`
 
-**Fix**: 
+**Fix**:
 - Register service in `Program.cs`: `builder.Services.AddScoped<AppointmentService>();`
 - Add `@inject AppointmentService AppointmentService` in `Scheduler.razor`
 - Rebuild project
@@ -620,4 +620,4 @@ A complete, working sample implementation is available in the [GitHub repository
 - Clear browser cache
 - Check Syncfusion.Blazor.Themes package is installed
 
-To learn more about the functionality of the Schedule component, refer to the [documentation](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started).
+To learn more about the Schedule component, refer to the [documentation](https://blazor.syncfusion.com/documentation/scheduler/getting-started).

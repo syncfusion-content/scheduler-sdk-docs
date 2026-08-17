@@ -9,16 +9,16 @@ documentation: ug
 
 # Resizing in Blazor Scheduler
 
-Another way of rescheduling an appointment can be done by resizing it through either of its handlers. To work with resizing functionality make sure that [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowResizing) property is set to **true**.
+Another way of rescheduling an appointment can be done by resizing it through either of its handlers. To work with resizing functionality, make sure that the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowResizing) property is set to **true**.
 
-To get start quickly about resize options available in our Scheduler, you can check on this video:
+To get started quickly with the resize options available in the Scheduler, you can watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=Vtl1Wyuwt-0"%}
 
 ## Disable the resize action
 
-By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set false to the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowResizing) property.
+By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set `false` to the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowResizing) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -58,7 +58,7 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
 
 ## Disable scrolling on resize action
 
-By default, while resizing an appointment, when its handler reaches the extreme edges of the Scheduler, scrolling action will takes place along with event resizing. To prevent this scrolling action, set false to `Scroll` value within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event.
+By default, while resizing an appointment, when its handler reaches the extreme edges of the Scheduler, scrolling action takes place along with event resizing. To prevent this scrolling action, set `false` to the `Enable` value within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -103,7 +103,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 
 ## Controlling scroll speed while resizing an event
 
-The speed of the scrolling action while resizing an appointment to the Scheduler edges, can be controlled within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event by setting the desired value to the [ScrollBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScrollOptions.html#Syncfusion_Blazor_Schedule_ScrollOptions_ScrollBy) option.
+The speed of the scrolling action while resizing an appointment to the Scheduler edges can be controlled within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event by setting the desired value to the [ScrollBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScrollOptions.html#Syncfusion_Blazor_Schedule_ScrollOptions_ScrollBy) option.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -148,7 +148,7 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 
 ## Setting resize time interval
 
-By default, while resizing an appointment, it extends or shrinks at an interval of 30 minutes. To change this default resize interval, set appropriate values to `Interval` option within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event.
+By default, while resizing an appointment, it extends or shrinks at an interval of 30 minutes. To change this default resize interval, set an appropriate value to the `Interval` option within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
