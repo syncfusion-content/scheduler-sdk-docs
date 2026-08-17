@@ -4,12 +4,11 @@ title: About Syncfusion ASP.NET MVC Scheduler Component | Syncfusion
 description: Learn about the Syncfusion ASP.NET MVC Scheduler, its key features, and the common scheduling scenarios it supports for building modern apps.
 platform: scheduler-sdk
 control: Scheduler
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Overview
+# Overview of ASP.NET Scheduler
 
 The **Scheduler** component is an event calendar which facilitates user with the common Outlook-calendar features, thus allowing the users to plan and manage their events/appointments and its time in an efficient way.
 

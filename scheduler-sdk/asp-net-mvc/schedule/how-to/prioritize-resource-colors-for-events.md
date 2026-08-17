@@ -9,7 +9,7 @@ documentation: ug
 
 # Prioritize Resource Colors for Events in ASP.NET MVC Scheduler
 
-By default top level resource color will be applied for the events. If user wants to apply specific resource color to events irrespective of its parent resource color, it can be achieved by `resourceColorField` field within `eventSettings` property as shown below.
+By default, the top-level resource color is applied to the events. If you want to apply a specific resource color to events irrespective of the parent resource color, this can be achieved by setting the `resourceColorField` field within the `eventSettings` property as shown below. The value of `resourceColorField` is the name of the resource whose color should be prioritized.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,4 +36,4 @@ By default top level resource color will be applied for the events. If user want
 
 
 
-N> The `resourceColorField` field value should be as same as the `name` field value given with in `resources` property.
+N> The `resourceColorField` value must match the `name` of a resource defined in the `resources` property. For example, if the resource is added with `Name("Categories")`, set `ResourceColorField("Categories")` on the event settings.

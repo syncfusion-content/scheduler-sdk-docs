@@ -10,13 +10,13 @@ documentation: ug
 
 # Context Menu in ASP.NET MVC Scheduler
 
-You can display context menu on work cells and appointments of Scheduler by making use of the [`ContextMenu`](https://ej2.syncfusion.com/aspnetmvc/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler`.
+You can display a context menu on the work cells and appointments of the Scheduler by using the [`ContextMenu`](https://ej2.syncfusion.com/aspnetmvc/documentation/context-menu/getting-started) control from the application end. In the following code example, the ContextMenu control is added and its target is set to the Scheduler.
 
-On Scheduler cells, you can display the menu items such as `New Event`, `New Recurring Event` and `Today` option. For appointments, you can display its related options such as `Edit Event` and `Delete Event`. The default event window can be opened for appointment creation and editing using the `openEditor` method of Scheduler.
+On Scheduler cells, you can display menu items such as `New Event`, `New Recurring Event`, and `Today`. For appointments, you can display related options such as `Edit Event` and `Delete Event`. The default event window can be opened for appointment creation and editing using the `openEditor` method of the Scheduler.
 
-The deletion of appointments can be done by using the `deleteEvent` public method. Also, the [`SelectedDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property can be used to navigate between different dates.
+The deletion of appointments can be done by using the `deleteEvent` public method. The [`SelectedDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property can also be used to navigate between different dates.
 
-N> You can also display custom menu options on Scheduler cells and appointments. Context menu will open on tap-hold in responsive mode.
+N> You can also display custom menu options on Scheduler cells and appointments. The context menu opens on tap-and-hold in responsive mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,4 +43,4 @@ N> You can also display custom menu options on Scheduler cells and appointments.
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.

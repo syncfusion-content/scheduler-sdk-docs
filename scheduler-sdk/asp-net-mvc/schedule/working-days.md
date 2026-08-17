@@ -10,24 +10,24 @@ documentation: ug
 
 # Working Days and Hours in ASP.NET MVC Scheduler
 
-The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
+The Scheduler can be customized on various aspects, and it inherits almost all the calendar-specific features, such as the following options:
 
-* To set custom time range display on Scheduler
-* To set different working hours
-* To set different working days
-* To set different first day of week
-* To show/hide weekend days
-* To show the week number
+* To set a custom time range display on the Scheduler.
+* To set different working hours.
+* To set different working days.
+* To set a different first day of the week.
+* To show or hide weekend days.
+* To show the week number.
 
-## Set working days
+## Setting working days
 
-By default, Scheduler considers the week days from Monday to Friday as `Working days` and therefore defaults to [1,2,3,4,5] - where 1 represents Monday, 2 represents Tuesday and so on. The days which are not defined in this working days collection are considered as non-working days. Therefore, when the weekend days are set to hide from Scheduler, all those non-working days too gets hidden from the layout.
+By default, the Scheduler considers the weekdays from Monday to Friday as `Working days` and therefore defaults to `[1, 2, 3, 4, 5]`, where 1 represents Monday, 2 represents Tuesday, and so on. The days that are not defined in this working days collection are considered non-working days. When the weekend days are set to hide from the Scheduler, all those non-working days also get hidden from the layout.
 
-The Work week and Timeline Work week views displays exactly the defined working days on Scheduler layout, whereas other views displays all the days and simply differentiates the non-working days on UI with inactive cell color.
+The Work week and Timeline Work week views display exactly the defined working days on the Scheduler layout, whereas other views display all the days and simply differentiate the non-working days on the UI with an inactive cell color.
 
-N> The working or business hours depiction on Scheduler are usually valid only on these specified working days.
+N> The working or business hours depiction on the Scheduler is usually valid only on the specified working days.
 
-The following example code depicts how to set the Scheduler to display Monday, Wednesday and Friday as working days of a week.
+The following example depicts how to set the Scheduler to display Monday, Wednesday, and Friday as the working days of a week.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -56,9 +56,9 @@ The following example code depicts how to set the Scheduler to display Monday, W
 
 ## Hiding weekend days
 
-The `ShowWeekend` property is used to either show or hide the weekend days of a week and it is not applicable on Work week view (as non-working days are usually not displayed on work week view). By default, it is set to `true`. The days which are not a part of the working days collection of a Scheduler are usually considered as non-working or weekend days.
+The `ShowWeekend` property is used to either show or hide the weekend days of a week, and it is not applicable on the Work week view (since non-working days are usually not displayed on the Work week view). By default, it is set to `true`. Days that are not part of the working days collection of the Scheduler are usually considered non-working or weekend days.
 
-Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore the remaining days (0, 2, 6 – Sunday, Tuesday and Saturday) are considered as non-working or weekend days and will be hidden from all the views when `ShowWeekend` property is set to `false`.
+Here, the working days are defined as `[1, 3, 4, 5]` on the Scheduler, so the remaining days (`0, 2, 6` – Sunday, Tuesday, and Saturday) are considered non-working or weekend days and are hidden from all the views when the `ShowWeekend` property is set to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -85,11 +85,11 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 
 
-## Show week numbers
+## Showing week numbers
 
-It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `ShowWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
+The week number count of a week can be shown in the header bar of the Scheduler by setting `ShowWeekNumber` to `true`. By default, its value is `false`. In the Month view, the week numbers are displayed as the first column.
 
-N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/header-rows) property to handle such requirement with additional customization.
+N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/header-rows) property to handle such requirements with additional customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -116,17 +116,15 @@ N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has 
 
 
 
-### Different options in showing week numbers
+### Different options for showing week numbers
 
 By default, week numbers are shown in the Scheduler based on the first day of the year. However, the week numbers can be determined based on the following criteria.
 
-`FirstDay` – The first week of the year is calculated based on the first day of the year.
+* `FirstDay` – The first week of the year is calculated based on the first day of the year.
+* `FirstFourDayWeek` – The first week of the year begins from the first week with four or more days.
+* `FirstFullWeek` – The first week of the year begins when meeting the first day of the week (`firstDayOfWeek`) and the first day of the year.
 
-`FirstFourDayWeek` – The first week of the year begins from the first week with four or more days.
-
-`FirstFullWeek` – The first week of the year begins when meeting the first day of the week (firstDayOfWeek) and the first day of the year.
-
-For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
+For more details, refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -159,11 +157,11 @@ For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/a
 
 Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the `WorkHours` property which is of object type and includes the following sub-options,
 
-* [`Highlight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Highlight) – enables/disables the highlighting of work hours.
-* [`Start`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Start) - sets the start time of the working/business hour of a day.
-* [`End`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_End) - sets the end time limit of the working/business hour of a day.
+Working hours indicate the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on the Scheduler using the `WorkHours` property, which is of object type and includes the following sub-options:
 
-{% if page.publishingplatform == "aspnet-core" %}
+* [`Highlight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Highlight) – enables or disables the highlighting of work hours.
+* [`Start`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Start) - sets the start time of the working or business hour of a day.
+* [`End`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_End) - sets the end time limit of the working or 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -188,11 +186,11 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 
 
-## Scheduler displaying custom hours
+## Displaying custom hours in the Scheduler
 
-It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the [`StartHour`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_StartHour) and [`EndHour`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EndHour) properties respectively.
+It is possible to display the Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the [`StartHour`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_StartHour) and [`EndHour`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EndHour) properties, respectively.
 
-The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM and the remaining hours are hidden on the UI.
+The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM, and the remaining hours are hidden on the UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -219,11 +217,11 @@ The following code example displays the Scheduler starting from the time range 7
 
 
 
-## Setting start day of the week
+## Setting the start day of the week
 
-By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_FirstDayOfWeek) property with the values ranging from 0 to 6.
+By default, the Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of the week to a different day, set the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_FirstDayOfWeek) property with values ranging from 0 to 6.
 
-> Here, Sunday is always denoted as 0, Monday as 1 and so on.
+> Here, Sunday is always denoted as `0`, Monday as `1`, and so on.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -250,9 +248,9 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 
 
 
-## Scroll to specific time and date
+## Scrolling to a specific time and date
 
-You can manually scroll to a specific time on Scheduler by making use of the `scrollTo` method as depicted in the following code example.
+You can manually scroll to a specific time on the Scheduler by using the `scrollTo` method, as shown in the following code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -281,7 +279,7 @@ You can manually scroll to a specific time on Scheduler by making use of the `sc
 
 ### How to scroll to current time on initial load
 
-There are scenarios where you may need to load the Scheduler displaying the system's current time on the currently visible view port area. In such cases, the Scheduler needs to be scrolled to a specific time based on the system's current time which is depicted in the following code example.
+There are scenarios where you may need to load the Scheduler showing the system's current time in the currently visible viewport area. In such cases, the Scheduler needs to be scrolled to a specific time based on the system's current time, as depicted in the following code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -308,7 +306,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.
 
 ## See Also
 
