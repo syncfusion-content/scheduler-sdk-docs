@@ -250,7 +250,7 @@ The [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) a
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/cell-dimension-cs7" %}
 {% endif %}
 
->By default, the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) property is set to new Date(1900, 0, 1) and the [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property is set to new Date(2099, 11, 31). Custom values can be assigned to these properties to restrict the date range according to application requirements.
+> By default, the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) property is set to new Date(1900, 0, 1) and the [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property is set to new Date(2099, 11, 31). Custom values can be assigned to these properties to restrict the date range according to application requirements.
 
 ## Customizing the weekend cells background color
 
@@ -274,7 +274,7 @@ renderCell: function (args) {
 
 ```
 
-And, the background color for weekend cells in the Month view, apply custom CSS through the through the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default CSS applied on cells.
+To change the background color for weekend cells in Month view, apply custom CSS using the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property, which overrides the default styles applied to cells.
 
 ```css
 
@@ -311,8 +311,8 @@ And, the background color for weekend cells in the Month view, apply custom CSS 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/weekend-cell-color" %}
 {% endif %}
 
-## How to disable multiple cell and row selection in Schedule
+## How to disable multiple cell and row selection in Scheduler
 
-By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows to select multiple cells and rows.If multiple cell and row selection needs to be disabled, this feature can be turned off by setting these properties to `false`.
+By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Scheduler are set to `true`, allowing multiple cell and row selection. To disable this behavior, set these properties to `false`.
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of key capabilities. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to learn how to present and manipulate data.

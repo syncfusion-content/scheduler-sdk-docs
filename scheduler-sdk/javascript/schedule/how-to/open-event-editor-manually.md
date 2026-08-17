@@ -10,16 +10,14 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Open Event Editor Programmatically in JavaScript Scheduler
 
-The Scheduler control provides flexibility for event creation and editing. By default, the editor opens when double-clicking on cells or appointments. However, you can also trigger the editor programmatically. This guide demonstrates different approaches to manually open the event editor window in your Scheduler application.
+The Scheduler opens the editor by default on double-clicks, but you can trigger it programmatically. This guide shows how to open the editor for a time range or an existing event.
 
 ## Open editor window externally
 
-The Scheduler allows users to manually open the event editor for a specific time range or event using the [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) method.  
+Use [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openeditor) to open the event editor manually:
 
-- To open the editor for a specific time range, pass the cell details as the first argument and **Add** as the second argument.  
-- To open the editor for an existing event, pass the event details as the first argument and **Save** as the second argument.  
-
-
+- To open the editor for a specific time range, pass the cell details as the first argument and the string `Add` as the second argument.
+- To open the editor for an existing event, pass the event data as the first argument and the string `Save` as the second argument.
 {% if page.publishingplatform == "typescript" %}
 
  {% tabs %}

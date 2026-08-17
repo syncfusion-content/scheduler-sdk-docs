@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Timezone in JavaScript Scheduler
 
-By default, the Scheduler uses the client system's time zone. To display or process appointments in a specific time zone, use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property. Individual appointments can also carry their own time zone information by using `startTimezone` and `endTimezone` fields in the event data.
+By default, the Scheduler uses the client's system time zone. Use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property to render and process appointments in a specific time zone. Individual events can also include `startTimezone` and `endTimezone` fields in the event data.
 
-> Note: The `timezone` property affects appointment processing and the current-time indicator only.
+Note: the `timezone` property affects appointment processing and the current-time indicator.
 
 ## Understanding date behavior in JavaScript
 
@@ -21,7 +21,7 @@ JavaScript's `new Date()` returns a Date object that includes local time and the
 
 ## Scheduler with no explicit timezone
 
-When no time zone is set on the Scheduler, appointments render according to the client browser's time zone. For example, providing start/end times with `new Date()` will present those times in the viewer's local time zone.
+When no Scheduler `timezone` is specified, appointments render using the browser's local time zone. For example, `new Date()` values are shown in the viewer's local time.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -52,7 +52,7 @@ When no time zone is set on the Scheduler, appointments render according to the 
 
 ## Scheduler set to a specific timezone
 
-Setting the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property forces all appointments to display according to that time zone regardless of the client's local setting. The example below demonstrates appointments displayed in Eastern Time (UTC−05:00).
+Set the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to force appointments to display in a particular zone regardless of the client's local setting. The example below demonstrates appointments displayed in Eastern Time (UTC−05:00).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -89,7 +89,7 @@ Setting the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/ap
 
 ## Display events at the same time everywhere (UTC)
 
-If events are stored in UTC and the goal is to present the same wall-clock time to all users, set the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to `UTC`. Doing so ensures event times match the stored database times for every user, regardless of their local time zone.
+If events are stored in UTC and should appear at the same wall-clock time for all users, set the Scheduler [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to `UTC`. This keeps displayed times consistent with stored database values across regions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -126,7 +126,7 @@ If events are stored in UTC and the goal is to present the same wall-clock time 
 
 ## Per-event time zones
 
-To keep each appointment in its originating time zone, provide `startTimezone` and `endTimezone` properties in the event datasource. The Scheduler will render events with appropriate offsets so that time differences are correctly reflected.
+To preserve an appointment's originating zone, include `startTimezone` and `endTimezone` in the event data. The Scheduler adjusts rendering to reflect the correct offsets.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -157,7 +157,7 @@ To keep each appointment in its originating time zone, provide `startTimezone` a
 
 ## Customize timezone list in the editor
 
-The timezone editor displays a large collection (200+) of time zone names by default. You can customize this collection at the application level to show only relevant zones or to add/remove entries.
+The timezone editor shows a large collection of zones by default. Customize the list at the application level to surface only relevant zones or to add/remove entries.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -293,4 +293,4 @@ let convertedDate: Date = timezone.removeLocalOffset(date);
 console.log(convertedDate); // 2018-12-05T15:25:11.000Z
 ```
 
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and see the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage and demonstrations.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage.
