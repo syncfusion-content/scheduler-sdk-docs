@@ -24,16 +24,16 @@ Work cells represent the time slots or date cells where appointments are rendere
 
 | CSS selector | Description |
 |-------|---------|
-| .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of scheduler |
-| .e-schedule .e-month-view .e-work-cells | Work cells in month view of scheduler |
-| .e-schedule .e-month-view .e-other-month | Work cells of other month in month view of scheduler |
-| .e-schedule .e-timeline-view .e-work-cells | Work cells in timeline views of scheduler |
-| .e-schedule .e-timeline-month-view .e-work-cells | Work cells in timeline month view of scheduler |
-| .e-schedule .e-timeline-year-view .e-work-cells | Work cells in timeline year view of scheduler |
-| .e-schedule .e-timeline-year-view .e-work-cells.e-other-month | Work cells of other month in timeline year view of scheduler |
-| .e-schedule .e-month-agenda-view .e-work-cells | Work cells in month agenda view of scheduler |
-| .e-schedule .e-month-agenda-view .e-other-month | Work cells of other month in month agenda view of scheduler |
-| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-other-month | Work cells of other month in year view of scheduler |
+| .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of Scheduler |
+| .e-schedule .e-month-view .e-work-cells | Work cells in Month view of Scheduler |
+| .e-schedule .e-month-view .e-other-month | Work cells of the other month in Month view of Scheduler |
+| .e-schedule .e-timeline-view .e-work-cells | Work cells in Timeline views of Scheduler |
+| .e-schedule .e-timeline-month-view .e-work-cells | Work cells in Timeline Month view of Scheduler |
+| .e-schedule .e-timeline-year-view .e-work-cells | Work cells in Timeline Year view of Scheduler |
+| .e-schedule .e-timeline-year-view .e-work-cells.e-other-month | Work cells of the other month in Timeline Year view of Scheduler |
+| .e-schedule .e-month-agenda-view .e-work-cells | Work cells in Month Agenda view of Scheduler |
+| .e-schedule .e-month-agenda-view .e-other-month | Work cells of the other month in Month Agenda view of Scheduler |
+| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-other-month | Work cells of the other month in Year view of Scheduler |
 
 ---
 
@@ -43,13 +43,13 @@ These selectors control visual differentiation for working and non‑working per
 
 | CSS selector | Description |
 |-------------|-------------|
-| .e-schedule .e-vertical-view .e-all-day-cells | All day cells in vertical views of scheduler |
-| .e-schedule .e-vertical-view .e-work-hours | Work hour cells in vertical views of scheduler |
-| .e-schedule .e-month-view .e-work-days | Work day cells in month view of scheduler |
-| .e-schedule .e-month-agenda-view .e-work-days | Work day cells in month agenda view of scheduler |
-| .e-schedule .e-timeline-view .e-work-hours | Work hour cells in timeline views of scheduler |
-| .e-schedule .e-timeline-month-view .e-work-days | Work day cells in timeline month view of scheduler |
-| .e-schedule .e-timeline-year-view .e-work-cells.e-work-days | Work day cells in timeline year view of scheduler |
+| .e-schedule .e-vertical-view .e-all-day-cells | All-day cells in vertical views of Scheduler |
+| .e-schedule .e-vertical-view .e-work-hours | Work-hour cells in vertical views of Scheduler |
+| .e-schedule .e-month-view .e-work-days | Work-day cells in Month view of Scheduler |
+| .e-schedule .e-month-agenda-view .e-work-days | Work-day cells in Month Agenda view of Scheduler |
+| .e-schedule .e-timeline-view .e-work-hours | Work-hour cells in Timeline views of Scheduler |
+| .e-schedule .e-timeline-month-view .e-work-days | Work-day cells in Timeline Month view of Scheduler |
+| .e-schedule .e-timeline-year-view .e-work-cells.e-work-days | Work-day cells in Timeline Year view of Scheduler |
 
 ---
 
@@ -59,25 +59,25 @@ Appointments represent scheduled events and can be styled differently based on v
 
 | CSS selector | Description |
 |-------------|-------------|
-| .e-schedule .e-vertical-view .e-day-wrapper .e-appointment | Appointment in vertical views of scheduler |
-| .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment | All day Appointment in vertical views of scheduler |
-| .e-schedule .e-month-view .e-appointment | Appointment in month view of scheduler |
-| .e-schedule .e-timeline-view .e-appointment | Appointment in timeline views of scheduler |
-| .e-schedule .e-timeline-month-view .e-appointment | Appointment in timeline month view of scheduler |
-| .e-schedule .e-timeline-year-view .e-event-table .e-appointment | Appointment in timeline year view of scheduler |
-| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-appointment | Appointment in year view of scheduler |
-| .e-schedule .e-agenda-view .e-appointment | Appointment in agenda view of scheduler |
-| .e-schedule .e-month-agenda-view .e-appointment-indicator | Appointment in month agenda view of scheduler |
+| .e-schedule .e-vertical-view .e-day-wrapper .e-appointment | Appointment in vertical views of Scheduler |
+| .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment | All-day appointment in vertical views of Scheduler |
+| .e-schedule .e-month-view .e-appointment | Appointment in Month view of Scheduler |
+| .e-schedule .e-timeline-view .e-appointment | Appointment in Timeline views of Scheduler |
+| .e-schedule .e-timeline-month-view .e-appointment | Appointment in Timeline Month view of Scheduler |
+| .e-schedule .e-timeline-year-view .e-event-table .e-appointment | Appointment in Timeline Year view of Scheduler |
+| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-appointment | Appointment in Year view of Scheduler |
+| .e-schedule .e-agenda-view .e-appointment | Appointment in Agenda view of Scheduler |
+| .e-schedule .e-month-agenda-view .e-appointment-indicator | Appointment in Month Agenda view of Scheduler |
 
 Additional state‑based styling options:
 
 | CSS selector | Description |
 |-------------|-------------|
-| .e-schedule .e-block-appointment | Block appointment in scheduler |
-| .e-schedule .e-read-only | Read only appointment in scheduler. |
-| e-appointment-border | Appointment which are currently selected, use the appointment class hierarchical based on your views. |
-| e-selected-cells | work cells which are currently selected, use the work cell class hierarchical based on your views. |
-| e-header-cells | Header cells of scheduler, use the work cells hierarchical based on your views. |
+| .e-schedule .e-block-appointment | Block appointment in Scheduler |
+| .e-schedule .e-read-only | Read-only appointment in Scheduler |
+| e-appointment-border | Appointment currently selected; use the appointment class hierarchy based on your views. |
+| e-selected-cells | Work cells that are currently selected; use the work cell class hierarchy based on your views. |
+| e-header-cells | Header cells of Scheduler; use the work cell class hierarchy based on your views. |
 
 ---
 
@@ -87,11 +87,11 @@ Resource cells display resource information such as rooms, employees, or equipme
 
 | CSS selector | Description |
 |-------------|-------------|
-| .e-schedule .e-vertical-view .e-resource-cells| Resource cells in vertical views of scheduler. |
-| .e-schedule .e-month-view .e-resource-cells| Resource cells in month view of scheduler. |
-| .e-schedule .e-timeline-view .e-resource-cells | Resource cells in timeline views of scheduler. |
-| .e-schedule .e-timeline-month-view .e-resource-cells| Resource cells in timeline month view of scheduler. |
-| e-parent-node | Parent resource cells in timeline views of scheduler. |
-| e-child-node | Child resource cells in timeline views of scheduler. |
+| .e-schedule .e-vertical-view .e-resource-cells | Resource cells in vertical views of Scheduler |
+| .e-schedule .e-month-view .e-resource-cells | Resource cells in Month view of Scheduler |
+| .e-schedule .e-timeline-view .e-resource-cells | Resource cells in Timeline views of Scheduler |
+| .e-schedule .e-timeline-month-view .e-resource-cells | Resource cells in Timeline Month view of Scheduler |
+| e-parent-node | Parent resource cells in Timeline views of Scheduler |
+| e-child-node | Child resource cells in Timeline views of Scheduler |
 
-> For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

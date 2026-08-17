@@ -18,7 +18,7 @@ The dimensions of the Schedule component refer to its overall height and width. 
 
 ## Auto Height and Width
 
-When height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When the height and width of the Scheduler are set to `auto`, it keeps the component sized according to its parent container. In other words, the parent container that holds the Scheduler adjusts to the size of its children. By default, the Scheduler is assigned `auto` values for both height and width properties.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

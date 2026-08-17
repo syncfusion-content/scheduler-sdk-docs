@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Cell Customization in Vue Scheduler
 
-Cells in the Vue Schedule component can be customized using either the `cellTemplate` option or the [`renderCell`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rendercell) event. These options allow modifying cell appearance, content, and behavior based on specific requirements across all views..
+Cells in the Vue Schedule component can be customized using either the `cellTemplate` option or the [`renderCell`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rendercell) event. These options allow modifying cell appearance, content, and behavior based on specific requirements across all views.
 
 ## Setting cell dimensions in all views
 
@@ -29,7 +29,7 @@ The height and width of Schedule cells can be customized using the [`cssClass`](
 
 ## Check for Cell Availability
 
-The [`isSlotAvailable`](https://ej2.syncfusion.com/vue/documentation/api/schedule#isslotavailable) method checks whether given time range slots are available for event creation or if they are already occupied.. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
+The [`isSlotAvailable`](https://ej2.syncfusion.com/vue/documentation/api/schedule#isslotavailable) method checks whether given time range slots are available for event creation or if they are already occupied. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
 
 >Note: The `isSlotAvailable` method evaluates availability only within the current view’s date range. It does not check recurrence occurrences that fall outside the displayed range.
 
@@ -65,7 +65,7 @@ The [`cellTemplate`](../api/schedule#celltemplate) property accepts a template s
 
 ### Using RenderCell Event
 
-The [`cellTemplate`](../api/schedule#celltemplate) is the [`renderCell`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rendercell) event, which can also be used to customize the cells with appropriate images or formatted text values.
+The [`renderCell`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rendercell) event can also be used to customize the cells with appropriate images or formatted text values.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -82,17 +82,17 @@ You can customize cells such as work cells, month cells, all-day cells, header c
 
 | Element type | Description |
 |-------|---------|
-| dateHeader | triggers on header cell rendering.|
-| monthDay | triggers on header cell in month view rendering.|
-| resourceHeader | triggers on resource header cell rendering.|
-| alldayCells | triggers on all day cell rendering.|
-| emptyCells | triggers on empty cell rendering on header bar.|
-| resourceGroupCells | triggers on rendering of work cells for parent resource.|
-| workCells | triggers on work cell rendering.|
-| monthCells | triggers on month cell rendering.|
-| majorSlot | triggers on major time slot cell rendering.|
-| minorSlot | triggers on minor time slot cell rendering.|
-| weekNumberCell | triggers on cell displaying week number.|
+| dateHeader | Triggers on header cell rendering.|
+| monthDay | Triggers on header cell rendering in month view.|
+| resourceHeader | Triggers on resource header cell rendering.|
+| alldayCells | Triggers on all-day cell rendering.|
+| emptyCells | Triggers on empty cell rendering in the header bar.|
+| resourceGroupCells | Triggers on rendering work cells for the parent resource.|
+| workCells | Triggers on work cell rendering.|
+| monthCells | Triggers on month cell rendering.|
+| majorSlot | Triggers on major time slot cell rendering.|
+| minorSlot | Triggers on minor time slot cell rendering.|
+| weekNumberCell | Triggers on the cell displaying the week number.|
 
 ## Customizing Cell Header in Month View
 
@@ -124,7 +124,7 @@ Providing the [`minDate`](../api/schedule#mindate) and  [`maxDate`](../api/sched
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs6" %}
 
->By default, the [`minDate`](../api/schedule#mindate) property value is set to new Date(1900, 0, 1) and [`maxDate`](../api/schedule#maxdate) property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
+> By default, the [`minDate`](../api/schedule#mindate) property value is set to new Date(1900, 0, 1) and the [`maxDate`](../api/schedule#maxdate) property value is set to new Date(2099, 11, 31). The user can also set customized `minDate` and `maxDate` property values.
 
 ## Customizing the Weekend Cells Background Color
 
@@ -171,6 +171,6 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 ## How to Disable Multiple Cell and Row Selection in Schedule
 
-By default, the [`allowMultiCellSelection`](../api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](../api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
+By default, the [`allowMultiCellSelection`](../api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](../api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows users to select multiple cells and rows. If the user wants to disable multiple cell and row selection, they can set these properties to `false`.
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for detailed feature information. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for demonstrations of data binding and interaction.
