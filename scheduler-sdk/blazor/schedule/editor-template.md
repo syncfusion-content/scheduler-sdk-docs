@@ -245,7 +245,7 @@ To prevent only specific Scheduler popups, check the popup type in the condition
 
 You can open the editor window manually for a specific time or for specific events by using the [`OpenEditorAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_OpenEditorAsync__0_Syncfusion_Blazor_Schedule_CurrentAction_) method, which accepts [TValue](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_OpenEditor__0_Syncfusion_Blazor_Schedule_CurrentAction_) or [CellClickEventArgs](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.CellClickEventArgs.html) along with `CurrentAction` as parameters.
 
-N> [Here](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/how-to/open-editor-window-on-single-click) is the example to open the editor window on a single click.
+N> [Here](https://blazor.syncfusion.com/documentation/scheduler/how-to/open-editor-window-on-single-click) is the example to open the editor window on a single click.
 
 ## Customizing event editor using template
 
