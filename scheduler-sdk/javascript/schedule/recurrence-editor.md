@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Recurrence Editor in JavaScript Scheduler
 
-The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Tt can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
+The Recurrence Editor is integrated into the Scheduler editor by default to generate recurrence rule strings for events. It can also be used as a standalone component.
 
-> All the valid recurrence rule string mentioned in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
+> All valid recurrence rule strings defined by the [iCalendar specification](https://tools.ietf.org/html/rfc5545#section-3.3.10) are supported by the Recurrence Editor.
 
 ## Customizing the repeat type option in editor
 
@@ -59,7 +59,7 @@ The Recurrence editor can be customized to display only the specific repeat opti
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/recurrence-cs1" %}
 {% endif %}
 
-The other properties available in recurrence editor are tabulated below,
+Other recurrence editor properties are listed below:
 
 | Properties | Type | Description |
 |------------|------|-------------|
@@ -113,9 +113,7 @@ The Recurrence editor can be customized to display only the specific end options
 
 ## Accessing the recurrence rule string
 
-The recurrence rule is generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
-
-The recurrence editor has a [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event that triggers every time the fields are modified. The generated recurrence value can be accessed through the [`value`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#value) option in the event argument.
+The recurrence rule is generated from the selected editor options and follows the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specification. You can access the generated rule via the Recurrence Editor's [`change`](https://ej2.syncfusion.com/documentation/api/recurrence-editor#change) event; the value is available in the event argument's `value` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -216,9 +214,9 @@ The `recurrenceRule` of an event can be parsed to generate the date instances on
 
 ## Recurrence date generation in server-side
 
-Recurrence date instances can also be generated from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referenced from application end to handle this date generation process.
+You can generate recurrence dates on the server by using the `RecurrenceHelper` class or equivalent server-side logic.
 
-> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step-by-step procedure to achieve date generation in server-side.
+> See the KB article for a step-by-step procedure: https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side
 
 ## Restrict date generation with specific count
 
@@ -251,4 +249,4 @@ If the rule is given in the "NEVER ENDS" category, the maximum count can be spec
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/recur-editor-cs4" %}
 {% endif %}
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. Also explore [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.

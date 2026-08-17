@@ -10,11 +10,12 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Resources in JavaScript Scheduler
 
-Resources and grouping support allows the Scheduler to be shared by multiple resources. Appointments for each resource display under the relevant resource in a column or row layout. Each resource in the Scheduler is arranged in column-wise or row-wise order, with individual spacing to display all respective appointments on a single page. The Scheduler supports both single and multiple levels of resource grouping, enabling the categorization of resources in a hierarchical structure. Resources appear either as expandable groups in Timeline views or as a vertical hierarchy in Calendar views.
 
-Multiple resources can be assigned to the same appointment by allowing multiple resource selection in the event editor window.
+Resources and grouping let the Scheduler represent appointments for multiple resources. Appointments for each resource appear under the corresponding resource in a column or row layout. The Scheduler supports single- and multi-level resource grouping so you can categorize resources hierarchically. Resources appear as expandable groups in Timeline views or as a vertical hierarchy in calendar views.
 
-The HTML5 JavaScript Scheduler groups resources based on different criteria, including grouping appointments by resources, grouping resources by dates, and timeline scheduling. Resource data can be bound to the Scheduler either as a local JSON collection or through a URL retrieving data from remote services.
+You can assign multiple resources to a single appointment by enabling multiple resource selection in the event editor.
+
+Resource data can be provided as a local JSON collection or via a remote service URL (for example, using `DataManager`).
 
 ## Resource fields
 

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Data Binding in JavaScript Scheduler
 
-The Scheduler manages data using the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings#datasource) property of the Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. The Scheduler supports two types of data binding methods:
+The Scheduler uses the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/schedule/eventSettings#datasource) property of the Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array. The Scheduler supports two types of data binding:
 
 * Local data
 * Remote data
@@ -59,8 +59,8 @@ The Scheduler supports binding to remote data services. To implement this:
 3. Assign the `DataManager` instance to the [`dataSource`](../api/schedule/eventSettings#datasource) property within `eventSettings`.
 
 ### Using ODataV4Adaptor
-s
-[ODataV4](https://www.odata.org/documentation) is a standardized protocol for creating and consuming data. To connect with ODataV4 service endpoints, use the `ODataV4Adaptor` within the `DataManager`. Refer to the following code example to retrieve data from an ODataV4 service using the DataManager. 
+
+[ODataV4](https://www.odata.org/documentation) is a standardized protocol for creating and consuming data. To connect to ODataV4 service endpoints, use the `ODataV4Adaptor` with `DataManager`. See the example below.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -186,7 +186,7 @@ scheduleObj.appendTo('#Schedule');
 
 ## Passing additional parameters to the server
 
-To send additional custom parameters to the server-side post:
+To send additional custom parameters with server requests:
 
 1. Use the `addParams` method of `Query`.
 2. Assign the `Query` object with additional parameters to the [`query`](../api/schedule/eventSettings#query) property of the Scheduler.
@@ -416,4 +416,4 @@ A custom Google Calendar URL is assigned to the `DataManager` and then to the Sc
 
 [Salesforce Integration](./how-to/salesforce-integration.md)
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

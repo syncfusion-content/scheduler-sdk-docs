@@ -8,19 +8,20 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
+
 # Row Auto Height in JavaScript Scheduler
 
-By default, the height of the Scheduler rows in Timeline views are static and therefore, when the same time range holds multiple overlapping appointments, a `+n more` text indicator will be displayed. The row auto height feature enabled, able to view all the overlapping appointments present in those specific time range by auto-adjusting the row height based on the presence of the appointments count, instead of displaying the `+n more` text indicators.
+By default, Scheduler rows in Timeline views have a fixed height. When multiple overlapping appointments occur in the same time range, the Scheduler shows a `+n more` indicator. Enable `rowAutoHeight` to auto-adjust row height so overlapping appointments are fully visible instead of being collapsed behind a `+n more` indicator.
 
-To enable auto row height adjustments on Scheduler Timeline views and Month view, set `true` to the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) property whose default value is `false`.
+Enable row auto height on Timeline and Month views by setting the `rowAutoHeight` property to `true` (default is `false`): [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight).
 
-> This auto row height adjustment is applicable only on all the Timeline views as well as on the calendar Month view.
+Note: This feature applies to Timeline views and the calendar Month view.
 
-The following sections demonstrate how this feature works on the applicable views with practical examples.
+The sections below demonstrate the feature with examples.
 
 ## Calendar month view
 
-By default, the rows of the calendar Month view can accommodate only the limited appointments count based on the available row height, and the rest of the overlapping appointments are indicated with a `+n more` text indicator. The following example shows how the month view row auto-adjusts based on the number of appointments count, when this [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is enabled.
+By default, the Month view rows accommodate a limited number of appointments based on the available height; remaining overlapping appointments are shown as `+n more`. The example below shows the Month view auto-adjusting row height when `rowAutoHeight` is enabled.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -57,7 +58,7 @@ By default, the rows of the calendar Month view can accommodate only the limited
 
 ## Timeline views
 
-When the feature [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) is enabled in Timeline views, the row height gets auto-adjusted based on the number of overlapping events occupied on the same time range, which is demonstrated in the following example.
+When [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) is enabled in Timeline views, row height is adjusted based on the number of overlapping events in the same time range. The following example demonstrates this behavior.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -94,7 +95,7 @@ When the feature [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/
 
 ## Timeline views with multiple resources
 
-The following example shows how the auto row adjustment feature works on timeline views with multiple resources.
+The following example shows how auto row adjustment behaves in Timeline views with multiple resources.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -131,7 +132,10 @@ The following example shows how the auto row adjustment feature works on timelin
 
 ## Appointments occupying entire cell
 
-By default, when the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight), feature is enabled, a small space remains at the bottom of each cell after appointments are rendered. To avoid this space, the property [`ignoreWhitespace`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#ignorewhitespace) is set to true with in [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) whereas its default property value is false. In the following code example, the whitespace below the appointments has been ignored.
+
+### Appointments occupying entire cell
+
+When `rowAutoHeight` is enabled, a small whitespace may remain at the bottom of each cell after appointments render. Set `ignoreWhitespace` to `true` in `eventSettings` to remove that space (default is `false`). The example below demonstrates this setting.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -166,6 +170,6 @@ By default, when the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/ignore-whitespace-cs1" %}
 {% endif %}
 
-**Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#ignorewhitespace) property is only applicable when the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
+**Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#ignorewhitespace) property applies only when `rowAutoHeight` is enabled.
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. Also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.
