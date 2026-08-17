@@ -10,16 +10,16 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # GraphQL Data Binding in Angular Scheduler
 
-[GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
+GraphQL is a query language that allows applications to request exactly the data they need, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
-**Traditional REST APIs** and `GraphQL` differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while `GraphQL` uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes `GraphQL` especially useful for **[Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) integration**, the **reason** is that data‑centric UI components require well‑structured and selective datasets to minimize network usage and ensure smooth, high‑performance interactions.
+**Traditional REST APIs** and [GraphQL](https://graphql.org/learn/introduction/) differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while `GraphQL` uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes `GraphQL` especially useful for **[Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) integration** because data-centric UI components require well-structured, selective datasets to minimize network usage and ensure smooth, high-performance interactions.
 
 **Key GraphQL concepts:**
 
 - **Queries**: A query is a request to read data. Queries do not modify data; they only retrieve it.
 - **Mutations**: A mutation is a request to modify data. Mutations create, update, or delete records.
 - **Resolvers**: Each query or mutation is handled by a resolver, which is a function responsible for fetching data or executing an operation. **Query resolvers** handle **read operations**, while **mutation resolvers** handle **write operations**.
-- **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify the way data can be retrieved, and mutation definitions specify the way data can be modified. 
+- **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify how data can be retrieved, and mutation definitions specify how data can be modified.
 
 [Node.js](https://nodejs.org/learn/getting-started/introduction-to-nodejs) is a fast and efficient JavaScript runtime built on Google’s V8 engine. It enables JavaScript to run on the server, making it a popular platform for building web APIs, real‑time applications, and modern backend services. Node.js offers a non‑blocking, event‑driven architecture that supports high performance and scalability.
 
@@ -43,7 +43,7 @@ For this guide, a `GraphQL` server named **GraphQLServer** is created using Node
 
 **Create project folder**
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with  <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the project folder:
+Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command Prompt opened with <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the project folder:
 
 ```bash
 mkdir GraphQLServer
@@ -52,7 +52,7 @@ cd GraphQLServer
 
 **Initialize and Install required packages**
 
-The `GraphQL` server is set up using graphpack, a lightweight development tool for building GraphQL APIs. The Syncfusion `ej2-data` package is included to support the Scheduler’s data operations, enabling structured and selective data retrieval that minimizes network usage and ensures smooth, high‑performance event loading and updates.
+The `GraphQL` server is set up using Graphpack, a lightweight development tool for building GraphQL APIs. The Syncfusion `ej2-data` package is included to support the Scheduler's data operations, enabling structured and selective data retrieval that minimizes network usage and ensures smooth, high-performance event loading and updates.
 
 Run the following commands in the terminal window to initialize and install the required packages:
 
@@ -65,7 +65,7 @@ npm install @syncfusion/ej2-data --save
 - **graphpack** – Lightweight `GraphQL` server and development environment.
 - **@syncfusion/ej2-data** – Provides data utilities for advanced data operations.
 
-Add this lines in `scripts` in `package.json` to defines commands with npm
+Add these lines to the `scripts` section in `package.json` to define the npm commands:
 
 ```
 
@@ -75,18 +75,18 @@ Add this lines in `scripts` in `package.json` to defines commands with npm
     }
 
 ```
-**Create src folder**
+**Create the src folder**
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with  <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the `src` folder:
+Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command Prompt opened with <kbd>(Win+R)</kbd>, or macOS Terminal launched with <kbd>(Cmd+Space)</kbd>) and run the following command to create and navigate to the `src` folder:
 
 ```bash
 mkdir src
 cd src
 ```
 
-**Create sample datasource** 
+**Create the sample data source**
 
-After installing the required packages, create a new file named **db.js** inside the **src** folder. This file acts as an in‑memory datasource for the `GraphQL` server.
+After installing the required packages, create a new file named **db.js** inside the **src** folder. This file acts as an in-memory data source for the `GraphQL` server.
 
 [db.js]
 
@@ -115,9 +115,9 @@ export let eventsData = [
 ];
 
 ```
-The **GraphQLServer** folder is now created, required packages are installed, and a sample data source is configured. The project is ready for defining the `GraphQL` schema, resolvers, and server configuration.
+The **GraphQLServer** folder is now created, the required packages are installed, and a sample data source is configured. The project is ready for defining the `GraphQL` schema, resolvers, and server configuration.
 
-### Step 2: Configuring schema in GraphQL
+### Step 2: Configure the schema in GraphQL
 
 The `GraphQL` schema defines the structure of the "Appointment" data model and the server‑side operations available for performing CRUD actions.
 
@@ -151,7 +151,7 @@ The `GraphQL` schema defines the structure of the "Appointment" data model and t
       result: [Appointment]
     }
     ```
-4. Add type definition for "DataManager".
+4. Add the type definition for "DataManager".
 
     ```
     # --- Syncfusion DataManager payload ---
@@ -169,9 +169,9 @@ The `GraphQL` schema defines the structure of the "Appointment" data model and t
         params: String
     }
     ```
-> For detailed information about **DataManager** type refer to [Configuring Syncfusion DataManager schema](#step-3-configuring-syncfusion-DataManager-schema).
+> For detailed information about the **DataManager** type, refer to [Configuring Syncfusion DataManager schema](#step-3-configure-the-syncfusion-datamanager-schema).
 
-5. Add type definition for "Appointment field names".
+5. Add the type definition for "Appointment field names".
 
     ```
     # --- Schedule Appointment field names ---
@@ -210,11 +210,11 @@ The `GraphQL` schema defines the structure of the "Appointment" data model and t
     ```
 
 
-### Step 3: Configuring Syncfusion DataManager schema
+### Step 3: Configure the Syncfusion DataManager schema
 
-Syncfusion Scheduler sends all operation details as a single request object. `GraphQL` requires a clear, typed structure to understand these values. 
+Syncfusion Scheduler sends all operation details as a single request object. `GraphQL` requires a clear, typed structure to understand these values.
 
-Since Syncfusion’s [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) already has a fixed structure for sending operation details, the `GraphQL` backend define a matching typical input type.
+Since Syncfusion's [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) already has a fixed structure for sending operation details, the `GraphQL` backend defines a matching input type.
 
 **DataManager** serves as the input type that matches the structure of the `DataManager` request, ensuring that all operation details are correctly received by the `GraphQL` API.
 
@@ -222,15 +222,15 @@ Since Syncfusion’s [DataManager](https://ej2.syncfusion.com/angular/documentat
 The **DataManager** schema provides a standard format for delivering Scheduler operation parameters to the `GraphQL` server.
 This structure allows the backend to return only the required records, improving performance, reducing payload size, and enabling efficient data handling.
 
-### Step 4: GraphQL Query resolvers
+### Step 4: GraphQL query resolvers
 
 A resolver in `GraphQL` is a function responsible for fetching the data for a specific field in a `GraphQL` schema.
 
-When a client sends a `GraphQL` query, resolvers run behind the scenes to retrieve the requested information from a database, API, or any data source and return it in the format defined by the schema. 
+When a client sends a `GraphQL` query, resolvers run behind the scenes to retrieve the requested information from a database, API, or any data source and return it in the format defined by the schema.
 
 **Instructions:**
 1. Create a new resolver file **(src/resolvers.js)** inside the **GraphQLServer** folder.
-2. Import the required data source **(e.g., AppointmentDetails)** from the data file.
+2. Import the required data source **(for example, AppointmentDetails)** from the data file.
 3. Implement the "getEvents" resolver to handle the logic for the "getEvents" query defined in the schema.
 4. Ensure the resolver returns the processed list of "Appointments" in the structure specified by the schema.
 

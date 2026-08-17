@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Resources and Grouping in Angular Scheduler
 
-Resources and grouping support allows the Scheduler to be shared by multiple resources. Also, the appointments of each resources are displayed under relevant resources. Each resource in the Scheduler is arranged in a column/row wise order, with individual spacing to display all its respective appointments on a single page. It also supports the multiple levels of grouping of resources, thus enabling the categorization of resources in a hierarchical structure and shows it either in expandable groups (Timeline views) or else vertical hierarchy one after the other (Calendar views).
+Resources and grouping support allows the Scheduler to be shared by multiple resources. The appointments for each resource are displayed under the relevant resource. Each resource in the Scheduler is arranged in a column/row-wise order, with individual spacing to display all its respective appointments on a single page. It also supports multiple levels of grouping of resources, enabling categorization in a hierarchical structure and showing them either in expandable groups (Timeline views) or as a vertical hierarchy one after the other (Calendar views).
 
-It is also possible to assign one or more resources to the same appointment, by allowing multiple selection of resource options available in the event editor window.
+It is also possible to assign one or more resources to the same appointment by allowing multiple selection of resource options available in the event editor window.
 
-The HTML5 JavaScript Scheduler groups the resources based on different criteria. It includes grouping appointments based on resources, grouping resources based on dates, and timeline scheduling. Also, the data for resources bind with Scheduler either as a local JSON collection or URL, retrieving data from remote data services.
+The Angular Scheduler groups the resources based on different criteria. It includes grouping appointments based on resources, grouping resources based on dates, and timeline scheduling. Also, the data for resources can be bound to the Scheduler either as a local JSON collection or through a URL, retrieving data from remote data services.
 
 Learn how to add appointments of multiple resources to the Angular Scheduler from this video:
 
@@ -38,13 +38,13 @@ The default options available within the [`resources`](https://ej2.syncfusion.co
 | [`groupIDField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#groupidfield) | String | Binds the group ID field name from the resource `dataSource`. It usually holds the value of resource IDs of parent level resources. |
 | [`colorField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#colorfield) | String | Binds the color field name from the resource `dataSource`. The color value mapped in this field will be applied to the events of resources. |
 | [`startHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#starthourfield) | String | Binds the start hour field name from the resource `dataSource`. It allows to provide different work start hour for the resources. |
-| [`endHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#expandedfield) | String | Binds the end hour field name from the resource `dataSource`. It allows to provide different work end hour for the resources. |
+| [`endHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#endhourfield) | String | Binds the end hour field name from the resource `dataSource`. It allows providing different work end hours for the resources. |
 | [`workDaysField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#workdaysfield) | String | Binds the work days field name from the resources `dataSource`. It allows to provide different working days collection for the resources. |
 | [`cssClassField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#cssclassfield) | String | Binds the custom CSS class field name from the resources `dataSource`. It maps the CSS class written for the specific resources and applies it to the events of those resources. |
 
 ## Resource data binding
 
-The data for resources can bind with Scheduler either as a local JSON collection or a service URL, retrieving resource data from remote data services.
+The data for resources can be bound to the Scheduler either as a local JSON collection or a service URL, retrieving resource data from remote data services.
 
 ### Using local JSON data
 
@@ -90,9 +90,7 @@ export class AppComponent {
 ### Using remote data service
 
 The following code example depicts how to bind remote data to the `resources` `dataSource`.
-
 ```typescript
-import { Component } from '@angular/core';
 import {
     WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel
 } from '@syncfusion/ej2-angular-schedule';
@@ -243,7 +241,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 
 ### One-to-one grouping
 
-In multi-level grouping, Scheduler usually groups the resources on the child level based on the [`GroupID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#groupidfield) that maps with the `Id` field of parent level resources (as [`byGroupID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#bygroupid) set to true by default). There are also option which allows you to group all the child resource(s) against each of its parent resource(s). To enable this kind of grouping, set `false` to the [`byGroupID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#bygroupid) option within the [`group`](https://ej2.syncfusion.com/angular/documentation/api/schedule#group) property. In the following code example, there are two levels of resources, on which all the 3 resources at the child level is mapped one to one with each resource on the first level.
+In multi-level grouping, Scheduler usually groups the resources on the child level based on the [`GroupID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#groupidfield) that maps with the `Id` field of parent level resources (as [`byGroupID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#bygroupid) set to true by default). There is also an option that allows you to group all child resources against each of its parent resource(s). To enable this kind of grouping, set `false` to the [`byGroupID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#bygroupid) option within the [`group`](https://ej2.syncfusion.com/angular/documentation/api/schedule#group) property. In the following code example, there are two levels of resources, on which all the 3 resources at the child level are mapped one to one with each resource on the first level.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -283,7 +281,7 @@ It groups the number of resources under each date and is applicable only on the 
 
 ## Customizing parent resource cells
 
-In timeline view work cells of parent resource can be customized by checking the [`elementType`](https://ej2.syncfusion.com/angular/documentation/api/schedule/renderCellEventArgs#elementtype) as `resourceGroupCells` in the event [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell). In the following code example, background color of the work hours has been changed.
+In timeline view, work cells of the parent resource can be customized by checking the [`elementType`](https://ej2.syncfusion.com/angular/documentation/api/schedule/renderCellEventArgs#elementtype) as `resourceGroupCells` in the event [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell). In the following code example, the background color of the work hours has been changed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -302,7 +300,7 @@ In timeline view work cells of parent resource can be customized by checking the
 Multiple resources can share the same events, thus allowing the CRUD action made on it to reflect on all other shared instances simultaneously. To enable such option, set [`allowGroupEdit`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#allowgroupedit) option to `true` within the [`group`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group) property. With this property enabled, a single appointment
 object will be maintained within the appointment collection, even if it is shared by more than one resource – whereas the resource fields of such appointment object will be in array which hold the IDs of the multiple resources.
 
-> Any actions such as create, edit or delete held on any one of the shared event instances, will be reflected on all other related instances visible on the UI.
+> Any actions such as create, edit or delete performed on any one of the shared event instances will be reflected on all other related instances visible on the UI.
 
 **Example:** To edit all the resource events simultaneously,
 
@@ -322,7 +320,7 @@ object will be maintained within the appointment collection, even if it is share
 
 ## Simple resource header customization
 
-It is possible to customize the resource header cells using built-in template option and change the look and appearance of it in both the vertical and timeline view modes. All the resource related fields and other information can be accessed within the resource header template option.
+It is possible to customize the resource header cells using a built-in template option and change their look and appearance in both the vertical and timeline view modes. All resource-related fields and other information can be accessed within the resource header template option.
 
 **Example:** To customize the resource header and display it along with designation [`resource field`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/resources), refer the below code example.
 
@@ -398,7 +396,7 @@ It is possible to display tooltips over the resource headers showing the resourc
 
 ## Choosing among resource colors for appointments
 
-By default, the colors defined on the top level resources collection will be applied for the events. In case, if you want to apply specific resource color to events irrespective of its top-level parent resource color, it can be achieved by defining [`resourceColorField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#resourcecolorfield) option within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property.
+By default, the colors defined on the top level resources collection are applied to the events. If you want to apply a specific resource color to events irrespective of top-level parent resource color, define the [`resourceColorField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#resourcecolorfield) option within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property.
 
 In the following example, the colors mentioned in the second level will get applied over the events.
 
@@ -420,9 +418,9 @@ In the following example, the colors mentioned in the second level will get appl
 
 ## Dynamically add and remove resources
 
-It is possible to add or remove the resources dynamically to and from the Scheduler respectively. In the following example, when the checkboxes are checked and unchecked, the respective resources gets added up or removed from the Scheduler layout. To add new resource dynamically, [`addResource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addresource) method is used which accepts the arguments such as resource object, resource name (within which level, the resource object to be added) and index (position where the resource needs to be added).
+It is possible to add or remove resources dynamically from the Scheduler. In the following example, when the checkboxes are checked and unchecked, the respective resources are added or removed from the Scheduler layout. To add a new resource dynamically, use the [`addResource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addresource) method, which accepts arguments such as the resource object, resource name (for the level in which the resource object should be added), and index (the position where the resource needs to be added).
 
-To remove the resources dynamically, [`removeResource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#removeresource) method is used which accepts the index (position from where the resource to be removed) and resource name (within which level, the resource object presents) as parameters.
+To remove resources dynamically, use the [`removeResource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#removeresource) method, which accepts the index (position from which the resource should be removed) and the resource name (the level in which the resource object exists) as parameters.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -438,14 +436,14 @@ To remove the resources dynamically, [`removeResource`](https://ej2.syncfusion.c
 
 ## Setting different working days and hours for resources
 
-Each resource in the Scheduler can have different ` working hours` as well as different ` working days` set to it. There are default options available within the `resources` collection, to customize the default working hours and days of the Scheduler.
+Each resource in the Scheduler can have different `working hours` as well as different `working days` set. There are default options available within the `resources` collection to customize the working hours and days of the Scheduler.
 
 * [Using the work day field for different work days](#Set-different-work-days)
 * [Using the start hour and end hour fields for different work hours](#Set-different-work-hours)
 
 ### Set different work days
 
-Different `working days` can be set for the resources of Scheduler using the [`workDaysField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#workdaysfield) property which maps the working days field from the resource dataSource. This field accepts the collection of day indexes (from 0 to 6) of a week. By default, it is set to [1, 2, 3, 4, 5] and in the following example, each resource has been set with different values and therefore each of them will render only those working days. This option is applicable only on the calendar views and is not applicable on timeline views.
+Different `working days` can be set for Scheduler resources using the [`workDaysField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#workdaysfield) property, which maps the working days field from the resource dataSource. This field accepts a collection of weekday indexes (0 to 6). By default, it is set to [1, 2, 3, 4, 5], and in the following example, each resource is set with different values so that only those working days are rendered. This option is applicable only on calendar views and is not applicable on timeline views.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -463,12 +461,12 @@ Different `working days` can be set for the resources of Scheduler using the [`w
 
 ### Set different work hours
 
-Different `working Hours` can be set for the resources of Scheduler using the [`startHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#starthourfield) and [`endHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#endhourfield) property which maps the `startHourField` and `endHourField` field from the resource dataSource.
+Different `working hours` can be set for Scheduler resources using the [`startHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#starthourfield) and [`endHourField`](https://ej2.syncfusion.com/angular/documentation/api/schedule/resources#endhourfield) properties, which map the `startHourField` and `endHourField` fields from the resource dataSource.
 
 * `startHourField` - Denotes the start time of the working/business hour in a day.
-* `endHourField` - Denotes the end time limit of the working/business hour in a day.
+* `endHourField` - Denotes the end time of the working/business hour in a day.
 
-Working hours indicates the work hour duration of a day, which is highlighted visually with active color over the work cells. Each resource on the Scheduler can be defined with its own set of working hours as depicted in the following example.
+Working hours indicate the work hour duration of a day, which is highlighted visually with active color over the work cells. Each Scheduler resource can be defined with its own set of working hours as depicted in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -512,7 +510,7 @@ To use the [`hideNonWorkingDays`](../api/schedule/group#hidenonworkingdays) prop
 
 ## Compact view in mobile
 
-Although the Scheduler views are designed keeping in mind the responsiveness of the control in mobile devices, however when using Scheduler with multiple resources - it is difficult to view all the resources and its relevant events at once on the mobile. Therefore, we have introduced a new compact mode specially for displaying multiple resources of Scheduler on mobile devices. By default, this mode is enabled while using Scheduler with multiple resources on mobile devices. If in case, you need to disable this compact mode, set `false` to the [`enableCompactView`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#enablecompactview) option within the [`group`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group) property. Disabling this option will display the exact desktop mode of Scheduler view on mobile devices.
+Although the Scheduler views are designed for responsiveness on mobile devices, when using Scheduler with multiple resources it can be difficult to view all resources and related events at once on mobile. Therefore, a compact mode is provided specifically for multiple resources on mobile devices. By default, this mode is enabled when using Scheduler with multiple resources on mobile devices. To disable this compact mode, set `false` to the [`enableCompactView`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#enablecompactview) option within the [`group`](https://ej2.syncfusion.com/angular/documentation/api/schedule/group) property. Disabling it will display the desktop Scheduler view mode on mobile devices.
 
 With this compact view enabled on mobile, you can view only single resource at a time and to switch to other resources, there is a treeview at the left listing out all other available resources - clicking on which will display that particular resource and its related appointments.
 
@@ -524,13 +522,13 @@ Clicking on the menu icon before the resource text will show the resources avail
 
 ## Adaptive UI in desktop
 
-By default, the Scheduler layout adapts automatically in the desktop and mobile devices with appropriate UI changes. In case, if the user wants to display the Adaptive scheduler in desktop mode with adaptive enhancements, then the property [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enableadaptiveui) can be set to `true`. Enabling this option will display the exact mobile mode of Scheduler view on desktop devices.
+By default, the Scheduler layout adapts automatically on desktop and mobile devices with appropriate UI changes. If a user wants to display the adaptive Scheduler in desktop mode with adaptive enhancements, set the property [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/schedule#enableadaptiveui) to `true`. Enabling this option will display the mobile Scheduler view mode on desktop devices.
 
-Some of the default changes made for compact Scheduler to render in desktop devices are as follows,
-* View options displayed in the Navigation drawer.
-* Plus icon is added to the header for new event creation.
-* Today icon is added to the header instead of the Today button.
-* With Multiple resources – only one resource has been shown to enhance the view experience of resource events details clearly. To switch to other resources, there is a TreeView on the left that lists all other available resources, clicking on which will display that particular resource and its related events.
+Some of the default changes made for compact Scheduler on desktop devices are:
+* View options displayed in the navigation drawer.
+* Plus icon added to the header for new event creation.
+* Today icon added to the header instead of the Today button.
+* With multiple resources, only one resource is shown to improve the event detail experience. To switch to other resources, there is a TreeView on the left that lists all other available resources; clicking one displays that resource and its related events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -546,4 +544,4 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 
 ![Resources in Adaptive UI](images/schedule-adaptiveui.png)
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.

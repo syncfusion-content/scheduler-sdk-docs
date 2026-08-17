@@ -10,14 +10,14 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Data Binding in Angular Scheduler
 
-The Scheduler utilizes the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property of Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. Scheduler supports the following data binding methods:
+The Scheduler uses the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property can be assigned either a `DataManager` instance or a JavaScript object array. Scheduler supports the following data binding methods:
 
 * Local data
 * Remote data
 
 ## Binding local data
 
-To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) option of the Scheduler within the `eventSettings` property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Scheduler `dataSource` property.
+To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) option within the `eventSettings` property. The JSON object data source can also be provided as a `DataManager` instance and assigned to the Scheduler `dataSource` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,17 +31,17 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs1" %}
 
-> By default, `DataManager` uses the `JsonAdaptor` for binding local data.
+> By default, `DataManager` uses the `JsonAdaptor` for local data binding.
 
-> You can also map different field names to the default event fields, as well as include additional `custom fields` in the event object collection. For details, refer to [event fields](./appointments#event-fields).
+> You can also map different field names to the default event fields and include additional custom fields in the event object collection. For details, refer to [event fields](./appointments#event-fields).
 
 ## Binding remote data
 
-The Scheduler supports binding to various remote data services. To configure this, create an instance of `DataManager`, supply the remote service URL to the `url` option, and assign it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property within `eventSettings`.
+The Scheduler supports binding to various remote data services. To configure this, create a `DataManager` instance, supply the remote service URL to the `url` option, and assign it to the Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property within `eventSettings`.
 
 ### Using ODataV4Adaptor
 
-[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. The following example demonstrates how to retrieve data from an ODataV4 service using DataManager. To connect with ODataV4 service endpoints, utilize the `ODataV4Adaptor` within `DataManager`.
+[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. The following example demonstrates how to retrieve data from an ODataV4 service using `DataManager`. To connect to ODataV4 service endpoints, use the `ODataV4Adaptor` within `DataManager`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,9 +57,9 @@ The Scheduler supports binding to various remote data services. To configure thi
 
 ### Filter events using the in-built query
 
-To enable server-side filtering operations based on specific conditions, set the [`includeFiltersInQuery`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettingsModel#includefiltersinquery) API to true. This allows the filter query to include the start date, end date, and recurrence rule, enabling the request to retrieve only the relevant data from the server.
+To enable server-side filtering based on specific conditions, set the [`includeFiltersInQuery`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettingsModel#includefiltersinquery) API to true. This allows the filter query to include the start date, end date, and recurrence rule, so the request retrieves only the relevant data from the server.
 
-This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
+This method greatly improves performance by reducing the data transferred to the client side. As a result, the component becomes more efficient and responsive, providing a better user experience. However, longer query strings may affect the maximum URL length or exceed server query-string limits.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,13 +73,13 @@ This method greatly improves the component's performance by reducing the data th
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs7" %}
 
-The image below illustrates how parameters are passed using an ODataV4 filter for remote data binding.
+The following image illustrates how parameters are passed using an ODataV4 filter for remote data binding.
 
 ![ODataV4 filter](images/odatav4-filter.png)
 
 ### Using custom adaptor
 
-You can create a custom adaptor by extending one of the built-in adaptors. The following example demonstrates how to use a custom adaptor and add a custom field, such as `EventID`, to the appointments by overriding the response processing using the `processResponse` method of the `ODataV4Adaptor`.
+You can create a custom adaptor by extending one of the built-in adaptors. The following example demonstrates how to use a custom adaptor and add a custom field, such as `EventID`, to appointments by overriding response processing with the `processResponse` method of the `ODataV4Adaptor`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,7 +95,7 @@ You can create a custom adaptor by extending one of the built-in adaptors. The f
 
 ## Loading data via AJAX post
 
-You can bind the event data through external ajax request and assign it to the [`dataSource`][`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource)property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+You can bind event data through an external AJAX request and assign it to the Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property. In the following code example, the data is retrieved from the server using an AJAX request and assigned to the Scheduler `dataSource` property within the Ajax `onSuccess` event.
 
 `[src/app/app.ts]`
 
@@ -130,11 +130,11 @@ export class AppComponent implements OnInit {
 }
 ```
 
-> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+> The controller method `GetData` is defined [here](#scheduler-crud-actions).
 
 ## Passing additional parameters to the server
 
-To send additional custom parameters in the server-side request, use the `addParams` method of `Query`. Assign this `Query` object with the custom parameters to the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property of Scheduler.
+To send additional custom parameters in the server-side request, use the `addParams` method of `Query`. Assign the `Query` object with the custom parameters to the Scheduler [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,11 +148,11 @@ To send additional custom parameters in the server-side request, use the `addPar
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs4" %}
 
-> Parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property are sent with the data request to the server on every Scheduler action.
+> Parameters added using the Scheduler [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property are sent with every data request to the server.
 
 ## Handling failure actions
 
-When Scheduler interacts with the server, server-side exceptions may occur. These error messages or exception details can be accessed client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event of Scheduler.
+When the Scheduler interacts with the server, server-side exceptions may occur. These error messages or exception details can be accessed on the client side using the Scheduler [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event.
 
 The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event contains all error details returned from the server.
 
@@ -172,7 +172,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 
 ## Scheduler CRUD actions
 
-The CRUD (Create, Read, Update, and Delete) actions can be performed on Scheduler appointments using the adaptors available within the `DataManager`. Typically, the `UrlAdaptor` is used for CRUD operations on scheduler appointments.
+CRUD (Create, Read, Update, and Delete) actions can be performed on Scheduler appointments using the adaptors available within the `DataManager`. Typically, the `UrlAdaptor` is used for CRUD operations on Scheduler appointments.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -197,7 +197,7 @@ export class AppComponent {
 }
 ```
 
-The server-side controller code to handle the CRUD operations are as follows.
+The following server-side controller code handles the CRUD operations.
 
 ```c#
 using System;
@@ -216,7 +216,7 @@ namespace ScheduleSample.Controllers
         {
             return View();
         }
-        public JsonResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
+        public JsonResult LoadData()  // Here we get the start and end dates and filter the data before returning it to the Scheduler
         {
             var data = db.ScheduleEventDatas.ToList();
             return Json(data, JsonRequestBehavior.AllowGet);
@@ -224,7 +224,7 @@ namespace ScheduleSample.Controllers
         [HttpPost]
         public JsonResult UpdateData(EditParams param)
         {
-            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
+            if (param.action == "insert" || (param.action == "batch" && param.added != null)) // This block of code executes while inserting appointments
             {
                 var value = (param.action == "insert") ? param.value : param.added[0];
                 int intMax = db.ScheduleEventDatas.ToList().Count > 0 ? db.ScheduleEventDatas.ToList().Max(p => p.Id) : 1;
@@ -246,7 +246,7 @@ namespace ScheduleSample.Controllers
                 db.ScheduleEventDatas.InsertOnSubmit(appointment);
                 db.SubmitChanges();
             }
-            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
+            if (param.action == "update" || (param.action == "batch" && param.changed != null)) // This block of code executes while updating the appointment
             {
                 var value = (param.action == "update") ? param.value : param.changed[0];
                 var filterData = db.ScheduleEventDatas.Where(c => c.Id == Convert.ToInt32(value.Id));
@@ -267,7 +267,7 @@ namespace ScheduleSample.Controllers
                 }
                 db.SubmitChanges();
             }
-            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
+            if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // This block of code executes while removing the appointment
             {
                 if (param.action == "remove")
                 {
@@ -304,7 +304,7 @@ namespace ScheduleSample.Controllers
 
 ## Configuring Scheduler with Google API service
 
-We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource). Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/angular/documentation/api/schedule#databinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
+We have assigned our custom Google Calendar URL to the `DataManager` and used it for the Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource). Since the event data retrieved from Google Calendar is in its own object format, it must be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/angular/documentation/api/schedule#databinding) event. Within this event, the event fields need to be mapped properly and then assigned to the result.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -318,4 +318,4 @@ We have assigned our custom created Google Calendar url to the DataManager and a
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs6" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for an overview of its features. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.

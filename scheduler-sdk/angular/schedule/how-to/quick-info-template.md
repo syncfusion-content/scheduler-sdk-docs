@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Quick Info Template in Angular Scheduler
 
-This demo showcases the quick popups for cells and appointments using customized templates.
+This demo shows how to customize Quick Info popups for cells and appointments using custom templates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

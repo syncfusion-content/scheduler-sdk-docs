@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Perform CRUD Actions Dynamically in Angular Scheduler
 
-CRUD actions can be manually performed on appointments using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#deleteevent) methods in the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler), as shown below.
+You can add, save, and delete appointments using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#deleteevent) methods in the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler). The following examples show how to use these methods.
 
 ## Normal events
 
@@ -39,4 +39,3 @@ CRUD actions can be manually performed on appointments using the [`addEvent`](ht
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs45" %}
-```
