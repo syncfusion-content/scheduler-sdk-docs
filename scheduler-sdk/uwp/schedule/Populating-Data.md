@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Data  | SfSchedule | uwp | Syncfusion
-description: Populating Data
+title: Populating Data in UWP Scheduler | Syncfusion
+description: Learn about populating data support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Populating Data 
+# Populating Data in UWP Scheduler 
 
 ## Using Appointments Property
 

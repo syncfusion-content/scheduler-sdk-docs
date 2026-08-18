@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Features  | SfSchedule | uwp | Syncfusion
-description: Key Features 
+title: Key Features in UWP Scheduler | Syncfusion
+description: Learn about key features support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Key Features
+# Key Features in UWP Scheduler
 
 **Built-in Views**
 

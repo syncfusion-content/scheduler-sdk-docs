@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blackout Dates | SfSchedule | uwp | Syncfusion
-description: Blackout Dates
+title: Blackout Dates in UWP Scheduler | Syncfusion
+description: Learn about blackout dates support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Blackout Dates
+# Blackout Dates in UWP Scheduler
 
 You can restrict/allocate certain month cell as blackout days using **MonthBlockOutDates** of schedule, so that you can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
 

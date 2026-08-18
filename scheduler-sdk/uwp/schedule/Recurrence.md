@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Recurrence | SfSchedule | uwp | Syncfusion
-description: Recurrence
+title: Recurrence in UWP Scheduler | Syncfusion
+description: Learn about recurrence support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Recurrence
+# Recurrence in UWP Scheduler
 
 ## Recurrence Pattern
 

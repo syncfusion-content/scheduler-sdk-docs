@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Customization | SfSchedule | uwp | Syncfusion
-description: UI Customization
+title: UI Customization in UWP Scheduler | Syncfusion
+description: Learn about UI customization support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# UI Customization
+# UI Customization in UWP Scheduler
 
 ## Appointment Template Customization
 
