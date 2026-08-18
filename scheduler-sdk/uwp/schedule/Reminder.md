@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Reminder | SfSchedule | uwp | Syncfusion
-description: Reminder
+title: Reminder in UWP Scheduler | Syncfusion
+description: Learn about reminder support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Reminder
+# Reminder in UWP Scheduler
 
 Schedule reminds you the particular appointment in the specified time by setting the **EnableReminderTimer** property is true. The remainder time can be set using the ReminderTime property of ScheduleAppointment.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands | SfSchedule | uwp | Syncfusion
-description: Commands
+title: Commands in UWP Scheduler | Syncfusion
+description: Learn about commands support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Commands
+# Commands in UWP Scheduler
 
 Operations that are done by context menu can also be performed using Schedule commands. The following actions of context menu can be handled by executing schedule commands in the application.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visible Dates Customization | SfSchedule | uwp | Syncfusion
-description: Visible Dates Customization
+title: Visible Dates Customization in UWP Scheduler | Syncfusion
+description: Learn about visible dates customization support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Visible Dates Customization
+# Visible Dates Customization in UWP Scheduler
 
 All views in the schedule have their own number of visible dates. The SfSchedule control allows users to view multiple dates in the day and time line views.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic Views | SfSchedule | uwp | Syncfusion
-description: Basic Views
+title: Basic Views in UWP Scheduler | Syncfusion
+description: Learn about basic views support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Basic Views
+# Basic Views in UWP Scheduler
 
 Schedule provides 5 different types of viewing the events. The default view of SfSchedule is Day view.
 

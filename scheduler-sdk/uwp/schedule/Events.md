@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | SfSchedule | uwp | Syncfusion
-description: Events
+title: Events in UWP Scheduler | Syncfusion
+description: Learn about events support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Events
+# Events in UWP Scheduler
 
 Event can be used for handle various operation such as Appointment Editor Opening and Closed or while opening or closing the Context Menu and events ItemsSourceChanged, ScheduleTapped, ScheduleDoubleTapped are used for customization purposes.
 

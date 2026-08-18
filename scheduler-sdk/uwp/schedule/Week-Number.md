@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Week Number | SfSchedule | uwp | Syncfusion
-description: Week Number
+title: Week Number in UWP Scheduler | Syncfusion
+description: Learn about week number support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Week Number
+# Week Number in UWP Scheduler
 
 You can display the week number of the year in month view by using the **ShowWeekNumber** property. By default value of **ShowWeekNumber** property is false.
 

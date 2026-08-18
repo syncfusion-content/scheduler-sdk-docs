@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Interactions in UWP Scheduler control | Syncfusion
-description: Learn here all about User Interactions support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+title: User Interactions in UWP Scheduler | Syncfusion
+description: Learn about user interactions support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# User Interactions in UWP Scheduler (SfSchedule)
+# User Interactions in UWP Scheduler
 
 ## Change the default context menu
 When you tap the schedule or appointment, our built-in context menu will be opened and triggered the [ContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ContextMenuOpeningEventArgs.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Timeline View in UWP Scheduler control | Syncfusion
-description: Learn here all about Timeline View support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+title: Timeline View in UWP Scheduler | Syncfusion
+description: Learn about timeline view support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Timeline View in UWP Scheduler (SfSchedule)
+# Timeline View in UWP Scheduler
 TimeLine view is used to displays complete TimeLine in selected day, the default visible day of Schedule will be current day. Appointments are added in particular timeslot based on its timeline.
 
 ![Timeline View UWP Scheduler](TimeLine-View_images/TimeLineView.png)
