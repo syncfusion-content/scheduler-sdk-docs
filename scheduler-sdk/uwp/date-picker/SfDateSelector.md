@@ -1,20 +1,17 @@
 ---
 layout: post
-title: SfDateSelector in UWP DatePicker control | Syncfusion®
-description: Learn here all about SfDateSelector support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
+title: SfDateSelector in UWP DatePicker control | Syncfusion
+description: Learn how to customize the header and visual elements of the SfDateSelector in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
 ---
 
-# SfDateSelector in UWP DatePicker (SfDatePicker)
+# SfDateSelector in UWP DatePicker
 
 The SfDateSelector control opens inside the drop-down popup.
 
 ![Features_img3](Features_images/Features_img3.png)
-
-
-nsfneklfne
 
 
 The visual elements of the date selector can be customized using the SelectorStyle property.
@@ -23,12 +20,15 @@ The visual elements of the date selector can be customized using the SelectorSty
 
 ## Header
 
-The header property defines the top part of the SfDateSelector.
+The Header property defines the top part of the SfDateSelector.
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -44,7 +44,9 @@ The header property defines the top part of the SfDateSelector.
 
             </syncfusion:SfDatePicker.SelectorStyle>
 
-</syncfusion:SfDatePicker>
+    </syncfusion:SfDatePicker>
+
+</Page>
 
 {% endhighlight %}
 
@@ -55,13 +57,15 @@ The header property defines the top part of the SfDateSelector.
 
 ## HeaderTemplate
 
-The header template property is used to decorate the header.
+The HeaderTemplate property is used to decorate the header.
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-
-<syncfusion:SfDatePicker VerticalAlignment="Center" 
+    <syncfusion:SfDatePicker VerticalAlignment="Center" 
 
                                HorizontalAlignment="Center"
 
@@ -112,6 +116,8 @@ The header template property is used to decorate the header.
             </syncfusion:SfDatePicker.SelectorStyle>        
             </syncfusion:SfDatePicker>
 
+</Page>
+
 {% endhighlight  %}
 
 
@@ -123,9 +129,9 @@ The header template property is used to decorate the header.
 
 ## Cell template
 
-The cell template property is used to decorate the selection box with custom visuals. 
+The cell template property is used to decorate the selection box with custom visuals.
 
-N> The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
+N> The DataContext of the selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
 
 ## DayCellTemplate
 
@@ -133,9 +139,11 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -185,7 +193,9 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
             </syncfusion:SfDatePicker.SelectorStyle>
 
-</syncfusion:SfDatePicker>
+    </syncfusion:SfDatePicker>
+
+</Page>
 
 {% endhighlight %}
 
@@ -194,12 +204,15 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 ## MonthCellTemplate
 
- The MonthCellTemplate property is used to decorate the month cell selection box. 
+The MonthCellTemplate property is used to decorate the month cell selection box.
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -251,6 +264,8 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
         </syncfusion:SfDatePicker>
 
+</Page>
+
 {% endhighlight %}
 
 ![Features_img8](Features_images/Features_img8.png)
@@ -263,9 +278,11 @@ The YearCellTemplate property is used to decorate the year cell selection box.
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -314,6 +331,8 @@ The YearCellTemplate property is used to decorate the year cell selection box.
                 </Style>
 
             </syncfusion:SfDatePicker.SelectorStyle>        </syncfusion:SfDatePicker>
+
+</Page>
 
 			{% endhighlight %}
 			

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Formatting in UWP DateTimePicker control | Syncfusion
-description: Learn here all about Formatting support in Syncfusion UWP DateTimePicker (SfDateTimeCombo) control and more.
+description: Learn how to format the display text using the FormatString property in the Syncfusion UWP DateTimePicker (SfDateTimeCombo) control.
 platform: scheduler-sdk
 control: SfDateTimeCombo
 documentation: ug
 ---
 
-# Formatting in UWP DateTimePicker (SfDateTimeCombo)
+# Formatting in UWP DateTimePicker
 
 The SfDateTimeCombo control allows the user to format the display text in various ways.
 
@@ -19,12 +19,18 @@ The FormatString property determines the format specifier by which the DateTime 
 
 {% highlight XAML %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-            <syncfusion:SfDateTimeCombo FormatString="hms" x:Name="datetimeCombo"
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-                               Width="350" HorizontalAlignment="Left"/>
-</Grid>
+                <syncfusion:SfDateTimeCombo FormatString="hms" x:Name="datetimeCombo"
+
+                                   Width="350" HorizontalAlignment="Left"/>
+    </Grid>
+
+</Page>
 
 {% endhighlight %}
 
@@ -34,11 +40,15 @@ The FormatString property determines the format specifier by which the DateTime 
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 datetimeCombo.FormatString = "hms";
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 datetimeCombo.FormatString = "hms"
 
