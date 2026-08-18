@@ -94,4 +94,4 @@ By using the `beforePaste` event, the copied details can be intercepted and upda
 
 
 
-> For more information on Schedule component capabilities, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview) for more usage scenarios.
+> For more information on Schedule component capabilities, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview) for more usage scenarios.

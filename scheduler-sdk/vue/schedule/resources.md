@@ -324,7 +324,7 @@ It is possible to display the Scheduler in the default mode without visually sho
 
 The appointments belonging to different resources will be displayed together in the default Scheduler, and will be differentiated based on the resource color assigned in the **resources** collection.
 
-Learn how to add appointments from multiple resources to [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) by watching this video.
+Learn how to add appointments from multiple resources to [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) by watching this video.
 
 {% youtube "https://www.youtube.com/watch?v=kBwxxhC8bB0" %}
 
@@ -687,4 +687,4 @@ Some of the default changes made for compact Scheduler rendering on desktop devi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs7" %}
 
-> For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

@@ -14,7 +14,7 @@ This article provides a step-by-step guide to creating a Vue 2 application using
 
 > **Ready to streamline your Vue development?** Discover the full potential of Vue components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/vue/documentation/ai-coding-assistant/overview)
 
-Check the following video to learn how to build a [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) application:
+Check the following video to learn how to build a [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) application:
 
 {% youtube "https://www.youtube.com/watch?v=Wak6k6cYPiA" %}
 
@@ -77,7 +77,7 @@ Once the `quickstart` project is set up with default settings, proceed to add Sy
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Vue components, install the required npm package.
 
-This article uses the [Vue Schedule](https://www.syncfusion.com/vue-components/vue-scheduler) component as an example. Install the `@syncfusion/ej2-vue-schedule` package by running the following command:
+This article uses the [Vue Schedule](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) component as an example. Install the `@syncfusion/ej2-vue-schedule` package by running the following command:
 
 ```bash
 npm install @syncfusion/ej2-vue-schedule --save

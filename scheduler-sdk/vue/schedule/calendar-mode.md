@@ -50,4 +50,4 @@ Ensure the required CLDR files are available before loading the Scheduler exampl
 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/islamic-calendar-cs1" %}
 
-> Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for comprehensive feature details. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for practical demonstrations of data presentation and interaction.
+> Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for comprehensive feature details. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for practical demonstrations of data presentation and interaction.
