@@ -8,9 +8,9 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
-# Multi-Color events in Angular Scheduler
+# Multi-color events in Angular Scheduler
 
-In [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) we can display the multiple colors within a single event. This can be achieved by using the `template` option available within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property. Here, we've used `SubCount` as an additional field. The SubCount field contains the background color and height values. Based on these values, events will be divided into different colors.
+In [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler), you can display multiple colors within a single event by using a custom event template. The `template` option inside `eventSettings` enables this behavior. In the example below, a `SubCount` field supplies background color and height values, and the template uses those values to render event segments in different colors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

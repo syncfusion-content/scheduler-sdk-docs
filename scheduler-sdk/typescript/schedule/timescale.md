@@ -10,17 +10,17 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Timescale in TypeScript Scheduler
 
-Time slots are the individual time cells displayed in the Day, Week, and Work Week views of the Scheduler—positioned to the left in calendar views and at the top in timeline views. The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property enables precise control over the time slot duration and appearance for Scheduler work cells. The `timeScale` property includes the following sub-options:
+Time slots are the individual time cells displayed in the Day, Week, and Work Week views of the Scheduler—positioned to the left in calendar views and at the top in timeline views. The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property enables precise control over the time slot duration and appearance of Scheduler work cells. The `timeScale` property includes the following sub-options:
 
-* [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#enable) – When set to `true`, the Scheduler displays appointments accurately against the exact time duration, with grid lines indicating each slot. If set to `false`, all appointments for a day are shown one below the other without grid lines. Default is `true`.
+* [`enable`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#enable) – When set to `true`, the Scheduler displays appointments against the exact time duration with grid lines indicating each slot. If set to `false`, all appointments for a day are shown one below the other without grid lines. Default is `true`.
 * [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) – Defines the duration of each major time slot in minutes (e.g., 60 for 1 hour, 30 for 30 minutes). Default is 60.
-* [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) – Specifies how many minor slots each major interval is divided into. Default is 2, so each hour is split into two 30-minute slots.
+* [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) – Specifies how many minor slots each major interval is divided into. Default is `2`, so each hour is split into two 30-minute slots.
 
 > **Note:** The maximum number of slots that can be rendered in a single day using the **interval** and **slotCount** properties is 1000. This limit matches the maximum **colspan** value allowed for the HTML **table** element. This restriction applies only to the `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.
 
 ## Setting different time slot durations
 
-The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) properties can be combined to set custom time slot durations. For example, setting `interval` to 60 and `slotCount` to 6 creates six 10-minute slots per hour, as shown in the following example.
+The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#slotcount) properties can be combined to set custom time slot durations. For example, setting `interval` to `60` and `slotCount` to `6` creates six 10-minute slots per hour, as shown in the following example.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -59,7 +59,7 @@ The [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale
 
 The [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) property also provides template options for customizing the appearance of time slots:
 
-* [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#majorslottemplate) – Template for major time slots. Accepts a string or HTMLElement, and displays parsed content in the major time cells. Time details are accessible within the template.
+* [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#majorslottemplate) – Template for major time slots. Accepts a string or HTMLElement and displays parsed content in the major time cells. Time details are accessible within the template.
 * [`minorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#minorslottemplate) – Template for minor time slots. Accepts a string or HTMLElement, and displays parsed content in the minor time cells. Time details are accessible within the template.
 
 {% if page.publishingplatform == "typescript" %}

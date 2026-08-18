@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Set Default Value for Event Fields in JavaScript Scheduler
 
-The Scheduler control allows customization of default field names (such as **Title**, **Location**, etc.) in the event window. You can also assign default values to these fields so that they are automatically applied when creating new appointments.  
+The Scheduler lets you assign default values to event fields (for example, Subject or Location) so new appointments are pre-filled when created.
 
-For example, a default value can be set for the **Subject** field using the `default` property. This ensures that when an appointment is created without a subject, the predefined default value is automatically applied.
+For example, use the `default` property on a field configuration to supply a Subject value that is applied when the user creates an appointment without entering a subject.
 
 {% if page.publishingplatform == "typescript" %}
 

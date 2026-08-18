@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # CRUD Operations in TypeScript Scheduler
 
-Appointments are the core elements of the Scheduler component, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using editor window or through the drag and resize action.
+Appointments are the core elements of the Scheduler component, representing scheduled events that users can create, view, modify, and delete. The Scheduler provides comprehensive support for manipulating appointments using the editor window or through drag and resize actions.
 
 ## Add
 
@@ -28,7 +28,7 @@ To customize the editor window with additional fields, refer to the [custom edit
 
 ### Creation using addEvent method
 
-Appointments can be created programmatically using the [`addEvent`](../api/schedule#addevent) method. This method accepts either a single appointment object or an collection of appointment objects. The following example demonstrates creating multiple appointments simultaneously:
+Appointments can be created programmatically using the [`addEvent`](../api/schedule#addevent) method. This method accepts either a single appointment object or a collection of appointment objects. The following example demonstrates creating multiple appointments simultaneously:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -90,9 +90,7 @@ if (param.action == "insert" || (param.action == "batch" && param.added != null)
 
 ### Restricting add action based on specific criteria
 
-In the following example, the specific fields of Scheduler editor window such as Subject and Location are made to undergo validation such that if it is left as blank, then the default `Required` validation message will be displayed, while clicking on a save button.
-
-Additionally, the regex condition has been added to the Location field, so that if any special characters are typed into it, then the custom validation message will be displayed.
+In the following example, Scheduler editor fields such as Subject and Location are validated. If a required field is left blank, the default `Required` validation message appears. A regex rule is also added to the Location field to display a custom validation message when special characters are entered.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -164,7 +162,7 @@ Appointment creation can also be prevented dynamically based on custom condition
 
 ## Edit
 
-The same way the appointments such as normal, all-day, spanned or recurring events are created, it can be easily edited using any of the following ways.
+Appointments such as normal, all-day, spanned, or recurring events can be edited using any of the following methods.
 
 * [Update using editor window](#update-using-editor-window)
 * [Update using saveEvent method](#update-using-saveevent-method)
@@ -179,7 +177,7 @@ Double-clicking on an existing appointment opens the editor window pre-filled wi
 
 Appointments can be updated programmatically using the [`saveEvent`](../api/schedule#saveevent) method. The following examples demonstrate editing normal and recurring events.
 
-**Normal event** - Here, an event with ID `3` is edited and its subject is changed with a new text. When the modified data object is passed onto the [`saveEvent`](../api/schedule#saveevent) method, the changes gets reflected onto the original event. The `Id` field is mandatory in this edit process, where the modified event object should hold the valid `Id` value that exists in the Scheduler data source.
+**Normal event** - Here, an event with ID `3` is edited and its subject is changed with a new text. When the modified data object is passed to the [`saveEvent`](../api/schedule#saveevent) method, the changes are reflected on the original event. The `Id` field is mandatory in this edit process, and the modified event object must contain a valid `Id` value that exists in the Scheduler data source.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -212,7 +210,7 @@ Appointments can be updated programmatically using the [`saveEvent`](../api/sche
 
 When the second argument is passed as `EditOccurrence`, which means that the passed event data is a single modified occurrence - whereas if the second argument is passed as `EditSeries`, it means that the modified data needs to be edited as a whole series and therefore no new event object will be maintained in the Scheduler dataSource.
 
-In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](../api/schedule/field#recurrenceexception) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](../api/schedule/field#recurrenceexception) values, refer the [recurring events](./appointments#adding-exceptions) topic.
+When modifying a single occurrence, it is also necessary to update the parent event's [`RecurrenceException`](../api/schedule/field#recurrenceexception) field. To learn more about setting [`RecurrenceException`](../api/schedule/field#recurrenceexception) values, refer to the [Recurring events](./appointments#adding-exceptions) topic.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -284,9 +282,9 @@ Recurring appointments can be edited in two ways:
 
 * The parent recurring event needs to be updated with appropriate [`recurrenceException`](../api/schedule/field#recurrenceexception) field to hold the edited occurrence appointment's date collection.
 
-Therefore, when a single occurrence is edited from a recurring event, the batch action takes place by allowing both the `Add` and `Edit` action requests to take place together.
+Therefore, when a single occurrence is edited from a recurring event, a batch action occurs that includes both `Add` and `Edit` requests.
 
-> In case, if existing occurrence of a recurring event edited, only those edited occurrence which present in the database as an individual event object will get updated. In this case, `update` action alone takes place on the edited occurrence object on the database.
+> If an edited occurrence of a recurring event already exists as a separate database record, only that edited occurrence is updated. In that case, only the `update` action occurs for the edited occurrence.
 
 ```ts
 if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
@@ -721,7 +719,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ## Drag and drop
 
-When a normal event on the Scheduler is dropped, the event editing action takes place. When a recurring event is drag and dropped on a desired time range, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
+When a normal event on the Scheduler is dropped, the event editing action takes place. When a recurring event is dragged and dropped to a new time range, the batch action described in the `Editing a single occurrence` section occurs, allowing both `Add` and `Edit` actions to take place together.
 
 > By default, when drag a recurring instance, only the occurrence of the event gets edited and not a whole series.
 
@@ -760,7 +758,7 @@ When a normal event on the Scheduler is dropped, the event editing action takes 
 
 ## Resize
 
-When normal event on the Scheduler is resized, the event editing action takes place. When a recurring event is resized to a new desired time, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
+When a normal event on the Scheduler is resized, the event editing action takes place. When a recurring event is resized to a new time, the batch action described in the `Editing a single occurrence` section occurs, allowing both `Add` and `Edit` actions to take place together.
 
 > By default, when resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
 

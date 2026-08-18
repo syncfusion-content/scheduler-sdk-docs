@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Calendar Mode in Angular Scheduler
 
-The Scheduler supports two types of calendar modes:
+The Scheduler supports two calendar modes:
 
 * Gregorian Calendar
 * Islamic Calendar
@@ -21,13 +21,13 @@ By default, the Scheduler uses the Gregorian calendar, the most widely adopted s
 
 ## Islamic Calendar
 
-The Islamic Calendar, also known as the Hijri or Muslim calendar, is a lunar calendar which has 12 months in a year with 354 or 355 days. Each month of this calendar denotes the birth of the new lunar cycle and therefore, each month can have 29 or 30 days depending on the visibility of the moon. Here, the odd-numbered months have 30 days and the even months have 29 days.
+The Islamic calendar, also known as the Hijri or Muslim calendar, is a lunar calendar with 12 months in a year and 354 or 355 days. Each month denotes the start of a new lunar cycle, and each month can have 29 or 30 days depending on moon visibility. Odd-numbered months have 30 days, and even-numbered months have 29 days.
 
-> The current Islamic year is 1440 AH. Usually the Gregorian calendar runs from approximately 11 September 2018 to 30 August 2019 for this 1440 AH year.
+> The current Islamic year is 1440 AH. Usually, the Gregorian calendar runs from approximately 11 September 2018 to 30 August 2019 for this 1440 AH year.
 
-The Scheduler has a property [`calendarMode`](https://ej2.syncfusion.com/angular/documentation/api/schedule#calendarmode) which is used to switch between the gregorian and islamic calendar modes. By default, it is set to `Gregorian` and to use it with Islamic calendar dates, define the `calendarMode` of Scheduler to `Islamic`. The following example depicts, how to display the Islamic calendar dates on Scheduler.
+The Scheduler has a property [`calendarMode`](https://ej2.syncfusion.com/angular/documentation/api/schedule#calendarmode) that is used to switch between the Gregorian and Islamic calendar modes. By default, it is set to `Gregorian`, and to use Islamic calendar dates, set the Scheduler `calendarMode` to `Islamic`. The following example shows how to display Islamic calendar dates on the Scheduler.
 
-To use the Islamic calendar in Scheduler, import the `Calendar` and `Islamic` modules from the `ej2-calendars` package, and inject them using the `Calendar.Inject` method. Additionally, ensure the following CLDR data files are loaded via the `loadCldr` function, as this is necessary for multilingual and Islamic date support:
+To use the Islamic calendar in the Scheduler, import the `Calendar` and `Islamic` modules from the `ej2-calendars` package and inject them using the `Calendar.Inject` method. Also, ensure the following CLDR data files are loaded via the `loadCldr` function, as this is necessary for multilingual and Islamic date support:
 
 * numberingSystems.json
 * ca-gregorian.json
@@ -49,4 +49,4 @@ To use the Islamic calendar in Scheduler, import the `Calendar` and `Islamic` mo
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/islamic-calendar-cs1" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature overview. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.

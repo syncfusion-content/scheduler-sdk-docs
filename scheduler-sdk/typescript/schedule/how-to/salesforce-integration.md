@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Salesforce Integration in TypeScript Scheduler
 
-This topic provides a detailed step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance productivity and streamline scheduling processes.
+This topic provides a detailed, step-by-step guide on how to seamlessly integrate the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) control into Salesforce. By integrating it into Salesforce, you can enhance productivity and streamline scheduling processes.
 
 ## Prerequisites
 
@@ -22,17 +22,17 @@ Before getting started, ensure the following prerequisite is installed:
 
 To begin the integration process, configure Salesforce by following these steps:
 
-[Sign up](https://www.salesforce.com/form/developer-signup/) with salesforce developer account, if you don’t have salesforce account, sign up for one to access the necessary tools and resources for integration.
+[Sign up](https://www.salesforce.com/form/developer-signup/) for a Salesforce developer account if you do not already have one. This gives you access to the necessary tools and resources for integration.
 
-[Log in](https://login.salesforce.com/) with salesforce account. 
+[Log in](https://login.salesforce.com/) with your Salesforce account.
 
-After login, search for **Dev Hub** in the quick find search box and select **Dev Hub**. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled.
+After logging in, search for **Dev Hub** in the quick find search box and select **Dev Hub**. In the Dev Hub setup tab, ensure that the `Enable Dev Hub` option is enabled.
 
 ![Enable Dev Hub](../images/Salesforce-enable-dev-hub.png)
 
 ## Creating a Salesforce project
 
-Now you have have Salesforce configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for our integration.
+Now that Salesforce is configured, let's create a [Salesforce project](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm) for the integration.
 
 In your preferred location, create a base directory for your Salesforce project. For example, you can create a directory named `salesforceApp` using the following command:
 
@@ -84,15 +84,15 @@ sf org:create:scratch -f config/project-scratch-def.json
 
 To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and styles as static resource files within Salesforce, follow these steps.  
  
-Use the following command to open the scratch project in the browser
+Use the following command to open the scratch project in the browser:
 
 ```bash
-sf org:open -o <stratch org user name> 
+sf org:open -o <scratch org username>
 ```
 
-Replace <scratch org username> with the username of your scratch organization, which was generated during the scratch organization creation process.  
- 
-In the Salesforce setup menu, search for `Static Resources` and click on **New** button in the static resources tab. 
+Replace <scratch org username> with the username of your scratch organization.
+
+In the Salesforce setup menu, search for `Static Resources` and click the **New** button in the Static Resources tab.
 
 ![Salesforce Setup menu](../images/Salesforce-setup-menu.png)
 
@@ -104,24 +104,24 @@ In the static resource tab, provide a name for the static resource files, upload
 
 ## Adding CSP trusted sites 
 
-To ensure seamless integration and prevent content security policy issues, follow these steps. 
+To ensure seamless integration and prevent content security policy issues, follow these steps.
 
-In the Salesforce setup menu, search for `CSP Trusted Sites` and click New Trusted Site button.
+In the Salesforce setup menu, search for `CSP Trusted Sites` and click the **New Trusted Site** button.
 
 ![Salesforce CSP trusted sites](../images/Salesforce-CSP-trusted-sites.png)
 
-Enter the trusted site name and URL. For example, if the Syncfusion<sup style="font-size:70%">&reg;</sup> static styles refer to https://fonts.googleapis.com, enter that URL as the trusted site URL.  
- 
-Enable the following options to bypass the CSP issues and Click Save button to apply the changes. 
- 
-    * Allow site for font-src 
-    * Allow site for style-src 
+Enter the trusted site name and URL. For example, if the Syncfusion<sup style="font-size:70%">&reg;</sup> static styles refer to https://fonts.googleapis.com, enter that URL as the trusted site URL.
+
+Enable the following options to bypass CSP issues and click **Save** to apply the changes.
+
+* Allow site for font-src
+* Allow site for style-src
 
 ![CSP trusted sites](../images/CSP-trusted-sites.png)
 
-## Creating a data model for appointment 
+## Creating a data model for appointments
 
-To begin, navigate to the Object Manager in Salesforce and select Create followed by `Custom Object`.
+To begin, navigate to the Object Manager in Salesforce and select **Create** followed by `Custom Object`.
 
 ![Salesforce Object manager](../images/Salesforce-object-manager.png)
 
@@ -129,45 +129,45 @@ In the custom object section, enter a meaningful label for your custom object. F
 
 ![Salesforce New custom Object](../images/Salesforce-new-custom-object.png)
 
-## Defining fields and relationships 
+## Defining fields and relationships
 
-let's configure the fields and relationships for the `SchedulerEvent` object. To do so click **New** button to create a new field. 
+Let's configure the fields and relationships for the `SchedulerEvent` object. To do so, click the **New** button to create a new field.
 
 ![Salesforce Field and Relationship](../images/Salesforce-field-relationship.png)
 
-1. Setting the Data Type for `StartTime`. Choose DateTime as the data type for the `StartTime` field. This field will store the starting time of each appointment.
+1. Set the data type for `StartTime`. Choose DateTime as the data type for the `StartTime` field. This field stores the starting time of each appointment.
 
 ![Salesforce Scheduler Events](../images/Salesforce-scheduler-events.png)
 
-2. Provide a clear label for the `StartTime` field and click **Next** button. Once you've reviewed the settings, click **Save** & **New** button to proceed.
+2. Provide a clear label for the `StartTime` field and click the **Next** button. Once you've reviewed the settings, click **Save & New** to proceed.
 
 ![Salesforce New custom field](../images/Salesforce-setting-starttime-field.png)
 
-3. Repeat the same steps as above to create the `EndTime` field, which will store the ending time of each appointment. Creating the `EndTime` Field. Once you've reviewed the settings, click **Save** & **New** button to proceed.
+3. Repeat the same steps to create the `EndTime` field, which stores the ending time of each appointment. Once you've reviewed the settings, click **Save & New** to proceed.
 
 ![Salesforce setting allday field](../images/Salesforce-setting-endtime-field.png)
 
-4. Choose Checkbox as the data type for the `IsAllDay` field. This field will be marked when an appointment is scheduled for the entire day. 
+4. Choose Checkbox as the data type for the `IsAllDay` field. This field is marked when an appointment is scheduled for the entire day.
 
 ![Salesforce New custom field](../images/Salesforce-setting-isallday-field.png)
 
-5. Assign an appropriate label, such as `IsAllDay`, to the checkbox field. Click **Next** button to review the settings and then click **Save** & **New** button to proceed. 
+5. Assign an appropriate label, such as `IsAllDay`, to the checkbox field. Click the **Next** button to review the settings and then click **Save & New** to proceed.
 
 ![Salesforce New custom field](../images/Salesforce-setting-isallday-field.png)
 
-6. Choose Text as the data type for the `Location/Recurrence Rule/Recurrence Id /Recurrence Exception` field to store the location field and recurrence rule for each appointment as shown in the image respectively. Click **Next** to review the settings and then click **Save** button to proceed. 
+6. Choose Text as the data type for the `Location/Recurrence Rule/Recurrence Id /Recurrence Exception` field to store the location field and recurrence rule for each appointment, as shown in the image. Click **Next** to review the settings and then click **Save** to proceed.
 
 ![Salesforce New custom field](../images/Salesforce-setting-location-field.png)
 
-7. Based on your specific requirements, you can add more fields to the `SchedulerEvent` object by following the same steps outlined above.
+7. Based on your specific requirements, you can add more fields to the `SchedulerEvent` object by following the same steps.
 
 ![Salesforce New custom field](../images/Salesforce-custom-field.png)
 
 ## Creating a Lightning web component 
 
-To integrate the **JavaScript Scheduler** into your Salesforce project, we will create a [Lightning web component](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-introduction.html).
+To integrate the **JavaScript Scheduler** into your Salesforce project, create a [Lightning web component](https://developer.salesforce.com/docs/platform/lwc/guide/get-started-introduction.html).
 
-1. In your Salesforce project, run the following command to generate a Lightning web component named scheduler.
+1. In your Salesforce project, run the following command to generate a Lightning web component named `scheduler`.
 
 ```bash
 sf lightning:generate:component --type lwc -n scheduler -d force-app/main/default/lwc 
@@ -175,7 +175,7 @@ sf lightning:generate:component --type lwc -n scheduler -d force-app/main/defaul
 
 ![Salesforce Creating Lightning web component](../images/Salesforce-creating-lightning-web.png)
 
-2. Open the `scheduler.js-meta.xml` file located in `force-app/main/default/lwc/scheduler` and modify the component definition to expose it in the Lightning App Builder. Here's an example of the modified file. 
+2. Open the `scheduler.js-meta.xml` file located in `force-app/main/default/lwc/scheduler` and modify the component definition to expose it in the Lightning App Builder. Here's an example of the modified file.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -201,7 +201,7 @@ sf lightning:generate:component --type lwc -n scheduler -d force-app/main/defaul
 </template> 
 ```
 
-4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in renderedCallback function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.
+4. Open the `scheduler.js` file located in `force-app/main/default/lwc/scheduler` and implement the scheduler code in the `renderedCallback()` function. The static scripts and styles are loaded using the `loadScript` and `loadStyle` imports. Here's an example of the modified file.
 
 ```js
 import { LightningElement, api } from 'lwc'; 
@@ -320,11 +320,11 @@ export default class Scheduler extends LightningElement {
 } 
 ```
 
-## Creating apex class 
+## Creating Apex class
 
-Apex class that facilitates smooth interactions between your Lightning component and the data model. By following these steps, you will be able to fetch and manipulate data from the `SchedulerEvent` custom object effortlessly. 
+The Apex class facilitates smooth interactions between your Lightning component and the data model. By following these steps, you can fetch and manipulate data from the `SchedulerEvent` custom object.
 
-Use the following command to create Apex class with the name `SchedulerData`. 
+Use the following command to create an Apex class named `SchedulerData`.
 
 ```bash
 sf apex:generate:class -n SchedulerData -d force-app/main/default/classes	 
@@ -332,8 +332,8 @@ sf apex:generate:class -n SchedulerData -d force-app/main/default/classes
 
 ![Salesforce Creating Apex Class](../images/Salesforce-creating-apex.png)
 
-Open the **SchedulerData.cls** file located in `force-app/main/default/classes/SchedulerData.cls`. 
-This will fetch the event data from salesforce backend. Here's an example of the modified file. 
+Open the **SchedulerData.cls** file located in `force-app/main/default/classes/SchedulerData.cls`.
+This fetches the event data from the Salesforce backend. Here's an example of the modified file.
 
 ```c#
 public with sharing class SchedulerData { 
@@ -352,7 +352,7 @@ public with sharing class SchedulerData {
 
 ## Pull scratch organization 
 
-To retrieve the changes made in the scratch organization and sync them with your local Salesforce project, use the following command. 
+To retrieve the changes made in the scratch organization and sync them with your local Salesforce project, use the following command.
 
 ```bash
 sf project:retrieve:start -o <scratch org use name> 
@@ -364,7 +364,7 @@ Replace <scratch org username> with the username of your scratch organization.
 
 ## Push scratch organization 
 
-To push the changes made in your local Salesforce project to the scratch organization, use the following command. 
+To push the changes made in your local Salesforce project to the scratch organization, use the following command.
 
 ```bash
 sf project:deploy:start -o <scratch org use name> 
@@ -374,47 +374,46 @@ Replace <scratch org username> with the username of your scratch organization.
 
 ![Salesforce Push Scratch](../images/Salesforce-push-scratch.png)
 
-## Creating lightning page 
+## Creating Lightning page
 
-To display the **JavaScript Scheduler** on a Lightning page, follow these steps. 
+To display the **JavaScript Scheduler** on a Lightning page, follow these steps.
 
-1. In your scratch organization, search for `Lightning App Builder` in the quick find setup, select `Lightning App Builder` and click **New** button. 
+1. In your scratch organization, search for `Lightning App Builder` in the quick find setup, select `Lightning App Builder`, and click the **New** button.
 
 ![Search Scheduler page](../images/Salesforce-create-lightning-page.png)
 
-2. Choose **App** Page and click **Next** button. 
+2. Choose **App** Page and click the **Next** button.
 
 ![Search Scheduler page](../images/Salesforce-add-lightning-page.png) 
 
-3. Provide a label name for the app page and click **Next** button. For example, here you can name it `SyncfusionScheduler`. 
+3. Provide a label name for the app page and click the **Next** button. For example, you can name it `SyncfusionScheduler`.
 
 ![Search Scheduler page](../images/Salesforce-provide-name-lightning-page.png)
 
-4. Choose One **Region** and click **Finish** button. 
+4. Choose one **Region** and click the **Finish** button.
 
 ![Search Scheduler page](../images/Salesforce-select-region-lightning-page.png)
 
-5. In the Lightning App Builder, under the `Add Components Here` section, drag and drop the scheduler component. The scheduler will be 
-rendered inside the content body. Click **Save** to activate the custom component. 
+5. In the Lightning App Builder, under the `Add Components Here` section, drag and drop the scheduler component. The scheduler will be rendered inside the content body. Click **Save** to activate the custom component.
 
 ![Search Scheduler page](../images/Salesforce-add-component.png)
 
 ![Search Scheduler page](../images/Salesforce-save-component.png)
 
-6. Activate the custom component with name `SyncfusionScheduler` and click the **Save** button. 
+6. Activate the custom component named `SyncfusionScheduler` and click the **Save** button.
 
 ![Search Scheduler page](../images/Salesforce-activate-custom-component.png)
 
-## Launching scheduler in home page 
+## Launching scheduler in home page
 
-To access the integrated **JavaScript Scheduler** on the home page, follow these steps. 
+To access the integrated **JavaScript Scheduler** on the home page, follow these steps.
 
-Click on the app launcher icon in Salesforce and Search for `SyncfusionScheduler`, which was registered earlier in the Lightning App Builder.
+Click the app launcher icon in Salesforce and search for `SyncfusionScheduler`, which was registered earlier in the Lightning App Builder.
 
 ![Search Scheduler page](../images/Salesforce-search-scheduler.png)
 
-Click on the `SyncfusionScheduler` app, and the scheduler will load on the home page.
+Click the `SyncfusionScheduler` app, and the scheduler will load on the home page.
 
 ![Click Scheduler page](../images/Salesforce-click-scheduler.png)
 
-N> You can also explore our [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) example to knows about the Salesforce integration.
+> You can also explore our [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) example to learn more about the Salesforce integration.

@@ -12,8 +12,8 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 The **Year view** of the Scheduler displays all 365 days of a year along with their associated appointments. This view can be customized using the following properties:
 
-* [`firstMonthOfYear`](../../api/schedule#firstmonthofyear) – Defines the starting month of the year view.  
-* [`monthsCount`](../../api/schedule#monthscount) – Specifies the number of months to be displayed.  
+* [`firstMonthOfYear`](../../api/schedule#firstmonthofyear) – Defines the starting month of the year view.
+* [`monthsCount`](../../api/schedule#monthscount) – Specifies the number of months to be displayed.
 * [`monthHeaderTemplate`](../../api/schedule#monthheadertemplate) – Provides a template option to customize the header of each month.
 
 In the following example, the Scheduler is configured to render only the last six months of a year. By setting [`firstMonthOfYear`](../../api/schedule#firstmonthofyear) to `6`, the view begins with June. The [`monthsCount`](../../api/schedule#monthscount) property is set to `6` to display six months, resulting in a half-year view.

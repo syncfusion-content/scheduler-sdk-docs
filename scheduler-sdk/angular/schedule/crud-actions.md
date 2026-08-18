@@ -26,7 +26,7 @@ Different types of appointments such as normal, all-day, spanned, or recurring e
 
 The default editor window opens by double-clicking on Scheduler cells. It offers various event options such as Subject, Location, Start and End time, All-day status, Timezone, Description, and recurrence settings. These fields enable users to provide detailed event information. After filling out the form, click the `Save` button to add the appointment.
 
-In case, if you want to simply provide the Subject alone for appointments, just single click on the required cells which will open the quick popup expecting you to enter subject alone and save it. You can also select multiple cells and press `Enter` key to open the quick popup for selected time range and save the appointment for that time range.
+If you want to provide only the Subject for appointments, single-click the required cells to open the quick popup and enter the subject. You can also select multiple cells and press the `Enter` key to open the quick popup for the selected time range and save the appointment.
 
 In case, if you need to add some other additional fields to the editor window, then you can opt for [custom editor window](./editor-template#customizing-event-editor-using-template) which allows you to include fields as per your application needs. If you need to add just one or two [additional fields to the existing default editor window](./editor-template#add-additional-fields-to-the-default-editor), you can do so by defining it manually and then appending it to the editor window.
 

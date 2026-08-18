@@ -23,9 +23,13 @@ Different types of appointments such as normal, all-day, spanned, or recurring e
 
 The default editor window opens by double-clicking on Scheduler cells. It offers various event options such as Subject, Location, Start and End time, All-day status, Timezone, Description, and recurrence settings. These fields enable users to provide detailed event information. After filling out the form, click the `Save` button to add the appointment.
 
-In case, if you want to simply provide the Subject alone for appointments, just single click on the required cells which will open the quick popup expecting you to enter subject alone and save it. You can also select multiple cells and press `Enter` key to open the quick popup for selected time range and save the appointment for that time range.
+### Quick event creation
 
-In case, if you need to add some other additional fields to the editor window, then you can opt for [custom editor window](./editor-template#customizing-event-editor-using-template) which allows you to include fields as per your application needs. If you need to add just one or two [additional fields to the existing default editor window](./editor-template#add-additional-fields-to-the-default-editor), you can do so by defining it manually and then appending it to the editor window.
+Single-click on a cell to open the quick popup for entering just the Subject. Alternatively, select multiple cells and press `Enter` to create an appointment spanning the selected time range.
+
+### Custom editor window
+
+For additional fields, use the [custom editor window](./editor-template#customizing-event-editor-using-template) to include fields as needed. To add just one or two fields to the default editor, refer to [adding additional fields](./editor-template#add-additional-fields-to-the-default-editor).
 
 ### Creation using addEvent method
 
@@ -34,14 +38,11 @@ Appointments can be dynamically created by using the [`addEvent`](https://ej2.sy
 The following example demonstrates how to create multiple appointments simultaneously:
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs1/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs1/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs1/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs1/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -85,14 +86,11 @@ In the following example, fields such as Subject and Location in the Scheduler e
 Additionally, a regular expression validation is applied to the Location field. If special characters are entered, a custom validation message is displayed.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs38/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs38/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs38/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs38/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs38/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -101,14 +99,11 @@ Additionally, a regular expression validation is applied to the Location field. 
 To prevent users from creating appointments on weekends, use the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/schedule#actionbegin) event to check for the desired condition and restrict creation as needed.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs39/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs39/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs39/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs39/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs39/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -125,7 +120,7 @@ Appointments of any type such as normal, all-day, spanned, or recurring—can be
 
 You can open the default editor window filled with appointment details by double clicking on the required events. It gets pre-filled with event options such as Subject, Location, Start and End time, All-day, timezone, description and other recurrence options, from which you can edit the desired field values and, then enter the `Save` button to update it.
 
-> Appointments can also be quickly edited by single-clicking to open the quick info popup, where `Edit` opens the editor and `Delete` triggers a confirmation prompt.
+> **Note:** Appointments can also be quickly edited by single-clicking to open the quick info popup, where `Edit` opens the editor and `Delete` triggers a confirmation prompt.
 
 ### Updating using saveEvent method
 
@@ -135,14 +130,11 @@ Appointments can be edited and updated programmatically using the [`saveEvent`](
 
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs2/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs2/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs2/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs2/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs2/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -155,14 +147,11 @@ When the second argument is passed as `EditOccurrence`, which means that the pas
 In case of modifying the single occurrence, it is also necessary to update the `RecurrenceException` field of parent event altogether with the occurrence editing. To know more about how to set `RecurrenceException` values, refer the [recurring events](./appointments#adding-exceptions) topic.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs3/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs3/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs3/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs3/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs3/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -213,7 +202,7 @@ Recurring appointments can be edited as a single occurrence or as an entire seri
 
 Therefore, when a single occurrence is edited from a recurring event, the batch action takes place by allowing both the `Add` and `Edit` action requests to take place together.
 
-> In case, if you edit an existing edited occurrence of a recurring event, only those edited occurrence which present in the database as an individual event object will get updated. In this case, `update` action alone takes place on the edited occurrence object on the database.
+> **Note:** If you edit an existing modified occurrence of a recurring event, only that occurrence (which exists as an individual event object in the database) will be updated. The `update` action takes place on the edited occurrence object alone.
 
 ```ts
 if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
@@ -386,21 +375,18 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 }
 ```
 
-> For more details about handling recurrence exceptions, see [Adding exceptions](./appointments#adding-exceptions) topic.
+> **Note:** For more details about handling recurrence exceptions, see [Adding exceptions](./appointments#adding-exceptions).
 
 ### Restricting edit action based on specific criteria
 
 To prevent editing appointments during non-working hours, use the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/schedule#actionbegin) event to check for appropriate conditions.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs40/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs40/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs40/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs40/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs40/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -427,14 +413,11 @@ Appointments can be programmatically removed using the [`deleteEvent`](https://e
 **Normal event** : Pass the appointment’s `Id` or the event object to [`deleteEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#deleteevent) to delete normal Scheduler appointments.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs4/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs4/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs4/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs4/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs4/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -443,14 +426,11 @@ Appointments can be programmatically removed using the [`deleteEvent`](https://e
 **Recurring Event** - The recurring events can be removed as an entire series or simply removing single occurrence by using the deleteEvent method which takes in either the `DeleteSeries` or `DeleteOccurrence` parameters. The following code example shows how to delete entire series.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs5/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs5/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs5/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs5/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/app-crud-cs5/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -497,7 +477,7 @@ The recurring events can be deleted in either of the following two ways.
 
 Therefore, when a single occurrence is deleted from a recurring event, the `update` action takes place on the parent recurring event as shown in the following code example.
 
-> In case, if you delete an existing edited occurrence of a recurring event, only those edited occurrence which present in the database as an individual event object will get removed. In this case, `delete` action takes place instead of `update` action and the parent recurring event object remains same with no changes.
+> **Note:** If you delete an existing modified occurrence of a recurring event, only that occurrence (which exists as an individual event object) will be removed. The `delete` action takes place instead of `update`, and the parent recurring event remains unchanged.
 
 ```ts
 if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
@@ -604,17 +584,14 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 When you drag and drop a normal event on the Scheduler, the event editing action takes place. When a recurring event is drag and dropped on a desired time range, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
 
-> By default, when you drag a recurring instance, only the occurrence of the event gets edited and not a whole series.
+> **Note:** By default, when you drag a recurring instance, only that occurrence gets edited, not the entire series.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs41/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs41/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs41/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs41/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs41/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -624,20 +601,22 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 
 When you resize a normal event on the Scheduler, the event editing action takes place. When a recurring event is resized to a new desired time, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
 
-> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
+> **Note:** By default, when you resize a recurring instance, only that occurrence gets edited, not the entire series.
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs42/app/index.jsx %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs42/app/App.jsx %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs42/app/index.tsx %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/events-cs42/index.html %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs42/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs42" %}
 
-> You can refer to our [React Scheduler](https://www.syncfusion.com/react-components/react-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [React Scheduler example](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.
+## See also
+
+* [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
+* [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
+* [Appointments and Events](https://ej2.syncfusion.com/react/documentation/schedule/appointments)
+* [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

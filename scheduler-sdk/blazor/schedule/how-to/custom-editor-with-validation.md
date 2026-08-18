@@ -9,9 +9,9 @@ documentation: ug
 
 # Add a Custom Editor with Validation in Blazor Scheduler
 
-By default, in [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) field validation is available for built-in fields, if in case you want to validate a custom field you can go with custom editor and achieve validation using Data Annotations. Data Annotations helps you to define rules to the model classes or properties to perform data validation and display suitable messages to end users.
+By default, [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) provides field validation for built-in fields. If you want to validate a custom field, you can use a custom editor and apply validation through data annotations. Data annotations let you define rules for model classes or properties so that data can be validated and meaningful messages can be shown to end users.
 
-The Data Annotation can be enabled by referencing the `System.ComponentModel.DataAnnotations` namespace which maps the data annotations to the corresponding appointment fields. In the following code example, Blazor Dialog is used to render the custom editor and save/update the appointments using public methods.
+Data annotations can be enabled by referencing the `System.ComponentModel.DataAnnotations` namespace, which maps the annotations to the corresponding appointment fields. In the following code example, Blazor Dialog is used to render the custom editor and save or update appointments by using public methods.
 
 ```cshtml
 @using Newtonsoft.Json
@@ -128,7 +128,7 @@ The Data Annotation can be enabled by referencing the `System.ComponentModel.Dat
 
     public AppointmentData AppointmentValidation = new AppointmentData();
 
-    private async void OnValidSubmit() //triggers on save button click
+    private async void OnValidSubmit() // triggers on Save button click
     {
         DialogVisibility = false;
         AppointmentData EventData = new AppointmentData();
@@ -141,7 +141,7 @@ The Data Annotation can be enabled by referencing the `System.ComponentModel.Dat
         EventData.Id = Id;
         if (Action == "CellClick")
         {
-            await ScheduleRef.AddEventAsync(EventData); //to add new appointment
+            await ScheduleRef.AddEventAsync(EventData); // to add a new appointment
         }
         else
         {
@@ -153,8 +153,8 @@ The Data Annotation can be enabled by referencing the `System.ComponentModel.Dat
     {
         if (args.Type == PopupType.Editor)
         {
-            args.Cancel = true; //to prevent the default editor window
-            this.Action = args.Data.Id == 0 ? "CellClick" : "AppointmentClick"; //to check whether the window opens on cell or appointment
+            args.Cancel = true; // to prevent the default editor window
+            this.Action = args.Data.Id == 0 ? "CellClick" : "AppointmentClick"; // to check whether the window opens for a cell or an appointment
             if (Action == "CellClick")
             {
                 AppointmentValidation.StartTime = args.Data.StartTime;
@@ -228,6 +228,6 @@ The Data Annotation can be enabled by referencing the `System.ComponentModel.Dat
 </style>
 ```
 
-The validation is applied on clicking the save button with empty fields as in the following image.
+Validation is applied when the Save button is clicked with empty fields, as shown in the following image.
 
 ![Custom Editor with Validation in Blazor Scheduler](../images/blazor-scheduler-custom-editor-with-validation.webp)

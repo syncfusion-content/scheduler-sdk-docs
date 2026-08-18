@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Exporting in TypeScript Scheduler
 
-The Scheduler supports exporting all its appointments both to an `Excel` or `ICS` extension file at client-side. It offers different client-side methods to export its appointments in an `Excel` or `ICal` format file. Let's explore how to implement the exporting functionality in Scheduler.
+Scheduler supports exporting appointments to either `Excel` or `ICS` files on the client side. It provides client-side methods to export appointment data in Excel or iCal format. Let's explore how to implement exporting functionality in Scheduler.
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events to an Excel format file by using the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property.
+Use the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) client-side method to export all Scheduler events to an Excel file. By default, it exports the fields mapped through the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property.
 
-> Before using the Excel exporting functionality, you need to import and inject the `ExcelExport` module from the `@syncfusion/ej2-schedule` package using the `Inject` method of Scheduler.
+> To use Excel export, import and inject the `ExcelExport` module from the `@syncfusion/ej2-schedule` package using the `Schedule.Inject` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -121,9 +121,9 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 ### Exporting custom event data
 
-By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific events or a custom event collection, pass the custom data collection as a parameter to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoexcel) method through the [`customData`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#customdata) option of the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface.
+By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific events or a custom event collection, pass the custom data collection using the [`customData`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions#customdata) option of the [`ExportOptions`](https://ej2.syncfusion.com/documentation/api/schedule/exportOptions) interface to the [`exportToExcel`](https://ej2.syncfusion.com/documentation/api/schedule/index-default#exporttoexcel) method.
 
-> By default, the event data is taken from the Scheduler dataSource.
+> By default, event data is taken from the Scheduler dataSource.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -266,7 +266,7 @@ By default, the Scheduler exports event data to an Excel file in the `.xlsx` for
 
 ### Custom separator in CSV
 
-The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting [separator](../api/schedule/exportOptions#separator) property in [ExportOptions](../api/schedule/exportOptions#exporttype).
+The Scheduler exports event data to CSV format using a comma separator by default. You can change the separator by setting the [`separator`](../api/schedule/exportOptions#separator) property in [`ExportOptions`](../api/schedule/exportOptions#exporttype).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -297,9 +297,9 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 
 ### How to customize the excel sheet on before exporting
 
-Customizing an Excel sheet before export is made easy with the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event. This event provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+You can customize an Excel sheet before export using the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event. This event lets you tailor exported data, apply formatting, and include additional content for better presentation.
 
-With the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event, you can:
+Using the [`excelExport`](https://ej2.syncfusion.com/documentation/api/schedule#excelExport) event, you can:
 
 - **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
 
@@ -338,7 +338,7 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 
 ## Exporting calendar events as ICS file
 
-You can export Scheduler events to a calendar (.ics) file format, which can be opened in other default calendars such as Google or Outlook. To export Scheduler events to an ICS file, first import the `ICalendarExport` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarExport)` method.
+You can export Scheduler events to a calendar (.ics) file, compatible with calendars such as Google Calendar and Outlook. To export to ICS, import the `ICalendarExport` module from `@syncfusion/ej2-schedule` and inject it with `Schedule.Inject(ICalendarExport)`.
 
 The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the [`exportToICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#exporttoicalendar) public method.
 
@@ -377,7 +377,7 @@ The following code example shows how the Scheduler events are exported to a cale
 
 ### Exporting calendar with custom file name
 
-By default, the calendar is exported with a file name `Calendar.ics`. To change this file name on export, pass the custom string value as `fileName` to the method argument so as to get the file downloaded with this provided name.
+By default, the calendar exports as `Calendar.ics`. To use a custom file name, pass it as the `fileName` option to the export method.
 
 The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
@@ -416,7 +416,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 ## Import events from other calendars
 
-Events from external calendars (ICS files) can be imported into Scheduler using the [`importICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#importicalendar) method. This method accepts the `blob object` of an .ics file to be imported as a mandatory argument.
+Events from external calendars (ICS files) can be imported into Scheduler using the [`importICalendar`](https://ej2.syncfusion.com/documentation/api/schedule#importicalendar) method. This method requires a Blob object representing the .ics file.
 
 > To import an ICS file containing events into Scheduler, first import the `ICalendarImport` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarImport)` method.
 
@@ -457,10 +457,10 @@ The following example shows how to import an ICS file into Scheduler, using the 
 
 ## How to print the Scheduler element
 
-The Scheduler allows you to print the Scheduler element by using the `print` client-side method. The print method works in two ways. You can find it below.
+Scheduler supports printing via the `print` client-side method. It can be used without options or with custom print options.
 
-* Using print method without options.
-* Using a print method with options.
+* Using the print method without options.
+* Using the print method with options.
 
 > To print the Schedule, you need to import the `Print` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(Print)` method.
 
@@ -582,4 +582,4 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/before-print" %}
 {% endif %}
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

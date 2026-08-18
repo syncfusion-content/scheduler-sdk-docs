@@ -8,13 +8,14 @@ documentation: ug
 domainurl: https://help.syncfusion.com/scheduler-sdk
 ---
 
+
 # State Persistence in JavaScript Scheduler
 
-State persistence allowed Scheduler to retain the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](.https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and Scroll position values in the [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) for state maintenance even if the browser is refreshed or when navigating to another page within the browser. This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/schedule#enablepersistence) property which is set to false by default. When set to true, the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and Scroll position values of the scheduler component will be retained even after refreshing the page.
+State persistence lets the Scheduler retain the [`currentView`](https://ej2.syncfusion.com/documentation/api/schedule#currentview), [`selectedDate`](.https://ej2.syncfusion.com/documentation/api/schedule#selecteddate) and scroll position in [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) so the UI state survives page reloads or navigation. Enable this behavior with the [`enablePersistence`](https://ej2.syncfusion.com/documentation/api/schedule#enablepersistence) property (default: `false`).
 
-> **Note**: The Scheduler `id` is required to enable state persistence.
+Note: the Scheduler must have a stable `id` for state persistence to work.
 
-The following sample demonstrates how to set state persistence of the Scheduler component.
+The sample below demonstrates enabling state persistence for the Scheduler.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -49,4 +50,4 @@ The following sample demonstrates how to set state persistence of the Scheduler 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/row-auto-height-cs4" %}
 {% endif %}
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. Also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.

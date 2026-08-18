@@ -16,7 +16,7 @@ The year view of the [Angular Scheduler](https://www.syncfusion.com/angular-comp
 * [`monthsCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule#monthscount)
 * [`monthHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#monthheadertemplate)
 
-In the following code example, you can see how to render only the last six months of a year in the Schedule component. To start with June, set `firstMonthOfYear` to 6 and `monthsCount` to 6 to render six consecutive months.
+The code example below shows how to render six consecutive months in the Scheduler, starting from June. Set `firstMonthOfYear` to `6` and `monthsCount` to `6`.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

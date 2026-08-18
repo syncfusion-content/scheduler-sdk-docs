@@ -10,14 +10,14 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Timezone in TypeScript Scheduler
 
-By default, the Scheduler uses the client system's time zone. To display or process appointments in a specific time zone, use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property. Individual appointments can also carry their own time zone information by using `startTimezone` and `endTimezone` fields in the event data.
+By default, the Scheduler uses the client system's time zone. To display or process appointments in a specific time zone, use the [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property. Individual appointments can also carry their own time zone information by using the `startTimezone` and `endTimezone` fields in the event data.
 
-> Note: The `timezone` property affects appointment processing and the current-time indicator only.
+> **Note:** The `timezone` property affects appointment processing and the current-time indicator only.
 
 ## Understanding date behavior in JavaScript
 
-JavaScript's `new Date()` returns a Date object that includes local time and the client's time zone offset. For example:  
-`Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` — indicating local time 5:23 AM in IST (UTC+05:30).
+JavaScript's `new Date()` returns a Date object that includes local time and the client's time zone offset. For example:
+`Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` indicates local time 5:23 AM in IST (UTC+05:30).
 
 ## Scheduler with no explicit timezone
 
@@ -50,7 +50,7 @@ When no time zone is set on the Scheduler, appointments render according to the 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs1" %}
 {% endif %}
 
-## Scheduler set to a specific timezone
+## Scheduler set to a specific time zone
 
 Setting the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) property forces all appointments to display according to that time zone regardless of the client's local setting. The example below demonstrates appointments displayed in Eastern Time (UTC−05:00).
 
@@ -126,7 +126,7 @@ If events are stored in UTC and the goal is to present the same wall-clock time 
 
 ## Per-event time zones
 
-To keep each appointment in its originating time zone, provide `startTimezone` and `endTimezone` properties in the event datasource. The Scheduler will render events with appropriate offsets so that time differences are correctly reflected.
+To keep each appointment in its originating time zone, provide the `startTimezone` and `endTimezone` properties in the event data source. The Scheduler renders events with appropriate offsets so that time differences are correctly reflected.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -157,7 +157,7 @@ To keep each appointment in its originating time zone, provide `startTimezone` a
 
 ## Customize timezone list in the editor
 
-The timezone editor displays a large collection (200+) of time zone names by default. You can customize this collection at the application level to show only relevant zones or to add/remove entries.
+The time zone editor displays a large collection of 200+ time zone names by default. You can customize this collection at the application level to show only relevant zones or to add or remove entries.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -203,7 +203,7 @@ Calculates the offset (in minutes) between the passed UTC date and the specified
 | Parameters | Type | Description |
 |------------|------|-------------|
 | date | Date | UTC date object. |
-| timezone | String | IANA time zone identifier (for example, "Europe/Paris"). |
+| timezone | String | IANA time zone identifier, for example, "Europe/Paris". |
 
 Returns `number`
 
@@ -222,8 +222,8 @@ Converts a date from one timezone to another.
 | Parameters | Type | Description |
 |------------|------|-------------|
 | date | Date | UTC date object. |
-| fromOffset | number|string | Source timezone (offset in minutes or IANA name). |
-| toOffset | number|string | Target timezone (offset in minutes or IANA name). |
+| fromOffset | number|string | Source time zone as an offset in minutes or IANA name. |
+| toOffset | number|string | Target time zone as an offset in minutes or IANA name. |
 
 Returns `Date`
 

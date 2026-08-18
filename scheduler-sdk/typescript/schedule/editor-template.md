@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Editor Template in TypeScript Scheduler
 
-Scheduler provides popups and dialogs to display notifications and includes an editor window with event fields for streamlined appointment creation and editing. The editor window and its fields can be easily customized, and validations can be applied to those fields.
+Scheduler provides popups and dialogs for event creation and editing. The editor window contains event fields for streamlined appointment creation and editing, and its layout and validation can be customized.
 
 ## Event editor
 
@@ -96,7 +96,7 @@ To change the default labels such as Subject, Location, and other field names in
 
 ### Field validation
 
-Required fields in the editor window can be validated on the client-side before submission by adding appropriate validation rules to each field using the [`validation`](../api/schedule/fieldOptionsModel#validation) property available within the field option of [`eventSettings`](../api/schedule#eventsettings). The appointment fields have been extended to accept both `string` and `object` type values. To perform validations, specify object values for the event fields.
+Required fields in the editor window can be validated on the client side before submission by adding validation rules to each field using the [`validation`](../api/schedule/fieldOptionsModel#validation) property available within the field option of [`eventSettings`](../api/schedule#eventsettings). Appointment fields accept both `string` and `object` values; use object values to specify validation rules.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -135,7 +135,7 @@ Required fields in the editor window can be validated on the client-side before 
 
 ### Add additional fields to the default editor
 
-Additional fields can be added to the default event editor by using the [`popupOpen`](../api/schedule#popupopen) event which is triggered before the event editor opens on the Scheduler. The [`popupOpen`](../api/schedule#popupopen) is a client-side event that triggers before any of the generic popups opens on the Scheduler. The additional field (any of the form elements) should be added with the common class name `e-field`, so as to handle and process that additional data along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor and its value is processed accordingly.
+Additional fields can be added to the default event editor by using the [`popupOpen`](../api/schedule#popupopen) event, which fires before the editor opens. Add any extra form element with the common class name `e-field` so Scheduler can process the additional data with the default event object. In the following example, an additional field `Event Type` has been added to the default editor and its value is processed accordingly.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -333,9 +333,9 @@ The event editor window can be customized using the [`editorTemplate`](../api/sc
 
 Each field defined within the template should contain the **e-field** class, to allow the processing of those field values internally. The ID of this customized script template section is assigned to the [`editorTemplate`](../api/schedule#editortemplate) option, so that these customized fields will be replaced onto the default editor window.
 
->Note: The **e-field** class is only applicable for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox** and **TextBox** components. Since we have processed, as field values are processed internally for these components.
+>Note: The **e-field** class is only applicable for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox**, and **TextBox** components. Field values for these components are processed internally.
 
-When using our Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within the editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](../api/schedule#popupopen) event. This particular step can be skipped, if using standard form elements.
+When using Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within the editor template, custom form elements must be initialized as Syncfusion<sup style="font-size:70%">&reg;</sup> controls such as **DropDownList** and **DateTimePicker** inside the [`popupOpen`](../api/schedule#popupopen) event. This step can be skipped when using standard HTML form elements.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -517,9 +517,9 @@ In the following code example, validation has been added to the `EventType` fiel
 
 ### How to save the customized event editor using template
 
-If the **e-field** class is not added to each field defined within the template, so you should allow setting those field values should be set externally using the [`popupClose`](../api/schedule#popupclose) event.
+If the **e-field** class is not added to template fields, their values must be handled externally using the [`popupClose`](../api/schedule#popupclose) event.
 
-Note: Data can be retrieved only on the `save` and `delete` options. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+Note: Data is available only for the `save` and `delete` actions. It is not available for the `close` and `cancel` actions.
 
 The following code example shows how to save the customized event editor using a template with the [`popupClose`](../api/schedule#popupclose) event.
 
@@ -575,9 +575,9 @@ To prevent only specific popup closures on Scheduler, check the condition based 
 
 Quick info popups are displayed when a cell or appointment is single-clicked on desktop mode. Single-clicking a cell allows providing a subject and saving it quickly. Single-clicking an event displays a popup with an overview of the event information, along with options to edit or delete the event.
 
-By default, these popups are displayed over cells and appointments of Scheduler. To disable this action, set `false` to [`showQuickInfo`](../api/schedule#showquickinfo) property.
+By default, these popups appear for Scheduler cells and appointments. To disable them, set [`showQuickInfo`](../api/schedule#showquickinfo) to `false`.
 
-> The quick popup that opens when single-clicking cells is not applicable on mobile devices.
+> The quick popup that opens on single-click cell actions is not available on mobile devices.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -614,7 +614,7 @@ By default, these popups are displayed over cells and appointments of Scheduler.
 
 ### Open quick popup on multiple cell selection
 
-The quick popup can be displayed immediately after multiple cells are selected in Scheduler by setting the [`quickInfoOnSelectionEnd`](../api/schedule#quickinfoonselectionend) property to `true`. By default, it's value is set to `false`.
+The quick popup can be displayed immediately after multiple cells are selected in Scheduler by setting [`quickInfoOnSelectionEnd`](../api/schedule#quickinfoonselectionend) to `true`. By default, it is `false`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -665,11 +665,11 @@ L10n.load({
 
 ### Customize quick popups
 
-The look and feel of the built-in quick popup window that opens when single-clicking cells or appointments can be customized using the [`quickInfoTemplates`](../api/schedule#quickinfotemplates) property of the Scheduler. There are three sub-options available to customize:
+The built-in quick popup window that opens on cell or appointment click can be customized using the [`quickInfoTemplates`](../api/schedule#quickinfotemplates) property. It supports three template sub-options:
 
-* header - Accepts the template design that customizes the header part of the quick popup.
-* content - Accepts the template design that customizes the content part of the quick popup.
-* footer - Accepts the template design that customizes the footer part of the quick popup.
+* header - customizes the header portion of the quick popup.
+* content - customizes the content portion of the quick popup.
+* footer - customizes the footer portion of the quick popup.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -770,11 +770,11 @@ The quick info popup in Scheduler can be closed using the [`closeQuickInfoPopup`
 
 ## More events indicator and popup
 
-When the number of appointments in a particular time range exceeds the default appointment height of a cell in month view and all timeline views, a `+ more` text indicator is displayed at the bottom of those cells. This indicator denotes that the cell contains additional appointments, and clicking on it displays a popup with all the appointments present on that day.
+When the number of appointments exceeds the default cell height in month view and all timeline views, a `+ more` indicator appears at the bottom of that cell. Clicking it opens a popup listing the additional appointments for that day.
 
-> To disable the popup displaying all hidden appointments, when clicking on the text indicator, use code customization within the [`popupOpen`](../api/schedule#popupopen) event.
+> To disable the popup that displays hidden appointments when the indicator is clicked, use code customization within the [`popupOpen`](../api/schedule#popupopen) event.
 
-The same indicator is displayed on the all-day row in calendar views such as day, week and work week views, when the number of appointments present in a cell exceeds three. Clicking on the text indicator here does not open a popup, but allows the expand/collapse option for viewing the remaining appointments present in the all-day row.
+The same indicator appears on the all-day row in calendar views such as day, week, and work week when the number of appointments exceeds three. Clicking the indicator does not open a popup; instead, it expands or collapses the remaining appointments in the all-day row.
 
 The following code example shows how to disable the display of such popups when clicking on the more text indicator.
 

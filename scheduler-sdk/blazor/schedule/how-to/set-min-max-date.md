@@ -9,7 +9,7 @@ documentation: ug
 
 # Set Minimum and Maximum Date in Blazor Scheduler
 
-In Scheduler, by default all the date ranges are available. A particular date range alone can be rendered in the Scheduler by setting the date range within `MinDate` and `MaxDate` properties. In the following code example, the Scheduler has been rendered from 2020 to 2023 alone.
+By default, all date ranges are available in Scheduler. You can render only a specific date range by setting the `MinDate` and `MaxDate` properties. In the following code example, Scheduler is rendered from 2020 to 2023 only.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Recurrence Editor in Angular Scheduler
 
-The Recurrence editor is integrated into Scheduler's editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
+The recurrence editor is integrated into the Scheduler's editor window by default to process recurrence rule generation for events. Apart from this, it can also be used as an individual component from the Scheduler repository to work with recurrence-related processes.
 
 > All valid recurrence rule strings defined in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specification apply to the recurrence editor.
 
@@ -61,7 +61,7 @@ By default, the recurrence editor provides three end options:
 * Until
 * Count
 
-You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor#endtypes) property.
+You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor#endtypes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,7 +79,7 @@ You can customize the recurrence editor to display only specific end options, su
 
 The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
 
-There is a `change` event available in recurrence editor, that triggers on every time the fields of recurrence editor tends to change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
+There is a `change` event available in the recurrence editor that triggers every time the fields of the recurrence editor change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,14 +111,14 @@ It is possible to display the recurrence editor with specific options loaded ini
 
 ## Recurrence date generation
 
-You can parse the `recurrenceRule` of an event to generate the date instances on which that particular event is going to occur, using the `getRecurrenceDates` method. It generates the dates based on the `recurrenceRule` that we provide. The parameters to be provided for `getRecurrenceDates` method are as follows.
+You can parse the `recurrenceRule` of an event to generate the date instances on which that particular event is going to occur by using the `getRecurrenceDates` method. It generates the dates based on the `recurrenceRule` that you provide. The parameters for the `getRecurrenceDates` method are as follows.
 
 | Field name | Type | Description |
 |------------|------|-------------|
-| `startDate` | Date| Appointment start date. |
-| `rule` | String| Recurrence rule present in an event object. |
+| `startDate` | Date | Appointment start date. |
+| `rule` | String | Recurrence rule present in an event object. |
 | `excludeDate` | String | Date collection (in ISO format) to be excluded. It is **optional**. |
-| `maximumCount` | Number | Number of date count to be generated. It is **optional**. |
+| `maximumCount` | Number | Number of dates to be generated. It is **optional**. |
 | `viewDate` | Date | Current view range's first date. It is **optional**. |
 
 {% tabs %}
@@ -133,17 +133,17 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs3" %}
 
-> The above example generates two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilized to create appointments.
+> The above example generates two dates, January 7, 2018 and January 9, 2018, by excluding the in-between dates January 8, 2018 and January 10, 2018, since those dates were given in the exclusion list. Generated dates can then be used to create appointments.
 
 ## Recurrence date generation in server-side
 
-It is also possible to generate recurrence date instances from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referred from application end to handle this date generation process.
+It is also possible to generate recurrence date instances from the server side by manually referring to the `RecurrenceHelper` class, which is specifically written and referenced from the application side to handle this date generation process.
 
-> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step by step procedure to achieve date generation in server-side.
+> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step-by-step procedure to achieve date generation on the server side.
 
 ## Restrict date generation with specific count
 
-In case, if the rule is given in "NEVER ENDS" category, then you can mention the maximum count when you actually want to stop the date generation starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
+If the rule is given in the "NEVER ENDS" category, you can specify the maximum count when you want to stop date generation from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -157,4 +157,4 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
   
 {% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs4" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/schedule/overview) to know how to present and manipulate data.
