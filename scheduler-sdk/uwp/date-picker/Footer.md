@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Footer in UWP DatePicker control | Syncfusion®
-description: Explore Footer support in Syncfusion® UWP DatePicker (SfDatePicker) control, including key features, customization options, and more.
+title: Footer in UWP DatePicker control | Syncfusion
+description: Learn how to show or hide the Done and Cancel buttons in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
 ---
 
-# Footer in UWP DatePicker (SfDatePicker)
+# Footer in UWP DatePicker
 
 ## Done and Cancel Buttons
 
-The done and cancel buttons can be made visible or hidden using the following properties.
+The Done and Cancel buttons can be shown or hidden using the following properties.
 
 ## ShowDoneButton
 
@@ -21,7 +21,11 @@ The following code sample shows how to hide the done button:
 
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -38,7 +42,9 @@ The following code sample shows how to hide the done button:
             </syncfusion:SfDatePicker.SelectorStyle>  
 
         </syncfusion:SfDatePicker>
-		
+
+</Page>
+
 {% endhighlight %}
 
 ![Features_img11](Features_images/Features_img11.png)
@@ -54,9 +60,11 @@ The following code sample shows how to hide the cancel button:
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -64,13 +72,15 @@ The following code sample shows how to hide the cancel button:
 
             <syncfusion:SfDatePicker.SelectorStyle>
 
-                <Style TargetType="syncfusion:DateSelector">
+                <Style TargetType="syncfusion:SfDateSelector">
 
 <Setter Property="ShowCancelButton" Value="false"/>
 
                 </Style>
 
             </syncfusion:SfDatePicker.SelectorStyle>        </syncfusion:SfDatePicker>
+
+</Page>
 
 			{% endhighlight  %}
 			
