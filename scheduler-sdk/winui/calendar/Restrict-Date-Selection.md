@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Restrict date selection in WinUI Calendar (SfCalendar)
+# Restrict Date Selection in WinUI Calendar
 
 ## Restrict selection
 

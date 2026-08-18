@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Localize and change format in WinUI Calendar (SfCalendar)
+# Localization and Formatting in WinUI Calendar
 
 This section describes how to localize [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties and to change the display formats.
 

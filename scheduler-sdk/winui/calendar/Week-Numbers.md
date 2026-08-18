@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Week number of the WinUI Calendar (SfCalendar)
+# Week Numbers in WinUI Calendar
 
 This section describes the week numbers and the customization options available in the [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
 

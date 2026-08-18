@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Selection in WinUI Calendar (SfCalendar)
+# Selection in WinUI Calendar
 
 You can change the selected date interactively by clicking on the specific date, or you can select it programmatically. By default, the `Calendar` control allows you to select a single date at a time. 
 

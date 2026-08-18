@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Navigate between views in WinUI Calendar (SfCalendar)
+# Navigation in WinUI Calendar
 
 You can easily navigate to the month, year, decade, or century views to select different dates by clicking the header button. Initially, the month view is loaded. You can also change the view programmatically by using the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DisplayMode) property.
 

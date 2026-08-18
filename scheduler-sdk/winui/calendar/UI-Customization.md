@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# UI customization of the WinUI Calendar (SfCalendar)
+# UI Customization in WinUI Calendar
 
 This section describes about the various customization options available in the [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
 
