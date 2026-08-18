@@ -161,7 +161,9 @@ Working hours indicate the work hour limit within the Scheduler, which is visual
 
 * [`Highlight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Highlight) – enables or disables the highlighting of work hours.
 * [`Start`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Start) - sets the start time of the working or business hour of a day.
-* [`End`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_End) - sets the end time limit of the working or 
+* [`End`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_End) - sets the end time limit of the working or business hour of a day.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
