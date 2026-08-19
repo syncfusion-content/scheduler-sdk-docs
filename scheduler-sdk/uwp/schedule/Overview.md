@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Scheduler control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Scheduler (SfSchedule) control, its elements and more.
+title: About Syncfusion UWP Scheduler Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio UWP Scheduler (SfSchedule) control and more details.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# UWP Scheduler (SfSchedule) Overview
+# About Syncfusion UWP Scheduler Control
 
 Schedule is used to provide Outlook-like scheduling. The Schedule control allows user to create and manage appointments. It includes features such as viewing daily/all day/spanned appointments, complete customization using custom Templates, efficient performance, Data binding to different sources.
 

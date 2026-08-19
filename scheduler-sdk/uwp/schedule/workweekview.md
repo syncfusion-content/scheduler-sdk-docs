@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Work Week View in UWP Scheduler control | Syncfusion
-description: Learn here all about Work Week View support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+title: Work Week View in UWP Scheduler | Syncfusion
+description: Learn how to use the work week view feature in Syncfusion UWP Scheduler (SfSchedule) control to view working days.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Work Week View in UWP Scheduler (SfSchedule)
+# Work Week View in UWP Scheduler
 
 WorkWeekView is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.
 
