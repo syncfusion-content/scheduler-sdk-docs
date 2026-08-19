@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Scheduler control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+title: Localization in UWP Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion UWP Scheduler (SfSchedule) control for different languages and regions easily.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 ---
 
-# Localization in UWP Scheduler (SfSchedule)
+# Localization in UWP Scheduler
 Schedule control is available with complete localization support. Localization can be specified by setting the local language to the `PrimaryLanguageOverride`. In the format of `Language code`.
 
 ## Change default control language
