@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Navigations in UWP Scheduler | Syncfusion
-description: Learn about date navigations support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn how to enable and customize date navigations in Syncfusion UWP Scheduler (SfSchedule) control with examples.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug

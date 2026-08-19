@@ -1,7 +1,7 @@
 ---   
 layout: post   
 title: Month View in UWP Scheduler | Syncfusion
-description: Learn about month view support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn how to use the month view feature in Syncfusion UWP Scheduler (SfSchedule) control and customize its appearance.
 platform: scheduler-sdk   
 control: SfSchedule   
 documentation: ug   

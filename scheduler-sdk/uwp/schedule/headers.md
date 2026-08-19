@@ -1,7 +1,7 @@
 ---     
 layout: post     
 title: Headers in UWP Scheduler | Syncfusion
-description: Learn about headers support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn how to customize headers in Syncfusion UWP Scheduler (SfSchedule) control including height and style settings.
 platform: scheduler-sdk    
 control: SfSchedule     
 documentation: ug 
