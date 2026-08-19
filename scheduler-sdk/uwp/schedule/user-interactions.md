@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interactions in UWP Scheduler | Syncfusion
-description: Learn about user interactions support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn about user interactions support in Syncfusion UWP Scheduler (SfSchedule) control including context menus.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug

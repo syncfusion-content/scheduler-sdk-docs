@@ -2,7 +2,7 @@
 
 layout: post
 title: Work Week View in UWP Scheduler | Syncfusion
-description: Learn about work week view support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn how to use the work week view feature in Syncfusion UWP Scheduler (SfSchedule) control to view working days.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timeline View in UWP Scheduler | Syncfusion
-description: Learn about timeline view support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn how to use the timeline view in Syncfusion UWP Scheduler (SfSchedule) control to display appointments by day.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug

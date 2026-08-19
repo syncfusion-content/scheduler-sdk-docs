@@ -2,7 +2,7 @@
 
 layout: post
 title: Day View in UWP Scheduler | Syncfusion
-description: Learn about day view support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn how to use the day view feature in Syncfusion UWP Scheduler (SfSchedule) control and customize its appearance.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
