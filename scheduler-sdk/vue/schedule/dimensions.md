@@ -29,7 +29,7 @@ When the height and width of the Scheduler are set to `auto`, it keeps the compo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dimension-cs1" %}
 
 ## Height and Width in Pixel
 
@@ -44,7 +44,7 @@ The Schedule component renders its height and width based on exact pixel values 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dimension-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dimension-cs2" %}
 
 ## Height and Width in Percentage
 
@@ -59,7 +59,7 @@ When height and width are defined as percentage values, the Schedule component a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dimension-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dimension-cs3" %}
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for an overview of capabilities. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for demonstrations of layout and data manipulation.
 

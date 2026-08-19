@@ -31,7 +31,7 @@ When the [height](https://ej2.syncfusion.com/react/documentation/api/schedule#he
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs43" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs43" %}
 
 ## Height and width in pixels
 
@@ -48,7 +48,7 @@ The Scheduler height and width will render exactly as per the given pixel values
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs44" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs44" %}
 
 ## Height and width in percentages
 
@@ -65,7 +65,7 @@ When the height and width of the Scheduler are specified as percentages, the Sch
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs45" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs45" %}
 
 ## See also
 

@@ -39,7 +39,7 @@ The following example shows how to configure the Scheduler to use Monday, Wednes
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs89" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs89" %}
 
 ![Set Working Days](images/schedule-workdays.png)
 
@@ -59,7 +59,7 @@ Days not included in the Schedulers `workDays` collection are considered non-wor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs90" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs90" %}
 
 ![Hiding Weekend Days](images/schedule-hide-weekend.png)
 
@@ -79,7 +79,7 @@ Set the `showWeekNumber` property to `true` to display week numbers in the Sched
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs91" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs91" %}
 
 ![Week Numbers](images/schedule-weeknumber.png)
 
@@ -105,7 +105,7 @@ For more details refer to [CalendarWeekRule remarks](https://docs.microsoft.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs92" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs92" %}
 
  **Note**: Enable the [`showWeekNumber`](https://ej2.syncfusion.com/angular/documentation/api/schedule/views#showweeknumber) property to configure the [`weekRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule#weekrule) property. Also, the `weekRule` property depends on the value of the [`firstDayOfWeek`](https://ej2.syncfusion.com/angular/documentation/api/schedule#firstdayofweek) property.
 
@@ -127,7 +127,7 @@ Working hours define the daily work-hour range within the Scheduler and are high
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs93" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs93" %}
 
 ![Set Working Hours](images/schedule-workhours.png)
 
@@ -147,7 +147,7 @@ The following example displays the Scheduler from 7:00 AM to 6:00 PM and hides t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs94" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs94" %}
 
 ![Displaying Custom Hours](images/schedule-displayhours.png)
 
@@ -167,7 +167,7 @@ By default, Scheduler uses `Sunday` as the first day of the week. To change it, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs95" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs95" %}
 
 ![Start Day of Week](images/schedule-week-firstday.png)
 
@@ -187,7 +187,7 @@ You can manually scroll to a specific time on Scheduler by using the [`scrollTo`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/scroll-to-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/scroll-to-cs1" %}
 
 ### How to scroll to current time on initial load
 
@@ -203,7 +203,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs96" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs96" %}
 
 > Refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for an overview of key capabilities. You can also explore the [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.
 

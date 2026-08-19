@@ -31,7 +31,7 @@ When the [`height`](../api/schedule#height) and [`width`](../api/schedule#width)
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -44,7 +44,7 @@ When the [`height`](../api/schedule#height) and [`width`](../api/schedule#width)
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs1" %}
 {% endif %}
 
 ## Height and Width in pixel
@@ -62,7 +62,7 @@ The Scheduler height and width are rendered exactly according to the provided pi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -75,7 +75,7 @@ The Scheduler height and width are rendered exactly according to the provided pi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs2" %}
 {% endif %}
 
 ## Height and Width in percentage
@@ -93,7 +93,7 @@ When the height and width of the Scheduler are defined as percentages, the compo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -106,7 +106,7 @@ When the height and width of the Scheduler are defined as percentages, the compo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/dimension-cs3" %}
 {% endif %}
 
 > Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature information. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

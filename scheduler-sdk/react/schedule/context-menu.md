@@ -50,7 +50,7 @@ The following example demonstrates how to implement a context menu for the Sched
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/context-menu-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/context-menu-cs1" %}
 
 ## See also
 

@@ -44,7 +44,7 @@ To perform these operations, select an appointment and press **Ctrl+C** to copy 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -60,7 +60,7 @@ To perform these operations, select an appointment and press **Ctrl+C** to copy 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1" %}
 {% endif %}
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
@@ -93,7 +93,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -109,7 +109,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2" %}
 {% endif %}
 
 ## Modifying content before pasting
@@ -141,7 +141,7 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -157,7 +157,7 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3" %}
 {% endif %}
 
 

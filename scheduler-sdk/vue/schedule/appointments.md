@@ -37,7 +37,7 @@ The example below illustrates defining a normal event with data loaded from a si
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs1" %}
 
 ## Spanned Events
 
@@ -79,7 +79,7 @@ A large number of all‑day appointments can be expanded initially using the [`d
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs2" %}
 
 ## Customize the Rendering of the Spanned Events
 
@@ -94,7 +94,7 @@ By default, Scheduler renders spanned events (appointments with more than 24 hou
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs3" %}
 
 ## Recurring Events
 
@@ -113,7 +113,7 @@ The following example shows how to create a recurring event with a specific recu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs4" %}
 
 ### Adding Exceptions
 
@@ -130,7 +130,7 @@ For example, 22 February 2018 can be represented as 20180222. Also, when the tim
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs5" %}
 
 ### Editing an occurrence from a Series
 
@@ -147,7 +147,7 @@ In the example below, a recurring instance displayed on January 30, 2018 is edit
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs6" %}
 
 ### Edit only the Current and Following Events
 
@@ -164,7 +164,7 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 an
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs7" %}
 
 ### Recurrence Options and Rules
 
@@ -292,7 +292,7 @@ When the fields of event instances has the default mapping name, it is not manda
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs8" %}
 
 > The mapper field [`id`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#id) is of string type and has no additional validation options, whereas all other fields are of `Object` type and include additional options.
 
@@ -318,7 +318,7 @@ In following example, the Subject field in event editor will display its appropr
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs9" %}
 
 ### Adding Custom Fields
 
@@ -333,7 +333,7 @@ Apart from the default Scheduler fields, the user can include any number of cust
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs10" %}
 
 ## Customize the Order of the Overlapping Events
 
@@ -348,7 +348,7 @@ By default, the Scheduler renders overlapping events based on the start and end 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs11" %}
 
 ## Preventing Overlapping Events
 
@@ -377,7 +377,7 @@ The following code example demonstrates how to enable the [`allowOverlap`](https
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs40" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs40" %}
 
 **Limitations**
 
@@ -398,7 +398,7 @@ The following code example demonstrates how to check for overlaps when an event 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs41" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs41" %}
 
 ## Drag and Drop Appointments
 
@@ -415,7 +415,7 @@ Appointments can be rescheduled by dragging and dropping them onto the desired l
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs12" %}
 
 ### Drag and Drop Multiple Appointments
 
@@ -434,7 +434,7 @@ We can also drag multiple events from one resource to another resource. In this 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs13" %}
 
 ### Disable the Drag Action
 
@@ -449,7 +449,7 @@ By default, you can drag and drop the events within any of the applicable schedu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs14" %}
 
 ### Preventing Drag and Drop on Specific Targets
 
@@ -464,7 +464,7 @@ It is possible to prevent the drag action on particular target, by passing the t
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs15" %}
 
 ### Disable Scrolling on Drag Action
 
@@ -479,7 +479,7 @@ By default, when an appointment is dragged to the Scheduler edges (top/bottom in
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs16" %}
 
 ### Controlling Scroll Speed While Dragging an Event
 
@@ -494,7 +494,7 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs17" %}
 
 ### Auto Navigation of Date Ranges While Dragging an Event
 
@@ -511,7 +511,7 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs18" %}
 
 ### Setting Drag Time Interval
 
@@ -526,7 +526,7 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs19" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs19" %}
 
 ### Drag and Drop Items from External Source
 
@@ -547,7 +547,7 @@ In this example, we have used the tree view control as an external source and th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/external-drag-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/external-drag-cs1" %}
 
 ### Opening the Editor Window on Drag Stop
 
@@ -562,7 +562,7 @@ There are scenarios where you want to open the editor filled with data on newly 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs20" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs20" %}
 
 ## Inline Appointment
 
@@ -594,7 +594,7 @@ When editing an occurrence from a recurrence series, it is only possible to edit
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs21" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs21" %}
 
 ## Appointment Resizing
 
@@ -609,7 +609,7 @@ Another way to reschedule an appointment is by resizing it through either of its
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs22" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs22" %}
 
 ### Disable the Resize Action
 
@@ -624,7 +624,7 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs23" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs23" %}
 
 ### Disable Scrolling on Resize Action
 
@@ -639,7 +639,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs24" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs24" %}
 
 ### Controlling Scroll Speed While Resizing an Event
 
@@ -654,7 +654,7 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs25" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs25" %}
 
 ### Setting Resize Time Interval
 
@@ -669,7 +669,7 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs26" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs26" %}
 
 ## Appointment Customization
 
@@ -697,7 +697,7 @@ The following code example customizes the appointment's default color and time f
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-template-cs1" %}
 
 > All the built-in fields that are mapped to the appropriate field properties within the [`eventSettings`](../api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
@@ -714,7 +714,7 @@ The [`eventRendered`](https://ej2.syncfusion.com/vue/documentation/api/schedule#
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs27" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs27" %}
 
 ### Using cssClass
 
@@ -729,7 +729,7 @@ The customization of events can also be achieved using [`cssClass`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs28" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs28" %}
 
 ## Setting Minimum Height
 
@@ -744,7 +744,7 @@ It is possible to set minimal height for appointments on Scheduler using [`event
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs29" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs29" %}
 
 ## Block Dates and Times
 
@@ -759,7 +759,7 @@ It is possible to block a set of dates or a particular time ranges on the Schedu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs30" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs30" %}
 
 Block events can also be defined to repeat on several days as shown in the following code example.
 
@@ -772,7 +772,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs31" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs31" %}
 
 ## Readonly
 
@@ -787,7 +787,7 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs32" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs32" %}
 
 ## Make Specific Events Readonly
 
@@ -802,7 +802,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs33" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs33" %}
 
 > By default, the event editor does not open on read‑only events when [`isReadonly`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#isreadonly) is true.
 
@@ -821,7 +821,7 @@ You can restrict the users to create and update more than one appointment on spe
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs34" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs34" %}
 
 ## Differentiate the Past Time Events
 
@@ -836,7 +836,7 @@ To differentiate the appearance of the appointments based on specific criteria s
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs35" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs35" %}
 
 ## Appointments Occupying Entire Cell
 
@@ -853,7 +853,7 @@ We can show more indicator if more than one appointment is available in a same c
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs36" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs36" %}
 
 ## Limiting maximum number of events displayed
 
@@ -875,7 +875,7 @@ The [maxEventsPerRow](https://ej2.syncfusion.com/vue/documentation/api/schedule/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/max-events-per-row-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/max-events-per-row-cs1" %}
 
 > The property [maxEventsPerRow](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#maxeventsperrow) will be applicable only when [rowAutoHeight](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
 
@@ -959,7 +959,7 @@ The tooltip can be displayed for appointments by setting `true` to the [`enableT
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs37" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs37" %}
 
 ### Customizing event tooltip using template
 
@@ -974,7 +974,7 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/tooltip-cs1" %}
 
 > All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the [`eventSettings`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings) can be accessed within the template.
 
@@ -993,7 +993,7 @@ To prevent a tooltip from appearing for certain events, you can set the `cancel`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/tooltip-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/tooltip-cs2" %}
 
 ## Appointment Filtering
 
@@ -1008,7 +1008,7 @@ The appointments can be filtered by passing the predicate value to [`query`](htt
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-filter-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-filter-cs1" %}
 
 ## Appointment Selection
 
@@ -1038,7 +1038,7 @@ In the following example, the subject of the appointment clicked has been displa
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/events-public-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/events-public-cs1" %}
 
 ## Get the Current View Appointments
 
@@ -1053,7 +1053,7 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/events-public-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/events-public-cs2" %}
 
 ## Get the Entire Appointment Collections
 
@@ -1068,7 +1068,7 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/events-public-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/events-public-cs3" %}
 
 ## Refresh Appointments
 

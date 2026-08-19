@@ -37,7 +37,7 @@ When an appointment is selected, pressing **Ctrl+C** copies it, while **Ctrl+X**
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs1" %}
 
 > Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
@@ -64,7 +64,7 @@ These methods enable direct programmatic control over appointment manipulation, 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs2" %}
 
 ## Modifying Content before Pasting
 
@@ -90,7 +90,7 @@ By using the `beforePaste` event, the copied details can be intercepted and upda
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/clipboard-cs3" %}
 
 
 

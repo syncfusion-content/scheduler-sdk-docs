@@ -24,7 +24,7 @@ Here, `SubCount` is used as an additional field. The `SubCount` field contains t
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-color-event" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -37,5 +37,5 @@ Here, `SubCount` is used as an additional field. The `SubCount` field contains t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-color-event" %}
 {% endif %}

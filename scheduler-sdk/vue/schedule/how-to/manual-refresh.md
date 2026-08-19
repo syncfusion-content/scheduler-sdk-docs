@@ -21,4 +21,4 @@ In the Vue Scheduler component, you can refresh the layout without re-rendering 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/app-crud-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/app-crud-cs3" %}

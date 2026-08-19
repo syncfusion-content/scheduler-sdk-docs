@@ -25,7 +25,7 @@ Prevent date navigation by removing the `e-navigate` CSS class from header cells
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/how-to-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/how-to-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -38,5 +38,5 @@ Prevent date navigation by removing the `e-navigate` CSS class from header cells
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/how-to-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/how-to-cs1" %}
 {% endif %}

@@ -25,7 +25,7 @@ This example uses a `SubCount` field that holds background color and height valu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/multiple-color-event" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -38,5 +38,5 @@ This example uses a `SubCount` field that holds background color and height valu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/multiple-color-event" %}
 {% endif %}

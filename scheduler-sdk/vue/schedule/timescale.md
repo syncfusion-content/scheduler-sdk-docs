@@ -31,7 +31,7 @@ The [`interval`](https://ej2.syncfusion.com/vue/documentation/api/schedule/timeS
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs1" %}
 
 ## Customizing time cells using template
 
@@ -50,7 +50,7 @@ The [`timeScale`](../api/schedule/timeScale) property also supports templates th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs2" %}
 
 ## Hiding the timescale grid
 
@@ -67,7 +67,7 @@ The default value of this option is `true`.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs3" %}
 
 ## Highlighting the current date and time
 
@@ -84,6 +84,6 @@ To disable the current time indicator, set the [`showTimeIndicator`](../api/sche
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs4" %}
 
 > For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

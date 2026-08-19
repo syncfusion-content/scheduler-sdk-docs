@@ -29,7 +29,7 @@ Use [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openedi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/open-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/open-editor-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -42,7 +42,7 @@ Use [`openEditor`](https://ej2.syncfusion.com/documentation/api/schedule#openedi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/open-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/open-editor-cs1" %}
 {% endif %}
 
 ## Open editor window on single click
@@ -62,7 +62,7 @@ The following example demonstrates how to open the editor window with a single c
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -75,5 +75,5 @@ The following example demonstrates how to open the editor window with a single c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs5" %}
 {% endif %}

@@ -33,7 +33,7 @@ The header title and footer button text of the editor window can be modified by 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs1" %}
 
 ### How to change the label text of default editor fields
 
@@ -48,7 +48,7 @@ Default field labels such as **Subject**, **Location**, and others can be custom
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs2" %}
 
 ### Field Validation
 
@@ -63,7 +63,7 @@ It is possible to validate the required fields of the editor window on the clien
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs3" %}
 
 > Validation rules are detailed in the [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) documentation.
 
@@ -80,7 +80,7 @@ Additional fields can be added to the default event editor by using the [`popupO
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs4" %}
 
 ### Customizing the default time duration in editor window
 
@@ -95,7 +95,7 @@ The default time interval for start and end times in the editor is determined by
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs5" %}
 
 ### How to Prevent the Display of Editor and Quick Popups
 
@@ -110,7 +110,7 @@ To prevent the editor or quick popups from opening, assign `true` to the `cancel
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs6" %}
 
 When preventing only specific popups, conditional checks can be performed based on popup type. Supported popup types within the [`popupOpen`](https://ej2.syncfusion.com/vue/documentation/api/schedule#popupopen) event include.
 
@@ -139,7 +139,7 @@ By default, the timezone collections in the editor window are loaded with built-
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs7" %}
 
 ## Customizing Event Editor using Template
 
@@ -164,7 +164,7 @@ Watch this video for more information on how to customize an editor window using
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-cs1" %}
 
 ### How to Customize Header and Footer using Template
 
@@ -181,7 +181,7 @@ In this demo, we tailor the editor's header according to the appointment's subje
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-header-footer-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-header-footer-cs1" %}
 
 ### How to add resource options within editor template
 
@@ -196,7 +196,7 @@ Resource selection can be added to the editor template using a MultiSelect contr
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-field-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-field-cs1" %}
 
 ### How to add recurrence options within editor template
 
@@ -211,7 +211,7 @@ Recurrence options can be added to the editor template by including `RecurrenceE
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-recurrence-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-recurrence-cs1" %}
 
 ### Apply Validations on Editor Template Fields
 
@@ -226,7 +226,7 @@ In the following code example, validation has been added to the status field.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-cs2" %}
 
 ### How to save the customized event editor using template
 
@@ -245,7 +245,7 @@ The following code example shows how to save the customized event editor using a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-cs3" %}
 
 If you need to prevent only specific popups in the Scheduler, you can check the condition based on the popup type. The types of popups that can be checked within the [`popupClose`](../api/schedule#popupclose) event are as follows.
 
@@ -278,7 +278,7 @@ By default, these popups are displayed over Scheduler cells and appointments. To
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs8" %}
 
 ### How to Open QuickInfo Popup on Multiple Cell Selection
 
@@ -293,7 +293,7 @@ Quick popups open by default on single cell click. To open the quick popup after
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs9" %}
 
 ### How to Change the Watermark Text of Quick Popup Subject
 
@@ -326,7 +326,7 @@ The look and feel of the built-in quick popup window, which opens when cells or 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/quick-info-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/quick-info-cs1" %}
 
 > Quick info popups in adaptive mode can also be customized using [`quickInfoTemplates`](https://ej2.syncfusion.com/vue/documentation/api/schedule#quickinfotemplates) with the e-device class.
 
@@ -349,7 +349,7 @@ The following code example shows how to disable the popup display when clicking 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs10" %}
 
 ### How to Customize the Popup that Opens on more Indicator
 
@@ -364,7 +364,7 @@ The following code example shows how to customize the default more indicator pop
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs11" %}
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
@@ -379,7 +379,7 @@ It is possible to prevent the popup window from being displayed by passing the v
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs12" %}
 
 ### How to navigate Day view when clicking on more text indicator
 
@@ -394,7 +394,7 @@ The following code example shows how to customize the [`moreEventsClick`](../api
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs13" %}
 
 ### How to Close the Editor Window Manually
 
@@ -409,7 +409,7 @@ The editor window can be manually closed using the [closeEditor](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs14" %}
 
 ### How to Open the Quick info Popup Manually
 
@@ -424,7 +424,7 @@ The quick info popup can be opened manually by invoking the [openQuickInfoPopup]
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs15" %}
 
 ### How to Close the Quick info Popup Manually
 
@@ -438,6 +438,6 @@ You can close the quick info popup in the Scheduler by using the [closeQuickInfo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs16" %}
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for a detailed overview. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) sample for live interaction examples.

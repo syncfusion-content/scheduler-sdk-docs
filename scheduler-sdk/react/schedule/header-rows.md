@@ -66,7 +66,7 @@ To display only the year and month header rows in the Scheduler, specify `Year` 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs3" %}
 
 ## Display week numbers in Timeline views
 
@@ -86,7 +86,7 @@ The week number can be displayed in a separate header row of the Timeline Schedu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs4" %}
 
 ## Timeline view displaying dates of a complete year
 
@@ -106,7 +106,7 @@ You can display a full year in a Timeline view by setting the [`interval`](https
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs5" %}
 
 ## Customizing header rows with templates
 
@@ -135,7 +135,7 @@ You can customize the text of the header rows and display any images or formatte
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/views-cs6" %}
 
 ## See also
 

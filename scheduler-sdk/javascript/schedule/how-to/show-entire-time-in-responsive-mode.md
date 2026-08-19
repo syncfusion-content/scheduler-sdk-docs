@@ -23,7 +23,7 @@ In responsive mode, time labels may be truncated when space is limited (for exam
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -36,5 +36,5 @@ In responsive mode, time labels may be truncated when space is limited (for exam
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}
 {% endif %}

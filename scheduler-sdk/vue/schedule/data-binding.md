@@ -28,7 +28,7 @@ To bind local JSON data to the Schedule component, assign a JavaScript object ar
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs1" %}
 
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
@@ -51,7 +51,7 @@ Any kind of remote data service can be bound to the Scheduler. To do so, create 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs2" %}
 
 ### Filter Events using the in-built Query
 
@@ -68,7 +68,7 @@ This method improves performance by reducing the data transferred to the client 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs7" %}
 
 The following image represents how the parameters are passed using ODataV4 filter.
 
@@ -87,7 +87,7 @@ Custom adaptors can be created by extending the available built-in adaptors. The
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs3" %}
 
 ## Loading Data via AJAX Post
 
@@ -178,7 +178,7 @@ To send an additional custom parameter to the server-side post, you need to make
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs4" %}
 
 > The parameters added using the [`query`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#query) property will be sent with every data request to the server during Scheduler actions.
 
@@ -197,7 +197,7 @@ The argument passed to the [`actionFailure`](../api/schedule#actionfailure) even
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs5" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/schedule#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs while processing any Scheduler CRUD action.
 
@@ -391,6 +391,6 @@ A custom Google Calendar URL can be assigned to `DataManager`, which is then use
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs6" %}
 
 > For more information, refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page and explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

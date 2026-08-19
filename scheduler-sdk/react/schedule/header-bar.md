@@ -30,7 +30,7 @@ By default, the header bar holds the date and view navigation options, through w
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs1" %}
 
 ## Customizing header bar using template
 
@@ -68,7 +68,7 @@ The following example uses the default items `Previous`, `Next`, `DateRangeText`
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs1" %}
 
 ## Customizing header bar using event
 
@@ -88,7 +88,7 @@ Apart from the default date navigation and view options available on the header 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs1" %}
 
 ## How to display the view options within the header bar popup
 
@@ -108,7 +108,7 @@ By default, the header bar holds the view navigation options, through which the 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-bar-cs2" %}
 
 > Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
@@ -144,7 +144,7 @@ The [`dateHeaderTemplate`](https://ej2.syncfusion.com/react/documentation/api/sc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs1" %}
 
 ### Using renderCell event
 
@@ -167,7 +167,7 @@ In month view, the date header template is not applicable and therefore the same
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs2" %}
 
 ## Customizing the date range text
 
@@ -196,7 +196,7 @@ The [`dateRangeTemplate`](https://ej2.syncfusion.com/react/documentation/api/sch
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/date-header-cs3" %}
 
 ## Customizing header indent cells
 
@@ -223,7 +223,7 @@ It is possible to customize the header indent cells using the [`headerIndentTemp
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-indent-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/header-indent-cs1" %}
 
 ## See also
 

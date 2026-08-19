@@ -24,6 +24,6 @@ When a large number of appointments overflow the all-day row, enable a dedicated
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs46" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs46" %}
 
 ![Scrolling](../images/schedule-scrolling.png)

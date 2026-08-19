@@ -60,7 +60,7 @@ The following code example demonstrates how to bind local JSON data to the [`dat
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-local-data" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-local-data" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -76,7 +76,7 @@ The following code example demonstrates how to bind local JSON data to the [`dat
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-local-data" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-local-data" %}
 {% endif %}
 
 ### Using remote service URL
@@ -169,7 +169,7 @@ Appointments belonging to different resources display together on the default Sc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -185,7 +185,7 @@ Appointments belonging to different resources display together on the default Sc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs1" %}
 {% endif %}
 
 > Setting [`allowMultiple`](https://ej2.syncfusion.com/documentation/api/schedule/resources#allowmultiple) to `true` in the above code example allows selection of multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resource while rendering.
@@ -214,7 +214,7 @@ The following code example displays how multiple resources are grouped and their
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -230,7 +230,7 @@ The following code example displays how multiple resources are grouped and their
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs1" %}
 {% endif %}
 
 ### Timeline resource view
@@ -251,7 +251,7 @@ The following code example demonstrates how to group the multiple resources on T
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -267,7 +267,7 @@ The following code example demonstrates how to group the multiple resources on T
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs2" %}
 {% endif %}
 
 ### Grouping single-level resources
@@ -290,7 +290,7 @@ This grouping allows the Scheduler to display all resources at a single level si
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/single-level-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/single-level-resource-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -306,7 +306,7 @@ This grouping allows the Scheduler to display all resources at a single level si
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/single-level-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/single-level-resource-cs1" %}
 {% endif %}
 
 > The [`name`](https://ej2.syncfusion.com/documentation/api/schedule/resources#name) field defined in the **resources** collection namely `Owners` will be mapped within the [`group`](https://ej2.syncfusion.com/documentation/api/schedule/group) property, in order to enable the grouping option with those resource levels on the Scheduler.
@@ -331,7 +331,7 @@ Group the Scheduler resources in multiple levels by mapping child resources to e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -347,7 +347,7 @@ Group the Scheduler resources in multiple levels by mapping child resources to e
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs1" %}
 {% endif %}
 
 ### One-to-One grouping
@@ -368,7 +368,7 @@ In multi-level grouping, Scheduler usually groups resources on the child level b
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -384,7 +384,7 @@ In multi-level grouping, Scheduler usually groups resources on the child level b
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multi-level-resource-cs2" %}
 {% endif %}
 
 ### Grouping resources by date
@@ -407,7 +407,7 @@ Group the number of resources under each date, applicable only on Calendar views
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -423,7 +423,7 @@ Group the number of resources under each date, applicable only on Calendar views
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs1" %}
 {% endif %}
 
 > **Note:** This grouping by date is not applicable to any Timeline views.
@@ -446,7 +446,7 @@ In timeline views, work cells of parent resources can be customized by checking 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -462,7 +462,7 @@ In timeline views, work cells of parent resources can be customized by checking 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs3" %}
 {% endif %}
 
 ## Working with shared events
@@ -484,7 +484,7 @@ Multiple resources can share the same events, allowing CRUD actions on one insta
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -500,7 +500,7 @@ Multiple resources can share the same events, allowing CRUD actions on one insta
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs4" %}
 {% endif %}
 
 ## Simple resource header customization
@@ -523,7 +523,7 @@ Customize the resource header cells using the built-in template option to change
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -539,7 +539,7 @@ Customize the resource header cells using the built-in template option to change
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-cs1" %}
 {% endif %}
 
 > To customize the resource header in compact mode properly, use the `e-device` class as shown in the code example.
@@ -564,7 +564,7 @@ Customize the resource headers to display multiple columns such as Room, Type, a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-column-customization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-column-customization-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -580,7 +580,7 @@ Customize the resource headers to display multiple columns such as Room, Type, a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-column-customization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-header-column-customization-cs1" %}
 {% endif %}
 
 ## Collapse/Expand child resources in timeline views
@@ -601,7 +601,7 @@ Expand and collapse resources that have child resources in Timeline views dynami
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -617,7 +617,7 @@ Expand and collapse resources that have child resources in Timeline views dynami
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs5" %}
 {% endif %}
 
 ## Displaying tooltip for resource headers
@@ -638,7 +638,7 @@ Display tooltips over resource headers showing the resource information. By defa
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -654,7 +654,7 @@ Display tooltips over resource headers showing the resource information. By defa
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-tooltip-cs1" %}
 {% endif %}
 
 ## Choosing among resource colors for appointments
@@ -677,7 +677,7 @@ In the following example, colors mentioned in the second level are applied over 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-color-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-color-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -693,7 +693,7 @@ In the following example, colors mentioned in the second level are applied over 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-color-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-color-cs1" %}
 {% endif %}
 
 > **Note:** The value of the [`resourceColorField`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#resourcecolorfield) field should map to the [`name`](https://ej2.syncfusion.com/documentation/api/schedule/resources#name) value defined within the [`resources`](https://ej2.syncfusion.com/documentation/api/schedule/resources) property.
@@ -716,7 +716,7 @@ By default, the appearance of events is the same for all resource events. If you
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-css-class-field-api-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-css-class-field-api-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -732,7 +732,7 @@ By default, the appearance of events is the same for all resource events. If you
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-css-class-field-api-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-css-class-field-api-cs1" %}
 {% endif %}
 
 ## Dynamically add and remove resources
@@ -755,7 +755,7 @@ To remove resources dynamically, use the [`removeResource`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/dynamic-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/dynamic-resource-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -771,7 +771,7 @@ To remove resources dynamically, use the [`removeResource`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/dynamic-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/dynamic-resource-cs1" %}
 {% endif %}
 
 ## Setting different working days and hours for resources
@@ -799,7 +799,7 @@ Set different working days for Scheduler resources using the [`workDaysField`](h
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -815,7 +815,7 @@ Set different working days for Scheduler resources using the [`workDaysField`](h
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs2" %}
 {% endif %}
 
 ### Set different work hours
@@ -841,7 +841,7 @@ Working hours indicate the duration of a workday and are visually highlighted wi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -857,7 +857,7 @@ Working hours indicate the duration of a workday and are visually highlighted wi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/multiple-resource-cs3" %}
 {% endif %}
 
 In this example, a resource named `Will Smith` is shown with working hours ranging from 8.00 AM to 3.00 PM, visually illustrated with active colors, whereas the other two resources have different working hours set.
@@ -881,7 +881,7 @@ To use the [`hideNonWorkingDays`](../api/schedule/group#hidenonworkingdays) prop
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -894,7 +894,7 @@ To use the [`hideNonWorkingDays`](../api/schedule/group#hidenonworkingdays) prop
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/group-by-date-cs2" %}
 {% endif %}
 
 > **Note:** The [`hideNonWorkingDays`](../api/schedule/group#hidenonworkingdays) property only applies when the Scheduler is grouped by [`byDate`](../api/schedule/group#bydate).
@@ -917,7 +917,7 @@ You can manually scroll to a specific resource in the Scheduler using the [`scro
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-resource-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -933,7 +933,7 @@ You can manually scroll to a specific resource in the Scheduler using the [`scro
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-resource-cs1" %}
 {% endif %}
 
 ## Compact view in mobile
@@ -972,7 +972,7 @@ Some of the default changes made for the compact Scheduler to render on desktop 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -988,7 +988,7 @@ Some of the default changes made for the compact Scheduler to render on desktop 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-grouping-cs6" %}
 {% endif %}
 
 > Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its feature representations. Also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

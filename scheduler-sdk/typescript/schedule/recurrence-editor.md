@@ -40,7 +40,7 @@ The Recurrence editor can be customized to display only the specific repeat opti
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -56,7 +56,7 @@ The Recurrence editor can be customized to display only the specific repeat opti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs1" %}
 {% endif %}
 
 Other recurrence editor properties are listed below:
@@ -95,7 +95,7 @@ The Recurrence editor can be customized to display only the specific end options
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -108,7 +108,7 @@ The Recurrence editor can be customized to display only the specific end options
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recurrence-cs2" %}
 {% endif %}
 
 ## Accessing the recurrence rule string
@@ -128,7 +128,7 @@ Use the Recurrence Editor's [`change`](https://ej2.syncfusion.com/documentation/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -141,7 +141,7 @@ Use the Recurrence Editor's [`change`](https://ej2.syncfusion.com/documentation/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs1" %}
 {% endif %}
 
 ## Set a specific value on the recurrence editor
@@ -159,7 +159,7 @@ You can initialize the Recurrence Editor with a specific rule string. Call `setR
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -172,7 +172,7 @@ You can initialize the Recurrence Editor with a specific rule string. Call `setR
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs2" %}
 {% endif %}
 
 ## Recurrence date generation
@@ -198,7 +198,7 @@ Use `getRecurrenceDates` to parse an event's `recurrenceRule` and generate the o
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -211,7 +211,7 @@ Use `getRecurrenceDates` to parse an event's `recurrenceRule` and generate the o
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs3" %}
 {% endif %}
 
 ## Generate recurrence dates on server-side
@@ -235,7 +235,7 @@ If a rule is in the "NEVER ENDS" category, specify `maximumCount` in `getRecurre
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -248,7 +248,7 @@ If a rule is in the "NEVER ENDS" category, specify `maximumCount` in `getRecurre
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/recur-editor-cs4" %}
 {% endif %}
 
 > Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. Also explore [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

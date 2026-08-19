@@ -28,7 +28,7 @@ The following example demonstrates two-way binding with the [`selectedDate`](htt
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/two-way-binding-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/two-way-binding-cs1" %}
 
 ## Two-Way Binding with the Vue Scheduler Component's `currentView` Property
 
@@ -45,6 +45,6 @@ The following example demonstrates how to set two-way binding with the [`current
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/two-way-binding-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/two-way-binding-cs2" %}
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for detailed overviews, and explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for demonstrations on presenting and managing data.

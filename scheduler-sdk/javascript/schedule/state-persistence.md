@@ -31,7 +31,7 @@ The sample below demonstrates enabling state persistence for the Scheduler.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/row-auto-height-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/row-auto-height-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -47,7 +47,7 @@ The sample below demonstrates enabling state persistence for the Scheduler.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/row-auto-height-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/row-auto-height-cs4" %}
 {% endif %}
 
 > Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.

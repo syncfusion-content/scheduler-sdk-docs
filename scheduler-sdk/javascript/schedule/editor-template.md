@@ -38,7 +38,7 @@ Change the editor window header title and footer button text by modifying the ap
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -54,7 +54,7 @@ Change the editor window header title and footer button text by modifying the ap
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs1" %}
 {% endif %}
 
 ### Change the label text of default editor fields
@@ -75,7 +75,7 @@ To change default labels such as Subject and Location, use the [`title`](../api/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -91,7 +91,7 @@ To change default labels such as Subject and Location, use the [`title`](../api/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs2" %}
 {% endif %}
 
 ### Field validation
@@ -112,7 +112,7 @@ Required fields in the editor window can be validated on the client side by addi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -128,7 +128,7 @@ Required fields in the editor window can be validated on the client side by addi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs3" %}
 {% endif %}
 
 > See the [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) documentation for applicable validation rules.
@@ -151,7 +151,7 @@ Additional fields can be added to the default event editor using the [`popupOpen
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -167,7 +167,7 @@ Additional fields can be added to the default event editor using the [`popupOpen
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs4" %}
 {% endif %}
 
 ### Customize the default time duration in editor window
@@ -188,7 +188,7 @@ In the default editor, start and end times are based on the [`interval`](../api/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -204,7 +204,7 @@ In the default editor, start and end times are based on the [`interval`](../api/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs5" %}
 {% endif %}
 
 ### How to prevent the display of editor and quick popups
@@ -225,7 +225,7 @@ The display of editor and quick popup windows can be prevented by passing the va
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -241,7 +241,7 @@ The display of editor and quick popup windows can be prevented by passing the va
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs6" %}
 {% endif %}
 
 To prevent only specific popups on Scheduler, check the condition based on the popup type. The types of popups that can be checked within the [`popupOpen`](../api/schedule#popupopen) event are as follows.
@@ -273,7 +273,7 @@ By default, the timezone collections in the editor window are loaded with built-
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -286,7 +286,7 @@ By default, the timezone collections in the editor window are loaded with built-
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs7" %}
 {% endif %}
 
 ### Close the editor window manually
@@ -307,7 +307,7 @@ The editor window can be closed using the [`closeEditor`](../api/schedule#closee
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -323,7 +323,7 @@ The editor window can be closed using the [`closeEditor`](../api/schedule#closee
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs15" %}
 {% endif %}
 
 
@@ -351,7 +351,7 @@ When using Syncfusion sub-components inside the editor template, initialize thos
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -367,7 +367,7 @@ When using Syncfusion sub-components inside the editor template, initialize thos
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs1" %}
 {% endif %}
 
 ### Customize header and footer using template
@@ -388,7 +388,7 @@ In this example, the editor's header is customized according to the appointment'
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-header-footer-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-header-footer-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -401,7 +401,7 @@ In this example, the editor's header is customized according to the appointment'
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-header-footer-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-header-footer-cs1" %}
 {% endif %}
 
 ### Add resource options within editor template
@@ -422,7 +422,7 @@ The resource field can be added within the editor template with a multiselect co
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/resource-field-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/resource-field-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -438,7 +438,7 @@ The resource field can be added within the editor template with a multiselect co
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/resource-field-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/resource-field-cs1" %}
 {% endif %}
 
 ### Add recurrence options within editor template
@@ -459,7 +459,7 @@ The following code example shows how to add recurrence options within the editor
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-recurrence-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-recurrence-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -475,7 +475,7 @@ The following code example shows how to add recurrence options within the editor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-recurrence-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-recurrence-cs1" %}
 {% endif %}
 
 ### Apply validations on editor template fields
@@ -496,7 +496,7 @@ In the following code example, validation has been added to the `EventType` fiel
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -512,7 +512,7 @@ In the following code example, validation has been added to the `EventType` fiel
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs2" %}
 {% endif %}
 
 ### How to save the customized event editor using template
@@ -538,7 +538,7 @@ The following code example shows how to save the customized event editor using a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -554,7 +554,7 @@ The following code example shows how to save the customized event editor using a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-cs3" %}
 {% endif %}
 
 To prevent only specific popup closures on Scheduler, check the condition based on the popup type. The types of popups that can be checked within the [`popupClose`](../api/schedule#popupclose) event are as follows.
@@ -593,7 +593,7 @@ By default, these popups are displayed over Scheduler cells and appointments. To
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -609,7 +609,7 @@ By default, these popups are displayed over Scheduler cells and appointments. To
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs8" %}
 {% endif %}
 
 ### Open quick popup on multiple cell selection
@@ -630,7 +630,7 @@ The quick popup can be displayed immediately after multiple cells are selected i
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -646,7 +646,7 @@ The quick popup can be displayed immediately after multiple cells are selected i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs1" %}
 {% endif %}
 
 ### How to change the watermark text of quick popup subject
@@ -685,7 +685,7 @@ The look and feel of the built-in quick popup window that opens when single-clic
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -701,7 +701,7 @@ The look and feel of the built-in quick popup window that opens when single-clic
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/quick-info-cs2" %}
 {% endif %}
 
 > The quick popup in adaptive mode can also be customized using [`quickInfoTemplates`](../api/schedule#quickinfotemplates) with the `e-device` class.
@@ -721,7 +721,7 @@ The quick info popup in Scheduler can be opened using the [openQuickInfoPopup](.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs16" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -734,7 +734,7 @@ The quick info popup in Scheduler can be opened using the [openQuickInfoPopup](.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs16" %}
 {% endif %}
 
 ### Close the quick info popup manually
@@ -752,7 +752,7 @@ The quick info popup in Scheduler can be closed using the [`closeQuickInfoPopup`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs17" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -765,7 +765,7 @@ The quick info popup in Scheduler can be closed using the [`closeQuickInfoPopup`
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs17" %}
 {% endif %}
 
 ## More events indicator and popup
@@ -792,7 +792,7 @@ The following code example shows how to disable the display of such popups when 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -808,7 +808,7 @@ The following code example shows how to disable the display of such popups when 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs9" %}
 {% endif %}
 
 ### Customize the popup that opens on more indicator
@@ -829,7 +829,7 @@ The following code example shows how to customize the default more indicator pop
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -845,7 +845,7 @@ The following code example shows how to customize the default more indicator pop
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs10" %}
 {% endif %}
 
 ### Prevent the display of popup when clicking on the more text indicator
@@ -866,7 +866,7 @@ The display of the popup window can be prevented by passing the value `true` to 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs13" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -882,7 +882,7 @@ The display of the popup window can be prevented by passing the value `true` to 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs13" %}
 {% endif %}
 
 ### Navigate to Day view when clicking on more text indicator
@@ -903,7 +903,7 @@ The following code example shows how to customize the [`moreEventsClick`](../api
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -919,7 +919,7 @@ The following code example shows how to customize the [`moreEventsClick`](../api
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/editor-window-cs14" %}
 {% endif %}
 
 > Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

@@ -38,7 +38,7 @@ The following example displays an appointment from 9:00 AM to 10:00 AM when the 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs28" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs28" %}
 
 ## Set a specific timezone for the Scheduler
 
@@ -58,7 +58,7 @@ When you set the [`timezone`](https://ej2.syncfusion.com/react/documentation/api
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs29" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs29" %}
 
 ## Display events at the same time everywhere with no time difference
 
@@ -78,7 +78,7 @@ Setting [`timezone`](https://ej2.syncfusion.com/react/documentation/api/schedule
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs30" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs30" %}
 
 ## Assign specific timezones to events
 
@@ -98,7 +98,7 @@ You can set different timezones for Scheduler events by using the [`startTimezon
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs31" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs31" %}
 
 ## Add or remove timezone names to or from the timezone collection
 
@@ -118,7 +118,7 @@ Instead of displaying all timezone names in the timezone collection, you can cus
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs32" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs32" %}
 
 ## Timezone methods
 

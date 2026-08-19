@@ -76,7 +76,7 @@ Set the culture in the Scheduler using the `locale` property.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/localization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/localization-cs1" %}
 
 For more information about globalization, refer to the [Internationalization](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization) section.
 
@@ -106,7 +106,7 @@ For example, the following code defines French translations for all static words
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/localization-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/localization-cs2" %}
 
 The localized words for static text used in the Scheduler and Recurrence Editor can be found in the following code. Static text for all cultures is available in the GitHub repository: [`ej2-locale`](https://github.com/syncfusion/ej2-locale).
 
@@ -265,7 +265,7 @@ The Scheduler supports all valid date formats. By default, it follows the univer
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs19" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs19" %}
 
 ## Setting the time format
 
@@ -296,7 +296,7 @@ The following example demonstrates the Scheduler in 24-hour format:
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs20" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs20" %}
 
 > **Important:** The [`timeFormat`](https://ej2.syncfusion.com/react/documentation/api/schedule#timeformat) property only accepts valid time formats. Invalid format strings will be ignored and the locale's default format will be used instead.
 
@@ -327,7 +327,7 @@ The first day of the week can be set in the Scheduler using the `firstDayOfWeek`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs21" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs21" %}
 
 ## Displaying Scheduler in RTL mode
 
@@ -353,7 +353,7 @@ The Scheduler layout and behavior can be changed to follow RTL (Right-to-Left) c
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs22" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs22" %}
 
 ## See also
 

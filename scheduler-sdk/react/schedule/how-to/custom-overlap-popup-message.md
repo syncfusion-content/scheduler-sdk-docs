@@ -42,7 +42,7 @@ Setting `args.cancel = true` prevents the default popup from rendering. Use `set
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs54" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs54" %}
 
 ## Show a Toast Notification
 
@@ -72,7 +72,7 @@ Common options supported by `ToastUtility.show`:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs55" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs55" %}
 
 ## Mutate the Default Alert Content
 
@@ -90,7 +90,7 @@ If you want to keep the default alert dialog and only change the text, hook the 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs56" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs56" %}
 
 
 ## Customize via Localization
@@ -113,5 +113,5 @@ To switch languages at runtime, set the [`locale`](https://ej2.syncfusion.com/re
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs57" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs57" %}
 

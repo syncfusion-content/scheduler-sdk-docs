@@ -36,7 +36,7 @@ In the following example, an appointment is displayed from **9:00 AM to 10:00 AM
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs1" %}
 
 ## Scheduler set to a specific timezone
 
@@ -53,7 +53,7 @@ In the following example, the Scheduler is configured to use **Eastern Time (UTC
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs2" %}
 
 ## Display events on same time everywhere with no time difference
 
@@ -68,7 +68,7 @@ To display events **at the same time across all timezones**, set the Schedulerâ€
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs3" %}
 
 ## Set specific timezone for events
 
@@ -83,7 +83,7 @@ It is possible to set different timezones for Scheduler events by setting the [`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs4" %}
 
 ## Add or remove timezone names to/from the timezone collection
 
@@ -98,7 +98,7 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/time-zone-cs5" %}
 
 ## Timezone methods
 

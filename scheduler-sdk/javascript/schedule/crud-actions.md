@@ -41,7 +41,7 @@ Appointments can be created programmatically using the [`addEvent`](../api/sched
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/add-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/add-event-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -54,7 +54,7 @@ Appointments can be created programmatically using the [`addEvent`](../api/sched
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/add-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/add-event-cs1" %}
 {% endif %}
 
 ### Inserting events into database at server-side
@@ -108,7 +108,7 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -124,7 +124,7 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs1" %}
 {% endif %}
 
 Appointment creation can also be prevented dynamically based on custom conditions. The following example shows how to prevent appointments from being created on weekend days using the [`actionBegin`](../api/schedule#actionbegin) event:
@@ -143,7 +143,7 @@ Appointment creation can also be prevented dynamically based on custom condition
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -159,7 +159,7 @@ Appointment creation can also be prevented dynamically based on custom condition
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs2" %}
 {% endif %}
 
 ## Edit
@@ -192,7 +192,7 @@ Appointments can be updated programmatically using the [`saveEvent`](../api/sche
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -205,7 +205,7 @@ Appointments can be updated programmatically using the [`saveEvent`](../api/sche
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs1" %}
 {% endif %}
 
 **Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely [`RecurrenceID`](../api/schedule/field#recurrenceid) mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the [`RecurrenceID`](../api/schedule/field#recurrenceid) field value. The [`saveEvent`](../api/schedule#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
@@ -225,7 +225,7 @@ In case of modifying the single occurrence, it is also necessary to update the [
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -238,7 +238,7 @@ In case of modifying the single occurrence, it is also necessary to update the [
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/edit-event-cs2" %}
 {% endif %}
 
 ### Updating events in database at server-side
@@ -478,7 +478,7 @@ Appointment editing can be prevented dynamically based on custom conditions. The
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -494,7 +494,7 @@ Appointment editing can be prevented dynamically based on custom conditions. The
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs3" %}
 {% endif %}
 
 ## Delete
@@ -529,7 +529,7 @@ Appointments can be deleted programmatically using the [`deleteEvent`](../api/sc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -542,7 +542,7 @@ Appointments can be deleted programmatically using the [`deleteEvent`](../api/sc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs1" %}
 {% endif %}
 
 **Recurring Event** - Recurring events can be deleted as an entire series or as a single occurrence using the [`deleteEvent`](../api/schedule#deleteevent) method with either `DeleteSeries` or `DeleteOccurrence` parameters. The following example demonstrates deleting an entire series:
@@ -558,7 +558,7 @@ Appointments can be deleted programmatically using the [`deleteEvent`](../api/sc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -571,7 +571,7 @@ Appointments can be deleted programmatically using the [`deleteEvent`](../api/sc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/delete-event-cs2" %}
 {% endif %}
 
 ### Removing events from database at server-side
@@ -739,7 +739,7 @@ When a normal event is dropped, the event editing action occurs. When a recurrin
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs37" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs37" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -755,7 +755,7 @@ When a normal event is dropped, the event editing action occurs. When a recurrin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs37" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs37" %}
 {% endif %}
 
 ## Resize
@@ -778,7 +778,7 @@ When a normal event is resized, the event editing action occurs. When a recurrin
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs38" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs38" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -794,7 +794,7 @@ When a normal event is resized, the event editing action occurs. When a recurrin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs38" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/event-cs38" %}
 {% endif %}
 
 > Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

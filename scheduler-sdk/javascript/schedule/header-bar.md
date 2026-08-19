@@ -30,7 +30,7 @@ By default, the header bar displays date and view navigation options to switch b
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -46,7 +46,7 @@ By default, the header bar displays date and view navigation options to switch b
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs1" %}
 {% endif %}
 
 ## Customizing header bar using template
@@ -67,7 +67,7 @@ In addition to the default date navigation and view options, you can add custom 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-template" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-template" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -83,7 +83,7 @@ In addition to the default date navigation and view options, you can add custom 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-template" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-template" %}
 {% endif %}
 
 ## Customizing header bar using events
@@ -104,7 +104,7 @@ You can also add header items dynamically using the [`actionBegin`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -120,7 +120,7 @@ You can also add header items dynamically using the [`actionBegin`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs2" %}
 {% endif %}
 
 ## How to display the view options within the header bar popup
@@ -141,7 +141,7 @@ By default, the header bar displays view navigation options. Move the view optio
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -157,7 +157,7 @@ By default, the header bar displays view navigation options. Move the view optio
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-bar-cs3" %}
 {% endif %}
 
 > Refer to [Adaptive UI](./resources#adaptive-ui-in-desktop) to learn more about adaptive UI in Scheduler.
@@ -184,7 +184,7 @@ The [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) option is used to
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/date-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/date-header-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -200,7 +200,7 @@ The [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) option is used to
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/date-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/date-header-cs1" %}
 {% endif %}
 
 ### Using renderCell event
@@ -221,7 +221,7 @@ In month view, the date header template is not applicable and therefore the same
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/render-cell-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/render-cell-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -237,7 +237,7 @@ In month view, the date header template is not applicable and therefore the same
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/render-cell-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/render-cell-cs1" %}
 {% endif %}
 
 ## Customizing the date range text
@@ -258,7 +258,7 @@ The [`dateRangeTemplate`](../api/schedule#daterangetemplate) option allows you t
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -274,7 +274,7 @@ The [`dateRangeTemplate`](../api/schedule#daterangetemplate) option allows you t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/default-cs4" %}
 {% endif %}
 
 ## Customizing header indent cells
@@ -297,7 +297,7 @@ Customize the header indent cells using the [`headerIndentTemplate`](https://ej2
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-indent-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-indent-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -313,7 +313,7 @@ Customize the header indent cells using the [`headerIndentTemplate`](https://ej2
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-indent-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-indent-cs1" %}
 {% endif %}
 
 > Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical implementations of data presentation and manipulation.

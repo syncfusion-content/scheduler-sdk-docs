@@ -29,7 +29,7 @@ These methods are especially useful when you want to programmatically manage app
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/app-crud-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/app-crud-cs1" %}
 
 ## Recurrence event
 
@@ -42,4 +42,4 @@ These methods are especially useful when you want to programmatically manage app
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/app-crud-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/app-crud-cs2" %}

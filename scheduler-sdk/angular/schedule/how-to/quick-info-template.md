@@ -22,4 +22,4 @@ This demo shows how to customize Quick Info popups for cells and appointments us
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/quick-info-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/quick-info-template-cs1" %}

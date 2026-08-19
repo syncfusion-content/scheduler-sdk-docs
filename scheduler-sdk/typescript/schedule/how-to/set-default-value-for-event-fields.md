@@ -25,7 +25,7 @@ For example, a default value can be set for the **Subject** field using the `def
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -38,5 +38,5 @@ For example, a default value can be set for the **Subject** field using the `def
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}
 {% endif %}

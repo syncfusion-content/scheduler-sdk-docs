@@ -25,7 +25,7 @@ Refer to the following code example for implementation.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -38,5 +38,5 @@ Refer to the following code example for implementation.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1" %}
 {% endif %}

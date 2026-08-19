@@ -29,7 +29,7 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs1" %}
 
 > By default, `DataManager` uses the `JsonAdaptor` for local data binding.
 
@@ -53,7 +53,7 @@ The Scheduler supports binding to various remote data services. To configure thi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs2" %}
 
 ### Filter events using the in-built query
 
@@ -71,7 +71,7 @@ This method greatly improves performance by reducing the data transferred to the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs7" %}
 
 The following image illustrates how parameters are passed using an ODataV4 filter for remote data binding.
 
@@ -91,7 +91,7 @@ You can create a custom adaptor by extending one of the built-in adaptors. The f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs3" %}
 
 ## Loading data via AJAX post
 
@@ -146,7 +146,7 @@ To send additional custom parameters in the server-side request, use the `addPar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs4" %}
 
 > Parameters added using the Scheduler [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property are sent with every data request to the server.
 
@@ -166,7 +166,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs5" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs during Scheduler CRUD operations.
 
@@ -316,6 +316,6 @@ We have assigned our custom Google Calendar URL to the `DataManager` and used it
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/data-bind-cs6" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for an overview of its features. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.

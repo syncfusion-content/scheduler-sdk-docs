@@ -42,7 +42,7 @@ You can customize the recurrence editor to display only specific repeat options,
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs46" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs46" %}
 
 The other properties available in recurrence editor are tabulated below:
 
@@ -85,7 +85,7 @@ You can customize the recurrence editor to display only specific end options, su
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs46" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs46" %}
 
 ## Accessing the recurrence rule string
 
@@ -107,7 +107,7 @@ A `change` event is available in the recurrence editor and triggers whenever the
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs1" %}
 
 ## Set specific value on recurrence editor
 
@@ -127,7 +127,7 @@ It is possible to display the recurrence editor with specific options loaded ini
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs2" %}
 
 ## Recurrence date generation
 
@@ -155,7 +155,7 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs3" %}
 
 > The above example generates two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilized to create appointments.
 
@@ -185,7 +185,7 @@ If the rule is in the "NEVER ENDS" category, you can specify a maximum count to 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/recur-editor-cs4" %}
 
 ## See also
 

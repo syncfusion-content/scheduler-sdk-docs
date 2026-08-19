@@ -23,7 +23,7 @@ In the Scheduler, you can refresh the layout manually without re-rendering the D
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -36,5 +36,5 @@ In the Scheduler, you can refresh the layout manually without re-rendering the D
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}
 {% endif %}

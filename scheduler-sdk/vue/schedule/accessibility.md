@@ -103,7 +103,7 @@ All Schedule component actions can be performed using keyboard input when the `a
 
 Accessibility levels for the Schedule component are validated through automated testing tools such as [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core). Accessibility compliance can be evaluated using the following sample: open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) to review the component with accessibility tools.
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs1" %}
 
 ## See Also
 

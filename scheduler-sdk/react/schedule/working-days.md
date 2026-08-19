@@ -42,7 +42,7 @@ The following example sets Monday, Wednesday, and Friday as working days.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs33" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs33" %}
 
 ## Hiding weekend days
 
@@ -62,7 +62,7 @@ Here, the working days are defined as [1, 3, 4, 5] in the Scheduler, and the rem
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs34" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs34" %}
 
 ## Show week numbers
 
@@ -82,7 +82,7 @@ Display week numbers in the header bar by setting [`showWeekNumber`](https://ej2
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs35" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs35" %}
 
 ### Different options in showing week numbers
 
@@ -110,7 +110,7 @@ The following example shows week numbers with the `FirstFourDayWeek` rule.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs36" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs36" %}
 
 ## Set working hours
 
@@ -132,7 +132,7 @@ Working hours indicate the work-hour limit within the Scheduler and are visually
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs37" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs37" %}
 
 ## Scheduler displaying custom hours
 
@@ -151,7 +151,7 @@ The following code example displays the Scheduler from 7:00 AM to 6:00 PM and hi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs38" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs38" %}
 
 ## Setting start day of the week
 
@@ -172,7 +172,7 @@ By default, the Scheduler uses `Sunday` as the first day of the week. To change 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs39" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs39" %}
 
 ## Scroll to specific time and date
 
@@ -190,7 +190,7 @@ You can manually scroll to a specific time in the Scheduler by using the [`scrol
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs4" %}
 
 ### How to scroll to current time on initial load
 
@@ -208,7 +208,7 @@ In some scenarios, you may want the Scheduler to load with the system's current 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs40" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs40" %}
 
 ## See also
 

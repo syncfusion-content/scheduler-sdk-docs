@@ -51,7 +51,7 @@ The example below shows the Scheduler configured with four views: Week, Month, T
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -67,7 +67,7 @@ The example below shows the Scheduler configured with four views: Week, Month, T
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs1" %}
 {% endif %}
 
 To configure the Scheduler with two views but with different configurations on each view, refer to the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format, whereas the Month view hides the weekend days and displays in readonly mode.
@@ -86,7 +86,7 @@ To configure the Scheduler with two views but with different configurations on e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -102,7 +102,7 @@ To configure the Scheduler with two views but with different configurations on e
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs2" %}
 {% endif %}
 
 ## View specific configuration
@@ -149,7 +149,7 @@ The Day view shows a single day and its appointments. To display multiple consec
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -165,7 +165,7 @@ The Day view shows a single day and its appointments. To display multiple consec
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs3" %}
 {% endif %}
 
 All the table properties apply to Day view except [`allowVirtualScrolling`](https://ej2.syncfusion.com/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule/views#headerrows).
@@ -188,7 +188,7 @@ The Week view shows seven days (Sunday through Saturday) and their appointments.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -204,7 +204,7 @@ The Week view shows seven days (Sunday through Saturday) and their appointments.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs4" %}
 {% endif %}
 
 All table properties apply to Week and Work Week views except [`allowVirtualScrolling`](https://ej2.syncfusion.com/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule/views#headerrows).
@@ -229,7 +229,7 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -245,7 +245,7 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs5" %}
 {% endif %}
 
 Week, Work Week, and Day views can show all-day appointments in a separate row with an expand/collapse control.
@@ -272,7 +272,7 @@ The `+ more` indicator appears when a day cell contains additional hidden events
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -288,7 +288,7 @@ The `+ more` indicator appears when a day cell contains additional hidden events
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs6" %}
 {% endif %}
 
 ### Year view
@@ -309,7 +309,7 @@ The Year view displays all the days of a particular year with months and all its
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -325,7 +325,7 @@ The Year view displays all the days of a particular year with months and all its
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs7" %}
 {% endif %}
 
 The Year view displays all months of a year. Dates that contain appointments are highlighted with dots; clicking a date opens the event popup listing those appointments.
@@ -350,7 +350,7 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -366,7 +366,7 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs8" %}
 {% endif %}
 
 Set the Scheduler height in pixels when using the Agenda view.
@@ -391,7 +391,7 @@ The example below demonstrates hiding weekend days on `MonthAgenda` and customiz
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -407,7 +407,7 @@ The example below demonstrates hiding weekend days on `MonthAgenda` and customiz
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs9" %}
 {% endif %}
 
 
@@ -431,7 +431,7 @@ Import and inject the `TimelineViews` module from `ej2-schedule` to enable Timel
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -447,7 +447,7 @@ Import and inject the `TimelineViews` module from `ej2-schedule` to enable Timel
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs10" %}
 {% endif %}
 
 Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
@@ -466,7 +466,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -482,7 +482,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs11" %}
 {% endif %}
 
 The example below shows Timeline Work Week on the Scheduler.
@@ -501,7 +501,7 @@ The example below shows Timeline Work Week on the Scheduler.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -517,7 +517,7 @@ The example below shows Timeline Work Week on the Scheduler.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs12" %}
 {% endif %}
 
 Click dates in the header of Timeline views to navigate to Agenda view.
@@ -540,7 +540,7 @@ Timeline Month shows the month with time slots laid out horizontally and their a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs13" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -556,7 +556,7 @@ Timeline Month shows the month with time slots laid out horizontally and their a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs13" %}
 {% endif %}
 
 Click dates in the Timeline Month header to navigate to Timeline Day view.
@@ -581,7 +581,7 @@ Import and inject the `TimelineYear` module from `ej2-schedule` to use this view
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -597,7 +597,7 @@ Import and inject the `TimelineYear` module from `ej2-schedule` to use this view
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs14" %}
 {% endif %}
 
 Timeline Year is available in `Horizontal` and `Vertical` orientations; control orientation via the `views` property.
@@ -620,7 +620,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -636,7 +636,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs15" %}
 {% endif %}
 
 #### Auto row height
@@ -657,7 +657,7 @@ Timeline Year supports auto row height. When [`rowAutoHeight`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs16" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -673,7 +673,7 @@ Timeline Year supports auto row height. When [`rowAutoHeight`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs16" %}
 {% endif %}
 
 ## Extending view intervals
@@ -696,7 +696,7 @@ Use [`displayName`](https://ej2.syncfusion.com/documentation/api/schedule/views#
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs17" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -712,7 +712,7 @@ Use [`displayName`](https://ej2.syncfusion.com/documentation/api/schedule/views#
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs17" %}
 {% endif %}
 
 The view intervals can be extended for all modes except Agenda and Month-Agenda views.
@@ -733,7 +733,7 @@ Use [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#i
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs18" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -749,7 +749,7 @@ Use [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs18" %}
 {% endif %}
 
 Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and visit the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for interactive examples.
