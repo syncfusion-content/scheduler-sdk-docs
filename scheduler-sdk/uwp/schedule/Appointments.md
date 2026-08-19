@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Appointments in UWP Scheduler control | Syncfusion
-description: Learn here all about Appointments support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+title: Appointments in UWP Scheduler | Syncfusion
+description: Learn how to create, customize, and manage appointments in Syncfusion UWP Scheduler (SfSchedule) control with details.
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Appointments in UWP Scheduler (SfSchedule)
+# Appointments in UWP Scheduler
 
 [SfSchedule](https://help.syncfusion.com/cr/uwp/sfschedule) control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule.
 
