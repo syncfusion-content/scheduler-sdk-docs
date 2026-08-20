@@ -526,6 +526,6 @@ The following screenshots show the Scheduler UI and the corresponding MongoDB re
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete API documentation
-* [DataManager Documentation](https://ej2.syncfusion.com/react/documentation/schedule/data-binding#binding-remote-data) - Remote data operations
+* [DataManager Documentation](https://help.syncfusion.com/scheduler-sdk/react/schedule/data-binding#binding-remote-data) - Remote data operations
 * [MongoDB Documentation](https://www.mongodb.com/docs/) - Database reference   
 * [React Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview) - Interactive examples

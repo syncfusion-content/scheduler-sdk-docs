@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with Angular Scheduler and MongoDB
 
-The [Angular Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
+The [Angular Schedule](https://help.syncfusion.com/scheduler-sdk/angular/schedule/getting-started) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
 
 MongoDB's schema-less design seamlessly supports complex scheduling data, making it ideal for storing events, resources, recurrence rules, and user-specific calendar configurations.
 
@@ -386,7 +386,7 @@ All changes will be reflected in the connected **MongoDB** database in real time
 
 3. **Immutable _id on update:** Remove _id from payload prior to updateOne (MongoDB forbids changing _id).
 
-4. **Missing CSS → broken editor/pickers:** Include Scheduler CSS (via ng add or styles.css) per [getting-started docs](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started#adding-css-reference).
+4. **Missing CSS → broken editor/pickers:** Include Scheduler CSS (via ng add or styles.css) per [getting-started docs](https://help.syncfusion.com/scheduler-sdk/angular/schedule/getting-started#adding-css-reference).
 
 <br>
 

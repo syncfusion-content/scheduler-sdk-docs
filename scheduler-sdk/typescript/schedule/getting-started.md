@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Getting Started with TypeScript Scheduler
 
-This section explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) component and configure its available functionalities in a TypeScript environment.
+This section explains how to create the [**JavaScript Scheduler**](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) component and configure its available functionalities in a TypeScript environment.
 
 ## Prerequisites
 

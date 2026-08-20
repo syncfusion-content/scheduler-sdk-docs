@@ -65,4 +65,4 @@ ej.schedule.Schedule.Inject(
 
 Note: Module injection is not required when using the full `ej2.min.js` bundle because it includes all modules. When using ES imports or separate module files, explicit injection is needed.
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for practical examples.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for practical examples.

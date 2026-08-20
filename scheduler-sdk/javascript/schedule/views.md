@@ -752,7 +752,7 @@ Use [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#i
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/view-cs18" %}
 {% endif %}
 
-Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and visit the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for interactive examples.
+Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour for an overview, and visit the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for interactive examples.
 
 ## See Also
 

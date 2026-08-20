@@ -536,8 +536,8 @@ You can close the quick info popup in scheduler by using the [closeQuickInfoPopu
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
-* [Event Templates](https://ej2.syncfusion.com/react/documentation/schedule/editor-template)
+* [Event Templates](https://help.syncfusion.com/scheduler-sdk/react/schedule/editor-template)
 * [Quick Info Templates](https://ej2.syncfusion.com/react/documentation/api/schedule/quickInfoTemplates)
-* [CRUD Actions Guide](https://ej2.syncfusion.com/react/documentation/schedule/crud-actions)
+* [CRUD Actions Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/crud-actions)
 * [Form Validation Documentation](https://ej2.syncfusion.com/react/documentation/form-validator/validation-rules)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

@@ -82,7 +82,7 @@ render(<TimelineView />, document.getElementById('sample'));
 
 **Solution:** The `e-field` attribute is mandatory for each form element in the editor template to enable proper data binding.
 
-> **Important:** Every input control in your custom editor template must include the `e-field` attribute matching the corresponding event property name. Refer to the [Editor Template Customization Guide](https://ej2.syncfusion.com/react/documentation/schedule/editor-template#customizing-event-editor-using-template) for detailed examples.
+> **Important:** Every input control in your custom editor template must include the `e-field` attribute matching the corresponding event property name. Refer to the [Editor Template Customization Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/editor-template#customizing-event-editor-using-template) for detailed examples.
 
 ## Missing CSS reference
 
@@ -155,7 +155,7 @@ onClick(args) {
 
 ![Locale import issue](./images/locale-import-issue.png)
 
-**Problem:** When using [`locale`](https://ej2.syncfusion.com/react/documentation/schedule/localization), missing or incorrectly imported culture files prevent proper localization from functioning.
+**Problem:** When using [`locale`](https://help.syncfusion.com/scheduler-sdk/react/schedule/localization), missing or incorrectly imported culture files prevent proper localization from functioning.
 
 **Solution:** Import all required CLDR (Common Locale Data Repository) files and initialize localization using the `loadCldr()` and `L10n.load()` functions.
 
@@ -192,10 +192,10 @@ L10n.load({
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
-* [Editor Template Customization](https://ej2.syncfusion.com/react/documentation/schedule/editor-template)
-* [Scheduler Localization Guide](https://ej2.syncfusion.com/react/documentation/schedule/localization)
+* [Editor Template Customization](https://help.syncfusion.com/scheduler-sdk/react/schedule/editor-template)
+* [Scheduler Localization Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/localization)
 * [Quick Popup Template](https://ej2.syncfusion.com/react/documentation/api/schedule#quickinfotemplates)
-* [Scheduler Event Grouping](https://ej2.syncfusion.com/react/documentation/schedule/resources)
+* [Scheduler Event Grouping](https://help.syncfusion.com/scheduler-sdk/react/schedule/resources)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)
 
 > **Important:** Always load CLDR data before rendering the Scheduler component with localization. Missing files will cause localization to fail silently.

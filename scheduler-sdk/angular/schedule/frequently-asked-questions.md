@@ -74,7 +74,7 @@ To avoid this, do not enable grouping when no resources are defined.
 
 **Error:** When using a custom editor template, the `e-field` attribute value is missing in the input elements.
 
-**Solution:** The `e-field` attribute is mandatory for each form element in the editor template. For more information, refer to [customizing event editor using template](https://ej2.syncfusion.com/angular/documentation/schedule/editor-template#customizing-event-editor-using-template).
+**Solution:** The `e-field` attribute is mandatory for each form element in the editor template. For more information, refer to [customizing event editor using template](https://help.syncfusion.com/scheduler-sdk/angular/schedule/editor-template#customizing-event-editor-using-template).
 
 ## Missing CSS reference
 
@@ -133,7 +133,7 @@ When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/document
 
 ![Locale import issue](./images/locale-import-issue.png)
 
-While using [`locale`](https://ej2.syncfusion.com/angular/documentation/schedule/localization) in the Scheduler, not importing the required culture files properly causes this issue.
+While using [`locale`](https://help.syncfusion.com/scheduler-sdk/angular/schedule/localization) in the Scheduler, not importing the required culture files properly causes this issue.
 
 **Solution:** Properly add and import the culture files, such as `numberingSystems`, `timeZoneNames`, `loadCldr`, and `L10n`, in your project to resolve the issue.
 

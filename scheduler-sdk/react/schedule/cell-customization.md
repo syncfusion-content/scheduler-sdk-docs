@@ -242,8 +242,8 @@ By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/react/doc
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
-* [Scheduler Views](https://ej2.syncfusion.com/react/documentation/schedule/scheduler-interactions)
-* [Resources](https://ej2.syncfusion.com/react/documentation/schedule/resources)
-* [Templates](https://ej2.syncfusion.com/react/documentation/schedule/cell-customization)
+* [Scheduler Views](https://help.syncfusion.com/scheduler-sdk/react/schedule/scheduler-interactions)
+* [Resources](https://help.syncfusion.com/scheduler-sdk/react/schedule/resources)
+* [Templates](https://help.syncfusion.com/scheduler-sdk/react/schedule/cell-customization)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)
