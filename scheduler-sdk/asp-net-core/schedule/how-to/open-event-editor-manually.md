@@ -17,8 +17,8 @@ The `openEditor` method accepts the following arguments:
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| `data` | `CellDetails` \| `ScheduleEvent` | Cell details to open the editor for a time range, or event data to open the editor for an existing event. |
-| `action` | `string` | Pass `Add` to open the editor for creating a new event, or `Save` to open the editor for updating an existing event. |
+| `data` | `Record` | It can be either cell data or event data. |
+| `action` | `CurrentAction` | Defines the action for which the editor needs to be opened such as either for new event creation or for editing of existing events. The applicable action names that can be used here are Add, Save, EditOccurrenceand EditSeries. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
