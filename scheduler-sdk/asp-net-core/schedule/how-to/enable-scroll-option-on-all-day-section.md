@@ -10,9 +10,9 @@ documentation: ug
 
 # Enable Scroll Option on All-Day Section in ASP.NET Core Scheduler
 
-When you have larger number of appointments in all-day row, it is difficult to view all the appointments properly. In that case you can enable scroller option for all-day row by setting true to `enableAllDayScroll` whereas its default value is false. When setting this property to true, individual scroller for all-day row is enabled when it reaches its maximum height on expanding.
+When you have a large number of appointments in the all-day row, it is difficult to view all of them at once. In that case, you can enable the scroller option for the all-day row by setting `enableAllDayScroll` to `true`. Its default value is `false`. When this property is set to `true`, an individual scroller is enabled for the all-day row when it reaches its maximum height on expanding.
 
-N> This property is not applicable for Scheduler with height `auto`.
+N> This property is not applicable when the Scheduler is configured with `height` set to `auto`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

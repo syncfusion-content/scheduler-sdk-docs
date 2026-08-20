@@ -10,7 +10,7 @@ documentation: ug
 
 # Virtual Scrolling in ASP.NET Core Scheduler 
 
-To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in the Scheduler by setting `true` to the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view specific settings.
+To achieve better performance in the Scheduler when loading a large number of resources and events, virtual scrolling support has been added to load a large set of resources and events instantly as you scroll. You can dynamically load a large number of resources and events in the Scheduler by setting the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the view-specific settings. The virtual loading of events is possible in the Agenda view by setting the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view-specific settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -35,17 +35,17 @@ To achieve better performance in the Scheduler when loading a large number of re
 {% endtabs %}
 {% endif %}
 
-N> For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
+N> For now, the virtual loading of resources and events is not supported in the `MonthAgenda`, `Year`, and `TimelineYear` (Horizontal Orientation) views.
 
 ## Enabling lazy loading for appointments
 
 The lazy loading feature provides a convenient way to efficiently load resource appointments into the Scheduler using an on-demand approach. With this feature, you can seamlessly load a large volume of appointment data into the Scheduler without experiencing any performance degradation.
 
-By default, the Scheduler fetches all the relevant appointments from the server with in the current date range. However, enabling this feature will trigger query requests to the server for appointment retrieval whenever new resources are rendered due to scroll actions. These queries contain the resource IDs of currently displayed resources along with current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the necessary appointments to render in the scheduler. 
+By default, the Scheduler fetches all the relevant appointments from the server within the current date range. However, enabling this feature will trigger query requests to the server for appointment retrieval whenever new resources are rendered due to scroll actions. These queries contain the resource IDs of currently displayed resources along with the current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the necessary appointments to render in the Scheduler.
 
-When you enable this feature, the Scheduler becomes capable of fetching events from remote services only for the current view port alone to optimize the data retrieval. The remaining appointment data is fetched form the server on-demand based on currently rendered view port resources as you scroll's through the scheduler content.
+When you enable this feature, the Scheduler becomes capable of fetching events from remote services only for the current viewport alone to optimize the data retrieval. The remaining appointment data is fetched from the server on-demand based on the currently rendered viewport resources as you scroll through the Scheduler content.
 
-To enable this feature, you have to set the [`enableLazyLoading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_EnableLazyLoading) property to `true` within the view specific settings.
+To enable this feature, you have to set the [`enableLazyLoading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_EnableLazyLoading) property to `true` within the view-specific settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -72,7 +72,7 @@ To enable this feature, you have to set the [`enableLazyLoading`](https://help.s
 
 Here's the server-side controller code that retrieves appointment data based on the resource IDs provided as query parameters:
 
-```c#
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
@@ -115,4 +115,4 @@ namespace LazyLoadingServices.Controllers
 * The property will be effective, when large number of resources and appointments bound to the Scheduler.
 * This property is applicable only when [resource grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) is enabled in Scheduler.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.

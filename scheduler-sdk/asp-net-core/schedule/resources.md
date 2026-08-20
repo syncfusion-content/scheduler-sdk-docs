@@ -10,19 +10,19 @@ documentation: ug
 
 # Resources and Grouping in ASP.NET Core Scheduler
 
-Resources and grouping support allows the Scheduler to be shared by multiple resources. Also, the appointments of each resources are displayed under relevant resources. Each resource in the Scheduler is arranged in a column/row wise order, with individual spacing to display all its respective appointments on a single page. It also supports the multiple levels of grouping of resources, thus enabling the categorization of resources in a hierarchical structure and shows it either in expandable groups (Timeline views) or else vertical hierarchy one after the other (Calendar views).
+Resources and grouping support allows the Scheduler to be shared by multiple resources. The appointments for each resource are displayed under the relevant resource. Each resource in the Scheduler is arranged in a column or row order, with spacing to display its appointments on a single page. It also supports multiple levels of grouping, enabling resources to be categorized in a hierarchical structure and shown either in expandable groups (Timeline views) or in a vertical hierarchy (Calendar views).
 
-It is also possible to assign one or more resources to the same appointment, by allowing multiple selection of resource options available in the event editor window.
+It is also possible to assign one or more resources to the same appointment by allowing multiple selection of resource options in the event editor window.
 
-The HTML5 JavaScript Scheduler groups the resources based on different criteria. It includes grouping appointments based on resources, grouping resources based on dates, and timeline scheduling. Also, the data for resources bind with Scheduler either as a local JSON collection or URL, retrieving data from remote data services.
+The Scheduler groups resources based on different criteria. It includes grouping appointments based on resources, grouping resources based on dates, and timeline scheduling. The resource data can be bound to the Scheduler as either a local JSON collection or a URL, retrieving data from remote data services.
 
-To render a ASP.NET Core Scheduler with appointments from multiple resources, you can check on this video:
+To render an ASP.NET Core Scheduler with appointments from multiple resources, you can watch this video:
 
 {% youtube "https://www.youtube.com/watch?v=JqW0boD7Wv4" %}
 
 ## Resource fields
 
-The default options available within the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) collection are as follows,
+The default options available within the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) collection are as follows:
 
 | Field name | Type | Description |
 |-------|---------| --------------- |
@@ -44,14 +44,14 @@ The default options available within the [`resources`](https://help.syncfusion.c
 
 ## Resource data binding
 
-The data for resources can bind with Scheduler either as a local JSON collection or a service URL, retrieving resource data from remote data services.
+The resource data can be bound to the Scheduler either as a local JSON collection or a service URL, retrieving resource data from remote services.
 
 ### Using local JSON data
 
-The following code example depicts how to bind the local JSON data to the `dataSource` of [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) collection.
+The following code example shows how to bind local JSON data to the `dataSource` of the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) collection.
 
-* Give the resource datasource in Index method
-* Add the Scheduler code in View page
+* Add the resource data source in the Index method.
+* Add the Scheduler code in the view page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,10 +80,10 @@ The following code example depicts how to bind the local JSON data to the `dataS
 
 ### Using remote service URL
 
-The following code example depicts how to bind the remote data for resources `dataSource`.
+The following code example shows how to bind remote data to the resources `dataSource`.
 
-* Give the resource datasource in Index method
-* Add the Scheduler code in View page
+* Add the resource data source in the Index method.
+* Add the Scheduler code in the view page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,11 +112,11 @@ The following code example depicts how to bind the remote data for resources `da
 
 ## Scheduler with multiple resources
 
-It is possible to display the Scheduler in default mode without visually showcasing all the resources in it, but allowing to assign the required resources to the appointments through the event editor resource options.
+It is possible to display the Scheduler in default mode without visually showing all the resources, while still allowing the required resources to be assigned through the event editor resource options.
 
-The appointments belonging to the different resources will be displayed altogether on the default Scheduler, which will be differentiated based on the resource color assigned in the `resources` (depicting to which resource that particular appointment belongs) collection.
+Appointments belonging to different resources are displayed together in the default Scheduler and are differentiated based on the resource color assigned in the `resources` collection.
 
-**Example:** To display default Scheduler with multiple resource options in the event editor, ignore the group option and simply define the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) property with all its internal options.
+**Example:** To display the default Scheduler with multiple resource options in the event editor, ignore the group option and define the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) property with all its internal options.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -148,13 +148,13 @@ N> Setting `allowMultiple` to `true` in the above code example allows you to sel
 
 ## Resource grouping
 
-Resource grouping support allows the Scheduler to group the resources in a hierarchical structure both as an expandable groups (Timeline views) and as vertical hierarchy displaying resources one after the other (Resources view).
+Resource grouping support allows the Scheduler to group resources in a hierarchical structure either as expandable groups (Timeline views) or as a vertical hierarchy displaying resources one after the other (Resources view).
 
-Scheduler supports both single and multiple levels of resource grouping that can be customized both in timeline and vertical Scheduler views.
+Scheduler supports both single-level and multi-level resource grouping, and these can be customized in both timeline and vertical Scheduler views.
 
 ### Vertical resource view
 
-The following code example displays how the multiple resources are grouped and its events are portrayed in the default calendar views.
+The following code example shows how multiple resources are grouped and how their events are displayed in the default calendar views.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -184,7 +184,7 @@ The following code example displays how the multiple resources are grouped and i
 
 ### Timeline resource view
 
-The following code example depicts how to group the multiple resources on Timeline Scheduler views and its relevant events are displayed accordingly under those resources.
+The following code example shows how to group multiple resources in Timeline Scheduler views and display the related events under those resources.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -214,9 +214,9 @@ The following code example depicts how to group the multiple resources on Timeli
 
 ### Grouping single-level resources
 
-This kind of grouping allows the Scheduler to display all the resources at a single level simultaneously. The appointments mapped under resources will be displayed with the colors as per the `colorField` defined on the resources collection.
+This grouping allows the Scheduler to display all resources at a single level simultaneously. Appointments mapped to resources are displayed with the colors defined by the `colorField` in the resources collection.
 
-**Example:** To display the Scheduler with single level resource grouping,
+**Example:** To display the Scheduler with single-level resource grouping:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -248,7 +248,7 @@ N> The `name` field defined in the **resources** collection namely `Owners` will
 
 ### Grouping multi-level resources
 
-It is possible to group the resources of Scheduler in multiple levels, by mapping the child resources to each parent resource. In the following example, there are 2 levels of resources, on which the second level resources are defined with `groupIDField` mapping to the first level resource's ID so as to establish the parent-child relationship between them.
+It is possible to group the resources in the Scheduler across multiple levels by mapping child resources to each parent resource. In the following example, there are two resource levels, and the second-level resources use `groupIDField` to map to the first-level resource ID and establish the parent-child relationship.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -278,7 +278,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 
 ### One-to-One grouping
 
-In multi-level grouping, Scheduler usually groups the resources on the child level based on the `groupIDField` that maps with the `idField` field of parent level resources (as [`byGroupID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) set to true by default). There are also option which allows you to group all the child resource(s) against each of its parent resource(s). To enable this kind of grouping, set `false` to the [`byGroupID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) option within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property. In the following code example, there are two levels of resources, on which all the 3 resources at the child level is mapped one to one with each resource on the first level.
+In multi-level grouping, Scheduler usually groups child resources based on the `groupIDField` mapped to the parent resource's `idField` (with [`byGroupID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) set to `true` by default). There is also an option that allows you to group all child resources against each parent resource. To enable this grouping, set the [`byGroupID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) option within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property to `false`. In the following code example, there are two resource levels, and all three child resources are mapped one-to-one with each resource on the first level.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -308,9 +308,9 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 
 ### Grouping resources by date
 
-It groups the number of resources under each date and is applicable only on the calendar views such as Day, Week, Work Week, Month, Agenda and Month-Agenda. To enable such grouping, set [`byDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByDate) option to `true` within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property.
+It groups the resources under each date and is applicable only to calendar views such as Day, Week, Work Week, Month, Agenda, and Month-Agenda. To enable this grouping, set the [`byDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByDate) option within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property to `true`.
 
-**Example:** To display the Scheduler with resources grouped by date,
+**Example:** To display the Scheduler with resources grouped by date:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

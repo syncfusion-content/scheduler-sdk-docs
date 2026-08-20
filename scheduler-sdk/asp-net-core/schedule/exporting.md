@@ -10,7 +10,7 @@ documentation: ug
 
 # Exporting in ASP.NET Core Scheduler
 
-The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
+The Scheduler supports exporting appointments to Excel or ICS files on the client side. It provides different client-side methods to export appointments in Excel or iCal format. Let's look at how to implement exporting in Scheduler.
 
 To get start quickly with ASP.NET Core Scheduler exporting, you can check on this video:
 
@@ -48,7 +48,7 @@ The Scheduler allows you to export all its events into an Excel format file by u
 
 ### Exporting with custom fields
 
-By default, Scheduler exports all the default event fields that are mapped to it through the `<e-schedule-eventsettings>` property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `fields` and pass it as argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
+By default, the Scheduler exports all default event fields mapped through the `<e-schedule-eventsettings>` property. To limit the number of fields in the exported Excel file, you can export only the custom fields from the event data. To export only those custom fields, define the required `fields` value and pass it as an argument to the `exportToExcel` method, as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,7 +77,7 @@ By default, Scheduler exports all the default event fields that are mapped to it
 
 ### Exporting individual occurrences of a recurring series
 
-By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the `includeOccurrences` option as `true` and pass it as argument to the `exportToExcel` method. By default, the `includeOccurrences` option is set to `false`.
+By default, the Scheduler exports recurring events as a single record by exporting only the parent record into the Excel file. If you want to export each individual occurrence of a recurring series appointment as a separate record in an Excel file, set the `includeOccurrences` option to `true` and pass it as an argument to the `exportToExcel` method. By default, the `includeOccurrences` option is set to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,9 +106,9 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 ### Exporting custom event data
 
-By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the `exportToExcel` method as shown in this following example, through the `customData` option.
+By default, the entire event collection bound to the Scheduler is exported as an Excel file. To export only specific Scheduler events or a custom event collection, pass that custom data collection as a parameter to the `exportToExcel` method, as shown in the following example, through the `customData` option.
 
-N> By default, the event data are taken from Scheduler dataSource.
+N> By default, the event data are taken from the Scheduler dataSource.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,7 +137,7 @@ N> By default, the event data are taken from Scheduler dataSource.
 
 ### Export with custom file name
 
-By default, the Scheduler allows you to download the exported Excel file with a name `Schedule.xlsx`. It also provides an option to export the excel file with a custom file name, define the desired `fileName` and passing it as an argument to the `exportToExcel` method.
+By default, the Scheduler downloads the exported Excel file as `Schedule.xlsx`. It also provides an option to export the Excel file with a custom file name by defining the desired `fileName` and passing it as an argument to the `exportToExcel` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 
 ### Excel file formats
 
-By default, the Scheduler exports event data to an excel file in the `.xlsx` format. You can also export the Scheduler data in either of the file type such as `.xlsx` or `csv` formats, by defining the `exportType` option as either `csv` or `xlsx`. By default, the `exportType` is set to `xlsx`.
+By default, the Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export Scheduler data in either `.xlsx` or `csv` format by setting the `exportType` option to `csv` or `xlsx`. By default, the `exportType` is set to `xlsx`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,9 +195,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 ### Custom separator in CSV
 
-The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting `separator` property in `ExportOptions`.
-
-
+The Scheduler exports event data to CSV format with `,` as the separator. You can change the separator by setting the `separator` property in `ExportOptions`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

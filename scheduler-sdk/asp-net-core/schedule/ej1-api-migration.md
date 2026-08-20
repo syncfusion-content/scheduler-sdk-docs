@@ -10,21 +10,21 @@ documentation: ug
 
 # EJ1 API Migration in ASP.NET Core Scheduler
 
-This topic shows the API equivalent of JS2 Scheduler component to be used, while migrating your project that uses JS1 Scheduler.
+This topic shows the API equivalents of the JS2 Scheduler component for migrating a project that uses the JS1 Scheduler.
 
 ## Scheduler
 
-## Properties
+### Properties
 
 | Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
-| To change the display of days count in agenda view | **Property:** *days-in-agenda* <br/> <br/> `<ej-schedule id="schedule" current-view='Agenda'>`<br>`<e-agenda-view-settings days-in-agenda="5"></e-agenda-view-settings>`<br>`</ej-schedule>` | **Property:** *agendaDaysCount* <br/><br/> `<ejs-schedule id="scheduler" currentView="Agenda" agendaDaysCount=5>`<br>`</ejs-schedule>` |
-| Preventing deletion of appointment | **Property:** *allow-delete* <br/> <br/> `<ej-schedule id="schedule" allow-delete="false">`<br>`</ej-schedule>` | Not applicable |
+| To change the number of days shown in agenda view | **Property:** *days-in-agenda* <br/> <br/> `<ej-schedule id="schedule" current-view='Agenda'>`<br>`<e-agenda-view-settings days-in-agenda="5"></e-agenda-view-settings>`<br>`</ej-schedule>` | **Property:** *agendaDaysCount* <br/><br/> `<ejs-schedule id="scheduler" currentView="Agenda" agendaDaysCount=5>`<br>`</ejs-schedule>` |
+| Preventing deletion of appointments | **Property:** *allow-delete* <br/> <br/> `<ej-schedule id="schedule" allow-delete="false">`<br>`</ej-schedule>` | Not applicable |
 | Allows dragging and dropping of appointments | **Property:** *allow-drag-and-drop* <br/> <br/> `<ej-schedule id="schedule" allow-drag-and-drop="false">`<br>`</ej-schedule>` | **Property:** *allowDragAndDrop* <br/><br/> `<ejs-schedule id="scheduler" allowDragAndDrop="false">`<br>`</ejs-schedule>` |
 | Enabling inline editing of appointments | **Property:** *allow-inline* <br/> <br/> `<ej-schedule id="schedule" allow-inline="true">`<br>`</ej-schedule>` | Not applicable |
 | Allow keyboard interactions | **Property:** *allow-keyboard-navigation* <br/> <br/> `<ej-schedule id="schedule" allow-keyboard-navigation="false">`<br>`</ej-schedule>` | **Property:** *allowKeyboardInteraction* <br/><br/> `<ejs-schedule id="scheduler" allowKeyboardInteraction="false">`<br>`</ejs-schedule>` |
 | Enable resizing of appointments | **Property:** *enable-appointment-resize* <br/> <br/> `<ej-schedule id="schedule" enable-appointment-resize="false">`<br>`</ej-schedule>` | **Property:** *allowResizing* <br/><br/> `<ejs-schedule id="scheduler" allowResizing="false">`<br>`</ejs-schedule>` |
-| Blocking time intervals  | **Property:** *e-blockout-settings* <br/> <br/> `<ej-schedule id="schedule" allow-delete="false">`<br>`<e-blockout-settings enable="true" datasource="blockData" id="Id" subject="Subject" start-time="StartTime" end-time="EndTime" is-block-appointment="IsBlockAppointment"></e-blockout-settings>`<br>`</ej-schedule>` | **Property:** *IsBlock* <br/><br/> `public class BlockData` <br>`{`<br>`public int Id { get; set; }`<br>`public string Subject { get; set; }`<br>`public DateTime StartTime { get; set; }`<br>`public DateTime EndTime { get; set; }`<br>`public bool IsBlock { get; set; }`<br>`}`<br>  |
+| Blocking time intervals | **Property:** *e-blockout-settings* <br/> <br/> `<ej-schedule id="schedule" allow-delete="false">`<br>`<e-blockout-settings enable="true" datasource="blockData" id="Id" subject="Subject" start-time="StartTime" end-time="EndTime" is-block-appointment="IsBlockAppointment"></e-blockout-settings>`<br>`</ej-schedule>` | **Property:** *IsBlock* <br/><br/> `public class BlockData` <br>`{`<br>`public int Id { get; set; }`<br>`public string Subject { get; set; }`<br>`public DateTime StartTime { get; set; }`<br>`public DateTime EndTime { get; set; }`<br>`public bool IsBlock { get; set; }`<br>`}`<br>  |
 | Categorizing the appointments | **Property:** *e-categorize-settings* <br/> <br/> `<ej-schedule id="schedule" allow-delete="false">`<br>`<e-categorize-settings enable="true" allow-multiple="true" datasource="CategorizeValue" id="Id" text="Text" color="Color" font-color="FontColor"></e-categorize-settings>`<br>`</ej-schedule>` | Not applicable |
 | Setting cell height | **Property:** *cell-height* <br/> <br/> `<ej-schedule id="schedule" cell-height="30px">`<br>`</ej-schedule>` | Not applicable |
 | Cell template | **Property:** *work-cells-template-id* <br/> <br/> `<ej-schedule id="schedule" all-day-cells-template-id="#alldayTemplate" work-cells-template-id="#workTemplate">`<br>`</ej-schedule>` | **Property:** *cellTemplate* <br/><br/> `<ejs-schedule id="scheduler" cellTemplate="@template">`<br>`</ejs-schedule>` |

@@ -10,7 +10,7 @@ documentation: ug
 
 # Dimensions in ASP.NET Core Scheduler
 
-The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
+Scheduler dimensions refer to both the height and width of the entire layout, and they accept three types of values:
 
 * auto
 * pixel
@@ -18,7 +18,7 @@ The Scheduler dimensions refers to both height and width of the entire layout an
 
 ## Auto Height and Width
 
-When height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When the height and width of the Scheduler are set to `auto`, the component tries to match the size of its parent container. In other words, the parent container that holds the Scheduler sizes itself based on its children. By default, the Scheduler is assigned `auto` values for both height and width.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,7 +47,7 @@ When height and width of the Scheduler are set to `auto`, it will try as hard as
 
 ## Height and Width in pixel
 
-The Scheduler height and width will be rendered exactly as per the given pixel values. It accepts both string and number values.
+The Scheduler height and width are rendered exactly as specified by the pixel values. It accepts both string and number values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,7 +76,7 @@ The Scheduler height and width will be rendered exactly as per the given pixel v
 
 ## Height and Width in percentage
 
-When height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
+When the height and width of the Scheduler are given as percentages, the Scheduler expands to match the parent container.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +103,7 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
 
 ## See Also
 
