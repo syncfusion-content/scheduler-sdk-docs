@@ -532,7 +532,7 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 
 It is possible to drag and drop the unplanned items from any of the external source into the scheduler, by manually saving those dropped item as a new appointment data through [`addEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#addevent) method of Scheduler.
 
-Watch this video to learn about dragging items from an external source into the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler):
+Watch this video to learn about dragging items from an external source into the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler):
 
 {% youtube "https://www.youtube.com/watch?v=MlRNsYaug48" %}
 
@@ -1078,4 +1078,4 @@ If your requirement is to simply refresh the appointments instead of refreshing 
 scheduleObj.refreshEvents();
 ```
 
-> You can refer to our [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.
+> You can refer to our [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to knows how to present and manipulate data.

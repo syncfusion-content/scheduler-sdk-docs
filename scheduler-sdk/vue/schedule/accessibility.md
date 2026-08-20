@@ -54,7 +54,7 @@ The following ARIA attributes are used in the Scheduler.
 | aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
 | aria-disabled | Attribute is set to the appointment element to indicate the disabled state of the Scheduler. |
 
-The [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
+The [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
 
 - **Table has no headers identified:** Some tables rendered by the Scheduler do not have headers explicitly identified, which may trigger warnings in accessibility checkers.
 - **Complex table does not have headers for each cell properly defined with 'header' or 'scope':** The Scheduler's internal table structure may not define headers for every cell using the `header` or `scope` attributes, leading to additional warnings.
@@ -97,7 +97,7 @@ All Schedule component actions can be performed using keyboard input when the `a
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | Navigates to today's date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Opens the editor window. |
 
-> Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for comprehensive feature representations. Additional examples are available in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) page, demonstrating data presentation and manipulation.
+> Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for comprehensive feature representations. Additional examples are available in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) page, demonstrating data presentation and manipulation.
 
 ## Ensuring Accessibility
 

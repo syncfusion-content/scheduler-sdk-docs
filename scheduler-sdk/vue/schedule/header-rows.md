@@ -22,7 +22,7 @@ The following header row types are supported:
 
 > The `Hour` row is not applicable to the Timeline Month view.
 
-Watch this video to learn about customizing header rows in timeline views of the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler).
+Watch this video to learn about customizing header rows in timeline views of the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler).
 
 {% youtube "https://www.youtube.com/watch?v=cqMLo9Yr_0s" %}
 
@@ -99,4 +99,4 @@ The appearance and content of individual header rows can be customized using the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs5" %}
 
-> For a comprehensive overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) demo to see timeline header rows in action.
+> For a comprehensive overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) demo to see timeline header rows in action.
