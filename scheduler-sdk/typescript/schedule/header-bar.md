@@ -318,4 +318,4 @@ Use the [`headerIndentTemplate`](https://ej2.syncfusion.com/documentation/api/sc
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-indent-cs1" %}
 {% endif %}
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to see practical implementations of data presentation and manipulation techniques.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to see practical implementations of data presentation and manipulation techniques.

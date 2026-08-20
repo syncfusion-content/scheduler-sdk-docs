@@ -255,7 +255,7 @@ Set [`enableRtl`](https://ej2.syncfusion.com/documentation/api/schedule#enablert
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs5" %}
 
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see practical examples.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see practical examples.
 
 ## See Also
 

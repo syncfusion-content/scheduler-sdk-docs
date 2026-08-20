@@ -361,7 +361,7 @@ Use the [`beforePrint`](https://ej2.syncfusion.com/react/documentation/api/sched
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
-* [Excel Export Documentation](https://ej2.syncfusion.com/react/documentation/schedule/exporting)
+* [Excel Export Documentation](https://help.syncfusion.com/scheduler-sdk/react/schedule/exporting)
 * [ICalendar Export/Import](https://ej2.syncfusion.com/react/documentation/api/schedule/index-default#exporttoicalendar)
-* [Print Functionality Guide](https://ej2.syncfusion.com/react/documentation/schedule/exporting#how-to-print-the-scheduler-element)
+* [Print Functionality Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/exporting#how-to-print-the-scheduler-element)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

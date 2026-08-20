@@ -572,7 +572,7 @@ Some of the default changes made for compact Scheduler rendering on desktop devi
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
-* [Resource Grouping](https://ej2.syncfusion.com/react/documentation/schedule/resources#resource-grouping) - Grouping overview
+* [Resource Grouping](https://help.syncfusion.com/scheduler-sdk/react/schedule/resources#resource-grouping) - Grouping overview
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule) - Complete API documentation
 * [Resources API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule/resources) - Resource configuration options
 * [Group API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule/group) - Grouping and shared event options
