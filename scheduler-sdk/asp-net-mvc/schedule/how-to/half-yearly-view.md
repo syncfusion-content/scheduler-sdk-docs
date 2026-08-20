@@ -10,13 +10,13 @@ documentation: ug
 
 # Half-Yearly View in ASP.NET MVC Scheduler
 
-The year view of our scheduler displays all the 365 days and their related appointments of a particular year. You can customize the year view by using the following properties.
+By default, the Year view of the Scheduler displays all 365 days of a particular year along with their related appointments. You can customize the Year view to display a specific range of consecutive months by using the following properties.
 
-* [`FirstMonthOfYear`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_FirstMonthOfYear)
-* [`MonthsCount`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MonthsCount)
-* [`MonthHeaderTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MonthHeaderTemplate)
+* [`FirstMonthOfYear`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_FirstMonthOfYear): Sets the first month to be displayed in the Year view. Accepts an integer from `1` (January) to `12` (December).
+* [`MonthsCount`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MonthsCount): Sets the number of consecutive months to render starting from `FirstMonthOfYear`. Accepts an integer from `1` to `12`.
+* [`MonthHeaderTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MonthHeaderTemplate): Customizes the header cell of each month in the Year view.
 
-In the following code example, you can see how to render only the last six months of a year in the scheduler. To start with the month of  June, `FirstMonthYear` is set to 6 and `MonthsCount` is set to 6 to render only 6 months.
+In the following code example, the Year view renders only the last six months of a year. To begin with the month of June, `FirstMonthOfYear` is set to `6` and `MonthsCount` is set to `6`, which renders the months from June through November.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,4 +40,9 @@ In the following code example, you can see how to render only the last six month
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See Also
+
+* [Views in ASP.NET MVC Scheduler](../views)
+* [Year view in ASP.NET MVC Scheduler](../views#year-view)
 

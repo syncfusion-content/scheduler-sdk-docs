@@ -16,7 +16,7 @@ Scheduler makes use of popups and dialog to display the required notifications, 
 
 The editor window usually opens on the Scheduler, when a cell or event is double clicked. When a cell is double clicked, the detailed editor window opens in "Add new" mode, whereas when an event is double clicked, the same is opened in an "Edit" mode.
 
-In mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup, that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication, clicking on it again will open the editor window.
+On mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication; clicking on it again will open the editor window.
 
 N> You can also prevent the editor window from opening, by rendering Scheduler in a [`Readonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Readonly) mode or by doing code customization within the [`PopupOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
 
@@ -199,18 +199,18 @@ It is possible to prevent the display of editor and quick popup windows by passi
 In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`PopupOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event are as follows.
 
 | Type | Description |
-|-----|-----|
+|------|-------------|
 | `Editor` | For Detailed editor window.|
 | `QuickInfo` | For Quick popup which opens on cell click.|
 | `EditEventInfo` | For  Quick popup which opens on event click.|
 | `ViewEventInfo` | For Quick popup which opens on responsive mode.|
-| `EditorContainer` | For more event indicator popup.|
+| `EventContainer` | For more event indicator popup.|
 
 ## Quick popups
 
-The quick info popups are the ones that gets opened, when a cell or appointment is single clicked on the desktop mode. On single clicking a cell, you can simply provide a subject and save it. Also, while single clicking on an event, a popup will be displayed where you can get the overview of the event information. You can also edit or delete those events through the options available in it.
+The quick info popups open when a cell or appointment is single clicked in the desktop mode. On single clicking a cell, you can provide a subject and save it. On single clicking an event, a popup is displayed where you can get an overview of the event information. You can also edit or delete those events through the options available in it.
 
-By default, these popups are displayed over cells and appointments of Scheduler and to disable this action, set `false` to [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property.
+By default, these popups are displayed over cells and appointments of the Scheduler. To disable this action, set `false` to [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -237,11 +237,11 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 
 
 
-N> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
+N> The quick popup that opens while single clicking on the cells is not applicable on mobile devices.
 
 ### How to open Quick Info popup on multiple cell selection
 
-By default the `QuickInfo` popup will open on single click of the cell. To open the quick info popup on multiple cell selection, you need to select the cells and press `enter` key. You can open this popup immediately after multiple cell selection by setting up `true` to [`QuickInfoOnSelectionEnd`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoOnSelectionEnd) property where as its default value is `false`.
+By default the `QuickInfo` popup will open on single click of the cell. To open the quick info popup on multiple cell selection, you need to select the cells and press `enter` key. You can open this popup immediately after multiple cell selection by setting up `true` to [`QuickInfoOnSelectionEnd`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoOnSelectionEnd) property whereas its default value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -412,7 +412,7 @@ met.
 
 ### How to add resource options within editor template
 
-The resource field can be added within editor template with MultiSelect control for allow multiple resources.
+The resource field can be added within editor template with MultiSelect control to allow multiple resources.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -467,11 +467,11 @@ In the following code example, validation has been added to the status field.
 
 ### How to save the customized event editor using template
 
-The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the [`popupClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
+The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the [`PopupClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
 
-N> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+N> You can retrieve the data only through the `save` and `delete` options. Data cannot be retrieved through the `close` and `cancel` options in the editor window.
 
-The following code example shows how to save the customized event editor using a template by the [`popupClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
+The following code example shows how to save the customized event editor using a template by the [`PopupClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -498,7 +498,7 @@ The following code example shows how to save the customized event editor using a
 
 
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`popupClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event are as follows.
+In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`PopupClose`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event are as follows.
 
 | Type | Description |
 |------|-------------|
@@ -514,7 +514,7 @@ In case, if you need to prevent only specific popups on Scheduler, then you can 
 
 ## More events indicator and popup
 
-When the number of appointments count that lies on a particular time range * default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
+When the number of appointments that lies on a particular time range multiplied by the default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains a few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
 
 N> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the [`PopupOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
 
@@ -607,7 +607,7 @@ It is possible to prevent the display of popup window by passing the value `true
 
 ### How to navigate Day view when clicking on more text indicator
 
-The following code example shows you how to customize the [`moreEventsClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) property to navigate to the Day view when clicking on the more text indicator.
+The following code example shows you how to customize the [`MoreEventsClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) event to navigate to the Day view when clicking on the more text indicator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -636,7 +636,7 @@ The following code example shows you how to customize the [`moreEventsClick`](ht
 
 ### How to close the editor window manually
 
-You can close the editor window by using `closeEditor` method. 
+You can close the editor window by using the `closeEditor` public method. This method does not require any arguments and can be invoked on the Scheduler instance.
 
 
 
@@ -653,7 +653,7 @@ You can close the editor window by using `closeEditor` method.
 
 ### How to open the quick info popup manually
 
-You can open the quick info popup in scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, you can pass the cell data as an argument to the method. To open the event quick info popup, you should pass the event data object as an argument to the method.
+You can open the quick info popup in Scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, pass the cell data object as an argument to the method. To open the event quick info popup, pass the event data object as an argument to the method. This method must be invoked on the Scheduler instance.
 
 
 
@@ -670,8 +670,7 @@ You can open the quick info popup in scheduler by using the `openQuickInfoPopup`
 
 ### How to close the quick info popup manually
 
-You can close the quick info popup in scheduler by using the `closeQuickInfoPopup` public method. The following code example demonstrates the how to close quick info popup manually.
-
+You can close the quick info popup in Scheduler by using the `closeQuickInfoPopup` public method. This method does not require any arguments and must be invoked on the Scheduler instance. The following code example demonstrates how to close the quick info popup manually.
 
 
 {% tabs %}
@@ -685,4 +684,4 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.
