@@ -126,8 +126,6 @@ The following example illustrates creating a recurring event using a specific re
 
 To exclude specific instances from a recurrence series, add exception dates to the [`recurrenceException`](https://ej2.syncfusion.com/react/documentation/api/schedule/field#recurrenceexception) field in UTC format.
 
-**Date-Time Format:** `YYYYMMDDTHHmmssZ`
-
 **Format Rules:**
 - Date portion: No hyphens (e.g., February 22, 2026 = `20260222`)
 - Time portion: UTC format with "Z" suffix (e.g., 07:30:00 UTC = `073000Z`)

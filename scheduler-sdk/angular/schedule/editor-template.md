@@ -342,7 +342,7 @@ To prevent only specific popups within the [`popupClose`](https://ej2.syncfusion
 
 Initially, the **e-custom-disable** class is added to the Save button. Once all required fields are filled, the class is removed, enabling the button.
 
-The code sample below enables the Save button in a custom event editor by handling `keyup` and `change` events.
+The code sample below enables the Save button in a custom event editor by handling `key up` and `change` events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
