@@ -173,4 +173,4 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 By default, the [`allowMultiCellSelection`](../api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](../api/schedule#allowmultirowselection) properties of the Schedule are set to `true`. So, the Schedule allows users to select multiple cells and rows. If the user wants to disable multiple cell and row selection, they can set these properties to `false`.
 
-> Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for detailed feature information. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for demonstrations of data binding and interaction.
+> Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for detailed feature information. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) for demonstrations of data binding and interaction.

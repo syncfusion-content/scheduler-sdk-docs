@@ -393,4 +393,4 @@ A custom Google Calendar URL can be assigned to `DataManager`, which is then use
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/data-bind-cs6" %}
 
-> For more information, refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page and explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> For more information, refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page and explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
