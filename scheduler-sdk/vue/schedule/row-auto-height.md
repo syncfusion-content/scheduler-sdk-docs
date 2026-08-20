@@ -86,4 +86,4 @@ By default, when the [`rowAutoHeight`](../api/schedule#rowautoheight) feature is
 
 **Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#ignorewhitespace) property is applicable only when the [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 
-> For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Frequently Asked Questions in Vue Scheduler
 
-This section provides solutions to common issues encountered while working with the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) component.
+This section provides solutions to common issues encountered while working with the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) component.
 
 ## Maximum Call Stack Size Exceeded
 

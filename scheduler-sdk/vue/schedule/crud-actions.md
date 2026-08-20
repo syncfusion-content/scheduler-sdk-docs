@@ -579,7 +579,7 @@ Dragging and dropping a normal event performs an edit action. Dragging and dropp
 
 > By default, dragging a recurring instance edits only the occurrence, not the entire series.
 
-You can watch the following video to learn more about [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler)'s advanced drag and resize options:
+You can watch the following video to learn more about [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler)'s advanced drag and resize options:
 
 {% youtube "https://www.youtube.com/watch?v=vDLrkQLO1uU" %}
 
@@ -611,4 +611,4 @@ Resizing a normal event performs an edit action. Resizing a recurring event to a
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs39" %}
 
-> Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for detailed information. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) example to see how data is presented and manipulated.
+> Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for detailed information. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) example to see how data is presented and manipulated.

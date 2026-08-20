@@ -151,7 +151,7 @@ Each field defined within the template should contain the **e-field** class so t
 
 Because the following example uses Syncfusion<sup style="font-size:70%">&reg;</sup> subcomponents within the editor template, the custom form elements must be configured as the required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](../api/schedule#popupopen) event. This step can be skipped if you want to use standard form elements.
 
-Watch this video for more information on how to customize an editor window using a template in the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler):
+Watch this video for more information on how to customize an editor window using a template in the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler):
 
 {% youtube "https://www.youtube.com/watch?v=0mNyH2X-FV0" %}
 
@@ -440,4 +440,4 @@ You can close the quick info popup in the Scheduler by using the [closeQuickInfo
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/editor-window-cs16" %}
 
-> Refer to the [Vue Scheduler](https://www.syncfusion.com/vue-components/vue-scheduler) feature tour page for a detailed overview. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) sample for live interaction examples.
+> Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for a detailed overview. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) sample for live interaction examples.
