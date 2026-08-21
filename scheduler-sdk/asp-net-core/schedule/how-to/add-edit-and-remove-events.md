@@ -29,8 +29,6 @@ Use the `saveEvent` method to update an existing appointment by passing the modi
 
 Use the `deleteEvent` method to remove an existing appointment by passing the appointment `Id` (or the appointment object) as an argument.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/dynamic-appointments/tagHelper %}
@@ -40,23 +38,9 @@ Use the `deleteEvent` method to remove an existing appointment by passing the ap
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/dynamic-appointments/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/dynamic-appointments/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Recurrence event
 
 The following example shows how to add, update, and delete a recurring appointment dynamically. For recurring appointments, ensure the `RecurrenceRule` and `RecurrenceException` fields are set appropriately when calling `addEvent` or `saveEvent`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -66,16 +50,4 @@ The following example shows how to add, update, and delete a recurring appointme
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/dynamic-recurrence-appointments/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/dynamic-recurrence-appointments/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/dynamic-recurrence-appointments/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

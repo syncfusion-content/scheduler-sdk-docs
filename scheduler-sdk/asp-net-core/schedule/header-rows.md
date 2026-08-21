@@ -22,8 +22,6 @@ N> The `Hour` row is not applicable to the TimelineMonth view.
 
 The following example shows the Scheduler displaying all the available header rows on timeline views.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/all-option/tagHelper %}
@@ -33,26 +31,12 @@ The following example shows the Scheduler displaying all the available header ro
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/all-option/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/all-option/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Timeline Header Rows in ASP.NET Core Scheduler](images/scheduler-header-default.png)
 
 ## Display year and month rows in timeline views
 
 To display the Scheduler timeline with year and month names alone, define the `Year` and `Month` options within the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,26 +47,12 @@ To display the Scheduler timeline with year and month names alone, define the `Y
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/year-month/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/year-month/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Year and Month in ASP.NET Core Scheduler Timeline Views](images/scheduler-header-year-month.png)
 
 ## Display week numbers in timeline views
 
 The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -93,26 +63,12 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/week-number/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/week-number/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Week Numbers in ASP.NET Core Scheduler Timeline Views](images/scheduler-header-week-number.png)
 
 ## Timeline view displaying dates of a complete year
 
 It is possible to display a complete year in a timeline view by setting the [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html#Syncfusion_EJ2_Schedule_ScheduleTimeScale_Interval) value to 12 and defining the **TimelineMonth** view option within the [`e-schedule-views`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Views) tag helper of the Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,18 +78,6 @@ It is possible to display a complete year in a timeline view by setting the [`in
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/complete-year/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/complete-year/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/complete-year/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Dates of Complete Year in ASP.NET Core Scheduler Timeline Views](images/scheduler-header-date-complete-year.png)
@@ -147,8 +91,6 @@ To get started quickly with the header row template option in Scheduler, watch t
 {% youtube
 "youtube:https://www.youtube.com/watch?v=oX2cPQGyIkk"%}
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/header-row-template/tagHelper %}
@@ -157,18 +99,6 @@ To get started quickly with the header row template option in Scheduler, watch t
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/header-row-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/header-row-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/header-rows/header-row-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Customizing the Header Rows using Template in ASP.NET Core Scheduler](images/scheduler-custom-header-template.png)

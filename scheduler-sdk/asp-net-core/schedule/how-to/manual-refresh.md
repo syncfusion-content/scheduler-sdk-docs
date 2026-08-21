@@ -13,8 +13,6 @@ In the Scheduler, you can refresh the layout manually without re-rendering the D
 
 You can also pass specific template names as arguments to refresh only those templates. For example, to refresh only the date header and event container, call `refreshLayout(['dateHeader', 'eventContainer'])`. Refer to the Scheduler API for the full list of supported template names.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/manual-refresh/tagHelper %}
@@ -23,17 +21,4 @@ You can also pass specific template names as arguments to refresh only those tem
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/manual-refresh/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/manual-refresh/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/manual-refresh/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 

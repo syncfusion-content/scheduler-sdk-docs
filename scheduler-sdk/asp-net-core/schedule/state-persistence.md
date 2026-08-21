@@ -16,8 +16,6 @@ N> A Scheduler `id` is essential to enable state persistence.
 
 The following example demonstrates how to enable state persistence in the Scheduler component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/persistence/tagHelper %}
@@ -26,19 +24,6 @@ The following example demonstrates how to enable state persistence in the Schedu
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/persistence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/persistence/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/persistence/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.

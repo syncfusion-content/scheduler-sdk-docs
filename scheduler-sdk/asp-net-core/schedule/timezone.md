@@ -24,8 +24,6 @@ When no specific time zone is set on the Scheduler, appointments are displayed b
 
 The following code example displays an appointment from 9:00 AM to 10:00 AM when you open the Scheduler from any timezone. This is because the start and end time are enclosed with `new Date()`, which works based on the client browser's timezone.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/no-timezone/tagHelper %}
@@ -34,18 +32,6 @@ The following code example displays an appointment from 9:00 AM to 10:00 AM when
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/no-timezone/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/no-timezone/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/no-timezone/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -86,8 +72,6 @@ public void ConfigureServices(IServiceCollection services)
 
 In the following code example, appointments are displayed based on Eastern Time (UTC -05:00).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/schedule-timezone/tagHelper %}
@@ -97,25 +81,11 @@ In the following code example, appointments are displayed based on Eastern Time 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/schedule-timezone/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/schedule-timezone/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Display events on same time everywhere with no time difference
 
 Setting [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) to UTC for the Scheduler will display the appointments at the same time as in the database for all the users in different time zones.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -126,25 +96,11 @@ Setting [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/sametime/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/sametime/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Set specific timezone for events
 
 It is possible to set a different timezone for Scheduler events by setting the [`startTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`endTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) properties within the [`eventSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) option. This allows each appointment to maintain a different timezone and be displayed on the Scheduler with the appropriate time differences.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -155,25 +111,11 @@ It is possible to set a different timezone for Scheduler events by setting the [
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/specific-timezone/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/specific-timezone/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Add or remove timezone names to/from the timezone collection
 
 Instead of displaying all the timezone names within the timezone collection (more than 200 are displayed on the editor window timezone fields by default), you can customize the timezone collection at the application end as shown in the following example.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -183,18 +125,6 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/timezone-collection/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/timezone-collection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timezone/timezone-collection/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

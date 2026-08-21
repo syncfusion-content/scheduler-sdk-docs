@@ -11,8 +11,6 @@ documentation: ug
 
 This demo showcases the quick popups for cells and appointments with the customized templates. You can customize the header, content, and footer sections of the Quick Info popup by providing template content to the `quickInfoTemplates` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/quick-info-template/tagHelper %}
@@ -21,16 +19,4 @@ This demo showcases the quick popups for cells and appointments with the customi
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/quick-info-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/quick-info-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/quick-info-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

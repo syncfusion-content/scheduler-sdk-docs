@@ -23,24 +23,6 @@ Note: the `Hour` row is not applicable for the Timeline month view.
 
 The following example demonstrates the Scheduler displaying all available header rows in a timeline view.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1/index.js %}
@@ -54,29 +36,10 @@ The following example demonstrates the Scheduler displaying all available header
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1" %}
-{% endif %}
 
 ## Display year and month rows in timeline views
 
 To display a timeline with only year and month information, specify the `Year` and `Month` options in the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -91,29 +54,10 @@ To display a timeline with only year and month information, specify the `Year` a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2" %}
-{% endif %}
 
 ## Display week numbers in timeline views
 
 Display week numbers in a dedicated header row by including the `Week` option in the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -128,29 +72,10 @@ Display week numbers in a dedicated header row by including the `Week` option in
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3" %}
-{% endif %}
 
 ## Timeline view displaying dates of a complete year
 
 Show a complete year in a Timeline view by setting the [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#interval) value to 12 and adding the `TimelineMonth` view to the Scheduler's `views` property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -165,29 +90,10 @@ Show a complete year in a Timeline view by setting the [`interval`](https://ej2.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4" %}
-{% endif %}
 
 ## Customizing the header rows using template
 
 Customize header row text, formatted content, or images using the [`template`](https://ej2.syncfusion.com/documentation/api/schedule/headerRows#template) option of the [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule#headerrows) property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -202,6 +108,5 @@ Customize header row text, formatted content, or images using the [`template`](h
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5" %}
-{% endif %}
 
 > Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

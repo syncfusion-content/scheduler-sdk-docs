@@ -16,8 +16,6 @@ The cells of the Scheduler can be easily customized either using the cell templa
 
 The height and width of the Scheduler cells can be customized to increase or reduce their size through the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied to cells.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-dimensions/tagHelper %}
@@ -27,26 +25,12 @@ The height and width of the Scheduler cells can be customized to increase or red
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-dimensions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-dimensions/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Setting Cell Dimensions in ASP.NET Core Scheduler](images/scheduler-custom-cell-dimension.png)
 
 ## Check for cell availability
 
 You can check whether the given time range slots are available for event creation or already occupied by other events using the `isSlotAvailable` method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -56,18 +40,6 @@ You can check whether the given time range slots are available for event creatio
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-availability/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-availability/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-availability/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -79,8 +51,6 @@ It is possible to customize the appearance of the cells using both template opti
 
 The [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellTemplate) option accepts the template string and is used to customize the cell background with specific images or appropriate text on the given date values.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-customization/tagHelper %}
@@ -90,26 +60,12 @@ The [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-customization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-customization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customizing Cells with Template in ASP.NET Core Scheduler](images/scheduler-custom-cell-template.png)
 
 ### Using renderCell event
 
 An alternative to [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellTemplate) is the [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event, which can also be used to customize the cells with appropriate images or formatted text values.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -119,18 +75,6 @@ An alternative to [`cellTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/element-customization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/element-customization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/element-customization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Customizing Cells with Rendercell in ASP.NET Core Scheduler](images/scheduler-custom-cell-rendercell.png)
@@ -155,22 +99,11 @@ You can customize cells such as work cells, month cells, all-day cells, header c
 
 The month header of each date cell in the month view can be customized using the [`cellHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellHeaderTemplate) option, which accepts a string or HTMLElement. The corresponding date can be accessed with the template.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-header-customization/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/cell-header-customization/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -180,8 +113,6 @@ The month header of each date cell in the month view can be customized using the
 
 Providing the [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) and [`maxDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/date-customization/tagHelper %}
@@ -190,18 +121,6 @@ Providing the [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/date-customization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/date-customization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/date-customization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -238,8 +157,6 @@ And the background color for weekend cells in the Month view can be customized t
 
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/weekend-cell-color/tagHelper %}
@@ -248,18 +165,6 @@ And the background color for weekend cells in the Month view can be customized t
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/weekend-cell-color/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/weekend-cell-color/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/customization/weekend-cell-color/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## How to disable multiple cell and row selection in Schedule
 

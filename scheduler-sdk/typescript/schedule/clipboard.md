@@ -30,9 +30,7 @@ Use these keyboard shortcuts to efficiently manage appointments:
 
 To perform these operations, select an appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. Then, select the desired destination time slot and press **Ctrl+V** to paste the appointment.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %} 
+{% tabs %} 
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1/index.ts %}
 {% endhighlight %}
@@ -45,23 +43,6 @@ To perform these operations, select an appointment and press **Ctrl+C** to copy 
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs1" %}
-{% endif %}
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
@@ -79,9 +60,7 @@ Use these public methods to programmatically control appointment operations in t
 
 By using these methods, you can programmatically cut, copy, and paste appointments in the scheduler, providing more control over the appointment management process.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %} 
+{% tabs %} 
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2/index.ts %}
 {% endhighlight %}
@@ -94,23 +73,6 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs2" %}
-{% endif %}
 
 ## Modifying content before pasting
 
@@ -127,9 +89,7 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 
 > Note: Ensure that the field mapping matches the fields in the Scheduler.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %} 
+{% tabs %} 
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3/index.ts %}
 {% endhighlight %}
@@ -142,23 +102,5 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/clipboard-cs3" %}
-{% endif %}
-
 
 > You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to know how to present and manipulate data.

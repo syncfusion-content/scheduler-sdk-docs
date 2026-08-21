@@ -14,9 +14,7 @@ In responsive mode, time slots may not always display the full time label if the
 
 To ensure that complete time labels are displayed in responsive mode, you can use the [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#majorslottemplate) property. This property allows customization of the major time slots to render proper and fully visible time labels in the Scheduler.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1/index.ts %}
 {% endhighlight %}
@@ -26,17 +24,3 @@ To ensure that complete time labels are displayed in responsive mode, you can us
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1" %}
-{% endif %}

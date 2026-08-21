@@ -14,9 +14,7 @@ By default, the Scheduler component does not provide built-in zoom in or zoom ou
 
 Refer to the following code example for implementation.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1/index.ts %}
 {% endhighlight %}
@@ -26,17 +24,3 @@ Refer to the following code example for implementation.
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/zoom-in-out-cs1" %}
-{% endif %}

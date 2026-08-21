@@ -14,9 +14,7 @@ When the all-day row contains a large number of appointments, viewing all of the
 
 > Note: This property is not applicable for a Scheduler with height `auto`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/event-cs39/index.ts %}
 {% endhighlight %}
@@ -29,17 +27,3 @@ When the all-day row contains a large number of appointments, viewing all of the
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs39" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/event-cs39/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/event-cs39/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs39" %}
-{% endif %}
