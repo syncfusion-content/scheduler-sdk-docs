@@ -10,19 +10,19 @@ documentation: ug
 
 # Editor Window Customization in ASP.NET Core Scheduler
 
-Scheduler makes use of popups and dialog to display the required notifications, as well as includes an editor window with event fields for making the appointment creation and editing process easier. You can also easily customize the editor window and the fields present in it, and can also apply validations on those fields.
+Scheduler uses popups and dialogs to display the required notifications, and it includes an editor window with event fields that make appointment creation and editing easier. You can also customize the editor window and its fields, and apply validations to those fields.
 
 ## Event editor
 
-The editor window usually opens on the Scheduler, when a cell or event is double clicked. When a cell is double clicked, the detailed editor window opens in "Add new" mode, whereas when an event is double clicked, the same is opened in an "Edit" mode.
+The editor window usually opens in the Scheduler when a cell or event is double-clicked. When a cell is double-clicked, the detailed editor window opens in "Add new" mode. When an event is double-clicked, it opens in "Edit" mode.
 
-In mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup, that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication, clicking on it again will open the editor window.
+On mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon in the popup that appears when you single-tap an event. You can also open it in add mode by single-tapping a cell, which displays a `+` indicator; clicking it again opens the editor window.
 
-N> You can also prevent the editor window from opening, by rendering Scheduler in a [`readonly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Readonly) mode or by doing code customization within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
+N> You can also prevent the editor window from opening by rendering the Scheduler in a [`readonly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Readonly) mode or by customizing the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
 
 ### How to change the editor window header title and text of footer buttons
 
-You can change the header title and the text of buttons displayed at the footer of the editor window by changing the appropriate localized word collection used in the Scheduler.
+You can change the editor window header title and the footer button text by updating the appropriate localized word collection used in the Scheduler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,7 +52,7 @@ You can change the header title and the text of buttons displayed at the footer 
 
 ### How to change the label text of default editor fields
 
-To change the default labels such as Subject, Location and other field names in the editor window, make use of the `title` property available within the field option of [`e-schedule-eventsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings).
+To change the default labels such as Subject, Location, and other field names in the editor window, use the `title` property available within the field option of [`e-schedule-eventsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -82,7 +82,7 @@ To change the default labels such as Subject, Location and other field names in 
 
 ### Field validation
 
-It is possible to validate the required fields of the editor window from client-side before submitting it, by adding appropriate validation rules to each field. The appointment fields have been extended to accept both `string` and `object` type values. To perform validations, it is necessary to specify object values for the event fields.
+You can validate the required fields of the editor window on the client side before submitting it by adding the appropriate validation rules to each field. The appointment fields have been extended to accept both `string` and `object` type values. To perform validations, you must specify object values for the event fields.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -114,7 +114,7 @@ N> Applicable validation rules can be referred from [form validation](http://ej2
 
 ### Add additional fields to the default editor
 
-The additional fields can be added to the default event editor by making use of the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  event which gets triggered before the event editor opens on the Scheduler. The [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  is a client-side event that triggers before any of the generic popups opens on the Scheduler. The additional field (any of the form elements) should be added with a common class name `e-field`, so as to handle and process those additional data along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor and its value is processed accordingly.
+You can add additional fields to the default event editor by using the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event, which is triggered before the event editor opens in the Scheduler. The [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event is a client-side event that triggers before any of the generic popups open in the Scheduler. Any additional form elements should use the common `e-field` class name so they can be processed along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor, and its value is processed accordingly.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -144,7 +144,7 @@ The additional fields can be added to the default event editor by making use of 
 
 ### Customizing the default time duration in editor window
 
-In default event editor window, start and end time duration are processed based on the `interval` value set within the [`timeScale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeScale) property. By default, `interval` value is set to 30, and therefore the start/end time duration within the event editor will be in a 30 minutes time difference. You can change this duration value by changing the `duration` option within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  event as shown in the following code example.
+In the default event editor window, the start and end time duration are processed based on the `interval` value set within the [`timeScale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeScale) property. By default, the `interval` value is set to 30, so the start and end time duration within the event editor will be 30 minutes apart. You can change this duration value by updating the `duration` option within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event as shown in the following code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -174,7 +174,7 @@ In default event editor window, start and end time duration are processed based 
 
 ### How to prevent the display of editor and quick popups
 
-It is possible to prevent the display of editor and quick popup windows by passing the value `true` to `cancel` option within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  event.
+You can prevent the display of the editor and quick popup windows by setting the `cancel` option to `true` within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -201,21 +201,21 @@ It is possible to prevent the display of editor and quick popup windows by passi
 
 
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  event are as follows.
+If you need to prevent only specific popups in the Scheduler, you can check the popup type. The popup types that can be checked within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event are as follows.
 
 | Type | Description |
 |------|-------------|
-| `Editor` | For Detailed editor window.|
-| `QuickInfo` | For Quick popup which opens on cell click.|
-| `EditEventInfo` |For  Quick popup which opens on event click.|
-| `ViewEventInfo` | For Quick popup which opens on responsive mode.|
-| `EditorContainer` | For more event indicator popup.|
+| `Editor` | For the detailed editor window.|
+| `QuickInfo` | For the quick popup that opens on cell click.|
+| `EditEventInfo` | For the quick popup that opens on event click.|
+| `ViewEventInfo` | For the quick popup that opens in responsive mode.|
+| `EditorContainer` | For the more events indicator popup.|
 
 ## Quick popups
 
-The quick info popups are the ones that gets opened, when a cell or appointment is single clicked on the desktop mode. On single clicking a cell, you can simply provide a subject and save it. Also, while single clicking on an event, a popup will be displayed where you can get the overview of the event information. You can also edit or delete those events through the options available in it.
+The quick info popups open when a cell or appointment is single-clicked in desktop mode. When you single-click a cell, you can provide a subject and save it. When you single-click an event, a popup appears with an overview of the event information. You can also edit or delete those events using the available options.
 
-By default, these popups are displayed over cells and appointments of Scheduler and to disable this action, set `false` to [`showQuickInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property.
+By default, these popups are displayed over cells and appointments in the Scheduler. To disable this behavior, set the [`showQuickInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -246,7 +246,7 @@ N> The quick popup that opens while single clicking on the cells are not applica
 
 ### How to open Quick Info popup on multiple cell selection
 
-By default the `QuickInfo` popup will open on single click of the cell. To open the quick info popup on multiple cell selection, you need to select the cells and press `enter` key. You can open this popup immediately after multiple cell selection by setting up `true` to [`quickInfoOnSelectionEnd`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoOnSelectionEnd) property where as its default value is `false`.
+By default, the `QuickInfo` popup opens when a cell is single-clicked. To open the quick info popup for multiple cell selection, select the cells and press the `Enter` key. You can open this popup immediately after multiple cell selection by setting [`quickInfoOnSelectionEnd`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoOnSelectionEnd) to `true`; its default value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -275,7 +275,7 @@ By default the `QuickInfo` popup will open on single click of the cell. To open 
 
 ### How to change the watermark text of quick popup subject
 
-By default, `Add Title` text is displayed on the subject field of quick popup. To change the default watermark text, change the value of the appropriate localized word collection used in the Scheduler.
+By default, the `Add Title` text is displayed in the subject field of the quick popup. To change the default watermark text, update the appropriate localized word collection used in the Scheduler.
 
 ```csharp
 var L10n = ej.base.L10n;
@@ -292,7 +292,7 @@ L10n.load({
 
 ### Customizing quick popups
 
-The look and feel of the built-in quick popup window, which opens when single clicked on the cells or appointments can be customized by making use of the [`quickInfoTemplates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoTemplates) property of the Scheduler. There are 3 sub-options available to customize them easily,
+The look and feel of the built-in quick popup window, which opens when cells or appointments are single-clicked, can be customized by using the Scheduler [`quickInfoTemplates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoTemplates) property. There are three sub-options available to customize it easily:
 
 * header - Accepts the template design that customizes the header part of the quick popup.
 * content - Accepts the template design that customizes the content part of the quick popup.
@@ -324,11 +324,11 @@ The look and feel of the built-in quick popup window, which opens when single cl
 
 ![Display Customizing Quick Popups in ASP.NET Core Scheduler](images/schedule-custom-quick-popup.png)
 
-N> The quick popup in adaptive mode can also be customized using [`quickInfoTemplates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoTemplates) using `e-device` class.
+N> The quick popup in adaptive mode can also be customized using [`quickInfoTemplates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoTemplates) with the `e-device` class.
 
 ### Customizing timezone collection in the editor window
 
-By default, the timezone collections in the editor window have been loaded with built-in timezone collections. Now we can be able to customize the timezone collections using the [`timezoneDataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimezoneDataSource) property with the collection of `TimezoneFields` data.
+By default, the editor window includes built-in timezone collections. You can customize these collections by using the [`timezoneDataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimezoneDataSource) property with a collection of `TimezoneFields` data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -358,13 +358,13 @@ By default, the timezone collections in the editor window have been loaded with 
 
 ## Customizing event editor using template
 
-The event editor window can be customized by making use of the [`editorTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorTemplate) option. Here, the custom window design is built with the required fields using the script template and its type should be of **text/x-template**.
+The event editor window can be customized by using the [`editorTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorTemplate) option. Here, the custom window design is built with the required fields using a script template, and its type should be **text/x-template**.
 
-Each field defined within template should contain the **e-field** class, so as to allow the processing of those field values internally. The ID of this customized script template section is assigned to the [`editorTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorTemplate) option, so that these customized fields will be replaced onto the default editor window.
+Each field defined within the template should contain the **e-field** class so that those field values can be processed internally. The ID of the customized script template section is assigned to the [`editorTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorTemplate) option, so these customized fields replace the default editor window.
 
->Note: **e-field** class only applicable for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox** and **TextBox** components. Since we have processed the field values internally for the above mentioned components.
+>Note: The **e-field** class is applicable only for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox**, and **TextBox** components. The field values are processed internally for the components mentioned above.
 
-As we are using our Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within our editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  event. This particular step can be skipped, if the user needs to simply use the usual form elements.
+As we use Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within the template in the following example, the custom form elements must be configured as required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event. This step can be skipped if you want to use standard form elements.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -394,10 +394,9 @@ As we are using our Syncfusion<sup style="font-size:70%">&reg;</sup> sub-compone
 
 ### How to customize header and footer using template
 
-The editor window's header and footer can be enhanced with custom designs using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate) and [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) options. To achieve this, create a script template that includes the necessary fields. Ensure that the template type is set to **text/x-template**.
+The editor window's header and footer can be enhanced with custom designs using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate) and [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) options. To achieve this, create a script template that includes the required fields and set the template type to **text/x-template**.
 
-In this demo, we tailor the editor's header according to the appointment's subject field using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate). Furthermore, we make use of the [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) to handle the functionality of validating specific fields before proceeding with the save action or canceling it if validation requirements are not 
-met.
+In this demo, we tailor the editor header according to the appointment's subject field using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate). We also use the [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) to validate specific fields before saving or canceling the appointment if validation requirements are not met.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -424,9 +423,10 @@ met.
 
 
 ![Display Customize header and footer using template in ASP.NET Core Scheduler](images/schedule-editor-custom-header-footer.png)
+
 ### How to add resource options within editor template
 
-The resource field can be added within editor template with MultiSelect control for allow multiple resources.
+The resource field can be added within the editor template by using the MultiSelect control to allow multiple resources.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -456,7 +456,7 @@ The resource field can be added within editor template with MultiSelect control 
 
 ### How to add recurrence options within editor template
 
-The following code example shows how to add recurrence options within the editor template.
+The following code example shows how to add recurrence options to the editor template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -486,7 +486,7 @@ The following code example shows how to add recurrence options within the editor
 
 ### Apply validations on editor template fields
 
-In the following code example, validation has been added to the status field.
+In the following code example, validation is added to the status field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -516,11 +516,11 @@ In the following code example, validation has been added to the status field.
 
 ### How to save the customized event editor using template
 
-The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
+The **e-field** class is not added to each field defined within the template, so you should set those field values externally by using the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
 
-N> You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
+N> You can retrieve the data only on the `save` and `delete` options. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
 
-The following code example shows how to save the customized event editor using a template by the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
+The following code example shows how to save the customized event editor using a template with the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -547,29 +547,29 @@ The following code example shows how to save the customized event editor using a
 
 
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event are as follows.
+If you need to prevent only specific popups in the Scheduler, you can check the popup type. The popup types that can be checked within the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event are as follows.
 
 | Type | Description |
 |------|-------------|
-| `Editor` | For Detailed editor window.|
-| `QuickInfo` | For Quick popup which opens on cell click.|
-| `EditEventInfo` |For  Quick popup which opens on event click.|
-| `ViewEventInfo` | For Quick popup which opens on responsive mode.|
-| `EventContainer` | For more event indicator popup.|
-| `RecurrenceAlert` | For edit recurrence event alert popup.|
-| `DeleteAlert` | For delete confirmation popup.|
-| `ValidationAlert` | For validation alert popup.|
-| `RecurrenceValidationAlert` | For recurrence validation alert popup.|
+| `Editor` | For the detailed editor window.|
+| `QuickInfo` | For the quick popup that opens on cell click.|
+| `EditEventInfo` | For the quick popup that opens on event click.|
+| `ViewEventInfo` | For the quick popup that opens in responsive mode.|
+| `EventContainer` | For the more events indicator popup.|
+| `RecurrenceAlert` | For the recurrence edit alert popup.|
+| `DeleteAlert` | For the delete confirmation popup.|
+| `ValidationAlert` | For the validation alert popup.|
+| `RecurrenceValidationAlert` | For the recurrence validation alert popup.|
 
 ## More events indicator and popup
 
-When the number of appointments count that lies on a particular time range * default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
+When the number of appointments in a particular time range exceeds the default appointment height of a cell in month view and other timeline views, a `+ more` text indicator appears at the bottom of those cells. This indicator shows that the cell contains additional appointments, and clicking it displays a popup with all appointments present on that day.
 
-N> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen)  event.
+N> To disable the popup that shows all hidden appointments when clicking the text indicator, you can customize the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
 
-The same indicator is displayed on all-day row in calendar views such as day, week and work week views alone, when the number of appointment count present in a cell exceeds three. Clicking on the text indicator here will not open a popup, but will allow the expand/collapse option for viewing the remaining appointments present in the all-day row.
+The same indicator is displayed in the all-day row in calendar views such as day, week, and work week views when the number of appointments in a cell exceeds three. Clicking the text indicator here will not open a popup, but will allow the expand and collapse option for viewing the remaining appointments in the all-day row.
 
-The following code example shows how to disable the display of such popups while clicking on the more text indicator.
+The following code example shows how to disable popups when clicking the more text indicator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -598,7 +598,7 @@ The following code example shows how to disable the display of such popups while
 
 ### How to customize the popup that opens on more indicator
 
-The following code example shows you how to customize the default more indicator popup in which number of events rendered count on the day has been shown in the header.
+The following code example shows how to customize the default more indicator popup so the number of events rendered on the day is shown in the header.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -628,7 +628,7 @@ The following code example shows you how to customize the default more indicator
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
-It is possible to prevent the display of popup window by passing the value `true` to `cancel` option within the [`MoreEventsClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) event.
+You can prevent the popup window from opening by setting the `cancel` option to `true` within the [`MoreEventsClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -657,7 +657,7 @@ It is possible to prevent the display of popup window by passing the value `true
 
 ### How to navigate Day view when clicking on more text indicator
 
-The following code example shows you how to customize the [`moreEventsClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) property to navigate to the Day view when clicking on the more text indicator.
+The following code example shows how to customize the [`moreEventsClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) event to navigate to the Day view when clicking the more text indicator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -686,7 +686,7 @@ The following code example shows you how to customize the [`moreEventsClick`](ht
 
 ### How to close the editor window manually
 
-You can close the editor window by using `closeEditor` method.
+You can close the editor window by using the `closeEditor` method.
 
 
 
@@ -703,7 +703,7 @@ You can close the editor window by using `closeEditor` method.
 
 ### How to open the quick info popup manually
 
-You can open the quick info popup in scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, you can pass the cell data as an argument to the method. To open the event quick info popup, you should pass the event data object as an argument to the method.
+You can open the quick info popup in the Scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, pass the cell data as an argument to the method. To open the event quick info popup, pass the event data object as an argument to the method.
 
 
 
@@ -720,7 +720,7 @@ You can open the quick info popup in scheduler by using the `openQuickInfoPopup`
 
 ### How to close the quick info popup manually
 
-You can close the quick info popup in scheduler by using the `closeQuickInfoPopup` public method. The following code example demonstrates the how to close quick info popup manually.
+You can close the quick info popup in the Scheduler by using the `closeQuickInfoPopup` public method. The following code example demonstrates how to close the quick info popup manually.
 
 
 
@@ -735,4 +735,4 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

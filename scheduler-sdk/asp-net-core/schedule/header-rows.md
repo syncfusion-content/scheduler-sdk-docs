@@ -10,7 +10,7 @@ documentation: ug
 
 # Timeline Header Rows in ASP.NET Core Scheduler
 
-The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property. This property is applicable only on the timeline views. The possible rows which can be added using `headerRows` property are as follows.
+The Timeline views can have additional header rows other than the default date and time header rows. It is possible to show individual header rows for displaying year, month, and week separately by using the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property. This property is applicable only to timeline views. The possible rows that can be added by using the `headerRows` property are as follows.
 
 * `Year`
 * `Month`
@@ -18,7 +18,7 @@ The Timeline views can have additional header rows other than its default date a
 * `Date`
 * `Hour`
 
-N> The `Hour` row is not applicable for Timeline month view.
+N> The `Hour` row is not applicable to the TimelineMonth view.
 
 The following example shows the Scheduler displaying all the available header rows on timeline views.
 
@@ -50,7 +50,7 @@ The following example shows the Scheduler displaying all the available header ro
 
 ## Display year and month rows in timeline views
 
-To display the timeline Scheduler simply with year and month names alone, define the option `Year` and `Month` within the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
+To display the Scheduler timeline with year and month names alone, define the `Year` and `Month` options within the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,7 +110,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 
 ## Timeline view displaying dates of a complete year
 
-It is possible to display a complete year in a timeline view by setting [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html#Syncfusion_EJ2_Schedule_ScheduleTimeScale_Interval) value as 12 and defining **TimelineMonth** view option within the [`e-schedule-views`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Views) tag helper of Scheduler.
+It is possible to display a complete year in a timeline view by setting the [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html#Syncfusion_EJ2_Schedule_ScheduleTimeScale_Interval) value to 12 and defining the **TimelineMonth** view option within the [`e-schedule-views`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Views) tag helper of the Scheduler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -140,9 +140,9 @@ It is possible to display a complete year in a timeline view by setting [`interv
 
 ## Customizing the header rows using template
 
-You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in `template` option available within the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
+You can customize the text of the header rows and display images or formatted text in each individual header row by using the built-in `template` option within the [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
 
-To get start quickly about header row template option available in our Scheduler, you can check on this video:
+To get started quickly with the header row template option in Scheduler, watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=oX2cPQGyIkk"%}
@@ -173,4 +173,4 @@ To get start quickly about header row template option available in our Scheduler
 
 ![Display Customizing the Header Rows using Template in ASP.NET Core Scheduler](images/scheduler-custom-header-template.png)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

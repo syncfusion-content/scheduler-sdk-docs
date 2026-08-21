@@ -441,7 +441,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### Restricting edit action based on specific criteria
 
-You can also dynamically prevent the editing of appointments on Scheduler. For example, say if you want to decline the updating of appointments on non-working hours, you can check for its appropriate condition within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event.
+You can also dynamically prevent appointment editing in the Scheduler. For example, if you want to prevent updating appointments during non-working hours, you can check the appropriate condition in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -470,24 +470,24 @@ You can also dynamically prevent the editing of appointments on Scheduler. For e
 
 ## Delete
 
-The appointments can be deleted in either of the following ways,
+Appointments can be deleted in either of the following ways:
 
-* Selecting an appointment and clicking the delete icon from the quick popup that opens.
-* Selecting an appointment and pressing `Delete` key.
-* Selecting multiple appointments by tap holding an event and then continuously single clicking on other consecutive events and then clicking the `Delete` key.
-* Double clicking on an event which opens the default event editor pre-filled with event details, and then choosing `Delete` button in it.
+* Select an appointment and click the delete icon in the quick popup that appears.
+* Select an appointment and press the `Delete` key.
+* Select multiple appointments by tap-holding an event, then single-clicking consecutive events, and then pressing the `Delete` key.
+* Double-click an event to open the default event editor prefilled with event details, and then choose the `Delete` button.
 
-While performing all these above mentioned actions, a pop-up with a delete confirmation message will be displayed prompting either to proceed with deleting an appointment.
+While performing any of these actions, a delete confirmation popup appears before the appointment is deleted.
 
 ### Deletion using editor window
 
-When you double click an event, the default editor window will be opened which includes a `Delete` button at the bottom left position to allow you to delete that particular appointment. When deleting an appointment through this editor window, the delete alert confirmation will not be asked and the event will be deleted immediately.
+When you double-click an event, the default editor window opens and includes a `Delete` button at the bottom left to allow you to delete that appointment. When deleting an appointment through this editor window, the delete confirmation does not appear, and the event is deleted immediately.
 
 ### Deletion using deleteEvent method
 
-The appointments can be removed manually using the `deleteEvent` method. The following code examples shows how to edit the normal and recurring events.
+Appointments can be removed manually using the `deleteEvent` method. The following code examples show how to delete normal and recurring events.
 
-**Normal event** - You can delete the normal appointments of Scheduler by simply passing its `id` value or the entire event object collection to the `deleteEvent` method.
+**Normal event** - You can delete a normal Scheduler appointment by passing its `id` value or the entire event object collection to the `deleteEvent` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -514,7 +514,7 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 
 
 
-**Recurring Event** - The recurring events can be removed as an entire series or simply removing single occurrence by using the deleteEvent method which takes in either the `DeleteSeries` or `DeleteOccurrence` parameters. The following code example shows how to delete entire series.
+**Recurring Event** - Recurring events can be removed as an entire series or by removing a single occurrence using the `deleteEvent` method, which takes either the `DeleteSeries` or `DeleteOccurrence` parameter. The following code example shows how to delete an entire series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -543,7 +543,7 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 
 ### Removing events from database at server-side
 
-While deleting the event from the Scheduler, `remove` action takes place and the following code example describes how to delete event from database at server side.
+When an event is deleted from the Scheduler, the `remove` action occurs. The following code example shows how to delete events from the database on the server side.
 
 ```sh
 if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
@@ -570,19 +570,19 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### How to delete a single occurrence or entire series from Scheduler and update it in database at server-side
 
-The recurring events can be deleted in either of the following two ways.
+Recurring events can be deleted in either of the following two ways:
 
 * Single occurrence
 * Entire series
 
-**Single occurrence** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or entire series. From this, if you choose to select **DELETE EVENT** option, a single occurrence of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
+**Single occurrence** - When you try to delete a recurring event, a popup prompts you to choose whether to delete the single event or the entire series. If you select the **DELETE EVENT** option, only a single occurrence of the recurring appointment is removed. The following process takes place while removing a single occurrence:
 
-* The selected occurrence will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field, to hold the deleted occurrence appointment's date collection.
+* The selected occurrence is deleted from the Scheduler user interface.
+* In code, the parent recurring event object is updated with the appropriate [`recurrenceException`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field to hold the deleted occurrence date collection.
 
 Therefore, when a single occurrence is deleted from a recurring event, the `update` action takes place on the parent recurring event as shown in the following code example.
 
-N> In case, if you delete an existing edited occurrence of a recurring event, only those edited occurrence which present in the database as an individual event object will get removed. In this case, `delete` action takes place instead of `update` action and the parent recurring event object remains same with no changes.
+N> If you delete an existing edited occurrence of a recurring event, only the edited occurrence that exists in the database as an individual event object is removed. In this case, the `delete` action takes place instead of the `update` action, and the parent recurring event object remains unchanged.
 
 ```sh
 if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
@@ -608,7 +608,7 @@ if (param.action == "update" || (param.action == "batch" && param.changed != nul
 }
 ```
 
-**Entire series** - When you select an option **DELETE SERIES** from the popup, the whole recurring series will be deleted. When this option is chosen explicitly, if a parent event holds any edited occurrences - then all its child occurrences which are maintained as separate event objects will also be removed from the dataSource. This action of deleting entire series leads to `remove` action and removes one or more event objects at the same time.
+**Entire series** - When you select the **DELETE SERIES** option from the popup, the entire recurring series is deleted. If the parent event contains any edited occurrences, all child occurrences that are maintained as separate event objects are also removed from the data source. Deleting the entire series triggers the `remove` action and removes one or more event objects at the same time.
 
 ```sh
 if (param.action == "remove" || (param.action == "batch" && param.deleted != null)) // this block of code will execute while removing the appointment
@@ -633,14 +633,14 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### How to delete only the current and following events of a series
 
-The recurring events can be deleted from current and following events only when enable `editFollowingEvents` property.
+Recurring events can be deleted from the current event and following events only when the `editFollowingEvents` property is enabled.
 
-**Delete Following Events** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or Following Events or entire series. From this, if you choose to select **FOLLOWING EVENT** option, a current and following events of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
+**Delete Following Events** - When you attempt to delete a recurring event, a popup prompts you to choose whether to delete the single event, the following events, or the entire series. If you choose the **FOLLOWING EVENT** option, only the current event and the following events in the series are removed. The following process takes place while removing the event:
 
-* The selected occurrence and the following events in same series will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field, to update the end date of the recurring events.
+* The selected occurrence and the following events in the same series are deleted from the Scheduler user interface.
+* In code, the parent recurring event object is updated with the appropriate [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field to update the end date of the recurring events.
 
-Therefore, when following events are deleted from a recurring event, the `remove` and `update` action takes place on the immediate parent recurring event as shown in the following code example.
+Therefore, when following events are deleted from a recurring event, the `remove` and `update` actions take place on the immediate parent recurring event as shown in the following code example.
 
 ```sh
 if (param.action == "update" || (param.action == "batch" && param.changed != null)) // this block of code will execute while updating the appointment
@@ -687,14 +687,14 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ## Drag and drop
 
-When you drag and drop a normal event on the Scheduler, the event editing action takes place. When a recurring event is drag and dropped on a desired time range, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
+When you drag and drop a normal event on the Scheduler, the event editing action takes place. When you drag and drop a recurring event to a new time range, the batch action explained in the `Editing a single occurrence` process takes place, allowing both the `Add` and `Edit` actions to occur together.
 
-N> By default, when you drag a recurring instance, only the occurrence of the event gets edited and not a whole series.
+N> By default, when you drag a recurring instance, only that occurrence is edited, not the entire series.
 
 ## Resize
 
-When you resize a normal event on the Scheduler, the event editing action takes place. When a recurring event is resized to a new desired time, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
+When you resize a normal event on the Scheduler, the event editing action takes place. When you resize a recurring event to a new time, the batch action explained in the `Editing a single occurrence` process takes place, allowing both the `Add` and `Edit` actions to occur together.
 
-N> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
+N> By default, when you resize a recurring instance, only that occurrence is edited, not the entire series.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

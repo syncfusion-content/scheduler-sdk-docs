@@ -9,7 +9,7 @@ documentation: ug
 
 # Quick Info Template in ASP.NET Core Scheduler
 
-This demo showcases the quick popups for cells and appointments with the customized templates.
+This demo showcases the quick popups for cells and appointments with the customized templates. You can customize the header, content, and footer sections of the Quick Info popup by providing template content to the `quickInfoTemplates` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
