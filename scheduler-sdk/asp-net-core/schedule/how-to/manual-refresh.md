@@ -7,10 +7,11 @@ control: Scheduler
 documentation: ug
 ---
 
-
 # Programmatically Refresh Layout in ASP.NET Core Scheduler
 
-In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the `refreshLayout` public method.  The following example code explains to know how to use the refreshLayout method.
+In the Scheduler, you can refresh the layout manually without re-rendering the DOM element by using the `refreshLayout` public method. The following example code demonstrates how to use the `refreshLayout` method.
+
+You can also pass specific template names as arguments to refresh only those templates. For example, to refresh only the date header and event container, call `refreshLayout(['dateHeader', 'eventContainer'])`. Refer to the Scheduler API for the full list of supported template names.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

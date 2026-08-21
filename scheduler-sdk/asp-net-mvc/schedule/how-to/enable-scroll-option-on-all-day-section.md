@@ -10,9 +10,11 @@ documentation: ug
 
 # Enable Scroll Option on All-Day Section in ASP.NET MVC Scheduler
 
-When you have larger number of appointments in all-day row, it is difficult to view all the appointments properly. In that case you can enable scroller option for all-day row by setting true to [`EnableAllDayScroll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableAllDayScroll) whereas its default value is `false`. When setting this property to true, individual scroller for all-day row is enabled when it reaches its maximum height on expanding.
+When you have a large number of appointments in the all-day row, it is difficult to view all of them properly. In that case, you can enable the scroller option for the all-day row by setting the [`EnableAllDayScroll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableAllDayScroll) property to `true`. Its default value is `false`.
 
-N> This property is not applicable for Scheduler with Height `auto`.
+When this property is set to `true`, an individual scroller is enabled for the all-day row when it reaches its maximum height on expanding. This property is applicable to the Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views.
+
+N> This property is not applicable for the Scheduler when the `Height` is set to `auto`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,4 +38,9 @@ N> This property is not applicable for Scheduler with Height `auto`.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See Also
+
+* [Views in ASP.NET MVC Scheduler](../views)
+* [How to perform CRUD actions dynamically](./add-edit-and-remove-events)
 

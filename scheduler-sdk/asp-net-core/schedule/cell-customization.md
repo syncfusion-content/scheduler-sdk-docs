@@ -14,7 +14,7 @@ The cells of the Scheduler can be easily customized either using the cell templa
 
 ## Setting cell dimensions in all views
 
-The height and width of the Scheduler cells can be customized either to increase or reduce its size through the[`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied on cells.
+The height and width of the Scheduler cells can be customized to increase or reduce their size through the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied to cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -153,8 +153,7 @@ You can customize cells such as work cells, month cells, all-day cells, header c
 
 ## Customizing cell header in month view
 
-The month header of each date cell in the month view can be customized using the The month header of each date cell in the month view can be customized using the [`cellHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellHeaderTemplate) option which accepts the string or HTMLElement. The corresponding date can be accessed with the template.
- option which accepts the string or HTMLElement. The corresponding date can be accessed with the template.
+The month header of each date cell in the month view can be customized using the [`cellHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellHeaderTemplate) option, which accepts a string or HTMLElement. The corresponding date can be accessed with the template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -206,15 +205,14 @@ Providing the [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 
 
-N>By default, the [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) property value is set to new Date(1900, 0, 1) and [`maxDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property value is set to new Date(2099, 11, 31). The user can also set the customized [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) and [`maxDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property values.
+N> By default, the [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) property value is set to `new Date(1900, 0, 1)` and the [`maxDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property value is set to `new Date(2099, 11, 31)`. The user can also set customized [`minDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MinDate) and [`maxDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MaxDate) property values.
 
 ## Customizing the weekend cells background color
 
 You can customize the background color of weekend cells by utilizing the [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event and checking the `elementType` option within the event.
 
 ```javascript
-
-function onRendercell(args) {
+function onRenderCell(args) {
         if (args.elementType == "workCells") {
             // To change the color of weekend columns in week view
             if (args.date) {
@@ -226,11 +224,11 @@ function onRendercell(args) {
                 }
             }
         }
-    }
+}
 
 ```
 
-And, the background color for weekend cells in the Month view through the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied on cells.
+And the background color for weekend cells in the Month view can be customized through the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property, which overrides the default CSS applied to cells.
 
 ```css
 
@@ -265,6 +263,6 @@ And, the background color for weekend cells in the Month view through the [`cssC
 
 ## How to disable multiple cell and row selection in Schedule
 
-By default, the [`allowMultiCellSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiCellSelection) and [`allowMultiRowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiRowSelection) properties of the Schedule are set to `true`. So, the Schedule allows user to select multiple cells and rows. If the user want to disable this multiple cell and row selection. The user can disable this feature by setting up `false` to these properties.
+By default, the [`allowMultiCellSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiCellSelection) and [`allowMultiRowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowMultiRowSelection) properties of the Schedule are set to `true`. So, the Schedule allows users to select multiple cells and rows. If the user wants to disable multiple cell and row selection, set these properties to `false`.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its feature highlights. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

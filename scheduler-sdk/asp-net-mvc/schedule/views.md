@@ -10,15 +10,15 @@ documentation: ug
 
 # Views in ASP.NET MVC Scheduler
 
-The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week and Timeline Month, Timeline Year, out of which the `Week` view is set as active.
+The Scheduler includes a wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week, Timeline Month, and Timeline Year, out of which the `Week` view is set as the active view.
 
-To navigate between different views and dates, the navigation options are available at the Scheduler header bar. The active view option is usually highlighted by default. The date range of the active view will also be displayed at the left corner of the header bar, clicking on which will open a calendar popup for the ease of desired date selection.
+To navigate between different views and dates, the navigation options are available on the Scheduler header bar. The active view option is usually highlighted by default. The date range of the active view will also be displayed at the left corner of the header bar, clicking on which will open a calendar popup for the ease of selecting the desired date.
 
-N> By default, Scheduler displays the calendar views such as day, week, work week, month and agenda.
+N> By default, the Scheduler displays calendar views such as Day, Week, Work Week, Month, and Agenda.
 
 ## Setting specific view on scheduler
 
-As the Scheduler displays `Week` view by default, therefore to change the active view, set [`currentView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property with the desired view name. The applicable view names that the Scheduler accepts are as follows,
+As the Scheduler displays the `Week` view by default, to change the active view, set the [`currentView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property with the desired view name. The applicable view names that the Scheduler accepts are as follows,
 
 * Day
 * Week
@@ -35,7 +35,7 @@ As the Scheduler displays `Week` view by default, therefore to change the active
 
 It is possible to display only the desired views on the Scheduler using the [`e-schedule-views`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) property.
 
-In the following example, the Scheduler displays 2 views namely, Week, and TimelineDay.
+In the following example, the Scheduler displays 2 views, namely `Week` and `TimelineDay`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -62,7 +62,7 @@ In the following example, the Scheduler displays 2 views namely, Week, and Timel
 
 
 
-To configure Scheduler with different configurations on each view, refer the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format whereas the Month view hides the weekend days and also displays it in readonly mode.
+To configure the Scheduler with different configurations on each view, refer to the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format, whereas the Month view hides the weekend days and is also displayed in read-only mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -91,7 +91,7 @@ To configure Scheduler with different configurations on each view, refer the fol
 
 ## View specific configuration
 
-There are scenarios where each view may need to have different configurations. For such cases, you can define the applicable scheduler properties within the [`views`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Views) Property for each view option as depicted in the following examples. The fields available to be used within each view options are as follows.
+There are scenarios where each view may need to have different configurations. For such cases, you can define the applicable Scheduler properties within the [`views`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Views) property for each view option as depicted in the following examples. The fields available to be used within each view option are as follows.
 
 | Property | Type | Description | Applicable views |
 |----------|------|-------------|------------------|
@@ -148,7 +148,7 @@ N> All the above defined properties can be accessed within Day view except `allo
 
 ### Week view
 
-The Week view displays a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the `firstDayOfWeek` which accepts the integer (Sunday=0, Monday=1, Tuesday=2 and so on) value. You can navigate to a particular date in day view from the week view by clicking on the appropriate dates on the date header bar.
+The Week view displays a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the `firstDayOfWeek` property, which accepts an integer (Sunday=0, Monday=1, Tuesday=2, and so on) value. You can navigate to a particular date in the Day view from the Week view by clicking on the appropriate dates on the date header bar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -179,7 +179,7 @@ N> All the above defined properties in the table can be accessed within Week and
 
 ### Work Week view
 
-The Work week view displays only the working days of a week (count of 5 days) and its associated appointments. It is possible to customize the working days on the work week view by using the `workDays` property which accepts an array of integer values (such as Sunday=0, Monday=1, Tuesday=2 and so on). By default, it displays from Monday to Friday (5 days). You can also navigate to a particular date in the day view from the work week view by clicking on the appropriate dates in the date header bar.
+The Work Week view displays only the working days of a week (count of 5 days) and its associated appointments. It is possible to customize the working days on the Work Week view by using the `workDays` property, which accepts an array of integer values (such as Sunday=0, Monday=1, Tuesday=2, and so on). By default, it displays from Monday to Friday (5 days). You can also navigate to a particular date in the Day view from the Work Week view by clicking on the appropriate dates in the date header bar.
 
 The following code example depicts how to change the working days only on the `Work Week` view of the Scheduler.
 
@@ -208,15 +208,15 @@ The following code example depicts how to change the working days only on the `W
 
 
 
-N> The Week, Work week and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view it.
+N> The Week, Work Week, and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view them.
 
 ### Month view
 
-A Month view displays the entire days of a particular month and all its related appointments. You can navigate to a particular date in the day view by clicking on the appropriate date text on the month cells.
+A Month view displays the entire days of a particular month and all its related appointments. You can navigate to a particular date in the Day view by clicking on the appropriate date text on the month cells.
 
-By default, when you try to create an appointment through Month view, it is considered as created for an entire day. You can explicitly change this behavior by unchecking the `All-day` option from editor window, so that it defaults to the start time duration as 9.00 AM and end time as 9.30 AM.
+By default, when you try to create an appointment through Month view, it is considered as created for an entire day. You can explicitly change this behavior by unchecking the `All-day` option from the editor window, so that it defaults to the start time as 9.00 AM and the end time as 9.30 AM.
 
-You can also have the `+ more` text indicator on each day cell of a Month view, clicking on which will allows you to view the hidden appointments of a day.
+You can also have the `+ more` text indicator on each day cell of a Month view, clicking on which will allow you to view the hidden appointments of a day.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -245,7 +245,7 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 
 ### Year view
 
-A Year view displays all the days of a particular year with months and all its related appointments. You can navigate to a particular date in the day view by clicking on the appropriate date text on the year cells.
+A Year view displays all the days of a particular year with months and all its related appointments. You can navigate to a particular date in the Day view by clicking on the appropriate date text on the year cells.
 
 Year view is available in both the `Horizontal` and `Vertical` orientations. You can manage the orientation of year view through `views` property.
 
@@ -274,11 +274,11 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 
 
 
-N> The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
+N> The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment-containing dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
 
 ### Agenda view
 
-The Agenda view lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the days can be changed using the API [`agendaDaysCount`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AgendaDaysCount). It allows virtual scrolling of dates by enabling the `allowVirtualScrolling` property. Also, you can enable or disable the display of days on Scheduler that has no appointments by setting true or false to the [`hideEmptyAgendaDays`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HideEmptyAgendaDays) property.
+The Agenda view lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the days can be changed using the API [`agendaDaysCount`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AgendaDaysCount). It allows virtual scrolling of dates by enabling the `allowVirtualScrolling` property. Also, you can enable or disable the display of days on the Scheduler that have no appointments by setting `true` or `false` to the [`hideEmptyAgendaDays`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HideEmptyAgendaDays) property.
 
 The following code example depicts how to customize the display of events within Agenda view alone.
 
@@ -311,7 +311,7 @@ N> Schedule Height is mandatory to set in pixels for Agenda view alone.
 
 ### Month Agenda view
 
-A Month-Agenda view shows a month calendar, where clicking on a particular day will display the appointments present on that date below the calendar. The day with appointments are differentiated with a circular dot below the date of the calendar.
+A Month Agenda view shows a month calendar, where clicking on a particular day will display the appointments present on that date below the calendar. The days with appointments are differentiated with a circular dot below the date of the calendar.
 
 The following code example shows how to hide the weekend days on `MonthAgenda` view as well as the working days list is modified on Month Agenda view alone.
 
@@ -342,7 +342,7 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 
 ### Timeline views – Day, Week, Work Week
 
-Similar to the day view, timeline day view shows a single day with all its appointments where the time slots are displayed horizontally. By default, the cell height adjusts as per the height set to Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator will be displayed at the bottom to denote the presence of few more appointments in that time range.
+Similar to the Day view, Timeline Day view shows a single day with all its appointments where the time slots are displayed horizontally. By default, the cell height adjusts as per the height set on the Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator will be displayed at the bottom to denote the presence of additional appointments in that time range.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -369,7 +369,7 @@ Similar to the day view, timeline day view shows a single day with all its appoi
 
 
 
-Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
+Similar to the Week view, the Timeline Week view shows 7 days with its associated appointments, with the time slots displayed horizontally.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -396,7 +396,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 
 
 
-The following code example depicts how to display the timeline work week view on Scheduler,
+The following code example depicts how to display the Timeline Work Week view on the Scheduler,
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -423,11 +423,11 @@ The following code example depicts how to display the timeline work week view on
 
 
 
-N> Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week will allow you to navigate to the Agenda view.
+N> Clicking on the dates in the date header bar of Timeline Day, Timeline Week, and Timeline Work Week views allows you to navigate to the Agenda view.
 
 ### Timeline Month view
 
-A Timeline Month view displays the current month days along with its appointments.
+A Timeline Month view displays the current month's days along with their appointments.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -458,9 +458,9 @@ N> Clicking on the dates in the date header bar of Timeline month will allow you
 
 ### Timeline Year view
 
-In Timeline Year view, each row depicts a single resource. Whereas in the vertical view, each resource is grouped parallelly as columns. Here, the resource grouping follows the tree-view like hierarchical grouping structure and can contain any level of child resources.
+In Timeline Year view, each row depicts a single resource. Whereas in the vertical view, each resource is grouped parallelly as columns. Here, the resource grouping follows a tree-view-like hierarchical grouping structure and can contain any level of child resources.
 
-To make use of the timeline Year view on Scheduler, import and inject `TimelineYear` module from the `ej2-schedule` package.
+To make use of the Timeline Year view on the Scheduler, import and inject the `TimelineYear` module from the `ej2-schedule` package.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -518,7 +518,7 @@ The following code example depicts how to group the multiple resources on Timeli
 
 #### Auto row height
 
-Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied in the same time range. If you disable the Auto row height, you have the `+ more` text indicator on each day cell of a Timeline Year view, clicking on which will allow you to view the hidden appointments of a day.
+Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied in the same time range. If you disable the Auto row height, the `+ more` text indicator is shown on each day cell of a Timeline Year view, clicking on which will allow you to view the hidden appointments of a day.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -547,7 +547,7 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 
 ## Extending view intervals
 
-It is possible to customize the display of default number of days on different Scheduler view modes. For example, a day view can be extended to display 3 days by setting the `interval` option as 3 for the `Day` option within the `e-schedule-views` property as depicted in the following code example. In the same way, you can also display 2 weeks by setting interval 2 for the `Week` option.
+It is possible to customize the display of the default number of days on different Scheduler view modes. For example, a Day view can be extended to display 3 days by setting the `interval` option as 3 for the `Day` option within the `e-schedule-views` property as depicted in the following code example. In the same way, you can also display 2 weeks by setting interval as 2 for the `Week` option.
 
 You can provide the alternative display name for such customized views on the Scheduler header bar, by setting the appropriate `displayName` property.
 

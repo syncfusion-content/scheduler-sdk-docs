@@ -34,3 +34,4 @@ Event window default fields name like Title, Location, etc.. can be customized a
 {% endtabs %}
 {% endif %}
 
+N> The `Default` property is only applied when the user creates a new appointment and leaves the subject empty. Existing appointments are not affected, and the default value is not persisted when the appointment is saved — it is only used as a placeholder in the editor.

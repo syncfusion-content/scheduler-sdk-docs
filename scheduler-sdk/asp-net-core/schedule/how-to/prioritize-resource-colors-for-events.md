@@ -9,7 +9,7 @@ documentation: ug
 
 # Prioritize Resource Colors for Events in ASP.NET Core Scheduler
 
-By default top level resource color will be applied for the events. If user wants to apply specific resource color to events irrespective of its parent resource color, it can be achieved by `resourceColorField` field within `eventSettings` property as shown below.
+By default, the color defined on the top level resource is applied to the events. If you want to apply a specific resource color to events irrespective of its parent resource color, it can be achieved by setting the `resourceColorField` property within the `eventSettings` property as shown below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,4 +36,4 @@ By default top level resource color will be applied for the events. If user want
 
 
 
-N> The `resourceColorField` field value should be as same as the `name` field value given with in `resources` property.
+N> The value of the `resourceColorField` field should match the `name` value given within the `resources` property.

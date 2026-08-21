@@ -9,9 +9,25 @@ documentation: ug
 
 # Perform CRUD Actions Dynamically in ASP.NET Core Scheduler
 
-CRUD actions can be manually performed on appointments using `addEvent`, `saveEvent` and `deleteEvent` methods as shown below.
+CRUD actions can be performed dynamically on appointments using the `addEvent`, `saveEvent`, and `deleteEvent` methods of the Scheduler. These methods allow you to programmatically add a new event, update an existing event, or remove an event from the Scheduler without relying on the built-in editor window.
+
+> The methods used in this topic are client-side methods invoked from the browser. They do not persist data to the server; ensure you handle persistence in your own data source if required.
 
 ## Normal event
+
+The following example shows how to add, update, and delete a normal (non-recurring) appointment dynamically.
+
+### Add event
+
+Use the `addEvent` method to add a new appointment to the Scheduler by passing the appointment data as an argument.
+
+### Save event
+
+Use the `saveEvent` method to update an existing appointment by passing the modified appointment data as an argument.
+
+### Delete event
+
+Use the `deleteEvent` method to remove an existing appointment by passing the appointment `Id` (or the appointment object) as an argument.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,9 +52,9 @@ CRUD actions can be manually performed on appointments using `addEvent`, `saveEv
 {% endtabs %}
 {% endif %}
 
-
-
 ## Recurrence event
+
+The following example shows how to add, update, and delete a recurring appointment dynamically. For recurring appointments, ensure the `RecurrenceRule` and `RecurrenceException` fields are set appropriately when calling `addEvent` or `saveEvent`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

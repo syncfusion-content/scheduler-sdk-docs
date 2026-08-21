@@ -10,7 +10,7 @@ documentation: ug
 
 # Dimensions in ASP.NET MVC Scheduler
 
-The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
+The Scheduler dimensions refer to both the height and width of the entire layout, and it accepts three types of values:
 
 * auto
 * pixel
@@ -18,7 +18,7 @@ The Scheduler dimensions refers to both height and width of the entire layout an
 
 ## Auto Height and Width
 
-When height and width of the Scheduler are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Scheduler, it's width/height will be the sum of its children. By default, Scheduler is assigned with `auto` values for both height and width properties.
+When the height and width of the Scheduler are set to `auto`, the Scheduler will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds the Scheduler will have a width/height equal to the sum of its children. By default, the Scheduler is assigned `auto` values for both the height and width properties. When `auto` is used, the Scheduler sizes itself based on its content and the parent container, so the rendered size may vary depending on the active view (for example, `Day`, `Week`, or `Month`) and the available viewport.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,9 +45,9 @@ When height and width of the Scheduler are set to `auto`, it will try as hard as
 
 
 
-## Height and Width in pixel
+## Height and width in pixel
 
-The Scheduler height and width will be rendered exactly as per the given pixel values. It accepts both string and number values.
+The Scheduler height and width will be rendered exactly as per the given pixel values. It accepts both string (for example, `"650px"`) and number values (for example, `650`). When a number is provided, the Scheduler interprets it as pixels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,9 +74,9 @@ The Scheduler height and width will be rendered exactly as per the given pixel v
 
 
 
-## Height and Width in percentage
+## Height and width in percentage
 
-When height and width of the Scheduler are given as percentage, it will make the Scheduler as wide as the parent container.
+When the height and width of the Scheduler are given as a percentage, the Scheduler will be sized relative to its parent container. For the percentage values to take effect, the parent container must have an explicit (non-percentage) height or width; otherwise, the Scheduler may collapse to zero size.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +103,7 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.
 
 ## See Also
 
