@@ -11,7 +11,9 @@ documentation: ug
 
 ## Open Editor Window Manually
 
-Scheduler allows the user to manually open the event editor on specific time or on certain events using `openEditor` method. To open the editor on specific range of time, user need to pass the cell details as first argument and **Add** as second argument whereas to open it on event pass that event detail and **Save** as arguments. In the following code example, on clicking the respective button will open the respective editor window manually.
+The Scheduler allows you to manually open the event editor for a specific time range or for an existing event by using the [`openEditor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_OpenEditor) method. To open the editor for a specific time range, pass the cell details as the first argument and `Add` as the second argument. To open the editor for an existing event, pass the event data as the first argument and `Save` as the second argument.
+
+In the following code example, clicking the **Click to open Editor** button opens the editor in `Add` mode for the cell that starts on `February 15, 2018 at 10:00 AM`, and clicking the **Click to open Event Editor** button opens the editor in `Save` mode for an existing event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,7 +42,9 @@ Scheduler allows the user to manually open the event editor on specific time or 
 
 ## Open editor window on single click
 
-By default, Scheduler Editor window will open when double clicking the cells or appointments. You can also open the editor window with single click by using `openEditor` method in [`EventClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventClick) and [`CellClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellClick) events of scheduler and setting false to [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo). The following example shows how to open editor window on single click of cells and appointments.
+By default, the Scheduler editor window opens when you double-click a cell or an appointment. You can also open the editor window with a single click by handling the [`EventClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventClick) and [`CellClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CellClick) events, calling `openEditor`, and setting the [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false` to suppress the default quick-info popup.
+
+N> When the clicked event is a recurring appointment, the example invokes `quickPopup.openRecurrenceAlert()` to show the standard recurrence confirmation dialog instead of opening the editor directly. This ensures the user can choose between editing a single occurrence or the entire series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

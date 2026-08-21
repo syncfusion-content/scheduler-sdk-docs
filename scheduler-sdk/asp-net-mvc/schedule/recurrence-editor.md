@@ -10,13 +10,13 @@ documentation: ug
 
 # Recurrence Editor in ASP.NET MVC Scheduler
 
-The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
+The Recurrence Editor is integrated into the Scheduler editor window by default to handle recurrence rule generation for events. Apart from this, it can also be used as an individual component referenced from the Scheduler repository to work with recurrence-related processes.
 
-N> All the valid recurrence rule string mentioned in the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
+N> All valid recurrence rule strings mentioned in the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications are supported by the Recurrence Editor.
 
 ## Customizing the repeat type option in editor
 
-By default, there are 5 types of repeat options available in recurrence editor such as,
+By default, there are five repeat options available in the Recurrence Editor:
 
 * Never
 * Daily
@@ -24,7 +24,7 @@ By default, there are 5 types of repeat options available in recurrence editor s
 * Monthly
 * Yearly
 
-It is possible to customize the recurrence editor to display only the specific repeat options such as `Daily` and `Weekly` options alone by setting the appropriate [`frequencies`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_Frequencies) option.
+You can also customize the Recurrence Editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the [`frequencies`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_Frequencies) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,30 +51,30 @@ It is possible to customize the recurrence editor to display only the specific r
 
 
 
-The other properties available in recurrence editor are tabulated below,
+The other properties available in the Recurrence Editor are tabulated below:
 
 | Properties | Type | Description |
 |------------|------|-------------|
-| `FirstDayOfWeek` | number | Sets the first day of the week on recurrence editor.|
-| `StartDate` | Date | Sets the start date from which date the recurrence event starts. |
-| `DateFormat` | string | Sets the specific date format on recurrence editor.|
-| `Locale` | string | Sets the locale to be applied on recurrence editor.|
-| `CssClass` | string | Allows styling to be applied on recurrence editor with custom class names.|
-| `EnableRtl` | boolean | Allows recurrence editor to render in RTL mode.|
-| `MinDate` | Date | Sets the minimum date on recurrence editor.|
-| `MaxDate` | Date | Sets the maximum date on recurrence editor.|
-| `Value` | string | Sets the recurrence rule value on recurrence editor. |
-| `SelectedType` | number | Sets the specific repeat type on the recurrence editor.|
+| `FirstDayOfWeek` | number | Sets the first day of the week in the Recurrence Editor. |
+| `StartDate` | Date | Sets the date from which the recurrence event starts. |
+| `DateFormat` | string | Sets the specific date format in the Recurrence Editor. |
+| `Locale` | string | Sets the locale to be applied on the Recurrence Editor. |
+| `CssClass` | string | Allows custom styling to be applied on the Recurrence Editor using class names. |
+| `EnableRtl` | boolean | Allows the Recurrence Editor to render in RTL mode. |
+| `MinDate` | Date | Sets the minimum date in the Recurrence Editor. |
+| `MaxDate` | Date | Sets the maximum date in the Recurrence Editor. |
+| `Value` | string | Sets the recurrence rule value on the Recurrence Editor. |
+| `SelectedType` | number | Sets the specific repeat type on the Recurrence Editor. |
 
-## Customizing the End Type Option in Editor
+## Customizing the End type option in Editor
 
-By default, there are 3 types of end options available in the recurrence editor such as:
+By default, there are three end options available in the Recurrence Editor:
 
 * Never
 * Until
 * Count
 
-It is possible to customize the recurrence editor to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate [`endTypes`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_EndTypes) option.
+You can also customize the Recurrence Editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_EndTypes) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -102,9 +102,9 @@ It is possible to customize the recurrence editor to display only the specific e
 
 ## Accessing the recurrence rule string
 
-The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
+The recurrence rule is usually generated based on the options selected from the Recurrence Editor and follows the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid value to be used with the Scheduler event's recurrence rule field.
 
-There is a `Change` event available in recurrence editor, that triggers on every time the fields of recurrence editor tends to change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
+A `Change` event is available in the Recurrence Editor that triggers every time the fields of the Recurrence Editor change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -131,9 +131,9 @@ There is a `Change` event available in recurrence editor, that triggers on every
 
 
 
-## Set specific value on recurrence editor
+## Set specific value on Recurrence Editor
 
-It is possible to display the recurrence editor with specific options loaded initially, based on the rule string that we provide. The fields of recurrence editor will change its values accordingly, when we provide a particular rule through the `setRecurrenceRule` method.
+It is possible to display the Recurrence Editor with specific options loaded initially, based on the rule string you provide. The fields of the Recurrence Editor will update their values accordingly when you provide a particular rule through the `setRecurrenceRule` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -162,14 +162,14 @@ It is possible to display the recurrence editor with specific options loaded ini
 
 ## Recurrence date generation
 
-You can parse the `RecurrenceRule` of an event to generate the date instances on which that particular event is going to occur, using the `getRecurrenceDates` method. It generates the dates based on the `RecurrenceRule` that we provide. The parameters to be provided for `getRecurrenceDates` method are as follows.
+You can parse the `RecurrenceRule` of an event to generate the date instances on which that particular event occurs, using the `getRecurrenceDates` method. It generates the dates based on the `RecurrenceRule` that you provide. The parameters to be passed to the `getRecurrenceDates` method are as follows.
 
 | Field name | Type | Description |
 |------------|------|-------------|
-| `startDate` | Date| Appointment start date. |
-| `rule` | String| Recurrence rule present in an event object. |
+| `startDate` | Date | Appointment start date. |
+| `rule` | String | Recurrence rule present in an event object. |
 | `excludeDate` | String | Date collection (in ISO format) to be excluded. It is **optional**. |
-| `maximumCount` | Number | Number of date count to be generated. It is **optional**. |
+| `maximumCount` | Number | Maximum number of dates to be generated. It is **optional**. |
 | `viewDate` | Date | Current view range's first date. It is **optional**. |
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -197,17 +197,17 @@ You can parse the `RecurrenceRule` of an event to generate the date instances on
 
 
 
-N> Above example will generate two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilized to create appointments.
+N> The above example will generate two dates, January 7, 2018 and January 9, 2018, by excluding the in-between dates January 8, 2018 and January 10, 2018, since those dates were specified in the exclusion list. The generated dates can then be used to create appointments.
 
-## Recurrence date generation in server-side
+## Recurrence date generation on the server-side
 
-It is also possible to generate recurrence date instances from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referred from application end to handle this date generation process.
+It is also possible to generate recurrence date instances on the server-side by referring to the `RecurrenceHelper` class, which is specifically written and referenced from the application end to handle the date generation process.
 
-N> Refer [here](https://support.syncfusion.com/kb/article/8683/how-to-parse-the-recurrence-rule-at-server-side-in-aspnet-mvc-schedule) for the step by step procedure to achieve date generation in server-side.
+N> Refer [here](https://support.syncfusion.com/kb/article/8683/how-to-parse-the-recurrence-rule-at-server-side-in-aspnet-mvc-schedule) for the step-by-step procedure to achieve date generation on the server-side.
 
-## Restrict date generation with specific count
+## Restrict date generation with a specific count
 
-In case, if the rule is given in "NEVER ENDS" category, then you can mention the maximum count when you actually want to stop the date generation starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
+If the rule is given in the "NEVER ENDS" category, you can specify the maximum count at which date generation should stop, starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method as shown in the following code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -234,4 +234,4 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.
