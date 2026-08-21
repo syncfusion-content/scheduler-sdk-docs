@@ -10,11 +10,11 @@ documentation: ug
 
 # Exporting in ASP.NET MVC Scheduler
 
-The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
+The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look at how to implement the exporting functionality in the Scheduler.
 
 ## Excel Exporting
 
-The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`] client-side method. By default, it exports all the default fields of Scheduler mapped through [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
+The Scheduler allows you to export all its events into an Excel format file by using the [`exportToExcel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ExportToExcel) client-side method. By default, it exports all the default fields of Scheduler mapped through [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
 N> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
 
@@ -45,7 +45,7 @@ N> Before you start with excel exporting functionality, you need to import and i
 
 ### Exporting with custom fields
 
-By default, Scheduler exports all the default event fields that are mapped to it through the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `fields` and pass it as argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
+By default, the Scheduler exports the event fields that are mapped to it through the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. To limit the number of fields in the exported Excel file, you can export only the custom fields of the event data. To export such custom fields alone, define the required `fields` and pass it as an argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,7 +74,7 @@ By default, Scheduler exports all the default event fields that are mapped to it
 
 ### Exporting individual occurrences of a recurring series
 
-By default, the Scheduler exports recurring events as a single data by exporting only its parent record into the excel file. If you want to export each individual occurrences of a recurring series appointment as separate records in an Excel file, define the `includeOccurrences` option as `true` and pass it as argument to the `exportToExcel` method. By default, the `includeOccurrences` option is set to `false`.
+By default, the Scheduler exports recurring events as a single record by exporting only the parent record into the Excel file. If you want to export each individual occurrence of a recurring series appointment as separate records in an Excel file, define the `includeOccurrences` option as `true` and pass it as an argument to the `exportToExcel` method. By default, the `includeOccurrences` option is set to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +103,7 @@ By default, the Scheduler exports recurring events as a single data by exporting
 
 ### Exporting custom event data
 
-By default, the whole event collection bound to the Scheduler gets exported as an excel file. To export only specific events of Scheduler or some custom event collection, you need to pass those custom data collection as a parameter to the `exportToExcel` method as shown in this following example, through the `customData` option.
+By default, the whole event collection bound to the Scheduler gets exported as an Excel file. To export only specific events of the Scheduler or some custom event collection, pass that custom data collection as a parameter to the `exportToExcel` method through the `customData` option, as shown in the following example.
 
 N> By default, the event data are taken from Scheduler dataSource.
 
@@ -134,7 +134,7 @@ N> By default, the event data are taken from Scheduler dataSource.
 
 ### Export with custom file name
 
-By default, the Scheduler allows you to download the exported Excel file with a name `Schedule.xlsx`. It also provides an option to export the excel file with a custom file name, define the desired `fileName` and passing it as an argument to the `exportToExcel` method.
+By default, the Scheduler downloads the exported Excel file with the name `Schedule.xlsx`. To export the Excel file with a custom file name, define the desired `fileName` and pass it as an argument to the `exportToExcel` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,7 +163,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 
 ### Excel file formats
 
-By default, the Scheduler exports event data to an excel file in the `.xlsx` format. You can also export the Scheduler data in either of the file type such as `.xlsx` or `csv` formats, by defining the `exportType` option as either `csv` or `xlsx`. By default, the `exportType` is set to `xlsx`.
+By default, the Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export the Scheduler data as either `.xlsx` or `.csv` by defining the `exportType` option as either `csv` or `xlsx`. By default, the `exportType` is set to `xlsx`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -192,7 +192,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 ### Custom separator in CSV
 
-The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting `separator` property in `ExportOptions`.
+The Scheduler exports the event data to CSV format with `,` as the separator. You can change the separator by setting the `separator` property in `ExportOptions`.
 
 
 
@@ -231,7 +231,7 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 
 ## Exporting calendar events as ICS file
 
-You can export the Scheduler events to a calendar (.ics) file format, and open it on any of the other default calendars such as Google or Outlook.
+You can export the Scheduler events to a calendar (.ics) file format and open it on any of the other default calendars such as Google Calendar or Microsoft Outlook.
 
 The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the `exportToICalendar` public method.
 
@@ -262,7 +262,7 @@ The following code example shows how the Scheduler events are exported to a cale
 
 ### Customizing column header with custom fields exporting
 
-Using fields property, we can only export the defined fields into excel without customizing the header. Now we can provide the alternate support to customize the header of custom fields exporting using the `fieldsInfo` option through the `ExportFieldInfo` interface and pass it as an argument to the `exportToExcel` method as shown in the following example.
+Using the `fields` property, you can export only the defined fields into Excel without customizing the header. You can also customize the header of custom fields while exporting by using the `fieldsInfo` option through the `ExportFieldInfo` interface and pass it as an argument to the `exportToExcel` method, as shown in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -322,7 +322,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 ## Import events from other calendars
 
-The events from external calendars (ICS files) can be imported into Scheduler by using the `importICalendar` method. This method accepts the `blob object` of an .ics file to be imported, as a mandatory argument.
+Events from external calendars (ICS files) can be imported into the Scheduler by using the `importICalendar` method. This method accepts the `Blob` object of an `.ics` file to be imported as a mandatory argument.
 
 The following example shows how to import an ICS file into Scheduler, using the `importICalendar` method.
 
@@ -353,14 +353,14 @@ The following example shows how to import an ICS file into Scheduler, using the 
 
 ## How to print the Scheduler element
 
-The Scheduler allows you to print the Scheduler element by using the `print` client-side method. The print method works in two ways. You can find it below.
+The Scheduler allows you to print the Scheduler element by using the `print` client-side method. The `print` method works in two ways:
 
-* Using print method without options.
-* Using a print method with options.
+* Using the `print` method without options.
+* Using the `print` method with options.
 
-### Using print method without options
+### Using the print method without options
 
-You can print the Schedule element with the current view by using the `print` method without passing the options. The following example shows how to print the Scheduler using the `print` method without passing options.
+You can print the Schedule element with the current view by using the `print` method without passing any options, as shown in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -389,7 +389,7 @@ You can print the Schedule element with the current view by using the `print` me
 
 ### Using a print method with options
 
-You can print the Schedule element based on your needs using the `print` method by passing the print options used in this example with its values. The following example shows how to print the Scheduler using the `print` method by passing the options.
+You can print the Schedule element based on your requirements by using the `print` method and passing print options, as shown in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -416,7 +416,7 @@ You can print the Schedule element based on your needs using the `print` method 
 
 ### How to customize the print layout
 
-The `beforePrint` event enables users to customize the print layout of the Scheduler control without altering the actual schedule layout or data. This event returns the HTML element used for printing, which can be tailored based on specific requirements before the print operation is triggered. Additionally, users can prevent the print action by setting the `cancel` property to `true`, giving them full control over when and how the print operation takes place.
+The `beforePrint` event enables users to customize the print layout of the Scheduler control without altering the actual schedule layout or data. This event returns the HTML element used for printing, which can be tailored based on specific requirements before the print operation is triggered. Additionally, users can prevent the print action by setting the `cancel` property to `true`, which gives them full control over when and how the print operation takes place.
 
 Key customization options include:
 
@@ -448,4 +448,4 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% endtabs %}
 {% endif %}
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.

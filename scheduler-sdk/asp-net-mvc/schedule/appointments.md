@@ -10,7 +10,7 @@ documentation: ug
 
 # Appointments in ASP.NET MVC Scheduler
 
-Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
+Appointments can be anything that is scheduled for a specific time period. They can be created over a varied time range, and each appointment is categorized based on this range. The Scheduler events can be categorized as,
 
 * Normal events
 * Spanned events
@@ -54,20 +54,20 @@ The following example depicts how to define a normal event on the Scheduler, wit
 
 Represents an appointment that is created for more than 24 hours, and usually displayed on the all-day row. Also, represents another type of appointment that is created for more than one day but less than 24 hours, and usually displayed appropriately on both the days.
 
-N> For example, if an appointment is created for two days say from November 25, 2018 – 11.00 PM to November 26, 2018 2.00 AM but less than 24 hours time interval, then the appointment is split into two partitions and will be displayed on both the days.
+N> For example, if an appointment is created for two days, say from November 25, 2018, 11:00 PM to November 26, 2018, 2:00 AM, which is less than a 24 hour interval, then the appointment is split into two partitions and will be displayed on both days.
 
 ## All-day events
 
-Represents an appointment that is created for an entire day such as holiday events. It is usually displayed separately in an all-day row, a separate row for all-day appointments below the date header section. In Timeline views, the all-day appointments displays in the working space area, and no separate all-day row is present in that view.
+Represents an appointment that is created for an entire day, such as holiday events. It is usually displayed separately in an all-day row, a separate row for all-day appointments below the date header section. In Timeline views, all-day appointments are displayed in the working space area, and no separate all-day row is present in that view.
 
 N> To change normal appointment into all-day event, set [`IsAllDay`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsAllDay) field to `true`.
 
 ### Hide all-day row events
 
-You can make use of the CSS customization to prevent the display of all-day row appointments on the Scheduler UI.
+You can make use of CSS customization to prevent the display of all-day row appointments on the Scheduler UI.
 
 ```css
-    .e-schedule .e-date-header-wrap .e-schedule-table thead {
+    .e-schedule .e-all-day-cells {
         display: none;
     }
 ```
@@ -76,7 +76,7 @@ N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-
 
 ## Customize the rendering of the spanned events
 
-By default, Scheduler will renders the spanned events (appointment with more than 24 hours duration) in the all-day row by setting `AllDayRow` will the default type renders to the [`SpannedEventPlacement`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. Now we can customize rendering of the that events inside the work cells itself by modifying the [`SpannedEventPlacement`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option as `TimeSlot`. In this following example, shows how to render the spanned appointments inside the work cells as follows.
+By default, the Scheduler renders the spanned events (appointments with a duration of more than 24 hours) in the all-day row. The default value of the [`SpannedEventPlacement`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property is `AllDayRow`. You can render spanned events inside the work cells instead by setting the `SpannedEventPlacement` option to `TimeSlot`. The following example shows how to render the spanned appointments inside the work cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -138,7 +138,7 @@ The following example depicts how to create a recurring event on Scheduler with 
 
 ### Adding exceptions
 
-A few instance of the recurrence series can be excluded on specific dates, by adding those exceptional dates to the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field. These date values should be given in the ISO date time format with no hyphens(-) separating the date elements.
+A few instances of the recurrence series can be excluded on specific dates by adding those exceptional dates to the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field. These date values should be given in the ISO date-time format with no hyphens (-) separating the date elements.
 
 For example, 22nd February 2018 can be represented as 20180222. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
 
@@ -247,9 +247,9 @@ There are four repeat types available namely,
 
 ### Recurrence properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
+The properties based on which the recurrence appointments are created with their respective time period are depicted in the following table. The valid rule string can be referred from the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
 
- N> Refer [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+N> Refer to the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule strings.
 
 | Property | Purpose | Example |
 |-------|---------| --------- |
@@ -612,7 +612,7 @@ By default, you can drag and drop the events within any of the applicable schedu
 
 ### Preventing drag and drop on specific targets
 
-It is possible to prevent the drag action on particular target, by passing the target to be excluded in the `excludeSelectors` option within [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments. In this example, we have prevented the drag action on all-day row.
+It is possible to prevent the drag action on a particular target by passing the target to be excluded in the `excludeSelectors` option within the [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments. In this example, the drag action is prevented on the all-day row.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -641,7 +641,7 @@ It is possible to prevent the drag action on particular target, by passing the t
 
 ### Disable scrolling on drag action
 
-By default, while dragging an appointment to the edges, either top/bottom in the vertical Scheduler or left/right in the timeline Scheduler, scrolling action takes place automatically. To prevent this scrolling, set `false` to the `scroll` value within [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments.
+By default, while dragging an appointment to the edges (top/bottom in the vertical Scheduler or left/right in the timeline Scheduler), a scrolling action takes place automatically. To prevent this scrolling, set `false` to the `scroll` value within the [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -730,7 +730,7 @@ By default, the navigation delay is set to 2000 ms. The navigation delay decides
 
 ### Setting drag time interval
 
-By default, while dragging an appointment, it moves at an interval of 30 minutes. To change the dragging time interval, pass the appropriate values to the `interval` option within [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart)event.
+By default, while dragging an appointment, it moves at an interval of 30 minutes. To change the dragging time interval, pass the appropriate values to the `interval` option within the [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1196,7 +1196,7 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 
 ## Make specific events readonly
 
-There are scenarios where you need to restrict the CRUD action on specific appointments alone based on certain conditions. In the following example, the events that has occurred on the past hours from the current date of the Scheduler are made as read-only and the CRUD actions has been prevented only on those appointments. This can be achieved by setting [`IsReadonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsReadonly) field of read-only events to `true`.
+There are scenarios where you need to restrict the CRUD action on specific appointments alone based on certain conditions. In the following example, the events that have occurred in the past hours from the current date of the Scheduler are made read-only, and CRUD actions are prevented only on those appointments. This can be achieved by setting the [`IsReadonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsReadonly) field of the read-only events to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1223,7 +1223,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 
 
 
-N> By default, the event editor is prevented to open on the read-only events when [`IsReadonly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsReadonly) (for Core) / [`IsReadonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsReadonly) (for MVC)  field is set to **true**.
+N> By default, the event editor is prevented from opening on the read-only events when the [`IsReadonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsReadonly) field is set to **true**.
 
 ## Restricting event creation on specific time slots
 
@@ -1318,8 +1318,7 @@ In the Scheduler, you can limit the number of concurrent events displayed in eac
 
 ### Limiting events in month and timeline views
 
-In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as 
-`+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) property, which is defaulted to the [views](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) property.
+In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as `+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) property, which is defaulted within the [views](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) property.
 
 The [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
 
@@ -1470,7 +1469,7 @@ To prevent a tooltip from appearing for certain events, you can set the `cancel
 
 ## Appointment selection
 
-Appointment selection can be done either through mouse or keyboard actions. The selected events in UI will have a box shadow effect around to differentiate it from other appointments.
+Appointment selection can be done either through mouse or keyboard actions. The selected events in the UI will have a box-shadow effect around them to differentiate them from other appointments.
 
 | Action | Description |
 |-------|---------|
@@ -1483,7 +1482,7 @@ With the options available to select multiple appointments, it is also possible 
 
 ## Retrieve event details from the UI of an event
 
-It is possible to access the information about the event fields of an appointment element displayed on the Scheduler UI. This can be achieved by passing an appointment element as argument to the public method `getEventDetails`.
+It is possible to access the information about the event fields of an appointment element displayed on the Scheduler UI. This can be achieved by passing an appointment element as an argument to the public method `getEventDetails`.
 
 In the following example, the subject of the appointment clicked has been displayed.
 
@@ -1574,8 +1573,8 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 
 If your requirement is to simply refresh the appointments instead of refreshing the entire Scheduler elements from your application end, make use of the `refreshEvents` public method.
 
-```sh
+```javascript
 scheduleObj.refreshEvents();
 ```
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.
