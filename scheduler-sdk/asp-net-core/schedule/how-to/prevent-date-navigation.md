@@ -17,8 +17,6 @@ The `renderCell` event is triggered for each cell rendered in the Scheduler, inc
 
 The following example demonstrates how to prevent date navigation by removing the `e-navigate` class in the `renderCell` event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/navigating/tagHelper %}
@@ -27,18 +25,6 @@ The following example demonstrates how to prevent date navigation by removing th
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/navigating/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/navigating/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/navigating/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See also
 

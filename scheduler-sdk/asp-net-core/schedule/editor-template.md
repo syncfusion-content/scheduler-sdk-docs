@@ -24,8 +24,6 @@ N> You can also prevent the editor window from opening by rendering the Schedule
 
 You can change the editor window header title and the footer button text by updating the appropriate localized word collection used in the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/local-word/tagHelper %}
@@ -35,26 +33,12 @@ You can change the editor window header title and the footer button text by upda
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/local-word/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/local-word/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customize Editor Window Header Title and Text of Footer Buttons in ASP.NET Core Scheduler](images/schedule-custom-header-footer.png)
 
 ### How to change the label text of default editor fields
 
 To change the default labels such as Subject, Location, and other field names in the editor window, use the `title` property available within the field option of [`e-schedule-eventsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings).
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,26 +49,12 @@ To change the default labels such as Subject, Location, and other field names in
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/field-label/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/field-label/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customize Label Text in ASP.NET Core Scheduler](images/schedule-custom-label.png)
 
 ### Field validation
 
 You can validate the required fields of the editor window on the client side before submitting it by adding the appropriate validation rules to each field. The appointment fields have been extended to accept both `string` and `object` type values. To perform validations, you must specify object values for the event fields.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -95,18 +65,6 @@ You can validate the required fields of the editor window on the client side bef
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/field-validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/field-validation/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Field Validation in ASP.NET Core Scheduler](images/schedule-field-validation.png)
 
@@ -115,8 +73,6 @@ N> Applicable validation rules can be referred from [form validation](http://ej2
 ### Add additional fields to the default editor
 
 You can add additional fields to the default event editor by using the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event, which is triggered before the event editor opens in the Scheduler. The [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event is a client-side event that triggers before any of the generic popups open in the Scheduler. Any additional form elements should use the common `e-field` class name so they can be processed along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor, and its value is processed accordingly.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -127,26 +83,12 @@ You can add additional fields to the default event editor by using the [`popupOp
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/additional-field/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/additional-field/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Additional Fields in ASP.NET Core Scheduler](images/schedule-add-field.png)
 
 ### Customizing the default time duration in editor window
 
 In the default event editor window, the start and end time duration are processed based on the `interval` value set within the [`timeScale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeScale) property. By default, the `interval` value is set to 30, so the start and end time duration within the event editor will be 30 minutes apart. You can change this duration value by updating the `duration` option within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event as shown in the following code example.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -157,26 +99,12 @@ In the default event editor window, the start and end time duration are processe
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/duration/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/duration/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customizing Default Time Duration of Editor Window in ASP.NET Core Scheduler](images/schedule-editor-window-duration.png)
 
 ### How to prevent the display of editor and quick popups
 
 You can prevent the display of the editor and quick popup windows by setting the `cancel` option to `true` within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -186,18 +114,6 @@ You can prevent the display of the editor and quick popup windows by setting the
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/prevention/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/prevention/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/prevention/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -217,8 +133,6 @@ The quick info popups open when a cell or appointment is single-clicked in deskt
 
 By default, these popups are displayed over cells and appointments in the Scheduler. To disable this behavior, set the [`showQuickInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/hide-quick-info/tagHelper %}
@@ -228,18 +142,6 @@ By default, these popups are displayed over cells and appointments in the Schedu
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/hide-quick-info/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/hide-quick-info/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 N> The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
@@ -247,8 +149,6 @@ N> The quick popup that opens while single clicking on the cells are not applica
 ### How to open Quick Info popup on multiple cell selection
 
 By default, the `QuickInfo` popup opens when a cell is single-clicked. To open the quick info popup for multiple cell selection, select the cells and press the `Enter` key. You can open this popup immediately after multiple cell selection by setting [`quickInfoOnSelectionEnd`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoOnSelectionEnd) to `true`; its default value is `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -258,18 +158,6 @@ By default, the `QuickInfo` popup opens when a cell is single-clicked. To open t
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/show-quick-info/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/show-quick-info/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/show-quick-info/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -298,8 +186,6 @@ The look and feel of the built-in quick popup window, which opens when cells or 
 * content - Accepts the template design that customizes the content part of the quick popup.
 * footer - Accepts the template design that customizes the footer part of the quick popup.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-quick-popup/tagHelper %}
@@ -308,18 +194,6 @@ The look and feel of the built-in quick popup window, which opens when cells or 
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-quick-popup/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-quick-popup/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-quick-popup/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Customizing Quick Popups in ASP.NET Core Scheduler](images/schedule-custom-quick-popup.png)
@@ -330,8 +204,6 @@ N> The quick popup in adaptive mode can also be customized using [`quickInfoTemp
 
 By default, the editor window includes built-in timezone collections. You can customize these collections by using the [`timezoneDataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimezoneDataSource) property with a collection of `TimezoneFields` data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-timezone-collection/tagHelper %}
@@ -340,18 +212,6 @@ By default, the editor window includes built-in timezone collections. You can cu
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-timezone-collection/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-timezone-collection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-timezone-collection/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Customizing Timezone in ASP.NET Core Scheduler](images/schedule-timezone-collection.png)
@@ -366,8 +226,6 @@ Each field defined within the template should contain the **e-field** class so t
 
 As we use Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within the template in the following example, the custom form elements must be configured as required Syncfusion<sup style="font-size:70%">&reg;</sup> components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event. This step can be skipped if you want to use standard form elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-template/tagHelper %}
@@ -376,18 +234,6 @@ As we use Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Customizing Event Editor Using Template in ASP.NET Core Scheduler](images/schedule-custom-editor-template.png)
@@ -398,8 +244,6 @@ The editor window's header and footer can be enhanced with custom designs using 
 
 In this demo, we tailor the editor header according to the appointment's subject field using the [`editorHeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorHeaderTemplate). We also use the [`editorFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.schedule.schedule.html#Syncfusion_EJ2_Schedule_Schedule_EditorFooterTemplate) to validate specific fields before saving or canceling the appointment if validation requirements are not met.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-header-footer/tagHelper %}
@@ -409,26 +253,12 @@ In this demo, we tailor the editor header according to the appointment's subject
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-header-footer/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-editor-header-footer/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customize header and footer using template in ASP.NET Core Scheduler](images/schedule-editor-custom-header-footer.png)
 
 ### How to add resource options within editor template
 
 The resource field can be added within the editor template by using the MultiSelect control to allow multiple resources.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -439,26 +269,12 @@ The resource field can be added within the editor template by using the MultiSel
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-resource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-resource/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Resource Options Within Editor Template in ASP.NET Core Scheduler](images/schedule-editor-with-resource.png)
 
 ### How to add recurrence options within editor template
 
 The following code example shows how to add recurrence options to the editor template.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -469,26 +285,12 @@ The following code example shows how to add recurrence options to the editor tem
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-recurrence/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-recurrence/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Recurrence Options Within Editor Template in ASP.NET Core Scheduler](images/schedule-editor-with-recurrence.png)
 
 ### Apply validations on editor template fields
 
 In the following code example, validation is added to the status field.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -498,18 +300,6 @@ In the following code example, validation is added to the status field.
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-template-validation/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-template-validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/editor-template-validation/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Apply Validations Editor Template Fields in ASP.NET Core Scheduler](images/schedule-validation-editor-template.png)
@@ -522,8 +312,6 @@ N> You can retrieve the data only on the `save` and `delete` options. Data canno
 
 The following code example shows how to save the customized event editor using a template with the [`popupClose`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupClose) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-event-editor/tagHelper %}
@@ -532,18 +320,6 @@ The following code example shows how to save the customized event editor using a
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-event-editor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-event-editor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/custom-event-editor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -571,8 +347,6 @@ The same indicator is displayed in the all-day row in calendar views such as day
 
 The following code example shows how to disable popups when clicking the more text indicator.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-indicator/tagHelper %}
@@ -582,25 +356,11 @@ The following code example shows how to disable popups when clicking the more te
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-indicator/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-indicator/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ### How to customize the popup that opens on more indicator
 
 The following code example shows how to customize the default more indicator popup so the number of events rendered on the day is shown in the header.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -611,26 +371,12 @@ The following code example shows how to customize the default more indicator pop
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-indicator-custom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-indicator-custom/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customize the More Events Indicator and Popup in ASP.NET Core Scheduler](images/schedule-more-event.png)
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
 You can prevent the popup window from opening by setting the `cancel` option to `true` within the [`MoreEventsClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -641,25 +387,11 @@ You can prevent the popup window from opening by setting the `cancel` option to 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-event-popup/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-event-popup/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ### How to navigate Day view when clicking on more text indicator
 
 The following code example shows how to customize the [`moreEventsClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_MoreEventsClick) event to navigate to the Day view when clicking the more text indicator.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -669,18 +401,6 @@ The following code example shows how to customize the [`moreEventsClick`](https:
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-event-edit/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-event-edit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/editor-template/more-event-edit/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

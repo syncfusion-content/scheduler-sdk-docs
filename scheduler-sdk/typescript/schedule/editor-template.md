@@ -24,9 +24,7 @@ On mobile devices, the detailed editor window opens in edit mode by clicking the
 
 The header title and footer button text of the editor window can be changed by modifying the appropriate localized word collection used in the Scheduler.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs1/index.ts %}
 {% endhighlight %}
@@ -40,30 +38,11 @@ The header title and footer button text of the editor window can be changed by m
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs1/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs1" %}
-{% endif %}
-
 ### Change the label text of default editor fields
 
 To change the default labels such as Subject, Location, and other field names in the editor window, use the [`title`](../api/schedule/fieldOptionsModel#title) property available within the field option of [`eventSettings`](../api/schedule#eventsettings).
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs2/index.ts %}
 {% endhighlight %}
@@ -77,30 +56,11 @@ To change the default labels such as Subject, Location, and other field names in
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs2/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs2/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs2" %}
-{% endif %}
-
 ### Field validation
 
 Required fields in the editor window can be validated on the client side before submission by adding validation rules to each field using the [`validation`](../api/schedule/fieldOptionsModel#validation) property available within the field option of [`eventSettings`](../api/schedule#eventsettings). Appointment fields accept both `string` and `object` values; use object values to specify validation rules.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs3/index.ts %}
 {% endhighlight %}
@@ -114,32 +74,13 @@ Required fields in the editor window can be validated on the client side before 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs3/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs3/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs3" %}
-{% endif %}
-
 > Applicable validation rules can be referred from [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) documentation.
 
 ### Add additional fields to the default editor
 
 Additional fields can be added to the default event editor by using the [`popupOpen`](../api/schedule#popupopen) event, which fires before the editor opens. Add any extra form element with the common class name `e-field` so Scheduler can process the additional data with the default event object. In the following example, an additional field `Event Type` has been added to the default editor and its value is processed accordingly.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs4/index.ts %}
 {% endhighlight %}
@@ -153,30 +94,11 @@ Additional fields can be added to the default event editor by using the [`popupO
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs4/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs4/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs4" %}
-{% endif %}
-
 ### Customize the default time duration in editor window
 
 In the default event editor window, start and end time duration are processed based on the [`interval`](../api/schedule/timeScaleModel#interval) value set within the [`timeScale`](../api/schedule#timescale) property. By default, the [`interval`](../api/schedule/timeScaleModel#interval) value is set to `30`, and therefore the start/end time duration within the event editor will be in 30-minute intervals. This duration value can be changed by modifying the `duration` option within the [`popupOpen`](../api/schedule#popupopen) event as shown in the following code example.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs5/index.ts %}
 {% endhighlight %}
@@ -190,30 +112,11 @@ In the default event editor window, start and end time duration are processed ba
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs5/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs5/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs5" %}
-{% endif %}
-
 ### How to prevent the display of editor and quick popups
 
 The display of editor and quick popup windows can be prevented by passing the value `true` to the [`cancel`](../api/schedule/popupOpenEventArgs#cancel) option within the [`popupOpen`](../api/schedule#popupopen) event.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs6/index.ts %}
 {% endhighlight %}
@@ -226,23 +129,6 @@ The display of editor and quick popup windows can be prevented by passing the va
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs6/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs6/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs6" %}
-{% endif %}
 
 To prevent only specific popups on Scheduler, check the condition based on the popup type. The types of popups that can be checked within the [`popupOpen`](../api/schedule#popupopen) event are as follows.
 
@@ -262,9 +148,7 @@ To prevent only specific popups on Scheduler, check the condition based on the p
 
 By default, the timezone collections in the editor window are loaded with built-in timezone data. The timezone collections can be customized using the [`timezoneDataSource`](../api/schedule#timezonedatasource) property with the collection of `TimezoneFields` data.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs7/index.ts %}
 {% endhighlight %}
@@ -275,27 +159,11 @@ By default, the timezone collections in the editor window are loaded with built-
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs7" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs7" %}
-{% endif %}
-
 ### Close the editor window manually
 
 The editor window can be closed using the [`closeEditor`](../api/schedule#closeeditor) method.  
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs15/index.ts %}
 {% endhighlight %}
@@ -309,23 +177,6 @@ The editor window can be closed using the [`closeEditor`](../api/schedule#closee
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs15" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs15/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs15/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs15/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs15" %}
-{% endif %}
-
 
 ## Customize event editor using template
 
@@ -337,9 +188,7 @@ Each field defined within the template should contain the **e-field** class, to 
 
 When using Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components within the editor template, custom form elements must be initialized as Syncfusion<sup style="font-size:70%">&reg;</sup> controls such as **DropDownList** and **DateTimePicker** inside the [`popupOpen`](../api/schedule#popupopen) event. This step can be skipped when using standard HTML form elements.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs1/index.ts %}
 {% endhighlight %}
@@ -353,31 +202,12 @@ When using Syncfusion<sup style="font-size:70%">&reg;</sup> sub-components withi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs1/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-cs1" %}
-{% endif %}
-
 ### Customize header and footer using template
 
 The editor window's header and footer can be enhanced with custom designs using the [`editorHeaderTemplate`](../api/schedule#editorheadertemplate) and [`editorFooterTemplate`](../api/schedule#editorfootertemplate) options. To achieve this, create a script template that includes the necessary fields. Ensure that the template type is set to **text/x-template**.
 
 In this example, the editor's header is customized according to the appointment's subject field using 
 [`editorHeaderTemplate`](../api/schedule#editorheadertemplate). The [`editorFooterTemplate`](../api/schedule#editorfootertemplate) is used to handle the functionality of validating specific fields before proceeding with the save action or canceling if validation requirements are not met.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -390,27 +220,11 @@ In this example, the editor's header is customized according to the appointment'
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-header-footer-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-header-footer-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-header-footer-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-header-footer-cs1" %}
-{% endif %}
-
 ### Add resource options within editor template
 
 The resource field can be added within the editor template with a multiselect control to allow multiple resource selection.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/resource-field-cs1/index.ts %}
 {% endhighlight %}
@@ -424,30 +238,11 @@ The resource field can be added within the editor template with a multiselect co
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-field-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/resource-field-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/resource-field-cs1/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/resource-field-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/resource-field-cs1" %}
-{% endif %}
-
 ### Add recurrence options within editor template
 
 The following code example shows how to add recurrence options within the editor template by importing `RecurrenceEditor`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-recurrence-cs1/index.ts %}
 {% endhighlight %}
@@ -461,30 +256,11 @@ The following code example shows how to add recurrence options within the editor
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-recurrence-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-recurrence-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-recurrence-cs1/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-recurrence-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-recurrence-cs1" %}
-{% endif %}
-
 ### Apply validations on editor template fields
 
 In the following code example, validation has been added to the `EventType` field by using the `popupOpen` event. This field is set as `required`, and the validation message is displayed using the `FormValidator` class.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs2/index.ts %}
 {% endhighlight %}
@@ -498,23 +274,6 @@ In the following code example, validation has been added to the `EventType` fiel
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs2/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-dataSource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs2/es5-dataSource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-cs2" %}
-{% endif %}
-
 ### How to save the customized event editor using template
 
 If the **e-field** class is not added to template fields, their values must be handled externally using the [`popupClose`](../api/schedule#popupclose) event.
@@ -524,9 +283,7 @@ Note: Data is available only for the `save` and `delete` actions. It is not avai
 The following code example shows how to save the customized event editor using a template with the [`popupClose`](../api/schedule#popupclose) event.
 
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs3/index.ts %}
 {% endhighlight %}
@@ -539,23 +296,6 @@ The following code example shows how to save the customized event editor using a
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs3/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-dataSource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-cs3/es5-dataSource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-cs3" %}
-{% endif %}
 
 To prevent only specific popup closures on Scheduler, check the condition based on the popup type. The types of popups that can be checked within the [`popupClose`](../api/schedule#popupclose) event are as follows.
 
@@ -579,9 +319,7 @@ By default, these popups appear for Scheduler cells and appointments. To disable
 
 > The quick popup that opens on single-click cell actions is not available on mobile devices.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs8/index.ts %}
 {% endhighlight %}
@@ -595,30 +333,11 @@ By default, these popups appear for Scheduler cells and appointments. To disable
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs8" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs8/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs8/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs8/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs8" %}
-{% endif %}
-
 ### Open quick popup on multiple cell selection
 
 The quick popup can be displayed immediately after multiple cells are selected in Scheduler by setting [`quickInfoOnSelectionEnd`](../api/schedule#quickinfoonselectionend) to `true`. By default, it is `false`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs1/index.ts %}
 {% endhighlight %}
@@ -631,23 +350,6 @@ The quick popup can be displayed immediately after multiple cells are selected i
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs1/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs1" %}
-{% endif %}
 
 ### How to change the watermark text of quick popup subject
 
@@ -671,9 +373,7 @@ The built-in quick popup window that opens on cell or appointment click can be c
 * content - customizes the content portion of the quick popup.
 * footer - customizes the footer portion of the quick popup.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs2/index.ts %}
 {% endhighlight %}
@@ -687,32 +387,13 @@ The built-in quick popup window that opens on cell or appointment click can be c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs2/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs2/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/quick-info-cs2" %}
-{% endif %}
-
 > The quick popup in adaptive mode can also be customized using [`quickInfoTemplates`](../api/schedule#quickinfotemplates) with the `e-device` class.
 
 ### Open the quick info popup manually
 
 The quick info popup in Scheduler can be opened using the [openQuickInfoPopup](../api/schedule#openquickinfopopup) public method. To open the cell quick info popup, pass the cell data as an argument to the method. To open the event quick info popup, pass the event data object as an argument to the method.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs16/index.ts %}
 {% endhighlight %}
@@ -723,27 +404,11 @@ The quick info popup in Scheduler can be opened using the [openQuickInfoPopup](.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs16" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs16/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs16/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs16" %}
-{% endif %}
-
 ### Close the quick info popup manually
 
 The quick info popup in Scheduler can be closed using the [`closeQuickInfoPopup`](../api/schedule#closequickinfopopup) public method. The following code example demonstrates how to close the quick info popup manually.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs17/index.ts %}
 {% endhighlight %}
@@ -753,20 +418,6 @@ The quick info popup in Scheduler can be closed using the [`closeQuickInfoPopup`
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs17" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs17/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs17" %}
-{% endif %}
 
 ## More events indicator and popup
 
@@ -778,9 +429,7 @@ The same indicator appears on the all-day row in calendar views such as day, wee
 
 The following code example shows how to disable the display of such popups when clicking on the more text indicator.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs9/index.ts %}
 {% endhighlight %}
@@ -794,30 +443,11 @@ The following code example shows how to disable the display of such popups when 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs9" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs9/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs9/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs9/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs9" %}
-{% endif %}
-
 ### Customize the popup that opens on more indicator
 
 The following code example shows how to customize the default more indicator popup by displaying the number of events rendered that day in the header.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs10/index.ts %}
 {% endhighlight %}
@@ -831,30 +461,11 @@ The following code example shows how to customize the default more indicator pop
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs10" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs10/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs10/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs10" %}
-{% endif %}
-
 ### Prevent the display of popup when clicking on the more text indicator
 
 The display of the popup window can be prevented by passing the value `true` to the `cancel` option within the [`MoreEventsClick`](../api/schedule#moreeventsclick) event.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs13/index.ts %}
 {% endhighlight %}
@@ -868,30 +479,11 @@ The display of the popup window can be prevented by passing the value `true` to 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs13" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs13/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs13/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs13" %}
-{% endif %}
-
 ### Navigate to Day view when clicking on more text indicator
 
 The following code example shows how to customize the [`moreEventsClick`](../api/schedule#moreeventsclick) event to navigate to the Day view when clicking on the more text indicator.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs14/index.ts %}
 {% endhighlight %}
@@ -904,22 +496,5 @@ The following code example shows how to customize the [`moreEventsClick`](../api
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs14/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs14/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs14/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/editor-window-cs14" %}
-{% endif %}
 
 > Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

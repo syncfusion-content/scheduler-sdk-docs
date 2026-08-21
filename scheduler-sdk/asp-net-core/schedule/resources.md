@@ -53,8 +53,6 @@ The following code example shows how to bind local JSON data to the `dataSource`
 * Add the resource data source in the Index method.
 * Add the Scheduler code in the view page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/local-data/tagHelper %}
@@ -63,18 +61,6 @@ The following code example shows how to bind local JSON data to the `dataSource`
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/local-data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/local-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/local-data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -85,8 +71,6 @@ The following code example shows how to bind remote data to the resources `dataS
 * Add the resource data source in the Index method.
 * Add the Scheduler code in the view page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/remote-data/tagHelper %}
@@ -95,18 +79,6 @@ The following code example shows how to bind remote data to the resources `dataS
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/remote-data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/remote-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/remote-data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -118,8 +90,6 @@ Appointments belonging to different resources are displayed together in the defa
 
 **Example:** To display the default Scheduler with multiple resource options in the event editor, ignore the group option and define the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) property with all its internal options.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/without-group/tagHelper %}
@@ -128,18 +98,6 @@ Appointments belonging to different resources are displayed together in the defa
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/without-group/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/without-group/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/without-group/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Displaying Multiple Resources in ASP.NET Core Scheduler](images/scheduler-multiple-resource.png)
@@ -156,8 +114,6 @@ Scheduler supports both single-level and multi-level resource grouping, and thes
 
 The following code example shows how multiple resources are grouped and how their events are displayed in the default calendar views.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/multiple-resources/tagHelper %}
@@ -167,26 +123,12 @@ The following code example shows how multiple resources are grouped and how thei
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/multiple-resources/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/multiple-resources/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Displaying Vertical Resource View in ASP.NET Core Scheduler](images/scheduler-resource-verticalview.png)
 
 ### Timeline resource view
 
 The following code example shows how to group multiple resources in Timeline Scheduler views and display the related events under those resources.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -196,18 +138,6 @@ The following code example shows how to group multiple resources in Timeline Sch
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Displaying Timeline Resource View in in ASP.NET Core Scheduler](images/scheduler-resource-timelineview.png)
@@ -218,8 +148,6 @@ This grouping allows the Scheduler to display all resources at a single level si
 
 **Example:** To display the Scheduler with single-level resource grouping:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/single-level/tagHelper %}
@@ -228,18 +156,6 @@ This grouping allows the Scheduler to display all resources at a single level si
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/single-level/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/single-level/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/single-level/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Grouping Single-level Resources in in ASP.NET Core Scheduler](images/scheduler-resource-singlelevel.png)
@@ -250,8 +166,6 @@ N> The `name` field defined in the **resources** collection namely `Owners` will
 
 It is possible to group the resources in the Scheduler across multiple levels by mapping child resources to each parent resource. In the following example, there are two resource levels, and the second-level resources use `groupIDField` to map to the first-level resource ID and establish the parent-child relationship.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources/tagHelper %}
@@ -261,26 +175,12 @@ It is possible to group the resources in the Scheduler across multiple levels by
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Grouping Multi-level Resources in in ASP.NET Core Scheduler](images/scheduler-resource-timelineview.png)
 
 ### One-to-One grouping
 
 In multi-level grouping, Scheduler usually groups child resources based on the `groupIDField` mapped to the parent resource's `idField` (with [`byGroupID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) set to `true` by default). There is also an option that allows you to group all child resources against each parent resource. To enable this grouping, set the [`byGroupID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByGroupID) option within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property to `false`. In the following code example, there are two resource levels, and all three child resources are mapped one-to-one with each resource on the first level.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -291,18 +191,6 @@ In multi-level grouping, Scheduler usually groups child resources based on the `
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/group-child/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/group-child/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display One-to-One Grouping in in ASP.NET Core Scheduler](images/scheduler-resource-one-to-one.png)
 
@@ -311,8 +199,6 @@ In multi-level grouping, Scheduler usually groups child resources based on the `
 It groups the resources under each date and is applicable only to calendar views such as Day, Week, Work Week, Month, Agenda, and Month-Agenda. To enable this grouping, set the [`byDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_ByDate) option within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property to `true`.
 
 **Example:** To display the Scheduler with resources grouped by date:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -323,18 +209,6 @@ It groups the resources under each date and is applicable only to calendar views
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/group-date/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/group-date/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Grouping Resources by Date in ASP.NET Core Scheduler](images/scheduler-resource-bydate.png)
 
@@ -344,8 +218,6 @@ N> This kind of grouping by date is not applicable on any of the **timeline view
 
 In timeline view work cells of parent resource can be customized by checking the `elementType` as `resourceGroupCells` in the event [`renderCell`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell). In the following code example, background color of the work hours has been changed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/parent-resources/tagHelper %}
@@ -354,18 +226,6 @@ In timeline view work cells of parent resource can be customized by checking the
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/parent-resources/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/parent-resources/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/parent-resources/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Customizing parent resource cells in ASP.NET Core Scheduler](images/scheduler-custom-parentcell.png)
@@ -378,8 +238,6 @@ N> Any actions such as create, edit or delete held on any one of the shared even
 
 **Example:** To edit all the resource events simultaneously,
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/linked-events/tagHelper %}
@@ -388,18 +246,6 @@ N> Any actions such as create, edit or delete held on any one of the shared even
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/linked-events/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/linked-events/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/linked-events/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Working with Shared Events in ASP.NET Core Scheduler](images/scheduler-shared-event.png)
@@ -410,8 +256,6 @@ It is possible to customize the resource header cells using built-in template op
 
 **Example:** To customize the resource header and display it along with designation field, refer the below code example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-header/tagHelper %}
@@ -420,18 +264,6 @@ It is possible to customize the resource header cells using built-in template op
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-header/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-header/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Resource Header Customization in ASP.NET Core Scheduler](images/scheduler-custom-resource-header.png)
@@ -444,8 +276,6 @@ N> To customize the resource header in compact mode properly make use of the cla
 
 It is possible to customize the resource headers to display with multiple columns such as Room, Type and Capacity. The following code example depicts the way to achieve it and is applicable only on timeline views.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-resource-header/tagHelper %}
@@ -455,26 +285,12 @@ It is possible to customize the resource headers to display with multiple column
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-resource-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-resource-header/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Customizing Resource Header with Multiple Columns in ASP.NET Core Scheduler](images/scheduler-custom-resource-header-multiple-column.png)
 
 ## Collapse/Expand child resources in timeline views
 
 It is possible to expand and collapse the resources which have child resource in timeline views dynamically. By default, resources are in expanded state with their child resource. We can collapse and expand the child resources in UI by setting `expandedField` option as `false` whereas its default value is `true`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -485,26 +301,12 @@ It is possible to expand and collapse the resources which have child resource in
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources-collapse-child/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/timeline-multiple-resources-collapse-child/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Collapse/Expand child resources with timeline views in ASP.NET Core Scheduler](images/scheduler-collapse-child-resource-timelineview.png)
 
 ## Displaying tooltip for resource headers
 
 It is possible to display tooltip over the resource headers showing the resource information. By default, there won't be any tooltip displayed on the resource headers, and to enable it, you need to assign the customized template design to the [`headerTooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_HeaderTooltipTemplate) option within the [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -515,18 +317,6 @@ It is possible to display tooltip over the resource headers showing the resource
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/tooltip/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Tooltip for Resource Headers in ASP.NET Core Scheduler](images/scheduler-resource-tooltip.png)
 
@@ -536,8 +326,6 @@ By default, the colors defined on the top level resources collection will be app
 
 In the following example, the colors mentioned in the second level will get applied over the events.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-color/tagHelper %}
@@ -546,18 +334,6 @@ In the following example, the colors mentioned in the second level will get appl
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-color/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-color/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/resource-color/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Choosing Between Resource Colors for Appointments in ASP.NET Core Scheduler](images/scheduler-resource-colour.png)
@@ -570,8 +346,6 @@ It is possible to add or remove the resources dynamically to and from the Schedu
 
 To remove the resources dynamically, `removeResource` method is used which accepts the index (position from where the resource to be removed) and resource name (within which level, the resource object presents) as parameters.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/dynamic-resource/tagHelper %}
@@ -580,18 +354,6 @@ To remove the resources dynamically, `removeResource` method is used which accep
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/dynamic-resource/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/dynamic-resource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/dynamic-resource/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -607,8 +369,6 @@ Each resource in the Scheduler can have different `working hours` as well as dif
 
 Different working days can be set for the resources of Scheduler using the `workDaysField` property which maps the working days field from the resource dataSource. This field accepts the collection of day indexes (from 0 to 6) of a week. By default, it is set to [1, 2, 3, 4, 5] and in the following example, each resource has been set with different values and therefore each of them will render only those working days. This option is applicable only on the calendar views and is not applicable on timeline views.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-workdays/tagHelper %}
@@ -617,18 +377,6 @@ Different working days can be set for the resources of Scheduler using the `work
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-workdays/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-workdays/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-workdays/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Set Different Work Days in ASP.NET Core Scheduler](images/scheduler-resource-custom-workdays.png)
@@ -642,8 +390,6 @@ Different `working Hours` can be set for the resources of Scheduler using the `s
 
 Working hours indicates the work hour duration of a day, which is highlighted visually with active color over the work cells. Each resource on the Scheduler can be defined with its own set of working hours as depicted in the following example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-hour/tagHelper %}
@@ -652,18 +398,6 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-hour/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-hour/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/custom-hour/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Set Different Work Hours in ASP.NET Core Scheduler](images/scheduler-resource-custom-workhours.png)
@@ -678,8 +412,6 @@ To use the `HideNonWorkingDays` property, you need to include it in the configur
 
 **Example:** To display the Scheduler with resources grouped by date for custom working days,
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/hide-non-working-days/tagHelper %}
@@ -688,18 +420,6 @@ To use the `HideNonWorkingDays` property, you need to include it in the configur
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/hide-non-working-days/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/hide-non-working-days/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/hide-non-working-days/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -723,8 +443,6 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 * Today icon is added to the header instead of the Today button.
 * With Multiple resources – only one resource has been shown to enhance the view experience of resource events details clearly. To switch to other resources, there is a TreeView on the left that lists all other available resources, clicking on which will display that particular resource and its related events.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/adaptive-ui/tagHelper %}
@@ -733,18 +451,6 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/adaptive-ui/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/adaptive-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/resources/adaptive-ui/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

@@ -12,9 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 To improve performance when loading many resources and events, the Scheduler supports virtual scrolling. Virtual scrolling loads resources and events on demand as the user scrolls, reducing initial render time and memory usage. Enable virtual scrolling by setting [`allowVirtualScrolling`](../api/schedule/viewsModel#allowvirtualscrolling) to `true` in the view-specific settings. Virtual loading of events is also supported in the Agenda view by enabling [`allowVirtualScrolling`](../api/schedule/viewsModel#allowvirtualscrolling) in the Agenda view settings.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1/index.ts %}
 {% endhighlight %}
@@ -24,20 +22,6 @@ To improve performance when loading many resources and events, the Scheduler sup
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1" %}
-{% endif %}
 
 **Note:** Virtual loading of resources and events is not supported in the `MonthAgenda`, `Year`, and `TimelineYear` views in horizontal orientation.
 
@@ -51,8 +35,6 @@ With lazy loading enabled, the Scheduler fetches events from remote services onl
 
 Enable lazy loading by setting [`enableLazyLoading`](../api/schedule/viewsModel#enablelazyloading) to `true` in the view-specific settings.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1/index.ts %}
@@ -63,20 +45,6 @@ Enable lazy loading by setting [`enableLazyLoading`](../api/schedule/viewsModel#
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1" %}
-{% endif %}
 
 The following server-side controller retrieves appointment data based on resource IDs provided as query parameters:
 

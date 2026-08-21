@@ -18,8 +18,6 @@ The **Year view** of the Scheduler displays all 365 days of a year along with th
 
 In the following example, the Scheduler is configured to render only the last six months of a year. By setting [`firstMonthOfYear`](../../api/schedule#firstmonthofyear) to `6`, the view begins with June. The [`monthsCount`](../../api/schedule#monthscount) property is set to `6` to display six months, resulting in a half-year view.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1/index.ts %}
@@ -30,17 +28,3 @@ In the following example, the Scheduler is configured to render only the last si
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1" %}
-{% endif %}

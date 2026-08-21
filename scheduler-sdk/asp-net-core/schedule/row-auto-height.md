@@ -22,8 +22,6 @@ Now, let's see how it works on those applicable views with examples.
 
 By default, the rows of the calendar Month view can hold only a limited number of appointments based on the row height, and the rest of the overlapping appointments are indicated with a `+n more` text indicator. The following example shows how the month view row auto-adjusts based on the number of appointments when this [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is enabled.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/month-view/tagHelper %}
@@ -33,26 +31,12 @@ By default, the rows of the calendar Month view can hold only a limited number o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/month-view/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/month-view/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Row Auto Height in ASP.NET Core Scheduler Month View](images/schedule-auto-height-month-view.png)
 
 ## Timeline views
 
 When the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) is enabled in Timeline views, the row height is auto-adjusted based on the number of overlapping events occupying the same time range, which is demonstrated in the following example.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,26 +47,12 @@ When the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetcore-js2
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/timeline-view/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/timeline-view/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Row Auto Height in ASP.NET Core Scheduler Timeline View](images/schedule-auto-height-timeline-view.png)
 
 ## Timeline views with multiple resources
 
 The following example shows how the auto row adjustment feature works on timeline views with multiple resources.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -93,26 +63,12 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/timeline-resource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/timeline-resource/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Row Auto Height with Multiple Resources in ASP.NET Core Scheduler Timeline View](images/schedule-auto-height-with-resource.png)
 
 ## Appointments occupying entire cell
 
 By default, with the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight), there will be a space at the bottom of the cell when an appointment is rendered. To avoid this space, we can set the property [`ignoreWhitespace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_IgnoreWhitespace) to true within [`eventSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings), whose default value is false. In the following code example, the whitespace below the appointments is ignored.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,18 +78,6 @@ By default, with the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/as
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/ignore-whitespace/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/ignore-whitespace/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/row-auto-height/ignore-whitespace/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Display Appointments Occupying Entire Cell in ASP.NET Core Scheduler](images/schedule-entire-cell.png)

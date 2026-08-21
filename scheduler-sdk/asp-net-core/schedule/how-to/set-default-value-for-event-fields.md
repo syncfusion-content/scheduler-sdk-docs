@@ -11,8 +11,6 @@ documentation: ug
 
 The default field names displayed in the event editor window (such as Title, Location, etc.) can be customized, and a default value can be set for the Subject field using the `Default` property. This default value is applied to an appointment when it is created with an empty Subject.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/default-subject/tagHelper %}
@@ -21,16 +19,4 @@ The default field names displayed in the event editor window (such as Title, Loc
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/default-subject/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/default-subject/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/default-subject/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

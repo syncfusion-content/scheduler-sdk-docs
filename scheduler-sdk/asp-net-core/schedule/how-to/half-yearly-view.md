@@ -26,8 +26,6 @@ The following table summarizes the properties used to customize the year view:
 | `monthsCount` | number | `12` | Specifies the number of months to render in the year view. |
 | `monthHeaderTemplate` | string | `null` | Template used to customize the header of each month in the year view. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/year-customizations/tagHelper %}
@@ -36,16 +34,4 @@ The following table summarizes the properties used to customize the year view:
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/year-customizations/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/year-customizations/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/year-customizations/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
