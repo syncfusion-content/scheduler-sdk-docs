@@ -9,7 +9,7 @@ documentation: ug
 
 # Set Different Event Time Duration in ASP.NET Core Scheduler
 
-In event window, start/end time duration will be processed based on the `interval` value within the `timeScale` property. By default, `interval` value is 30, therefore in event window start/end time duration will be in 30 mins duration. You can set custom interval range to the start/end time in event window using `popupOpen` event as shown below.
+In the event window, the start and end time duration is processed based on the `interval` value within the `timeScale` property. By default, the `interval` value is 30, so the start and end time duration in the event window is set to 30 minutes. You can set a custom interval range for the start and end time in the event window using the `popupOpen` event as shown below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -10,19 +10,19 @@ documentation: ug
 
 # Timezone in ASP.NET Core Scheduler
 
-The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties [`startTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`endTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) which can be defined as separate fields within the event fields collection.
+The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) property needs to be used. Apart from the default action of applying a specific timezone to the Scheduler, it is also possible to set different time zone values for each appointment through the properties [`startTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`endTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone), which can be defined as separate fields within the event fields collection.
 
->Note: **timezone** property only applicable for the appointment processing and current time indication.
+> Note: The **timezone** property is applicable only for appointment processing and the current time indication.
 
 ## Understanding date manipulation in JavaScript
 
-The `new Date()` in JavaScript returns the exact current date object with complete time and timezone information. For example, it may return value such as `Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)` which indicates that the current date is December 12, 2018 and the current time is 5.23 AM on browsers following the IST timezone.
+The `new Date()` in JavaScript returns the exact current date object with complete time and timezone information. For example, it may return a value such as `Wed Dec 12 2018 05:23:27 GMT+0530 (India Standard Time)`, which indicates that the current date is December 12, 2018, and the current time is 5:23 AM on browsers following the IST timezone.
 
 ## Scheduler with no timezone
 
-When no specific time zone is set to Scheduler, appointments will be displayed based on the client system's timezone which is the default behavior. Here, the same appointment when viewed from different timezone will have different start and end times.
+When no specific time zone is set on the Scheduler, appointments are displayed based on the client system's timezone, which is the default behavior. Here, the same appointment, when viewed from a different timezone, will have different start and end times.
 
-The following code example displays an appointment from 9.00 AM to 10.00 AM when you open the Scheduler from any of the timezone. This is because, we are providing the start and end time enclosing with `new Date()` which works based on the client browser's timezone.
+The following code example displays an appointment from 9:00 AM to 10:00 AM when you open the Scheduler from any timezone. This is because the start and end time are enclosed with `new Date()`, which works based on the client browser's timezone.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,7 +51,7 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 
 ## Scheduler set to specific timezone
 
-When a timezone is set to Scheduler through [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone)  property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In core application, client timezone will be added by default. In order to render the appointments in the timezone which has been set to the scheduler, add the following code snippet in your `Startup.cs` file like below.
+When a timezone is set on the Scheduler through the [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) property, the appointments are displayed exactly based on the Scheduler timezone, regardless of the client timezone. In ASP.NET Core applications, the client timezone is added by default. In order to render the appointments in the timezone that has been set on the Scheduler, add the following code snippet in your `Startup.cs` file as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle=".NET 2.2" %}
@@ -84,7 +84,7 @@ public void ConfigureServices(IServiceCollection services)
 {% endhighlight %}
 {% endtabs %}
 
-In the following code example, appointments will be displayed based on Eastern Time (UTC -05:00).
+In the following code example, appointments are displayed based on Eastern Time (UTC -05:00).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,7 +113,7 @@ In the following code example, appointments will be displayed based on Eastern T
 
 ## Display events on same time everywhere with no time difference
 
-Setting [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone)  to UTC for Scheduler will display the appointments on same time as in the database for all the users in different time zone.
+Setting [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) to UTC for the Scheduler will display the appointments at the same time as in the database for all the users in different time zones.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -142,7 +142,7 @@ Setting [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 ## Set specific timezone for events
 
-It is possible to set different timezone for Scheduler events by setting [`startTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`endTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) properties within the [`eventSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) option. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
+It is possible to set a different timezone for Scheduler events by setting the [`startTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`endTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) properties within the [`eventSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) option. This allows each appointment to maintain a different timezone and be displayed on the Scheduler with the appropriate time differences.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -171,7 +171,7 @@ It is possible to set different timezone for Scheduler events by setting [`start
 
 ## Add or remove timezone names to/from the timezone collection
 
-Instead of displaying all the timezone names within the timezone collection (more than 200 are displayed on the editor window timezone fields by default), you can customize the timezone collection at application end as shown in the following example.
+Instead of displaying all the timezone names within the timezone collection (more than 200 are displayed on the editor window timezone fields by default), you can customize the timezone collection at the application end as shown in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -211,7 +211,7 @@ This method is used to calculate the difference between passed UTC date and time
 
 Returns `number`
 
-```sh
+```javascript
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -231,7 +231,7 @@ This method is used to convert the passed date from one timezone to another time
 
 Returns `Date`
 
-```sh
+```javascript
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -252,7 +252,7 @@ This method is used to add the time difference between passed UTC date and timez
 
 Returns `Date`
 
-```sh
+```javascript
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -271,7 +271,7 @@ This method is used to remove the time difference between passed UTC date and ti
 
 Returns `Date`
 
-```sh
+```javascript
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -289,7 +289,7 @@ This method is used to remove the local offset time from the date passed.
 
 Returns `Date`
 
-```sh
+```javascript
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -297,4 +297,4 @@ Returns `Date`
     console.log(convertedDate); //2018-12-05T15:25:11.000Z
 ```
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.
