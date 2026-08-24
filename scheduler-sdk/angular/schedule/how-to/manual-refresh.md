@@ -37,7 +37,7 @@ The example below shows how to use `refreshTemplates` to refresh multiple templa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/refresh-templates-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/refresh-templates-cs1" %}
 
 ## Refresh Layout
 
@@ -53,4 +53,4 @@ In Scheduler, you can refresh the layout manually without re-rendering DOM eleme
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs47" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs47" %}

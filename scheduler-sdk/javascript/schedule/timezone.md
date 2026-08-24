@@ -23,21 +23,6 @@ JavaScript's `new Date()` returns a Date object that includes local time and the
 
 When no Scheduler `timezone` is specified, appointments render using the browser's local time zone. For example, `new Date()` values are shown in the viewer's local time.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1/index.js %}
@@ -47,30 +32,11 @@ When no Scheduler `timezone` is specified, appointments render using the browser
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1" %}
 
 ## Scheduler set to a specific timezone
 
 Set the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to force appointments to display in a particular zone regardless of the client's local setting. The example below demonstrates appointments displayed in Eastern Time (UTC−05:00).
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -84,30 +50,11 @@ Set the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/sc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2" %}
 
 ## Display events at the same time everywhere (UTC)
 
 If events are stored in UTC and should appear at the same wall-clock time for all users, set the Scheduler [`timezone`](https://ej2.syncfusion.com/documentation/api/schedule#timezone) to `UTC`. This keeps displayed times consistent with stored database values across regions.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -121,27 +68,11 @@ If events are stored in UTC and should appear at the same wall-clock time for al
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3" %}
 
 ## Per-event time zones
 
 To preserve an appointment's originating zone, include `startTimezone` and `endTimezone` in the event data. The Scheduler adjusts rendering to reflect the correct offsets.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -152,30 +83,11 @@ To preserve an appointment's originating zone, include `startTimezone` and `endT
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4" %}
 
 ## Customize timezone list in the editor
 
 The timezone editor shows a large collection of zones by default. Customize the list at the application level to surface only relevant zones or to add/remove entries.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -189,8 +101,7 @@ The timezone editor shows a large collection of zones by default. Customize the 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5" %}
 
 ## Timezone utility methods
 
@@ -293,4 +204,4 @@ let convertedDate: Date = timezone.removeLocalOffset(date);
 console.log(convertedDate); // 2018-12-05T15:25:11.000Z
 ```
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage.

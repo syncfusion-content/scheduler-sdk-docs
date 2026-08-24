@@ -44,7 +44,7 @@ To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **C
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs1" %}
 
 > **Note:** For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
@@ -77,7 +77,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs2" %}
 
 ## Modifying Content before pasting
 
@@ -109,13 +109,13 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/clipboard-cs3" %}
 
 > **Note:** Ensure that the field mapping matches with the fields in the scheduler.
 
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
-* [CRUD Actions](https://ej2.syncfusion.com/react/documentation/schedule/crud-actions)
+* [CRUD Actions](https://help.syncfusion.com/scheduler-sdk/react/schedule/crud-actions)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

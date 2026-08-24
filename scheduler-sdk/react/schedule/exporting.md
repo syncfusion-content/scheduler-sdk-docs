@@ -30,7 +30,7 @@ The Scheduler enables exporting events to an Excel file using the [`exportToExce
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs1" %}
 
 ### Exporting with custom fields
 
@@ -54,7 +54,7 @@ By default, the Scheduler exports all default event fields mapped through the [`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs2" %}
 
 ### Exporting individual occurrences of a recurring series
 
@@ -77,7 +77,7 @@ By default, the Scheduler exports recurring events as a single parent record. To
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs3" %}
 
 ### Exporting custom event data
 
@@ -101,7 +101,7 @@ By default, all events from the Scheduler's dataSource are exported. To export o
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs4" %}
 
 ### Customizing column header with custom fields exporting
 
@@ -121,7 +121,7 @@ When exporting custom fields, you can customize the column headers using the [`f
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs5" %}
 
 ### Export with custom file name
 
@@ -139,7 +139,7 @@ The default exported file name is `Schedule.xlsx`. Customize it by setting `file
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs6" %}
 
 ### Excel file formats
 
@@ -163,7 +163,7 @@ To change the export format, set the `exportType` option in the [`ExportOptions`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs7" %}
 
 ### Custom separator in CSV
 
@@ -181,7 +181,7 @@ When exporting to CSV, the default separator is `,`. Change it by setting the [`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs8" %}
 
 ### How to customize the excel sheet on before exporting
 
@@ -212,7 +212,7 @@ Here’s an example of how you can add a custom header and footer to an Excel sh
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/excel-export-cs9" %}
 
 ## Exporting calendar events as ICS file
 
@@ -237,7 +237,7 @@ The following code example shows how the Scheduler events are exported to a cale
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-export-cs1" %}
 
 ### Exporting calendar with custom file name
 
@@ -260,7 +260,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-export-cs2" %}
 
 ## Import events from other calendars
 
@@ -285,7 +285,7 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/calendar-import-cs1" %}
 
 ## How to print the Scheduler element
 
@@ -312,7 +312,7 @@ Print the Scheduler with the current view using the [`print`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs1" %}
 
 ### Using a print method with options
 
@@ -330,7 +330,7 @@ Customize the print output by passing options to the [`print`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs2" %}
 
 ### How to customize the print layout
 
@@ -355,13 +355,13 @@ Use the [`beforePrint`](https://ej2.syncfusion.com/react/documentation/api/sched
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/print-cs3" %}
 
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
-* [Excel Export Documentation](https://ej2.syncfusion.com/react/documentation/schedule/exporting)
+* [Excel Export Documentation](https://help.syncfusion.com/scheduler-sdk/react/schedule/exporting)
 * [ICalendar Export/Import](https://ej2.syncfusion.com/react/documentation/api/schedule/index-default#exporttoicalendar)
-* [Print Functionality Guide](https://ej2.syncfusion.com/react/documentation/schedule/exporting#how-to-print-the-scheduler-element)
+* [Print Functionality Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/exporting#how-to-print-the-scheduler-element)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

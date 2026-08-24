@@ -29,18 +29,6 @@ These keyboard shortcuts enable users to efficiently manage their schedules:
 
 To use these shortcuts, click on the appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. To paste the copied or cut appointment, click on the desired time slot and press **Ctrl+V**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/normal-schedule/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/normal-schedule/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -50,7 +38,6 @@ To use these shortcuts, click on the appointment and press **Ctrl+C** to copy or
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/normal-schedule/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
@@ -68,19 +55,6 @@ Use these public methods to manage appointments programmatically in the Syncfusi
 
 By using these methods, you can programmatically cut, copy, and paste appointments in the Scheduler, providing more control over the appointment management process.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/context-menu/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/context-menu/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/context-menu/razor %}
@@ -89,7 +63,6 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/context-menu/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Modifying content before pasting
 
@@ -106,19 +79,6 @@ In this example, the `beforePaste` event can be used to intercept the event deta
 
 >Note: Ensure that the field mapping matches the fields in the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/schedule-grid/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/schedule-grid/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/schedule-grid/razor %}
@@ -127,7 +87,6 @@ In this example, the `beforePaste` event can be used to intercept the event deta
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/clipboard/schedule-grid/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 >  You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.

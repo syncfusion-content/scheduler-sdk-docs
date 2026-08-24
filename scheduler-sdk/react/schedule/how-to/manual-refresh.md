@@ -36,7 +36,7 @@ The following code example shows how to use the `refreshTemplates` method to ref
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/refresh-templates-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/refresh-templates-cs1" %}
 
 ## Refresh layout
 
@@ -54,4 +54,4 @@ In the Scheduler, you can refresh the layout manually without re-rendering the D
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/refresh-layout-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/refresh-layout-cs1" %}

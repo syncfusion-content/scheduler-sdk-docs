@@ -26,7 +26,7 @@ You can perform CRUD actions on appointments manually by using the [`addEvent`](
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs6" %}
 
 ## Recurring events
 
@@ -42,7 +42,7 @@ You can perform CRUD actions on appointments manually by using the [`addEvent`](
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs7" %}
 
 > **Note:** When a single occurrence of a recurring appointment is edited, the `RecurrenceID` field is added and holds the `Id` value of its parent recurring appointment. This applies only to the edited occurrence. Therefore, the collection passed to the `saveEvent` method with the action **EditOccurrence** must include the `RecurrenceID` field, as shown above.
 

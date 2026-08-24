@@ -11,18 +11,6 @@ documentation: ug
 
 The Quick Info popup is the small overlay that appears when you click a cell or an appointment in the Scheduler. By default, it shows a header, body, and footer with built-in styling. You can replace each of these three regions with your own markup by using the [`QuickInfoTemplates`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_QuickInfoTemplates) property, which exposes three sub-templates: `Header`, `Content`, and `Footer`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/quick-info-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/quick-info-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -32,7 +20,8 @@ The Quick Info popup is the small overlay that appears when you click a cell or 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/quick-info-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+
+N> To completely disable the Quick Info popup (for example, to use the editor window directly on a single click), set the [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false`.
 
 N> To completely disable the Quick Info popup (for example, to use the editor window directly on a single click), set the [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false`.
 

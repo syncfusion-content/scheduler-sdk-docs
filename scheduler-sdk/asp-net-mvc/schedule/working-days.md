@@ -29,19 +29,6 @@ N> The working or business hours depiction on the Scheduler is usually valid onl
 
 The following example depicts how to set the Scheduler to display Monday, Wednesday, and Friday as the working days of a week.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/work-days/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/work-days/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/work-days/razor %}
@@ -50,7 +37,6 @@ The following example depicts how to set the Scheduler to display Monday, Wednes
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/work-days/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -60,19 +46,6 @@ The `ShowWeekend` property is used to either show or hide the weekend days of a 
 
 Here, the working days are defined as `[1, 3, 4, 5]` on the Scheduler, so the remaining days (`0, 2, 6` – Sunday, Tuesday, and Saturday) are considered non-working or weekend days and are hidden from all the views when the `ShowWeekend` property is set to `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/hide-weekend/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/hide-weekend/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/hide-weekend/razor %}
@@ -81,7 +54,6 @@ Here, the working days are defined as `[1, 3, 4, 5]` on the Scheduler, so the re
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/hide-weekend/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -91,19 +63,6 @@ The week number count of a week can be shown in the header bar of the Scheduler 
 
 N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has the equivalent [HeaderRows](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/header-rows) property to handle such requirements with additional customization.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-number/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-number/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-number/razor %}
@@ -112,7 +71,6 @@ N> The `ShowWeekNumber` property is not applicable on Timeline views, as it has 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-number/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -126,19 +84,6 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 
 For more details, refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-rule/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-rule/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-rule/razor %}
@@ -147,7 +92,6 @@ For more details, refer to [this link](https://learn.microsoft.com/en-us/dotnet/
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/week-rule/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -163,19 +107,6 @@ Working hours indicate the work hour limit within the Scheduler, which is visual
 * [`Start`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_Start) - sets the start time of the working or business hour of a day.
 * [`End`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleWorkHours.html#Syncfusion_EJ2_Schedule_ScheduleWorkHours_End) - sets the end time limit of the working or business hour of a day.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/working-hours/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/working-hours/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/working-hours/razor %}
@@ -184,7 +115,6 @@ Working hours indicate the work hour limit within the Scheduler, which is visual
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/working-hours/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -194,19 +124,6 @@ It is possible to display the Scheduler layout with specific time durations by h
 
 The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM, and the remaining hours are hidden on the UI.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/display-hours/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/display-hours/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/display-hours/razor %}
@@ -215,7 +132,6 @@ The following code example displays the Scheduler starting from the time range 7
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/display-hours/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -225,19 +141,6 @@ By default, the Scheduler defaults to `Sunday` as its first day of a week. To ch
 
 > Here, Sunday is always denoted as `0`, Monday as `1`, and so on.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/start-week/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/start-week/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/start-week/razor %}
@@ -246,26 +149,12 @@ By default, the Scheduler defaults to `Sunday` as its first day of a week. To ch
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/start-week/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Scrolling to a specific time and date
 
 You can manually scroll to a specific time on the Scheduler by using the `scrollTo` method, as shown in the following code example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/scroll-specific-time/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/scroll-specific-time/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -275,26 +164,12 @@ You can manually scroll to a specific time on the Scheduler by using the `scroll
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/scroll-specific-time/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### How to scroll to current time on initial load
 
 There are scenarios where you may need to load the Scheduler showing the system's current time in the currently visible viewport area. In such cases, the Scheduler needs to be scrolled to a specific time based on the system's current time, as depicted in the following code example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/initial-load/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/initial-load/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -304,7 +179,6 @@ There are scenarios where you may need to load the Scheduler showing the system'
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/working-days/initial-load/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

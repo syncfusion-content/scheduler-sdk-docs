@@ -26,7 +26,7 @@ The height and width of the Scheduler cells can be customized through the [`cssC
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs21" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs21" %}
 
 ![Cell Dimensions in Vertical Views](images/schedule-celldimension-verticalviews.png)
 
@@ -46,7 +46,7 @@ You can check whether the given time range slots are available for event creatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs22" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs22" %}
 
 ## Customizing cells in all views
 
@@ -66,7 +66,7 @@ The [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs23" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs23" %}
 
 ![Using CellTemplate](images/schedule-celldimension-celltemplate.png)
 
@@ -84,7 +84,7 @@ An alternative to [`cellTemplate`](https://ej2.syncfusion.com/angular/documentat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs24" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs24" %}
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, and resource header cells using the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event by checking the [`elementType`](https://ej2.syncfusion.com/angular/documentation/api/schedule/renderCellEventArgs#elementtype) property within the event. You can check `elementType` against any of the following.
 
@@ -116,7 +116,7 @@ The month header of each date cell in month view can be customized using the [`c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs25" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs25" %}
 
 ## Customizing the minimum and maximum date values
 
@@ -132,7 +132,7 @@ Providing the [`minDate`](https://ej2.syncfusion.com/angular/documentation/api/s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs26" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs26" %}
 
 > By default, the `minDate` property value is set to new Date(1900, 0, 1), and the `maxDate` property value is set to new Date(2099, 11, 31). Users can also set custom `minDate` and `maxDate` property values.
 
@@ -177,7 +177,7 @@ You can also change the background color for weekend cells in Month view through
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/weekend-cell-color" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/weekend-cell-color" %}
 
 ## How to disable multiple cell and row selection in Schedule
 

@@ -26,4 +26,4 @@ The table below summarizes mouse and touch interactions supported by the Schedul
 | Open editor window  | Double-click a cell or event to open the editor window. | Double-tap a cell or event to open the editor. Tap a cell to show the + icon, then tap the + to open the new-event editor. To edit an event, tap it and use the edit icon in the popup. |
 | Open quick info popup | Click a cell or event to open the quick popup for creating or viewing an event. | Single-tapping an event opens the quick popup showing event details; cells require the + icon to open the new-event editor. |
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.

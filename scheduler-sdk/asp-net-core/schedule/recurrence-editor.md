@@ -26,8 +26,6 @@ By default, there are five repeat options available in the recurrence editor:
 
 It is possible to customize the recurrence editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the appropriate [`frequencies`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_Frequencies) option.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-recurrence/tagHelper %}
@@ -36,18 +34,6 @@ It is possible to customize the recurrence editor to display only specific repea
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-recurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-recurrence/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-recurrence/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -76,8 +62,6 @@ By default, there are three end options available in the recurrence editor:
 
 It is possible to customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the appropriate [`endTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.RecurrenceEditor.html#Syncfusion_EJ2_Schedule_RecurrenceEditor_EndTypes) option.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-endtype-recurrence/tagHelper %}
@@ -87,26 +71,12 @@ It is possible to customize the recurrence editor to display only specific end o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-endtype-recurrence/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/editor-endtype-recurrence/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ## Accessing the recurrence rule string
 
 The recurrence rule is usually generated based on the options selected in the recurrence editor, and it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is valid and can be used with the Scheduler event’s recurrence rule field.
 
 A `change` event is available in the recurrence editor. It triggers whenever the recurrence editor fields change. In the event argument, you can access the generated recurrence value through the `value` option, as shown in the following code example.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -117,25 +87,11 @@ A `change` event is available in the recurrence editor. It triggers whenever the
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/rule-generation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/rule-generation/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Set specific value on recurrence editor
 
 It is possible to display the recurrence editor with specific options loaded initially based on the rule string that you provide. The fields of the recurrence editor change accordingly when you provide a particular rule through the `setRecurrenceRule` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -145,18 +101,6 @@ It is possible to display the recurrence editor with specific options loaded ini
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/set-rule/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/set-rule/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/set-rule/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -172,8 +116,6 @@ You can parse an event’s `recurrenceRule` to generate the date instances on wh
 | `maximumCount` | Number | Number of date count to be generated. It is **optional**. |
 | `viewDate` | Date | Current view range's first date. It is **optional**. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/date-generation/tagHelper %}
@@ -182,18 +124,6 @@ You can parse an event’s `recurrenceRule` to generate the date instances on wh
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/date-generation/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/date-generation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/date-generation/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -209,8 +139,6 @@ N> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencer
 
 If the rule is in the "NEVER ENDS" category, you can specify the maximum count when you want to stop generating dates starting from the provided start date. To do so, provide the appropriate `maximumCount` value within the `getRecurrenceDates` method, as shown in the following code example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/maximum-count/tagHelper %}
@@ -220,18 +148,6 @@ If the rule is in the "NEVER ENDS" category, you can specify the maximum count w
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/maximum-count/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/recurrence-editor/maximum-count/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
-
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

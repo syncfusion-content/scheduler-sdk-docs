@@ -24,4 +24,4 @@ This demo shows how to customize the quick info popups for cells and appointment
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/quick-info-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/quick-info-template-cs1" %}

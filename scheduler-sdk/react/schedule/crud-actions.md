@@ -46,7 +46,7 @@ The following example demonstrates how to create multiple appointments simultane
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs1" %}
 
 ### Inserting events into a database at the server-side
 
@@ -94,7 +94,7 @@ Additionally, a regular expression validation is applied to the Location field. 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs38" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs38" %}
 
 To prevent users from creating appointments on weekends, use the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/schedule#actionbegin) event to check for the desired condition and restrict creation as needed.
 
@@ -107,7 +107,7 @@ To prevent users from creating appointments on weekends, use the [`actionBegin`]
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs39" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs39" %}
 
 ## Edit
 
@@ -138,7 +138,7 @@ Appointments can be edited and updated programmatically using the [`saveEvent`](
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs2" %}
 
 **Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely `RecurrenceID` mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the `RecurrenceID` field value. The [`saveEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
 
@@ -155,7 +155,7 @@ In case of modifying the single occurrence, it is also necessary to update the `
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs3" %}
 
 ### Updating events in a database at the server side
 
@@ -390,7 +390,7 @@ To prevent editing appointments during non-working hours, use the [`actionBegin`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs40" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs40" %}
 
 ## Delete
 
@@ -421,7 +421,7 @@ Appointments can be programmatically removed using the [`deleteEvent`](https://e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs4" %}
 
 **Recurring Event** - The recurring events can be removed as an entire series or simply removing single occurrence by using the deleteEvent method which takes in either the `DeleteSeries` or `DeleteOccurrence` parameters. The following code example shows how to delete entire series.
 
@@ -434,7 +434,7 @@ Appointments can be programmatically removed using the [`deleteEvent`](https://e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/app-crud-cs5" %}
 
 ### Removing events from a database at the server side
 
@@ -595,7 +595,7 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs41" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs41" %}
 
 ## Resize
 
@@ -612,11 +612,11 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs42" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs42" %}
 
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
-* [Appointments and Events](https://ej2.syncfusion.com/react/documentation/schedule/appointments)
+* [Appointments and Events](https://help.syncfusion.com/scheduler-sdk/react/schedule/appointments)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

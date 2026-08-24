@@ -37,18 +37,6 @@ This requires the following CLDR data to be loaded using the `loadCldr` function
 
 N> To know more about how to install the CLDR data, refer to the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#installing-cldr-data) topic.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/islamic-calendar/calendar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/islamic-calendar/calendar/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -58,7 +46,6 @@ N> To know more about how to install the CLDR data, refer to the [`International
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/islamic-calendar/calendar/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

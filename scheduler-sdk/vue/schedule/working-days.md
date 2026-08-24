@@ -49,7 +49,7 @@ The following example configures **Monday, Wednesday, and Friday** as working da
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs5" %}
 
 ## Hiding weekend days
 
@@ -66,7 +66,7 @@ Here, the working days are defined as [1, 3, 4, 5] in the Scheduler. The remaini
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs6" %}
 
 ## Show week numbers
 
@@ -83,7 +83,7 @@ You can show the week number in the Scheduler header bar by setting the [`showWe
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs7" %}
 
 ### Different options for showing week numbers
 
@@ -106,7 +106,7 @@ For more details, refer to [CalendarWeekRule](https://learn.microsoft.com/en-us/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs8" %}
 
 **Note**: Enable the [`showWeekNumber`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#showweeknumber) property to configure the `weekRule` property. Also, the `weekRule` property depends on the value of the [`firstDayOfWeek`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#firstdayofweek) property.
 
@@ -127,7 +127,7 @@ Working hours indicate the work-hour range within the Scheduler. This range is h
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs9" %}
 
 ## Scheduler displaying custom hours
 
@@ -144,7 +144,7 @@ The following example displays the Scheduler from 7:00 AM to 6:00 PM, and hides 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs10" %}
 
 ## Setting the first day of the week
 
@@ -161,7 +161,7 @@ By default, the Scheduler uses `Sunday` as the first day of the week. To change 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs11" %}
 
 ## Scroll to a specific time and date
 
@@ -176,7 +176,7 @@ The Scheduler provides the [`scrollTo`](https://ej2.syncfusion.com/vue/documenta
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/scroll-to-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/scroll-to-cs1" %}
 
 ### How to scroll to the current time on initial load
 
@@ -191,7 +191,7 @@ In some scenarios, you may need to load the Scheduler so that the system's curre
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs12" %}
 
 > For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 

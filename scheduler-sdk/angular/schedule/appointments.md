@@ -39,7 +39,7 @@ The following example demonstrates defining a normal event in the Scheduler usin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs1" %}
 
 ## Spanned events
 
@@ -81,7 +81,7 @@ To display all all-day appointments in expanded view when the Scheduler loads, u
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs2" %}
 
 ## Customize the rendering of spanned events
 
@@ -97,7 +97,7 @@ By default, the Scheduler renders spanned events (appointments with more than 24
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs3" %}
 
 ## Recurring events
 
@@ -117,7 +117,7 @@ The following example illustrates creating a recurring event using a specific re
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs4" %}
 
 ### Adding exceptions
 
@@ -135,7 +135,7 @@ For example, February 22, 2018 is written as 20180222. The time portion in UTC s
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs5" %}
 
 ### Editing an occurrence from a series
 
@@ -153,7 +153,7 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 is
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs6" %}
 
 ### Edit only the current and following events
 
@@ -171,7 +171,7 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs7" %}
 
 ![Editing Events](images/schedule-editing-events.png)
 
@@ -303,7 +303,7 @@ When the fields of event instances has the default mapping name, it is not manda
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs8" %}
 
 > The [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#id) mapping is a string type with no extra validation, while other fields support object-type settings and additional options.
 
@@ -330,7 +330,7 @@ In following example, the Subject field in event editor will display its appropr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs9" %}
 
 ## Adding custom fields
 
@@ -346,7 +346,7 @@ In addition to default fields, you can add any number of custom fields to Schedu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs10" %}
 
 ## Customize the order of overlapping events
 
@@ -364,7 +364,7 @@ The following code example shows how to sort the appointments based on the custo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs11" %}
 
 ![Overlapping Events](images/schedule-overlapping-events.png)
 
@@ -396,7 +396,7 @@ The following code example demonstrates how to enable the [`allowOverlap`](https
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/overlap-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/overlap-cs1" %}
 
 **Limitations**
 
@@ -418,7 +418,7 @@ The following code example demonstrates how to check for overlaps when an event 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/overlap-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/overlap-cs2" %}
 
 ## Drag and drop appointments
 
@@ -440,7 +440,7 @@ Learn more about dragging external items and advanced drag/resize options in thi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs12" %}
 
 ### Drag and drop multiple appointments
 
@@ -458,7 +458,7 @@ We can drag and drop multiple appointments by enabling the [`allowMultiDrag`](ht
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs13" %}
 
 ### Disabling drag action
 
@@ -474,7 +474,7 @@ To disable drag and drop, set [`allowDragAndDrop`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs14" %}
 
 ### Preventing drag and drop on specific targets
 
@@ -492,7 +492,7 @@ In this example, we have prevented the drag action on all-day row.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs15" %}
 
 ### Disable scrolling on drag action
 
@@ -508,7 +508,7 @@ By default, while dragging an appointment to the edges, either top or bottom of 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs16" %}
 
 ### Controlling scroll speed while dragging
 
@@ -524,7 +524,7 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs17" %}
 
 ### Auto navigation of date ranges on dragging an event
 
@@ -542,7 +542,7 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs18" %}
 
 ### Setting drag time interval
 
@@ -558,7 +558,7 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs19" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs19" %}
 
 ### Drag and drop items from external source
 
@@ -579,7 +579,7 @@ In this example, we have used the tree view control as an external source and th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/external-drag-drop-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/external-drag-drop-cs1" %}
 
 ### Opening the editor window on drag stop
 
@@ -595,7 +595,7 @@ There are scenarios where you want to open the editor filled with data on newly 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs1" %}
 
 ## Inline Appointment
 
@@ -628,7 +628,7 @@ While editing an occurrence from a recurrence series, it is only possible to edi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs20" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs20" %}
 
 ## Appointment Resizing
 
@@ -644,7 +644,7 @@ Another way of rescheduling an appointment can be done by resizing it through ei
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs2" %}
 
 ### Disabling resize action
 
@@ -660,7 +660,7 @@ Resize is enabled by default except in Agenda and Month-Agenda views. To disable
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs3" %}
 
 ### Disabling scrolling on resize action
 
@@ -676,7 +676,7 @@ To prevent automatic scrolling during resizing, set [`scroll`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs4" %}
 
 ### Controlling scroll speed while resizing an event
 
@@ -692,7 +692,7 @@ Control the scroll speed using [`scrollBy`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs5" %}
 
 ### Setting resize time interval
 
@@ -708,7 +708,7 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs6" %}
 
 ## Appointment customization
 
@@ -739,7 +739,7 @@ Learn how easily you can customize the basic look and feel of Angular Scheduler 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs7" %}
 
 > All the built-in fields that are mapped to the appropriate field properties within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
@@ -757,7 +757,7 @@ The [`eventRendered`](https://ej2.syncfusion.com/angular/documentation/api/sched
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs8" %}
 
 ### Using cssClass
 
@@ -773,7 +773,7 @@ The customization of events can also be achieved using the [`cssClass`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs9" %}
 
 ## Setting minimum height
 
@@ -789,7 +789,7 @@ It is possible to set a minimum height for appointments in the Scheduler using t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs10" %}
 
 ## Block Dates and Times
 
@@ -805,7 +805,7 @@ It is possible to block a set of dates or particular time ranges in the Schedule
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs11" %}
 
 ![Block Date and Time](images/schedule-block-events.png)
 
@@ -821,7 +821,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs12" %}
 
 ![Block Several Date and Time](images/schedule-multiple-block-events.png)
 
@@ -839,7 +839,7 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs13" %}
 
 ## Make specific events readonly
 
@@ -855,7 +855,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs14" %}
 
 > By default, the event editor is prevented to open on the read-only events when [`isReadonly`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#isreadonly) field is set to `true`.
 
@@ -875,7 +875,7 @@ You can restrict the users to create and update more than one appointment on spe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs15" %}
 
 ## Differentiate the past time events
 
@@ -891,7 +891,7 @@ To differentiate the appearance of the appointments based on specific criteria s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs16" %}
 
 ## Appointments occupying entire cell
 
@@ -909,7 +909,7 @@ We can show more indicator if more than one appointment is available in a same c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs17" %}
 
 ![Differentiate Past Time Events](images/schedule-appointments-entirecell.png)
 
@@ -934,7 +934,7 @@ The [maxEventsPerRow](https://ej2.syncfusion.com/angular/documentation/api/sched
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/max-events-per-row-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/max-events-per-row-cs1" %}
 
 > The property [maxEventsPerRow](https://ej2.syncfusion.com/angular/documentation/api/schedule/views#maxeventsperrow) will be applicable only when [rowAutoHeight](https://ej2.syncfusion.com/angular/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
 
@@ -1010,7 +1010,7 @@ The tooltip can be displayed for appointments by setting `true` to the [`enableT
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-cs18" %}
 
 ![Built-in Tooltip](images/schedule-appointments-tooltip.png)
 
@@ -1031,7 +1031,7 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/tooltip-cs1" %}
 
 ![Tooltip](images/schedule-appointments-tooltip-template.png)
 
@@ -1056,7 +1056,7 @@ To prevent a tooltip from appearing for certain events, you can set the `cancel`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/tooltip-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/tooltip-cs2" %}
 
 ## Appointment filtering
 
@@ -1075,7 +1075,7 @@ The appointments can be filtered by passing the predicate value to [`query`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-filter-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-filter-cs1" %}
 
 ## Appointment selection
 
@@ -1109,7 +1109,7 @@ In the following example, the subject of the appointment clicked has been displa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-template-cs1" %}
 
 ## Get the current view appointments
 
@@ -1128,7 +1128,7 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-data-bound-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-data-bound-cs1" %}
 
 ## Get the entire appointment collections
 
@@ -1147,7 +1147,7 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-data-bound-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/event-data-bound-cs2" %}
 
 ## Refresh appointments
 

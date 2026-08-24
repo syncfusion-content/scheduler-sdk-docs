@@ -58,7 +58,7 @@ loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/localization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/localization-cs1" %}
 
 > Refer [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) for common information about globalization.
 
@@ -78,7 +78,7 @@ For example, the following code defines French translations for all static words
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/localization-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/localization-cs2" %}
 
 The localized words for static text in the Scheduler and Recurrence Editor are shown in the following code. You can access the static text for all cultures from [`here`](https://github.com/syncfusion/ej2-locale).
 
@@ -227,7 +227,7 @@ Scheduler supports all valid date formats. By default, it uses the universal dat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs54" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs54" %}
 
 ![Date Format](images/schedule-dateformat.png)
 
@@ -249,7 +249,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs55" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs55" %}
 
 ![Time Format](images/schedule-timeformat.png)
 
@@ -267,7 +267,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs56" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs56" %}
 
 ![RTL Mode](images/schedule-rtl.png)
 

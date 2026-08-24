@@ -16,19 +16,6 @@ When this property is set to `true`, an individual scroller is enabled for the a
 
 N> This property is not applicable for the Scheduler when the `Height` is set to `auto`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/all-day-scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/all-day-scroll/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/all-day-scroll/razor %}
@@ -37,7 +24,6 @@ N> This property is not applicable for the Scheduler when the `Height` is set to
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/all-day-scroll/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

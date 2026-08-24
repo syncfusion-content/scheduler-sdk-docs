@@ -339,7 +339,7 @@ Learn how to add appointments from multiple resources to [Vue Scheduler](https:/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-resources-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-resources-cs1" %}
 
 > Setting [`allowMultiple`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resources#allowmultiple) to `true` in the above code example allows you to select multiple resources from the event editor and creates multiple copies of the same appointment in the Scheduler for each resource while rendering.
 
@@ -362,7 +362,7 @@ The following code example shows how multiple resources are grouped and how thei
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs1" %}
 
 ### Timeline resource view
 
@@ -377,7 +377,7 @@ The following code example shows how to group multiple resources in Timeline Sch
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs2" %}
 
 ### Grouping single-level resources
 
@@ -394,7 +394,7 @@ This kind of grouping allows the Scheduler to display all resources at a single 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/single-level-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/single-level-resource-cs1" %}
 
 > The `name` field defined in the **resources** collection, such as `Owners`, will be mapped within the [`group`](https://ej2.syncfusion.com/vue/documentation/api/schedule#group) property to enable grouping for those resource levels in the Scheduler.
 
@@ -417,7 +417,7 @@ To get started quickly with grouping multiple resources in Vue Scheduler, you ca
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs3" %}
 
 ### One-to-One grouping
 
@@ -432,7 +432,7 @@ In multi-level grouping, Scheduler usually groups child resources based on the [
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs4" %}
 
 ### Grouping resources by date
 
@@ -449,7 +449,7 @@ It groups resources under each date and is applicable only to calendar views suc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/single-level-resource-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/single-level-resource-cs2" %}
 
 > This type of grouping by date is not applicable to any timeline view.
 
@@ -466,7 +466,7 @@ In timeline views, work cells of a parent resource can be customized by checking
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs5" %}
 
 ## Working with shared events
 
@@ -485,7 +485,7 @@ Multiple resources can share the same events, allowing CRUD actions on one share
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs6" %}
 
 ## Simple resource header customization
 
@@ -502,7 +502,7 @@ It is possible to customize the resource header cells using the built-in templat
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-header-cs1" %}
 
 > To customize the resource header in compact mode, use the `e-device` class as shown in the code example.
 
@@ -521,7 +521,7 @@ It is possible to customize resource headers to display multiple columns such as
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-header-column-customization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-header-column-customization-cs1" %}
 
 ## Collapse/Expand child resources in timeline views
 
@@ -536,7 +536,7 @@ It is possible to expand and collapse resources that have child resources in tim
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs8" %}
 
 ## Displaying tooltip for resource headers
 
@@ -551,7 +551,7 @@ It is possible to display tooltips over the resource headers showing resource in
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-tooltip-cs1" %}
 
 ## Choosing among resource colors for appointments
 
@@ -568,7 +568,7 @@ In the following example, the colors mentioned in the second level will get appl
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-color-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-color-cs1" %}
 
 > The value of the `resourceColorField` field should be mapped to the [`name`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resources#name) value given within the [`resources`](https://ej2.syncfusion.com/vue/documentation/api/schedule/resources) property.
 
@@ -587,7 +587,7 @@ To remove resources dynamically, use the [`removeResource`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dynamic-resource-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/dynamic-resource-cs1" %}
 
 ## Setting different working days and hours for resources
 
@@ -609,7 +609,7 @@ Different working days can be set for the resources of Scheduler using the [`wor
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-resources-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-resources-cs2" %}
 
 ### Set different work hours
 
@@ -629,7 +629,7 @@ Working hours indicate the work-hour duration of a day, which is highlighted vis
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-resources-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-resources-cs3" %}
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8:00 AM to 3:00 PM and is visually highlighted, whereas the other two resources have different working hours set.
 
@@ -650,7 +650,7 @@ To use the [`hideNonWorkingDays`](https://ej2.syncfusion.com/vue/documentation/a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/single-level-resource-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/single-level-resource-cs3" %}
 
 > The [`hideNonWorkingDays`](https://ej2.syncfusion.com/vue/documentation/api/schedule/group#hidenonworkingdays) property only applies when the Scheduler is grouped [`byDate`](https://ej2.syncfusion.com/vue/documentation/api/schedule/group#bydate).
 
@@ -685,6 +685,6 @@ Some of the default changes made for compact Scheduler rendering on desktop devi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/resource-grouping-cs7" %}
 
 > For a complete overview of resource scheduling features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

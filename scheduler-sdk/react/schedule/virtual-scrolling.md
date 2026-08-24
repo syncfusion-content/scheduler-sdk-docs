@@ -21,7 +21,7 @@ Virtual scrolling improves Scheduler performance when you work with a large numb
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs48" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs48" %}
 
 > **Note:** Virtual loading of resources and events is not supported in `MonthAgenda`, `Year`, and `TimelineYear` (horizontal orientation) views.
 
@@ -44,7 +44,7 @@ Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs50" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs50" %}
 
 The following server-side controller code demonstrates how to retrieve appointment data based on resource IDs received as query parameters:
 

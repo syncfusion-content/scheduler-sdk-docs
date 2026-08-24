@@ -22,7 +22,7 @@ Virtual scrolling support in the Scheduler component enhances performance when w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs88" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs88" %}
 
 ![Displaying Virtual Scrolling in Schedule](images/schedule-virtualscrolling.gif)
 
@@ -48,7 +48,7 @@ Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs98" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs98" %}
 
 The following server-side controller code demonstrates how to retrieve appointment data based on resource IDs received as query parameters:
 

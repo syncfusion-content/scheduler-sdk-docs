@@ -28,8 +28,6 @@ These keyboard shortcuts enable users to efficiently manage their schedules:
 
 To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. To paste the copied or cut appointment, click the desired time slot and press **Ctrl+V**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/normal-schedule/tagHelper %}
@@ -38,18 +36,6 @@ To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **C
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/normal-schedule/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/normal-schedule/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/normal-schedule/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 > Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
@@ -67,8 +53,6 @@ Use these public methods to manage appointments programmatically in the Syncfusi
 
 Using these methods gives you more control over appointment management in the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/context-menu/tagHelper %}
@@ -77,18 +61,6 @@ Using these methods gives you more control over appointment management in the Sc
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/context-menu/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/context-menu/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/context-menu/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Modifying content before pasting
 
@@ -105,8 +77,6 @@ In this example, the `beforePaste` event can be used to intercept the event deta
 
 > Note: Ensure that the field mapping matches the Scheduler fields.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/schedule-grid/tagHelper %}
@@ -116,18 +86,6 @@ In this example, the `beforePaste` event can be used to intercept the event deta
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/schedule-grid/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/clipboard/schedule-grid/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its feature highlights. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its feature highlights. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
 

@@ -25,7 +25,7 @@ The height and width of Schedule cells can be customized using the [`cssClass`](
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs1" %}
 
 ## Check for Cell Availability
 
@@ -42,7 +42,7 @@ The [`isSlotAvailable`](https://ej2.syncfusion.com/vue/documentation/api/schedul
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs2" %}
 
 ## Customizing Cells in all the Views
 
@@ -61,7 +61,7 @@ The [`cellTemplate`](../api/schedule#celltemplate) property accepts a template s
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs3" %}
 
 ### Using RenderCell Event
 
@@ -76,7 +76,7 @@ The [`renderCell`](https://ej2.syncfusion.com/vue/documentation/api/schedule#ren
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs4" %}
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using [`renderCell`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rendercell) event by checking the [`elementType`](https://ej2.syncfusion.com/vue/documentation/api/schedule/renderCellEventArgs#elementtype) option within the event. You can check elementType with any of the following.
 
@@ -107,7 +107,7 @@ The month view cell header can be customized using the [`cellHeaderTemplate`](..
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs5" %}
 
 ## Customizing the Minimum and Maximum Date Values
 
@@ -122,7 +122,7 @@ Providing the [`minDate`](../api/schedule#mindate) and  [`maxDate`](../api/sched
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/cell-dimension-cs6" %}
 
 > By default, the [`minDate`](../api/schedule#mindate) property value is set to new Date(1900, 0, 1) and the [`maxDate`](../api/schedule#maxdate) property value is set to new Date(2099, 11, 31). The user can also set customized `minDate` and `maxDate` property values.
 
@@ -167,7 +167,7 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/weekend-cell-color" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/weekend-cell-color" %}
 
 ## How to Disable Multiple Cell and Row Selection in Schedule
 

@@ -23,7 +23,7 @@ CRUD actions can be performed on events using the [`addEvent`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/app-crud-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/app-crud-cs1" %}
 
 ## Recurrence Event
 
@@ -36,4 +36,4 @@ CRUD actions can be performed on events using the [`addEvent`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/app-crud-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/app-crud-cs2" %}

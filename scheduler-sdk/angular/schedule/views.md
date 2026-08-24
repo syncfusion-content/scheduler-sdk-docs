@@ -51,7 +51,7 @@ In the following example, the Scheduler displays four views: Week, Month, Timeli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs71" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs71" %}
 
 To configure the Scheduler with two views that each have different configurations, refer to the following example. Here, the Week view displays dates in `dd-MM-yyyy` format, while the Month view hides weekend days and is set to read-only mode.
 
@@ -65,7 +65,7 @@ To configure the Scheduler with two views that each have different configuration
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs72" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs72" %}
 
 ## View specific configuration
 
@@ -107,7 +107,7 @@ The Day view displays a single day with its appointments. You can extend the Day
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs73" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs73" %}
 
 ![Displaying Day View](images/schedule-views-day.png)
 
@@ -127,7 +127,7 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs74" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs74" %}
 
 ![Displaying Week View](images/schedule-views-week.png)
 
@@ -149,7 +149,7 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs75" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs75" %}
 
 ![Displaying Work week View](images/schedule-views-workweek.png)
 
@@ -173,7 +173,7 @@ You can also have the `+ more` text indicator on each day cell of a Month view; 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs76" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs76" %}
 
 ![Displaying Month View](images/schedule-views-month.png)
 
@@ -193,7 +193,7 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs77" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs77" %}
 
 > The year view also has module support. It displays all months of a particular year in a calendar format. In that calendar view, dates containing appointments are highlighted with dots placed under each date. When you click on a date, the event popup is displayed and the events are listed.
 
@@ -213,7 +213,7 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs78" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs78" %}
 
 ![Displaying Agenda View](images/schedule-views-agenda.png)
 
@@ -235,7 +235,7 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs79" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs79" %}
 
 ![Displaying Month agenda View](images/schedule-views-monthagenda.png)
 
@@ -257,7 +257,7 @@ To use timeline views (Timeline Day, Timeline Week, Timeline Work Week), import 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs80" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs80" %}
 
 Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
 
@@ -271,7 +271,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs81" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs81" %}
 
 ![Displaying Timeline Week View](images/schedule-views-timelineweek.png)
 
@@ -287,7 +287,7 @@ The following code example depicts how to display the timeline work week view on
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs82" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs82" %}
 
 > Clicking on dates in the date header bar of Timeline Day, Timeline Week, and Timeline Work Week navigates to the Agenda view.
 
@@ -305,7 +305,7 @@ Timeline Month view displays days of the current month and their appointments ho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs83" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs83" %}
 
 ![Displaying Timeline Month View](images/schedule-views-timelinemonth.png)
 
@@ -327,7 +327,7 @@ To use the Timeline Year view on Scheduler, import and inject the `TimelineYear`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs84" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs84" %}
 
 ![Displaying Timeline Year View](images/schedule-views-timelineyear.png)
 
@@ -345,7 +345,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs85" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs85" %}
 
 #### Auto row height
 
@@ -361,7 +361,7 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs86" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs86" %}
 
 ## Extending view intervals
 
@@ -379,7 +379,7 @@ You can provide an alternative display name for such customized views on the Sch
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs87" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs87" %}
 
 ![Displaying Extending Intervals](images/schedule-views-interval.png)
 

@@ -40,7 +40,7 @@ Appointments can be created dynamically using the [`addEvent`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/add-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/add-event-cs1" %}
 
 ### Inserting Events into Database at Server-Side
 
@@ -88,7 +88,7 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs1" %}
 
 Creation of appointments can also be prevented dynamically. For example, to decline creation on weekend days, the appropriate condition can be checked within the [`actionBegin`](../api/schedule#actionbegin) event.
 
@@ -101,7 +101,7 @@ Creation of appointments can also be prevented dynamically. For example, to decl
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs2" %}
 
 ## Edit
 
@@ -131,7 +131,7 @@ Appointments can be edited and updated manually using the [`saveEvent`](https://
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/edit-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/edit-event-cs1" %}
 
 **Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should include an additional field named [`RecurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) that maps to its parent recurring event's Id value. Also, this modified occurrence is considered a new event in the Scheduler dataSource, where it is linked with its parent event through the [`RecurrenceID`](https://ej2.syncfusion.com/vue/documentation/api/schedule/field#recurrenceid) field value. The [`saveEvent`](https://ej2.syncfusion.com/vue/documentation/api/schedule#saveevent) method takes 2 arguments: the modified event data object and either `EditOccurrence` or `EditSeries`.
 
@@ -148,7 +148,7 @@ When modifying a single occurrence, it is also necessary to update the [`Recurre
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/edit-event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/edit-event-cs2" %}
 
 ### Updating Events in Database at Server-Side
 
@@ -382,7 +382,7 @@ Editing of appointments can be prevented dynamically. For example, to restrict u
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs3" %}
 
 ## Delete
 
@@ -414,7 +414,7 @@ Appointments can be removed programmatically using the [`deleteEvent`](https://e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/delete-event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/delete-event-cs1" %}
 
 **Recurring Event** - Recurring events can be removed as an entire series or as a single occurrence by passing DeleteSeries or DeleteOccurrence to the deleteEvent method. The following example demonstrates deleting an entire series.
 
@@ -427,7 +427,7 @@ Appointments can be removed programmatically using the [`deleteEvent`](https://e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/delete-event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/delete-event-cs2" %}
 
 ### Removing Events from Database at Server-Side
 
@@ -592,7 +592,7 @@ You can watch the following video to learn more about [Vue Scheduler](https://ww
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs38" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs38" %}
 
 ## Resize
 
@@ -609,6 +609,6 @@ Resizing a normal event performs an edit action. Resizing a recurring event to a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs39" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/event-cs39" %}
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for detailed information. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) example to see how data is presented and manipulated.

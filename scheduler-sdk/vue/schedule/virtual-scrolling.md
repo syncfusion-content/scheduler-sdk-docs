@@ -21,7 +21,7 @@ To improve performance when loading a large number of resources and events, the 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/virtual-scrolling-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/virtual-scrolling-cs2" %}
 
 > For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
 
@@ -56,7 +56,7 @@ To enable lazy loading, set the [`enableLazyLoading`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/lazy-loading-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/lazy-loading-cs1" %}
 
 Here's the server-side controller code that retrieves appointment data based on the resource IDs provided as query parameters:
 

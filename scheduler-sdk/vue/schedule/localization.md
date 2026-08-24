@@ -59,7 +59,7 @@ Once the package is installed, you can find the culture specific JSON data under
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs1" %}
 
 > Refer [here](https://ej2.syncfusion.com/vue/documentation/common/internationalization) for more information about globalization.
 
@@ -78,7 +78,7 @@ For example, the following code example lets you define the French translation w
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs2" %}
 
 The localized words for static text used in Scheduler and Recurrence Editor can be referred from the following code.
 
@@ -221,7 +221,7 @@ Scheduler can be used with all valid date formats, and by default it follows the
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs3" %}
 
 ## Setting the Time Format
 
@@ -238,7 +238,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs4" %}
 
 > Note: The [`timeFormat`](https://ej2.syncfusion.com/vue/documentation/api/schedule#timeformat) property accepts only valid time formats.
 
@@ -255,7 +255,7 @@ The Scheduler layout and behavior can be changed according to RTL (Right to Left
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/localization-cs5" %}
 
 > Visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for a complete overview. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 

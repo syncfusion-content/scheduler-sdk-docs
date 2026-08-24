@@ -34,7 +34,7 @@ You can modify the header title and the text of the footer buttons in the editor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs1" %}
 
 ![Editing Window with Custom Local Words](images/schedule-editing-local-word.png)
 
@@ -52,7 +52,7 @@ To change the default labels such as "Subject," "Location," and other field name
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs2" %}
 
 ![Editor Window with Custom Label](images/schedule-custom-label.png)
 
@@ -70,7 +70,7 @@ You can validate required fields in the editor window on the client side before 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs3" %}
 
 ![Editor window with Validation](images/schedule-validation.png)
 
@@ -90,7 +90,7 @@ The additional fields can be added to the default event editor by using the [`po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs4" %}
 
 ### How to prevent the default focus of the editor window
 
@@ -106,7 +106,7 @@ By default, when the editor window opens, focus is set to the `subject` field. Y
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs5" %}
 
 ### Customizing the default time duration in the editor window
 
@@ -122,7 +122,7 @@ The default event editor calculates start and end time durations based on the `i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs6" %}
 
 ### How to prevent the display of editor and quick popups
 
@@ -138,7 +138,7 @@ You can prevent the display of editor and quick popup windows by setting the `ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs7" %}
 
 You can also prevent only specific popups by checking the popup type within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event. The following table details the available popup types:
 
@@ -204,7 +204,7 @@ By default, the editor window displays built-in timezone collections. You can cu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs37" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs37" %}
 
 ## Customizing the event editor using template
 
@@ -230,7 +230,7 @@ Learn how to customize the Angular Scheduler's editor window with your own desig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs8" %}
 
 ### How to customize header and footer using template
 
@@ -248,7 +248,7 @@ In this example, the header is customized to show the appointment's subject via 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-header-footer-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-header-footer-cs1" %}
 
 ### How to add resource options within the editor template
 
@@ -264,7 +264,7 @@ Resource fields can be added to the editor template using a MultiSelect control 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs1" %}
 
 ![Add Resource Options within Editor Template](images/schedule-custom-window-with-resource.png)
 
@@ -282,7 +282,7 @@ The following code example shows how to add recurrence options within the editor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs2" %}
 
 ![Add Recurrence Options within Editor Template](images/schedule-custom-window-with-recurrence.png)
 
@@ -300,7 +300,7 @@ The following code example demonstrates how to apply validation rules to the sta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs3" %}
 
 ![Editor Template with Validation](images/schedule-custom-window-validation.png)
 
@@ -322,7 +322,7 @@ The following example shows how to handle saving event data by handling the [`po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs4" %}
 
 To prevent only specific popups within the [`popupClose`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupclose) event, check the popup type. Types include:
 
@@ -354,7 +354,7 @@ The code sample below enables the Save button in a custom event editor by handli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/resource-field-cs5" %}
 
 ## Quick popups
 
@@ -374,7 +374,7 @@ By default, popups are displayed over cells and appointments. To disable, set [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs9" %}
 
 ### How to open QuickInfo popup on multiple cell selection
 
@@ -390,7 +390,7 @@ By default, the `QuickInfo` popup opens on a single click of the cell. To open t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs10" %}
 
 ### How to change the watermark text of quick popup subject
 
@@ -424,7 +424,7 @@ The look and feel of the built-in quick popup window, which opens when cells or 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/quick-popup-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/quick-popup-cs1" %}
 
 > Quick popups in adaptive mode can also be customized using [`quickInfoTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) and the `e-device` class.
 
@@ -448,7 +448,7 @@ The following code example shows how to disable the display of such popups while
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs11" %}
 
 ![More Event Popup](images/schedule-more-event-popup.png)
 
@@ -466,7 +466,7 @@ The following code example shows how to customize the default more indicator pop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs12" %}
 
 ### How to customize the appointments rendered on more indicator popup
 
@@ -482,7 +482,7 @@ The following code example shows how to customize the details shown for the appo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs13" %}
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
@@ -498,7 +498,7 @@ To prevent the popup window from appearing, set the `cancel` property to `true` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs14" %}
 
 ### How to navigate Day view when clicking on more text indicator
 
@@ -514,7 +514,7 @@ The following code example shows how to customize the [`MoreEventsClick`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs15" %}
 
 ### How to close the editor window manually
 
@@ -530,7 +530,7 @@ You can close the editor window by using [closeEditor](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs16" %}
 
 ### How to open the quick info popup manually
 
@@ -546,7 +546,7 @@ You can open the quick info popup in scheduler by using the [openQuickInfoPopup]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs17" %}
 
 ### How to close the quick info popup manually
 
@@ -562,6 +562,6 @@ You can close the quick info popup in Scheduler by using the [closeQuickInfoPopu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/editor-window-cs18" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for feature highlights. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.

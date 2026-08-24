@@ -38,7 +38,7 @@ The following example demonstrates defining a normal event in the Scheduler usin
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs1" %}
 
 ## Spanned events
 
@@ -83,7 +83,7 @@ To display all all-day appointments in expanded view when the Scheduler loads, u
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs2" %}
 
 ## Customize the rendering of spanned events
 
@@ -101,7 +101,7 @@ The following example demonstrates how to render spanned events inside the work 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs3" %}
 
 ## Recurring events
 
@@ -120,7 +120,7 @@ The following example illustrates creating a recurring event using a specific re
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs4" %}
 
 ### Adding exceptions
 
@@ -143,7 +143,7 @@ To exclude specific instances from a recurrence series, add exception dates to t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs5" %}
 
 ### Editing an occurrence from a series
 
@@ -160,7 +160,7 @@ In this example, a recurring instance that displays on the date 18th May 2026 is
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs6" %}
 
 ### Edit only the current and following events
 
@@ -183,7 +183,7 @@ To achieve this:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs7" %}
 
 ### Recurrence options and rules
 
@@ -314,7 +314,7 @@ When the fields of event instances has the default mapping name, it is not manda
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs8" %}
 
 > The [id](https://ej2.syncfusion.com/react/documentation/api/schedule/field#id) mapping is a string type with no extra validation, while other fields have object type and additional options.
 
@@ -340,7 +340,7 @@ In following example, the Subject field in event editor will display its appropr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs9" %}
 
 ## Adding Custom fields
 
@@ -355,7 +355,7 @@ In addition to default fields, you can add any number of custom fields to Schedu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs10" %}
 
 ### Accessing custom fields
 
@@ -409,7 +409,7 @@ The following code example shows how to sort appointments based on a custom fiel
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs11" %}
 
 ## Preventing Overlapping Events
 
@@ -441,7 +441,7 @@ The following code example demonstrates how to enable the [`allowOverlap`](https
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs51" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs51" %}
 
 ### Limitations
 
@@ -471,7 +471,7 @@ The following code example demonstrates how to check for overlaps when an event 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs52" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs52" %}
 
 ## Drag and drop appointments
 
@@ -504,7 +504,7 @@ Learn more about dragging external items and advanced drag/resize options in thi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs12" %}
 
 ### Drag and drop multiple appointments
 
@@ -527,7 +527,7 @@ To drag and drop multiple appointments:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs13" %}
 
 ### Disable the drag action
 
@@ -542,7 +542,7 @@ By default, you can drag and drop the events within any of the applicable Schedu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs14" %}
 
 ### Preventing drag and drop on specific targets
 
@@ -559,7 +559,7 @@ In this example, we have prevented the drag action on all-day row.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs15" %}
 
 ### Disable scrolling on drag action
 
@@ -574,7 +574,7 @@ By default, while dragging an appointment to the edges, either top or bottom of 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs16" %}
 
 ### Controlling scroll speed while dragging an event
 
@@ -589,7 +589,7 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs17" %}
 
 ### Auto navigation of date ranges on dragging an event
 
@@ -606,7 +606,7 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs18" %}
 
 ### Setting drag time interval
 
@@ -621,7 +621,7 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs19" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs19" %}
 
 ### Drag and drop items from an external source
 
@@ -642,7 +642,7 @@ Learn how to drag an external item into the React Scheduler by watching this vid
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/external-drag-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/external-drag-cs1" %}
 
 ### Opening the editor window on drag stop
 
@@ -657,7 +657,7 @@ There are scenarios where you want to open the editor filled with data on newly 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs20" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs20" %}
 
 ## Inline Appointment
 
@@ -689,7 +689,7 @@ While editing the occurrence from the recurrence series, it is only possible to 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs21" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs21" %}
 
 ## Appointment Resizing
 
@@ -704,7 +704,7 @@ Another way to reschedule an appointment can be done by resizing it through eith
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs22" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs22" %}
 
 ### Disabling resize action
 
@@ -719,7 +719,7 @@ Resize is enabled by default except in Agenda and Month-Agenda views. To disable
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs23" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs23" %}
 
 ### Disabling scrolling on resize action
 
@@ -734,7 +734,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs24" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs24" %}
 
 ### Controlling scroll speed while resizing an event
 
@@ -749,7 +749,7 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs25" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs25" %}
 
 ### Setting resize time interval
 
@@ -764,7 +764,7 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs26" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs26" %}
 
 ## Appointment customization
 
@@ -790,7 +790,7 @@ Learn how easily you can customize the basic look and feel of React Scheduler ap
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-template-cs1" %}
 
 > All the built-in fields that are mapped to the appropriate field properties within the [`eventSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
@@ -807,7 +807,7 @@ The  [`eventRendered`](https://ej2.syncfusion.com/react/documentation/api/schedu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs27" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs27" %}
 
 ### Using cssClass
 
@@ -822,7 +822,7 @@ The customization of events can also be achieved using [`cssClass`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs28" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs28" %}
 
 ## Setting minimum height
 
@@ -837,7 +837,7 @@ It is possible to set minimal height for appointments on Scheduler using [`event
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs29" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs29" %}
 
 ## Block Dates and Times
 
@@ -852,7 +852,7 @@ It is possible to block a set of dates or a particular time range on the Schedul
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs30" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs30" %}
 
 Block events can also be defined to repeat on several days as shown in the following code example.
 
@@ -865,7 +865,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs31" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs31" %}
 
 ## Readonly
 
@@ -880,7 +880,7 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs32" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs32" %}
 
 ## Make specific events readonly
 
@@ -895,7 +895,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs33" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs33" %}
 
 > By default, the event editor is prevented to open on the read-only events when [`isReadonly`](https://ej2.syncfusion.com/react/documentation/api/schedule/field#isreadonly) field is set to `true`.
 
@@ -914,7 +914,7 @@ You can restrict the users to create and update more than one appointment on spe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs34" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs34" %}
 
 ## Differentiate the past time events
 
@@ -929,7 +929,7 @@ To differentiate the appearance of the appointments based on specific criteria s
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs35" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs35" %}
 
 ## Appointments occupying the entire cell
 
@@ -946,7 +946,7 @@ We can show more indicator if more than one appointment is available in a same c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs36" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs36" %}
 
 ## Limiting maximum number of events displayed
 
@@ -968,7 +968,7 @@ The [`maxEventsPerRow`](https://ej2.syncfusion.com/react/documentation/api/sched
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/max-events-per-row-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/max-events-per-row-cs1" %}
 
 > The property [`maxEventsPerRow`](https://ej2.syncfusion.com/react/documentation/api/schedule/views#maxeventsperrow) will be applicable only when [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
 
@@ -1064,7 +1064,7 @@ The tooltip can be displayed for appointments by setting `true` to the [`enableT
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs37" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs37" %}
 
 ### Customizing event tooltip using template
 
@@ -1079,7 +1079,7 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/tooltip-cs1" %}
 
 > All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the [`eventSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings) can be accessed within the template.
 
@@ -1098,7 +1098,7 @@ To prevent a tooltip from appearing for certain events, you can set the `cancel`
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/tooltip-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/tooltip-cs2" %}
 
 ## Appointment selection
 
@@ -1131,7 +1131,7 @@ In the following example, the subject of the appointment clicked has been displa
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs1" %}
 
 ## Get the current view appointments
 
@@ -1149,7 +1149,7 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs2" %}
 
 ## Get the entire appointment collections
 
@@ -1167,7 +1167,7 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/event-public-cs3" %}
 
 ## Refresh appointments
 

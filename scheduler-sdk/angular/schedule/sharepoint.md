@@ -372,5 +372,5 @@ The output will appear as follows:
 ## See also
 
 * [Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler)
-* [Getting Started with the Angular Schedule component](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started)
+* [Getting Started with the Angular Schedule component](https://help.syncfusion.com/scheduler-sdk/angular/schedule/getting-started)
 * [Getting Started with the Angular UI component](https://ej2.syncfusion.com/angular/documentation/introduction)

@@ -30,4 +30,4 @@ The following code example shows how to render only the last six months of a yea
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/year-customizations-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/year-customizations-cs1" %}

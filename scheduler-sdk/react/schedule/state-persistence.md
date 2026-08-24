@@ -30,7 +30,7 @@ The following sample demonstrates how to enable state persistence in the Schedul
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs26" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs26" %}
 
 ## See also
 
