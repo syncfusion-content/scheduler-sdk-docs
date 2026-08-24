@@ -340,5 +340,5 @@ The output appears as follows:
 ## See also
 
 * [React Schedule component](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
-* [Getting Started with the React Schedule component](https://ej2.syncfusion.com/react/documentation/schedule/getting-started) - Basic setup guide
+* [Getting Started with the React Schedule component](https://help.syncfusion.com/scheduler-sdk/react/schedule/getting-started) - Basic setup guide
 * [Getting Started with the Syncfusion<sup style="font-size:70%">&reg;</sup> React UI component](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start) - Quick start guide

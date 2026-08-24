@@ -116,6 +116,6 @@ In this example, the `beforePaste` event can be utilized to intercept the event 
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
-* [CRUD Actions](https://ej2.syncfusion.com/react/documentation/schedule/crud-actions)
+* [CRUD Actions](https://help.syncfusion.com/scheduler-sdk/react/schedule/crud-actions)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

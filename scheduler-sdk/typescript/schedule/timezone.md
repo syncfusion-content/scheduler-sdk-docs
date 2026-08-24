@@ -204,4 +204,4 @@ let convertedDate: Date = timezone.removeLocalOffset(date);
 console.log(convertedDate); // 2018-12-05T15:25:11.000Z
 ```
 
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and see the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage and demonstrations.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) for an overview of capabilities, and see the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for sample usage and demonstrations.

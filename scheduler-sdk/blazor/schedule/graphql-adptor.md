@@ -598,7 +598,7 @@ var app = builder.Build();
 
 ```
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Scheduler component’s [getting-started](https://blazor.syncfusion.com/documentation/scheduler/getting-started-webapp) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Scheduler component’s [getting-started](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started-webapp) documentation.
 ### Step 3: Create the Data Model
 
 A data model is a C# class that represents the structure of a database table. This model defines the properties that correspond to the columns in the `Appointments` table.

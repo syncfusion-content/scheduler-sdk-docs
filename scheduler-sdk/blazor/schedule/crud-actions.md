@@ -507,7 +507,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 }
 ```
 
-Note: To learn more about handling recurrence exceptions, refer to the [Adding exceptions](https://blazor.syncfusion.com/documentation/scheduler/recurring-events#adding-exceptions) topic.
+Note: To learn more about handling recurrence exceptions, refer to the [Adding exceptions](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/recurring-events#adding-exceptions) topic.
 
 ### Restricting edit action based on specific criteria
 

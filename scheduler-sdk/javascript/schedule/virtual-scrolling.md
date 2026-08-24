@@ -89,7 +89,7 @@ namespace LazyLoadingServices.Controllers
 - This feature is most effective when a large number of resources and appointments are bound to the Scheduler.
 - Lazy loading applies only when [resource grouping](https://ej2.syncfusion.com/documentation/api/schedule/group#resources) is enabled on the Scheduler.
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for interactive examples.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour for an overview, and see the [Scheduler demo](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) for interactive examples.
 
 ## See Also
 

@@ -91,4 +91,4 @@ By default, the Scheduler highlights the current date in the date header on all 
 
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs5" %}
 
-> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for a comprehensive overview of its capabilities. Explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how to present and manipulate data effectively.
+> Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) for a comprehensive overview of its capabilities. Explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how to present and manipulate data effectively.

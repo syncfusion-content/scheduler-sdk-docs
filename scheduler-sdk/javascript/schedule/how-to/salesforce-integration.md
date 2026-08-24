@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Salesforce Integration in JavaScript Scheduler
 
-This topic provides a step-by-step guide to integrating the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) into Salesforce.
+This topic provides a step-by-step guide to integrating the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) into Salesforce.
 
 ## Prerequisites
 
@@ -413,4 +413,4 @@ Click on the `SyncfusionScheduler` app, and the scheduler will load on the home 
 
 ![Click Scheduler page](../images/Salesforce-click-scheduler.png)
 
-N> You can also explore our [**JavaScript Scheduler**](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) example to knows about the Salesforce integration.
+N> You can also explore our [**JavaScript Scheduler**](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) example to knows about the Salesforce integration.

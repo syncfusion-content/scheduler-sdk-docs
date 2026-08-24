@@ -93,4 +93,4 @@ When `rowAutoHeight` is enabled, a small whitespace may remain at the bottom of 
 
 **Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#ignorewhitespace) property applies only when `rowAutoHeight` is enabled.
 
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour for an overview, and explore the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for practical examples.

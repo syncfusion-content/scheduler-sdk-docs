@@ -612,6 +612,6 @@ The application now offers a reliable, scalable solution for managing scheduler 
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [DataManager Documentation](https://ej2.syncfusion.com/react/documentation/data/getting-started)
 * [Django REST Framework Official Docs](https://www.django-rest-framework.org/)
-* [CRUD Operations Guide](https://ej2.syncfusion.com/react/documentation/schedule/crud-actions)
+* [CRUD Operations Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/crud-actions)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)
 * [GitHub Sample Repository](https://github.com/SyncfusionExamples/react-scheduler-crud-django-mysql)

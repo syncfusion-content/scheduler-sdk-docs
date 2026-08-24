@@ -322,7 +322,7 @@ Once the dev server is running, open `http://localhost:3000` in your browser to 
 
 > **Tip:** If the page does not render correctly, check the browser console for missing imports, invalid `Date` values, or server-side rendering warnings.
 
-To learn more about the functionality of the Schedule component, refer to the [Schedule documentation](https://ej2.syncfusion.com/react/documentation/schedule/getting-started).
+To learn more about the functionality of the Schedule component, refer to the [Schedule documentation](https://help.syncfusion.com/scheduler-sdk/react/schedule/getting-started).
 
 ## Troubleshooting
 
