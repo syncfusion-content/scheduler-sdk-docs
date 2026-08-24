@@ -16,19 +16,6 @@ N> The Scheduler `id` must be set to preserve state with persistence.
 
 The following example demonstrates how to enable state persistence for the Scheduler component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/persistence/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/persistence/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/persistence/razor %}
@@ -37,7 +24,6 @@ The following example demonstrates how to enable state persistence for the Sched
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/persistence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

@@ -21,7 +21,7 @@ To improve performance when loading many resources and events, the Scheduler sup
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/virtual-scrolling-cs1" %}
 
 **Note:** Virtual loading of resources and events is not supported in the `MonthAgenda`, `Year`, and `TimelineYear` views in horizontal orientation.
 
@@ -44,7 +44,7 @@ Enable lazy loading by setting [`enableLazyLoading`](../api/schedule/viewsModel#
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/lazy-loading-cs1" %}
 
 The following server-side controller retrieves appointment data based on resource IDs provided as query parameters:
 

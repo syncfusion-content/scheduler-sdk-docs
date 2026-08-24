@@ -26,4 +26,4 @@ This guide demonstrates how to create custom templates for Quick Info pop-ups th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1" %}

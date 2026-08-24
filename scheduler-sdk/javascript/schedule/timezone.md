@@ -32,7 +32,7 @@ When no Scheduler `timezone` is specified, appointments render using the browser
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs1" %}
 
 ## Scheduler set to a specific timezone
 
@@ -50,7 +50,7 @@ Set the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/api/sc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs2" %}
 
 ## Display events at the same time everywhere (UTC)
 
@@ -68,7 +68,7 @@ If events are stored in UTC and should appear at the same wall-clock time for al
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs3" %}
 
 ## Per-event time zones
 
@@ -83,7 +83,7 @@ To preserve an appointment's originating zone, include `startTimezone` and `endT
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs4" %}
 
 ## Customize timezone list in the editor
 
@@ -101,7 +101,7 @@ The timezone editor shows a large collection of zones by default. Customize the 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/time-zone-cs5" %}
 
 ## Timezone utility methods
 

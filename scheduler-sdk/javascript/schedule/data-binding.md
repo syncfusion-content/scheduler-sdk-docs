@@ -28,7 +28,7 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs1" %}
 
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
@@ -55,7 +55,7 @@ The Scheduler supports binding to remote data services. To implement this:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs2" %}
 
 ### Filter events using the in-built query
 
@@ -72,7 +72,7 @@ This method improves component performance by reducing the amount of data transf
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs3" %}
 
 The following image represents how the parameters are passed using ODataV4 filter.
 
@@ -91,7 +91,7 @@ Create a custom adaptor by extending the built-in adaptors. The following exampl
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs4" %}
 
 ## Loading data via AJAX post
 
@@ -136,7 +136,7 @@ To send additional custom parameters with server requests:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs5" %}
 
 > Parameters added using the [`query`](../api/schedule/eventSettings#query) property will be sent with every data request to the server for all Scheduler actions.
 
@@ -153,7 +153,7 @@ You can handle server-side exceptions and error messages on the client-side usin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs6" %}
 
 > The [`actionFailure`](../api/schedule#actionfailure) event triggers when the server returns errors or when an exception occurs while processing any Scheduler CRUD action.
 
@@ -298,7 +298,7 @@ A custom Google Calendar URL is assigned to the `DataManager` and then to the Sc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/data-bind-cs7" %}
 
 ## See Also
 

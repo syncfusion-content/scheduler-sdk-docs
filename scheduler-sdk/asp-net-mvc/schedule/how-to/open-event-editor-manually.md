@@ -15,18 +15,6 @@ The Scheduler allows you to manually open the event editor for a specific time r
 
 In the following code example, clicking the **Click to open Editor** button opens the editor in `Add` mode for the cell that starts on `February 15, 2018 at 10:00 AM`, and clicking the **Click to open Event Editor** button opens the editor in `Save` mode for an existing event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/event-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/event-editor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,7 +24,6 @@ In the following code example, clicking the **Click to open Editor** button open
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/event-editor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -46,18 +33,6 @@ By default, the Scheduler editor window opens when you double-click a cell or an
 
 N> When the clicked event is a recurring appointment, the example invokes `quickPopup.openRecurrenceAlert()` to show the standard recurrence confirmation dialog instead of opening the editor directly. This ensures the user can choose between editing a single occurrence or the entire series.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/single-click-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/single-click-editor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -67,6 +42,5 @@ N> When the clicked event is a recurring appointment, the example invokes `quick
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/single-click-editor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 

@@ -21,4 +21,4 @@ You can refresh the Scheduler layout without re-rendering the entire component b
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/refresh-layout-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/refresh-layout-cs1" %}

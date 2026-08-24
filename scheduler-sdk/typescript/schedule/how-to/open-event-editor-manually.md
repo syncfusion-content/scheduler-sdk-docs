@@ -29,7 +29,7 @@ The Scheduler allows users to manually open the event editor for a specific time
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/open-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/open-editor-cs1" %}
 
 ## Open editor window on single click
 
@@ -46,4 +46,4 @@ The following example demonstrates how to open the editor window with a single c
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/default-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/default-cs5" %}

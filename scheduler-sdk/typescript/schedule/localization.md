@@ -57,7 +57,7 @@ loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs1" %}
 
 > Refer to the [common internationalization documentation](https://ej2.syncfusion.com/documentation/common/internationalization) for more information about globalization.
 
@@ -76,7 +76,7 @@ For example, the following code defines French translations for all static words
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs2" %}
 
 The localized words for static text used in the Scheduler and Recurrence Editor can be found in the following code. Access static text for all cultures from the [`Syncfusion locale repository`](https://github.com/syncfusion/ej2-locale).
 
@@ -219,7 +219,7 @@ Scheduler supports standard date formats and uses `MM/dd/yyyy` by default. If yo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs3" %}
 
 ## Setting time format
 
@@ -236,7 +236,7 @@ The following example demonstrates the Scheduler control in 24-hour format:
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs4" %}
 
 > Note: The `timeFormat` property accepts valid time format strings only.
 
@@ -253,7 +253,7 @@ Set [`enableRtl`](https://ej2.syncfusion.com/documentation/api/schedule#enablert
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/localization-cs5" %}
 
 > Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see practical examples.
 

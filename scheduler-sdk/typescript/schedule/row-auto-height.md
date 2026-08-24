@@ -34,7 +34,7 @@ By default, the rows of the calendar Month view can accommodate only a limited n
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/row-auto-height-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/row-auto-height-cs1" %}
 
 ## Timeline views
 
@@ -52,7 +52,7 @@ When the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/row-auto-height-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/row-auto-height-cs2" %}
 
 ## Timeline views with multiple resources
 
@@ -70,7 +70,7 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/row-auto-height-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/row-auto-height-cs3" %}
 
 ## Appointments occupying entire cell
 
@@ -88,7 +88,7 @@ By default, when the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/ignore-whitespace-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/ignore-whitespace-cs1" %}
 
 > **Note:** The [`ignoreWhitespace`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#ignorewhitespace) property is only applicable when the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 

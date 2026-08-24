@@ -36,7 +36,7 @@ The example below shows the Scheduler displaying all available header rows in Ti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs39" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs39" %}
 
 ![Timeline Header Rows](images/schedule-headerrow-default.png)
 
@@ -54,7 +54,7 @@ To display only the year and month header rows in the Scheduler, specify `Year` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs40" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs40" %}
 
 ![Display Year and Month rows in timeline views](images/schedule-headerrow-month-year.png)
 
@@ -72,7 +72,7 @@ The week number can be displayed in a separate header row of the Timeline Schedu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs41" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs41" %}
 
 ![Display Week numbers in timeline views](images/schedule-headerrow-weeknumber.png)
 
@@ -90,7 +90,7 @@ You can display a full year in a Timeline view by setting the [`interval`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs42" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs42" %}
 
 ![Display dates of a complete year in timeline views](images/schedule-headerrow-dates.png)
 
@@ -108,7 +108,7 @@ You can customize the text of the header rows and display any images or formatte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs43" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs43" %}
 
 ![Customized header rows using template](images/schedule-headerrow-custom-header.png)
 

@@ -23,4 +23,4 @@ To ensure that complete time labels are displayed in responsive mode, you can us
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/timescale-cs1" %}

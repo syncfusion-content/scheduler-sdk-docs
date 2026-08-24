@@ -32,7 +32,7 @@ When no time zone is set on the Scheduler, appointments render according to the 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs1" %}
 
 ## Scheduler set to a specific time zone
 
@@ -50,7 +50,7 @@ Setting the Scheduler's [`timezone`](https://ej2.syncfusion.com/documentation/ap
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs2" %}
 
 ## Display events at the same time everywhere (UTC)
 
@@ -68,7 +68,7 @@ If events are stored in UTC and the goal is to present the same wall-clock time 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs3" %}
 
 ## Per-event time zones
 
@@ -83,7 +83,7 @@ To keep each appointment in its originating time zone, provide the `startTimezon
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs4" %}
 
 ## Customize timezone list in the editor
 
@@ -101,7 +101,7 @@ The time zone editor displays a large collection of 200+ time zone names by defa
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/time-zone-cs5" %}
 
 ## Timezone utility methods
 

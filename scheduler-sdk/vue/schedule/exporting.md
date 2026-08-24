@@ -27,7 +27,7 @@ Appointments can be exported to an Excel file by using the `exportToExcel` metho
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs1" %}
 
 ### Exporting with Custom Fields
 
@@ -42,7 +42,7 @@ By default, Scheduler exports all the event fields mapped through the [`eventSet
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs2" %}
 
 ### Exporting Individual Occurrences of a Recurring Series
 
@@ -57,7 +57,7 @@ By default, the Scheduler exports recurring events as a single record by exporti
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs3" %}
 
 ### Exporting Custom Event Data
 
@@ -74,7 +74,7 @@ By default, the whole event collection bound to the Scheduler is exported as an 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs4" %}
 
 ### Customizing Column Header with Custom Fields Exporting
 
@@ -89,7 +89,7 @@ Using the `fields` property, you can export only the defined fields to Excel wit
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs5" %}
 
 ### Export with Custom File Name
 
@@ -104,7 +104,7 @@ By default, the Scheduler allows users to download the exported Excel file with 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs6" %}
 
 ### Excel File Formats
 
@@ -119,7 +119,7 @@ By default, the Scheduler exports event data to an Excel file in the `.xlsx` for
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs7" %}
 
 ### Custom separator in CSV
 
@@ -134,7 +134,7 @@ The Scheduler exports event data to CSV format with `,` as the separator. You ca
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs8" %}
 
 ### How to Customize the Excel Sheet on before Exporting
 
@@ -159,7 +159,7 @@ Here is an example of how you can add a custom header and footer to an Excel she
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/excel-export-cs9" %}
 
 ## Exporting Calendar Events as ICS File
 
@@ -176,7 +176,7 @@ The following code example shows how the Scheduler events are exported to a cale
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/calendar-export-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/calendar-export-cs1" %}
 
 ### Exporting Calendar with Custom File Name
 
@@ -193,7 +193,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/calendar-export-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/calendar-export-cs2" %}
 
 ## Import Events from other Calendars
 
@@ -212,7 +212,7 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/calendar-import-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/calendar-import-cs1" %}
 
 ## How to Print the Scheduler Element
 
@@ -236,7 +236,7 @@ You can print the Schedule element with the current view by using the [`print`](
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/print-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/print-cs1" %}
 
 ### Using Print Method with Options
 
@@ -251,7 +251,7 @@ You can print the Schedule element based on your needs using the [`print`](../ap
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/print-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/print-cs2" %}
 
 ### How to Customize the Print Layout
 
@@ -273,6 +273,6 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/print-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/print-cs3" %}
 
 > Refer to the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for an overview. Explore the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

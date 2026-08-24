@@ -30,7 +30,7 @@ When the height and width of the Scheduler are set to `auto`, it tries to keep t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs1" %}
 
 ## Height and width in pixels
 
@@ -46,7 +46,7 @@ The Scheduler height and width render exactly as the given pixel values. You can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs2" %}
 
 ## Height and width in percentages
 
@@ -62,7 +62,7 @@ When the height and width of the Scheduler are given as percentages, the Schedul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/dimension-cs3" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for an overview of its features. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.
 

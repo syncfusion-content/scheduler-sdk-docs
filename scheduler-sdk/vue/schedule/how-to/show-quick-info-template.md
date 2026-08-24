@@ -21,4 +21,4 @@ Quick info popups for cells and appointments can be customized through templates
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/quick-info-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/quick-info-cs2" %}

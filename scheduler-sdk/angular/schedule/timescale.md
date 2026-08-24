@@ -32,7 +32,7 @@ The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs63" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs63" %}
 
 ![Time Slot Duration](images/schedule-timeslot.png)
 
@@ -56,7 +56,7 @@ The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/timescale-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/timescale-cs1" %}
 
 ![Customizing Time Cells](images/schedule-custom-timecell.png)
 
@@ -74,7 +74,7 @@ The grid lines that indicate the exact time duration can be enabled or disabled 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs64" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs64" %}
 
 ![Hide Time Scale](images/schedule-hide-timecell.png)
 
@@ -92,7 +92,7 @@ By default, Scheduler indicates the current date with a highlighted date header 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs65" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs65" %}
 
 ![Highlight current Time](images/schedule-highlight.png)
 

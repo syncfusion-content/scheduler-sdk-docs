@@ -28,7 +28,7 @@ The Scheduler allows you to export events to an Excel file by using the [`export
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs1" %}
 
 ![Excel Exporting](images/schedule-excel-export.png)
 
@@ -46,7 +46,7 @@ By default, the Scheduler exports all default event fields that are mapped throu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs2" %}
 
 ![Excel Exporting with Custom Fields](images/schedule-excel-export-custom-fields.png)
 
@@ -64,7 +64,7 @@ By default, the Scheduler exports recurring events as a single record by exporti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs3" %}
 
 ### Exporting custom event data
 
@@ -82,7 +82,7 @@ By default, the whole event collection bound to the Scheduler is exported as an 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs4" %}
 
 ### Customizing column header with custom fields exporting
 
@@ -98,7 +98,7 @@ Using the `fields` property, you can export only the defined fields to Excel wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs5" %}
 
 ![Excel Exporting with custom header texts](images/schedule-excel-export-custom-header.png)
 
@@ -116,7 +116,7 @@ By default, the Scheduler downloads the exported Excel file with the name `Sched
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs6" %}
 
 ### Excel file formats
 
@@ -132,7 +132,7 @@ By default, the Scheduler exports event data to an Excel file in the `.xlsx` for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs7" %}
 
 ### Custom separator in CSV
 
@@ -148,7 +148,7 @@ The Scheduler exports the event data to CSV format with `,` as the separator. Yo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs8" %}
 
 ### How to customize the excel sheet on before exporting
 
@@ -174,7 +174,7 @@ Here is an example of how you can add a custom header and footer to an Excel she
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/excel-export-cs9" %}
 
 ## Exporting calendar events as ICS file
 
@@ -192,7 +192,7 @@ The following code example shows how the Scheduler events are exported to a cale
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs1" %}
 
 ### Exporting calendar with custom file name
 
@@ -210,7 +210,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs2" %}
 
 ## Import events from other calendars
 
@@ -230,7 +230,7 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/calendar-export-cs3" %}
 
 ## How to print the Scheduler element
 
@@ -255,7 +255,7 @@ You can print the Schedule element with the current view by using the [`print`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs1" %}
 
 ### Using print method with options
 
@@ -271,7 +271,7 @@ You can print the Schedule element based on your needs by using the [`print`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs2" %}
 
 ### Customizing the print layout
 
@@ -294,6 +294,6 @@ Here is an example of how you can add a custom header and footer to the print la
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/print-cs3" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for feature highlights. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.

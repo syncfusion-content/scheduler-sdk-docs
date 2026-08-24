@@ -36,7 +36,7 @@ By default, the rows in the calendar Month view can hold only a limited number o
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs23" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs23" %}
 
 ## Timeline views
 
@@ -54,7 +54,7 @@ When the [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/sc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs24" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs24" %}
 
 ## Timeline views with multiple resources
 
@@ -74,7 +74,7 @@ The following example shows how the auto row height feature works in Timeline vi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs25" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs25" %}
 
 ## Appointments occupying entire cell
 
@@ -94,7 +94,7 @@ When [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/schedu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/ignore-whitespace-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/ignore-whitespace-cs1" %}
 
 **Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#ignorewhitespace) property applies only when the [`rowAutoHeight`](https://ej2.syncfusion.com/react/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 

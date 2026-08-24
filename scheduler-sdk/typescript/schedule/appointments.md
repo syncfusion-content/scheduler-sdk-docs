@@ -34,7 +34,7 @@ Here's an example of how to create a normal event in the Scheduler using simple 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs1" %}
 
 ## Spanned events
 
@@ -55,7 +55,7 @@ By default, the Scheduler renders spanned events (appointments lasting more than
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs3" %}
 
 
 ## All-day events
@@ -92,7 +92,7 @@ When numerous appointments exist in the all-day view, the [`dataBound`](../api/s
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs2" %}
 
 ## Recurring events
 
@@ -111,7 +111,7 @@ The following example demonstrates how to create a recurring event in the Schedu
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs4" %}
 
 ### Adding exceptions
 
@@ -128,7 +128,7 @@ Specific dates can be excluded from a recurrence series by adding them to the [`
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs5" %}
 
 ### Editing an occurrence from a series
 
@@ -146,7 +146,7 @@ In the following example, a recurring instance appearing on January 30, 2018, is
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs6" %}
 
 ### Edit only the current and following events
 
@@ -163,7 +163,7 @@ In the following example, a recurring instance appearing on January 30, 2018, an
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs7" %}
 
 ### Recurrence options and rules
 
@@ -292,7 +292,7 @@ When event instances have default mapping names, manual mapping is unnecessary. 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs8" %}
 
 > The mapper field `id` is of string type with no additional validation options, whereas all other fields are of `Object` type with additional options available.
 
@@ -318,7 +318,7 @@ In the following example, the Subject field in the event editor displays the lab
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs9" %}
 
 ## Adding Custom fields
 
@@ -333,7 +333,7 @@ In addition to default Scheduler fields, any number of custom fields can be incl
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs10" %}
 
 ## Customize the order of the overlapping events
 
@@ -348,7 +348,7 @@ By default, the Scheduler renders overlapping events based on their start and en
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs11" %}
 
 ## Preventing Overlapping Events
 
@@ -377,7 +377,7 @@ The following code example demonstrates how to disable overlap checking by setti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs40" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs40" %}
 
 **Limitations**
 
@@ -398,7 +398,7 @@ The following code example demonstrates how to check for overlaps when adding an
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs41" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs41" %}
 
 ## Drag and drop appointments
 
@@ -418,7 +418,7 @@ Appointments can be rescheduled to any time by dragging and dropping them to the
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs12" %}
 
 ### Drag and drop multiple appointments
 
@@ -440,7 +440,7 @@ Multiple events can also be dragged from one resource to another. If all selecte
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs13" %}
 
 ### Disable the drag action
 
@@ -458,7 +458,7 @@ By default, events can be dragged and dropped within any applicable Scheduler vi
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs14" %}
 
 ### Preventing drag and drop on specific targets
 
@@ -476,7 +476,7 @@ Drag actions on specific targets can be prevented by specifying the target to ex
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs15" %}
 
 ### Disable scrolling on drag action
 
@@ -494,7 +494,7 @@ By default, when dragging an appointment to the edges (top or bottom in vertical
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs16" %}
 
 ### Controlling scroll speed while dragging an event
 
@@ -512,7 +512,7 @@ The scrolling speed while dragging an appointment to the Scheduler edges can be 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs17" %}
 
 ### Auto navigation of date ranges on dragging an event
 
@@ -532,7 +532,7 @@ By default, the navigation delay is set to 2000 ms, determining how long a user 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs18" %}
 
 ### Setting drag time interval
 
@@ -550,7 +550,7 @@ By default, when dragging an appointment, it moves in 30-minute intervals. To ch
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs19" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs19" %}
 
 ### Drag and drop items from external source
 
@@ -570,7 +570,7 @@ In the following example, the tree view control serves as the external source, w
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/external-drag-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/external-drag-cs1" %}
 
 ### Opening the editor window on drag stop
 
@@ -588,7 +588,7 @@ In scenarios where opening the editor filled with data at a newly dropped locati
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs20" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs20" %}
 
 ## Inline Appointment
 
@@ -629,7 +629,7 @@ For editing appointments, single-click the appointment subject. The `editable` o
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs21" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs21" %}
 
 ### Recurrence Event
 
@@ -651,7 +651,7 @@ Another way to reschedule appointments is by resizing them. To use resizing func
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs22" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs22" %}
 
 ### Disable the resize action
 
@@ -669,7 +669,7 @@ By default, resizing events is allowed on all Scheduler views except Agenda and 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs23" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs23" %}
 
 ### Disable scrolling on resize action
 
@@ -687,7 +687,7 @@ By default, when resizing an appointment and its handler reaches the edge of the
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs24" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs24" %}
 
 ### Controlling scroll speed while resizing an event
 
@@ -705,7 +705,7 @@ The scrolling speed when resizing an appointment to the Scheduler edges can be c
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs25" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs25" %}
 
 ### Setting resize time interval
 
@@ -723,7 +723,7 @@ By default, when resizing an appointment, it extends or shrinks at 30-minute int
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs26" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs26" %}
 
 ## Appointment customization
 
@@ -749,7 +749,7 @@ Add text, images, and links to customize the appearance of events. Use the [`tem
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-template-cs1" %}
 
 > All built-in fields mapped to appropriate field properties within [`eventSettings`](../api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource, can be accessed within the template code.
 
@@ -769,7 +769,7 @@ The [`eventRendered`](https://ej2.syncfusion.com/documentation/api/schedule#even
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs27" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs27" %}
 
 ### Customize appointments using CSS classes
 
@@ -787,7 +787,7 @@ You can also customize event appearance using the [`cssClass`](../api/schedule#c
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs28" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs28" %}
 
 ## Setting minimum height
 
@@ -802,7 +802,7 @@ You can set a minimal height for appointments on the Scheduler using the [`event
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs29" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs29" %}
 
 ## Block Dates and Times
 
@@ -820,7 +820,7 @@ Block a set of dates or specific time ranges on the Scheduler by defining an app
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs30" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs30" %}
 
 Block appointments can also be defined to repeat on several days as shown in the following code example.
 
@@ -833,7 +833,7 @@ Block appointments can also be defined to repeat on several days as shown in the
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs31" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs31" %}
 
 ## Readonly
 
@@ -851,7 +851,7 @@ Enable or disable interaction with Scheduler appointments using the [`readonly`]
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs32" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs32" %}
 
 ## Make specific events readonly
 
@@ -869,7 +869,7 @@ In some scenarios, CRUD actions on specific appointments may need to be restrict
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs33" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs33" %}
 
 > By default, the event editor is prevented from opening on readonly events when the [`isReadonly`](../api/schedule/field#isreadonly) field is set to `true`.
 
@@ -889,7 +889,7 @@ Restrict users from creating and updating more than one appointment on specific 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs1" %}
 
 > The **isSlotAvailable** method focuses on verifying appointment availability within the current view's date range. It does not evaluate availability for recurrence occurrences outside this date range.
 
@@ -909,7 +909,7 @@ Differentiate the appearance of appointments based on specific criteria, such as
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs34" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs34" %}
 
 ## Appointments occupying entire cell
 
@@ -929,7 +929,7 @@ When multiple appointments are available in the same cell, an indicator can be d
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs35" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs35" %}
 
 ## Limiting maximum number of events displayed
 
@@ -951,7 +951,7 @@ The [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/view
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/max-events-per-row-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/max-events-per-row-cs1" %}
 
 > The property [maxEventsPerRow](https://ej2.syncfusion.com/documentation/api/schedule/views#maxeventsperrow) will be applicable only when [rowAutoHeight](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is disabled in the Scheduler.
 
@@ -1017,7 +1017,7 @@ Display tooltips for appointments by setting `true` to the [`enableTooltip`](../
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs36" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs36" %}
 
 ### Customize tooltip content using templates
 
@@ -1040,7 +1040,7 @@ The following example demonstrates tooltip customization:
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/tooltip-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/tooltip-cs1" %}
 
 > Note: All field names mapped from the Scheduler dataSource can be accessed within the template, including `subject`, `description`, `location`, `startTime`, and `endTime`.
 
@@ -1062,7 +1062,7 @@ To prevent a tooltip from appearing for certain events, set the `cancel` propert
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/before-tooltip-open" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/before-tooltip-open" %}
 
 ## Appointment filtering
 
@@ -1082,7 +1082,7 @@ The following example demonstrates filtering to render only selected appointment
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-filter-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-filter-cs1" %}
 
 ## Appointment selection
 
@@ -1117,7 +1117,7 @@ The following example shows how to display the subject of a clicked appointment:
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/events-public-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/events-public-cs1" %}
 
 ## Get current view appointments
 
@@ -1135,7 +1135,7 @@ To retrieve the appointments visible in the current Scheduler view using the [`g
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/events-public-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/events-public-cs2" %}
 
 ## Get all appointments
 
@@ -1153,7 +1153,7 @@ To access all appointments rendered on the Scheduler, regardless of the current 
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/events-public-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/events-public-cs3" %}
 
 ## Refresh appointments
 

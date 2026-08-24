@@ -16,18 +16,6 @@ Use `refreshLayout()` when the Scheduler's cell dimensions, scroll position, or 
 
 N> The `refreshLayout` method only updates the layout; it does not reload the event data from the server.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/manual-refresh/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/manual-refresh/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,7 +25,6 @@ N> The `refreshLayout` method only updates the layout; it does not reload the ev
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/manual-refresh/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

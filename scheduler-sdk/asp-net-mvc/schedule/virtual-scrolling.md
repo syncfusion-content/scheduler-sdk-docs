@@ -12,19 +12,6 @@ documentation: ug
 
 To achieve better performance in the Scheduler when loading a large number of resources and events, virtual scrolling support has been added to load a large set of resources and events instantly as you scroll. You can dynamically load a large number of resources and events in the Scheduler by setting `true` on the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property within the view-specific settings. Virtual loading of events is also possible in the Agenda view by setting the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the Agenda view-specific settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/vScroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/vScroll/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/vScroll/razor %}
@@ -33,7 +20,6 @@ To achieve better performance in the Scheduler when loading a large number of re
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/vScroll/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> The virtual loading of resources and events is currently not supported in the `MonthAgenda`, `Year`, and `TimelineYear` (Horizontal Orientation) views. By default, the Scheduler renders only the visible appointments. You can increase or decrease the preloaded appointment buffer using the [`OverScanCount`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_OverScanCount) property to ensure smooth scrolling.
 
@@ -47,19 +33,6 @@ When this feature is enabled, the Scheduler is capable of fetching events from r
 
 To enable this feature, set the [`EnableLazyLoading`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_EnableLazyLoading) property to `true` within the view-specific settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/lazy-load/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/lazy-load/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/lazy-load/razor %}
@@ -68,7 +41,6 @@ To enable this feature, set the [`EnableLazyLoading`](https://help.syncfusion.co
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/virtual-scroll/lazy-load/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Here's the server-side controller code that retrieves appointment data based on the resource IDs provided as query parameters:
 

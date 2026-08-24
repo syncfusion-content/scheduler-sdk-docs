@@ -31,4 +31,4 @@ The code example below shows how to render six consecutive months in the Schedul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/year-customizations-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/year-customizations-cs1" %}

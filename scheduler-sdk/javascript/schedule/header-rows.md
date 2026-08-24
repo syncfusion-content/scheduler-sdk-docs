@@ -35,7 +35,7 @@ The following example demonstrates the Scheduler displaying all available header
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs1" %}
 
 ## Display year and month rows in timeline views
 
@@ -53,7 +53,7 @@ To display a timeline with only year and month information, specify the `Year` a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs2" %}
 
 ## Display week numbers in timeline views
 
@@ -71,7 +71,7 @@ Display week numbers in a dedicated header row by including the `Week` option in
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs3" %}
 
 ## Timeline view displaying dates of a complete year
 
@@ -89,7 +89,7 @@ Show a complete year in a Timeline view by setting the [`interval`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs4" %}
 
 ## Customizing the header rows using template
 
@@ -107,6 +107,6 @@ Customize header row text, formatted content, or images using the [`template`](h
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/header-rows-cs5" %}
 
 > Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for comprehensive feature demonstrations. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

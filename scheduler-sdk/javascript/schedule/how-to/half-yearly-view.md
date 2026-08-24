@@ -27,4 +27,4 @@ The example below configures the Scheduler to show the last six months of the ye
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1" %}

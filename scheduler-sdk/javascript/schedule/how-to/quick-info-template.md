@@ -26,4 +26,4 @@ This guide shows how to create custom Quick Info templates for empty time cells 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/how-to-quick-info-template-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/how-to-quick-info-template-cs1" %}

@@ -21,4 +21,4 @@ In the Vue Scheduler component, multiple colors can be displayed within a single
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/multiple-color-event" %}

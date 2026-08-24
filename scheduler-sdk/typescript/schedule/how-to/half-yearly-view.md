@@ -27,4 +27,4 @@ In the following example, the Scheduler is configured to render only the last si
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/year-customizations-cs1" %}

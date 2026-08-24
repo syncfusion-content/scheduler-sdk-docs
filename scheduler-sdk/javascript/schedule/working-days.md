@@ -41,7 +41,7 @@ The following example shows how to configure the Scheduler to use Monday, Wednes
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs1" %}
 
 ## Hiding weekend days
 
@@ -61,7 +61,7 @@ For example, if working days are `[1, 3, 4, 5]`, the remaining days (0, 2, 6 —
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs2" %}
 
 ## Show week numbers
 
@@ -81,7 +81,7 @@ Enable week numbers in the header by setting [`showWeekNumber`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs3" %}
 
 ### Different options in showing week numbers
 
@@ -115,7 +115,7 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs5" %}
 
 ## Scheduler displaying custom hours
 
@@ -135,7 +135,7 @@ The example below shows the Scheduler set to display 7:00 AM–6:00 PM; hours ou
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs6" %}
 
 ## Setting start day of the week
 
@@ -153,7 +153,7 @@ By default, the Scheduler uses Sunday as the first day of the week. Change it wi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs7" %}
 
 ## Scroll to specific time and date
 
@@ -171,7 +171,7 @@ The Scheduler can be manually scrolled to a specific time on Scheduler using the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/scroll-to-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/scroll-to-cs1" %}
 
 ### How to scroll to current time on initial load
 
@@ -189,7 +189,7 @@ In scenarios where the Scheduler needs to load displaying the system's current t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/working-days-cs8" %}
 
 Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview, and visit the [Scheduler demo](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) for interactive examples.
 

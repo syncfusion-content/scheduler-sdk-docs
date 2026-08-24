@@ -69,19 +69,6 @@ Now use the `loadCultureFiles` method to load the culture-specific CLDR JSON dat
 
 Set the culture to Scheduler by using the `Locale` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/internationalization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/internationalization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/internationalization/razor %}
@@ -90,7 +77,6 @@ Set the culture to Scheduler by using the `Locale` property.
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/internationalization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -100,19 +86,6 @@ The [`Localization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/l
 
 For example, the following code example lets you define the Hungarian translations for all the static words used in the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/localization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/localization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/localization/razor %}
@@ -121,26 +94,12 @@ For example, the following code example lets you define the Hungarian translatio
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/localization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Setting date format
 
 The Scheduler can be used with all valid date formats and by default follows the universal date format `MM/dd/yyyy`. If the [`DateFormat`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateFormat) property is not specified, the Scheduler uses the locale assigned to it. Since the default locale applied to the Scheduler is `en-US`, the Scheduler follows the `MM/dd/yyyy` pattern.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/dateformat/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/dateformat/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -150,7 +109,6 @@ The Scheduler can be used with all valid date formats and by default follows the
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/dateformat/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -160,19 +118,6 @@ The time format defines how the time value is represented in different string fo
 
 The following example demonstrates the Scheduler component in 24-hour format.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/timeformat/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/timeformat/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/timeformat/razor %}
@@ -181,7 +126,6 @@ The following example demonstrates the Scheduler component in 24-hour format.
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/timeformat/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -191,19 +135,6 @@ N> The [`timeFormat`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 
 The Scheduler layout and its behavior can be changed according to the common RTL (Right-to-Left) conventions by setting [`EnableRtl`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableRtl) to `true`. By doing so, the Scheduler will display its usual layout from right to left. Its default value is `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/rtl/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/rtl/razor %}
@@ -212,7 +143,6 @@ The Scheduler layout and its behavior can be changed according to the common RTL
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/localization/rtl/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

@@ -37,19 +37,6 @@ It is possible to display only the desired views on the Scheduler using the [`e-
 
 In the following example, the Scheduler displays 2 views, namely `Week` and `TimelineDay`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/specific-views/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/specific-views/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/specific-views/razor %}
@@ -58,24 +45,10 @@ In the following example, the Scheduler displays 2 views, namely `Week` and `Tim
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/specific-views/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 To configure the Scheduler with different configurations on each view, refer to the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format, whereas the Month view hides the weekend days and is also displayed in read-only mode.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/individual-views/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/individual-views/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -85,7 +58,6 @@ To configure the Scheduler with different configurations on each view, refer to 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/individual-views/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -119,19 +91,6 @@ There are scenarios where each view may need to have different configurations. F
 
 Usually a day view displays a single day with all its related appointments. It is possible to customize the day view to display more number of days by extending the `e-schedule-views` property with `interval` option. You can also define any of the above defined properties within the `e-schedule-views` object definition as depicted in the following code example.  
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/view-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/view-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/view-template/razor %}
@@ -140,7 +99,6 @@ Usually a day view displays a single day with all its related appointments. It i
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/view-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -150,19 +108,6 @@ N> All the above defined properties can be accessed within Day view except `allo
 
 The Week view displays a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the `firstDayOfWeek` property, which accepts an integer (Sunday=0, Monday=1, Tuesday=2, and so on) value. You can navigate to a particular date in the Day view from the Week view by clicking on the appropriate dates on the date header bar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/week-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/week-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/week-template/razor %}
@@ -171,7 +116,6 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/week-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -183,19 +127,6 @@ The Work Week view displays only the working days of a week (count of 5 days) an
 
 The following code example depicts how to change the working days only on the `Work Week` view of the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/work-week-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/work-week-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/work-week-template/razor %}
@@ -204,7 +135,6 @@ The following code example depicts how to change the working days only on the `W
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/work-week-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -218,19 +148,6 @@ By default, when you try to create an appointment through Month view, it is cons
 
 You can also have the `+ more` text indicator on each day cell of a Month view, clicking on which will allow you to view the hidden appointments of a day.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-template/razor %}
@@ -239,7 +156,6 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -249,19 +165,6 @@ A Year view displays all the days of a particular year with months and all its r
 
 Year view is available in both the `Horizontal` and `Vertical` orientations. You can manage the orientation of year view through `views` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/year-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/year-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/year-template/razor %}
@@ -270,7 +173,6 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/year-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -282,19 +184,6 @@ The Agenda view lists out the appointments in a grid-like view for the next 7 da
 
 The following code example depicts how to customize the display of events within Agenda view alone.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/agenda-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/agenda-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/agenda-template/razor %}
@@ -303,7 +192,6 @@ The following code example depicts how to customize the display of events within
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/agenda-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> Schedule Height is mandatory to set in pixels for Agenda view alone.
 
@@ -315,19 +203,6 @@ A Month Agenda view shows a month calendar, where clicking on a particular day w
 
 The following code example shows how to hide the weekend days on `MonthAgenda` view as well as the working days list is modified on Month Agenda view alone.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-agenda/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-agenda/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-agenda/razor %}
@@ -336,26 +211,12 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/month-agenda/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Timeline views – Day, Week, Work Week
 
 Similar to the Day view, Timeline Day view shows a single day with all its appointments where the time slots are displayed horizontally. By default, the cell height adjusts as per the height set on the Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator will be displayed at the bottom to denote the presence of additional appointments in that time range.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-day/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-day/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -365,24 +226,10 @@ Similar to the Day view, Timeline Day view shows a single day with all its appoi
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-day/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 Similar to the Week view, the Timeline Week view shows 7 days with its associated appointments, with the time slots displayed horizontally.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-week/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-week/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -392,24 +239,10 @@ Similar to the Week view, the Timeline Week view shows 7 days with its associate
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-week/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 The following code example depicts how to display the Timeline Work Week view on the Scheduler,
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-work-week/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-work-week/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -419,7 +252,6 @@ The following code example depicts how to display the Timeline Work Week view on
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-work-week/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -429,19 +261,6 @@ N> Clicking on the dates in the date header bar of Timeline Day, Timeline Week, 
 
 A Timeline Month view displays the current month's days along with their appointments.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-month/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-month/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-month/razor %}
@@ -450,7 +269,6 @@ A Timeline Month view displays the current month's days along with their appoint
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-month/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -462,19 +280,6 @@ In Timeline Year view, each row depicts a single resource. Whereas in the vertic
 
 To make use of the Timeline Year view on the Scheduler, import and inject the `TimelineYear` module from the `ej2-schedule` package.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year/razor %}
@@ -483,26 +288,12 @@ To make use of the Timeline Year view on the Scheduler, import and inject the `T
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 #### Resource grouping
 
 The following code example depicts how to group the multiple resources on Timeline Year view and its relevant events are displayed accordingly under those resources.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year-resource/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year-resource/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -512,26 +303,12 @@ The following code example depicts how to group the multiple resources on Timeli
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/timeline-year-resource/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 #### Auto row height
 
 Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) is enabled, the row height gets auto-adjusted based on the number of overlapping events occupied in the same time range. If you disable the Auto row height, the `+ more` text indicator is shown on each day cell of a Timeline Year view, clicking on which will allow you to view the hidden appointments of a day.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/row-autoheight/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/row-autoheight/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -541,7 +318,6 @@ Timeline Year view supports Auto row height. When the feature [`rowAutoHeight`](
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/row-autoheight/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -551,19 +327,6 @@ It is possible to customize the display of the default number of days on differe
 
 You can provide the alternative display name for such customized views on the Scheduler header bar, by setting the appropriate `displayName` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/extended-views/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/extended-views/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/extended-views/razor %}
@@ -572,7 +335,6 @@ You can provide the alternative display name for such customized views on the Sc
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/views/extended-views/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

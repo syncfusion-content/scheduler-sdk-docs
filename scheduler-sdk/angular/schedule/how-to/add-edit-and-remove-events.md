@@ -24,7 +24,7 @@ You can add, save, and delete appointments using the [`addEvent`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs44" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs44" %}
 
 ## Recurring events
 
@@ -38,4 +38,4 @@ You can add, save, and delete appointments using the [`addEvent`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs45" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs45" %}

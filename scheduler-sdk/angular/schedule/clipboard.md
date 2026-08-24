@@ -39,7 +39,7 @@ To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **C
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs1" %}
 
 > Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste shortcuts.
 
@@ -70,7 +70,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs2" %}
 ## Modifying content before pasting
 
 You can modify the content of an appointment before pasting it by using the [`beforePaste`](https://ej2.syncfusion.com/angular/documentation/api/schedule#beforepaste) event to access the appointment details and make necessary changes.
@@ -99,7 +99,7 @@ In this example, the `beforePaste` event can be used to intercept the event deta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/clipboard-cs3" %}
 
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature overview. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.

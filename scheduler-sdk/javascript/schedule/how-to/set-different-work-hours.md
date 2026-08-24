@@ -28,4 +28,4 @@ The example below sets work hours for February 15 and 17 to 11:00 AM–8:00 PM w
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/open-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/open-editor-cs2" %}

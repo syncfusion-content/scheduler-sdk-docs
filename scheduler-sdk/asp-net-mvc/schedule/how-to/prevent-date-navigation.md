@@ -15,18 +15,6 @@ In the example below, the `onRenderer` handler checks the `elementType` of the r
 
 N> Removing the `e-navigate` class disables navigation on the date header and Month view cells only. To also disable the **Previous**, **Next**, and **Today** toolbar buttons, set the `ShowHeaderBar` toolbar configuration, or handle the [`Navigating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Navigating) event and cancel the action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/navigating/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/navigating/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,5 +24,4 @@ N> Removing the `e-navigate` class disables navigation on the date header and Mo
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/navigating/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 

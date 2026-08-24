@@ -46,7 +46,7 @@ In the following example, the Scheduler displays four views: Week, Month, Timeli
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs2" %}
 
 To configure the Scheduler with only two views, but with different configurations for each view, refer to the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format, whereas the Month view hides weekend days and displays it in read-only mode.
 
@@ -59,7 +59,7 @@ To configure the Scheduler with only two views, but with different configuration
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs3" %}
 
 ## View Specific Configuration
 
@@ -100,7 +100,7 @@ Usually a Day view displays a single day with all its related appointments. It i
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs4" %}
 
 > All the properties defined above can be accessed within Day view except [`allowVirtualScrolling`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#headerrows).
 
@@ -117,7 +117,7 @@ The Week view displays seven days (from Sunday to Saturday) with all its related
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs5" %}
 
 > All the properties defined in the table can be accessed within Week and Work Week views except [`allowVirtualScrolling`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://ej2.syncfusion.com/vue/documentation/api/schedule/views#headerrows).
 
@@ -136,7 +136,7 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs6" %}
 
 > The Week, Work Week, and Day views can display all-day row appointments in a separate all-day row with an expand/collapse option.
 
@@ -157,7 +157,7 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs7" %}
 
 ### Year view
 
@@ -174,7 +174,7 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs8" %}
 
 > Year view also has module support. In this view, you can display all the months of a particular year in a calendar format. Dates with appointments are highlighted with dots below the individual date. When you click a date, the event popup is displayed and the events are listed.
 
@@ -193,7 +193,7 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs9" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs9" %}
 
 ### Month Agenda view
 
@@ -210,7 +210,7 @@ The following code example shows how to hide weekend days in `MonthAgenda` view 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs10" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs10" %}
 
 ### Timeline views – Day, Week, Work Week
 
@@ -227,7 +227,7 @@ To use the timeline views (Timeline Day, Timeline Week, and Timeline Work Week) 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs11" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs11" %}
 
 Similar to the Week view, Timeline Week view shows seven days with its associated appointments, with the time slots displayed horizontally.
 
@@ -240,7 +240,7 @@ Similar to the Week view, Timeline Week view shows seven days with its associate
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs12" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs12" %}
 
 The following code example shows how to display Timeline Work Week view in the Scheduler.
 
@@ -253,7 +253,7 @@ The following code example shows how to display Timeline Work Week view in the S
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs13" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs13" %}
 
 > Clicking the dates in the date header bar of Timeline Day, Timeline Week, and Timeline Work Week allows you to navigate to the Agenda view.
 
@@ -270,7 +270,7 @@ A Timeline Month view displays the days of the current month along with their ap
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs14" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs14" %}
 
 > Clicking the dates in the date header bar of Timeline Month allows you to navigate to Timeline Day view.
 
@@ -289,7 +289,7 @@ To use Timeline Year view in the Scheduler, import and inject the `TimelineYear`
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs15" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs15" %}
 
 #### Resource grouping
 
@@ -439,7 +439,7 @@ Timeline Year view supports auto row height. When the [`rowAutoHeight`](https://
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs16" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs16" %}
 
 ## Extending view intervals
 
@@ -456,7 +456,7 @@ You can provide an alternative display name for such customized views in the Sch
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs17" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/view-cs17" %}
 
 > View intervals can be extended for all Scheduler view modes except Agenda and Month Agenda views.
 

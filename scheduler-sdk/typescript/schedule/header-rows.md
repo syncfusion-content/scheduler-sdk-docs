@@ -34,7 +34,7 @@ The following example shows all available header rows in timeline views.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs1" %}
 
 ## Display year and month rows in timeline views
 
@@ -52,7 +52,7 @@ To display the Timeline Scheduler with only year and month information, specify 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs2" %}
 
 ## Display week numbers in timeline views
 
@@ -70,7 +70,7 @@ Week numbers can be displayed in a dedicated header row of the timeline Schedule
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs3" %}
 
 ## Display a complete year in Timeline view
 
@@ -88,7 +88,7 @@ To display a complete year in a Timeline view, set the [`interval`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs4" %}
 
 ## Customize header rows using a template
 
@@ -106,6 +106,6 @@ You can customize header row text and display formatted content or images using 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/header-rows-cs5" %}
 
 > You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

@@ -40,7 +40,7 @@ npm install cldr-data --save
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs1" %}
 
 ## Localizing static Scheduler text
 
@@ -57,7 +57,7 @@ For example, the following code defines French translations for all static words
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs2" %}
 
 The localized strings for the Scheduler and Recurrence Editor are shown below. Access translations for all cultures in the [`Syncfusion locale repository`](https://github.com/syncfusion/ej2-locale).
 
@@ -201,7 +201,7 @@ The Scheduler supports standard date formats and uses `MM/dd/yyyy` by default fo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs3" %}
 
 ## Setting time format
 
@@ -216,7 +216,7 @@ Control how time values are displayed using the [`timeFormat`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs4" %}
 
 Note: The `timeFormat` property accepts valid time format strings only.
 
@@ -233,7 +233,7 @@ The Scheduler layout and behavior can be changed to follow RTL (Right-to-Left) c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/localization-cs5" %}
 
 > Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour for an overview of capabilities, and explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see practical usage patterns.
 

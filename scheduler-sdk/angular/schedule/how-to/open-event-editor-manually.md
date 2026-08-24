@@ -24,7 +24,7 @@ The [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-sc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs48" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs48" %}
 
 ## Open editor window on single click
 
@@ -40,4 +40,4 @@ By default, the Scheduler editor window opens when cells or appointments are dou
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs49" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs49" %}

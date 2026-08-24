@@ -18,19 +18,6 @@ The Scheduler allows you to export all its events into an Excel format file by u
 
 N> Before you start with excel exporting functionality, you need to import and inject the `ExcelExport` module from the `'@syncfusion/ej2-schedule'` package using the `Inject` method of Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/default-exporting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/default-exporting/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/default-exporting/razor %}
@@ -39,26 +26,12 @@ N> Before you start with excel exporting functionality, you need to import and i
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/default-exporting/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Exporting with custom fields
 
 By default, the Scheduler exports the event fields that are mapped to it through the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. To limit the number of fields in the exported Excel file, you can export only the custom fields of the event data. To export such custom fields alone, define the required `fields` and pass it as an argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-fields/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-fields/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -68,26 +41,12 @@ By default, the Scheduler exports the event fields that are mapped to it through
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-fields/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Exporting individual occurrences of a recurring series
 
 By default, the Scheduler exports recurring events as a single record by exporting only the parent record into the Excel file. If you want to export each individual occurrence of a recurring series appointment as separate records in an Excel file, define the `includeOccurrences` option as `true` and pass it as an argument to the `exportToExcel` method. By default, the `includeOccurrences` option is set to `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/occurrence/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/occurrence/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -97,7 +56,6 @@ By default, the Scheduler exports recurring events as a single record by exporti
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/occurrence/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -107,19 +65,6 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 
 N> By default, the event data are taken from Scheduler dataSource.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-data/razor %}
@@ -128,26 +73,12 @@ N> By default, the event data are taken from Scheduler dataSource.
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/custom-data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Export with custom file name
 
 By default, the Scheduler downloads the exported Excel file with the name `Schedule.xlsx`. To export the Excel file with a custom file name, define the desired `fileName` and pass it as an argument to the `exportToExcel` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/filename/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/filename/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -157,26 +88,12 @@ By default, the Scheduler downloads the exported Excel file with the name `Sched
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/filename/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Excel file formats
 
 By default, the Scheduler exports event data to an Excel file in the `.xlsx` format. You can also export the Scheduler data as either `.xlsx` or `.csv` by defining the `exportType` option as either `csv` or `xlsx`. By default, the `exportType` is set to `xlsx`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/format/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/format/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -186,7 +103,6 @@ By default, the Scheduler exports event data to an Excel file in the `.xlsx` for
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/excel-export/format/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -235,19 +151,6 @@ You can export the Scheduler events to a calendar (.ics) file format and open it
 
 The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the `exportToICalendar` public method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-export/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-export/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-export/razor %}
@@ -256,26 +159,12 @@ The following code example shows how the Scheduler events are exported to a cale
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-export/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Customizing column header with custom fields exporting
 
 Using the `fields` property, you can export only the defined fields into Excel without customizing the header. You can also customize the header of custom fields while exporting by using the `fieldsInfo` option through the `ExportFieldInfo` interface and pass it as an argument to the `exportToExcel` method, as shown in the following example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-column-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-column-header/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -285,7 +174,6 @@ Using the `fields` property, you can export only the defined fields into Excel w
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-column-header/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -295,19 +183,6 @@ By default, the calendar is exported with a file name `Calendar.ics`. To change 
 
 The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-filename/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-filename/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-filename/razor %}
@@ -316,7 +191,6 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-filename/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -326,19 +200,6 @@ Events from external calendars (ICS files) can be imported into the Scheduler by
 
 The following example shows how to import an ICS file into Scheduler, using the `importICalendar` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/calendar-import/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/calendar-import/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/calendar-import/razor %}
@@ -347,7 +208,6 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/calendar-import/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -362,19 +222,6 @@ The Scheduler allows you to print the Scheduler element by using the `print` cli
 
 You can print the Schedule element with the current view by using the `print` method without passing any options, as shown in the following example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-print/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-print/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-print/razor %}
@@ -383,26 +230,12 @@ You can print the Schedule element with the current view by using the `print` me
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/default-print/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Using a print method with options
 
 You can print the Schedule element based on your requirements by using the `print` method and passing print options, as shown in the following example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/print-options/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/print-options/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -412,7 +245,6 @@ You can print the Schedule element based on your requirements by using the `prin
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/print-options/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### How to customize the print layout
 
@@ -425,19 +257,6 @@ Key customization options include:
 
 Here’s an example of how you can add a custom header and footer to the print layout using the `beforePrint` event :
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-print/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-print/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-print/razor %}
@@ -446,6 +265,5 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/calendar-export/custom-print/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.

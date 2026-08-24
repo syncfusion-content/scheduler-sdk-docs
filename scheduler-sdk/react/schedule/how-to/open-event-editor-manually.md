@@ -26,7 +26,7 @@ The [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs1" %}
 
 ## Open editor window on single click
 
@@ -44,7 +44,7 @@ By default, the Scheduler editor window opens when you double-click cells or app
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/editor-open-cs2" %}
 
 ## See also
 
