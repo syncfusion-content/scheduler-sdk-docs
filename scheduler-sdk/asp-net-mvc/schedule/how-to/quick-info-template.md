@@ -23,3 +23,5 @@ The Quick Info popup is the small overlay that appears when you click a cell or 
 
 N> To completely disable the Quick Info popup (for example, to use the editor window directly on a single click), set the [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false`.
 
+N> To completely disable the Quick Info popup (for example, to use the editor window directly on a single click), set the [`ShowQuickInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowQuickInfo) property to `false`.
+
