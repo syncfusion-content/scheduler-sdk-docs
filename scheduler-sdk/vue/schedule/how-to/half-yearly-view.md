@@ -27,4 +27,4 @@ The following example demonstrates how to render only the last six months of a y
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/year-customizations-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/year-customizations-cs1" %}

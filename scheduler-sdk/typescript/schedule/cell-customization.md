@@ -20,9 +20,7 @@ The appearance of cells can be customized across all Scheduler views using eithe
 
 The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate) property accepts a template string and allows you to customize the cell background with specific images, icons, or formatted text based on the given date values. This approach is ideal when you need to apply consistent styling or content across multiple cells.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4/index.ts %}
 {% endhighlight %}
@@ -34,32 +32,13 @@ The [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellt
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs4" %}
 
 ### Customizing cells using renderCell event
 
 The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event provides an alternative approach for [`cellTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#celltemplate). This event is triggered during the rendering of each cell, allowing you to apply dynamic customizations based on runtime conditions. Use this event when you need more control over individual cells or when customization logic depends on complex business rules.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5/index.ts %}
 {% endhighlight %}
@@ -71,24 +50,7 @@ The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#renderc
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs5" %}
 
 The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendercell) event allows you to customize different types of cells, such as work cells, month cells, all-day cells, header cells, and resource header cells, by checking the [`elementType`](https://ej2.syncfusion.com/documentation/api/schedule/renderCellEventArgs#elementtype) property within the event arguments. The following table describes the available element types:
 
@@ -110,9 +72,7 @@ The [`renderCell`](https://ej2.syncfusion.com/documentation/api/schedule#renderc
 
 The height and width of Scheduler cells can be adjusted using the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property along with custom CSS. This approach allows you to increase or reduce cell sizes to accommodate different content requirements or improve visual hierarchy. The custom CSS classes override the default styles applied to cells.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2/index.ts %}
 {% endhighlight %}
@@ -124,24 +84,7 @@ The height and width of Scheduler cells can be adjusted using the [`cssClass`](h
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs2" %}
 
 ## Checking cell availability for appointments
 
@@ -149,9 +92,7 @@ The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#is
 
 > Note: The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable) method verifies appointments within the current view's date range only. It does not evaluate availability for recurrence occurrences that fall outside the visible date range.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3/index.ts %}
 {% endhighlight %}
@@ -163,32 +104,13 @@ The [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#is
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs3" %}
 
 ## Customizing cell header in month view
 
 The month header of each date cell in the month view can be customized using the [`cellHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#cellheadertemplate) property. This property accepts either a template string or an HTMLElement, allowing you to display custom content such as formatted dates, icons, or additional information. The corresponding date can be accessed with the template.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs6/index.ts %}
 {% endhighlight %}
@@ -197,29 +119,13 @@ The month header of each date cell in the month view can be customized using the
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs6" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs6" %}
 
 ## Customizing the minimum and maximum date values
 
 The [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) and [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) properties define the allowable date range for the Scheduler. Dates that fall outside this range will be disabled, preventing navigation beyond the specified boundaries.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7/index.ts %}
 {% endhighlight %}
@@ -231,24 +137,7 @@ The [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/cell-dimension-cs7" %}
 
 >By default, the [`minDate`](https://ej2.syncfusion.com/documentation/api/schedule#mindate) property is set to new Date(1900, 0, 1) and the [`maxDate`](https://ej2.syncfusion.com/documentation/api/schedule#maxdate) property is set to new Date(2099, 11, 31). Custom values can be assigned to these properties to restrict the date range according to application requirements.
 
@@ -284,9 +173,7 @@ To change the background color for weekend cells in Month view, apply custom CSS
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/weekend-cell-color/index.ts %}
 {% endhighlight %}
@@ -295,24 +182,10 @@ To change the background color for weekend cells in Month view, apply custom CSS
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/weekend-cell-color" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/weekend-cell-color/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/weekend-cell-color/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/weekend-cell-color" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/weekend-cell-color" %}
 
 ## How to disable multiple cell and row selection in Schedule
 
 The [`allowMultiCellSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmulticellselection) and [`allowMultiRowSelection`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultirowselection) properties of the Schedule are set to `true`, allowing multiple cells and rows to be selected. To disable multiple cell or row selection, set these properties to `false`.
 
-> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to know how to present and manipulate data.
+> You can refer to our [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to know how to present and manipulate data.

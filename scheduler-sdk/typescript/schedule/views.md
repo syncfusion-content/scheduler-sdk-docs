@@ -37,9 +37,7 @@ Import and inject the appropriate view modules into the application to make use 
 
 In the following example, the Scheduler displays four views: Week, Month, TimelineWeek, and TimelineMonth. The appropriate view modules are imported and injected properly to display those views on the Scheduler.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs1/index.ts %}
 {% endhighlight %}
@@ -51,30 +49,11 @@ In the following example, the Scheduler displays four views: Week, Month, Timeli
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs1/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs1" %}
 
 To configure the Scheduler with two views but with different configurations on each view, refer to the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format, whereas the Month view hides the weekend days and displays in readonly mode.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs2/index.ts %}
 {% endhighlight %}
@@ -86,24 +65,7 @@ To configure the Scheduler with two views but with different configurations on e
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs2/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs2/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs2" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs2" %}
 
 ## View specific configuration
 
@@ -135,9 +97,7 @@ There are scenarios where each view may need different configurations. For such 
 
 The Day view displays a single day with all its related appointments. It is possible to customize the day view to display more number of days by extending the [`views`](https://ej2.syncfusion.com/documentation/api/schedule/views) property with [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/views#interval) option. You can also define any of the above defined properties within the [`views`](https://ej2.syncfusion.com/documentation/api/schedule/views) object definition as depicted in the following code example.  
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs3/index.ts %}
 {% endhighlight %}
@@ -149,24 +109,7 @@ The Day view displays a single day with all its related appointments. It is poss
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs3/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs3/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs3" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs3" %}
 
 > All the above defined properties can be accessed within Day view except [`allowVirtualScrolling`](https://ej2.syncfusion.com/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule/views#headerrows).
 
@@ -174,9 +117,7 @@ The Day view displays a single day with all its related appointments. It is poss
 
 The Week view displays a count of seven days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the [`firstDayOfWeek`](https://ej2.syncfusion.com/documentation/api/schedule/views#firstdayofweek) which accepts the integer values(Sunday=0, Monday=1, Tuesday=2 and so on) value. Navigate to a particular date in the day view from the week view by clicking on the appropriate dates on the date header bar.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs4/index.ts %}
 {% endhighlight %}
@@ -188,24 +129,7 @@ The Week view displays a count of seven days (from Sunday to Saturday) with all 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs4/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs4/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs4" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs4" %}
 
 > All the properties defined in the table can be accessed within Week and Work week views except [`allowVirtualScrolling`](https://ej2.syncfusion.com/documentation/api/schedule/views#allowvirtualscrolling) and [`headerRows`](https://ej2.syncfusion.com/documentation/api/schedule/views#headerrows).
 
@@ -215,9 +139,7 @@ The Work week view displays only the working days of a week (count of 5 days) an
 
 The following code example depicts how to change the working days only on the `Work Week` view of the Scheduler.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs5/index.ts %}
 {% endhighlight %}
@@ -229,24 +151,7 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs5/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs5/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs5" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs5" %}
 
 > The Week, Work week and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view it.
 
@@ -258,9 +163,7 @@ By default, when creating an appointment through the Month view, it is considere
 
 The `+ more` text indicator appears on each day cell of a Month view. Clicking on it allows you to view the hidden appointments for that day.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs6/index.ts %}
 {% endhighlight %}
@@ -272,32 +175,13 @@ The `+ more` text indicator appears on each day cell of a Month view. Clicking o
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs6/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs6/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs6" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs6" %}
 
 ### Year view
 
 The Year view displays all the days of a particular year with months and all its related appointments. You can navigate to a particular date in the day view by clicking on the appropriate date text on the year cells.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs7/index.ts %}
 {% endhighlight %}
@@ -309,24 +193,7 @@ The Year view displays all the days of a particular year with months and all its
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs7/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs7/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs7" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs7" %}
 
 > The Year view also has module support. It displays all the months of a particular year in a calendar view format. In that calendar view, dates that contain appointments are highlighted with dots placed under the individual date. Clicking on a date displays the event popup and lists the events.
 
@@ -336,9 +203,7 @@ The Agenda view lists appointments in a grid-like layout for the next 7 days by 
 
 The following code example depicts how to customize the display of events within the Agenda view alone.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs8/index.ts %}
 {% endhighlight %}
@@ -350,24 +215,7 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs8/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs8/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs8/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs8" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs8" %}
 
 > Setting the Scheduler height in pixels is mandatory for the Agenda view.
 
@@ -377,9 +225,7 @@ A Month-Agenda view shows a month calendar, where clicking on a particular day w
 
 The following code example shows how to hide the weekend days in the `MonthAgenda` view and modify the working days list for the Month Agenda view alone.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs9/index.ts %}
 {% endhighlight %}
@@ -391,24 +237,7 @@ The following code example shows how to hide the weekend days in the `MonthAgend
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs9/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs9/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs9/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs9" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs9" %}
 
 ### Timeline views – Day, Week, Work Week
 
@@ -416,9 +245,7 @@ Similar to the Day view, the Timeline Day view shows a single day with all its a
 
 To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work Week) on Scheduler, import and inject the module `TimelineViews` from the `ej2-schedule` package.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs10/index.ts %}
 {% endhighlight %}
@@ -430,30 +257,11 @@ To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs10/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs10/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs10" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs10" %}
 
 Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs11/index.ts %}
 {% endhighlight %}
@@ -465,30 +273,11 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs11/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs11/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs11" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs11" %}
 
 The following code example depicts how to display the Timeline Work Week view on the Scheduler.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs12/index.ts %}
 {% endhighlight %}
@@ -500,24 +289,7 @@ The following code example depicts how to display the Timeline Work Week view on
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs12/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs12/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs12" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs12" %}
 
 > Clicking the dates in the date header bar of the Timeline Day, Timeline Week, and Timeline Work Week views navigates to the Agenda view.
 
@@ -525,9 +297,7 @@ The following code example depicts how to display the Timeline Work Week view on
 
 A Timeline Month view displays the current month's days along with its appointments. To make use of the Timeline Month view on the Scheduler, import and inject the `TimelineMonth` module from the `ej2-schedule` package.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs13/index.ts %}
 {% endhighlight %}
@@ -539,24 +309,7 @@ A Timeline Month view displays the current month's days along with its appointme
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs13" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs13/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs13/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs13" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs13" %}
 
 > Clicking the dates in the date header bar of Timeline Month navigates to the Timeline Day view.
 
@@ -566,9 +319,7 @@ In Timeline Year view, each row depicts a single resource. In the vertical view,
 
 To make use of the timeline Year view on Scheduler, import and inject `TimelineYear` module from the `ej2-schedule` package.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs14/index.ts %}
 {% endhighlight %}
@@ -580,24 +331,7 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs14/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs14/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs14/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs14" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs14" %}
 
 Timeline Year view is available in both the `Horizontal` and `Vertical` orientations. You can manage the orientation of the Timeline Year view through the `views` property.
 
@@ -605,9 +339,7 @@ Timeline Year view is available in both the `Horizontal` and `Vertical` orientat
 
 The following code example depicts how to group multiple resources in the Timeline Year view and display the relevant events under those resources.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs15/index.ts %}
 {% endhighlight %}
@@ -619,32 +351,13 @@ The following code example depicts how to group multiple resources in the Timeli
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs15" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs15/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs15/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs15/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs15" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs15" %}
 
 #### Auto row height
 
 Timeline Year view supports auto row height. When the [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) feature is enabled, the row height is automatically adjusted based on the number of overlapping events in the same time range. If auto row height is disabled, the `+ more` text indicator appears on each day cell of the Timeline Year view. Clicking on it allows you to view the hidden appointments for that day.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs16/index.ts %}
 {% endhighlight %}
@@ -656,24 +369,7 @@ Timeline Year view supports auto row height. When the [`rowAutoHeight`](https://
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs16" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs16/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs16/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs16/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs16" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs16" %}
 
 ## Extending view intervals
 
@@ -681,9 +377,7 @@ Customize the display of the default number of days on different Scheduler view 
 
 Provide an alternative display name for such customized views on the Scheduler header bar by setting the appropriate [`displayName`](https://ej2.syncfusion.com/documentation/api/schedule/views#displayname) property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs17/index.ts %}
 {% endhighlight %}
@@ -695,32 +389,13 @@ Provide an alternative display name for such customized views on the Scheduler h
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs17" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs17/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs17/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs17/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs17" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs17" %}
 
 > The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
 
 The [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#isselected) property can be used to set the current view of the Scheduler. The following code sample demonstrates how to use the [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#isselected) property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/view-cs18/index.ts %}
 {% endhighlight %}
@@ -732,26 +407,9 @@ The [`isSelected`](https://ej2.syncfusion.com/documentation/api/schedule/views#i
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs18" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs18" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs18/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs18/index.html %}
-{% endhighlight %}
-{% highlight html tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/view-cs18/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/view-cs18" %}
-{% endif %}
-
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of the available features. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour page for an overview of the available features. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 

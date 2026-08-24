@@ -14,9 +14,7 @@ The Scheduler control allows customization of default field names (such as **Tit
 
 For example, a default value can be set for the **Subject** field using the `default` property. This ensures that when an appointment is created without a subject, the predefined default value is automatically applied.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2/index.ts %}
 {% endhighlight %}
@@ -25,18 +23,4 @@ For example, a default value can be set for the **Subject** field using the `def
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-cs2" %}

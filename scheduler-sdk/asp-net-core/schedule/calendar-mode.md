@@ -37,8 +37,6 @@ It requires the following CLDR data to be loaded using the `loadCldr` function.
 
 N> For more information on installing the CLDR data, refer to the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#installing-cldr-data) topic.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/islamic-calendar/calendar/tagHelper %}
@@ -48,20 +46,6 @@ N> For more information on installing the CLDR data, refer to the [`Internationa
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/islamic-calendar/calendar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/islamic-calendar/calendar/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> However, this feature does not yet support recurrence options. Support for recurrence options is planned for a future release.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its feature highlights. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its feature highlights. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.

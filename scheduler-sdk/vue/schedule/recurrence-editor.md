@@ -35,7 +35,7 @@ It is possible to customize the recurrence editor to display only specific repea
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recurrence-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recurrence-cs1" %}
 
 The other properties available in the recurrence editor are tabulated below.
 
@@ -71,7 +71,7 @@ It is possible to customize the recurrence editor to display only specific end o
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recurrence-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recurrence-cs2" %}
 
 ## Accessing the recurrence rule string
 
@@ -88,7 +88,7 @@ There is a `change` event available in the recurrence editor that triggers whene
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs1" %}
 
 ## Set specific value on recurrence editor
 
@@ -103,7 +103,7 @@ The Recurrence Editor can be initialized with a predefined recurrence rule. When
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs2" %}
 
 ## Recurrence date generation
 
@@ -126,7 +126,7 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs3" %}
 
 > The above example generates two dates—**January 7, 2018** and **January 9, 2018**—while excluding **January 8, 2018** and **January 10, 2018** using the exclusion list. The generated dates can then be used to create appointments.
 
@@ -149,6 +149,6 @@ If the rule is in the "NEVER ENDS" category, you can specify the maximum count w
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/recur-editor-cs4" %}
 
 > For a complete overview of Scheduler capabilities, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

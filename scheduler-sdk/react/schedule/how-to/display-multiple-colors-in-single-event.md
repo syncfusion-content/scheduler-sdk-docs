@@ -24,4 +24,4 @@ In the [React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-schedule
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/multiple-color-event" %}

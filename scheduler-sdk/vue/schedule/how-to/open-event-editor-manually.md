@@ -23,7 +23,7 @@ The Vue Scheduler component lets you open the event editor for a specific time r
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/open-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/open-editor-cs1" %}
 
 ## Open Editor Window on Single Click
 
@@ -38,4 +38,4 @@ By default, the editor window opens when cells or appointments are double-clicke
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/default-cs4" %}

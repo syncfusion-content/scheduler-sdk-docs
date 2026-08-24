@@ -69,8 +69,6 @@ Then use the `loadCultureFiles` method to load the culture-specific CLDR JSON da
 
 Set the culture to Scheduler by using the `locale` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/internationalization/tagHelper %}
@@ -80,18 +78,6 @@ Set the culture to Scheduler by using the `locale` property.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/internationalization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/internationalization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Localizing the static Scheduler text
@@ -99,8 +85,6 @@ Set the culture to Scheduler by using the `locale` property.
 The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to display all static text, date content, and time mode in the localized language. To achieve this, set the `locale` property of Scheduler and define the translation text for the static words of Scheduler through the `load` method of the `L10n` class.
 
 For example, the following code example lets you define the Hungarian translation words for all the static words used in Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -111,25 +95,11 @@ For example, the following code example lets you define the Hungarian translatio
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/localization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/localization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Setting date format
 
 Scheduler can be used with all valid date formats and, by default, follows the universal date format "MM/dd/yyyy". If the [`dateFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DateFormat) property is not specified, it uses the locale assigned to Scheduler. Because the default locale is "en-US", it follows the "MM/dd/yyyy" pattern.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -140,18 +110,6 @@ Scheduler can be used with all valid date formats and, by default, follows the u
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/dateformat/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/dateformat/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Setting Date Format in ASP.NET Core Scheduler](images/schedule-date-format.png)
 
@@ -160,8 +118,6 @@ Scheduler can be used with all valid date formats and, by default, follows the u
 Time format is a way of representing time values in different string formats in the Scheduler. By default, the time mode of the Scheduler can be either 12-hour or 24-hour format, depending on the `locale` set on the Scheduler. Since the default `locale` value is `en-US`, the time mode is set to 12-hour format automatically. You can also customize the format by using the [`timeFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeFormat) property. To learn more about time format standards, refer to the [Date and Time Format](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#custom-formats) section.
 
 The following example demonstrates the Scheduler component in 24-hour format.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -172,18 +128,6 @@ The following example demonstrates the Scheduler component in 24-hour format.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/timeformat/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/timeformat/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display Setting Time Format in ASP.NET Core Scheduler](images/schedule-time-format.png)
 
@@ -192,8 +136,6 @@ N> The [`timeFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 ## Displaying Scheduler in RTL mode
 
 The Scheduler layout and its behavior can be changed according to the common RTL (right-to-left) conventions by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EnableRtl) to `true`. By doing so, the Scheduler displays its layout from right to left. Its default value is `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -204,22 +146,10 @@ The Scheduler layout and its behavior can be changed according to the common RTL
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/localization/rtl/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ![Display RTL Mode in ASP.NET Core Scheduler](images/schedule-rtl.png)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
 
 ## See Also
 

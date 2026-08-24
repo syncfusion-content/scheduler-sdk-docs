@@ -21,4 +21,4 @@ By default, the work hours of the Scheduler component are highlighted uniformly 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/open-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/open-editor-cs2" %}

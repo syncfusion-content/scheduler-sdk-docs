@@ -24,4 +24,4 @@ Rendering the Scheduler before the dialog opens can cause incorrect layout and a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/schedule-inside-dialog-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/schedule-inside-dialog-cs1" %}

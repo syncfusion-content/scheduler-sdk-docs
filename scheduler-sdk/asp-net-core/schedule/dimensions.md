@@ -20,8 +20,6 @@ Scheduler dimensions refer to both the height and width of the entire layout, an
 
 When the height and width of the Scheduler are set to `auto`, the component tries to match the size of its parent container. In other words, the parent container that holds the Scheduler sizes itself based on its children. By default, the Scheduler is assigned `auto` values for both height and width.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/auto/tagHelper %}
@@ -31,25 +29,11 @@ When the height and width of the Scheduler are set to `auto`, the component trie
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/auto/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/auto/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Height and Width in pixel
 
 The Scheduler height and width are rendered exactly as specified by the pixel values. It accepts both string and number values.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -60,25 +44,11 @@ The Scheduler height and width are rendered exactly as specified by the pixel va
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/pixel/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/pixel/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Height and Width in percentage
 
 When the height and width of the Scheduler are given as percentages, the Scheduler expands to match the parent container.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -89,21 +59,9 @@ When the height and width of the Scheduler are given as percentages, the Schedul
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/percentage/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/dimension/percentage/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
-
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
 
 ## See Also
 

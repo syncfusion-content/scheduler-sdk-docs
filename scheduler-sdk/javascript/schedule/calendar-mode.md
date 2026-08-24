@@ -37,21 +37,6 @@ To implement Islamic calendar functionality in the Scheduler, import the `Calend
 
 > For detailed instructions on installing and loading CLDR data, refer to the [`Internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization#installing-cldr-data) documentation.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/islamic-calendar-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/islamic-calendar-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/islamic-calendar-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/islamic-calendar-cs1/index.js %}
@@ -61,7 +46,6 @@ To implement Islamic calendar functionality in the Scheduler, import the `Calend
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/islamic-calendar-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/islamic-calendar-cs1" %}
 
-> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of key capabilities. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour page for an overview of key capabilities. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

@@ -12,21 +12,6 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 In responsive mode, time labels may be truncated when space is limited (for example, if the start hour is 08:45 AM). To ensure full time labels are displayed, provide a custom major-slot renderer using the [`majorSlotTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/timeScale#majorslottemplate) property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1/index.js %}
@@ -36,5 +21,4 @@ In responsive mode, time labels may be truncated when space is limited (for exam
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs1" %}

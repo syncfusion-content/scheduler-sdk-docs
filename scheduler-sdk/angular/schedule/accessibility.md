@@ -110,7 +110,7 @@ The accessibility compliance of the Scheduler component is shown in the followin
 
 > Note: The accessibility examples and warnings described here are based on the current Scheduler implementation and automated checker behavior; results may vary by theme, view, and configuration.
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs1" %}
 
 ## See also
 

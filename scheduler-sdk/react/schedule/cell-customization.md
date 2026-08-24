@@ -31,7 +31,7 @@ The height and width of the Scheduler cells can be customized to increase or red
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs1" %}
 
 ## Check for cell availability
 
@@ -51,7 +51,7 @@ You can check whether the given time range slots are available for event creatio
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs1" %}
 
 ## Customizing cells in all views
 
@@ -76,7 +76,7 @@ The [`cellTemplate`](https://ej2.syncfusion.com/react/documentation/api/schedule
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-cs1" %}
 
 ### Using renderCell event
 
@@ -97,7 +97,7 @@ An alternative to the [`cellTemplate`](https://ej2.syncfusion.com/react/document
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs2" %}
 
 You can customize specific cell types using the [`renderCell`](https://ej2.syncfusion.com/react/documentation/api/schedule#rendercell) event by checking the [`elementType`](https://ej2.syncfusion.com/react/documentation/api/schedule/renderCellEventArgs#elementtype) property. This allows you to apply different customization logic to different cell types. Check `elementType` against these values:
 
@@ -146,7 +146,7 @@ The month header of each date cell in the month view can be customized using the
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs3" %}
 
 ## Customizing the minimum and maximum date values
 
@@ -167,7 +167,7 @@ Set the [`minDate`](https://ej2.syncfusion.com/react/documentation/api/schedule#
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/cell-dimension-cs4" %}
 
 **Default ranges:**
 - `minDate`: January 1, 1900 (new Date(1900, 0, 1))
@@ -220,7 +220,7 @@ This selector targets all non-workday cells in the month view. Adjust the class 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/weekend-cell-color" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/weekend-cell-color" %}
 
 ## Disabling multiple cell and row selection
 
@@ -242,8 +242,8 @@ By default, the [`allowMultiCellSelection`](https://ej2.syncfusion.com/react/doc
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
-* [Scheduler Views](https://ej2.syncfusion.com/react/documentation/schedule/scheduler-interactions)
-* [Resources](https://ej2.syncfusion.com/react/documentation/schedule/resources)
-* [Templates](https://ej2.syncfusion.com/react/documentation/schedule/cell-customization)
+* [Scheduler Views](https://help.syncfusion.com/scheduler-sdk/react/schedule/scheduler-interactions)
+* [Resources](https://help.syncfusion.com/scheduler-sdk/react/schedule/resources)
+* [Templates](https://help.syncfusion.com/scheduler-sdk/react/schedule/cell-customization)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
 * [Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

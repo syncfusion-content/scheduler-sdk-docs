@@ -36,7 +36,7 @@ You can customize the recurrence editor to display only specific repeat options,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs57" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs57" %}
 
 The other properties available in recurrence editor are tabulated below:
 
@@ -73,7 +73,7 @@ You can customize the recurrence editor to display only specific end options, su
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs97" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs97" %}
 
 ## Accessing the recurrence rule string
 
@@ -91,7 +91,7 @@ There is a `change` event available in the recurrence editor that triggers every
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs1" %}
 
 ## Set specific value on recurrence editor
 
@@ -107,7 +107,7 @@ It is possible to display the recurrence editor with specific options loaded ini
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs2" %}
 
 ## Recurrence date generation
 
@@ -131,7 +131,7 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs3" %}
 
 > The above example generates two dates, January 7, 2018 and January 9, 2018, by excluding the in-between dates January 8, 2018 and January 10, 2018, since those dates were given in the exclusion list. Generated dates can then be used to create appointments.
 
@@ -155,6 +155,6 @@ If the rule is given in the "NEVER ENDS" category, you can specify the maximum c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/recur-editor-cs4" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/schedule/overview) to know how to present and manipulate data.

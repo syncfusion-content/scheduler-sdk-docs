@@ -31,19 +31,6 @@ If you need to add other fields to the editor window, you can opt for the [custo
 
 The appointments can be created dynamically by using `addEvent` method. Either you can add a single or a collection of appointment objects using `addEvent` method. The following code example shows you how to use the `addEvent` method to create multiple appointments simultaneously.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/add-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/add-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/add-event/razor %}
@@ -52,7 +39,6 @@ The appointments can be created dynamically by using `addEvent` method. Either y
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/add-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -93,19 +79,6 @@ In the following example, specific fields of the Scheduler editor window, such a
 
 Additionally, a regex condition has been added to the Location field, so that if any special characters are typed into it, a custom validation message will be displayed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/field-validation/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/field-validation/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/field-validation/razor %}
@@ -114,24 +87,10 @@ Additionally, a regex condition has been added to the Location field, so that if
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/field-validation/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 You can also dynamically prevent the creation of appointments on the Scheduler. For example, if you want to prevent the creation of appointments on weekend days, you can check for the appropriate condition within the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-prevention/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-prevention/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -141,7 +100,6 @@ You can also dynamically prevent the creation of appointments on the Scheduler. 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-prevention/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -164,19 +122,6 @@ The appointments can be edited and updated manually using the `saveEvent` method
 
 **Normal event** - Here, an event with ID `3` is edited and its subject is changed with a new text. When the modified data object is passed onto the `saveEvent` method, the changes gets reflected onto the original event. The `Id` field is mandatory in this edit process, where the modified event object should hold the valid `Id` value that exists in the Scheduler data source.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-event/razor %}
@@ -185,7 +130,6 @@ The appointments can be edited and updated manually using the `saveEvent` method
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -195,19 +139,6 @@ When the second argument is passed as `EditOccurrence`, it means that the passed
 
 In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) values, refer the [recurring events](./appointments#adding-exceptions) topic.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-event/razor %}
@@ -216,7 +147,6 @@ In case of modifying the single occurrence, it is also necessary to update the [
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -445,19 +375,6 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 You can also dynamically prevent the editing of appointments on the Scheduler. For example, if you want to prevent the updating of appointments on non-working hours, you can check for the appropriate condition within the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-update-prevention/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-update-prevention/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-update-prevention/razor %}
@@ -466,7 +383,6 @@ You can also dynamically prevent the editing of appointments on the Scheduler. F
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/weekend-update-prevention/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -491,19 +407,6 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 
 **Normal event** - You can delete the normal appointments of the Scheduler by simply passing its `Id` value or the entire event object collection to the `deleteEvent` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-delete/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-delete/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-delete/razor %}
@@ -512,24 +415,10 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/normal-delete/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 **Recurring Event** - The recurring events can be removed as an entire series or by removing a single occurrence using the `deleteEvent` method, which takes in either the `DeleteSeries` or `DeleteOccurrence` parameters. The following code example shows how to delete an entire series.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-delete/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-delete/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -539,7 +428,6 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/crud-actions/recurrence-delete/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -719,4 +607,4 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 
 N> By default, when you resize a recurring instance, only the occurrence of the event gets edited, and not a whole series. The resize operation raises the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event with `args.requestType` set to `eventChange`.
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.

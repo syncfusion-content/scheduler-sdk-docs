@@ -20,8 +20,6 @@ The `openEditor` method accepts the following arguments:
 | `data` | `Record` | It can be either cell data or event data. |
 | `action` | `CurrentAction` | Defines the action for which the editor needs to be opened such as either for new event creation or for editing of existing events. The applicable action names that can be used here are Add, Save, EditOccurrenceand EditSeries. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/event-editor/tagHelper %}
@@ -31,23 +29,9 @@ The `openEditor` method accepts the following arguments:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/event-editor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/event-editor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Open editor window on single click
 
 By default, the Scheduler editor window opens when you double-click a cell or an appointment. You can also open the editor window on a single click by calling the `openEditor` method in the `eventClick` and `cellClick` events of the Scheduler, and by setting `showQuickInfo` to `false`. The following example shows how to open the editor window on a single click of cells and appointments.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,17 +41,4 @@ By default, the Scheduler editor window opens when you double-click a cell or an
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/single-click-editor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/single-click-editor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/how-to/single-click-editor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 

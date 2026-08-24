@@ -12,8 +12,6 @@ documentation: ug
 
 To achieve better performance in the Scheduler when loading a large number of resources and events, virtual scrolling support has been added to load a large set of resources and events instantly as you scroll. You can dynamically load a large number of resources and events in the Scheduler by setting the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the view-specific settings. The virtual loading of events is possible in the Agenda view by setting the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view-specific settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/tagHelper %}
@@ -22,18 +20,6 @@ To achieve better performance in the Scheduler when loading a large number of re
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 N> For now, the virtual loading of resources and events is not supported in the `MonthAgenda`, `Year`, and `TimelineYear` (Horizontal Orientation) views.
 
@@ -47,8 +33,6 @@ When you enable this feature, the Scheduler becomes capable of fetching events f
 
 To enable this feature, you have to set the [`enableLazyLoading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_EnableLazyLoading) property to `true` within the view-specific settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/tagHelper %}
@@ -57,18 +41,6 @@ To enable this feature, you have to set the [`enableLazyLoading`](https://help.s
 {% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/schedule/virtual-scroll/vScroll/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Here's the server-side controller code that retrieves appointment data based on the resource IDs provided as query parameters:
 
@@ -115,4 +87,4 @@ namespace LazyLoadingServices.Controllers
 * The property will be effective, when large number of resources and appointments bound to the Scheduler.
 * This property is applicable only when [resource grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html#Syncfusion_EJ2_Schedule_ScheduleGroup_Resources) is enabled in Scheduler.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.

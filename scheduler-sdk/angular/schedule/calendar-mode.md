@@ -47,6 +47,6 @@ To use the Islamic calendar in the Scheduler, import the `Calendar` and `Islamic
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/islamic-calendar-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/islamic-calendar-cs1" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature overview. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to learn how to present and manipulate data.

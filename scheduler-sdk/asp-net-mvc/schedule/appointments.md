@@ -25,19 +25,6 @@ Represents an appointment that is created for any specific time interval within 
 
 The following example depicts how to define a normal event on the Scheduler, with event data being loaded from simple JSON data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/appointment-fields/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/appointment-fields/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/appointment-fields/razor %}
@@ -46,7 +33,6 @@ The following example depicts how to define a normal event on the Scheduler, wit
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/appointment-fields/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -78,19 +64,6 @@ N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-
 
 By default, the Scheduler renders the spanned events (appointments with a duration of more than 24 hours) in the all-day row. The default value of the [`SpannedEventPlacement`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SpannedEventPlacement) option within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property is `AllDayRow`. You can render spanned events inside the work cells instead by setting the `SpannedEventPlacement` option to `TimeSlot`. The following example shows how to render the spanned appointments inside the work cells.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-spanned-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-spanned-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-spanned-event/razor %}
@@ -99,7 +72,6 @@ By default, the Scheduler renders the spanned events (appointments with a durati
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-spanned-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -111,19 +83,6 @@ Represents an appointment that is created for a certain time interval and occurr
 
 The following example depicts how to create a recurring event on Scheduler with the specific recurrence rule. In the following example, an event is made to repeat on daily mode and ends after 5 occurrences.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-appointment/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-appointment/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-appointment/razor %}
@@ -132,7 +91,6 @@ The following example depicts how to create a recurring event on Scheduler with 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-appointment/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -142,19 +100,6 @@ A few instances of the recurrence series can be excluded on specific dates by ad
 
 For example, 22nd February 2018 can be represented as 20180222. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-exception/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-exception/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-exception/razor %}
@@ -163,7 +108,6 @@ For example, 22nd February 2018 can be represented as 20180222. Also, the time p
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/recurring-exception/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -173,19 +117,6 @@ To dynamically edit a particular occurrence from an event series and display it 
 
 In this example, a recurring instance that displays on the date 30th Jan 2018 is edited with different timings. Therefore, this particular date is excluded from the parent recurring event that repeats from 28th January 2018 to 4th February 2018. This can be done by adding the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field with the excluded date value on the parent event. Also, the edited occurrence event which is created as a new event should carry the [`RecurrenceID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceID) field pointing to the parent event's [`Id`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/occurrence-exception/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/occurrence-exception/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/occurrence-exception/razor %}
@@ -194,7 +125,6 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 is
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/occurrence-exception/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -204,19 +134,6 @@ To edit only the current and following events enable the property [`editFollowin
 
 In this example, a recurring instance that displays on the date 30th Jan 2018 and its following dates are edited with different subject. Therefore, this particular date and its following dates are excluded from the parent recurring event that repeats from 28th January 2018 to 4th February 2018. This can be done by updating the [`recurrenceRule`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceRule) field with the until date value on the parent event. Also, the edited events which is created as a new event should carry the [`followingID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_FollowingID) field pointing to the immediate parent event's [`Id`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/following-edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/following-edit/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/following-edit/razor %}
@@ -225,7 +142,6 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 an
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/following-edit/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -347,19 +263,6 @@ The built-in fields available on Scheduler event object are as follows.
 
 When the fields of event instances has the default mapping name, it is not mandatory to map them manually. If a Scheduler's dataSource holds the events collection with different field names, then it is necessary to map them with its equivalent field name within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/custom-fields/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/custom-fields/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/custom-fields/razor %}
@@ -368,7 +271,6 @@ When the fields of event instances has the default mapping name, it is not manda
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/custom-fields/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -387,19 +289,6 @@ Each field of the Scheduler events are provided with additional settings such as
 
 In following example, the Subject field in event editor will display its appropriate label as **Summary**. When no subject value is provided while saving an event, then the appointment will be saved with the default subject value as **Add Summary**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/field-validation/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/field-validation/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/field-validation/razor %}
@@ -408,26 +297,12 @@ In following example, the Subject field in event editor will display its appropr
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/field-validation/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Adding Custom fields
 
 Apart from the default Scheduler fields, the user can include 'n' number of custom fields for appointments. The following code example shows how to include two custom fields namely **Status** and **Priority** within event collection. It is not necessary to bind the custom fields within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings). However, those additional fields can be accessed easily, for internal processing as well as from application end.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/additional-fields/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/additional-fields/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -437,26 +312,12 @@ Apart from the default Scheduler fields, the user can include 'n' number of cust
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/additional-fields/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Customize the order of the overlapping events
 
 By default, the scheduler will render the overlapping events based on the start and end time. Now we can customize the order of the overlapping events based on the custom fields by using the [`SortComparer`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_SortComparer) property grouped under the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. The following code example shows how to sort the appointments based on the custom field as follows.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/sort-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/sort-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -466,7 +327,6 @@ By default, the scheduler will render the overlapping events based on the start 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/sort-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Preventing Overlapping Events
 
@@ -486,19 +346,6 @@ When the [`allowOverlap`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 The following code example demonstrates how to enable the [`allowOverlap`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowOverlap) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-normal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-normal/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-normal/razor %}
@@ -507,7 +354,6 @@ The following code example demonstrates how to enable the [`allowOverlap`](https
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-normal/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 **Limitations**
 
@@ -519,19 +365,6 @@ Additionally, you can use the public method `openOverlapAlert` to show an alert 
 
 The following code example demonstrates how to check for overlaps when an event is added. If an overlap is found, the event won't be added, and an alert will be shown.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-actionbegin/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-actionbegin/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-actionbegin/razor %}
@@ -540,7 +373,6 @@ The following code example demonstrates how to check for overlaps when an event 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/overlap/overlap-actionbegin/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Drag and drop appointments
 
@@ -556,19 +388,6 @@ We can also drag multiple events from one resource to another resource. In this 
 
 N> Multiple events drag and drop is not supported on mobile devices.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/multiple-drag/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/multiple-drag/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/multiple-drag/razor %}
@@ -577,26 +396,12 @@ N> Multiple events drag and drop is not supported on mobile devices.
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/multiple-drag/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Disable the drag action
 
 By default, you can drag and drop the events within any of the applicable scheduler views, and to disable it, set **false** to the [`AllowDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowDragAndDrop) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-drag/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-drag/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -606,26 +411,12 @@ By default, you can drag and drop the events within any of the applicable schedu
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-drag/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Preventing drag and drop on specific targets
 
 It is possible to prevent the drag action on a particular target by passing the target to be excluded in the `excludeSelectors` option within the [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments. In this example, the drag action is prevented on the all-day row.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-allday/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-allday/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -635,26 +426,12 @@ It is possible to prevent the drag action on a particular target by passing the 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-allday/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Disable scrolling on drag action
 
 By default, while dragging an appointment to the edges (top/bottom in the vertical Scheduler or left/right in the timeline Scheduler), a scrolling action takes place automatically. To prevent this scrolling, set `false` to the `scroll` value within the [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-scroll/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -664,26 +441,12 @@ By default, while dragging an appointment to the edges (top/bottom in the vertic
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-scroll/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Controlling scroll speed while dragging an event
 
 The speed of the scrolling action while dragging an appointment to the Scheduler edges, can be controlled within [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event arguments by setting the desired value to the `scrollBy` and `timeDelay` option whereas its default value is 30 minutes and 100 ms.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/scroll-speed/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/scroll-speed/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -693,7 +456,6 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/scroll-speed/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -703,19 +465,6 @@ When an event is dragged either to the left or right extreme edges of the Schedu
 
 By default, the navigation delay is set to 2000 ms. The navigation delay decides how long the user needs to drag and hold the appointments at the extremities. You can also set your own delay value for letting the users to navigate based on it, using the `timeDelay` within [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/navigation-speed/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/navigation-speed/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/navigation-speed/razor %}
@@ -724,26 +473,12 @@ By default, the navigation delay is set to 2000 ms. The navigation delay decides
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/navigation-speed/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Setting drag time interval
 
 By default, while dragging an appointment, it moves at an interval of 30 minutes. To change the dragging time interval, pass the appropriate values to the `interval` option within the [`DragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStart) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/drag-interval/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/drag-interval/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -753,7 +488,6 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/drag-interval/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -763,19 +497,6 @@ It is possible to drag and drop the unplanned items from any of the external sou
 
 In this example, we have used the tree view control as an external source and the child nodes from the tree view component are dragged and dropped onto the Scheduler. Therefore, it is necessary to make use of the `nodeDragStop` event of the TreeView component, where we can form an event object and save it using the `addEvent` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/external-drag/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/external-drag/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/external-drag/razor %}
@@ -784,26 +505,12 @@ In this example, we have used the tree view control as an external source and th
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/external-drag/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Opening the editor window on drag stop
 
 There are scenarios where you want to open the editor filled with data on newly dropped location and may need to proceed to save it, only when `Save` button is clicked on the editor and on clicking the cancel button should revert these changes. This can be achieved using the [`DragStop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DragStop) event of Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/open-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/open-editor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -813,7 +520,6 @@ There are scenarios where you want to open the editor filled with data on newly 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/open-editor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -838,19 +544,6 @@ While editing appointments, single-click the appointment subject, the `editable`
 
 While editing the occurrence from the recurrence series, it is only possible to edit a `single occurrence`, not an entire series.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-edit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-edit/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-edit/razor %}
@@ -859,7 +552,6 @@ While editing the occurrence from the recurrence series, it is only possible to 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/inline-edit/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -871,19 +563,6 @@ Another way of rescheduling an appointment can be done by resizing it through ei
 
 By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set `false` to the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowResizing) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize/razor %}
@@ -892,26 +571,12 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Disable scrolling on resize action
 
 By default, while resizing an appointment, when its handler reaches the extreme edges of the Scheduler, scrolling action will takes place along with event resizing. To prevent this scrolling action, set **false** to `scroll` value within the [`ResizeStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ResizeStart) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize-scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize-scroll/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -921,26 +586,12 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/disable-resize-scroll/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Controlling scroll speed while resizing an event
 
 The speed of the scrolling action while resizing an appointment to the Scheduler edges, can be controlled within the [`ResizeStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ResizeStart) event by setting the desired value to the `scrollBy` option.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/resize-scroll-speed/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/resize-scroll-speed/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -950,26 +601,12 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/resize-scroll-speed/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Setting resize time interval
 
 By default, while resizing an appointment, it extends or shrinks at an interval of 30 minutes. To change this default resize interval, set appropriate values to `interval` option within the [`ResizeStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ResizeStart).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/resize-interval/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/resize-interval/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -979,7 +616,6 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/resize-interval/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -995,19 +631,6 @@ The look and feel of the Scheduler events can be customized using any one of the
 
 Any kind of text, images and links can be added to customize the look of the events. The user can format and change the default appearance of the events by making use of the `Template` option available within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property. The following code example customizes the appointment's default color and time format.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-customization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-customization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-customization/razor %}
@@ -1016,7 +639,6 @@ Any kind of text, images and links can be added to customize the look of the eve
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-customization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -1026,19 +648,6 @@ N> All the built-in fields that are mapped to the appropriate field properties w
 
 The [`EventRendered`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventRendered) event triggers before the appointment renders on the Scheduler. Therefore, this client-side event can be utilized to customize the look of events based on any specific criteria, before rendering them on the scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-render-customization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-render-customization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-render-customization/razor %}
@@ -1047,26 +656,12 @@ The [`EventRendered`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-render-customization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Using cssClass
 
 The customization of events can also be achieved using [`CssClass`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CssClass) property of the Scheduler. In the following example, the background of appointments has been changed using the cssClass.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/css-customization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/css-customization/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1076,26 +671,12 @@ The customization of events can also be achieved using [`CssClass`](https://help
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/css-customization/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Setting minimum height
 
 It is possible to set minimal height for appointments on Scheduler using [`EventRendered`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventRendered) event, when its start and end time duration is less than the default duration of a single slot.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/min-height/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/min-height/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1105,26 +686,12 @@ It is possible to set minimal height for appointments on Scheduler using [`Event
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/min-height/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Block Dates and Times
 
 It is possible to block a set of dates or a particular time ranges on the Scheduler. To do so, define an appointment object within [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) along with the required time range to block and set the [`IsBlock`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsBlock) field to **true**. Usually, the event objects defined with [`IsBlock`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsBlock) field set to true will block the entire time cells lying within the appropriate time ranges specified through [`StartTime`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTime) and [`EndTime`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTime) fields.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/block-time/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/block-time/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1134,24 +701,10 @@ It is possible to block a set of dates or a particular time ranges on the Schedu
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/block-time/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 Block events can also be defined to repeat on several days as shown in the following code example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/block-recurring/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/block-recurring/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1161,26 +714,12 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/block-recurring/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Readonly
 
 An interaction with the appointments of Scheduler can be enabled/disabled using the [`Readonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Readonly) property. With this property enabled, you can simply navigate between the Scheduler dates, views and can be able to view the appointment details in the quick info window. Most importantly, the users are not allowed to perform any CRUD actions on Scheduler, when this property is set to true. By default, it is set as **false**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/read-only/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/read-only/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1190,26 +729,12 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/read-only/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Make specific events readonly
 
 There are scenarios where you need to restrict the CRUD action on specific appointments alone based on certain conditions. In the following example, the events that have occurred in the past hours from the current date of the Scheduler are made read-only, and CRUD actions are prevented only on those appointments. This can be achieved by setting the [`IsReadonly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_IsReadonly) field of the read-only events to `true`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/read-only-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/read-only-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1219,7 +744,6 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/read-only-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -1229,19 +753,6 @@ N> By default, the event editor is prevented from opening on the read-only event
 
 You can restrict the users to create and update more than one appointment on specific time slots. Also, you can disable the CRUD action on those time slots if it is already occupied, which can be achieved using Scheduler's public method `isSlotAvailable`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/cell-availability/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/cell-availability/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/cell-availability/razor %}
@@ -1250,26 +761,12 @@ You can restrict the users to create and update more than one appointment on spe
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/cell-availability/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Differentiate the past time events
 
 To differentiate the appearance of the appointments based on specific criteria such as displaying the past hour appointments with different colors on Scheduler, [`EventRendered`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventRendered) event can be used which triggers before the appointment renders on the Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/past-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/past-event/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1279,7 +776,6 @@ To differentiate the appearance of the appointments based on specific criteria s
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/past-event/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -1289,19 +785,6 @@ The Scheduler allows the event to occupies the full height of the cell without i
 
 We can show more indicator if more than one appointment is available in a same cell by setting `true` to [`EnableIndicator`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_EnableIndicator) property whereas its default value is `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/enable-maxheight/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/enable-maxheight/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/enable-maxheight/razor %}
@@ -1310,7 +793,6 @@ We can show more indicator if more than one appointment is available in a same c
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/enable-maxheight/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Limiting maximum number of events displayed
 
@@ -1322,19 +804,6 @@ In the Scheduler, the default behavior is to display concurrent events based on 
 
 The [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-events-row/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-events-row/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-events-row/razor %}
@@ -1343,7 +812,6 @@ The [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-events-row/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Scheduler with MaxEventsPerRow](images/scheduler-max-event-row.png)
 
@@ -1355,19 +823,6 @@ The `MaxEventStack` property on the [Views](https://help.syncfusion.com/cr/aspne
 
 Below is a code example that demonstrates how to use this constraint:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-event-stack/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-event-stack/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-event-stack/razor %}
@@ -1376,7 +831,6 @@ Below is a code example that demonstrates how to use this constraint:
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/max-event-stack/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 **How it works:** In this example, `MaxEventStack` is set to `2` for all three views. When you have three or more overlapping events in the same time slot:
 
@@ -1396,19 +850,6 @@ The tooltip shows the Scheduler appointment's information in a formatted style b
 
 The tooltip can be displayed for appointments by setting `true` to the [`EnableTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_EnableTooltip) option within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip/razor %}
@@ -1417,26 +858,12 @@ The tooltip can be displayed for appointments by setting `true` to the [`EnableT
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ### Customizing event tooltip using template
 
 After enabling the default tooltip, it is possible to customize the display of needed event information on tooltip by making use of the [`TooltipTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_TooltipTemplate) option within the [`EventSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip-template/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1446,7 +873,6 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/tooltip-template/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -1486,19 +912,6 @@ It is possible to access the information about the event fields of an appointmen
 
 In the following example, the subject of the appointment clicked has been displayed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-detail/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-detail/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-detail/razor %}
@@ -1507,26 +920,12 @@ In the following example, the subject of the appointment clicked has been displa
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-detail/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Get the current view appointments
 
 To retrieve the appointments present in the current view of the Scheduler, you can make use of the `getCurrentViewEvents` public method. In the following example, the count of current view appointment collection rendered has been traced in [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBound) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-count/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-count/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1536,26 +935,12 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-count/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Get the entire appointment collections
 
 The entire collection of appointments rendered on the Scheduler can be accessed using the `getEvents` public method. In the following example, the count of entire appointment collection rendered on the Scheduler has been traced in [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBound) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/all-events-count/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/all-events-count/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -1565,7 +950,6 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/all-events-count/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

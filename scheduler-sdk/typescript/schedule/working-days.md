@@ -29,9 +29,7 @@ The Work Week and Timeline Work Week views display the defined working days exac
 
 The following example shows how to set the Scheduler to display Monday, Wednesday, and Friday as the working days of a week.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1/index.ts %}
 {% endhighlight %}
@@ -43,24 +41,7 @@ The following example shows how to set the Scheduler to display Monday, Wednesda
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs1" %}
 
 ## Hiding weekend days
 
@@ -68,9 +49,7 @@ The [`showWeekend`](https://ej2.syncfusion.com/documentation/api/schedule/views#
 
 Here, the working days are defined as [1, 3, 4, 5] in the Scheduler, and therefore the remaining days (0, 2, 6 — Sunday, Tuesday, and Saturday) are considered non-working or weekend days and are hidden from all views when the [`showWeekend`](https://ej2.syncfusion.com/documentation/api/schedule/views#showweekend) property is set to `false`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2/index.ts %}
 {% endhighlight %}
@@ -82,24 +61,7 @@ Here, the working days are defined as [1, 3, 4, 5] in the Scheduler, and therefo
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs2" %}
 
 ## Show week numbers
 
@@ -107,9 +69,7 @@ The week number count can be displayed in the header bar of the Scheduler by set
 
 > The [`showWeekNumber`](https://ej2.syncfusion.com/documentation/api/schedule/views#showweeknumber) property is not applicable on Timeline views, as it has the equivalent [`headerRows`](./header-rows#display-week-numbers-in-timeline-views) property to handle such requirement with additional customizations.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3/index.ts %}
 {% endhighlight %}
@@ -121,24 +81,7 @@ The week number count can be displayed in the header bar of the Scheduler by set
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs3" %}
 
 ### Different options in showing week numbers
 
@@ -160,9 +103,7 @@ Working hours indicate the work-hour range within the Scheduler and are visually
 * [`start`](https://ej2.syncfusion.com/documentation/api/schedule/workHoursModel#start) – Sets the start time of the working or business hours of a day.
 * [`end`](https://ej2.syncfusion.com/documentation/api/schedule/workHoursModel#end) – Sets the end time of the working or business hours of a day.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5/index.ts %}
 {% endhighlight %}
@@ -174,24 +115,7 @@ Working hours indicate the work-hour range within the Scheduler and are visually
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs5" %}
 
 ## Scheduler displaying custom hours
 
@@ -199,9 +123,7 @@ The Scheduler layout can display specific time durations by hiding unwanted hour
 
 The following code example displays the Scheduler from 7:00 AM to 6:00 PM and hides the remaining hours in the UI.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6/index.ts %}
 {% endhighlight %}
@@ -213,24 +135,7 @@ The following code example displays the Scheduler from 7:00 AM to 6:00 PM and hi
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs6" %}
 
 ## Setting start day of the week
 
@@ -238,9 +143,7 @@ By default, the Scheduler sets `Sunday` as the first day of the week. To change 
 
 > Here, Sunday is always denoted as 0, Monday as 1, and so on.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7/index.ts %}
 {% endhighlight %}
@@ -252,32 +155,13 @@ By default, the Scheduler sets `Sunday` as the first day of the week. To change 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs7" %}
 
 ## Scroll to specific time and date
 
 The Scheduler can be manually scrolled to a specific time using the [`scrollTo`](https://ej2.syncfusion.com/documentation/api/schedule#scrollto) method, as shown in the following code example.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1/index.ts %}
 {% endhighlight %}
@@ -289,32 +173,13 @@ The Scheduler can be manually scrolled to a specific time using the [`scrollTo`]
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/scroll-to-cs1" %}
 
 ### How to scroll to current time on initial load
 
 In scenarios where the Scheduler needs to display the system's current time in the currently visible viewport area, it must be scrolled to a specific time based on the system's current time, as shown in the following code example.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8/index.ts %}
 {% endhighlight %}
@@ -326,26 +191,9 @@ In scenarios where the Scheduler needs to display the system's current time in t
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/working-days-cs8" %}
-{% endif %}
-
-> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of its capabilities. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to the [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour page for an overview of its capabilities. You can also explore our [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
 
 ## See Also
 

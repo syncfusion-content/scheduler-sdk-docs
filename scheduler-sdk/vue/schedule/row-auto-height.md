@@ -34,7 +34,7 @@ When [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs1" %}
 
 ## Timeline views
 
@@ -49,7 +49,7 @@ When the [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/sche
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs2" %}
 
 ## Timeline views with multiple resources
 
@@ -67,7 +67,7 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/working-days-cs3" %}
 
 ## Appointments occupying entire cell
 
@@ -82,7 +82,7 @@ By default, when the [`rowAutoHeight`](../api/schedule#rowautoheight) feature is
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/ignore-whitespace-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/ignore-whitespace-cs1" %}
 
 **Note**: The [`ignoreWhitespace`](https://ej2.syncfusion.com/vue/documentation/api/schedule/eventSettings#ignorewhitespace) property is applicable only when the [`rowAutoHeight`](https://ej2.syncfusion.com/vue/documentation/api/schedule#rowautoheight) feature is enabled in the Scheduler.
 

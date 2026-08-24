@@ -19,19 +19,6 @@ The Scheduler uses `DataManager`, which supports both RESTful JSON data services
 
 To bind local JSON data to the Scheduler, you can simply assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) option of the scheduler within the `EventSettings` property. The local data source can also be provided as an instance of the `DataManager`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/local-data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/local-data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/local-data/razor %}
@@ -40,7 +27,6 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/local-data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -56,19 +42,6 @@ Any kind of remote data service can be bound to the Scheduler. To do so, create 
 
 [ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. Refer to the following code example to retrieve the data from an ODataV4 service using the `DataManager`. To connect with ODataV4 service endpoints, it is necessary to use the `ODataV4Adaptor` within `DataManager`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/Odata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/Odata/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/Odata/razor %}
@@ -77,26 +50,12 @@ Any kind of remote data service can be bound to the Scheduler. To do so, create 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/Odata/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Filter events using the in-built query
 
 To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettingsBuilder.html#Syncfusion_EJ2_Schedule_ScheduleEventSettingsBuilder_IncludeFiltersInQuery_System_Boolean_) API can be set to `true`. This allows the filter query to be constructed using the start date, end date, and recurrence rule, which in turn enables the request to be filtered accordingly.
 
 This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/OdataV4-filter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/OdataV4-filter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -106,7 +65,6 @@ This method greatly improves the component's performance by reducing the data th
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/OdataV4-filter/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The following image represents how the parameters are passed using ODataV4 filter.
 
@@ -116,19 +74,6 @@ The following image represents how the parameters are passed using ODataV4 filte
 
 It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `EventID` for the appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`. The custom adaptor is registered with the `DataManager` using the `adaptor` option, and the resulting `DataManager` instance is then assigned to the Scheduler's [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/custom-adaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/custom-adaptor/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/custom-adaptor/razor %}
@@ -137,26 +82,12 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/custom-adaptor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
 ## Loading data via AJAX post
 
 You can bind the event data through an external AJAX request and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property of the Scheduler. In the following code example, we have retrieved the data from the server with the help of an AJAX request and assigned the resultant data to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property of the Scheduler within the `success` (also known as `onSuccess`) event of the AJAX call.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/ajax/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/ajax/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -166,7 +97,6 @@ You can bind the event data through an external AJAX request and assign it to th
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/ajax/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -176,19 +106,6 @@ N> The definition for the controller method `GetData` can be referred to [here](
 
 To send an additional custom parameter to the server-side post, you need to use the `addParams` method of `Query`. Then, assign this `Query` object with the additional parameters to the [`Query`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html) property of the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/additional-parameter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/additional-parameter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/additional-parameter/razor %}
@@ -197,7 +114,6 @@ To send an additional custom parameter to the server-side post, you need to use 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/additional-parameter/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -207,19 +123,6 @@ N> The parameters added using the `Query` property will be sent along with the d
 
 When the Scheduler interacts with the server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details on the client side using the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event of the Scheduler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/failure-actions/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/failure-actions/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/failure-actions/razor %}
@@ -228,7 +131,6 @@ When the Scheduler interacts with the server, there are chances that some server
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/failure-actions/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -359,19 +261,6 @@ namespace ScheduleSample.Controllers
 
 We have assigned our custom-created Google Calendar URL to the `DataManager` and assigned the same to the Scheduler [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html). Since the event data retrieved from Google Calendar will be in its own object format, it needs to be resolved manually within the Scheduler's [`DataBinding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBinding) event. Within this event, the event fields need to be mapped properly and then assigned to the result. The Google Calendar URL must support CORS or be accessible from the Scheduler's hosting domain, and you must provide a valid API key in the `key` query parameter of the Google Calendar URL.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/google-calendar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/google-calendar/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/google-calendar/razor %}
@@ -380,8 +269,7 @@ We have assigned our custom-created Google Calendar URL to the `DataManager` and
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/data-binding/google-calendar/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.

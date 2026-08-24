@@ -14,9 +14,7 @@ The Scheduler control displays a pop-up window (Quick Info) when users click cel
 
 This guide demonstrates how to create custom templates for Quick Info pop-ups that appear when clicking empty time cells and appointments in the Scheduler control.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1/index.ts %}
 {% endhighlight %}
@@ -28,21 +26,4 @@ This guide demonstrates how to create custom templates for Quick Info pop-ups th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1/es5-datasource.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/how-to-quick-info-template-cs1" %}

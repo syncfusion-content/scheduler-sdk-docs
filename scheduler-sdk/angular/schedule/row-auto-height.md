@@ -34,7 +34,7 @@ By default, the rows of the calendar Month view can hold only a limited number o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs59" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs59" %}
 
 ## Timeline views
 
@@ -50,7 +50,7 @@ When the [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs60" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs60" %}
 
 ![Timeline Month View](images/schedule-timeline-month.png)
 
@@ -68,7 +68,7 @@ The following example shows how the auto row adjustment feature works on Timelin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs61" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/default-cs61" %}
 
 ![Timeline views with multiple resources](images/schedule-timeline-resource.png)
 
@@ -86,7 +86,7 @@ By default, when [`rowAutoHeight`](https://ej2.syncfusion.com/angular/documentat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/ignore-whitespace-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/ignore-whitespace-cs1" %}
 
 ![Ignoring Whitespace](images/schedule-ignore-whitespace.png)
 

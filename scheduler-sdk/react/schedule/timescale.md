@@ -36,7 +36,7 @@ The [`interval`](https://ej2.syncfusion.com/react/documentation/api/schedule/tim
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs27" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs27" %}
 
 ## Customizing time cells using template
 
@@ -59,7 +59,7 @@ The [`timeScale`](https://ej2.syncfusion.com/react/documentation/api/schedule/ti
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs2" %}
 
 ## Hide the timescale
 
@@ -77,7 +77,7 @@ You can enable or disable the grid lines that indicate the exact time duration i
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs3" %}
 
 ## Highlighting current date and time
 
@@ -97,7 +97,7 @@ By default, the Scheduler highlights the current date header in all views and sh
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs4" %}
 
 ## See also
 

@@ -65,7 +65,7 @@ So, we suggest avoiding grouping with empty resources in the Scheduler.
 
 **Error:** While using an editor template, the value of `e-field` is missing in the editor window.
 
-**Solution:** The `e-field` attribute is mandatory for processing field values within the editor window. Refer to the detailed guidance in the editor template documentation [here](https://ej2.syncfusion.com/vue/documentation/schedule/editor-template#customizing-event-editor-using-template).
+**Solution:** The `e-field` attribute is mandatory for processing field values within the editor window. Refer to the detailed guidance in the editor template documentation [here](https://help.syncfusion.com/scheduler-sdk/vue/schedule/editor-template#customizing-event-editor-using-template).
 
 ## Missing CSS Reference
 
@@ -135,7 +135,7 @@ methods: {
 
 ![Locale import issue](./images/locale-import-issue.png)
 
-While using [`locale`](https://ej2.syncfusion.com/vue/documentation/schedule/localization) in the Scheduler, not importing the required culture files properly causes the problem.
+While using [`locale`](https://help.syncfusion.com/scheduler-sdk/vue/schedule/localization) in the Scheduler, not importing the required culture files properly causes the problem.
 
 **Solution:** Properly add and import the culture files such as numberingSystems, timeZoneNames, loadCldr, and L10n in your project to resolve the problem.
 

@@ -13,18 +13,6 @@ By default, the start and end time of a new appointment created from a cell clic
 
 To override this default appointment length, handle the [`popupOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_PopupOpen) event and assign a new value (in minutes) to `args.duration`. The change applies only to the **Add** scenario — when the user clicks an empty cell to create a new appointment. Editing an existing appointment is not affected, since the existing event already has its own start and end times.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/event-duration/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/event-duration/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,6 +22,5 @@ To override this default appointment length, handle the [`popupOpen`](https://he
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/event-duration/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> The value assigned to `args.duration` is interpreted as **minutes**. In the example above, `args.duration = 40` makes every new appointment 40 minutes long.

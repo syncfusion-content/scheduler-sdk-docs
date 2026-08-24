@@ -11,18 +11,6 @@ documentation: ug
 
 By default, the top-level resource color is applied to the events. If you want to apply a specific resource color to events irrespective of the parent resource color, this can be achieved by setting the `resourceColorField` field within the `eventSettings` property as shown below. The value of `resourceColorField` is the name of the resource whose color should be prioritized.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/resource-color/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/resource-color/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -32,7 +20,6 @@ By default, the top-level resource color is applied to the events. If you want t
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/resource-color/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

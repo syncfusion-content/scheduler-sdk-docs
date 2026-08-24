@@ -30,24 +30,6 @@ Use these keyboard shortcuts to manage appointments efficiently:
 
 To perform these operations, select an appointment and press **Ctrl+C** to copy or **Ctrl+X** to cut. Then, select the desired destination time slot and press **Ctrl+V** to paste the appointment.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %} 
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1/index.js %}
@@ -60,8 +42,7 @@ To perform these operations, select an appointment and press **Ctrl+C** to copy 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs1" %}
 
 > Note: For Mac users, use `Cmd` instead of `Ctrl` for copy, cut, and paste operations.
 
@@ -79,24 +60,6 @@ Use these public methods to programmatically control appointment operations in t
 
 By using these methods, you can programmatically cut, copy, and paste appointments in the Scheduler, providing more control over appointment management.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %} 
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2/index.js %}
@@ -109,8 +72,7 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs2" %}
 
 ## Modifying content before pasting
 
@@ -127,24 +89,6 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 
 > Note: Ensure that the field mapping matches the Scheduler's event fields.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %} 
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3/index.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3/index.js %}
@@ -157,8 +101,7 @@ The `beforePaste` event intercepts the appointment data before insertion, allowi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/clipboard-cs3" %}
 
 
-> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/javascript-ui-controls/js-scheduler) feature tour page for an overview of key capabilities. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
+> Refer to our [JavaScript Scheduler](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) feature tour page for an overview of key capabilities. You can also explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.

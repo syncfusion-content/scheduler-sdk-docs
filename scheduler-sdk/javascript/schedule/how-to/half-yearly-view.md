@@ -18,21 +18,6 @@ The Year view displays all days of a year and their appointments. You can custom
 
 The example below configures the Scheduler to show the last six months of the year: set [`firstMonthOfYear`](../../api/schedule#firstmonthofyear) to `6` (June) and [`monthsCount`](../../api/schedule#monthscount) to `6` to render a half-year view.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1/index.js %}
@@ -42,5 +27,4 @@ The example below configures the Scheduler to show the last six months of the ye
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/year-customizations-cs1" %}

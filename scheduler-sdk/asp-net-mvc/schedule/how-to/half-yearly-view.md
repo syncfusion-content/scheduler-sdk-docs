@@ -18,18 +18,6 @@ By default, the Year view of the Scheduler displays all 365 days of a particular
 
 In the following code example, the Year view renders only the last six months of a year. To begin with the month of June, `FirstMonthOfYear` is set to `6` and `MonthsCount` is set to `6`, which renders the months from June through November.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/year-customizations/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/year-customizations/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,7 +27,6 @@ In the following code example, the Year view renders only the last six months of
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/how-to/year-customizations/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

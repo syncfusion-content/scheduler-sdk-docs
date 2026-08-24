@@ -28,7 +28,7 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs2" %}
 
 > **Note:** By default, `DataManager` uses the `JsonAdaptor` for binding local data.
 
@@ -55,7 +55,7 @@ The Scheduler supports binding to various remote data services. To configure rem
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs3" %}
 
 ### Filter events using the in-built query
 
@@ -72,7 +72,7 @@ This method greatly improves the component's performance by reducing the data th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs41" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs41" %}
 
 The image below illustrates how parameters are passed using an ODataV4 filter for remote data binding.
 
@@ -91,7 +91,7 @@ You can create a custom adaptor by extending one of the built-in adaptors. The f
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs4" %}
 
 ## Loading data via AJAX post
 
@@ -153,7 +153,7 @@ To send additional custom parameters in the server-side request, use the `addPar
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs5" %}
 
 > **Note:** Parameters added using the [`query`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#query) property are sent with every data request to the server during Scheduler operations.
 
@@ -172,7 +172,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/react/do
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs6" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs6" %}
 
 > **Note:** The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/schedule#actionfailure) event is triggered for server errors and also when exceptions occur during Scheduler CRUD operations.
 
@@ -318,12 +318,12 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs7" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/local-data-cs7" %}
 
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler)
 * [Scheduler API Reference](https://ej2.syncfusion.com/react/documentation/api/schedule)
-* [CRUD Actions Guide](https://ej2.syncfusion.com/react/documentation/schedule/crud-actions)
-* [Event Fields Documentation](https://ej2.syncfusion.com/react/documentation/schedule/appointments#event-fields)
+* [CRUD Actions Guide](https://help.syncfusion.com/scheduler-sdk/react/schedule/crud-actions)
+* [Event Fields Documentation](https://help.syncfusion.com/scheduler-sdk/react/schedule/appointments#event-fields)
 * [Scheduler Live Examples](https://ej2.syncfusion.com/react/demos/#/tailwind3/schedule/overview)

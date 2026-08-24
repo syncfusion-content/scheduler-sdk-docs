@@ -18,19 +18,6 @@ The deletion of appointments can be done by using the `deleteEvent` public metho
 
 N> You can also display custom menu options on Scheduler cells and appointments. The context menu opens on tap-and-hold in responsive mode.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/context-menu/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/context-menu/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/context-menu/razor %}
@@ -39,7 +26,6 @@ N> You can also display custom menu options on Scheduler cells and appointments.
 {% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/context-menu/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

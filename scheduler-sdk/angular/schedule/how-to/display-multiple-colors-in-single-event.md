@@ -22,4 +22,4 @@ In [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-sch
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/scheduler-sdk/angular/schedule/multiple-color-event" %}
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/multiple-color-event" %}

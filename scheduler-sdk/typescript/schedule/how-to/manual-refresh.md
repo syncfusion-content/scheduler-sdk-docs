@@ -12,9 +12,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 In the Scheduler, you can refresh the layout manually without re-rendering the DOM element by using the [`refreshLayout`](../../api/schedule#refreshlayout) public method. The following code example explains how to use the `refreshLayout` method.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1/index.ts %}
 {% endhighlight %}
@@ -23,18 +21,4 @@ In the Scheduler, you can refresh the layout manually without re-rendering the D
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}
-{% endif %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/refresh-layout-cs1" %}

@@ -23,4 +23,4 @@ When many appointments are added to the all-day row, it can be difficult to view
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/virtual-scrolling-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/virtual-scrolling-cs1" %}

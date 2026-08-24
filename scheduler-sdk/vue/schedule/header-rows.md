@@ -37,7 +37,7 @@ The following example demonstrates a timeline Scheduler configured with all avai
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs1" %}
 
 ## Display year and month rows in timeline views
 
@@ -52,7 +52,7 @@ To display only the **Year** and **Month** header rows in timeline views, includ
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs2" %}
 
 ## Display week numbers in timeline views
 
@@ -67,7 +67,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs3" %}
 
 ## Timeline view displaying dates of a complete year
 
@@ -82,7 +82,7 @@ It is possible to display a complete year in a timeline view by setting the [`in
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs4" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs4" %}
 
 ## Customizing header rows using template
 
@@ -97,6 +97,6 @@ The appearance and content of individual header rows can be customized using the
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-rows-cs5" %}
 
 > For a comprehensive overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples in the [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) demo to see timeline header rows in action.

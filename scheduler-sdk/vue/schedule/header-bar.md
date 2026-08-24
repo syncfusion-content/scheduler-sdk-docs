@@ -25,7 +25,7 @@ By default, the header bar displays navigation elements like **Previous**, **Nex
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-cs1" %}
 
 ## Customizing header bar using template
 
@@ -51,7 +51,7 @@ For custom toolbar items, use `Custom` as the `name` value. In the following exa
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-template" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-template" %}
 
 ## Customizing header bar using events
 
@@ -68,7 +68,7 @@ In the example below, an employee image is added to the header bar. Selecting th
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-cs2" %}
 
 ## How to display the view options within the header bar popup
 
@@ -83,7 +83,7 @@ By default, the view-switching options are shown directly in the header bar. To 
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-cs3" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-bar-cs3" %}
 
 > Refer [here](./resources#adaptive-ui-in-desktop) to learn more about adaptive UI in the resources Scheduler.
 
@@ -104,7 +104,7 @@ The [`dateHeaderTemplate`](../api/schedule#dateheadertemplate) property customiz
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/date-header-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/date-header-cs1" %}
 
 ### Using renderCell Event
 
@@ -119,7 +119,7 @@ In month view, the date header template is not applicable, so the same customiza
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/render-cell-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/render-cell-cs1" %}
 
 ## Customizing the date range text
 
@@ -136,7 +136,7 @@ The [`dateRangeTemplate`](https://ej2.syncfusion.com/vue/documentation/api/sched
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/date-header-cs2" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/date-header-cs2" %}
 
 ## Customizing header indent cells
 
@@ -156,6 +156,6 @@ Header indent cells can be customized using the [`headerIndentTemplate`](https:/
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-indent-cs1" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/header-indent-cs1" %}
 
 > Visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page for a complete overview. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to see the header bar customization in action.
