@@ -33,3 +33,8 @@ In the following code example, the Year view renders only the last six months of
 * [Views in ASP.NET MVC Scheduler](../views)
 * [Year view in ASP.NET MVC Scheduler](../views#year-view)
 
+## See Also
+
+* [Views in ASP.NET MVC Scheduler](../views)
+* [Year view in ASP.NET MVC Scheduler](../views#year-view)
+
