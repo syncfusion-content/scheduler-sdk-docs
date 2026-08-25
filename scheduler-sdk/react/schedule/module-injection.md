@@ -47,7 +47,7 @@ The required modules should be injected into the Scheduler using the `Inject` co
 
 **Example - Basic View Modules:**
 
-```tsx
+```ts
 <ScheduleComponent currentView='Week'>
     <Inject services={[Day, Week, WorkWeek, Month, Agenda, MonthAgenda]} />
 </ScheduleComponent>
@@ -55,7 +55,7 @@ The required modules should be injected into the Scheduler using the `Inject` co
 
 **Example - Timeline Views with Interaction Modules:**
 
-```tsx
+```ts
 <ScheduleComponent currentView='TimelineDay'>
     <Inject services={[TimelineViews, TimelineMonth, DragAndDrop, Resize]} />
 </ScheduleComponent>
@@ -66,17 +66,17 @@ The required modules should be injected into the Scheduler using the `Inject` co
 ## Common module combinations
 
 **Standard Views (Most Common):**
-```tsx
+```ts
 <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
 ```
 
 **Timeline-Based Applications:**
-```tsx
+```ts
 <Inject services={[TimelineViews, TimelineMonth, TimelineYear, DragAndDrop, Resize]} />
 ```
 
 **Full-Featured Application:**
-```tsx
+```ts
 <Inject services={[Day, Week, WorkWeek, Month, Year, Agenda, MonthAgenda, TimelineViews, TimelineMonth, TimelineYear, DragAndDrop, Resize]} />
 ```
 

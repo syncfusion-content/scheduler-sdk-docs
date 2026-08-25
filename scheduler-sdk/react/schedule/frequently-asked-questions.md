@@ -123,7 +123,7 @@ render(<TimelineView />, document.getElementById('sample'));
 
 **Solution:** Use the [`cellClick`](https://ej2.syncfusion.com/react/documentation/api/schedule#cellclick) and [`eventClick`](https://ej2.syncfusion.com/react/documentation/api/schedule#eventclick) events to refresh the popup position. This ensures the popup is repositioned when clicked.
 
-```tsx
+```ts
 constructor() {
   super(...arguments);
   this.eventAdded = false;
