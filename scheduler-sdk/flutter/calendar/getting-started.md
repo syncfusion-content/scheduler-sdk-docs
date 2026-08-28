@@ -9,22 +9,23 @@ documentation: ug
 
 # Flutter Event Calendar Getting Started (SfCalendar)
 
-This section explains the steps required to add the calendar widget and populate appointments to the calendar widget. This section covers only basic features needed to get started with Syncfusion<sup>&reg;</sup> calendar widget.
+This section explains the steps required to add the Flutter Event Calendar widget and populate it with appointments. This section covers only basic features needed to get started with Syncfusion® Flutter Calendar widget.
 
-To get start quickly with our [Flutter event calendar widget](https://www.syncfusion.com/flutter-widgets/flutter-calendar), you can check on this video.
+To get started quickly with our [Flutter Event Calendar widget](https://www.syncfusion.com/flutter-widgets/flutter-calendar), you can refer to this video.
 
 <style>#flutterEventCalendarVideoTutorial{width : 90% !important; height: 300px !important }</style>
 <iframe id='flutterEventCalendarVideoTutorial' src='https://www.youtube.com/embed/3OROjbAQS8Y'></iframe>
 
-N> You can also explore our [Flutter Calendar example](https://flutter.syncfusion.com/#/event-calendar/getting-started) to know how to render and configure the Flutter Examples.
+N> You can also explore our [Flutter Event Calendar example](https://flutter.syncfusion.com/#/event-calendar/getting-started) to know how to render and configure the Flutter Examples.
 
-## Add Flutter calendar to an application
+## Add Flutter Event Calendar to an application
 Create a simple project using the instructions given in the [Getting Started with your first Flutter app](https://docs.flutter.dev/get-started/test-drive#choose-your-ide) documentation.
 
 **Add dependency**
 
-Add the Syncfusion<sup>&reg;</sup> Flutter calendar dependency to your pubspec.yaml file.
+Add the Syncfusion® Flutter Calendar dependency to your pubspec.yaml file.
 
+{% tabs %}
 {% highlight dart %}
 
 dependencies:
@@ -32,46 +33,63 @@ dependencies:
 syncfusion_flutter_calendar: ^xx.x.xx
 
 {% endhighlight %}
+{% endtabs %}
 
-N> Here **xx.x.xx** denotes the current version of [Syncfusion<sup>&reg;</sup> Flutter Calendar](https://pub.dev/packages/syncfusion_flutter_calendar/versions) package.
+N> Here **xx.x.xx** denotes the current version of [Syncfusion<sup>&reg;</sup> Flutter Calendar](https://pub.dev/packages/syncfusion_flutter_calendar/versions) package. It is recommended to use the latest available version from pub.dev.
 
 **Get packages** 
 
 Run the following command to get the required packages.
 
-{% highlight dart %}
+{% tabs %}
+{% highlight bash %}
 
 $ flutter pub get
 
 {% endhighlight %}
+{% endtabs %}
 
 **Import package**
 
 Import the following package in your Dart code.
 
 {% tabs %}
-{% highlight Dart %}
+{% highlight dart %}
 
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 {% endhighlight %}
 {% endtabs %}
 
-## Initialize calendar
+## Initialize Flutter Event Calendar
 
-After importing the package, initialize the calendar widget as a child of any widget. Here, the calendar widget is added as a child of the scaffold widget.
+After importing the package, initialize the Flutter Event Calendar widget as a child of any widget. Here, the Flutter Event Calendar widget is added as a child of the scaffold widget.
 
 {% tabs %}
-{% highlight dart hl_lines="5" %}
+{% highlight dart hl_lines="11" %}
 
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-      body: Container(
-    child: SfCalendar(),
-  ));
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
 }
-	
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(),
+        ),
+      ),
+    );
+  }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,17 +97,31 @@ Widget build(BuildContext context) {
 
 ## Change different calendar views
 
-The SfCalendar widget provides nine different types of views to display dates. It can be assigned to the widget constructor by using the [view](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/view.html) property. By default, the widget is assigned day view. The current date will be displayed initially for all the calendar views.
+The SfCalendar widget provides nine different types of views to display dates. It can be assigned to the widget constructor by using the [view](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/view.html) property. By default, the widget is assigned to the day view. The current date will be displayed initially for all the calendar views.
 
 {% tabs %}
-{% highlight dart hl_lines="5" %}
+{% highlight dart hl_lines="12" %}
 
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-      body: SfCalendar(
-    view: CalendarView.month,
-  ));
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: SfCalendar(
+          view: CalendarView.month,
+        ),
+      ),
+    );
+  }
 }
 
 {% endhighlight %}
@@ -99,21 +131,35 @@ Widget build(BuildContext context) {
 
 ## Add data source
 
-The calendar widget has a built-in capability to handle appointment arrangement internally based on the appointment collections. You need to assign the created collection to the [dataSource](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/dataSource.html) property.
-You can also map custom appointment data to our calendar.
+The Flutter Event Calendar widget has a built-in capability to handle appointment arrangement internally based on the appointment collections. You need to assign the created collection to the [dataSource](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/dataSource.html) property.
+You can also map custom appointment data to our Flutter Event Calendar.
 
 {% tabs %}
-{% highlight dart hl_lines="6 12 13 14 15 16 17 18 19 20 21" %}
+{% highlight dart hl_lines="16 22 23 24 25 26 27 28 29 30 31" %}
 
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-    body: SfCalendar(
-    view: CalendarView.month,
-    dataSource: MeetingDataSource(_getDataSource()),
-    monthViewSettings: MonthViewSettings(
-        appointmentDisplayMode: MonthAppointmentDisplayMode.appointment),
-  ));
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: SfCalendar(
+          view: CalendarView.month,
+          dataSource: MeetingDataSource(_getDataSource()),
+          monthViewSettings: const MonthViewSettings(
+              appointmentDisplayMode: MonthAppointmentDisplayMode.appointment),
+        ),
+      ),
+    );
+  }
 }
 
 List<Meeting> _getDataSource() {
@@ -126,7 +172,6 @@ List<Meeting> _getDataSource() {
       'Conference', startTime, endTime, const Color(0xFF0F8644), false));
   return meetings;
 }
-
 
 class MeetingDataSource extends CalendarDataSource {
   MeetingDataSource(List<Meeting> source) {
@@ -176,18 +221,32 @@ class Meeting {
 
 ## Change first day of week
 
-The calendar widget will be rendered with Sunday as the first day of the week, but you can customize it to any day by using the [firstDayOfWeek](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/firstDayOfWeek.html) property.
+The Flutter Event Calendar widget will be rendered with Sunday as the first day of the week, but you can customize it to any day by using the [firstDayOfWeek](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/firstDayOfWeek.html) property.
 
 {% tabs %}
-{% highlight dart hl_lines="6" %}
+{% highlight dart hl_lines="12" %}
 
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-      body: SfCalendar(
-    view: CalendarView.week,
-    firstDayOfWeek: 1, // Monday
-  ));
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: SfCalendar(
+          view: CalendarView.week,
+          firstDayOfWeek: 1, // Monday
+        ),
+      ),
+    );
+  }
 }
 
 {% endhighlight %}
@@ -197,23 +256,34 @@ Widget build(BuildContext context) {
 
 ## Initial selected date
 
-You can programmatically select the specific calendar month cell, and time slot by setting corresponding date and time value to the [initialSelectedDate](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/initialSelectedDate.html) property of calendar. By default, it is null.
+You can programmatically select the specific  month cell and time slot in the Flutter Event Calendar by setting corresponding date and time value to the [initialSelectedDate](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/initialSelectedDate.html) property. By default, it is null.
 
 {% tabs %}
-{% highlight dart hl_lines="8" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          initialSelectedDate: DateTime(2019, 12, 20, 12),
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            initialSelectedDate: DateTime(2019, 12, 20, 12),
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -223,23 +293,34 @@ Widget build(BuildContext context) {
 
 ## Initial display date
 
-You can change the initial display date of calendar by using the [initialDisplayDate](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/initialDisplayDate.html) property of calendar, which displays the calendar based on the given date time. By default, current date will be set as `initialDisplayDate`.
+You can change the initial display date of the Flutter Event Calendar by using the [initialDisplayDate](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/initialDisplayDate.html) property, which displays the calendar based on the given date time. By default, current date will be set as `initialDisplayDate`.
 
 {% tabs %}
-{% highlight dart hl_lines="8" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          initialDisplayDate: DateTime(2019, 12, 20, 7, 30),
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            initialDisplayDate: DateTime(2019, 12, 20, 7, 30),
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -249,28 +330,39 @@ Widget build(BuildContext context) {
 
 ## Selection decoration
 
-You can decorate the selection view of calendar by using the [selectionDecoration](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/selectionDecoration.html) property of Calendar.
+You can decorate the selection view of the Flutter Event Calendar by using the [selectionDecoration](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/selectionDecoration.html) property.
 
 {% tabs %}
-{% highlight dart hl_lines="8 9 10 11 12 13" %}
+{% highlight dart hl_lines="14 15 16 17 18 19" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          selectionDecoration: BoxDecoration(
-            color: Colors.transparent,
-            border: Border.all(color: Colors.red, width: 2),
-            borderRadius: const BorderRadius.all(Radius.circular(4)),
-            shape: BoxShape.rectangle,
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            selectionDecoration: BoxDecoration(
+              color: Colors.transparent,
+              border: Border.all(color: Colors.red, width: 2),
+              borderRadius: const BorderRadius.all(Radius.circular(4)),
+              shape: BoxShape.rectangle,
+            ),
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -280,23 +372,34 @@ Widget build(BuildContext context) {
 
 ## Today highlight color
 
-You can customize the today highlight color of calendar by using the [todayHighlightColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/todayHighlightColor.html) property in calendar, which will highlight the today text in calendar view header, month cell, and agenda view.
+You can customize the today highlight color of the Flutter Event Calendar by using the [todayHighlightColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/todayHighlightColor.html) property. This property highlights the today text in the  view header, month cell, and agenda view.
 
 {% tabs %}
-{% highlight dart hl_lines="8" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          todayHighlightColor: Colors.red,
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            todayHighlightColor: Colors.red,
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -306,23 +409,34 @@ Widget build(BuildContext context) {
 
 ## Cell border color
 
-You can customize the vertical and horizontal line color of calendar by using the [cellBorderColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/cellBorderColor.html) property in calendar.
+You can customize the vertical and horizontal line color of the Flutter Event Calendar by using the [cellBorderColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/cellBorderColor.html) property.
 
 {% tabs %}
-{% highlight dart hl_lines="8" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          cellBorderColor: Colors.blue,
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            cellBorderColor: Colors.blue,
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -332,23 +446,34 @@ Widget build(BuildContext context) {
 
 ## Background color
 
-The calendar widgets background color can be customized by using the [backgroundColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/backgroundColor.html) property in calendar.
+The background color of the Flutter Event Calendar can be customized by using the [backgroundColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/backgroundColor.html) property.
 
 {% tabs %}
-{% highlight dart hl_lines="8" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          backgroundColor: Colors.lightBlue,
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            backgroundColor: Colors.lightBlue,
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -357,20 +482,33 @@ Widget build(BuildContext context) {
 ![Background color](images/getting-started/calendar-background-color.png)
 
 ## Navigation arrow
-Using the [showNavigationArrow](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showNavigationArrow.html) property of the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html), you can navigate to the next or previous views of the calendar without swiping.
+Using the [showNavigationArrow](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showNavigationArrow.html) property of the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html), you can navigate to the next or previous views of the Flutter Event Calendar without swiping.
 
 {% tabs %}
-{% highlight dart hl_lines="6" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-    return Container(
-      child: SfCalendar(
-        view: CalendarView.month,
-        showNavigationArrow: true,
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: SfCalendar(
+          view: CalendarView.month,
+          showNavigationArrow: true,
+        ),
       ),
     );
   }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -382,24 +520,36 @@ Widget build(BuildContext context) {
 * The  [showNavigationArrow](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showNavigationArrow.html) property is not applicable when the [view](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/view.html) is set to [CalendarView.schedule](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarView.html).
 
 ## Cell end padding
-You can customize the padding of appointment view end to make touch position for timeslot and month cell by using the [cellEndPadding](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/cellEndPadding.html) property in the calendar, which allows you to tap the calendar cell when the cell has appointments.
+You can customize the padding of appointment view end to make touch position for timeslot and month cell by using the [cellEndPadding](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/cellEndPadding.html) property in the Flutter Event Calendar, which allows you to tap the calendar cell when the cell has appointments.
 
 {% tabs %}
-{% highlight dart hl_lines="7" %}
+{% highlight dart hl_lines="15" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
         body: SfCalendar(
-      view: CalendarView.month,
-      cellEndPadding: 5,
-      dataSource: _getCalendarDataSource(),
-	  monthViewSettings: MonthViewSettings(
-            appointmentDisplayMode:
-                MonthAppointmentDisplayMode.appointment),
-    )),
-  );
+          view: CalendarView.month,
+          cellEndPadding: 5,
+          dataSource: _getCalendarDataSource(),
+          monthViewSettings: const MonthViewSettings(
+              appointmentDisplayMode:
+                  MonthAppointmentDisplayMode.appointment),
+        ),
+      ),
+    );
+  }
 }
 
 {% endhighlight %}
@@ -412,17 +562,30 @@ Widget build(BuildContext context) {
 You can display the current time indicator in all timeslot views of SfCalendar by using the [showCurrentTimeIndicator](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showCurrentTimeIndicator.html) property and you can also customize the color of current time indicator by using the [todayHighlightColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/todayHighlightColor.html) property. 
 
 {% tabs %}
-{% highlight dart hl_lines="6" %}
+{% highlight dart hl_lines="14" %}
 
-@override
-Widget build(BuildContext context) {
-    return Container(
-      child: SfCalendar(
-        view: CalendarView.day,
-        showCurrentTimeIndicator: true,
-              ),
-  );
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: SfCalendar(
+          view: CalendarView.day,
+          showCurrentTimeIndicator: true,
+        ),
+      ),
+    );
   }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -431,12 +594,22 @@ Widget build(BuildContext context) {
 
 ## Week number
 
-Display the Week number of the year in all views except schedule view of the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html). by setting the [showWeekNumber](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showWeekNumber.html) property as true and by default it is false. Week numbers will be displayed based on the ISO standard.
+Display the Week number of the year in all views except schedule view of the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html) by setting the [showWeekNumber](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/showWeekNumber.html) property as true and by default it is false. Week numbers will be displayed based on the ISO standard.
 
 {% tabs %}
-{% highlight dart hl_lines="7" %}
+{% highlight dart hl_lines="15" %}
 
-@override
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -447,20 +620,31 @@ Display the Week number of the year in all views except schedule view of the [Sf
       ),
     );
   }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-![Week Number in Flutter Calendar](images\getting-started\flutter-calendar-week-number.png)
+![Week Number in Flutter Event Calendar](images\getting-started\flutter-calendar-week-number.png)
 
 ## Week number appearance
 
-Customize the Week number text style of the calendar by using the [WeekNumberStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle-class.html) property. Allows to customize the [textStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle/textStyle.html) and the [backgroundColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle/backgroundColor.html) in the Week number of the calendar.
+Customize the Week number text style of the Flutter Event Calendar by using the [WeekNumberStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle-class.html) property. Allows to customize the [textStyle](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle/textStyle.html) and the [backgroundColor](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/WeekNumberStyle/backgroundColor.html) in the Week number of the Flutter Event Calendar.
 
 {% tabs %}
-{% highlight dart hl_lines="8 9 10 11" %}
+{% highlight dart hl_lines="16 17 18 19" %}
 
-@override
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -475,11 +659,12 @@ Customize the Week number text style of the calendar by using the [WeekNumberSty
       ),
     );
   }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-![Week Number Appearance in Flutter Calendar](images\getting-started\flutter-calendar-week-number-appearance.png)
+![Week Number Appearance in Flutter Event Calendar](images\getting-started\flutter-calendar-week-number-appearance.png)
 
 Get the complete "getting started" sample from [here](https://github.com/SyncfusionExamples/flutter-calendar).
 
