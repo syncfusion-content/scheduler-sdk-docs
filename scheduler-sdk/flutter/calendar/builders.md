@@ -9,14 +9,14 @@ documentation: ug
 
 # Flutter Event Calendar Builders (SfCalendar)
 
-The calendar allows you to create a responsive UI with conditions based on a widget's details, to design and create your custom view to the month cells and month header of schedule view in the calendar.
+The Flutter Event Calendar allows you to create a responsive UI with conditions based on a widget's details, to design and create your custom view for the month cells and month header of schedule view.
 
-The calendar has two builders to create and assign your custom view:
+The Flutter Event Calendar has two builders to create and assign your custom view:
 * Month cell builder
 * Schedule view month header builder
 
 ## Month cell builder
-The [MonthCellBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/MonthCellBuilder.html) allows you to design your custom view and assign the view to the month cells of the calendar by returning an appropriate widget in the [monthCellBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/monthCellBuilder.html) of [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
+The [MonthCellBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/MonthCellBuilder.html) allows you to design your custom view and assign the view to the month cells of the Flutter Event Calendar by returning an appropriate widget in the [monthCellBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/monthCellBuilder.html) of [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
 
 [MonthCellDetails](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/MonthCellDetails-class.html) - returns the details of the month cell.
 
@@ -27,10 +27,20 @@ The [MonthCellBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar
 
 
 {% tabs %}
-{% highlight dart hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26" %}
+{% highlight dart hl_lines="15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34" %}
 
-@override
-Widget build(BuildContext context) {
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SfCalendar(
@@ -56,12 +66,13 @@ Widget build(BuildContext context) {
               );
             },
             showDatePickerButton: true,
-            monthViewSettings: MonthViewSettings(
+            monthViewSettings: const MonthViewSettings(
               showTrailingAndLeadingDates: false,
             )),
       ),
     );
   }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -70,7 +81,7 @@ Widget build(BuildContext context) {
 
 ## Schedule view month header builder
 
-You can design your custom view and assign this view to the month header of a schedule view in the calendar by returning an appropriate widget using the [scheduleViewMonthHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/scheduleViewMonthHeaderBuilder.html) in the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
+You can design your custom view and assign this view to the month header of a schedule view  by returning an appropriate widget using the [scheduleViewMonthHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/scheduleViewMonthHeaderBuilder.html) in the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
 
 [ScheduleViewMonthHeaderDetails](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ScheduleViewMonthHeaderDetails-class.html) - returns the required details of the schedule view month header.
 
@@ -78,17 +89,27 @@ You can design your custom view and assign this view to the month header of a sc
 * [bounds](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ScheduleViewMonthHeaderDetails/bounds.html) - returns the header bounds.
 
 {% tabs %}
-{% highlight dart hl_lines="8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30" %}
+{% highlight dart hl_lines="16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: SfCalendar(
-          view: CalendarView.schedule,
-          dataSource: _calendarDataSource,
-          scheduleViewMonthHeaderBuilder: (BuildContext buildContext,
-              ScheduleViewMonthHeaderDetails details) {
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: SfCalendar(
+            view: CalendarView.schedule,
+            dataSource: _calendarDataSource,
+            scheduleViewMonthHeaderBuilder: (BuildContext buildContext,
+                ScheduleViewMonthHeaderDetails details) {
             final String monthName = _getMonthDate(details.date.month);
             return Stack(
               children: [
@@ -104,15 +125,16 @@ Widget build(BuildContext context) {
                   bottom: 0,
                   child: Text(
                     monthName + ' ' + details.date.year.toString(),
-                    style: TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                 )
               ],
             );
           },
           showDatePickerButton: true),
-    ),
-  );
+      ),
+    );
+  }
 }
 
 {% endhighlight %}
@@ -121,7 +143,7 @@ Widget build(BuildContext context) {
 ![Schedule view header builder](images/builder/schedule_view_month_header_builder.png)
 
 ## Appointment builder
-The [CalendarAppointmentBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarAppointmentBuilder.html) allows you to design your custom view and assign the view to the appointment UI of the calendar by returning an appropriate widget in the [appointmentBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/appointmentBuilder.html) of [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
+The [CalendarAppointmentBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarAppointmentBuilder.html) allows you to design your custom view and assign the view to the appointment UI of the Flutter Event Calendar by returning an appropriate widget in the [appointmentBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/appointmentBuilder.html) of [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
 
 [CalendarAppointmentDetails](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarAppointmentDetails-class.html): Returns the details of the appointment view.
 
@@ -132,10 +154,25 @@ The [CalendarAppointmentBuilder](https://pub.dev/documentation/syncfusion_flutte
 * [isMoreAppointmentRegion](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarAppointmentDetails/isMoreAppointmentRegion.html): Determines whether the widget replaces the more appointment region.
 
 {% tabs %}
-{% highlight dart hl_lines="11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106" %}
+{% highlight dart hl_lines="12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107" %}
 
-class MyAppState extends State<MyApp> {
-  CalendarController _controller = CalendarController();
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatefulWidget {
+  const CalendarApp({super.key});
+
+  @override
+  State<CalendarApp> createState() => _CalendarAppState();
+}
+
+class _CalendarAppState extends State<CalendarApp> {
+  final CalendarController _controller = CalendarController();
 
   @override
   Widget build(BuildContext context) {
@@ -155,12 +192,12 @@ class MyAppState extends State<MyApp> {
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(3),
+                        padding: const EdgeInsets.all(3),
                         height: 50,
                         alignment: Alignment.topLeft,
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(5),
                               topRight: Radius.circular(5)),
                           color: meeting.color,
@@ -172,7 +209,7 @@ class MyAppState extends State<MyApp> {
                               children: [
                                 Text(
                                   meeting.subject,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
@@ -186,7 +223,7 @@ class MyAppState extends State<MyApp> {
                                     : Text(
                                         'Time: ${DateFormat('hh:mm a').format(meeting.startTime)} - ' +
                                             '${DateFormat('hh:mm a').format(meeting.endTime)}',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           color: Colors.white,
                                           fontSize: 10,
                                         ),
@@ -196,8 +233,8 @@ class MyAppState extends State<MyApp> {
                       ),
                       Container(
                         height: details.bounds.height - 70,
-                        padding: EdgeInsets.fromLTRB(3, 5, 3, 2),
-                        color: meeting.color.withOpacity(0.8),
+                        padding: const EdgeInsets.fromLTRB(3, 5, 3, 2),
+                        color: meeting.color.withValues(alpha: 0.8),
                         alignment: Alignment.topLeft,
                         child: SingleChildScrollView(
                             child: Column(
@@ -205,7 +242,7 @@ class MyAppState extends State<MyApp> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                    padding: EdgeInsets.symmetric(vertical: 5),
+                                    padding: const EdgeInsets.symmetric(vertical: 5),
                                     child: Image(
                                         image:
                                             ExactAssetImage('images/' + image + '.png'),
@@ -214,7 +251,7 @@ class MyAppState extends State<MyApp> {
                                         height: 60)),
                                 Text(
                                   meeting.notes!,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontSize: 10,
                                   ),
@@ -226,7 +263,7 @@ class MyAppState extends State<MyApp> {
                         height: 20,
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(5),
                               bottomRight: Radius.circular(5)),
                           color: meeting.color,
@@ -255,7 +292,7 @@ class MyAppState extends State<MyApp> {
 
 
 ## Time region builder
-The [TimeRegionBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/TimeRegionBuilder.html) allows you to design your custom view and assign the view to the time region view of the calendar by returning an appropriate widget in the [timeRegionBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/timeRegionBuilder.html) of SfCalendar.
+The [TimeRegionBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/TimeRegionBuilder.html) allows you to design your custom view and assign the view to the time region view of the Flutter Event Calendar by returning an appropriate widget in the [timeRegionBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/timeRegionBuilder.html).
 
 [TimeRegionDetails](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/TimeRegionDetails-class.html): Returns the details of the time region view.
 
@@ -264,7 +301,10 @@ The [TimeRegionBuilder](https://pub.dev/documentation/syncfusion_flutter_calenda
 * [region](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/TimeRegionDetails/region.html): The Region detail associated with the time region view.
 
 {% tabs %}
-{% highlight dart hl_lines="22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44" %}
+{% highlight dart hl_lines="1 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45" %}
+
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 List<TimeRegion> _getTimeRegions() {
   final List<TimeRegion> regions = <TimeRegion>[];
@@ -272,19 +312,26 @@ List<TimeRegion> _getTimeRegions() {
   date = DateTime(date.year, date.month, date.day, 12, 0, 0);
   regions.add(TimeRegion(
       startTime: date,
-      endTime: date.add(Duration(hours: 2)),
+      endTime: date.add(const Duration(hours: 2)),
       enablePointerInteraction: false,
-      color: Colors.grey.withOpacity(0.2),
+      color: Colors.grey.withValues(alpha: 0.2),
       text: 'Break'));
 
   return regions;
 }
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-        body: SfCalendar(
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          body: SfCalendar(
       view: CalendarView.week,
       specialRegions: _getTimeRegions(),
       timeRegionBuilder:
@@ -295,7 +342,7 @@ Widget build(BuildContext context) {
             alignment: Alignment.center,
             child: Icon(
               Icons.restaurant,
-              color: Colors.grey.withOpacity(0.5),
+              color: Colors.grey.withValues(alpha: 0.5),
             ),
           );
         } else if (timeRegionDetails.region.text == 'Not Available') {
@@ -304,14 +351,15 @@ Widget build(BuildContext context) {
             alignment: Alignment.center,
             child: Icon(
               Icons.block,
-              color: Colors.grey.withOpacity(0.5),
+              color: Colors.grey.withValues(alpha: 0.5),
             ),
           );
         }
        return Container(color: timeRegionDetails.region.color);
       },
     )),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -320,7 +368,7 @@ Widget build(BuildContext context) {
 ![Time regions builder](images/builder/timeregion-builder.png)
 
 ## Resource view header builder
-The [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ResourceViewHeaderBuilder.html) allows you to design the custom view, and assign the view to the resource view header of the calendar by returning an appropriate widget in the [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ResourceViewHeaderBuilder.html) of the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
+The [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ResourceViewHeaderBuilder.html) allows you to design the custom view, and assign the view to the resource view header by returning an appropriate widget in the [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ResourceViewHeaderBuilder.html) of the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html).
 
 [ResourceViewHeaderDetails](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ResourceViewHeaderDetails-class.html) - returns the required details of the resource view header builder.
 
@@ -331,7 +379,17 @@ The [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter
 {% tabs %}
 {% highlight dart hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25" %}
 
-@override
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -339,7 +397,7 @@ The [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter
             view: CalendarView.timelineMonth,
             resourceViewHeaderBuilder:
                 (BuildContext context, ResourceViewHeaderDetails details) {
-              if (details.resource.image != null) {
+          if (details.resource.image != null) {
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -363,7 +421,7 @@ The [ResourceViewHeaderBuilder](https://pub.dev/documentation/syncfusion_flutter
 {% endhighlight %}
 {% endtabs %}
 
-![Resource View Header Builder in Flutter Calendar](images/builder/flutter-calendar-resource-view-header-builder.png)
+![Resource View Header Builder in Flutter Event Calendar](images/builder/flutter-calendar-resource-view-header-builder.png)
 
 ## See also
 
