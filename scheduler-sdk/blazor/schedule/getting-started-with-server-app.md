@@ -27,7 +27,7 @@ dotnet new install Syncfusion.Blazor.WebApp.Templates
 {% endhighlight %}
 {% endtabs %}
 
-Next, create a new project with the following command.
+Next, create a new project with following command.
 
 {% tabs %}
 {% highlight razor tabtitle="Server" %}
