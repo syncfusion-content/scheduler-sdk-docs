@@ -9,31 +9,42 @@ documentation: ug
 
 # Flutter Event Calendar Callbacks (SfCalendar)
 
-Calendar supports the [ViewChangedCallback](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ViewChangedCallback.html) and [CalendarTapCallback](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTapCallback.html) to interact with Flutter calendar.
+The Flutter Event Calendar supports the [ViewChangedCallback](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ViewChangedCallback.html) and [CalendarTapCallback](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTapCallback.html) to handle user interaction.
 
 ## View changed callback
 
-The [onViewChanged](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onViewChanged.html) callback triggers when the current view of calendar changed, that is view swiped to previous/next view, calendar view switched to another calendar view.
+The [onViewChanged](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onViewChanged.html) callback triggers when the current view of Flutter Event Calendar changed, that is view swiped to previous/next view, or when the calendar view is switched to another view.
 
 * [visibleDates](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/ViewChangedDetails/visibleDates.html) - returns the current view visible dates collection.
 
 {% tabs %}
-{% highlight dart hl_lines="8 9 10" %}
+{% highlight dart hl_lines="18 19 20" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          onViewChanged: (ViewChangedDetails details) {
-            List<DateTime> dates = details.visibleDates;
-          },
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            onViewChanged: (ViewChangedDetails details) {
+              List<DateTime> dates = details.visibleDates;
+            },
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -44,7 +55,7 @@ Widget build(BuildContext context) {
 
 ## Calendar tap callback
 
-The [onTap](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onTap.html) callback triggers whenever the calendar is tapped.
+The [onTap](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onTap.html) callback triggers whenever the Flutter Event Calendar is tapped.
 
 * [date](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/date.html) - returns the selected date.
 * [appointments](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/appointments.html) - returns the selected appointments.
@@ -52,24 +63,35 @@ The [onTap](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/cal
 * [resource](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/resource.html) - returns the tapped resource.
 
 {% tabs %}
-{% highlight dart hl_lines="8 9 10 11 12" %}
+{% highlight dart hl_lines="18 19 20 21 22" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-      body: Container(
-        child: SfCalendar(
-          view: CalendarView.week,
-          onTap: (CalendarTapDetails details) {
-            dynamic appointment = details.appointments;
-            DateTime date = details.date!;
-            CalendarElement element = details.targetElement;
-          },
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            onTap: (CalendarTapDetails details) {
+              dynamic appointment = details.appointments;
+              DateTime date = details.date!;
+              CalendarElement element = details.targetElement;
+            },
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
 
 {% endhighlight %}
@@ -77,25 +99,42 @@ Widget build(BuildContext context) {
 
 >**NOTE**
 * For recurrence appointment, the tap details will always return as `Appointment`, even for the custom business object.
-* The [onTap](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onTap.html) and [onLongPress](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onLongPress.html) callbacks are not applicable for pop-ups like allowedViews and date picker in the calendar header.
+* The [onTap](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onTap.html) and [onLongPress](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onLongPress.html) callbacks are not applicable for pop-ups like allowedViews and date picker in the header of the Flutter Event Calendar.
 
-## Calendar details callback
+## Flutter Event Calendar details callback
 
-Return calendar details based on the given offset passed through argument by using the [getCalendarDetailsAtOffset](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarController/getCalendarDetailsAtOffset.html) method.
+Return details of the Flutter Event Calendar based on the given offset passed through an argument by using the [getCalendarDetailsAtOffset](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarController/getCalendarDetailsAtOffset.html) method.
 
 * [date](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/date.html) - returns the date based on the given offset.
 * [appointments](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/appointments.html) - returns the appointments based on the given offset.
-* [targetElement](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/targetElement.html) - returns the calendar element based on the given offset.
+* [targetElement](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/targetElement.html) - returns the Flutter Event Calendar element based on the given offset.
 * [resource](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/resource.html) - returns the resource based on the given offset.
 
 {% tabs %}
-{% highlight dart hl_lines="6 7 8 9 10 11 12 13 14 15 16" %}
+{% highlight dart hl_lines="6 7 8 9 10 11 12 13 14 15 16 19 21" %}
 
-@override
-Widget build(BuildContext context) {
-  return MaterialApp(
-    home: Scaffold(
-        body: MouseRegion(
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatefulWidget {
+  const CalendarApp({super.key});
+
+  @override
+  State<CalendarApp> createState() => _CalendarAppState();
+}
+
+class _CalendarAppState extends State<CalendarApp> {
+  final CalendarController _calendarController = CalendarController();
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          body: MouseRegion(
             onHover: (PointerHoverEvent event) {
               CalendarDetails? details = _calendarController
                   .getCalendarDetailsAtOffset!(event.localPosition);
@@ -121,33 +160,46 @@ Widget build(BuildContext context) {
 {% endtabs %}
 
 ## Long press callback
-The [onLongPress](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onLongPress.html) callback is called, whenever the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html). elements are long pressed on view.
+The [onLongPress](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar/onLongPress.html) callback is called whenever the [SfCalendar](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/SfCalendar-class.html) elements are long pressed on view.
 
 The long-pressed date, appointments, and element details when the long-press action performed on element available in the [CalendarLongPressDetails](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarLongPressDetails-class.html).
 
 * [date](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/date.html) - returns the long-pressed date.
 * [appointments](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/appointments.html) - returns the long-pressed appointments.
-* [targetElement](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/targetElement.html) - returns the long-pressed calendar element.
-* [resource](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/resource.html) - returns the long-pressed calendar resource.
+* [targetElement](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/targetElement.html) - returns the long-pressed element in the Flutter Event Calendar.
+* [resource](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/CalendarTouchDetails/resource.html) - returns the long-pressed resource in the Flutter Event Calendar.
 
 {% tabs %}
-{% highlight dart hl_lines="8 9 10 11 12" %}
+{% highlight dart hl_lines="18 19 20 21 22" %}
 
-@override
-Widget build(BuildContext context) {
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
+
+void main() {
+  runApp(const CalendarApp());
+}
+
+class CalendarApp extends StatelessWidget {
+  const CalendarApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            body: Container(
-      child: SfCalendar(
-        view: CalendarView.week,
-        onLongPress: (CalendarLongPressDetails details) {
-          DateTime date = details.date!;
-          dynamic appointments = details.appointments;
-          CalendarElement view = details.targetElement;
-        },
+      home: Scaffold(
+        body: Container(
+          child: SfCalendar(
+            view: CalendarView.week,
+            onLongPress: (CalendarLongPressDetails details) {
+              DateTime date = details.date!;
+              dynamic appointments = details.appointments;
+              CalendarElement view = details.targetElement;
+            },
+          ),
+        ),
       ),
-    )));
+    );
   }
+}
 
 {% endhighlight %}
 {% endtabs %}
