@@ -33,7 +33,7 @@ that contains the Appointment or DateTime of the corresponding cell.
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.CellContextMenu>
                 <ContextMenu>
                     <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Add}}" CommandParameter ="{Binding}" CommandTarget="{Binding ElementName=Schedule}" Header="Add">
@@ -67,7 +67,7 @@ that contains the Appointment or DateTime of the corresponding cell.
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.AppointmentContextMenu>
                 <ContextMenu>
                     <MenuItem Command="{Binding Source={x:Static Member=syncfusion:SchedulerCommands.Edit}}"

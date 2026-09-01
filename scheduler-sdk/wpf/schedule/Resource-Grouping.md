@@ -37,7 +37,7 @@ schedule.ResourceCollection = ResourceCollection;
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}">
     </Grid>
 </Window>
 {% endhighlight %}
@@ -276,7 +276,7 @@ Map those properties of `Meeting` class to schedule appointment by using `Appoin
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-         <syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+         <syncfusion:SfScheduler x:Name="schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
                  <syncfusion:SfScheduler.AppointmentMapping>
                     <syncfusion:AppointmentMapping
                     Subject="EventName"
@@ -588,7 +588,7 @@ Resource UI customization using a template and template selectors support.
     </Window.DataContext>
 
     <Grid Name="grid">
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}"
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week" ResourceGroupType="Resource" ResourceCollection="{Binding ResourceCollection}"
                                 ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
                                 <syncfusion:SfScheduler.ResourceMapping>
                 <syncfusion:ResourceMapping Id="Id" Name="Name" Background="BackgroundBrush" Foreground="ForegroundBrush"/>
@@ -661,7 +661,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
             <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayViewResourceTemplate="{StaticResource DaysViewResourceTemplate}" TimelineViewResourceTemplate="{StaticResource TimelineResourceTemplate}"/>
         </Grid.Resources>
 
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                                 ViewType="Week"
                                 ResourceGroupType="Resource}"
                                 ResourceCollection="{Binding Resources}"

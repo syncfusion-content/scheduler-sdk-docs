@@ -30,7 +30,7 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month"
                        CellTapped="Schedule_CellTapped">
 </scheduler:SfScheduler>
@@ -51,7 +51,7 @@ The [CellDoubleTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month"
                        CellDoubleTapped="Schedule_CellDoubleTapped">
 </scheduler:SfScheduler>
@@ -72,7 +72,7 @@ The [CellLongPressed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sc
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month"
                        CellLongPressed="Schedule_CellLongPressed">
 </scheduler:SfScheduler>
@@ -93,7 +93,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month"
                        SelectionChanged="Schedule_SelectionChanged">
 </scheduler:SfScheduler>
@@ -131,7 +131,7 @@ The [SelectionChangingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month"
                        SelectionChanging="Schedule_SelectionChanging">
 </scheduler:SfScheduler>
@@ -160,7 +160,7 @@ The [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfus
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month"
                        ViewHeaderCellTapped="Schedule_ViewHeaderCellTapped">
 </scheduler:SfScheduler>
@@ -185,7 +185,7 @@ The [HeaderTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Week"
                        HeaderTapped="Schedule_HeaderTapped">
 </scheduler:SfScheduler>
@@ -212,7 +212,7 @@ The [AppointmentTappedArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ViewType="Month"
                        AppointmentTapped="Schedule_AppointmentTapped">
 </scheduler:SfScheduler>

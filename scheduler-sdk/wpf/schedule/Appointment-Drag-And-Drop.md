@@ -18,7 +18,7 @@ The Scheduler supports disabling the appointment drag and drop by setting [Appoi
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         AppointmentEditFlag="Add,Edit,Resize">
         </syncfusion:SfScheduler>
     </Grid>

@@ -36,7 +36,7 @@ Customize the interval height of timeslots in a day, week, and workweek views by
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
- <scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+ <scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
             TimeIntervalSize="120"/>
@@ -59,7 +59,7 @@ The `workweek` view displays exactly the defined working days on Scheduler contr
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
                   NonWorkingDays="Monday,Tuesday">
@@ -81,7 +81,7 @@ The default values for `StartHour` and `EndHour` are 0 and 24 to show all the ti
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
             StartHour="8"
@@ -257,7 +257,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
             </Grid>
         </DataTemplate>
     </Grid.Resources>
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings  
                                 SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
@@ -296,7 +296,7 @@ The WinUI Scheduler time interval height can be adjusted based on screen height 
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
             TimeIntervalSize="-1"/>
@@ -317,7 +317,7 @@ Customize the size of the time ruler view where the labels mentioning the time a
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week" >
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week" >
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings   
             TimeRulerSize="100">
@@ -361,7 +361,7 @@ You can customize the number of appointments displayed in an all-day panel using
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
                         MinimumAllDayAppointmentsCount="3"/>
@@ -380,7 +380,7 @@ You can customize the default appearance of more appointments indicator in an al
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings>
             <scheduler:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
@@ -433,7 +433,7 @@ Customize the date and day format of ViewHeader by using the [ViewHeaderDateForm
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
             ViewHeaderDayFormat="ddd"
@@ -456,7 +456,7 @@ Customize the height of the ViewHeader in a day, week, and workweek views by set
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings
             ViewHeaderHeight="100"/>
@@ -506,7 +506,7 @@ Customize the default appearance of view header by setting the [ViewHeaderTempla
         </StackPanel>
     </DataTemplate>
 </Grid.Resources>
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings 
             ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
@@ -524,7 +524,7 @@ To enhance interaction with a scheduler's appointments, you can customize the sp
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings CellRightPadding="30"/>

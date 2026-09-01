@@ -57,7 +57,7 @@ Configure the appointment reminders with [SchedulerReminder.](https://help.syncf
  <Grid.DataContext>
     <local:ReminderViewModel/>
  </Grid.DataContext>
- <syncfusion:SfScheduler x:Name="Schedule" 
+ <syncfusion:SfScheduler x:Name="schedule" 
                 ItemsSource="{Binding Events}"
                 EnableReminder="True">
   </syncfusion:SfScheduler>
@@ -145,7 +145,7 @@ Map those properties of the `Meeting` class with the [SfScheduler](https://help.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 17 18 19 20" %}
- <syncfusion:SfScheduler x:Name="Schedule" 
+ <syncfusion:SfScheduler x:Name="schedule" 
                 ItemsSource="{Binding Events}"
                 EnableReminder="True">
             <syncfusion:SfScheduler.AppointmentMapping>

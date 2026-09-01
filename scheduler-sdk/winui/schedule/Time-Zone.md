@@ -1204,7 +1204,7 @@ Set the specific time zone to schedule using the [TimeZone](https://help.syncfus
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3"  %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        TimeZone="Central America Standard Time">
 </scheduler:SfScheduler>

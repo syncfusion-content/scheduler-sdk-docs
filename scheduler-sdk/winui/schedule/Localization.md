@@ -48,7 +48,7 @@ N>
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        CalendarIdentifier="HijriCalendar" />
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
@@ -116,7 +116,7 @@ You can localize the scheduler using the [Language](https://docs.microsoft.com/e
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        Language="fr-FR" />
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}

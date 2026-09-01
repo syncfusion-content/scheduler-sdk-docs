@@ -38,7 +38,7 @@ Customize the interval width of timeslots in the Timeline views by setting the [
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             TimeIntervalSize="120"/>
@@ -61,7 +61,7 @@ The `Timeline workweek` view displays exactly the defined working days on Schedu
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
              NonWorkingDays="Monday,Tuesday"/>
@@ -82,7 +82,7 @@ The default values for the `StartHour` and `EndHour` are 0 and 24 to show all th
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             StartHour="8"
@@ -113,7 +113,7 @@ Change the day’s count of timeslots in the timeline view by setting the [DaysC
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="TimelineDay">
+<scheduler:SfScheduler x:Name="schedule" ItemsSource="{Binding Appointments}" ViewType="TimelineDay">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             DaysCount="2"/>
@@ -132,7 +132,7 @@ Disable the interaction for certain dates in the scheduler `TimelineMonth` view 
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineMonth">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineMonth">
 </scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
@@ -271,7 +271,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
             </Grid>
         </DataTemplate>
     </Grid.Resources>
-    <scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+    <scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
         <scheduler:SfScheduler.TimelineViewSettings>
             <scheduler:TimelineViewSettings  
                             SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
@@ -305,7 +305,7 @@ The WinUI scheduler time interval width can be adjusted based on the screen heig
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             TimeIntervalSize="-1"/>
@@ -326,7 +326,7 @@ Customize the size of the time ruler view where the labels mentioning the time a
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings   
             TimeRulerSize="100">
@@ -397,7 +397,7 @@ Customize the date and day format of ViewHeader by using the [ViewHeaderDateForm
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
      <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             ViewHeaderDateFormat="dd-MMMM"/>
@@ -419,7 +419,7 @@ Customize the height of the ViewHeader in timeline views by setting the [ViewHea
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings
             ViewHeaderHeight="100"/>
@@ -469,7 +469,7 @@ Customize the default appearance of view header by setting the [ViewHeaderTempla
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>
-    <scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+    <scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
         <scheduler:SfScheduler.TimelineViewSettings>
             <scheduler:TimelineViewSettings 
                 ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
@@ -485,7 +485,7 @@ Customize the height of the appointment in `TimelineViews` using the [TimelineAp
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="TimelineWeek">
+<scheduler:SfScheduler x:Name="schedule" ViewType="TimelineWeek">
     <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             TimelineAppointmentHeight="100">
@@ -507,7 +507,7 @@ To enhance interaction with a scheduler's appointments, you can customize the sp
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ViewType="TimelineWeek">
  <scheduler:SfScheduler.TimelineViewSettings>
      <scheduler:TimelineViewSettings CellBottomPadding="30" />
