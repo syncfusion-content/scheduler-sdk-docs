@@ -37,7 +37,7 @@ this.calendarEdit.MouseOverBorderBrush = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the default and mouse hover background of CalendarEdit](Appearance_images/Foreground.png)
+![Changed the default and mouse hover background of WPF Calendar](Appearance_images/Foreground.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Appearance)
 
