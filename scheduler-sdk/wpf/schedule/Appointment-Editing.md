@@ -163,7 +163,7 @@ To disable appointment editing functionality, set [AppointmentEditFlag](https://
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
         <syncfusion:SfScheduler
-            x:Name="Schedule"
+            x:Name="schedule"
            AppointmentEditFlag="None">
         </syncfusion:SfScheduler>
     </Grid>
@@ -217,7 +217,7 @@ Scheduler supports disabling the appointment resizing by setting [AppointmentEdi
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         AppointmentEditFlag="Add,DragDrop,Edit">
         </syncfusion:SfScheduler>
     </Grid>

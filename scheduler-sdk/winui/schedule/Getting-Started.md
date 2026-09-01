@@ -36,7 +36,7 @@ This section provides an overview of working with [WinUI Scheduler](https://www.
     mc:Ignorable="d">
 
     <Grid>
-        <scheduler:SfScheduler x:Name="Schedule" ViewType="Month" />
+        <scheduler:SfScheduler x:Name="schedule" ViewType="Month" />
     </Grid>
 </Window>
 
@@ -70,7 +70,7 @@ The [WinUI Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sc
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
- <scheduler:SfScheduler x:Name="Schedule" 
+ <scheduler:SfScheduler x:Name="schedule" 
                         ViewType="Month">
  </scheduler:SfScheduler>
 {% endhighlight %}
@@ -330,7 +330,7 @@ Map those properties of the `Meeting` class with our `WinUI Scheduler` control b
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9 10 11 12" %}
-<scheduler:SfScheduler x:Name="Schedule">
+<scheduler:SfScheduler x:Name="schedule">
     <scheduler:SfScheduler.AppointmentMapping>
         <scheduler:AppointmentMapping
             Subject="EventName"
@@ -361,7 +361,7 @@ Schedule.AppointmentMapping = appointmentMapping;
 {% endtabs %}
 
 #### Bind item source for Scheduler
-Create meetings of type `ObservableCollection<Appointments>` and assign those appointments collection `Appointments` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property of `SfScheduler`.
+Create meetings of type `ObservableCollection<Appointments>` and assign those appointments collection `Appointments` to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property of WinUI Scheduler.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 6" %}
@@ -370,7 +370,7 @@ Create meetings of type `ObservableCollection<Appointments>` and assign those ap
     <Grid.DataContext>
         <local:SchedulerViewModel/>
     </Grid.DataContext>
-    <scheduler:SfScheduler x:Name="Schedule" 
+    <scheduler:SfScheduler x:Name="schedule" 
                            ItemsSource="{Binding Appointments}" 
                            ViewType="Month"/>
 </Grid>
@@ -386,11 +386,11 @@ N> [View sample in GitHub]()
 
 ## Change first day of week
 
-The WinUI Scheduler control will be rendered with `Sunday` as the first day of the week but customize it to any day by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of `SfScheduler`.
+The WinUI Scheduler control will be rendered with `Sunday` as the first day of the week but customize it to any day by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_FirstDayOfWeek) property of WinUI Scheduler.
 
 {% tabs %}  
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        FirstDayOfWeek="Monday">
 </scheduler:SfScheduler>    
 {% endhighlight %}

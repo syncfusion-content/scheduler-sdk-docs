@@ -53,7 +53,7 @@ To add the control manually in XAML page, follow the given steps:
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month"/>
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Month"/>
     </Grid>
 </Window>
 {% endhighlight %}
@@ -95,7 +95,7 @@ The [WPF Scheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Schedu
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month"/>
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Month"/>
     </Grid>
 </Window>
 {% endhighlight %}  
@@ -384,7 +384,7 @@ Map the properties of the `Meeting` class with the WPF Scheduler (SfScheduler) c
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule">
+        <syncfusion:SfScheduler x:Name="schedule">
             <syncfusion:SfScheduler.AppointmentMapping>
                 <syncfusion:AppointmentMapping
                     Subject="EventName"
@@ -425,7 +425,7 @@ Create meetings of type `ObservableCollection<Events>` and assign the appointmen
     <Window.DataContext>
         <local:ScheduleViewModel/>
     </Window.DataContext>
-    <syncfusion:SfScheduler x:Name="Schedule"
+    <syncfusion:SfScheduler x:Name="schedule"
             ItemsSource="{Binding Events}"
             ViewType="Month">
     </syncfusion:SfScheduler>
@@ -451,7 +451,7 @@ WPF Scheduler (SfScheduler) control will be rendered with `Sunday` as the first 
    . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" FirstDayOfWeek="Tuesday"/> 
+        <syncfusion:SfScheduler x:Name="schedule" FirstDayOfWeek="Tuesday"/> 
     </Grid>
 </Window>
 {% endhighlight %}   
@@ -474,7 +474,7 @@ The Scheduler supports showing the busy indicator by using the [ShowBusyIndicato
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-       <syncfusion:SfScheduler x:Name="Schedule"
+       <syncfusion:SfScheduler x:Name="schedule"
                 ShowBusyIndicator="True"
                 ViewType="Month">
         </syncfusion:SfScheduler>

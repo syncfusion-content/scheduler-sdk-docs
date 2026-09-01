@@ -71,7 +71,7 @@ You can use the `Forward` method for viewing the next immediate visible dates in
 >**Note: - Date can be navigated until it reaches the Min Max date.**
 
 ### Backward
-You can use the `Backward` method for viewing the previous immediate visible dates in the `SfSchedule`. It will move to previous month if the schedule view is month, similarly it will move to previous week for week view and previous day for day view.
+You can use the `Backward` method for viewing the previous immediate visible dates in the `UWP Scheduler`. It will move to previous month if the schedule view is month, similarly it will move to previous week for week view and previous day for day view.
 
 {% highlight c# %} 
 

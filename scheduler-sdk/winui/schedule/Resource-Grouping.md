@@ -19,7 +19,7 @@ N> No resource view will be displayed even the resource added using the [Resourc
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        ResourceGroupType="Resource"
                        ResourceCollection="{Binding ResourceCollection}">
@@ -82,7 +82,7 @@ The [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        ResourceGroupType="Date">
 </scheduler:SfScheduler>
@@ -281,7 +281,7 @@ Map those properties of the `Meeting` class to schedule appointments by using th
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8" %}
-<scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
          <scheduler:SfScheduler.AppointmentMapping>
             <scheduler:AppointmentMapping
             Subject="EventName"
@@ -328,7 +328,7 @@ The [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.S
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        ResourceGroupType="Resource">
    <scheduler:SfScheduler.DaysViewSettings>
@@ -349,7 +349,7 @@ The [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="TimelineWeek"
                        ResourceGroupType="Resource">
    <scheduler:SfScheduler.TimelineViewSettings>
@@ -424,7 +424,7 @@ The `DaysViewSettings` applicable for Day, Week, and WorkWeek views. By default,
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        ResourceGroupType="Resource">
    <scheduler:SfScheduler.DaysViewSettings>
@@ -447,7 +447,7 @@ The [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="TimelineWeek"
                        ResourceGroupType="Resource">
    <scheduler:SfScheduler.TimelineViewSettings>
@@ -548,7 +548,7 @@ The resource appearance customization can be achieved by using the [ResourceHead
          </Grid>
       </DataTemplate>
    </Grid.Resources>
-   <scheduler:SfScheduler x:Name="Schedule"  
+   <scheduler:SfScheduler x:Name="schedule"  
                           ViewType="Week"
                           ResourceGroupType="Resource" 
                           ResourceCollection="{Binding ResourceCollection}"
@@ -614,7 +614,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
       <Grid.DataContext>
          <local:BindingViewModel/>
       </Grid.DataContext>
-        <scheduler:SfScheduler x:Name="Schedule"
+        <scheduler:SfScheduler x:Name="schedule"
                                 ViewType="Week"
                                 ResourceGroupType="Resource}"
                                 ResourceCollection="{Binding Resources}"

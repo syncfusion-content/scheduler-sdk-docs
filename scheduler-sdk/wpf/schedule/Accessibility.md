@@ -279,7 +279,7 @@ Reminder appointments selected <br/><br/></td><td>subject Selected appointment i
 
 ## Keyboard navigation
 
-The `SfScheduler` supports selection using keyboard interactions.
+The `WPF Scheduler` supports selection using keyboard interactions.
 
 #### Day, Week and WorkWeek views
 

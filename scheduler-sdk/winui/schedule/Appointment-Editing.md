@@ -162,7 +162,7 @@ To disable appointment editing functionality, Set the [AppointmentEditFlag](http
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        AppointmentEditFlag="None">
 </scheduler:SfScheduler> 
@@ -214,7 +214,7 @@ The Scheduler supports disabling the appointment resizing by setting the [Appoin
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week"
                        AppointmentEditFlag="Add,DragDrop,Edit">
 </scheduler:SfScheduler>
