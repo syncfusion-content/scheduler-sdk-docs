@@ -6,7 +6,7 @@ platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
 ---
-# Customizing DropDown in UWP TimePicker (SfTimePicker)
+# Customizing DropDown in UWP TimePicker
 
 ## DropDown height
 
