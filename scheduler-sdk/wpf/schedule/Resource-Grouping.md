@@ -223,7 +223,7 @@ schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
-#### Assign resource object collection
+### Assign resource object collection
 
 Add the resources of `Employee` collection that can be assigned to the scheduler using the `ResourceCollection` property which is of `IEnumerable` type. Also add or remove scheduler resources dynamically.
 
@@ -325,7 +325,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 Customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_DaysViewSettings)  or [TimelineViewSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimelineViewSettings) in `SfScheduler`. 
 
-#### Resource header size in days view
+### Resource header size in days view
 
 `DaysViewSettings` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 50.
 
@@ -443,7 +443,7 @@ Customize the number of visible resources in day, week, workweek, timeline day, 
 
 N> If the visible resource count exceeds the schedule `ResourceCollection` count, then the schedule `ResourceCollection` count will be displayed. 
 
-#### Visible resource count in days view
+### Visible resource count in days view
 
 `DaysViewSettings` applicable for `Day`, `Week` and `WorkWeek` views. By default, value of this property is set to 3.
 {% tabs %}
@@ -499,7 +499,7 @@ schedule.TimelineViewSettings.VisibleResourceCount = 2;
 
 Special time region can be created based on the resources in day, week, workweek, timeline day, timeline week, timeline workweek and timeline month views.
 
-#### Assign resources to special time regions in days view
+### Assign resources to special time regions in days view
 
 {% tabs %}
 {% highlight c# %}
@@ -556,7 +556,7 @@ N>[View sample in GitHub](https://github.com/SyncfusionExamples/resource-view-su
 
 Resource UI customization using a template and template selectors support.
 
-#### Customize resource appearance using ResourceHeaderTemplate
+### Customize resource appearance using ResourceHeaderTemplate
 
 {% tabs %}
 {% highlight xaml %}

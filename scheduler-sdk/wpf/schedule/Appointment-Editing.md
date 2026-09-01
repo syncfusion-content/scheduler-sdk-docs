@@ -26,7 +26,7 @@ Appointment editor window
 
 Edit the appointments in appointment editor window. This changes will be saved back in appointment and mapped data object when using data binding. 
 
-#### Edit recurring appointment
+### Edit recurring appointment
 Scheduler supports editing the recurrence appointment. The following window will appear when the recurrence appointment is edited to select, whether to edit only the particular occurrence or appointment series.
 
 ![WPF Scheduler editing recurrence appointment](Appointment-Editing_Images/Editing-Recurrence-Appointment.png)
@@ -113,7 +113,7 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 N>
 * The basic editors such that `Subject`, `Location`, `Start Hour` and `End Hour` of the scheduler appointment editor will not be collapsed.
 
-#### AppointmentEditorClosing event
+### AppointmentEditorClosing event
 When the appointment editor window is closed after adding or editing the schedule appointment, Scheduler notifies by [AppointmentEditorClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
 
 [AppointmentEditorClosingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorClosingEventArgs.html) has the following members which provides the information for [AppointmentEditorClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) event.
@@ -177,7 +177,7 @@ Scheduler supports two ways to remove an appointment.
 1. Pressing <kbd>delete</kbd> key.
 2. Using appointment editor window.
 
-#### Delete recurring appointment
+### Delete recurring appointment
 Scheduler supports deleting the recurrence appointment. The following window will appear when the user deletes the recurrence appointment. Select the delete option to make the changes for occurrence or appointment series.
 
 ![WPF Scheduler deleting recurrence appointment](Appointment-Editing_Images/Deleting-Recurrence-Appointment.png)
@@ -208,7 +208,7 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 ## Appointment Resizing
 Scheduler supports resizing the selected appointment. This support is available for all views except the 'Month' view.
 
-#### Disable appointment resize
+### Disable appointment resize
 Scheduler supports disabling the appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `Resize`. In this case, appointment resizing cannot be performed.
 
 {% tabs %}

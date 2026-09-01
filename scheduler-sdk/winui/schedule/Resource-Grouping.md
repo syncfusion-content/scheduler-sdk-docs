@@ -139,7 +139,7 @@ N>
 * When `ResourceGroupType` is set to `None,` the resource view will be collapsed and all scheduler DataSource events will be displayed.
 * Also add or remove the appointment resources dynamically.
 
-#### Multiple resource sharing
+### Multiple resource sharing
 
 Multiple resources can share the same events or appointments. If the appointment details are edited or updated, then the changes will be reflected on all other shared instances simultaneously.
 
@@ -230,7 +230,7 @@ this.Schedule.ResourceMapping = resourceMapping;
 {% endhighlight %}
 {% endtabs %}
 
-#### Assign resource object collection
+### Assign resource object collection
 
 Add the resources of `Employee` collection that can be assigned to the scheduler using the [ResourceCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) property which is of `IEnumerable` type. Also add or remove scheduler resources dynamically.
 
@@ -322,7 +322,7 @@ this.Schedule.ItemsSource = Meetings;
 
 Customize the resource header size in the day, week, workweek, timeline day, timeline week, timeline workweek, and timeline month views by using the [ResourceHeaderSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ResourceHeaderSize) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) or [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) in SfScheduler.
 
-#### Resource header height in days view
+### Resource header height in days view
 
 The [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) is applicable for `Day,` `Week,` and `WorkWeek` views. By default, the value of this property is set to `50.`
 
@@ -418,7 +418,7 @@ Customize the number of visible resources in the day, week, workweek, timeline d
 
 N> If the visible resource count exceeds the count of schedule `ResourceCollection` count then the schedule `ResourceCollection` count will be displayed.
 
-#### Visible resource count in days view
+### Visible resource count in days view
 
 The `DaysViewSettings` applicable for Day, Week, and WorkWeek views. By default, the value of this property is set to `3.`
 
@@ -494,7 +494,7 @@ N> The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 
 ![assign-resources-to-special-time-regions-time-basis-in-winui-scheduler](Resource_Images/resources-to-special-time-regions-time-basis-in-winui-scheduler.png)
 
-#### Assign resources to special time regions in timeline view
+### Assign resources to special time regions in timeline view
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
@@ -521,7 +521,7 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 
 The resource appearance customization can be achieved by using the [ResourceHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceHeaderTemplate) and [ResourceHeaderTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceHeaderTemplateSelector) properties of the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
-#### Customize resource appearance using ResourceHeaderTemplate
+### Customize resource appearance using ResourceHeaderTemplate
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="28" %}

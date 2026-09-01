@@ -107,7 +107,7 @@ N> Selection before minimum dates and beyond maximum dates using the `SelectedDa
 ## Programmatically change to adjacent dates
 By default, the date can be navigated to the next and previous views using touch gesture, by swiping the control from right to left and left to right direction. The view can also be changed programmatically using the [Forward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) and [Backward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) methods available in SfScheduler.
 
-#### Forward
+### Forward
 Use the `Forward` method of SfScheduler for viewing the next immediate visible dates in the scheduler. It will move to the next month if the scheduler view is month, similarly it will move to the next week for week view and the next day for day view.
 
 {% tabs %}

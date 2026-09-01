@@ -533,7 +533,7 @@ N> If an occurrence at the specified date is deleted or not present, then the `G
 ## Recurrence pattern exceptions
 Delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
-#### Recurrence exception dates
+### Recurrence exception dates
 Delete any occurrence appointment, which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.
 
 #### Recurrence exception appointment

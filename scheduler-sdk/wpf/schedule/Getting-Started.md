@@ -27,7 +27,7 @@ In this section, create a WPF application with the WPF Scheduler (SfScheduler) c
 * [Adding control manually in XAML](#adding-control-manually-in-xaml)
 * [Adding control manually in C#](#adding-control-manually-in-c)  
 
-#### Creating project
+### Creating project
 In Visual Studio, create a new WPF project to show the features of the WPF Scheduler (SfScheduler) control and add the following namespace to the added assemblies.
 
 Assembly: `Syncfusion.SfScheduler.WPF`

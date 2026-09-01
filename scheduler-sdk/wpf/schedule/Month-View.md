@@ -387,7 +387,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 ![WPF Scheduler month view BlackoutDates](Month-View_Images/wpf-scheduler-blackoutdates.png)
 
-#### Customize blackout dates appearance 
+### Customize blackout dates appearance 
  Customize the blacked out dates (trailing, leading, normal days, and current date) by using the setting style.
 
 {% tabs %}
@@ -451,7 +451,7 @@ this.Schedule.MonthViewSettings.ShowWeekNumber = true;
 
 ![WPF Scheduler month view ShowWeekNumber](Month-View_Images/wpf-scheduler-showweeknumber.png)
 
-#### Customize week number template
+### Customize week number template
 Customize the default appearance of a week number template in the month view by using the [WeekNumberTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_WeekNumberTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -486,7 +486,7 @@ Customize the default appearance of a week number template in the month view by 
 
 ## Customize month cell appearance 
 
-#### Using the DataTemplate 
+### Using the DataTemplate 
 Customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -585,7 +585,7 @@ using Syncfusion.UI.Xaml.Scheduler;
 
 ## Customize month view appointments
 
-#### Using the DataTemplate
+### Using the DataTemplate
 Customize the default appearance of the month cell appointment by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) property of `MonthViewSettings`.
 
  {% tabs %}
