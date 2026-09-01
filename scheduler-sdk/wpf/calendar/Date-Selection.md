@@ -60,7 +60,7 @@ this.calendarEdit.Date = new DateTime(2020, 08, 25);
 {% endhighlight %}
 {% endtabs %}
 
-![Date selected programmatically from the CalendarEdit](Getting-Started_images/Date_programmatically.png)
+![Date selected programmatically from the WPF Calendar](Getting-Started_images/Date_programmatically.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
