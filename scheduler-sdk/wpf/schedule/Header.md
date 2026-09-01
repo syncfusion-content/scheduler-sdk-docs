@@ -60,7 +60,7 @@ this.Schedule.HeaderDateFormat = "MMM/yyyy";
 
 ## Appearance customization
 
-#### Customize header appearance using Style
+### Customize header appearance using Style
 Style the Scheduler header appearance using [SchedulerHeaderControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerHeaderControl.html) in scheduler. Change the background color, textStyle, and borderBrush etc. by setting style property for `SchedulerHeaderControl`.
 
 {% tabs %}

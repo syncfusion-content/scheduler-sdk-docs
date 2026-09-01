@@ -70,7 +70,7 @@ The scheduler header appearance can be achieved by using the `HeaderTemplate` pr
 
 ![customize-the-scheduler-header-appearance-in-winui-scheduler-timeslot-view](Header_Images/customize-the-scheduler-header-appearance-in-winui-scheduler.png)
 
-#### Customize header appearance using DataTemplate
+### Customize header appearance using DataTemplate
 
 Customize the header appearance of scheduler by using the [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderTemplate) property of SfScheduler.
 
