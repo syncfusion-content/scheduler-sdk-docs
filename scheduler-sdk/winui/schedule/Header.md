@@ -17,7 +17,7 @@ Change the scheduler header height by using the [HeaderHeight](https://help.sync
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        HeaderHeight="100">
 </scheduler:SfScheduler>
 {% endhighlight %}
@@ -34,7 +34,7 @@ Change the Scheduler header date format of scheduler by using the [HeaderDateFor
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        HeaderDateFormat="MMM-yyyy">
 </scheduler:SfScheduler>
 {% endhighlight %}
@@ -62,7 +62,7 @@ The scheduler header appearance can be achieved by using the `HeaderTemplate` pr
         </Style>
     </Grid.Resources>
 
-    <scheduler:SfScheduler x:Name="Schedule">
+    <scheduler:SfScheduler x:Name="schedule">
     </scheduler:SfScheduler>
 </Grid>
 {% endhighlight %}
@@ -70,13 +70,13 @@ The scheduler header appearance can be achieved by using the `HeaderTemplate` pr
 
 ![customize-the-scheduler-header-appearance-in-winui-scheduler-timeslot-view](Header_Images/customize-the-scheduler-header-appearance-in-winui-scheduler.png)
 
-#### Customize header appearance using DataTemplate
+### Customize header appearance using DataTemplate
 
 Customize the header appearance of scheduler by using the [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_HeaderTemplate) property of SfScheduler.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
-<scheduler:SfScheduler x:Name="Schedule">
+<scheduler:SfScheduler x:Name="schedule">
     <scheduler:SfScheduler.HeaderTemplate>
         <DataTemplate>
                 <TextBlock FontStyle="Italic"

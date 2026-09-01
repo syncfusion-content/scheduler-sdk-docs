@@ -30,7 +30,7 @@ documentation: ug
             schedule.Appointments = scheduleAppointmentCollection;
 {% endhighlight %}
 
-![UWP SfSchedule displays meeting time](Appointments_images/appointment.png)
+![UWP Scheduler displays meeting time](Appointments_images/appointment.png)
 
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
@@ -135,7 +135,7 @@ You can schedule meetings for a day by setting `From` and `To` of `Meeting` clas
 
 {% endhighlight %} 
 
-![UWP SfSchedule displays applying color in scheduled time](Appointments_images/custom.png)
+![UWP Scheduler displays applying color in scheduled time](Appointments_images/custom.png)
 
 You can get the custom appointment in `ScheduleTappedEventArgs` of `ScheduleTapped` event in recurrence appointment.
 
@@ -171,7 +171,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% endhighlight %} 
 
-![UWP SfSchedule displays applied colors in all scheduled date](Appointments_images/span.png)
+![UWP Scheduler displays applied colors in all scheduled date](Appointments_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -212,7 +212,7 @@ of the respective view settings.
 
 {% endhighlight %} 
 
-![UWP SfSchedule displays all day appointment](Appointments_images/allday.png)
+![UWP Scheduler displays all day appointment](Appointments_images/allday.png)
 
 ## Recurrence Appointment
 Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments. 
@@ -301,7 +301,7 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfus
 
 {% endhighlight %} 
 
-![UWP SfSchedule displays appointment in each two days](Appointments_images/recurrence.png)
+![UWP Scheduler displays appointment in each two days](Appointments_images/recurrence.png)
 
 ## Setting reminders
 Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
@@ -338,7 +338,7 @@ N> Open package.appxmanifest file to the Application UI tab and select “Yes”
 
 {% endhighlight %}
 
-![UWP SfSchedule displays applied colors in remind the appointment schedule](Appointments_images/reminder.png)
+![UWP Scheduler displays applied colors in remind the appointment schedule](Appointments_images/reminder.png)
 
 ## Editing appointment
 The existing appointment can be edited by using the following ways.
@@ -378,7 +378,7 @@ Schedule appointment can be customized by setting appointment style properties s
 
 {% endhighlight %}
 
-![UWP SfSchedule displays editing the appointment details](Appointments_images/style.png)
+![UWP Scheduler displays editing the appointment details](Appointments_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `ScheduleAppointmentStyle` property.
@@ -487,7 +487,7 @@ N> `BorderWidth` value must be set to highlight `SelectionColor`.
 {% endhighlight %} 
 {% endtabs %} 
 
-![UWP SfSchedule displays applied styles for selec the appointment schedule](Appointments_images/selection.png)
+![UWP Scheduler displays applied styles for selec the appointment schedule](Appointments_images/selection.png)
 
 ## Configuring resources
 The Schedule control allows you to define resources that can be assigned to appointments. [Resources](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.Resource.html) let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
@@ -531,7 +531,7 @@ To configure the views based on resources, refer
 •	[Configuring resources in Timeline View.](https://help.syncfusion.com/uwp/scheduler/timelineview#configuring-resources)
 
 
-![UWP SfSchedule displays appointment assigned to the customers](Appointments_images/resource.png)
+![UWP Scheduler displays appointment assigned to the customers](Appointments_images/resource.png)
 
 ## Resources customization
 

@@ -18,7 +18,7 @@ The [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                          ViewType="Week" 
                          ItemsSource="{Binding scheduleAppointmentCollection}">
         </syncfusion:SfScheduler>
@@ -54,7 +54,7 @@ N>
 [View sample in GitHub](https://github.com/SyncfusionExamples/adding-schedule-appointment-collection-to-the-itemsource-of-scheduler-wpf)
 
 ## Scheduler item source and mapping
-The `Scheduler` supports binding any collection that implements the IEnumerable interface to populate appointments. Map the properties in the business object to [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property. The following table shows the mapping property details to `ScheduleAppointment`.
+The `WPF Scheduler` supports binding any collection that implements the IEnumerable interface to populate appointments. Map the properties in the business object to [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) by configuring the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property. The following table shows the mapping property details to `ScheduleAppointment`.
 
 <table>
 <tr><th>Property Name</th><th>Description</th></tr>
@@ -120,7 +120,7 @@ N> You can map those properties of the `Meeting` class to schedule appointment b
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                          ViewType="Week" 
                          ItemsSource="{Binding Meetings}">
             <syncfusion:SfScheduler.AppointmentMapping>
@@ -182,7 +182,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/adding-custom-s
 
 ## Spanned appointments
 
-Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’t block out the time slots in the `SfScheduler`, it will render in [AllDayAppointmentPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AllDayAppointmentPanel.html) exclusively.
+Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’t block out the time slots in the `WPF Scheduler`, it will render in [AllDayAppointmentPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.AllDayAppointmentPanel.html) exclusively.
 
 {%tabs %}
 {% highlight xaml %}
@@ -190,7 +190,7 @@ Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Week"
                         ItemsSource="{Binding Meetings}">
             <syncfusion:SfScheduler.AppointmentMapping>
@@ -245,7 +245,7 @@ The all-Day appointment is an appointment that is scheduled for a whole day. It 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week" 
                         ItemsSource="{Binding scheduleAppointmentCollection}">
         </syncfusion:SfScheduler>
@@ -316,7 +316,7 @@ The SfScheduler appointment recurrenceRule is used to populate the required recu
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week" 
                         ItemsSource="{Binding scheduleAppointmentCollection}">
         </syncfusion:SfScheduler>
@@ -383,7 +383,7 @@ N> Map those properties of Meeting class to schedule appointment by using the `A
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
             <syncfusion:SfScheduler.AppointmentMapping>
                 <syncfusion:AppointmentMapping
                 	Subject="EventName"
@@ -486,7 +486,7 @@ var date2 = 6/29/2020;
 #### How to get pattern appointment for the specified occurrence?
 Gets the pattern appointment for the specified occurrence.
 
-To get the pattern appointment by using the following event and passing a parameter as `Scheduler` and Specified `Appointment`.
+To get the pattern appointment by using the following event and passing a parameter as `WPF Scheduler` and Specified `Appointment`.
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Scheduler;
@@ -510,7 +510,7 @@ N>
 #### How to get occurrence appointment at the specified date?
 Gets an occurrence at the specified date within a series of recurring appointments.
 
-To get a specific appointment by using the following event and passing a parameter as `Scheduler`, Specified `Appointment` and specified `DateTime`.
+To get a specific appointment by using the following event and passing a parameter as `WPF Scheduler`, Specified `Appointment` and specified `DateTime`.
 
 {% tabs %}
 {% highlight c# %}
@@ -533,7 +533,7 @@ N> If an occurrence at the specified date is deleted or not present, then the `G
 ## Recurrence pattern exceptions
 Delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
-#### Recurrence exception dates
+### Recurrence exception dates
 Delete any occurrence appointment, which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.
 
 #### Recurrence exception appointment
@@ -551,7 +551,7 @@ Delete any of occurrence which is exception from recurrence pattern appointment 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week" 
                         ItemsSource="{Binding scheduleAppointmentCollection}">
         </syncfusion:SfScheduler>
@@ -604,7 +604,7 @@ Add an exception appointment which is changed or modified occurrence of the recu
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    <syncfusion:SfScheduler x:Name="Schedule" 
+    <syncfusion:SfScheduler x:Name="schedule" 
                             ViewType="Week" 
                             ItemsSource="{Binding scheduleAppointmentCollection}">
     </syncfusion:SfScheduler>
@@ -699,7 +699,7 @@ Map this custom property `RecurrenceExceptionDates` of custom class with the `Re
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    <syncfusion:SfScheduler x:Name="Schedule" 
+    <syncfusion:SfScheduler x:Name="schedule" 
                             ViewType="Week"
                             ItemsSource="{Binding customAppointmentCollection}>
         <syncfusion:SfScheduler.AppointmentMapping>
@@ -781,7 +781,7 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    <syncfusion:SfScheduler x:Name="Schedule" 
+    <syncfusion:SfScheduler x:Name="schedule" 
                             ViewType="Week" 
                             ItemsSource="{Binding RecursiveAppointmentCollection}">
         <syncfusion:SfScheduler.AppointmentMapping>
@@ -863,7 +863,7 @@ To enable tooltip for the scheduler appointments, use the [EnableToolTip](https:
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    <syncfusion:SfScheduler x:Name="Schedule"
+    <syncfusion:SfScheduler x:Name="schedule"
                             EnableToolTip="True">
     </syncfusion:SfScheduler>
 </Window>
@@ -888,7 +888,7 @@ The following code example shows the usage of DataTemplate.
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    <syncfusion:SfScheduler x:Name="Schedule"
+    <syncfusion:SfScheduler x:Name="schedule"
                             EnableToolTip="True">
         <syncfusion:SfScheduler.ToolTipTemplate>
             <DataTemplate>
@@ -955,7 +955,7 @@ The default appearance of schedule appointment can be customized in all the view
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-    <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ItemsSource="{Binding Appointments}">
+    <syncfusion:SfScheduler x:Name="schedule" ViewType="Week" ItemsSource="{Binding Appointments}">
         <syncfusion:SfScheduler.DaysViewSettings>
             <syncfusion:DaysViewSettings>
                 <syncfusion:DaysViewSettings.AppointmentTemplate>

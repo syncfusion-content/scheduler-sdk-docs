@@ -49,7 +49,7 @@ Alternatively you can refer SfSchedule in your application by configuring NuGet 
       
 This section explains how to create a simple application using SfSchedule control.This is how the final output will look like on UWP Desktop devices. 
 
-![UWP Schedule](Getting-Started_images/GettingStarted.png) 
+![UWP Scheduler](Getting-Started_images/GettingStarted.png) 
 
 You can download the entire source code of this demo for UWP from    
 here [ScheduleGettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_ScheduleUWP1114729068.zip)    
@@ -129,7 +129,7 @@ Schedule control will be rendered with `Sunday` as the first day of the week, bu
 {% endhighlight %}   
 {% endtabs %}   
 
-![FirstDayOfWeek in UWP Schedule](Getting-Started_images/FirstDayOfWeek.png) 
+![FirstDayOfWeek in UWP Scheduler](Getting-Started_images/FirstDayOfWeek.png) 
 
 ### Day View    
      
@@ -148,7 +148,7 @@ DayView is used to display a single day, current day will be visible by default.
 {% endhighlight %}    
 {% endtabs %}    
 
-![Day view in UWP Schedule](Getting-Started_images/DayView.png) 
+![Day view in UWP Scheduler](Getting-Started_images/DayView.png) 
 
 ### Week View    
   
@@ -167,7 +167,7 @@ DayView is used to display a single day, current day will be visible by default.
 {% endhighlight %}    
 {% endtabs %}    
 
-![Week view in UWP Schedule](Getting-Started_images/WeekView.png) 
+![Week view in UWP Scheduler](Getting-Started_images/WeekView.png) 
 
 ### Work Week View    
   
@@ -188,7 +188,7 @@ DayView is used to display a single day, current day will be visible by default.
  
 >**Notes**: Appointments in non-working days will not be displayed.   
 
-![Work week view in UWP Schedule](Getting-Started_images/WorkWeekView.png) 
+![Work week view in UWP Scheduler](Getting-Started_images/WorkWeekView.png) 
 
 ### Month View    
      
@@ -207,7 +207,7 @@ DayView is used to display a single day, current day will be visible by default.
 {% endhighlight %}    
 {% endtabs %}    
      
-![Month view in UWP Schedule](Getting-Started_images/MonthView.png)  
+![Month view in UWP Scheduler](Getting-Started_images/MonthView.png)  
  
 ### TimeLine View    
      
@@ -226,7 +226,7 @@ DayView is used to display a single day, current day will be visible by default.
 {% endhighlight %}    
 {% endtabs %}    
 
-![Timeline view in UWP Schedule](Getting-Started_images/TimeLineView.png) 
+![Timeline view in UWP Scheduler](Getting-Started_images/TimeLineView.png) 
 
 ## Binding data to SfSchedule control    
    
@@ -445,7 +445,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
        
 {% endhighlight %} 
 
-![Setting data source in UWP Schedule](Getting-Started_images/GettingStarted.png) 
+![Setting data source in UWP Scheduler](Getting-Started_images/GettingStarted.png) 
 
 ### Dispose SfSchedule
 

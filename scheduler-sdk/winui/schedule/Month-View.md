@@ -17,7 +17,7 @@ The Scheduler month view displays a divided agenda view that is used to show the
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
     <scheduler:SfScheduler.MonthViewSettings>
         <scheduler:MonthViewSettings 
@@ -43,7 +43,7 @@ Customize the month agenda view height from the Scheduler by using the [AgendaVi
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -73,7 +73,7 @@ Handle the Scheduler month view appointment display by using the [AppointmentDis
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
        <scheduler:SfScheduler.MonthViewSettings>
             <scheduler:MonthViewSettings 
@@ -95,7 +95,7 @@ Customize the number of appointments displayed in a month cell using the [Appoin
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
- <scheduler:SfScheduler x:Name="Schedule"
+ <scheduler:SfScheduler x:Name="schedule"
                         ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -123,7 +123,7 @@ The month view of a Scheduler can be oriented in both horizontal and vertical di
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings
@@ -145,7 +145,7 @@ Customize the date format of the scheduler month view by using the [DateFormat](
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -171,7 +171,7 @@ Customize the day format of the Scheduler view header by using the [ViewHeaderDa
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -193,7 +193,7 @@ Customize the view header height by using the [ViewHeaderHeight](https://help.sy
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -215,7 +215,7 @@ Customize the default appearance of the month view header by using the [ViewHead
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12 13" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings>
@@ -242,7 +242,7 @@ Customize the leading and trailing days visibility of the scheduler month view b
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                         ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings
@@ -267,7 +267,7 @@ The number of weeks visible in the month view can be changed by setting the [`Nu
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
         <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"
@@ -299,7 +299,7 @@ Disable the interaction for certain dates in the scheduler month view by adding 
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
 </scheduler:SfScheduler>
 {% endhighlight %}
@@ -335,7 +335,7 @@ Display the week number of a year in the scheduler month view by setting the [Sh
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -355,7 +355,7 @@ Customize the default appearance of a week number template in the month view by 
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings 
@@ -384,13 +384,13 @@ Customize the default appearance of a week number template in the month view by 
 
 The month cell appearance customization can be achieved by using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
-#### Using the DataTemplate
+### Using the DataTemplate
 
 Customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings>
@@ -442,7 +442,7 @@ The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the v
                     </Grid>
                </DataTemplate>
      </Grid.Resources>
-     <scheduler:SfScheduler x:Name="Schedule"
+     <scheduler:SfScheduler x:Name="schedule"
                             ViewType="Month" >
           <scheduler:SfScheduler.MonthViewSettings>
                <scheduler:MonthViewSettings AppointmentDisplayMode="Indicator" 
@@ -491,13 +491,13 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 
 The month view appointments appearance customization can be achieved by using the [AppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
-#### Using the DataTemplate
+### Using the DataTemplate
 
 Customize the default appearance of the month cell appointment by using the [AppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"  %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" >
      <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings>
@@ -560,7 +560,7 @@ The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the v
                </StackPanel>
           </DataTemplate>
      </Grid.Resources>
-     <scheduler:SfScheduler x:Name="Schedule"
+     <scheduler:SfScheduler x:Name="schedule"
                             ViewType="Month" >
           <scheduler:SfScheduler.MonthViewSettings>
                <scheduler:MonthViewSettings 
@@ -608,7 +608,7 @@ You can customize the default appearance of more appointments indicator in a mon
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Month">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
           <scheduler:MonthViewSettings>
                <scheduler:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
@@ -633,7 +633,7 @@ To enhance interaction with a scheduler's appointments, you can customize the sp
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ViewType="Month">
  <scheduler:SfScheduler.MonthViewSettings>
      <scheduler:MonthViewSettings CellRightPadding="30" />

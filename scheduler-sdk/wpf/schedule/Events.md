@@ -36,7 +36,7 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month"
                         CellTapped="Scheduler_CellTapped" >
         </syncfusion:SfScheduler>  
@@ -63,7 +63,7 @@ The [CellDoubleTapped](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sch
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						CellDoubleTapped="Scheduler_CellDoubleTapped">
         </syncfusion:SfScheduler>
@@ -90,7 +90,7 @@ The [CellLongPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sche
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						CellLongPressed="Schedule_CellLongPressed">
         </syncfusion:SfScheduler>
@@ -117,7 +117,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Sch
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						SelectionChanged="Schedule_SelectionChanged">
         </syncfusion:SfScheduler>
@@ -161,7 +161,7 @@ The [SelectionChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.S
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						SelectionChanging="Schedule_SelectionChanging">
         </syncfusion:SfScheduler>
@@ -235,7 +235,7 @@ The [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusi
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						ViewHeaderCellTapped="Schedule_ViewHeaderCellTapped">
         </syncfusion:SfScheduler>
@@ -266,7 +266,7 @@ The [HeaderTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						HeaderTapped="Schedule_HeaderTapped">
         </syncfusion:SfScheduler>
@@ -299,7 +299,7 @@ The [WeekNumberTappedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.U
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						WeekNumberTapped="Schedule_WeekNumberTapped">
         </syncfusion:SfScheduler>
@@ -332,7 +332,7 @@ The [AppointmentTappedArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xa
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         ViewType="Month" 
 						AppointmentTapped="Schedule_AppointmentTapped">
         </syncfusion:SfScheduler>

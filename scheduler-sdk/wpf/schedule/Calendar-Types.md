@@ -49,7 +49,7 @@ N>
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                                 CalendarIdentifier="HijriCalendar" />
     </Grid>
 </Window>
