@@ -13,7 +13,7 @@ documentation: ug
 
 The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
 
-#### Month view
+### Month view
 
 <table>
 <tr>
@@ -279,9 +279,9 @@ Reminder appointments selected <br/><br/></td><td>subject Selected appointment i
 
 ## Keyboard navigation
 
-The `SfScheduler` supports selection using keyboard interactions.
+The `WPF Scheduler` supports selection using keyboard interactions.
 
-#### Day, Week and WorkWeek views
+### Day, Week and WorkWeek views
 
 <table>
 <tr>

@@ -33,7 +33,7 @@ Customize the interval height of timeslots in day, week, work week views by sett
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings 
                     TimeIntervalSize="120"/>
@@ -61,7 +61,7 @@ The default values for [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings 
                     StartHour="8"
@@ -132,7 +132,7 @@ Enable or disable the touch interaction of `SpecialTimeRegion` using the [CanEdi
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" >
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week" >
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings>
                     <syncfusion:DaysViewSettings.SpecialTimeRegions>
@@ -187,7 +187,7 @@ Enable merging adjacent regions of `SpecialTimeRegion` and show them as a single
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings>
                     <syncfusion:DaysViewSettings.SpecialTimeRegions>
@@ -289,7 +289,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings  SpecialTimeRegionTemplate="{StaticResource specialRegionTemplate}">
                     <syncfusion:DaysViewSettings.SpecialTimeRegions>
@@ -323,7 +323,7 @@ Scheduler time interval height can be adjusted based on screen height by changin
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings 
                     TimeIntervalSize="-1"/>
@@ -350,7 +350,7 @@ Customize the size of the time ruler view where the labels mentioning the time a
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" >
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week" >
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings   
                     TimeRulerSize="100">
@@ -396,7 +396,7 @@ You can customize the number of appointments displayed in an all-day panel using
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings MinimumAllDayAppointmentsCount="3"/>
             </syncfusion:SfScheduler.DaysViewSettings>
@@ -421,7 +421,7 @@ You can customize the default appearance of more appointments indicator in the a
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings>
                     <syncfusion:DaysViewSettings.AllDayMoreAppointmentsIndicatorTemplate>
@@ -442,7 +442,7 @@ You can customize the default appearance of more appointments indicator in the a
 ![all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views](DaysView_Images/all-day-appointment-panel-display-count-appearance-customization-in-WPF-scheduler-days-week-views.png)
 
 ## Time text formatting
-Customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `DayViewSettings` in `Scheduler`.
+Customize the format for the labels mentioning the time, by setting the [TimeRulerFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerFormat) property of `DayViewSettings` in `WPF Scheduler`.
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Scheduler;
@@ -471,7 +471,7 @@ Customize the date and day format of ViewHeader by using the `ViewHeaderDateForm
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings 
                 ViewHeaderDayFormat="dddd"
@@ -492,14 +492,14 @@ Schedule.DaysViewSettings.ViewHeaderDayFormat = "dddd";
 ![View header text formatting in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-text-formatting.png)
 
 ### View header height
-Customize the height of the ViewHeader in a day ,week ,work week views by setting `ViewHeaderHeight` property of `DaysViewSettings` in `SfScheduler`.
+Customize the height of the ViewHeader in a day ,week ,work week views by setting `ViewHeaderHeight` property of `DaysViewSettings` in `WPF Scheduler`.
 {% tabs %}
 {% highlight xaml %}
 <Window 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings
                     ViewHeaderHeight="100"/>
@@ -518,7 +518,7 @@ Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 ![View header height in WPF Scheduler](DaysView_Images/wpf-scheduler-view-header-height.png)
 
 ### View header appearance customization
-Customize the default appearance of view header by setting `ViewHeaderTemplate` property of `DaysViewSettings` in `SfScheduler`.
+Customize the default appearance of view header by setting `ViewHeaderTemplate` property of `DaysViewSettings` in `WPF Scheduler`.
 {% tabs %}
 {% highlight xaml %}
 <Window 
@@ -562,7 +562,7 @@ Customize the default appearance of view header by setting `ViewHeaderTemplate` 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings 
                     ViewHeaderTemplate="{StaticResource viewHeaderTemplate}" />
@@ -585,7 +585,7 @@ To enhance interaction with a scheduler's appointments, you can customize the sp
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week">
             <syncfusion:SfScheduler.DaysViewSettings>
                 <syncfusion:DaysViewSettings CellRightPadding="30"/>

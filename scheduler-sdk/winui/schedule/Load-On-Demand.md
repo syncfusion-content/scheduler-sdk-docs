@@ -22,7 +22,7 @@ The [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        ViewType="Month" 
                        QueryAppointments="Schedule_QueryAppointments" >
 </scheduler:SfScheduler>
@@ -122,7 +122,7 @@ Define a ViewModel class that implements command and handle it by the `CanExecut
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 7" %}
- <scheduler:SfScheduler x:Name="Schedule"  
+ <scheduler:SfScheduler x:Name="schedule"  
                         ViewType="Month"
                         ShowBusyIndicator="{Binding ShowBusyIndicator}"
                         LoadOnDemandCommand="{Binding LoadOnDemandCommand}"
@@ -266,7 +266,7 @@ The `Scheduler` supports showing the busy indicator by using the [ShowBusyIndica
 
 {% tabs %}  
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ShowBusyIndicator="True">
 </scheduler:SfScheduler> 
 {% endhighlight %}   

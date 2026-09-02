@@ -61,13 +61,13 @@ N> Selection before minimum dates and beyond maximum dates using the `SelectedDa
 
 By default, the date can be navigated to next and previous views using touch gesture, and by swiping the control from right to left and left to right direction. The view can be also changed programmatically using the `Forward` and `Backward` methods available in SfScheduler.
 
-#### Forward
+### Forward
 
 Use the [Forward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) method of Scheduler for viewing the next immediate visible dates in the scheduler. It will move to the next month if the scheduler view is month, similarly it will move to the next week for week view and the next day for day view.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week">
 </scheduler:SfScheduler>
 
@@ -90,7 +90,7 @@ Use the [Backward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sched
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule"  
+<scheduler:SfScheduler x:Name="schedule"  
                        ViewType="Week">
 </scheduler:SfScheduler>
 
@@ -113,7 +113,7 @@ You can quickly navigate to the respective day or timeline day view by single-cl
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler  x:Name="Schedule"
+<scheduler:SfScheduler  x:Name="schedule"
                         ViewType="Week"
                         AllowViewNavigation="True">
 </scheduler:SfScheduler>
@@ -133,7 +133,7 @@ You can enable the date picker for the scheduler by using the [ShowDatePickerBut
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<syncfusion:SfScheduler x:Name="Schedule" 
+<syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week"
                         ShowDatePickerButton="True">
 </syncfusion:SfScheduler>
@@ -153,7 +153,7 @@ You can quickly navigate to the different scheduler views by using the [AllowedV
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<syncfusion:SfScheduler x:Name="Schedule" 
+<syncfusion:SfScheduler x:Name="schedule" 
                         AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
 </syncfusion:SfScheduler>                        
 {% endhighlight %}

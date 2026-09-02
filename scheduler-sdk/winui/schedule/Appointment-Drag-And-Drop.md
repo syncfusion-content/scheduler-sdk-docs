@@ -19,7 +19,7 @@ The Scheduler supports disabling the appointment drag and drop by setting the [A
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        AppointmentEditFlag="Add,Edit,Resize">
 </scheduler:SfScheduler>
 {% endhighlight %}

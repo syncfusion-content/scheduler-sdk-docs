@@ -18,7 +18,7 @@ The scheduler month view displays a divided agenda view that is used to show the
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings ShowAgendaView="True"/>
@@ -50,7 +50,7 @@ Customize the month agenda view height from the Scheduler by using the [AgendaVi
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"
@@ -85,7 +85,7 @@ Handle the Scheduler month view appointment display by using the [AppointmentDis
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
                <syncfusion:SfScheduler.MonthViewSettings>
                     <syncfusion:MonthViewSettings AppointmentDisplayMode="Appointment"/>
@@ -113,7 +113,7 @@ Customize the number of appointments displayed in a month cell using the [Appoin
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings AppointmentDisplayMode="Indicator"    
@@ -147,7 +147,7 @@ The month view of a Scheduler can be navigated in both horizontal and vertical d
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings MonthNavigationDirection="Vertical"/>
@@ -175,7 +175,7 @@ Customize the date format of the scheduler month view by using the [DateFormat](
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings DateFormat="dd"/>
@@ -206,7 +206,7 @@ Customize the day format of the Scheduler view header by using the [ViewHeaderDa
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings ViewHeaderDayFormat="dddd"/>
@@ -234,7 +234,7 @@ Customize the view header height by using the [ViewHeaderHeight](https://help.sy
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings ViewHeaderHeight="100"/>
@@ -267,7 +267,7 @@ Customize the default appearance of the month view header by using the [ViewHead
         </Style>
     </Window.Resources>
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings>
@@ -300,7 +300,7 @@ Customize the leading and trailing days visibility of the scheduler month view b
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings
@@ -333,7 +333,7 @@ The number of weeks visible in the month view can be changed by setting the [Num
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                             ViewType="Month">
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSetting NumberOfVisibleWeeks="3"/>
@@ -387,7 +387,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 ![WPF Scheduler month view BlackoutDates](Month-View_Images/wpf-scheduler-blackoutdates.png)
 
-#### Customize blackout dates appearance 
+### Customize blackout dates appearance 
  Customize the blacked out dates (trailing, leading, normal days, and current date) by using the setting style.
 
 {% tabs %}
@@ -432,7 +432,7 @@ Display the week number of a year in the scheduler month view by setting the [Sh
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings ShowWeekNumber="True"/>
@@ -451,7 +451,7 @@ this.Schedule.MonthViewSettings.ShowWeekNumber = true;
 
 ![WPF Scheduler month view ShowWeekNumber](Month-View_Images/wpf-scheduler-showweeknumber.png)
 
-#### Customize week number template
+### Customize week number template
 Customize the default appearance of a week number template in the month view by using the [WeekNumberTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_WeekNumberTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -460,7 +460,7 @@ Customize the default appearance of a week number template in the month view by 
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                         <syncfusion:MonthViewSettings ShowWeekNumber="True">
@@ -486,7 +486,7 @@ Customize the default appearance of a week number template in the month view by 
 
 ## Customize month cell appearance 
 
-#### Using the DataTemplate 
+### Using the DataTemplate 
 Customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -495,7 +495,7 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month">
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings>
@@ -529,7 +529,7 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
             <local:MonthCellTemplateSelector x:Key="monthCellTemplateSelector"/>
     </Window.Resources>   
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                             ViewType="Month"
                             ItemsSource="{Binding Appointments}">          
             <syncfusion:SfScheduler.MonthViewSettings>
@@ -585,7 +585,7 @@ using Syncfusion.UI.Xaml.Scheduler;
 
 ## Customize month view appointments
 
-#### Using the DataTemplate
+### Using the DataTemplate
 Customize the default appearance of the month cell appointment by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) property of `MonthViewSettings`.
 
  {% tabs %}
@@ -594,7 +594,7 @@ Customize the default appearance of the month cell appointment by using the [App
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month" ItemsSource="{Binding Appointments}">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Month" ItemsSource="{Binding Appointments}">
                     <syncfusion:SfScheduler.MonthViewSettings>
                         <syncfusion:MonthViewSettings>
                             <syncfusion:MonthViewSettings.AppointmentTemplate>
@@ -652,7 +652,7 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
         </local:MonthViewAppointmentTemplateSelector>
     </Window.Resources>
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             ViewType="Month" >
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings AppointmentTemplateSelector="{StaticResource appointmentTemplateSelector}"/>
@@ -693,7 +693,7 @@ You can customize the default appearance of more appointments indicator in a mon
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month">
+        <syncfusion:SfScheduler x:Name="schedule" ViewType="Month">
             <syncfusion:SfScheduler.MonthViewSettings>
                 <syncfusion:MonthViewSettings>
                     <syncfusion:MonthViewSettings.MoreAppointmentsIndicatorTemplate>
@@ -722,7 +722,7 @@ To enhance interaction with a scheduler's appointments, you can customize the sp
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                             ViewType="Month">
          <syncfusion:SfScheduler.MonthViewSettings>
              <syncfusion:MonthViewSettings CellRightPadding="30" />

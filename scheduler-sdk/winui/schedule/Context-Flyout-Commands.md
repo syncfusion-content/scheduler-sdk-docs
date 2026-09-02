@@ -27,7 +27,7 @@ N>
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10 11 1213 14 15 16 17" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                        ViewType="Week">
     <scheduler:SfScheduler.CellContextFlyout>
         <MenuFlyout>
@@ -62,7 +62,7 @@ N>
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10 11 12 13 14 15 16" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                                ViewType="Week">
             <scheduler:SfScheduler.AppointmentContextFlyout>
                 <MenuFlyout>

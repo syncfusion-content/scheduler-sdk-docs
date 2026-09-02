@@ -19,7 +19,7 @@ Change the scheduler header height by using [HeaderHeight](https://help.syncfusi
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             HeaderHeight="100" >
         </syncfusion:SfScheduler>
     </Grid>
@@ -43,7 +43,7 @@ Change the Scheduler header date format by using the [HeaderDateFormat](https://
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             HeaderDateFormat="MMM/yyyy">   
         </syncfusion:SfScheduler>
     </Grid>
@@ -60,7 +60,7 @@ this.Schedule.HeaderDateFormat = "MMM/yyyy";
 
 ## Appearance customization
 
-#### Customize header appearance using Style
+### Customize header appearance using Style
 Style the Scheduler header appearance using [SchedulerHeaderControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerHeaderControl.html) in scheduler. Change the background color, textStyle, and borderBrush etc. by setting style property for `SchedulerHeaderControl`.
 
 {% tabs %}
@@ -78,7 +78,7 @@ Style the Scheduler header appearance using [SchedulerHeaderControl](https://hel
         </Style>
     </Window.Resources>
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"/>
+        <syncfusion:SfScheduler x:Name="schedule"/>
     </Grid>
 {% endhighlight %}
 {% endtabs %}
@@ -94,7 +94,7 @@ Customize header appearance of scheduler by using [HeaderTemplate](https://help.
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule">
+        <syncfusion:SfScheduler x:Name="schedule">
             <syncfusion:SfScheduler.HeaderTemplate>
                 <DataTemplate >
                         <TextBlock FontStyle="Italic"

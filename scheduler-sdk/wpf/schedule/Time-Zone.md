@@ -1196,7 +1196,7 @@ Set the specific time zone to schedule using the [TimeZone](https://help.syncfus
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         TimeZone="Central America Standard Time"/>
     </Grid>
 </Window>

@@ -105,7 +105,7 @@ Map those properties of the `Meeting` class to schedule appointment by using the
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.AppointmentMapping>
         <scheduler:AppointmentMapping
             Subject="EventName"
@@ -163,7 +163,7 @@ Spanned Appointment is an appointment that lasts more than 24 hours. It does not
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.AppointmentMapping>
         <scheduler:AppointmentMapping
             Subject="EventName"
@@ -322,7 +322,7 @@ public class Meeting
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9 10 11" %}
-<scheduler:SfScheduler x:Name="Schedule" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ViewType="Week">
     <scheduler:SfScheduler.AppointmentMapping>
         <scheduler:AppointmentMapping
             Subject="EventName"
@@ -462,7 +462,7 @@ N> If an occurrence at the specified date is deleted or not present, then the [G
 
 Delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
-#### Recurrence exception dates
+### Recurrence exception dates
 
 Delete any occurrence appointment, which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.
 
@@ -614,7 +614,7 @@ Map the property `RecurrenceExceptionDates` of business object class with the `R
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                         ViewType="Week">
     <scheduler:SfScheduler.AppointmentMapping>
         <scheduler:AppointmentMapping
@@ -686,7 +686,7 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule" 
+<scheduler:SfScheduler x:Name="schedule" 
                         ViewType="Week">
     <scheduler:SfScheduler.AppointmentMapping>
         <scheduler:AppointmentMapping
@@ -766,7 +766,7 @@ To enable tooltip for the scheduler appointments, use the [EnableToolTip](https:
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
- <scheduler:SfScheduler x:Name="Schedule"
+ <scheduler:SfScheduler x:Name="schedule"
                         EnableToolTip="True">
  </scheduler:SfScheduler>
 {% endhighlight %}
@@ -786,7 +786,7 @@ The following code example shows the usage of DataTemplate.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule"
+<scheduler:SfScheduler x:Name="schedule"
                        EnableToolTip="True">
  <scheduler:SfScheduler.ToolTipTemplate>
     <DataTemplate>
@@ -852,7 +852,7 @@ The default appearance of schedule appointment can be customized in all views by
 
 {%tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
-<scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+<scheduler:SfScheduler x:Name="schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
     <scheduler:SfScheduler.DaysViewSettings>
         <scheduler:DaysViewSettings>
             <scheduler:DaysViewSettings.AppointmentTemplate>

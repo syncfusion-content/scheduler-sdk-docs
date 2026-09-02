@@ -21,7 +21,7 @@ Visible dates can be restricted between a certain range of dates, using [Maximum
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         MinimumDate="2020-05-05 10:0:0">
         </syncfusion:SfScheduler>
     </Grid>
@@ -43,7 +43,7 @@ this.Schedule.MinimumDate = new DateTime(2020, 05, 05, 10, 0, 0);
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         MaximumDate="2020-10-05 10:0:0">
         </syncfusion:SfScheduler>
     </Grid>
@@ -65,7 +65,7 @@ Programmatically navigate the dates in scheduler by using the [DisplayDate](http
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                         DisplayDate="2020-07-05 10:0:0">
         </syncfusion:SfScheduler>
     </Grid>
@@ -89,7 +89,7 @@ Programmatically select the dates in scheduler by using the [SelectedDate](https
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             SelectedDate="2020-07-10 10:0:0">
         </syncfusion:SfScheduler>
     </Grid>
@@ -107,7 +107,7 @@ N> Selection before minimum dates and beyond maximum dates using the `SelectedDa
 ## Programmatically change to adjacent dates
 By default, the date can be navigated to the next and previous views using touch gesture, by swiping the control from right to left and left to right direction. The view can also be changed programmatically using the [Forward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Forward) and [Backward](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_Backward) methods available in SfScheduler.
 
-#### Forward
+### Forward
 Use the `Forward` method of SfScheduler for viewing the next immediate visible dates in the scheduler. It will move to the next month if the scheduler view is month, similarly it will move to the next week for week view and the next day for day view.
 
 {% tabs %}
@@ -116,7 +116,7 @@ Use the `Forward` method of SfScheduler for viewing the next immediate visible d
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <StackPanel>
-        <syncfusion:SfScheduler x:Name="Schedule"
+        <syncfusion:SfScheduler x:Name="schedule"
                             MaximumDate="2020-10-05 10:0:0">
         </syncfusion:SfScheduler>
 
@@ -173,7 +173,7 @@ You can quickly navigate to the respective day or timeline day view by single-cl
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                                 ViewType="Week"
                                 AllowViewNavigation="True">
         </syncfusion:SfScheduler>
@@ -201,7 +201,7 @@ You can enable the date picker for the scheduler by using the [ShowDatePickerBut
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week"
                         ShowDatePickerButton="True">
         </syncfusion:SfScheduler>
@@ -229,7 +229,7 @@ You can quickly navigate to the different scheduler views by using the [AllowedV
     . . .
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
     <Grid>
-        <syncfusion:SfScheduler x:Name="Schedule" 
+        <syncfusion:SfScheduler x:Name="schedule" 
                         ViewType="Week"
                         AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
     </Grid>
