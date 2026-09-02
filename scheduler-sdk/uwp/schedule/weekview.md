@@ -52,7 +52,7 @@ You can customize the interval of timeslots in `WeekView`.
 * [CustomTimeInterval](#customTimeInterval)
 
 ### TimeInterval customization
-You can customize the interval of timeslots in `WeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval) property of `SfSchedule`.
+You can customize the interval of timeslots in `WeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval) property of `UWP Scheduler`.
 {% tabs %}
 {% highlight C# %}
 
@@ -72,7 +72,7 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
 ![timeinterval_week](daymodule_images/timeinterval_week.png)
 
 ### CustomTimeInterval
-You can customize the interval of timeslots in `WeekView` by setting [CustomTimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_CustomTimeInterval) property of `SfSchedule`.
+You can customize the interval of timeslots in `WeekView` by setting [CustomTimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_CustomTimeInterval) property of `UWP Scheduler`.
 {% tabs %}
 {% highlight C# %}
 
