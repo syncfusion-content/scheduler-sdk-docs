@@ -1076,6 +1076,74 @@ N>
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/RecursiveExceptionAppointment/BusinessObject)
 
+## Restrict appointment overlaps
+By default, the Scheduler allows multiple appointments to occupy the same time range. The `AllowOverlap` property controls whether appointments can overlap. When overlap is disabled, the Scheduler validates appointment time ranges and prevents conflicting bookings, helping maintain a conflict-free schedule.
+
+When `AllowOverlap` is `true` (default), multiple appointments can be scheduled within the same time range.
+
+To restrict overlapping appointments, set the `AllowOverlap` property of the Scheduler to `false`. When overlap is disabled, the Scheduler validates appointment ranges during the following operations:
+
+- **Creation** - Prevents adding an appointment whose time range overlaps an existing appointment.
+- **Editing** - Prevents updating an appointment to a time range that conflicts with another appointment.
+- **Drag-and-drop** - Prevents dropping an appointment onto a time slot occupied by another appointment. The appointment reverts to its original position.
+- **Resizing** - Prevents resizing an appointment to a time range that overlaps another appointment. The appointment reverts to its original size and duration.
+
+{% tabs %}
+{% highlight xaml hl_lines="3" %}
+<schedule:SfScheduler x:Name="Scheduler"
+                      View="Week"
+                      AllowOverlap="False"/>
+{% endhighlight %}
+{% highlight c# hl_lines="4" %}
+using Syncfusion.Maui.Scheduler;
+
+SfScheduler scheduler = new SfScheduler();
+scheduler.AllowOverlap = false;
+{% endhighlight %}
+{% endtabs %}
+
+When an overlap is detected during appointment creation, editing, drag-and-drop, or resizing while AllowOverlap is set to false, the Scheduler automatically displays an alert indicating that the appointment cannot be scheduled because it conflicts with an existing appointment.
+
+![Alert-displayed-to-restrict-appointment-overlaps-in-.NET MAUI SfScheduler](images/appointments/alert-to-restrict-appointment-overlap.png)
+
+## Limit concurrent appointments in day views
+
+Limit the number of visible overlapping appointments in the Scheduler `Day`, `Week`, and `WorkWeek` views using the `MaxEventStack` property of `SchedulerDaysView`.
+
+The `MaxEventStack` property specifies the maximum number of overlapping appointments displayed within a time slot. When the number of overlapping appointments exceeds this value, only appointments up to the specified limit are rendered. The remaining appointments are grouped into a more appointments indicator (+N). Tapping this indicator opens a popup that displays the hidden appointments.
+
+{% tabs %}
+{% highlight xaml hl_lines="5 6 7" %}
+<scheduler:SfScheduler x:Name="Scheduler"
+                       View="Day"
+                       AllowedViews="Day,Week,WorkWeek"
+                       AllowOverlap="True">
+    <scheduler:SfScheduler.DaysView>
+        <scheduler:SchedulerDaysView MaxEventStack="2"/>
+    </scheduler:SfScheduler.DaysView>
+</scheduler:SfScheduler>
+{% endhighlight %}
+{% highlight c# hl_lines="6" %}
+using Syncfusion.Maui.Scheduler;
+
+SfScheduler scheduler = new SfScheduler();
+scheduler.View = SchedulerView.Day;
+scheduler.AllowedViews = SchedulerViews.Day | SchedulerViews.Week | SchedulerViews.WorkWeek;
+scheduler.AllowOverlap = true;
+
+scheduler.DaysView = new SchedulerDaysView
+{
+    MaxEventStack = 2
+};
+{% endhighlight %}
+{% endtabs %}
+
+![Limit-concurrent-appointments-in-days-view-in-.NET MAUI SfScheduler](images/appointments/limit-concurrent-appointments-in-days-view.png)
+
+![Hidden-concurrent-events-displayed-in-a-popup-in-.NET MAUI SfScheduler](images/appointments/hidden-concurrent-events-displayed-in-a-popup.png)
+
+N> `MaxEventStack` is supported only when `AllowOverlap` is set to `True`. When `AllowOverlap` is `False`, the Scheduler prevents appointments from overlapping, so the more appointments indicator (+N) is not displayed and `MaxEventStack` has no effect.
+
 ## Suspend and resume the appointment UI rendering
 
 Schedule allows you to suspend and resume the appointment UI update while performing collection changes (Add/Remove/Reset) to improve UI rendering when working with large appointment collections. [SuspendAppointmentViewUpdate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_SuspendAppointmentViewUpdate) method will suspend appointment UI rendering until you resume it when large number of data added dynamically in schedule [AppointmentsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentsSource) to avoid each time updating UI when collection changes. After data added dynamically in schedule, you can call [ResumeAppointmentViewUpdate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ResumeAppointmentViewUpdate) to update the appointment UI rendering. 
