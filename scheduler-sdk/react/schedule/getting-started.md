@@ -371,6 +371,10 @@ export default App;
 {% endhighlight %}
 {% endtabs %}
 
+{% endtabcontent %}
+
+{% endtabcontents %}
+
 ## Troubleshooting
 
 * **The Schedule is not visible** — make sure you have set `width` and `height` on `ScheduleComponent`, and that the theme CSS has been imported.

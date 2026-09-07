@@ -35,6 +35,7 @@ Next, create a new project with following command.
 dotnet new syncfusionblazorwebapp --name MyApp --interactivity Server
 
 {% endhighlight %}
+
 {% endtabs %}
 
 After creating the project, navigate to the main project folder (for example, `MyApp`) and run the following command.
