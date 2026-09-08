@@ -410,6 +410,48 @@ public partial class MainPage : ContentPage
 
 The appearance of minor tick labels can be customized using the `MinorTickTextStyle` property in `DaysView`.
 
+{% tabs %}
+{% highlight xaml hl_lines="9 10 11" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Day">
+        <scheduler:SfScheduler.DaysView>
+            <scheduler:SchedulerDaysView TimeSlotCount="2">
+                <scheduler:SchedulerDaysView.MinorTickTextStyle>
+                    <scheduler:SchedulerTextStyle TextColor="DarkBlue" FontSize="11" FontAttributes="Bold"/>
+                </scheduler:SchedulerDaysView.MinorTickTextStyle>
+            </scheduler:SchedulerDaysView>
+        </scheduler:SfScheduler.DaysView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# hl_lines="10 12 13 14" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.DaysView.TimeSlotCount = 2;
+        this.Scheduler.DaysView.MinorTickTextStyle = new SchedulerTextStyle
+        {
+            TextColor = Colors.DarkBlue,
+            FontSize = 11,
+            FontAttributes = FontAttributes.Bold
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Special time regions
 
 The user interaction such as selection and highlights specific regions of day, week, and workweek views can be restricted by adding the [TimeRegions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeRegions) property of the [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). Set the [StartTime](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerRegionBase.html#Syncfusion_Maui_Scheduler_SchedulerRegionBase_StartTime) and [EndTime](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerRegionBase.html#Syncfusion_Maui_Scheduler_SchedulerRegionBase_EndTime) properties of `TimeRegions` to create a specialTimeRegion. Use the [TimeZone](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeRegion.html#Syncfusion_Maui_Scheduler_SchedulerTimeRegion_TimeZone) property to set the specific timezone for the start and end time of `TimeRegions.`

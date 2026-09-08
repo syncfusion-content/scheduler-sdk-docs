@@ -152,21 +152,40 @@ The add appointment popup is used to create a new appointment by entering detail
 To open the add appointment popup, call the `OpenAddPopup` method and specify the new appointment's start date and time using the `DateTime startDate` parameter. The popup is displayed with the specified start date and time preselected.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="6" %}
+{% highlight xaml %}
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="scheduler"
-                           View="Day"
-                           AppointmentEditorMode="Add,Edit">
-    </scheduler:SfScheduler>
+        <Grid RowDefinitions="0.9*,0.1*">
+            <scheduler:SfScheduler x:Name="Scheduler"
+                                   View="Week"
+                                   AppointmentEditorMode="Add,Edit"/>
+            <Button Grid.Row="1" 
+                    x:Name="Add" 
+                    Text="Add" 
+                    Clicked="Add_Clicked" 
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+        </Grid>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="3" %}
+{% highlight c# hl_lines="13" %}
 using Syncfusion.Maui.Scheduler;
 
-this.Scheduler.OpenAddPopup(DateTime.Now);
+...
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
+    private void Add_Clicked(object sender, EventArgs e)
+    {
+        this.Scheduler.OpenAddPopup(DateTime.Today.AddHours(9));
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -177,21 +196,52 @@ The edit appointment popup is used to modify the details of an existing appointm
 Use the `OpenEditPopup(object appointment)` method to open the editor for the specified appointment. The appointment parameter specifies the appointment whose details are populated in the popup for editing. The appointment can be a SchedulerAppointment or a custom appointment object.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="6" %}
+{% highlight xaml %}
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="scheduler"
-                           View="Day"
-                           AppointmentEditorMode="Add,Edit">
-    </scheduler:SfScheduler>
+        <Grid RowDefinitions="0.9*,0.1*">
+            <scheduler:SfScheduler x:Name="Scheduler"
+                                   View="Week"
+                                   AppointmentEditorMode="Add,Edit"/>
+            <Button Grid.Row="1" 
+                    x:Name="Edit" 
+                    Text="Edit" 
+                    Clicked="Edit_Clicked" 
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+        </Grid>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="3" %}
+{% highlight c# hl_lines="25" %}
 using Syncfusion.Maui.Scheduler;
 
-this.Scheduler.OpenEditPopup(appointment);
+...
+public partial class MainPage : ContentPage
+{
+    public ObservableCollection<SchedulerAppointment> Events { get; set; }
 
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Events = new ObservableCollection<SchedulerAppointment>();
+        this.Events.Add(new SchedulerAppointment()
+        {
+            StartTime = DateTime.Today.AddHours(9),
+            EndTime = DateTime.Today.AddHours(10),
+            Subject = "Client Meeting",
+            Location = "Hutchison road",
+        });
+
+        this.Scheduler.AppointmentsSource = this.Events;
+    }
+
+    private void Edit_Clicked(object sender, EventArgs e)
+    {
+        this.Scheduler.OpenEditPopup(this.Events[0]);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -202,21 +252,52 @@ The quick info popup provides a compact view of appointment details.
 Use the `OpenQuickInfoPopup(object appointment)` method to display the quick info popup. The appointment parameter specifies the appointment whose details are displayed in the popup. The appointment can be a SchedulerAppointment or a custom appointment object.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="6" %}
+{% highlight xaml %}
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="scheduler"
-                           View="Day"
-                           AppointmentEditorMode="Add,Edit">
-    </scheduler:SfScheduler>
+        <Grid RowDefinitions="0.9*,0.1*">
+            <scheduler:SfScheduler x:Name="Scheduler"
+                                   View="Week"
+                                   AppointmentEditorMode="Add,Edit"/>
+            <Button Grid.Row="1" 
+                    x:Name="QuickInfo" 
+                    Text="QuickInfo" 
+                    Clicked="QuickInfo_Clicked" 
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+        </Grid>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="3" %}
+{% highlight c# hl_lines="25" %}
 using Syncfusion.Maui.Scheduler;
 
-this.Scheduler.OpenQuickInfoPopup(appointment);
+...
+public partial class MainPage : ContentPage
+{
+    public ObservableCollection<SchedulerAppointment> Events { get; set; }
 
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Events = new ObservableCollection<SchedulerAppointment>();
+        this.Events.Add(new SchedulerAppointment()
+        {
+            StartTime = DateTime.Today.AddHours(9),
+            EndTime = DateTime.Today.AddHours(10),
+            Subject = "Client Meeting",
+            Location = "Hutchison road",
+        });
+
+        this.Scheduler.AppointmentsSource = this.Events;
+    }
+
+     private void QuickInfo_Clicked(object sender, EventArgs e)
+    {
+        this.Scheduler.OpenQuickInfoPopup(this.Events[0]);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -227,21 +308,52 @@ The delete confirmation popup is used to confirm the removal of an appointment b
 Use the `DeleteAppointment(object appointment)` method to display the delete confirmation popup. The appointment parameter specifies the appointment for which the confirmation is displayed. The appointment can be a SchedulerAppointment or a custom appointment object.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="6" %}
+{% highlight xaml %}
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
-    <scheduler:SfScheduler x:Name="scheduler"
-                           View="Day"
-                           AppointmentEditorMode="Add,Edit">
-    </scheduler:SfScheduler>
+        <Grid RowDefinitions="0.9*,0.1*">
+            <scheduler:SfScheduler x:Name="Scheduler"
+                                   View="Week"
+                                   AppointmentEditorMode="Add,Edit"/>
+            <Button Grid.Row="1" 
+                    x:Name="Delete" 
+                    Text="Delete" 
+                    Clicked="Delete_Clicked" 
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+        </Grid>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="3" %}
+{% highlight c# hl_lines="25" %}
 using Syncfusion.Maui.Scheduler;
 
-this.Scheduler.DeleteAppointment(appointment);
+...
+public partial class MainPage : ContentPage
+{
+    public ObservableCollection<SchedulerAppointment> Events { get; set; }
 
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Events = new ObservableCollection<SchedulerAppointment>();
+        this.Events.Add(new SchedulerAppointment()
+        {
+            StartTime = DateTime.Today.AddHours(9),
+            EndTime = DateTime.Today.AddHours(10),
+            Subject = "Client Meeting",
+            Location = "Hutchison road",
+        });
+
+        this.Scheduler.AppointmentsSource = this.Events;
+    }
+
+     private void Delete_Clicked(object sender, EventArgs e)
+    {
+        this.Scheduler.DeleteAppointment(this.Events[0]);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
