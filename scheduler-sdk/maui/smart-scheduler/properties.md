@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties of .NET MAUI Smart Scheduler control | Syncfusion®
-description: This section explains the properties, events and methods with Syncfusion® MAUI SfSmartScheduler control.
+description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Smart Scheduler, including AI assist button configuration, assist view customization, and appointment response handling.
 platform: maui
 control: SfSmartScheduler
 documentation: ug
@@ -80,4 +80,3 @@ documentation: ug
     <td>Raised after the AI finishes processing a request, providing the appointment action (create or modify) and the response result so the caller can apply or inspect the outcome.</td>
 </tr>
 </table>
-
