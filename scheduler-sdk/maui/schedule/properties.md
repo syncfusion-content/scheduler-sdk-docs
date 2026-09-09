@@ -50,7 +50,8 @@ documentation: ug
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentBorderStyle" aria-label="View AppointmentBorderStyle property in API reference">AppointmentBorderStyle</a></td>
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointmentBorderStyle.html" aria-label="View SchedulerAppointmentBorderStyle type in API reference">Customizes the appointment border, including stroke color, stroke thickness, and corner radius. Not applied to appointments shown in the Agenda view on desktop.</td>
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointmentBorderStyle.html" aria-label="View SchedulerAppointmentBorderStyle type in API reference">SchedulerAppointmentBorderStyle</a></td>
+    <td>Customizes the appointment border, including stroke color, stroke thickness, and corner radius. Not applied to appointments shown in the Agenda view on desktop.</td>
 </tr>
 
 <tr valign="top">
@@ -67,7 +68,8 @@ documentation: ug
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentMapping" aria-label="View AppointmentMapping property in API reference">AppointmentMapping</a></td>
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointmentMapping.html" aria-label="View SchedulerAppointmentMapping type in API reference">Maps properties of a custom appointment class to the scheduler fields. The mapped StartTime and EndTime fields are required; other mappings are optional.</td>
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointmentMapping.html" aria-label="View SchedulerAppointmentMapping type in API reference">SchedulerAppointmentMapping</a></td>
+    <td>Maps properties of a custom appointment class to the scheduler fields. The mapped StartTime and EndTime fields are required; other mappings are optional.</td>
 </tr>
 
 <tr valign="top">
