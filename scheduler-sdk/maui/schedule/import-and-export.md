@@ -65,7 +65,7 @@ Add the following permissions to `AndroidManifest.xml`:
 ```
 ## Exporting Appointments to an ICS File
 
-Use the `ExportToICalendar` method to export all appointments in the scheduler to an iCalendar (.ics) file. The method accepts an optional fileName parameter that specifies the name of the exported file. If no file name is provided, a default file name is used. The exported file is saved to the platform's Downloads folder.
+Use the `ExportToICalendar` method to export all appointments in the scheduler to an iCalendar (.ics) file. The method accepts an optional fileName parameter that specifies the name of the exported file. If no file name is provided, a default file name is used. The exported file is saved to a platform-specific location.
 
 ### Export with a Custom File Name
 
@@ -80,7 +80,7 @@ await scheduler.ExportToICalendar("MyAppointments");
 {% endhighlight %}
 {% endtabs %}
 
-This creates an ICS file named `MyAppointments.ics` in the Downloads folder.
+This creates an ICS file named MyAppointments.ics.
 
 ### Export with the Default File Name
 
@@ -95,38 +95,16 @@ await scheduler.ExportToICalendar();
 {% endhighlight %}
 {% endtabs %}
 
-This exports the appointments using the default file name and saves the file to the Downloads folder.
-
+This exports the appointments using the default file name.
 
 ### Export Location by Platform
 
-<table border="1">
-    <tr>
-        <th>Platform<br/>
-            <br/></th>        
-        <th>Export Location<br/>
-            <br/></th>
-    </tr>
-   <tr>
-      <td>Windows</td>
-      <td>Downloads folder</td>
-    </tr>
-    <tr>
-      <td>Android</td>
-      <td>Public Downloads folder</td>
-    </tr>
-    <tr>
-      <td>macOS</td>
-      <td>Downloads folder</td>
-    </tr>
-    <tr>
-      <td>iOS</td>
-      <td>Application Documents folder and share sheet</td>
-    </tr>
-</table>
+The location of the exported ICS file varies depending on the platform:
 
-On iOS, the exported ICS file is presented through a native share sheet, enabling saving or sharing through Files, Mail, AirDrop, and other supported apps.
-
+- **Windows**: The exported file is saved in the `Downloads` folder.
+- **Android**: The exported file is saved in the `Public Downloads` folder.
+- **macOS**: The exported file is saved in the `Downloads` folder.
+- **iOS**: The exported file can be accessed from `App Files > Recent` or by navigating to `Files > Browse > App Name > Exported file`.
 
 ## Importing Appointments from an ICS File
 
@@ -226,7 +204,3 @@ private async void OnImportClicked(object sender, EventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
-
-
-
-

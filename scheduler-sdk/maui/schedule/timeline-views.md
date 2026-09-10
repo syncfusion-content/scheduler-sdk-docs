@@ -327,6 +327,8 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![Minor time slot ticks in timeline view in .NET MAUI SfScheduler](images/timeline-views/minor-time-slot-ticks.png)
+
 ## Format minor tick labels
 
 The `MinorTickTimeFormat` property of the `TimelineView` specifies the format used to display minor tick labels. It supports standard .NET date and time format strings. By default, the value is `"mm"`, which displays the minute component of the time.
@@ -341,7 +343,7 @@ The `MinorTickTimeFormat` property of the `TimelineView` specifies the format us
     <scheduler:SfScheduler x:Name="scheduler" 
                            View="TimelineDay">
         <scheduler:SfScheduler.TimelineView>
-            <scheduler:SchedulerTimelineView TimeSlotCount="2" MinorTickTimeFormat="t" />
+            <scheduler:SchedulerTimelineView TimeSlotCount="2" MinorTickTimeFormat="H:mm" />
         </scheduler:SfScheduler.TimelineView>
     </scheduler:SfScheduler>
 </ContentPage>
@@ -364,9 +366,55 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![Format minor time slot ticks in timeline view in .NET MAUI SfScheduler](images/timeline-views/format-minor-time-slot-ticks.png)
+
 ## Customize minor tick label appearance
 
-The appearance of minor tick labels can be customized using the `MinorTickTextStyle` property in `DaysView`.
+The appearance of minor tick labels can be customized using the `MinorTickTextStyle` property in `TimelineView`.
+
+{% tabs %}
+{% highlight xaml hl_lines="9 10 11" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="TimelineDay">
+        <scheduler:SfScheduler.TimelineView>
+            <scheduler:SchedulerTimelineView TimeSlotCount="2">
+                <scheduler:SchedulerTimelineView.MinorTickTextStyle>
+                    <scheduler:SchedulerTextStyle TextColor="DarkBlue" FontSize="11" FontAttributes="Bold"/>
+                </scheduler:SchedulerTimelineView.MinorTickTextStyle>
+            </scheduler:SchedulerTimelineView>
+        </scheduler:SfScheduler.TimelineView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# hl_lines="10 12 13 14" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.TimelineView.TimeSlotCount = 2;
+        this.Scheduler.TimelineView.MinorTickTextStyle = new SchedulerTextStyle
+        {
+            TextColor = Colors.DarkBlue,
+            FontSize = 11,
+            FontAttributes = FontAttributes.Bold
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customize minor time slot lable appearance in timeline view in .NET MAUI SfScheduler](images/timeline-views/customize-minor-time-slot-ticks-labels.png)
 
 ## Special time regions
 

@@ -369,6 +369,8 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![Minor time slot ticks in days view in .NET MAUI SfScheduler](images/day-week-views/minor-time-slot-ticks.png)
+
 ## Format minor tick labels
 
 The `MinorTickTimeFormat` property of the `DaysView` specifies the format used to display minor tick labels. It supports standard .NET date and time format strings. By default, the value is `"mm"`, which displays the minute component of the time.
@@ -405,6 +407,8 @@ public partial class MainPage : ContentPage
 
 {% endhighlight %}
 {% endtabs %}
+
+![Format minor time slot ticks in days view in .NET MAUI SfScheduler](images/day-week-views/format-minor-time-slot-ticks.png)
 
 ## Customize minor tick label appearance
 
@@ -451,6 +455,8 @@ public partial class MainPage : ContentPage
 
 {% endhighlight %}
 {% endtabs %}
+
+![Customize minor time slot lable appearance in days view in .NET MAUI SfScheduler](images/day-week-views/customize-minor-time-slot-ticks-labels.png)
 
 ## Special time regions
 

@@ -1104,7 +1104,7 @@ scheduler.AllowOverlap = false;
 
 When an overlap is detected during appointment creation, editing, drag-and-drop, or resizing while AllowOverlap is set to false, the Scheduler automatically displays an alert indicating that the appointment cannot be scheduled because it conflicts with an existing appointment.
 
-![Alert-displayed-to-restrict-appointment-overlaps-in-.NET MAUI SfScheduler](images/appointments/alert-to-restrict-appointment-overlap.png)
+![Alert-displayed-to-restrict-appointment-overlaps-in-.NET MAUI SfScheduler](images/appointments/restrict-appointment-overlap.gif)
 
 ## Limit concurrent appointments in day views
 
