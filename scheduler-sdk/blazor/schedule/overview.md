@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blazor Scheduler Overview and Features | Syncfusion
-description: Learn how to use Blazor Scheduler for appointment scheduling with day, week, month, and timeline views, recurring events, resources, time zones, and CRUD actions.
+description: Learn how to use Blazor Scheduler for appointment scheduling with day, week, month, and timeline views, recurring events and CRUD actions.
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
@@ -43,8 +43,8 @@ The Blazor Scheduler enables multiple data binding approaches, offering flexibil
 | Feature | Key Benefit | Best For |
 |---------|---------------|----------|
 | **[SQL Server data binding](./data-binding#sql-server-data-bindingsql-client)** | Direct SqlClient-based binding | Enterprise applications, relational data |
-| **[CRUD using Entity Framework](./data-binding#performing-crud-using-entity-framework)** | ORM-based database operations | ASP.NET backends, Entity Framework models |
-| **[Web API adaptor](./data-binding#web-api-adaptor)** | RESTful endpoint integration | Remote services, microservices |
+| **[CRUD using Entity Framework](./data-binding#performing-crud-using-entity-framework)** | ORM-based database operations | ASP.NET backend, Entity Framework models |
+| **[Web API adaptor](./data-binding#web-api-adaptor)** | RESTful endpoint integration | Remote services, micro-services |
 | **[Url adaptor](./data-binding#url-adaptor)** | Simple HTTP endpoint binding | Quick integrations |
 | **[GraphQL Adaptor](./graphql-adptor)** | Query modern APIs with optimized payloads | Modern APIs |
 | **[PostgreSQL](./postgresql)** | Direct PostgreSQL database binding | Cross-platform data layers |
