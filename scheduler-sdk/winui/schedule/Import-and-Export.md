@@ -1,8 +1,8 @@
 ---
 layout: post
 platform: winui
-title: Import and Export iCalendar (.ICS) Files in WinUI Scheduler | Syncfusion®
-description: Learn how to import and export appointments using the RFC 5545-compliant iCalendar (.ics) format in the Syncfusion Scheduler for WinUI. Exchange scheduler data with Outlook, Google Calendar, Apple Calendar, and other calendar applications.
+title: Import and Export iCalendar Files in WinUI Scheduler | Syncfusion®
+description: Import & export appointments in WinUI Scheduler via iCalendar (.ics) to sync with Outlook, Google, Apple, Thunderbird & more.
 control: SfScheduler
 documentation: ug
 keywords: winui scheduler, winui scheduler ics export, winui scheduler ics import, iCalendar support winui, export appointments to ics, import appointments from ics, winui scheduler calendar integration, scheduler iCalendar format, winui scheduler outlook integration, winui scheduler google calendar integration, winui scheduler apple calendar integration, sfscheduler ics file

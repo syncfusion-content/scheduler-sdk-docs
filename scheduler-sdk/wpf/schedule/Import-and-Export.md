@@ -1,8 +1,8 @@
 ---
 layout: post
 platform: scheduler-sdk
-title: Import and Export iCalendar (.ICS) Files in WPF Scheduler | Syncfusion®
-description: Learn how to import and export appointments using the iCalendar (.ics) format in the WPF. Exchange scheduler data with Outlook, Google Calendar, Apple Calendar, Thunderbird, and other calendar applications.
+title: Import and Export iCalendar Files in WPF Scheduler | Syncfusion®
+description: Import & export appointments in WPF Scheduler via iCalendar (.ics) to sync with Outlook, Google, Apple, Thunderbird & more.
 control: SfScheduler
 documentation: ug
 keywords: wpf scheduler, wpf scheduler ics export, wpf scheduler ics import, iCalendar support wpf, export appointments to ics, import appointments from ics, wpf scheduler calendar integration, scheduler iCalendar format, wpf scheduler outlook integration, wpf scheduler google calendar integration, wpf scheduler apple calendar integration, sfscheduler ics file

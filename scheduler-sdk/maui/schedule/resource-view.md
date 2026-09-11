@@ -1222,7 +1222,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![Vertical resource grouping for hierarchical resources in timeline views in .NET MAUI Scheduler](images/resource-view/vertical-resource-grouping-for-hierarchical-resources-in-timeline-views.png)
+![Vertical resource grouping for hierarchical resources in timeline views in .NET MAUI Scheduler](images/resource-view/vertical-resource-grouping-for-hierarchical-resources-in-timeline-view.png)
 
 ### Adaptive Resource Header
 
@@ -1231,6 +1231,8 @@ On `mobile` platforms (`Android` and `iOS`), resources are displayed through an 
 When resources are enabled, a hamburger menu icon is shown in the adaptive header. Tapping the icon opens a navigation drawer that displays all resources in a hierarchical structure. Parent resources can be expanded or collapsed to view their child resources. 
 
 As shown in the following image, Team A, Team B, and Team C are expanded, displaying all child resources in the hierarchy. Selecting a child resource displays the schedule associated with that resource, and the selected resource name is shown in the adaptive header for easy identification.
+
+
 
 
 ## Visible Resource Count
@@ -1897,10 +1899,10 @@ You can programmatically select the resource by using the [SelectedResourceId]()
 
 The resource appearance customization can be achieved by using the [HeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_HeaderTemplate) and [TextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_TextStyle) properties of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6).
 
-#### Customize resource appearance using text style
+### Customize resource appearance using text style
 The resource header text style can be customized by using the [TextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_TextStyle) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html).
 	
-#### Customize resource appearance using HeaderTemplate
+### Customize resource appearance using HeaderTemplate
 The resource appearance customization can be achieved by using the [HeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_HeaderTemplate) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html).
 
 {% tabs %}

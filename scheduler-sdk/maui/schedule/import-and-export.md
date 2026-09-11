@@ -1,8 +1,8 @@
 ---
 layout: post
 platform: scheduler-sdk
-title: Import and Export iCalendar (.ICS) Files in .NET MAUI Scheduler | Syncfusion®
-description: Learn how to import and export appointments using the iCalendar (.ics) format in the .NET MAUI Scheduler. Exchange scheduler data with Outlook, Google Calendar, Apple Calendar, Thunderbird, and other calendar applications.
+title: Import and Export iCalendar Files in .NET MAUI Scheduler | Syncfusion®
+description: Import & export appointments in .NET MAUI Scheduler via iCalendar (.ics) to sync with Outlook, Google, Apple, Thunderbird & more.
 control: SfScheduler
 documentation: ug
 keywords: .net maui scheduler, .net maui scheduler ics export, .net maui scheduler ics import, iCalendar support .net maui, export appointments to ics, import appointments from ics, .net maui scheduler calendar integration, scheduler iCalendar format, .net maui scheduler outlook integration, .net maui scheduler google calendar integration, .net maui scheduler apple calendar integration, sfscheduler ics file
