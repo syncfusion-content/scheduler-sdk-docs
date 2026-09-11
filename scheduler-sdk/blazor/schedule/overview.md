@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction to Syncfusion Blazor Scheduler
 
-The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) is a powerful and feature-rich event calendar component designed for creating and managing appointments and time based data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including 11 built-in views from day to timeline year, recurrence handling, resource grouping with up to two levels, and timezone-aware event display. Built for scalability, it enables developers to create responsive scheduling applications for scenarios such as appointment booking, resource planning, and calendar-centric workflows.
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) is a powerful and feature-rich event calendar component designed for creating and managing appointments and time based data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including built-in views from day to timeline year, recurrence handling, resource grouping with up to two levels, and timezone-aware event display. Built for scalability, it enables developers to create responsive scheduling applications for scenarios such as appointment booking, resource planning, and calendar-centric workflows.
 
 ## Common use cases
 
