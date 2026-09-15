@@ -9,11 +9,11 @@ documentation: ug
 
 # Drag and Drop in Blazor Scheduler
 
-Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality make sure that [AllowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowDragAndDrop) is set to **true** on Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
+Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality make sure that [AllowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowDragAndDrop) is set to **true** on Blazor Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
 
-Note: By default, drag and drop action is applicable on all Scheduler views except Agenda and Month-Agenda view.
+Note: By default, drag and drop action is applicable on all Blazor Scheduler views except Agenda and Month-Agenda view.
 
-To get started quickly with the drag options available in the Scheduler, you can watch this video:
+To get started quickly with the drag options available in the Blazor Scheduler, you can watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=Vtl1Wyuwt-0"%}
@@ -65,7 +65,7 @@ Note: Multiple-event drag and drop is not supported on mobile devices.
 
 ## Disable the drag action
 
-By default, the events can be dragged and dropped within any of the applicable scheduler views, and to disable it, set **false** to the [AllowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowDragAndDrop) property.
+By default, the events can be dragged and dropped within any of the applicable Blazor Scheduler views, and to disable it, set **false** to the [AllowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowDragAndDrop) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -150,7 +150,7 @@ It is possible to prevent the drag action on a particular target by passing the 
 
 ## Disable scrolling on drag action
 
-By default, while dragging an appointment to the edges, either top/bottom in the vertical Scheduler or left/right in the timeline Scheduler, scrolling action takes place automatically. To prevent this scrolling, set `false` to the `Enable` value within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event arguments.
+By default, while dragging an appointment to the edges, either top/bottom in the vertical Blazor Scheduler or left/right in the timeline Blazor Scheduler, scrolling action takes place automatically. To prevent this scrolling, set `false` to the `Enable` value within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event arguments.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -195,7 +195,7 @@ By default, while dragging an appointment to the edges, either top/bottom in the
 
 ## Controlling scroll speed while dragging an event
 
-The speed of the scrolling action while dragging an appointment to the Scheduler edges can be controlled within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event by setting the desired value to the `ScrollBy` and `TimeDelay` options, whereas their default values are 30 minutes and 100ms.
+The speed of the scrolling action while dragging an appointment to the Blazor Scheduler edges can be controlled within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event by setting the desired value to the `ScrollBy` and `TimeDelay` options, whereas their default values are 30 minutes and 100ms.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -241,7 +241,7 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 
 ## Auto navigation of date ranges on dragging an event
 
-When an event is dragged either to the left or right extreme edges of the Scheduler and held for a few seconds without dropping, the auto navigation of date ranges will be enabled, allowing the Scheduler to navigate from the current date range back and forth. This action is set to `false` by default and to enable it, set `Navigation` to true within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event.
+When an event is dragged either to the left or right extreme edges of the Blazor Scheduler and held for a few seconds without dropping, the auto navigation of date ranges will be enabled, allowing the Blazor Scheduler to navigate from the current date range back and forth. This action is set to `false` by default and to enable it, set `Navigation` to true within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event.
 
 By default, the navigation delay is set to 2000ms. The navigation delay decides how long the user needs to drag and hold the appointments at the extremities. You can also set your own delay value for letting users navigate based on it using the `TimeDelay` option within the [OnDragStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnDragStart) event.
 
@@ -334,14 +334,14 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 
 ## Drag and drop items from external source
 
-It is possible to drag and drop the unplanned items from any external source into the Scheduler by manually saving those dropped items as new appointment data through the [AddEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AddEventAsync__0_) method of the Scheduler.
+It is possible to drag and drop the unplanned items from any external source into the Blazor Scheduler by manually saving those dropped items as new appointment data through the [AddEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AddEventAsync__0_) method of the Blazor Scheduler.
 
-To get started quickly with dropping items from an external source into the Scheduler, you can watch this video:
+To get started quickly with dropping items from an external source into the Blazor Scheduler, you can watch this video:
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=QxBBZYef6cg"%}
 
-In this example, the TreeView control is used as an external source and the child nodes from the TreeView component are dragged and dropped onto the Scheduler. Therefore, it is necessary to make use of the `OnNodeDragStop` event of the TreeView component, where an event object can be formed and saved using the [AddEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AddEventAsync__0_) method.
+In this example, the TreeView control is used as an external source and the child nodes from the TreeView component are dragged and dropped onto the Blazor Scheduler. Therefore, it is necessary to make use of the `OnNodeDragStop` event of the TreeView component, where an event object can be formed and saved using the [AddEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AddEventAsync__0_) method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -444,7 +444,7 @@ In this example, the TreeView control is used as an external source and the chil
 
 ## Drag and drop items to external source
 
-You can drag and drop the events to an external source by setting the target to the [EventDragArea](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EventDragArea) property. In the following code example, there are two Scheduler instances, and events from the first Scheduler can be dropped to the second Scheduler. In the [Dragged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Dragged) event of the first Scheduler, the dragged event is deleted from the first Scheduler and added to the second Scheduler.
+You can drag and drop the events to an external source by setting the target to the [EventDragArea](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EventDragArea) property. In the following code example, there are two Blazor Scheduler instances, and events from the first Blazor Scheduler can be dropped to the second Scheduler. In the [Dragged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_Dragged) event of the first Scheduler, the dragged event is deleted from the first Blazor Scheduler and added to the second Scheduler.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

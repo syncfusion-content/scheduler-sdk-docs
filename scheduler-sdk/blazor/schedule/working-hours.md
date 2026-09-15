@@ -9,7 +9,7 @@ documentation: ug
 
 # Working Days and Hours in Blazor Scheduler
 
-The Scheduler can be customized in several ways, and it inherits almost all calendar-specific features such as:
+The Blazor Scheduler can be customized in several ways, and it inherits almost all calendar-specific features such as:
 
 - To set custom time range display on Scheduler
 - To set different working hours
@@ -25,13 +25,13 @@ To get started quickly with customizing working days and hours in Scheduler, wat
 
 ## Set working days
 
-By default, Scheduler considers Monday through Friday as `WorkDays` and therefore uses [1, 2, 3, 4, 5], where 1 represents Monday, 2 represents Tuesday, and so on. Days that are not included in this collection are treated as non-working days. Therefore, when weekend days are hidden in Scheduler, those non-working days are also hidden from the layout.
+By default, Blazor Scheduler considers Monday through Friday as `WorkDays` and therefore uses [1, 2, 3, 4, 5], where 1 represents Monday, 2 represents Tuesday, and so on. Days that are not included in this collection are treated as non-working days. Therefore, when weekend days are hidden in Scheduler, those non-working days are also hidden from the layout.
 
-The Work Week and Timeline Work Week views display only the defined working days in the Scheduler layout, whereas the other views display all days and simply differentiate non-working days in the UI with an inactive cell color.
+The Work Week and Timeline Work Week views display only the defined working days in the Blazor Scheduler layout, whereas the other views display all days and simply differentiate non-working days in the UI with an inactive cell color.
 
-N> Working or business hours in Scheduler are usually valid only on the specified working days.
+N> Working or business hours in Blazor Scheduler are usually valid only on the specified working days.
 
-The following code example shows how to set Scheduler to display Monday, Wednesday, and Friday as the working days of the week.
+The following code example shows how to set Blazor Scheduler to display Monday, Wednesday, and Friday as the working days of the week.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -216,7 +216,7 @@ Here, the working days are defined as [1, 3, 4, 5] in Scheduler, so the remainin
 
 ## Show week numbers
 
-It is possible to show the week number count in the Scheduler header bar by setting the [`ShowWeekNumber`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowWeekNumber) property to `true`. By default, its value is `false`. In Month view, the week numbers are displayed in the first column.
+It is possible to show the week number count in the Blazor Scheduler header bar by setting the [`ShowWeekNumber`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowWeekNumber) property to `true`. By default, its value is `false`. In Month view, the week numbers are displayed in the first column.
 
 N> The [`ShowWeekNumber`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowWeekNumber) property is not applicable to Timeline views because the equivalent [HeaderRows](./header-rows#display-week-numbers-in-timeline-views) property handles this requirement with additional customization.
 
@@ -251,7 +251,7 @@ N> The [`ShowWeekNumber`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 
 ### Different options in showing week numbers
 
-By default, week numbers are shown in Scheduler based on the first day of the year. However, week numbers can also be determined by setting the `WeekRule` property with the `CalendarWeekRule` enumeration.
+By default, week numbers are shown in Blazor Scheduler based on the first day of the year. However, week numbers can also be determined by setting the `WeekRule` property with the `CalendarWeekRule` enumeration.
 
 `FirstDay` – The first week of the year is calculated based on the first day of the year.
 
@@ -291,7 +291,7 @@ For more details, refer to [this link](https://learn.microsoft.com/en-us/dotnet/
 
 ## Set working hours
 
-Working hours indicate the work-hour limit within Scheduler, and the work cells are visually highlighted with an active color. The working hours can be set in Scheduler by using the [`ScheduleWorkhours`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleWorkHours.html) component, which includes the following sub-options:
+Working hours indicate the work-hour limit within Scheduler, and the work cells are visually highlighted with an active color. The working hours can be set in Blazor Scheduler by using the [`ScheduleWorkhours`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleWorkHours.html) component, which includes the following sub-options:
 
 - [`Highlight`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleWorkHours.html#Syncfusion_Blazor_Schedule_ScheduleWorkHours_Highlight) – enables/disables the highlighting of work hours.
 - [`Start`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleWorkHours.html#Syncfusion_Blazor_Schedule_ScheduleWorkHours_Start) - sets the start time of the working/business hour of a day.
@@ -326,11 +326,11 @@ Working hours indicate the work-hour limit within Scheduler, and the work cells 
 
 ![Set Working Hours in Blazor Scheduler](images/blazor-scheduler-workhours.webp)
 
-## Scheduler displaying custom hours
+## Blazor Scheduler displaying custom hours
 
-It is possible to display Scheduler with specific time durations by hiding unwanted hours. To do so, set the start and end hours by using the [`StartHour`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_StartHour) and [`EndHour`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EndHour) properties.
+It is possible to display Blazor Scheduler with specific time durations by hiding unwanted hours. To do so, set the start and end hours by using the [`StartHour`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_StartHour) and [`EndHour`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EndHour) properties.
 
-The following code example displays Scheduler from 7:00 AM to 6:00 PM, and the remaining hours are hidden in the UI.
+The following code example displays Blazor Scheduler from 7:00 AM to 6:00 PM, and the remaining hours are hidden in the UI.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -362,7 +362,7 @@ The following code example displays Scheduler from 7:00 AM to 6:00 PM, and the r
 
 ## Setting start day of the week
 
-By default, Scheduler uses `Sunday` as the first day of the week. To change Scheduler's starting day to a different day, set the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_FirstDayOfWeek) property with values from 0 to 6.
+By default, Blazor Scheduler uses `Sunday` as the first day of the week. To change Scheduler's starting day to a different day, set the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_FirstDayOfWeek) property with values from 0 to 6.
 
 N> Here, Sunday is always denoted as 0, Monday as 1, and so on.
 
@@ -397,7 +397,7 @@ N> Here, Sunday is always denoted as 0, Monday as 1, and so on.
 
 ## Scroll to specific time and date
 
-You can manually scroll to a specific time in Scheduler by using the [`ScrollToAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ScrollToAsync_System_String_System_Nullable_System_DateTime__) method, as shown in the following code example.
+You can manually scroll to a specific time in Blazor Scheduler by using the [`ScrollToAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ScrollToAsync_System_String_System_Nullable_System_DateTime__) method, as shown in the following code example.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

@@ -9,7 +9,7 @@ documentation: ug
 
 # Virtual Scrolling in Blazor Scheduler
 
-To improve performance when loading a large number of resources and events, Scheduler supports virtual scrolling in timeline views. It loads large sets of resources and events as you scroll. You can dynamically load large numbers of resources and events in timeline views by setting the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` in the view-specific settings. Virtual loading of events is also available in Agenda view by setting the same property to `true` in the Agenda view-specific settings.
+To improve performance when loading a large number of resources and events, Blazor Scheduler supports virtual scrolling in timeline views. It loads large sets of resources and events as you scroll. You can dynamically load large numbers of resources and events in timeline views by setting the [`AllowVirtualScrolling`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` in the view-specific settings. Virtual loading of events is also available in Agenda view by setting the same property to `true` in the Agenda view-specific settings.
 
 To get started quickly with virtual scrolling in Scheduler, watch this video:
 
@@ -240,11 +240,11 @@ By default, virtual scrolling displays only 30 resources. You can increase or de
 
 ## Enabling lazy loading for appointments
 
-The lazy loading feature provides a convenient way to load resource appointments into Scheduler on demand. With this feature, you can load a large volume of appointment data without affecting performance.
+The lazy loading feature provides a convenient way to load resource appointments into Blazor Scheduler on demand. With this feature, you can load a large volume of appointment data without affecting performance.
 
-By default, Scheduler fetches all relevant appointments from the server within the current date range. When this feature is enabled, Scheduler sends query requests to the server for appointment retrieval whenever new resources are rendered during scroll actions. These queries contain the resource IDs of the currently displayed resources along with the current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the appointments needed for rendering.
+By default, Blazor Scheduler fetches all relevant appointments from the server within the current date range. When this feature is enabled, Blazor Scheduler sends query requests to the server for appointment retrieval whenever new resources are rendered during scroll actions. These queries contain the resource IDs of the currently displayed resources along with the current date range, which can be passed as a comma-separated string. In the server controller, these resource IDs are parsed to filter the appointments needed for rendering.
 
-When you enable this feature, Scheduler fetches events from remote services only for the current viewport to optimize data retrieval. The remaining appointment data is fetched from the server on demand based on the currently rendered viewport resources as you scroll through Scheduler content.
+When you enable this feature, Blazor Scheduler fetches events from remote services only for the current viewport to optimize data retrieval. The remaining appointment data is fetched from the server on demand based on the currently rendered viewport resources as you scroll through Blazor Scheduler content.
 
 To enable this feature, set the [`EnableLazyLoading`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleView.html#Syncfusion_Blazor_Schedule_ScheduleView_Enablelazyloading) property to `true` in the view-specific settings.
 

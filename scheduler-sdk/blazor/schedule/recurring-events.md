@@ -50,7 +50,7 @@ N> Default recurrence validation is included for recurring appointments, similar
 
 ## Creating a recurring event
 
-The following example shows how to create a recurring event in Scheduler with a specific recurrence rule. In this example, the event repeats daily and ends after five occurrences.
+The following example shows how to create a recurring event in Blazor Scheduler with a specific recurrence rule. In this example, the event repeats daily and ends after five occurrences.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -172,7 +172,7 @@ In this example, a recurring instance that appears on 30 January 2020 is edited 
 
 ## Edit/Delete following recurrence events
 
-The Scheduler lets users edit following recurrence events by setting the [AllowEditFollowingEvents](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) property to `true` within the [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html) tag. Once recurrence events are edited or deleted as following events, they are treated as a separate series and the changes do not affect the parent series. In the following code example, if any recurrence event is edited or deleted with the following events option, the change is applied to later recurrence events.
+The Blazor Scheduler lets users edit following recurrence events by setting the [AllowEditFollowingEvents](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) property to `true` within the [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html) tag. Once recurrence events are edited or deleted as following events, they are treated as a separate series and the changes do not affect the parent series. In the following code example, if any recurrence event is edited or deleted with the following events option, the change is applied to later recurrence events.
 
 N> To edit or delete following recurrence events in the Scheduler, set [`AllowEditFollowingEvents`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_AllowEditFollowingEvents) to `true` in [`ScheduleEventSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html).
 
@@ -256,11 +256,11 @@ N> To edit or delete following recurrence events in the Scheduler, set [`AllowEd
 
 ## Recurrence Validation
 
-Built-in validation support is available for recurring appointments during creation, editing, drag and drop, or resize actions. The following are the possible validation alerts displayed in Scheduler while creating or editing recurring events.
+Built-in validation support is available for recurring appointments during creation, editing, drag and drop, or resize actions. The following are the possible validation alerts displayed in Blazor Scheduler while creating or editing recurring events.
 
 | Validation messages | Description |
 |-------|---------|
-| The recurrence pattern is not valid. | This alert appears when the selected recurrence rule is not valid. For example, if the end date selected by using the `Until` option occurs before the start date, Scheduler shows this validation message. |
+| The recurrence pattern is not valid. | This alert appears when the selected recurrence rule is not valid. For example, if the end date selected by using the `Until` option occurs before the start date, Blazor Scheduler shows this validation message. |
 | The changes made to specific instances of this series will be canceled and those events will match the series again. | This alert appears when you try to edit the whole series after one or more occurrences have already been edited. For example, if one of five occurrences has already been edited and you try to edit the entire series, this validation message appears. |
 | The duration of the event must be shorter than how frequently it occurs. Shorten the duration, or change the recurrence pattern in the recurrence event editor. | This validation appears when the event duration is longer than the selected frequency. For example, a recurring appointment with a two-day duration in `Daily` frequency without an interval can trigger this alert. |
 | Some months have fewer than the selected date. For these months, the occurrence will fall on the last date of the month. | This validation appears when you create a recurring appointment on the 31st of every month, because some months do not have 31 days. |

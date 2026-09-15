@@ -41,25 +41,25 @@ The accessibility compliance for the Blazor Scheduler component is outlined belo
 
 [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
 
-The following ARIA attributes are used in the Scheduler:
+The following ARIA attributes are used in the Blazor Scheduler:
 
 | Attributes | Purpose |
 |-------|---------|
-| role="main" | Attribute added to the Scheduler element describes the actual role of the element and denotes it as the main and unique content. |
-| role="button" | Attribute is assigned to the appointments of Scheduler to denote them as clickable elements. |
-| aria-label | Attribute is set to the Scheduler parent element and its default value is the Scheduler's current date. Whenever the date is navigated, this attribute is updated with the appropriate current date values. It is also assigned to other Scheduler UI elements such as previous and next date navigation buttons, the div element displaying the date range in the header bar, and appointment elements. |
+| role="main" | Attribute added to the Blazor Scheduler element describes the actual role of the element and denotes it as the main and unique content. |
+| role="button" | Attribute is assigned to the appointments of Blazor Scheduler to denote them as clickable elements. |
+| aria-label | Attribute is set to the Blazor Scheduler parent element and its default value is the Blazor Scheduler's current date. Whenever the date is navigated, this attribute is updated with the appropriate current date values. It is also assigned to other Blazor Scheduler UI elements such as previous and next date navigation buttons, the div element displaying the date range in the header bar, and appointment elements. |
 | aria-labelledby | It indicates the editor dialog title to users through assistive technologies. |
 | aria-describedby | It indicates the editor dialog content description to users through assistive technologies. |
-| aria-disabled | Attribute is set on the appointment element to indicate the disabled state of the Scheduler. |
+| aria-disabled | Attribute is set on the appointment element to indicate the disabled state of the Blazor Scheduler. |
 
 The Syncfusion® Blazor Scheduler component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
 
-- **Table has no headers identified:** Some tables rendered by the Scheduler do not have headers explicitly identified, which may trigger warnings in accessibility checkers.
-- **Complex table does not have headers for each cell properly defined with 'header' or 'scope':** The Scheduler's internal table structure may not define headers for every cell using the `header` or `scope` attributes, leading to additional warnings.
+- **Table has no headers identified:** Some tables rendered by the Blazor Scheduler do not have headers explicitly identified, which may trigger warnings in accessibility checkers.
+- **Complex table does not have headers for each cell properly defined with 'header' or 'scope':** The Blazor Scheduler's internal table structure may not define headers for every cell using the `header` or `scope` attributes, leading to additional warnings.
 
 - **Label text is located after its associated text input or <select> element:** Certain form fields and dropdowns within the built-in editor windows place the label after the input control, which may flag standard layout order validation.
 
-- **The 'for' attribute is not the 'id' of a valid element:** In the built-in scheduler editor window with multiple resources enabled, internal reference links between a label and its input component may trigger missing reference warnings in automated checkers.
+- **The 'for' attribute is not the 'id' of a valid element:** In the built-in Blazor Scheduler editor window with multiple resources enabled, internal reference links between a label and its input component may trigger missing reference warnings in automated checkers.
 
 - **Accessible name does not match or contain the visible label text:** Certain interactive elements within the component may have mismatched programmatic names compared to their displayed labels, which can be flagged by label-matching verification tools. This behavior occurs specifically in the Month View date headers and the Agenda View appointment elements.
 
@@ -72,26 +72,26 @@ The tabbable element's role cell is not a widget role, which can trigger errors 
 
 ## Keyboard interaction
 
-All the Scheduler actions can be controlled via keyboard keys and is availed by using `AllowKeyboardInteraction` property which is set to `true` by default. The applicable key combinations and its relative functionalities are listed below.
+All the Blazor Scheduler actions can be controlled via keyboard keys and is availed by using `AllowKeyboardInteraction` property which is set to `true` by default. The applicable key combinations and its relative functionalities are listed below.
 
 | Windows | Mac | Actions |
 | ----- | ----- | ---- |
-| <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>⌥</kbd> + <kbd>J</kbd> | Focuses the Scheduler [Provided from application end]. |
-| <kbd>Tab</kbd> | <kbd>Tab</kbd> | Focuses the first or active item on the scheduler header bar and then moves the focus to the next available event elements. If no events present, then focus moves out of the component. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Reverse focusing of the Tab functionality. Inverse focusing of event elements from the last one and then moves onto the first or active item on Scheduler header bar and then moves out of the component. |
+| <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>⌥</kbd> + <kbd>J</kbd> | Focuses the Blazor Scheduler [Provided from application end]. |
+| <kbd>Tab</kbd> | <kbd>Tab</kbd> | Focuses the first or active item on the Blazor Scheduler header bar and then moves the focus to the next available event elements. If no events present, then focus moves out of the component. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Reverse focusing of the Tab functionality. Inverse focusing of event elements from the last one and then moves onto the first or active item on Blazor Scheduler header bar and then moves out of the component. |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Arrows</kbd> (<kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd>) | <kbd>⌘</kbd> + <kbd>⇧</kbd> + Arrows (<kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd>) | Focuses the event element and then moves the focus to the next available event elements between the resources. |
 | <kbd>Escape</kbd> | <kbd>Escape</kbd> | Closes any of the popup that are in open state. |
 | <kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd> | <kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd> | To move onto the next available cells in either of the needed directions (left, right, top and right) |
 | <kbd>Shift</kbd> + <kbd>Arrow</kbd> | <kbd>⇧</kbd> + Arrows (<kbd>↑</kbd> , <kbd>→</kbd> , <kbd>↓</kbd> , <kbd>←</kbd>) | For multiple cell selection on either direction. |
 | <kbd>Delete</kbd> | <kbd>Delete</kbd> | Deletes one or more selected events. |
 | <kbd>Ctrl</kbd> + <kbd>Click</kbd> on events | <kbd>⌘</kbd> + <kbd>Click</kbd> | To select multiple events. |
-| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) | <kbd>⌥</kbd> + <kbd>Number</kbd> (from 1 to 6) | To switch between the views on Scheduler. |
+| <kbd>Alt</kbd> + <kbd>Number</kbd> (from 1 to 6) | <kbd>⌥</kbd> + <kbd>Number</kbd> (from 1 to 6) | To switch between the views on Blazor Scheduler. |
 | <kbd>Ctrl</kbd> + <kbd>←</kbd> | <kbd>⌘</kbd> + <kbd>←</kbd> | To navigate to the previous date period. |
 | <kbd>Ctrl</kbd> + <kbd>→</kbd> | <kbd>⌘</kbd> + <kbd>→</kbd> | To navigate to the next date period. |
-| <kbd>←</kbd> or <kbd>→</kbd> | <kbd>←</kbd> or <kbd>→</kbd> | On pressing any of these keys when focus is currently on the Scheduler header bar, moves the focus to the previous or next items in the header bar. |
+| <kbd>←</kbd> or <kbd>→</kbd> | <kbd>←</kbd> or <kbd>→</kbd> | On pressing any of these keys when focus is currently on the Blazor Scheduler header bar, moves the focus to the previous or next items in the header bar. |
 | <kbd>Space</kbd> or <kbd>Enter</kbd> | <kbd>Space</kbd> or <kbd>Enter</kbd> | It activates any of the focused items. |
 | <kbd>Page Up</kbd> & <kbd>Page Down</kbd> | <kbd>Page Up</kbd> & <kbd>Page Down</kbd> | To scroll through the work cells area. |
-| <kbd>Home</kbd> | <kbd>Home</kbd> | To move the selection to the first cell of Scheduler. |
+| <kbd>Home</kbd> | <kbd>Home</kbd> | To move the selection to the first cell of Blazor Scheduler. |
 | <kbd>F12</kbd> | <kbd>F12</kbd> | To have the inline option for both cells and events. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | <kbd>⇧</kbd> + <kbd>⌥</kbd> + <kbd>Y</kbd> | To navigate to today date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | <kbd>⇧</kbd> + <kbd>⌥</kbd> + <kbd>N</kbd> | To open editor window. |
@@ -100,7 +100,7 @@ All the Scheduler actions can be controlled via keyboard keys and is availed by 
 
 The Blazor Scheduler component's accessibility levels are ensured through an [axe-core](https://www.nuget.org/packages/Deque.AxeCore.Playwright) software tool during automated testing.
 
-The accessibility compliance of the Scheduler component is shown in the following sample. Open the [sample](https://blazor.syncfusion.com/accessibility/schedule) in a new window to evaluate the accessibility of the Scheduler component with accessibility tools.
+The accessibility compliance of the Blazor Scheduler component is shown in the following sample. Open the [sample](https://blazor.syncfusion.com/accessibility/schedule) in a new window to evaluate the accessibility of the Blazor Scheduler component with accessibility tools.
 
 ## See also
 

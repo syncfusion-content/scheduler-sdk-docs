@@ -11,7 +11,7 @@ documentation: ug
 
 The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) component supports binding data from ASP.NET Core [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) endpoints hosted in the same application. This approach provides seamless integration of appointment data with full CRUD (Create, Read, Update, Delete) functionality without requiring a separate backend project.
 
-This documentation explains how to create a Blazor Server application that hosts Minimal API endpoints in the same project, allowing the Scheduler component to perform CRUD operations on in-memory appointment data through RESTful HTTP requests.
+This documentation explains how to create a Blazor Server application that hosts Minimal API endpoints in the same project, allowing the Blazor Scheduler component to perform CRUD operations on in-memory appointment data through RESTful HTTP requests.
 
 ## Prerequisites
 
@@ -21,8 +21,8 @@ Install the following software and packages before starting:
 |-----------------|---------|---------|
 | Visual Studio 2026 | 18.0 or later | Development IDE with Blazor workload |
 | .NET SDK | net10.0 or compatible | Runtime and build tools |
-| Syncfusion.Blazor.Schedule | Latest Version | Scheduler component |
-| Syncfusion.Blazor.Themes | Latest Version | Styling for Scheduler |
+| Syncfusion.Blazor.Schedule | Latest Version | Blazor Scheduler component |
+| Syncfusion.Blazor.Themes | Latest Version | Styling for Blazor Scheduler |
 
 ## Binding data from Minimal API endpoints
 
@@ -48,7 +48,7 @@ dotnet new blazor -n BlazorSchedulerApp --interactivity Server
 cd BlazorSchedulerApp
 ```
 
-> Configure the interactive render mode to **InteractiveServer** during project creation, as the Scheduler requires interactivity for CRUD operations.
+> Configure the interactive render mode to **InteractiveServer** during project creation, as the Blazor Scheduler requires interactivity for CRUD operations.
 
 ### Step 2: Install Required NuGet Packages
 
@@ -96,7 +96,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 
 ### Step 5: Create the Appointment Model
 
-Create a model class to represent Scheduler appointments with the required properties.
+Create a model class to represent Blazor Scheduler appointments with the required properties.
 
 
 [Models/AppointmentData.cs]
@@ -257,7 +257,7 @@ Open the **Components/_Imports.razor** file and import the `BlazorSchedulerApp.S
 
 ### Step 7: Configure Application Services
 
-Update the `Program.cs` file to register the required services, including Blazor components, `HttpClient`, CORS, and Razor components. This section configures the foundational services used across the Scheduler application.
+Update the `Program.cs` file to register the required services, including Blazor components, `HttpClient`, CORS, and Razor components. This section configures the foundational services used across the Blazor Scheduler application.
 
 [Program.cs]
 
@@ -426,7 +426,7 @@ app.Run();
 - Perfect for small APIs within the same application
 
 
-### Step 9: Create the Scheduler Component
+### Step 9: Create the Blazor Scheduler Component
 
 Replace the contents of `Home.razor` with the following Blazor Scheduler component that provides full CRUD functionality.
 
@@ -532,7 +532,7 @@ Replace the contents of `Home.razor` with the following Blazor Scheduler compone
 
 **Why Use OnActionBegin?**
 
-The `OnActionBegin` event fires before any Scheduler action completes, allowing you to:
+The `OnActionBegin` event fires before any Blazor Scheduler action completes, allowing you to:
 1. Intercept the operation and call your own API
 2. Add custom validation and business logic
 3. Handle errors gracefully
@@ -613,7 +613,7 @@ A complete, working sample implementation is available in the [GitHub repository
 
 ### Theme Not Applying
 
-**Issue**: Scheduler looks unstyled
+**Issue**: Blazor Scheduler looks unstyled
 
 **Fix**:
 - Verify theme CSS in `App.razor`: `_content/Syncfusion.Blazor.Themes/tailwind3.css`
