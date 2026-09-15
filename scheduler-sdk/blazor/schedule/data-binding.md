@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding in Blazor Scheduler
 
-The Scheduler uses [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html), which supports both RESTful data service binding and datasource collections to bind data to the Scheduler. The [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) property of Scheduler can be assigned either with the instance of `DataManager` or list of datasource collection.
+The Blazor Scheduler uses [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html), which supports both RESTful data service binding and datasource collections to bind data to the Scheduler. The [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) property of Blazor Scheduler can be assigned either with the instance of `DataManager` or list of datasource collection.
 
 It supports the following kinds of data binding methods:
 * List binding
@@ -22,7 +22,7 @@ Please take a moment to watch this video to learn about data binding in the [Bla
 
 ## List binding
 
-To bind list binding to the Scheduler, you can simply assign a list of datasource collections as IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) option of the scheduler within the ScheduleEventSettings tag. The list data source can also be provided as an instance of the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) or by using [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) component.
+To bind list binding to the Scheduler, you can simply assign a list of datasource collections as IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) option of the Blazor Scheduler within the ScheduleEventSettings tag. The list data source can also be provided as an instance of the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) or by using [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) component.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -61,12 +61,12 @@ N> By default, `DataManager` uses `BlazorAdaptor` for binding local data.
 
 ### ExpandoObject binding
 
-The Scheduler is a generic component which is strongly bound to a model type, but there may be cases where the model type is unknown during compile or runtime. In these scenarios, you can use **ExpandoObject** binding to bind data to the Scheduler as a list of dynamic objects.
+The Blazor Scheduler is a generic component which is strongly bound to a model type, but there may be cases where the model type is unknown during compile or runtime. In these scenarios, you can use **ExpandoObject** binding to bind data to the Blazor Scheduler as a list of dynamic objects.
 
-**ExpandoObject** implements the IDictionary<string, object> interface, which means you can add properties and values to the object like you would with a dictionary.**ExpandoObject** binding provides a flexible way to bind data to the Scheduler component without the need for a predefined class or data structure. This can be particularly useful in scenarios where you have data sources with varying structures, or when you need to bind to data sources that are not known at compile-time.
+**ExpandoObject** implements the IDictionary<string, object> interface, which means you can add properties and values to the object like you would with a dictionary.**ExpandoObject** binding provides a flexible way to bind data to the Blazor Scheduler component without the need for a predefined class or data structure. This can be particularly useful in scenarios where you have data sources with varying structures, or when you need to bind to data sources that are not known at compile-time.
 
-**ExpandoObject** can be bound to the `DataSource` option of the scheduler within the `ScheduleEventSettings` component. Scheduler can also perform all kinds of supported data operations and editing in ExpandoObject.
-To bind data to the Scheduler using ExpandoObject, you can create a list of ExpandoObjects and set it as the DataSource property of the Scheduler's `ScheduleEventSettings` component.
+**ExpandoObject** can be bound to the `DataSource` option of the Blazor Scheduler within the `ScheduleEventSettings` component. Blazor Scheduler can also perform all kinds of supported data operations and editing in ExpandoObject.
+To bind data to the Blazor Scheduler using ExpandoObject, you can create a list of ExpandoObjects and set it as the DataSource property of the Scheduler's `ScheduleEventSettings` component.
 
 ```csharp
 @using System.Dynamic
@@ -107,9 +107,9 @@ To bind data to the Scheduler using ExpandoObject, you can create a list of Expa
 
 ### DynamicObject Binding
 
-**DynamicObject** binding is another approach for binding data to the Scheduler when the model type is unknown at compile time. In this approach, you use the dynamic keyword to define variables that can hold objects of any type, including those with dynamically added properties.
+**DynamicObject** binding is another approach for binding data to the Blazor Scheduler when the model type is unknown at compile time. In this approach, you use the dynamic keyword to define variables that can hold objects of any type, including those with dynamically added properties.
 
-To bind data to the Scheduler using **DynamicObject** binding, you can create a list of dynamic objects and set it as the [`DataSource`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) property of the Scheduler's `ScheduleEventSettings` component. You can then use the Scheduler's built-in data operations and editing features to work with the data.
+To bind data to the Blazor Scheduler using **DynamicObject** binding, you can create a list of dynamic objects and set it as the [`DataSource`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_DataSource) property of the Scheduler's `ScheduleEventSettings` component. You can then use the Scheduler's built-in data operations and editing features to work with the data.
 
 **DynamicObject** implements the `IDynamicMetaObjectProvider` interface, which means you can override member access operations like `GetMember` and `SetMember` to provide your own custom logic.**DynamicObject** binding is that it allows you to create objects with dynamic behavior, which can be useful in scenarios where you need to work with objects whose behavior is not known at compile-time.
 
@@ -521,7 +521,7 @@ The following image shows how parameters are passed using the ODataV4 filter.
 
 ### Web API adaptor
 
-You can bind Web API data to the Scheduler by using [WebApiAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#web-api-adaptor). The following sample code shows how to bind remote services to the Scheduler component.
+You can bind Web API data to the Blazor Scheduler by using [WebApiAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#web-api-adaptor). The following sample code shows how to bind remote services to the Blazor Scheduler component.
 
 ```cshtml
 @using Syncfusion.Blazor
@@ -562,16 +562,16 @@ You can bind Web API data to the Scheduler by using [WebApiAdaptor](https://blaz
 ```
 
 ### Url adaptor
-You can use the [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-adaptor) of **SfDataManager** when binding a data source for remote data. During the initial load of Scheduler, data is fetched from remote data and bound to the Scheduler by using the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of **SfDataManager**.
+You can use the [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-adaptor) of **SfDataManager** when binding a data source for remote data. During the initial load of Scheduler, data is fetched from remote data and bound to the Blazor Scheduler by using the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of **SfDataManager**.
 
-CRUD operations in the Scheduler can be mapped to server-side controller actions by using the [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl), [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl), [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl), and [CrudUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_CrudUrl) properties.
+CRUD operations in the Blazor Scheduler can be mapped to server-side controller actions by using the [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl), [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl), [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl), and [CrudUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_CrudUrl) properties.
 
 * `InsertUrl` – Performs a single insert operation on the server side.
 * `UpdateUrl` – Updates a single record on the server side.
 * `RemoveUrl` – Removes a single record on the server side.
 * `CrudUrl` – Performs bulk data operations on the server side.
 
-The following sample code demonstrates binding data to the Scheduler component through the SfDataManager using UrlAdaptor.
+The following sample code demonstrates binding data to the Blazor Scheduler component through the SfDataManager using UrlAdaptor.
 
 ```cshtml
 @using Syncfusion.Blazor
@@ -728,7 +728,7 @@ The value passed to the additional parameter is shown in the following image.
 
 ![Passing Additional Parameters in Blazor Scheduler](./images/blazor-scheduler-additional-parameters.webp)
 
-Note: The parameters added by using the [`Query`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_Query) property will be sent with every data request made to the server during Scheduler actions.
+Note: The parameters added by using the [`Query`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1_Query) property will be sent with every data request made to the server during Blazor Scheduler actions.
 
 ### Authorization and Authentication
 
@@ -1177,7 +1177,7 @@ You can download a complete working sample from [GitHub](https://github.com/Sync
 
 ## Performing CRUD using Entity Framework
 
-Follow the steps below to consume data from **Entity Framework** in the Scheduler component.
+Follow the steps below to consume data from **Entity Framework** in the Blazor Scheduler component.
 
 To get started quickly with CRUD actions by using Entity Framework in Scheduler, you can watch this video:
 
@@ -1235,7 +1235,7 @@ namespace Restful_Services.Models
 
 ### Creating OData Controller
 
- A OData Controller has to be created which allows Scheduler directly to consume data from the Entity Framework. The following code example shows how to perform CRUD operations using Entity Framework.
+ A OData Controller has to be created which allows Blazor Scheduler directly to consume data from the Entity Framework. The following code example shows how to perform CRUD operations using Entity Framework.
 
 ```csharp
 using System;
@@ -1348,9 +1348,9 @@ namespace Restful_Services.Controllers
 }
 ```
 
-### Configure Scheduler component using ODataV4Adaptor
+### Configure Blazor Scheduler component using ODataV4Adaptor
 
-Now, the Scheduler can be configured using the `SfDataManager` to interact with the created OData service and consume the data appropriately. To interact with OData, use `ODataV4Adaptor`.
+Now, the Blazor Scheduler can be configured using the `SfDataManager` to interact with the created OData service and consume the data appropriately. To interact with OData, use `ODataV4Adaptor`.
 
 ```cshtml
 @using Syncfusion.Blazor
@@ -1369,7 +1369,7 @@ Now, the Scheduler can be configured using the `SfDataManager` to interact with 
 
 N> You can find the working sample on Entity framework [here](https://github.com/SyncfusionExamples/blazor-scheduler-crud-using-restful-service).
 
-## Configuring Scheduler with Google API service
+## Configuring Blazor Scheduler with Google API service
 
 We have assigned the dataSource that is retrieved from the Google services within the [`OnInitializedAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_OnInitializedAsync) method. And, the CRUD actions are performed within the [`ActionCompleted`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_ActionCompleted) event.
 

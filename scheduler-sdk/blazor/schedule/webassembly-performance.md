@@ -15,14 +15,14 @@ N> Refer to the Getting Started guides for the [Blazor Server-Side Scheduler](ht
 
 ## Avoid unnecessary component renders
 
-During the Blazor diffing algorithm, every view of the Scheduler component and its child components is checked for re-rendering. For instance, having **EventCallBack** in the application or Scheduler checks every child component after the event callback completes.
+During the Blazor diffing algorithm, every view of the Blazor Scheduler component and its child components is checked for re-rendering. For instance, having **EventCallBack** in the application or Blazor Scheduler checks every child component after the event callback completes.
 
-You can have fine-grained control over Scheduler rendering. The **PreventRender** method helps avoid unnecessary re-rendering of the Scheduler component. This method internally overrides the **ShouldRender** method of Scheduler to prevent rendering.
+You can have fine-grained control over Blazor Scheduler rendering. The **PreventRender** method helps avoid unnecessary re-rendering of the Blazor Scheduler component. This method internally overrides the **ShouldRender** method of Blazor Scheduler to prevent rendering.
 
 In the following example:
 
 * The **PreventRender** method is called in the **IncrementCount** method, which is a click callback.
-* Scheduler is excluded from the rendering triggered by the click event, and only **currentCount** is updated.
+* Blazor Scheduler is excluded from the rendering triggered by the click event, and only **currentCount** is updated.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -65,13 +65,13 @@ In the following example:
 ```
 
 N> * **PreventRender** method accepts boolean argument that accepts true or false to disable or enable rendering respectively.
-<br/> * **PreventRender** can be used only after the Scheduler component completes its initial rendering. Calling it during initial rendering has no effect.
+<br/> * **PreventRender** can be used only after the Blazor Scheduler component completes its initial rendering. Calling it during initial rendering has no effect.
 
-## Avoid unnecessary component renders after Scheduler events
+## Avoid unnecessary component renders after Blazor Scheduler events
 
-When a callback method is assigned to Scheduler events, **StateHasChanged** is called automatically in the parent component after the event completes.
+When a callback method is assigned to Blazor Scheduler events, **StateHasChanged** is called automatically in the parent component after the event completes.
 
-You can prevent this re-rendering of the Scheduler component by calling **PreventRender**.
+You can prevent this re-rendering of the Blazor Scheduler component by calling **PreventRender**.
 
 In the following example:
 
@@ -129,6 +129,6 @@ In the following example:
 }
 ```
 
-N> * **PreventRender** method internally overrides the **ShouldRender** method of the Scheduler to prevent rendering.
+N> * **PreventRender** method internally overrides the **ShouldRender** method of the Blazor Scheduler to prevent rendering.
 <br/> * It is recommended to use **PreventRender** for user-interactive events such as OnCellClick and OnEventClick for better performance.
 <br/> * For events without arguments, such as **DataBound**, you can use **PreventRender** to disable rendering.

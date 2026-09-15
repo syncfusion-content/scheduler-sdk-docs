@@ -29,8 +29,8 @@ documentation: ug
 | Software/Package | Version | Purpose |
 |-----------------|---------|---------|
 | [HotChocolate.AspNetCore](https://www.nuget.org/packages/HotChocolate.AspNetCore) | 15.1.12 or later | GraphQL server framework |
-| [Syncfusion.Blazor.Schedule](https://www.nuget.org/packages/Syncfusion.Blazor.Schedule/)| Latest Version | Scheduler component |
-| [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) | Latest Version | Styling for Scheduler |
+| [Syncfusion.Blazor.Schedule](https://www.nuget.org/packages/Syncfusion.Blazor.Schedule/)| Latest Version | Blazor Scheduler component |
+| [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) | Latest Version | Styling for Blazor Scheduler |
 
 ## Setting Up the GraphQL Backend
 
@@ -159,10 +159,10 @@ public class GraphQLQuery
 - `GetAppointmentsList()` creates sample data with four appointments in February 2026.
 - Dates are adjusted to IST (Indian Standard Time) by subtracting the 5.5-hour offset from UTC.
 - This in-memory list serves as the data source; later you can replace it with a database or external service.
-- The Scheduler reads from this list through the GraphQL query resolver.
+- The Blazor Scheduler reads from this list through the GraphQL query resolver.
 
 ### Step 5: Return data with required format
-To bind data to the Blazor Scheduler component, the resolver function must return the data in a specific structure using the `ReturnType<T>` class. This class tells the Scheduler how many appointments exist (`Count`) and which appointments to show (`Result`).
+To bind data to the Blazor Scheduler component, the resolver function must return the data in a specific structure using the `ReturnType<T>` class. This class tells the Blazor Scheduler how many appointments exist (`Count`) and which appointments to show (`Result`).
 
 [ReturnType.cs]
 ```csharp
@@ -174,11 +174,11 @@ public class ReturnType<T>
 ```
 **Why this format is required**
 
-- `Count` tells the Scheduler how many appointments match the current view or date range.
-- `Result` contains the list of appointments the Scheduler shows as events on the calendar.
+- `Count` tells the Blazor Scheduler how many appointments match the current view or date range.
+- `Result` contains the list of appointments the Blazor Scheduler shows as events on the calendar.
 
 ### Step 6: Create resolver function argument classes
-The GraphQL query is passed from the Scheduler through the `dataManager` property. To accept this parameter in the resolver function, create the `DataManagerRequest` class and the supporting classes required for its properties.
+The GraphQL query is passed from the Blazor Scheduler through the `dataManager` property. To accept this parameter in the resolver function, create the `DataManagerRequest` class and the supporting classes required for its properties.
 
 Refer to the following code examples.
 
@@ -519,7 +519,7 @@ The GraphQL mutation class is now ready to handle all data modification operatio
 7. Set **Interactivity location** to **Per page/component**.
 8. Click **Create**.
 
-> Configure the Interactive render mode as **InteractiveServer** during project creation because the Scheduler requires interactivity for CRUD operations.
+> Configure the Interactive render mode as **InteractiveServer** during project creation because the Blazor Scheduler requires interactivity for CRUD operations.
 
 ### Step 2: Install Required NuGet Packages and Configure Blazor Scheduler Component with GraphQL
 
@@ -598,7 +598,7 @@ var app = builder.Build();
 
 ```
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Scheduler component’s [getting-started](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started-webapp) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Blazor Scheduler component’s [getting-started](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started-webapp) documentation.
 ### Step 3: Create the Data Model
 
 A data model is a C# class that represents the structure of a database table. This model defines the properties that correspond to the columns in the `Appointments` table.
@@ -681,12 +681,12 @@ The `Home.razor` component displays the appointment data in a Blazor Scheduler w
 ### Component Explanation
 
 - **`@rendermode InteractiveServer`**: Enables interactive server-side rendering for the component and allows real-time updates and user interactions without full page reloads.
-- **`<SfSchedule>`**: The main Scheduler component that displays appointments in calendar views such as Day, Week, Work Week, Month, and Agenda.
+- **`<SfSchedule>`**: The main Blazor Scheduler component that displays appointments in calendar views such as Day, Week, Work Week, Month, and Agenda.
 - **`<ScheduleViews>`**: Defines the available view options for the Scheduler. Each `<ScheduleView>` specifies a supported calendar layout.
 - **`<ScheduleEventSettings>`**: Configures how events are bound and managed. This is where data binding through `SfDataManager` and CRUD settings are typically placed.
 
 
-In `Home.razor`, the `SfDataManager` component connects the Scheduler to the GraphQL backend by using the adaptor options configured below:
+In `Home.razor`, the `SfDataManager` component connects the Blazor Scheduler to the GraphQL backend by using the adaptor options configured below:
 
 ```cshtml
 <SfDataManager Url="http://localhost:5070/graphql" 
@@ -707,7 +707,7 @@ In `Home.razor`, the `SfDataManager` component connects the Scheduler to the Gra
 
 ### Step 5: Configure GraphQL Adaptor and Data Binding
 
-The GraphQL adaptor connects the Blazor Scheduler to the GraphQL backend. It translates Scheduler operations into GraphQL queries and mutations. When the user interacts with the Scheduler, the adaptor sends the appropriate GraphQL request to the backend, receives the response, and updates the Scheduler display.
+The GraphQL adaptor connects the Blazor Scheduler to the GraphQL backend. It translates Blazor Scheduler operations into GraphQL queries and mutations. When the user interacts with the Scheduler, the adaptor sends the appropriate GraphQL request to the backend, receives the response, and updates the Blazor Scheduler display.
 
 **What is a GraphQL Adaptor?**
 
@@ -717,8 +717,8 @@ An adaptor is a translator between two different systems. The GraphQL adaptor sp
 - Converts these actions into GraphQL query or mutation syntax.
 - Sends the **GraphQL request** to the backend **GraphQL endpoint**.
 - Receives the response data from the backend.
-- Formats the response back into a structure the Scheduler understands.
-- Updates the Scheduler display with the new data.
+- Formats the response back into a structure the Blazor Scheduler understands.
+- Updates the Blazor Scheduler display with the new data.
 
 The adaptor enables bidirectional communication between the frontend (Scheduler) and backend (GraphQL server).
 
@@ -743,7 +743,7 @@ The `@code` block in `Home.razor` contains the C# code that configures how the a
     @code {
       private DateTime CurrentDate = new DateTime(2026, 2, 12);
       /// <summary>
-      /// GraphQLAdaptorOptions configures how the Scheduler communicates with the GraphQL backend.
+      /// GraphQLAdaptorOptions configures how the Blazor Scheduler communicates with the GraphQL backend.
       /// This object contains the query, mutation operations, and endpoint URL.
       /// </summary>
       private GraphQLAdaptorOptions adaptorOptions = new GraphQLAdaptorOptions
@@ -866,14 +866,14 @@ appointmentsData(dataManager: $dataManager) {}
 - **`count`**
     Returns the **total number of appointments** that match the current query criteria.
     - Example: If 30 appointments exist in the visible date range, `count = 30`.
-    - The Scheduler uses this to understand the scope of data, although it usually loads only the visible window and relies on date-range filtering.
+    - The Blazor Scheduler uses this to understand the scope of data, although it usually loads only the visible window and relies on date-range filtering.
 
 - **`result`**
     Contains the **array of appointment records** that match the current request, typically filtered by the visible date range.
     - `{ ... }` indicates the fields returned for each appointment.
     - **Each field must exactly match** the property names in your C# `Appointment` class.
     - Only the requested fields are returned.
-    - The Scheduler binds these fields directly to render events on the calendar:
+    - The Blazor Scheduler binds these fields directly to render events on the calendar:
         - `Id` → unique identifier
         - `Subject` → event title
         - `Location` → optional event location
@@ -964,7 +964,7 @@ When the backend executes the query, it returns a **JSON response** in this exac
 **What is a mutation?**  
 A mutation is a way to **change data** on the server, such as adding a new appointment, editing one, or deleting one.
 
-In your Scheduler app:
+In your Blazor Scheduler app:
 
 - When you **create** a new appointment → you use a **create** mutation.
 - When you **edit** an existing appointment → you use an **update** mutation.
@@ -1015,9 +1015,9 @@ In your Scheduler app:
 
 1. Open a web browser.
 2. Navigate to `https://localhost:5194` (or the port shown in the terminal).
-3. The Scheduler application is now running and ready to use.
+3. The Blazor Scheduler application is now running and ready to use.
 
-    ![Basic Scheduler displaying appointments from the GraphQL Server](./images/blazor-scheduler-graphql-frontend.webp)
+    ![Basic Blazor Scheduler displaying appointments from the GraphQL Server](./images/blazor-scheduler-graphql-frontend.webp)
 
 ---
 

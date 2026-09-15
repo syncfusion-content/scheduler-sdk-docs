@@ -38,8 +38,8 @@ Ensure the following software and packages are installed before you proceed:
 | .NET SDK | net10.0 or compatible | Runtime and build tools |
 | PostgreSQL Server | 12 or later | Database server |
 | pgAdmin 4 | Latest | PostgreSQL GUI management tool |
-| Syncfusion.Blazor.Schedule | Latest Version | Scheduler and UI components |
-| Syncfusion.Blazor.Themes | Latest Version | Styling for Scheduler components |
+| Syncfusion.Blazor.Schedule | Latest Version | Blazor Scheduler and UI components |
+| Syncfusion.Blazor.Themes | Latest Version | Styling for Blazor Scheduler components |
 | Npgsql.EntityFrameworkCore.PostgreSQL | 10.0.2 or later | PostgreSQL provider for Entity Framework Core |
 | Microsoft.EntityFrameworkCore.Design | 10.0.0 or later | Design-time tools for migrations |
 
@@ -66,7 +66,7 @@ cd BlazorSchedulerApp
 ```
 
 
-> Configure the interactive render mode to **InteractiveServer** during project creation, as the Scheduler requires interactivity for CRUD operations.
+> Configure the interactive render mode to **InteractiveServer** during project creation, as the Blazor Scheduler requires interactivity for CRUD operations.
 
 ### Step 2: Install Required NuGet Packages
 
@@ -696,7 +696,7 @@ Blazor components are now configured and ready to use. For additional guidance, 
 
 ### Step 2: Create and Apply Database Migrations
 
-Before creating the Scheduler component, generate Entity Framework Core migrations to create the database schema.
+Before creating the Blazor Scheduler component, generate Entity Framework Core migrations to create the database schema.
 
 #### Instructions:
 
@@ -745,9 +745,9 @@ Before creating the Scheduler component, generate Entity Framework Core migratio
 
 The database schema has been created successfully.
 
-### Step 3: Create the Scheduler Component
+### Step 3: Create the Blazor Scheduler Component
 
-The Scheduler component displays appointment data in a Blazor Scheduler with full CRUD (Create, Read, Update, Delete) capabilities and multiple calendar views.
+The Blazor Scheduler component displays appointment data in a Blazor Scheduler with full CRUD (Create, Read, Update, Delete) capabilities and multiple calendar views.
 
 #### Instructions:
 
@@ -894,16 +894,16 @@ The Scheduler component displays appointment data in a Blazor Scheduler with ful
 #### Component Explanation:
 
 - **`<SfSchedule>`**  
-  The main Scheduler component that displays appointments in calendar format and supports multiple view modes.
+  The main Blazor Scheduler component that displays appointments in calendar format and supports multiple view modes.
 
 - **`<ScheduleViews>`**  
   Defines the list of calendar views (Day, Week, WorkWeek, Month, Agenda) available for selection.
 
 - **`<ScheduleEventSettings>`**  
-    Configures the appointment model, enables create, edit, and delete actions, and connects the Scheduler to the data source.
+    Configures the appointment model, enables create, edit, and delete actions, and connects the Blazor Scheduler to the data source.
 
 - **`<SfDataManager>`**  
-    Binds the Scheduler to the **CustomAdaptor**, which handles data communication.  
+    Binds the Blazor Scheduler to the **CustomAdaptor**, which handles data communication.  
     It enables automatic calls for read, insert, update, and delete operations.
 
 - **`CustomAdaptor`**  
@@ -914,21 +914,21 @@ The Scheduler component displays appointment data in a Blazor Scheduler with ful
 #### Key Implementation Details:
 
 - **CustomAdaptor**: Handles all database operations (read, insert, update, and delete) directly through EF Core  
-- **SfDataManager**: Automatically triggers the adaptor methods whenever the Scheduler performs an action  
+- **SfDataManager**: Automatically triggers the adaptor methods whenever the Blazor Scheduler performs an action  
 - **Scheduler UI**: Updates immediately, while the adaptor persists changes to PostgreSQL
 
 **Event Flow:**
 
-1. User creates, edits, or deletes an appointment in the Scheduler  
+1. User creates, edits, or deletes an appointment in the Blazor Scheduler  
 2. **SfDataManager** detects the action and triggers the corresponding method in the **CustomAdaptor**  
-3. The Scheduler UI updates immediately without waiting for any database response  
+3. The Blazor Scheduler UI updates immediately without waiting for any database response  
 4. **CustomAdaptor** executes the required database operation (`InsertAsync`, `UpdateAsync`, `RemoveAsync`,and `BatchUpdateAsync`) through `AppointmentService`  
-5. After saving, the updated appointment data, including the database-generated ID, is returned to the Scheduler for syncing.
-The Scheduler component has been created successfully.
+5. After saving, the updated appointment data, including the database-generated ID, is returned to the Blazor Scheduler for syncing.
+The Blazor Scheduler component has been created successfully.
 
 ### Step 4: Build and Run the Application
 
-With the Scheduler component created and database configured, you're ready to run the application.
+With the Blazor Scheduler component created and database configured, you're ready to run the application.
 
 #### Build the Application
 
@@ -1039,7 +1039,7 @@ This documentation has demonstrated how to:
 4. Implement a service layer (`AppointmentService`) for all CRUD operations  
 5. Register Syncfusion, DbContext, and services in `Program.cs`  
 6. Build a Blazor Scheduler component connected through `SfDataManager`  
-7. Use a CustomAdaptor to handle all database persistence while keeping the Scheduler UI responsive
+7. Use a CustomAdaptor to handle all database persistence while keeping the Blazor Scheduler UI responsive
 
 The application now provides a professional appointment scheduling system with:
 - Multiple calendar views (Day, Week, Month, Agenda)

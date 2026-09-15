@@ -9,51 +9,51 @@ documentation: ug
  
 # Style and Appearance in Blazor Scheduler
 
-To modify the Scheduler appearance, override its default CSS. You can also create a custom theme by using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). The following table lists the available Scheduler CSS classes.
+To modify the Blazor Scheduler appearance, override its default CSS. You can also create a custom theme by using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). The following table lists the available Blazor Scheduler CSS classes.
 
 | CSS class | Purpose |
 |-------|---------|
-| .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of Scheduler |
-| .e-schedule .e-month-view .e-work-cells | Work cells in month view of Scheduler |
-| .e-schedule .e-month-view .e-other-month | Work cells from the other month in month view of Scheduler |
-| .e-schedule .e-timeline-view .e-work-cells | Work cells in timeline views of Scheduler |
-| .e-schedule .e-timeline-month-view .e-work-cells | Work cells in timeline month view of Scheduler |
-| .e-schedule .e-timeline-year-view .e-work-cells | Work cells in timeline year view of Scheduler |
-| .e-schedule .e-timeline-year-view .e-work-cells.e-other-month | Work cells from the other month in timeline year view of Scheduler |
-| .e-schedule .e-month-agenda-view .e-work-cells | Work cells in month agenda view of Scheduler |
-| .e-schedule .e-month-agenda-view .e-other-month | Work cells from the other month in month agenda view of Scheduler |
-| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-other-month | Work cells from the other month in year view of Scheduler |
-| .e-schedule .e-vertical-view .e-all-day-cells | All-day cells in vertical views of Scheduler |
-| .e-schedule .e-vertical-view .e-work-hours | Work hour cells in vertical views of Scheduler |
-| .e-schedule .e-month-view .e-work-days | Work day cells in month view of Scheduler |
-| .e-schedule .e-month-agenda-view .e-work-days | Work day cells in month agenda view of Scheduler |
-| .e-schedule .e-timeline-view .e-work-hours | Work hour cells in timeline views of Scheduler |
-| .e-schedule .e-timeline-month-view .e-work-days | Work day cells in timeline month view of Scheduler |
-| .e-schedule .e-timeline-year-view .e-work-cells.e-work-days | Work day cells in timeline year view of Scheduler |
-| .e-schedule .e-vertical-view .e-day-wrapper .e-appointment | Appointments in vertical views of Scheduler |
-| .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment | All-day appointments in vertical views of Scheduler |
-| .e-schedule .e-month-view .e-appointment | Appointments in month view of Scheduler |
-| .e-schedule .e-timeline-view .e-appointment | Appointments in timeline views of Scheduler |
-| .e-schedule .e-timeline-month-view .e-appointment | Appointments in timeline month view of Scheduler |
-| .e-schedule .e-timeline-year-view .e-event-table .e-appointment | Appointments in timeline year view of Scheduler |
-| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-appointment | Appointments in year view of Scheduler |
-| .e-schedule .e-agenda-view .e-appointment | Appointments in agenda view of Scheduler |
-| .e-schedule .e-month-agenda-view .e-appointment-indicator | Appointment indicator in month agenda view of Scheduler |
-| .e-schedule .e-block-appointment | Blocked appointments in Scheduler |
-| .e-schedule .e-read-only | Read-only appointments in Scheduler |
+| .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of Blazor Scheduler |
+| .e-schedule .e-month-view .e-work-cells | Work cells in month view of Blazor Scheduler |
+| .e-schedule .e-month-view .e-other-month | Work cells from the other month in month view of Blazor Scheduler |
+| .e-schedule .e-timeline-view .e-work-cells | Work cells in timeline views of Blazor Scheduler |
+| .e-schedule .e-timeline-month-view .e-work-cells | Work cells in timeline month view of Blazor Scheduler |
+| .e-schedule .e-timeline-year-view .e-work-cells | Work cells in timeline year view of Blazor Scheduler |
+| .e-schedule .e-timeline-year-view .e-work-cells.e-other-month | Work cells from the other month in timeline year view of Blazor Scheduler |
+| .e-schedule .e-month-agenda-view .e-work-cells | Work cells in month agenda view of Blazor Scheduler |
+| .e-schedule .e-month-agenda-view .e-other-month | Work cells from the other month in month agenda view of Blazor Scheduler |
+| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-other-month | Work cells from the other month in year view of Blazor Scheduler |
+| .e-schedule .e-vertical-view .e-all-day-cells | All-day cells in vertical views of Blazor Scheduler |
+| .e-schedule .e-vertical-view .e-work-hours | Work hour cells in vertical views of Blazor Scheduler |
+| .e-schedule .e-month-view .e-work-days | Work day cells in month view of Blazor Scheduler |
+| .e-schedule .e-month-agenda-view .e-work-days | Work day cells in month agenda view of Blazor Scheduler |
+| .e-schedule .e-timeline-view .e-work-hours | Work hour cells in timeline views of Blazor Scheduler |
+| .e-schedule .e-timeline-month-view .e-work-days | Work day cells in timeline month view of Blazor Scheduler |
+| .e-schedule .e-timeline-year-view .e-work-cells.e-work-days | Work day cells in timeline year view of Blazor Scheduler |
+| .e-schedule .e-vertical-view .e-day-wrapper .e-appointment | Appointments in vertical views of Blazor Scheduler |
+| .e-schedule .e-vertical-view .e-all-day-appointment-wrapper .e-appointment | All-day appointments in vertical views of Blazor Scheduler |
+| .e-schedule .e-month-view .e-appointment | Appointments in month view of Blazor Scheduler |
+| .e-schedule .e-timeline-view .e-appointment | Appointments in timeline views of Blazor Scheduler |
+| .e-schedule .e-timeline-month-view .e-appointment | Appointments in timeline month view of Blazor Scheduler |
+| .e-schedule .e-timeline-year-view .e-event-table .e-appointment | Appointments in timeline year view of Blazor Scheduler |
+| .e-schedule .e-year-view .e-calendar-wrapper .e-month-calendar.e-calendar .e-appointment | Appointments in year view of Blazor Scheduler |
+| .e-schedule .e-agenda-view .e-appointment | Appointments in agenda view of Blazor Scheduler |
+| .e-schedule .e-month-agenda-view .e-appointment-indicator | Appointment indicator in month agenda view of Blazor Scheduler |
+| .e-schedule .e-block-appointment | Blocked appointments in Blazor Scheduler |
+| .e-schedule .e-read-only | Read-only appointments in Blazor Scheduler |
 | .e-appointment-border | Currently selected appointments |
 | .e-selected-cells | Currently selected work cells |
-| .e-header-cells | Header cells in Scheduler |
-| .e-schedule .e-vertical-view .e-resource-cells | Resource cells in vertical views of Scheduler |
-| .e-schedule .e-month-view .e-resource-cells | Resource cells in month view of Scheduler |
-| .e-schedule .e-timeline-view .e-resource-cells | Resource cells in timeline views of Scheduler |
-| .e-schedule .e-timeline-month-view .e-resource-cells | Resource cells in timeline month view of Scheduler |
-| .e-parent-node | Parent resource cells in timeline views of Scheduler |
-| .e-child-node | Child resource cells in timeline views of Scheduler |
+| .e-header-cells | Header cells in Blazor Scheduler |
+| .e-schedule .e-vertical-view .e-resource-cells | Resource cells in vertical views of Blazor Scheduler |
+| .e-schedule .e-month-view .e-resource-cells | Resource cells in month view of Blazor Scheduler |
+| .e-schedule .e-timeline-view .e-resource-cells | Resource cells in timeline views of Blazor Scheduler |
+| .e-schedule .e-timeline-month-view .e-resource-cells | Resource cells in timeline month view of Blazor Scheduler |
+| .e-parent-node | Parent resource cells in timeline views of Blazor Scheduler |
+| .e-child-node | Child resource cells in timeline views of Blazor Scheduler |
 
 ## Work cells in vertical views of Scheduler
 
-This CSS selector targets the work cells in the vertical views (Day, Week, and WorkWeek) of the Scheduler component. These cells represent the individual time slots arranged vertically where appointments are displayed.
+This CSS selector targets the work cells in the vertical views (Day, Week, and WorkWeek) of the Blazor Scheduler component. These cells represent the individual time slots arranged vertically where appointments are displayed.
 
 ```cshtml
 
@@ -100,7 +100,7 @@ This CSS selector targets the work cells in the vertical views (Day, Week, and W
 
 ## Work cells in month view of Scheduler
 
-This CSS selector targets the work cells in the month view of the Scheduler that belong to the current month. These cells represent the individual days of the displayed month where users can schedule and view appointments.
+This CSS selector targets the work cells in the month view of the Blazor Scheduler that belong to the current month. These cells represent the individual days of the displayed month where users can schedule and view appointments.
 
 ```cshtml
 
@@ -232,7 +232,7 @@ This CSS selector targets the work cells in the standard timeline views of the S
 
 ### Work cells in timeline month view of Scheduler
 
-This CSS selector targets the work cells in the timeline month view of the Scheduler component.
+This CSS selector targets the work cells in the timeline month view of the Blazor Scheduler component.
 
 ```cshtml
 
@@ -275,7 +275,7 @@ This CSS selector targets the work cells in the timeline month view of the Sched
 
 ### Work cells in timeline year view of Scheduler
 
-This CSS selector targets the work cells in the timeline year view of the Scheduler component. These cells represent time slots across the year and provide an overview of appointments.
+This CSS selector targets the work cells in the timeline year view of the Blazor Scheduler component. These cells represent time slots across the year and provide an overview of appointments.
 
 ```cshtml
 
@@ -494,7 +494,7 @@ This CSS selector targets the work cells representing days from adjacent months 
 
 ### All-day cells in vertical views of Scheduler
 
-This CSS selector targets the all-day cells in the vertical views (Day, Week, and WorkWeek) of the Scheduler component. These cells represent the time slots designated for all-day events, providing users with a straightforward way to visualize and manage significant appointments.
+This CSS selector targets the all-day cells in the vertical views (Day, Week, and WorkWeek) of the Blazor Scheduler component. These cells represent the time slots designated for all-day events, providing users with a straightforward way to visualize and manage significant appointments.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -1073,7 +1073,7 @@ This CSS selector targets appointment elements specifically in the timeline mont
 
 ### Appointments in timeline year view of Scheduler
 
-This CSS selector targets appointment elements specifically in the timeline year view of the Blazor Scheduler component. The Timeline Year view in Scheduler is designed to display events across an entire year in a horizontal, scrollable layout.
+This CSS selector targets appointment elements specifically in the timeline year view of the Blazor Scheduler component. The Timeline Year view in Blazor Scheduler is designed to display events across an entire year in a horizontal, scrollable layout.
 
 ```cshtml
 
@@ -1173,7 +1173,7 @@ This CSS selector targets appointment elements specifically in the year view of 
 
 ### Appointments in agenda view of Scheduler
 
-This CSS selector targets appointment elements specifically in the agenda view of the Blazor Scheduler component. An appointment in the agenda view of a scheduler is shown as a simple list of events sorted by date and time.
+This CSS selector targets appointment elements specifically in the agenda view of the Blazor Scheduler component. An appointment in the agenda view of a Blazor Scheduler is shown as a simple list of events sorted by date and time.
 
 ```cshtml
 
@@ -1224,7 +1224,7 @@ This CSS selector targets appointment elements specifically in the agenda view o
 
 ### Appointments in month agenda view of Scheduler
 
-This CSS selector targets appointment elements specifically in the month agenda view of the Blazor Scheduler component. An appointment in the month agenda view of a scheduler is shown as a list of events organized by day within a selected month. 
+This CSS selector targets appointment elements specifically in the month agenda view of the Blazor Scheduler component. An appointment in the month agenda view of a Blazor Scheduler is shown as a list of events organized by day within a selected month. 
 
 ```cshtml
 
@@ -1334,7 +1334,7 @@ This CSS selector targets appointment elements specifically designated as blocke
 
 ### Read-only appointments in Scheduler
 
-This CSS selector targets appointment elements that are specifically marked as read-only in the Blazor Scheduler component. A read-only appointment in a scheduler refers to an event or time slot that is visible to users but cannot be modified, deleted, or rescheduled through the user interface.
+This CSS selector targets appointment elements that are specifically marked as read-only in the Blazor Scheduler component. A read-only appointment in a Blazor Scheduler refers to an event or time slot that is visible to users but cannot be modified, deleted, or rescheduled through the user interface.
 
 ```cshtml
 
@@ -1388,7 +1388,7 @@ This CSS selector targets appointment elements that are specifically marked as r
 
 ### Selected appointments in Scheduler
 
-This CSS selector targets appointment elements that are specifically marked as selected in the Blazor Scheduler component. A selected appointment in a scheduler refers to an event that a user has actively clicked on or interacted with. 
+This CSS selector targets appointment elements that are specifically marked as selected in the Blazor Scheduler component. A selected appointment in a Blazor Scheduler refers to an event that a user has actively clicked on or interacted with. 
 
 ```cshtml
 
@@ -1443,7 +1443,7 @@ This CSS selector targets appointment elements that are specifically marked as s
 
 ### Selected cells in Scheduler
 
-This CSS selector targets the cells that are specifically marked as selected in the Blazor Scheduler component. A selected cell in a scheduler refers to a time slot that a user has actively clicked on or interacted with. 
+This CSS selector targets the cells that are specifically marked as selected in the Blazor Scheduler component. A selected cell in a Blazor Scheduler refers to a time slot that a user has actively clicked on or interacted with. 
 
 ```cshtml
 
@@ -1548,7 +1548,7 @@ This CSS selector targets the cells that are specifically marked as header cells
 
 ### Resource cells in vertical views of Scheduler
 
-This CSS selector targets the cells that are specifically marked as resource cells in the Blazor Scheduler component. Resource cells in the vertical views of Scheduler display the names or labels of resources such as people, rooms, equipment, or services. These cells are usually shown at the top of the Scheduler and help organize appointments by resource.
+This CSS selector targets the cells that are specifically marked as resource cells in the Blazor Scheduler component. Resource cells in the vertical views of Blazor Scheduler display the names or labels of resources such as people, rooms, equipment, or services. These cells are usually shown at the top of the Blazor Scheduler and help organize appointments by resource.
 
 ```cshtml
 
