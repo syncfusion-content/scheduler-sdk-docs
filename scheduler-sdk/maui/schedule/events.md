@@ -246,6 +246,49 @@ private void OnSchedulerViewChanged(object sender, SchedulerViewChangedEventArgs
 N>
 Whenever a scheduler view is changed, the `SelectableDayPredicate` function must be called to decide whether the cell is selectable in the `SfScheduler`.
 
+## AppointmentDeleting
+
+The `AppointmentDeleting` event is raised when an appointment is being deleted through the DeleteAppointment method, by pressing the Delete key, or by using the appointment context menu's Delete option. The `AppointmentDeletingEventArgs` provides information about the deletion operation.
+
+- Appointment : Retrieves the appointment being deleted.
+- RecurringAppointmentEditMode : Specifies the edit mode selected when deleting a recurring appointment. This value indicates whether the deletion applies to a single occurrence, or the entire series. For non-recurring appointments, the value is null.
+- Cancel : Set to `true` to prevent the appointment from being deleted.
+
+{% tabs %}
+{% highlight xaml hl_lines="7" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler"
+                           View="Day"
+                           AppointmentEditorMode="Add,Edit"
+                           AppointmentDeleting="Scheduler_AppointmentDeleting">
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+    }
+
+    private void Scheduler_AppointmentDeleting(object sender, AppointmentDeletingEventArgs e)
+    {
+        var deletingAppointment = e.Appointment;
+        var recurringAppointmentEditMode = e.RecurringAppointmentEditMode;
+
+        // Set to true to cancel the deletion operation.
+        e.Cancel = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Commands
 
 Scheduler commands allow to map Tapped event, Double tapped event, Long Pressed event and View Changed event to Commands which supports the MVVM (Model-View-ViewModel) pattern. 
