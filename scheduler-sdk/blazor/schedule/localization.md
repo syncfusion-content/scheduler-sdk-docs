@@ -13,7 +13,7 @@ documentation: ug
 
 ## Setting date format
 
-Scheduler supports all valid date formats and, by default, uses the universal date format "MM/dd/yyyy". If the [`DateFormat`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_DateFormat) property is not specified, the Scheduler uses the system culture. Because the default system culture is "en-US", the date format follows the "MM/dd/yyyy" pattern.
+Scheduler supports all valid date formats and, by default, uses the universal date format "MM/dd/yyyy". If the [`DateFormat`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_DateFormat) property is not specified, the Blazor Scheduler uses the system culture. Because the default system culture is "en-US", the date format follows the "MM/dd/yyyy" pattern.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -48,7 +48,7 @@ Scheduler supports all valid date formats and, by default, uses the universal da
 
 ## Time mode
 
-The Scheduler time format can be either 12-hour or 24-hour based on the system culture. You can also customize the time format by using the [`TimeFormat`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_TimeFormat) property.
+The Blazor Scheduler time format can be either 12-hour or 24-hour based on the system culture. You can also customize the time format by using the [`TimeFormat`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_TimeFormat) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -82,9 +82,9 @@ The Scheduler time format can be either 12-hour or 24-hour based on the system c
 
 ![Time Format in Blazor Scheduler](images/blazor-scheduler-timeformat.webp)
 
-## Displaying Scheduler in RTL mode
+## Displaying Blazor Scheduler in RTL mode
 
-You can change the Scheduler layout and behavior to follow RTL (Right-to-Left) conventions by setting [`EnableRtl`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableRtl) to `true`. This displays the Scheduler layout from right to left. Its default value is `false`.
+You can change the Blazor Scheduler layout and behavior to follow RTL (Right-to-Left) conventions by setting [`EnableRtl`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnableRtl) to `true`. This displays the Blazor Scheduler layout from right to left. Its default value is `false`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

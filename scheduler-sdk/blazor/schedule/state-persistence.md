@@ -9,9 +9,9 @@ documentation: ug
 
 # State Persistence in Blazor Scheduler
 
-State persistence allows Scheduler to retain the [CurrentView](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CurrentView), [SelectedDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SelectedDate), and scroll position values in [localStorage](https://www.w3schools.com/html/html5_webstorage.asp). This helps preserve state even if the browser is refreshed or you move to another page within the browser. This behavior is controlled by the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnablePersistence) property, which is `false` by default. When it is set to `true`, the Scheduler retains `CurrentView`, `SelectedDate`, and scroll position values even after a page refresh.
+State persistence allows Blazor Scheduler to retain the [CurrentView](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CurrentView), [SelectedDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SelectedDate), and scroll position values in [localStorage](https://www.w3schools.com/html/html5_webstorage.asp). This helps preserve state even if the browser is refreshed or you move to another page within the browser. This behavior is controlled by the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_EnablePersistence) property, which is `false` by default. When it is set to `true`, the Blazor Scheduler retains `CurrentView`, `SelectedDate`, and scroll position values even after a page refresh.
 
-N> The Scheduler ID is required for state persistence.
+N> The Blazor Scheduler ID is required for state persistence.
 
 ```cshtml
 

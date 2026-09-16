@@ -9,7 +9,7 @@ documentation: ug
 
 # Set Different Work Hours for Each Day in Blazor Scheduler
 
-In Blazor, you can set the required work hours in Scheduler, which visually highlights the cells within the specified work-hour range. In the following code example, you can set different work hours for Scheduler cells based on the day of the week by using the `SetWorkHoursAsync` method. Before setting custom work hours, reset the default work hours by using the `ResetWorkHoursAsync` method.
+In Blazor, you can set the required work hours in Blazor Scheduler, which visually highlights the cells within the specified work-hour range. In the following code example, you can set different work hours for Blazor Scheduler cells based on the day of the week by using the `SetWorkHoursAsync` method. Before setting custom work hours, reset the default work hours by using the `ResetWorkHoursAsync` method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

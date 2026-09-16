@@ -9,18 +9,18 @@ documentation: ug
 
 # CRUD Actions in Blazor Scheduler
 
-Events, also known as appointments, play an important role in the Scheduler and are the items that users interact with most often. You can easily manipulate them by adding, editing, or deleting appointments as needed, either by using the editor window or through drag-and-resize actions.
+Events, also known as appointments, play an important role in the Blazor Scheduler and are the items that users interact with most often. You can easily manipulate them by adding, editing, or deleting appointments as needed, either by using the editor window or through drag-and-resize actions.
 
 ## Add
 
-Any kind of appointment, such as normal, all-day, spanned, or recurring events, can be added in the Scheduler using any of the following ways.
+Any kind of appointment, such as normal, all-day, spanned, or recurring events, can be added in the Blazor Scheduler using any of the following ways.
 
 * [Creation using editor window](#creation-using-editor-window)
 * [Creation using AddEventAsync method](#creation-using-addeventasync-method)
 
 ### Creation using editor window
 
-The default editor window opens when you double-click Scheduler cells. It provides event-related options such as Subject, Location, Start and End Time, All-day, Timezone, Description, and recurrence options. With these available fields, you can provide detailed information for the appointments. Once the fields are filled with valid values, select the `Save` button to add an event.
+The default editor window opens when you double-click Blazor Scheduler cells. It provides event-related options such as Subject, Location, Start and End Time, All-day, Timezone, Description, and recurrence options. With these available fields, you can provide detailed information for the appointments. Once the fields are filled with valid values, select the `Save` button to add an event.
 
 If you want to provide only the Subject for appointments, single-click the required cells to open the quick popup, enter the Subject, and save it. You can also select multiple cells and press the `Enter` key to open the quick popup for the selected time range and save the appointment for that range.
 
@@ -81,7 +81,7 @@ Appointments can be created dynamically by using the [`AddEventAsync`](https://h
 
 ### Inline creation
 
-Another easy way to create appointments is by enabling the [`AllowInline`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowInline) property. By single-clicking Scheduler cells or pressing the `Enter` key on selected cells, an appointment-like text box is displayed, where you can enter the Subject. Pressing the `Enter` key or clicking outside the text box creates the appointment in the Scheduler.
+Another easy way to create appointments is by enabling the [`AllowInline`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowInline) property. By single-clicking Blazor Scheduler cells or pressing the `Enter` key on selected cells, an appointment-like text box is displayed, where you can enter the Subject. Pressing the `Enter` key or clicking outside the text box creates the appointment in the Scheduler.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -152,7 +152,7 @@ if (param.action == "insert" || (param.action == "batch" && param.added != null)
 
 ### Restricting add action based on specific criteria
 
-In the following example, specific fields in the Scheduler editor window, such as Subject and Location, are validated so that if they are left blank, the default `required` validation message is displayed when the `Save` button is clicked.
+In the following example, specific fields in the Blazor Scheduler editor window, such as Subject and Location, are validated so that if they are left blank, the default `required` validation message is displayed when the `Save` button is clicked.
 
 Additionally, a regex condition is added to the Location field so that if any special characters are entered, a custom validation message is displayed.
 
@@ -275,7 +275,7 @@ Note: You can also single-click appointments, which opens the quick info popup w
 
 Appointments can be edited and updated manually using the [`SaveEventAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SaveEventAsync__0_Syncfusion_Blazor_Schedule_CurrentAction__0_) method.
 
-In the following example, an event with ID `1` is edited and its Subject is changed. When the modified data object is passed to the [`SaveEventAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SaveEventAsync__0_Syncfusion_Blazor_Schedule_CurrentAction__0_) method, the changes are reflected in the original event. The `Id` field is required in this edit process, and the modified event object must contain a valid `Id` value that exists in the Scheduler data source.
+In the following example, an event with ID `1` is edited and its Subject is changed. When the modified data object is passed to the [`SaveEventAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SaveEventAsync__0_Syncfusion_Blazor_Schedule_CurrentAction__0_) method, the changes are reflected in the original event. The `Id` field is required in this edit process, and the modified event object must contain a valid `Id` value that exists in the Blazor Scheduler data source.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -407,7 +407,7 @@ Recurring appointments can be edited in either of the following two ways.
 
 **Editing single occurrence** - When a recurring event is double-clicked, a popup prompts you to choose whether to edit the single event or the entire series. If you select the **EDIT EVENT** option, only a single occurrence of the recurring appointment is edited. The following process takes place while editing a single occurrence:
 
-* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
+* A new event will be created from the parent event data and added to the Blazor Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`RecurrenceID`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceId.html) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
 * The parent recurring event needs to be updated with appropriate [`RecurrenceException`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceException.html) field to hold the edited occurrence appointment's date collection.
 
@@ -598,7 +598,7 @@ When you double-click an event, the default editor window opens and includes a `
 
 Appointments can be removed manually using the [`DeleteEventAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_DeleteEventAsync__0_System_Nullable_Syncfusion_Blazor_Schedule_CurrentAction__) method. The following code examples show how to delete normal and recurring events.
 
-**Normal event** - You can delete normal appointments in the Scheduler by passing either its `Id` value or the entire event object collection to the [`DeleteEventAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_DeleteEventAsync__0_System_Nullable_Syncfusion_Blazor_Schedule_CurrentAction__) method.
+**Normal event** - You can delete normal appointments in the Blazor Scheduler by passing either its `Id` value or the entire event object collection to the [`DeleteEventAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_DeleteEventAsync__0_System_Nullable_Syncfusion_Blazor_Schedule_CurrentAction__) method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -728,7 +728,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ![Removing Blazor Scheduler Event](images/blazor-scheduler-remove-events.webp)
 
-### How to delete a single occurrence or entire series from Scheduler and update it in database at server side
+### How to delete a single occurrence or entire series from Blazor Scheduler and update it in database at server side
 
 The recurring events can be deleted in either of the following two ways.
 
@@ -737,7 +737,7 @@ The recurring events can be deleted in either of the following two ways.
 
 **Single occurrence** - When you attempt to delete a recurring event, a popup prompts you to choose whether to delete the single event or the entire series. If you select the **DELETE EVENT** option, only a single occurrence of the recurring appointment is removed. The following process takes place while removing a single occurrence:
 
-* The selected occurrence will be deleted from the Scheduler user interface.
+* The selected occurrence will be deleted from the Blazor Scheduler user interface.
 * In code, the parent recurring event object will be updated with appropriate [`RecurrenceException`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.FieldRecurrenceException.html) field, to hold the deleted occurrence appointment's date collection.
 
 Therefore, when a single occurrence is deleted from a recurring event, the `update` action is applied to the parent recurring event as shown in the following code example.

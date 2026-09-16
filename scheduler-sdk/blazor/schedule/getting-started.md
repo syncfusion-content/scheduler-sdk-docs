@@ -154,7 +154,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 {% endhighlight %}
 {% endtabs %}
 
-Include the required [script references](https://blazor.syncfusion.com/documentation/common/adding-script-references) at the end of the `<body>` section in the **~wwwroot/index.html** file to enable Scheduler functionality.
+Include the required [script references](https://blazor.syncfusion.com/documentation/common/adding-script-references) at the end of the `<body>` section in the **~wwwroot/index.html** file to enable Blazor Scheduler functionality.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -234,7 +234,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 
 ## Populating appointments
 
-To populate the Scheduler with appointments, bind the event data to it by assigning the `DataSource` property under [ScheduleEventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1__ctor).
+To populate the Blazor Scheduler with appointments, bind the event data to it by assigning the `DataSource` property under [ScheduleEventSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEventSettings-1.html#Syncfusion_Blazor_Schedule_ScheduleEventSettings_1__ctor).
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -279,7 +279,7 @@ To populate the Scheduler with appointments, bind the event data to it by assign
 
 ## Setting date
 
-The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) usually displays the system date as its current date. To change the current date of Scheduler with specific date, define the two-way binding for [SelectedDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SelectedDate) property.
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) usually displays the system date as its current date. To change the current date of Blazor Scheduler with specific date, define the two-way binding for [SelectedDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SelectedDate) property.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -316,11 +316,11 @@ The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler
 
 ## Setting view
 
-The Scheduler displays `Week` view by default. To change the current view, define the applicable view name to the two-way binding of [CurrentView](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CurrentView) property.
+The Blazor Scheduler displays `Week` view by default. To change the current view, define the applicable view name to the two-way binding of [CurrentView](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CurrentView) property.
 
 ### Available Views
 
-The Scheduler supports the following built-in views:
+The Blazor Scheduler supports the following built-in views:
 
 * Day
 * Week
