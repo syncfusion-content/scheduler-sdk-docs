@@ -165,7 +165,7 @@ onClick(args) {
 - `ca-gregorian.json` - Calendar data
 - `numberingSystems.json` - Numbering system data
 
-```tsx
+```ts
 import { loadCldr, L10n } from '@syncfusion/ej2-base';
 import enNumberData from '@syncfusion/ej2-cldr-data/main/en-GB/numbers.json';
 import entimeZoneData from '@syncfusion/ej2-cldr-data/main/en-GB/timeZoneNames.json';
