@@ -15,7 +15,7 @@ The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler
 
 ## Common use cases
 
-The Blazor Scheduler is ideal for a wide range of business scenarios:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) is ideal for a wide range of business scenarios:
 
 | Use Case | Description | Key Features |
 |----------|-------------|--------------|
@@ -28,15 +28,15 @@ The Blazor Scheduler is ideal for a wide range of business scenarios:
 
 ## Data connectivity
 
-The Blazor Scheduler enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. The Scheduler can work with in-memory collections, connect to remote services, or leverage databases and ORM frameworks for seamless integration.
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. The Scheduler can work with in-memory collections, connect to remote services, or leverage databases and ORM frameworks for seamless integration.
 
 **Data Binding Approaches**
 
-- **[List binding](./data-binding#list-binding)** — Bind the Scheduler to local collections and lists for fast data access without external dependencies. Ideal for small to medium datasets and rapid prototyping.
-- **[ObservableCollection](./data-binding#observablecollection)** — Automatically reflect added and removed appointments without manual refresh.
-- **[Remote data](./data-binding#remote-data)** — Connect to **web services, REST APIs**, OData, and Web API endpoints for scalable applications.
-- **[Load on demand](./data-binding#load-on-demand)** — Fetch appointments lazily as the user navigates between dates for large datasets.
-- **[Custom binding](./data-binding#custom-binding)** — Handle data operations manually when services require custom processing.
+- **[List binding](./data-binding#list-binding)** - Bind the Scheduler to local collections and lists for fast data access without external dependencies. Ideal for small to medium datasets and rapid prototyping.
+- **[ObservableCollection](./data-binding#observablecollection)** - Automatically reflect added and removed appointments without manual refresh.
+- **[Remote data](./data-binding#remote-data)** - Connect to web services, REST APIs, OData, and Web API endpoints for scalable applications.
+- **[Load on demand](./data-binding#load-on-demand)** - Fetch appointments lazily as the user navigates between dates for large datasets.
+- **[Custom binding](./data-binding#custom-binding)** - Handle data operations manually when services require custom processing.
 
 **Database & Service Integration**
 
@@ -52,7 +52,7 @@ The Blazor Scheduler enables multiple data binding approaches, offering flexibil
 
 ## Views
 
-The Scheduler includes a wide variety of view modes, each with its own configuration options:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) includes a wide variety of view modes, each with its own configuration options:
 
 | View | Description | Best For |
 |------|-------------|----------|
@@ -65,7 +65,7 @@ The Scheduler includes a wide variety of view modes, each with its own configura
 
 ## Appointments & events
 
-The Scheduler provides comprehensive event management capabilities that support every aspect of creating, displaying, and manipulating appointments:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) provides comprehensive event management capabilities that support every aspect of creating, displaying, and manipulating appointments:
 
 **Event Types**
 
@@ -98,7 +98,7 @@ The Scheduler provides comprehensive event management capabilities that support 
 
 ## Resources
 
-The Scheduler supports assigning appointments to one or more resources such as rooms, staff, or equipment, with flexible grouping options:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) supports assigning appointments to one or more resources such as rooms, staff, or equipment, with flexible grouping options:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -112,7 +112,7 @@ The Scheduler supports assigning appointments to one or more resources such as r
 
 ## Timezone & time configuration
 
-The Scheduler provides native timezone support so appointments display accurately for users in any region:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) provides native timezone support so appointments display accurately for users in any region:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -125,7 +125,7 @@ The Scheduler provides native timezone support so appointments display accuratel
 
 ## User experience & interaction
 
-The Scheduler provides a comprehensive, accessible user experience with extensive customization options, flexible interaction modes, and accessibility standards compliance:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) provides a comprehensive, accessible user experience with extensive customization options, flexible interaction modes, and accessibility standards compliance:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -140,7 +140,7 @@ The Scheduler provides a comprehensive, accessible user experience with extensiv
 
 ## Performance
 
-The Scheduler is engineered for exceptional performance, enabling smooth operation with large datasets and long date ranges:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) is engineered for exceptional performance, enabling smooth operation with large datasets and long date ranges:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -151,7 +151,7 @@ The Scheduler is engineered for exceptional performance, enabling smooth operati
 
 ## Export & data exchange
 
-The Scheduler provides comprehensive output and interoperability capabilities:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) provides comprehensive output and interoperability capabilities:
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -161,17 +161,17 @@ The Scheduler provides comprehensive output and interoperability capabilities:
 
 ## Globalization & accessibility
 
-The Blazor Scheduler is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
-- **[WAI-ARIA attributes](./accessibility#wai-aria-attributes)** — Accessible roles and attributes for the Scheduler UI
-- **[Keyboard interaction](./accessibility#keyboard-interaction)** — Complete scheduler operation via keyboard
-  - Tab / Shift+Tab — Navigate between focusable areas
-  - Arrow keys — Navigate between cells and events
-  - Enter — Open the editor on a selected cell or event
-  - Delete — Remove the selected event
-- **[Ensuring accessibility](./accessibility#ensuring-accessibility)** — Validation guidance for accessible schedulers
-- **[Setting date format](./localization#setting-date-format)** and **[Time mode](./localization#time-mode)** — Culture-aware formats and 12/24-hour display
-- **[Displaying Scheduler in RTL mode](./localization#displaying-scheduler-in-rtl-mode)** — Right-to-left rendering for RTL languages
+- **[WAI-ARIA attributes](./accessibility#wai-aria-attributes)** - Accessible roles and attributes for the Scheduler UI
+- **[Keyboard interaction](./accessibility#keyboard-interaction)** - Complete scheduler operation via keyboard
+  - Tab / Shift+Tab - Navigate between focusable areas
+  - Arrow keys - Navigate between cells and events
+  - Enter - Open the editor on a selected cell or event
+  - Delete - Remove the selected event
+- **[Ensuring accessibility](./accessibility#ensuring-accessibility)** - Validation guidance for accessible schedulers
+- **[Setting date format](./localization#setting-date-format)** and **[Time mode](./localization#time-mode)** - Culture-aware formats and 12/24-hour display
+- **[Displaying Scheduler in RTL mode](./localization#displaying-scheduler-in-rtl-mode)** - Right-to-left rendering for RTL languages
 
 ## Advanced features
 
@@ -185,7 +185,7 @@ The Scheduler includes sophisticated capabilities designed for complex enterpris
 
 ## System requirements
 
-The Blazor Scheduler works with:
+The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) works with:
 
 - **Blazor Version**: .NET 8.0 or higher
 - **Hosting Models**: Blazor Server, Blazor WebAssembly, Blazor Web App
@@ -201,12 +201,12 @@ The Blazor Scheduler works with:
 - [Blazor Hybrid MAUI App Guide](./getting-started-with-maui-app)
 
 **Popular Features:**
-- [Views](./views) — 11 built-in calendar views
-- [Recurring Events](./recurring-events) — Repeat patterns with exceptions
-- [Resources](./resources) — Grouping by staff, rooms, and equipment
-- [Appointments](./appointments) — All-day, spanned, and block events
-- [Timezone](./timezone) — Timezone-aware event display
-- [Exporting](./exporting) — Excel and ICS calendar output
+- [Views](./views) - 11 built-in calendar views
+- [Recurring Events](./recurring-events) - Repeat patterns with exceptions
+- [Resources](./resources) - Grouping by staff, rooms, and equipment
+- [Appointments](./appointments) - All-day, spanned, and block events
+- [Timezone](./timezone) - Timezone-aware event display
+- [Exporting](./exporting) - Excel and ICS calendar output
 
 ## Support & Resources
 
