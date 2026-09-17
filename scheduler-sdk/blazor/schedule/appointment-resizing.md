@@ -18,7 +18,7 @@ To get started quickly with the resize options available in the Scheduler, you c
 
 ## Disable the resize action
 
-By default, resizing of events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set `false` to the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowResizing) property.
+By default, resizing of events is allowed on all Blazor Scheduler views except Agenda and Month-Agenda view. To disable this event resizing action, set `false` to the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowResizing) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -103,7 +103,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 
 ## Controlling scroll speed while resizing an event
 
-The speed of the scrolling action while resizing an appointment to the Scheduler edges can be controlled within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event by setting the desired value to the [ScrollBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScrollOptions.html#Syncfusion_Blazor_Schedule_ScrollOptions_ScrollBy) option.
+The speed of the scrolling action while resizing an appointment to the Blazor Scheduler edges can be controlled within the [OnResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnResizeStart) event by setting the desired value to the [ScrollBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScrollOptions.html#Syncfusion_Blazor_Schedule_ScrollOptions_ScrollBy) option.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
