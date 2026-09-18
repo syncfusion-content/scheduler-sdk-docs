@@ -340,8 +340,8 @@ public sealed partial class MainWindow : Window
             EndTime = new System.DateTime(2026, 09, 16, 0, 0, 0),
             Text = "Holiday",
             CanEdit = false,
-            Background = new SolidColorBrush(Colors.LimeGreen),
-            Foreground = new SolidColorBrush(Colors.White)
+            Background = new SolidColorBrush(Colors.LightGreen),
+            Foreground = new SolidColorBrush(Colors.Black)
         });
     }
 }

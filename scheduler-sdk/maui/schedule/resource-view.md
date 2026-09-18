@@ -1232,8 +1232,9 @@ When resources are enabled, a hamburger menu icon is shown in the adaptive heade
 
 As shown in the following image, Team A, Team B, and Team C are expanded, displaying all child resources in the hierarchy. Selecting a child resource displays the schedule associated with that resource, and the selected resource name is shown in the adaptive header for easy identification.
 
+![Adaptive header for hierarchical resources in month view in .NET MAUI Scheduler](images/resource-view/adaptive-header-for%20hierarchical-resources-in-month-view.jpg)
 
-
+![Adaptive header for hierarchical resources in day view in .NET MAUI Scheduler](images/resource-view/adaptive-header-for%20hierarchical-resources-in-day-view.jpg)
 
 ## Visible Resource Count
  
