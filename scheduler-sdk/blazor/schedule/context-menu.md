@@ -9,13 +9,13 @@ documentation: ug
 
 # Context Menu in Blazor Scheduler
 
-The context menu can be displayed on work cells, resource cells, and appointments in the Scheduler by using the [`ContextMenu`](https://blazor.syncfusion.com/documentation/context-menu/getting-started) control from the application. In the following code example, the context menu control is added in the sample and its target is set to the Scheduler, while the target element is obtained by using the [GetElementInfoAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetElementInfoAsync_System_Int32_System_Int32_) public method in Blazor.
+The context menu can be displayed on work cells, resource cells, and appointments in the Blazor Scheduler by using the [`ContextMenu`](https://blazor.syncfusion.com/documentation/context-menu/getting-started) control from the application. In the following code example, the context menu control is added in the sample and its target is set to the Scheduler, while the target element is obtained by using the [GetElementInfoAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_GetElementInfoAsync_System_Int32_System_Int32_) public method in Blazor.
 
-On Scheduler cells, menu items such as `New Event`, `New Recurring Event`, and `Today` can be displayed. For appointments, related options such as `Edit Event` and `Delete Event` can be displayed. For resource cells, the related resource information can be displayed. The default event window can be opened for appointment creation and editing by using the [OpenEditorAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_OpenEditorAsync__0_Syncfusion_Blazor_Schedule_CurrentAction_) method of the Scheduler.
+On Blazor Scheduler cells, menu items such as `New Event`, `New Recurring Event`, and `Today` can be displayed. For appointments, related options such as `Edit Event` and `Delete Event` can be displayed. For resource cells, the related resource information can be displayed. The default event window can be opened for appointment creation and editing by using the [OpenEditorAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_OpenEditorAsync__0_Syncfusion_Blazor_Schedule_CurrentAction_) method of the Scheduler.
 
 Appointments can be deleted by using the [DeleteEventAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_DeleteEventAsync__1___0_System_Nullable_Syncfusion_Blazor_Schedule_CurrentAction__) public method. Also, the [SelectedDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_SelectedDate) property can be used to navigate between different dates.
 
-Note: You can also display custom menu options on Scheduler cells and appointments. The context menu opens on tap-and-hold in responsive mode.
+Note: You can also display custom menu options on Blazor Scheduler cells and appointments. The context menu opens on tap-and-hold in responsive mode.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

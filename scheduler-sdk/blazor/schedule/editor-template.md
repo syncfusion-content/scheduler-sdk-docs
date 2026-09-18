@@ -13,11 +13,11 @@ Scheduler uses popups and dialogs to display the required notifications, and it 
 
 ## Event editor
 
-The editor window usually opens in the Scheduler when a cell or event is double-clicked. When a cell is double-clicked, the detailed editor window opens in "Add new" mode, whereas when an event is double-clicked, it opens in "Edit" mode.
+The editor window usually opens in the Blazor Scheduler when a cell or event is double-clicked. When a cell is double-clicked, the detailed editor window opens in "Add new" mode, whereas when an event is double-clicked, it opens in "Edit" mode.
 
 On mobile devices, the detailed editor window can be opened in edit mode by clicking the edit icon in the popup that appears when an event is tapped once. You can also open it in add mode by tapping a cell, which shows a `+` indicator; tapping it again opens the editor window.
 
-Note: You can also prevent the editor window from opening by rendering Scheduler in [`Readonly`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_Readonly) mode or by applying code customization within the [`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event.
+Note: You can also prevent the editor window from opening by rendering Blazor Scheduler in [`Readonly`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_Readonly) mode or by applying code customization within the [`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event.
 
 ### How to change the editor window header title and text of footer buttons
 
@@ -227,7 +227,7 @@ You can prevent the editor and quick popup windows from appearing by setting the
 }
 ```
 
-To prevent only specific Scheduler popups, check the popup type in the condition. The popup types that can be checked within the [`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event are as follows.
+To prevent only specific Blazor Scheduler popups, check the popup type in the condition. The popup types that can be checked within the [`OnPopupOpen`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleEvents-1.html#Syncfusion_Blazor_Schedule_ScheduleEvents_1_OnPopupOpen) event are as follows.
 
 | Type | Description |
 |------|-------------|
@@ -1549,7 +1549,7 @@ By default, the [`QuickInfoOnSelectionEnd`](https://help.syncfusion.com/cr/blazo
 
 ### How to enable/disable the multiple days selection
 
-By default, the Scheduler allows users to select multiple days. You can prevent this behavior by setting the [`AllowMultiRowSelection`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowMultiRowSelection) property to `false`. Its default value is `true`.
+By default, the Blazor Scheduler allows users to select multiple days. You can prevent this behavior by setting the [`AllowMultiRowSelection`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_AllowMultiRowSelection) property to `false`. Its default value is `true`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -1590,7 +1590,7 @@ By default, the Scheduler allows users to select multiple days. You can prevent 
 
 ### How to close quick info popup manually
 
-You can close the quick info popup in Scheduler by using the [`CloseQuickInfoPopupAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CloseQuickInfoPopupAsync) public method.
+You can close the quick info popup in Blazor Scheduler by using the [`CloseQuickInfoPopupAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CloseQuickInfoPopupAsync) public method.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

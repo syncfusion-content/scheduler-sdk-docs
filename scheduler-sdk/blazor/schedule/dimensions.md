@@ -17,7 +17,7 @@ Scheduler dimensions refer to the height and width of the entire layout, and the
 
 ## Auto Height and Width
 
-When the height and width of the Scheduler are set to `auto`, it tries to match the size of its parent container. In other words, the parent container that holds the Scheduler sizes itself based on its child elements. By default, the Scheduler uses `auto` for both the height and width properties.
+When the height and width of the Blazor Scheduler are set to `auto`, it tries to match the size of its parent container. In other words, the parent container that holds the Blazor Scheduler sizes itself based on its child elements. By default, the Blazor Scheduler uses `auto` for both the height and width properties.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -50,7 +50,7 @@ When the height and width of the Scheduler are set to `auto`, it tries to match 
 
 ## Height and Width in pixel
 
-The Scheduler height and width are rendered exactly as specified by the pixel values. It accepts both string and number values.
+The Blazor Scheduler height and width are rendered exactly as specified by the pixel values. It accepts both string and number values.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -83,7 +83,7 @@ The Scheduler height and width are rendered exactly as specified by the pixel va
 
 ## Height and Width in percentage
 
-When the height and width of the Scheduler are given as percentages, it expands to match its parent container.
+When the height and width of the Blazor Scheduler are given as percentages, it expands to match its parent container.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -116,7 +116,7 @@ When the height and width of the Scheduler are given as percentages, it expands 
 
 ## How to set the full height of the view port
 
-When the height of the Scheduler is set using the CSS viewport height unit (vh), it occupies the full height of the viewport.
+When the height of the Blazor Scheduler is set using the CSS viewport height unit (vh), it occupies the full height of the viewport.
 
 In the following example, the application header height (4.6rem) is subtracted from the total viewport height.
 
