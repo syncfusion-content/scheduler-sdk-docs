@@ -9,7 +9,7 @@ documentation: ug
 
 # AI-powered Appointment Booking in .NET MAUI Scheduler
 
-This guide walks you through building a smart scheduling interface using [.NET MAUI Scheduler](https://www.syncfusion.com/maui-controls/maui-scheduler) ([SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html)) powered by AI via Azure OpenAI. Utilizing the new AI AssistView ([SfAIAssistView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.AIAssistView.SfAIAssistView.html)) control, users can easily book appointments and check resource availability with the help of AI assistance.
+This guide walks you through building a smart scheduling interface using [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler) ([SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html)) powered by AI via Azure OpenAI. Utilizing the new AI AssistView ([SfAIAssistView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.AIAssistView.SfAIAssistView.html)) control, users can easily book appointments and check resource availability with the help of AI assistance.
 
 ## Integrating Azure OpenAI with the .NET MAUI App
 
@@ -22,7 +22,7 @@ This guide walks you through building a smart scheduling interface using [.NET M
 
 ### Step 2: Set Up Azure OpenAI
 
-To enable AI functionality in your .NET MAUI Scheduler, first ensure that you have access to [Azure OpenAI](https://azure.microsoft.com/en-in/products/ai-services/openai-service). In the Azure portal, create an Azure OpenAI resource and deploy a model such as GPT-35. Assign a deployment name (for example, GPT35Turbo) that you’ll reference in your application code. Finally, copy the API key and endpoint URL from the resource settings, as these are required for authentication and communication with the OpenAI service.
+To enable AI functionality in your .NET MAUI Scheduler, first ensure that you have access to [Azure OpenAI](https://azure.microsoft.com/en-in/products/ai-foundry/models/openai/). In the Azure portal, create an Azure OpenAI resource and deploy a model such as GPT-35. Assign a deployment name (for example, GPT35Turbo) that you’ll reference in your application code. Finally, copy the API key and endpoint URL from the resource settings, as these are required for authentication and communication with the OpenAI service.
 
 ### Step 3: Connect to the Azure OpenAI.
 

@@ -72,7 +72,7 @@ The [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-schedule
 
  ![flexible-working-hours-in-maui-scheduler](images/overview/flexible-working-hours-in-maui-scheduler.png)
 
- N> Looking for the full .NET MAUI Scheduler component overview, features, pricing, and documentation? Visit the [.NET MAUI Scheduler](https://www.syncfusion.com/maui-controls/maui-scheduler) page. 
+ N> Looking for the full .NET MAUI Scheduler component overview, features, pricing, and documentation? Visit the [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler) page. 
 
 ## Globalization
 
@@ -123,9 +123,9 @@ The following table summarizes the globalization support available in this contr
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui/scheduler/getting-started) shows a step‑by‑step guide to begin using the Scheduler control.  
-- [Day Week Views](https://help.syncfusion.com/maui/scheduler/day-week-views) explains how to switch between day and week layouts for flexible scheduling.  
-- [Appointments](https://help.syncfusion.com/maui/scheduler/appointments) helps manage appointments and data binding.  
+- [Getting Started](https://help.syncfusion.com/scheduler-sdk/maui/schedule/getting-started) shows a step‑by‑step guide to begin using the Scheduler control.  
+- [Day Week Views](https://help.syncfusion.com/scheduler-sdk/maui/schedule/day-week-views) explains how to switch between day and week layouts for flexible scheduling.  
+- [Appointments](https://help.syncfusion.com/scheduler-sdk/maui/schedule/appointments) helps manage appointments and data binding.  
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready‑made UI examples. 
 
 ## Resources
