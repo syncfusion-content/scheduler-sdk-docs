@@ -11,7 +11,7 @@ documentation: ug
 
 Time slots are the time cells displayed in the Day, Week, and Work Week views of both the calendar area on the left and the timeline views at the top. The [`ScheduleTimeScale`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html) property lets you control the time slot duration for the work cells displayed in Scheduler. It includes the following sub-options:
 
-* [`Enable`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html#Syncfusion_Blazor_Schedule_ScheduleTimeScale_Enable) - When set to `true`, Scheduler displays appointments accurately against the exact time duration. When set to `false`, all appointments in a day are displayed one below the other without grid lines. The default value is `true`.
+* [`Enable`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html#Syncfusion_Blazor_Schedule_ScheduleTimeScale_Enable) - When set to `true`, Blazor Scheduler displays appointments accurately against the exact time duration. When set to `false`, all appointments in a day are displayed one below the other without grid lines. The default value is `true`.
 * [`Interval`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html#Syncfusion_Blazor_Schedule_ScheduleTimeScale_Interval) - Defines the time duration used for the time axis, such as 1 hour or 30 minutes. It accepts values in minutes and defaults to 60.
 * [`SlotCount`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html#Syncfusion_Blazor_Schedule_ScheduleTimeScale_SlotCount) - Determines how many slots are split within the specified interval. It defaults to 2, so an hour is shown as two slots of 30 minutes each.
 
@@ -149,7 +149,7 @@ The template option allows you to customize time slots as follows:
 
 ## Hide the timescale
 
-The grid lines that indicate the exact time duration can be enabled or disabled in Scheduler by setting the [`Enable`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html#Syncfusion_Blazor_Schedule_ScheduleTimeScale_Enable) option within [`ScheduleTimeScale`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html) to `true` or `false`. Its default value is `true`.
+The grid lines that indicate the exact time duration can be enabled or disabled in Blazor Scheduler by setting the [`Enable`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html#Syncfusion_Blazor_Schedule_ScheduleTimeScale_Enable) option within [`ScheduleTimeScale`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTimeScale.html) to `true` or `false`. Its default value is `true`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -183,7 +183,7 @@ The grid lines that indicate the exact time duration can be enabled or disabled 
 
 ## Highlighting current date and time
 
-By default, Scheduler highlights the current date in the header across all views and marks the system time in specific views such as Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week. To stop showing the current time indicator, set the [`ShowTimeIndicator`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowTimeIndicator) property to `false`. The default value is `true`.
+By default, Blazor Scheduler highlights the current date in the header across all views and marks the system time in specific views such as Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week. To stop showing the current time indicator, set the [`ShowTimeIndicator`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_ShowTimeIndicator) property to `false`. The default value is `true`.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

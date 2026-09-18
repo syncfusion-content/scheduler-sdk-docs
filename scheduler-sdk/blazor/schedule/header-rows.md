@@ -61,7 +61,7 @@ N> The `Hour` row is not applicable to Timeline month view.
 
 ## Display year and month rows in timeline views
 
-To display the timeline Scheduler with only year and month names, define the `Year` and `Month` options within the [`ScheduleHeaderRow`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleHeaderRows.html) property.
+To display the timeline Blazor Scheduler with only year and month names, define the `Year` and `Month` options within the [`ScheduleHeaderRow`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleHeaderRows.html) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -96,7 +96,7 @@ To display the timeline Scheduler with only year and month names, define the `Ye
 
 ## Display week numbers in timeline views
 
-You can display the week number in a separate header row of the timeline Scheduler by setting the `Week` option within the [`ScheduleHeaderRow`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleHeaderRows.html) property.
+You can display the week number in a separate header row of the timeline Blazor Scheduler by setting the `Week` option within the [`ScheduleHeaderRow`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleHeaderRows.html) property.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

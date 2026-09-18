@@ -9,11 +9,11 @@ documentation: ug
 
 # Cell Customization in Blazor Scheduler
 
-The cells of the Scheduler can be easily customized using templates and the `OnRenderCell` event.
+The cells of the Blazor Scheduler can be easily customized using templates and the `OnRenderCell` event.
 
 ## Setting cell dimensions in Vertical Views
 
-The height and width of the Scheduler cells can be customized either to increase or reduce their size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of vertical views.
+The height and width of the Blazor Scheduler cells can be customized either to increase or reduce their size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of vertical views.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -69,7 +69,7 @@ The height and width of the Scheduler cells can be customized either to increase
 
 ## Setting cell dimensions in Timeline Views
 
-The height and width of the Scheduler cells can be customized either to increase or reduce their size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of timeline views.
+The height and width of the Blazor Scheduler cells can be customized either to increase or reduce their size through the [`CssClass`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_CssClass) property, which overrides the default CSS applied on cells of timeline views.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -299,7 +299,7 @@ The cells can also be customized by using the [`OnRenderCell`](https://help.sync
 
 ## Customizing the minimum and maximum date values
 
-Providing the [`MinDate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_MaxDate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
+Providing the [`MinDate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html#Syncfusion_Blazor_Schedule_SfSchedule_1_MaxDate) property with some date values, allows the Blazor Scheduler to set the minimum and maximum date range. The Blazor Scheduler date that lies beyond this minimum and maximum date range will be in a disabled state so that the date navigation will be blocked beyond the specified date range.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule

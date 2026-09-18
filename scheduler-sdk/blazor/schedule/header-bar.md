@@ -9,7 +9,7 @@ documentation: ug
  
 # Header Customization in Blazor Scheduler
 
-The Scheduler header can be customized with the built-in options.
+The Blazor Scheduler header can be customized with the built-in options.
 
 ## Show or Hide header bar
 
@@ -61,7 +61,7 @@ Use these options to deliver an intuitive and branded scheduling experience.
 
 ### Built-in toolbar items
 
-The Scheduler provides the following built-in toolbar components:
+The Blazor Scheduler provides the following built-in toolbar components:
 
 | Item                  | Description                                                                                     |
 | --------------------- | ----------------------------------------------------------------------------------------------- |
@@ -69,8 +69,8 @@ The Scheduler provides the following built-in toolbar components:
 | `ScheduleToolBarNext`        | Navigates to the next date range.                                                               |
 | `ScheduleToolBarDateRange`   | Displays the current visible date range.                                                        |
 | `ScheduleToolBarToday`       | Navigates to today's date.                                                                      |
-| `ScheduleToolBarViews` | Renders view-switching buttons for any user-configured views. However, if only a single view is configured, the view-switching buttons will not be rendered. If no views are explicitly configured, the Scheduler renders its default set of built-in views. |
-| `ScheduleToolBarNewEvent`    | Renders an "Add" button for creating new appointments. This is visible when `EnableAdaptiveUI` is `true` on desktop or when the Scheduler is rendered on mobile devices. |
+| `ScheduleToolBarViews` | Renders view-switching buttons for any user-configured views. However, if only a single view is configured, the view-switching buttons will not be rendered. If no views are explicitly configured, the Blazor Scheduler renders its default set of built-in views. |
+| `ScheduleToolBarNewEvent`    | Renders an "Add" button for creating new appointments. This is visible when `EnableAdaptiveUI` is `true` on desktop or when the Blazor Scheduler is rendered on mobile devices. |
 
 ### Custom toolbar item
 
@@ -87,7 +87,7 @@ N> When adding input elements such as dropdowns or textboxes within `ScheduleToo
 
 ### Configuring custom toolbar
 
-This example creates a custom toolbar that enhances navigation and adds resource-based filtering in the Blazor Scheduler. The toolbar includes built-in navigation controls (previous, next, date range, and today) along with a custom dropdown for selecting a resource. When the dropdown value changes, the `OnOwnerChange` event updates the `EventQuery` filter, which is bound to both the `ScheduleResource` and the `ScheduleEventSettings`. This binding ensures that the Scheduler displays appointments only for the selected resource.
+This example creates a custom toolbar that enhances navigation and adds resource-based filtering in the Blazor Scheduler. The toolbar includes built-in navigation controls (previous, next, date range, and today) along with a custom dropdown for selecting a resource. When the dropdown value changes, the `OnOwnerChange` event updates the `EventQuery` filter, which is bound to both the `ScheduleResource` and the `ScheduleEventSettings`. This binding ensures that the Blazor Scheduler displays appointments only for the selected resource.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
@@ -245,7 +245,7 @@ By default, the header bar holds the view navigation options, which let users sw
 }
 ```
 
-The Scheduler with view options within the header bar popup will be rendered as shown in the following image.
+The Blazor Scheduler with view options within the header bar popup will be rendered as shown in the following image.
 
 ![Displaying Header Bar Popup in Blazor Scheduler](images/blazor-scheduler-header-bar-popup.webp)
 
@@ -253,7 +253,7 @@ N> Refer [here](./resources#adaptive-ui-in-desktop) to learn more about adaptive
 
 ## Date header customization
 
-The cells that display the date text in Scheduler views are called date header cells. You can customize them by using [`DateHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate). This option is used to customize the date header cells in day, week, and work-week views.
+The cells that display the date text in Blazor Scheduler views are called date header cells. You can customize them by using [`DateHeaderTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.ScheduleTemplates.html#Syncfusion_Blazor_Schedule_ScheduleTemplates_DateRangeTemplate). This option is used to customize the date header cells in day, week, and work-week views.
 
 ```cshtml
 @using Syncfusion.Blazor.Schedule
