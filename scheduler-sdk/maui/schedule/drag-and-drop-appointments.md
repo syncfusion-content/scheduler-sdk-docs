@@ -43,7 +43,7 @@ public partial class MainPage : ContentPage
 
 ![Appointment Drag and Drop in .NET MAUI Scheduler](images/drag-and-drop/appointment-drag-and-drop.gif)
 
-Refer [here](https://help.syncfusion.com/maui/scheduler/appointments#creating-business-objects) to create a business object class.
+Refer [here](https://help.syncfusion.com/scheduler-sdk/maui/schedule/appointments) to create a business object class.
 
 N> Inherit the business object class from the `INotifyPropertyChanged` for dynamic changes in custom data.
 
