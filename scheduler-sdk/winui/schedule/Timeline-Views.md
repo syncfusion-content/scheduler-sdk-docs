@@ -349,6 +349,8 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
+![Special time region in TimelineMonth of WinUI Scheduler](TimelineViews_Images/special-time-region-in-timline-month.png)
+
 ## Full screen scheduler
 
 The WinUI scheduler time interval width can be adjusted based on the screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1.` It will auto-fit to the screen width in timeline day, timeline week and timeline workweek views.
