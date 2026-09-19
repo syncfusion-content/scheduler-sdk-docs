@@ -20,6 +20,7 @@ The Syncfusion<sup>&reg;</sup> [.NET MAUI AI-Powered Scheduler](https://www.sync
 - Booking systems that support resource-aware scheduling such as rooms, equipment, or personnel availability.  
 - Productivity and calendar applications that provide smart insights such as conflict detection and availability suggestions.  
 - Business tools that require automated scheduling assistance and summarization of appointments.  
+- Scheduler applications where users move across dates or switch active views through conversational prompts in the assist panel instead of using the built-in header controls.  
 
 ## Key features
 
@@ -27,6 +28,9 @@ The Syncfusion<sup>&reg;</sup> [.NET MAUI AI-Powered Scheduler](https://www.sync
 - **Resource-aware booking** allows scheduling based on availability of resources and suggests alternative slots when needed.  
 - **Conflict detection** allows identifying overlapping appointments and proposing resolution options.  
 - **Smart summarization** allows generating quick summaries of schedules or upcoming events.  
+- **Smart navigation** allows moving across dates or switching the active view of the scheduler using natural language input from the assist panel.
+    - **Date navigation** supports jumping to an absolute date (e.g., *July 4, 2026*), a week or month range, or a relative date such as *next Friday*.
+    - **View switching** supports changing the active view (Day, Week, Work Week, Month, Timeline, or Agenda) through conversational prompts in the assist panel.
 - **Adaptive assist panel** allows displaying AI interaction UI in compact or expanded layouts across devices.  
 - **Assist button customization** allows enabling, disabling, or customizing the trigger UI for AI interactions.  
 - **Event handling** allows controlling how AI-driven changes are applied through manual or automatic workflows.  
