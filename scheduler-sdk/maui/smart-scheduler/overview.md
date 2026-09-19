@@ -67,7 +67,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui/smartscheduler/overview">Smart Scheduler</a></td>
+<td><a href="/maui/smartscheduler/overview" aria-label="Smart Scheduler Overview" >Smart Scheduler</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
