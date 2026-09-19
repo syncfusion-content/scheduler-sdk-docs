@@ -569,6 +569,8 @@ The following examples illustrate common date navigation requests:
 - *"Move to the week of June 15."*
 - *"Take me to July 4, 2026."*
 
+![Date navigation in .NET MAUI AI-Powered Scheduler.](images/working-with-smart-scheduler/maui-smart-scheduler-date-navigation.gif)
+
 ### View switching
 
 It allows users to switch the active view of the Scheduler using natural language in the assist panel. Supported views include Day, Week, Work Week, Month, Timeline, and Agenda.
@@ -576,8 +578,10 @@ It allows users to switch the active view of the Scheduler using natural languag
 The following examples illustrate common view switching requests:
 
 - *"Switch to month view."*
-- *"Open the timeline week view for next week."*
+- *"Go to timeline week view."*
 - *"Show me an agenda of today's appointments."*
+
+![View switching in .NET MAUI AI-Powered Scheduler.](images/working-with-smart-scheduler/maui-smart-scheduler-view-switching.gif)
 
 N>
 View switching honors the [AllowedViews](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.SfSmartScheduler.html#Syncfusion_Maui_SmartScheduler_SfSmartScheduler_AllowedViews) property of [`SfSmartScheduler`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.html). The assist panel restricts its view-switching to only the views listed in that property.
