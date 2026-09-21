@@ -359,6 +359,109 @@ N>
 * The default value for `DateFormat,` and `Height` are `MMM dd,` and `30` respectively.
 * For desktop UI, The agenda view displays the appointment only.
 
+### Customize week header appearance using DataTemplate
+
+You can fully customize the week header appearance of the scheduler by using the [WeekHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_WeekHeaderTemplate) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `BindingContext` of the template is the [AgendaViewWeekHeaderDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html), which exposes the [StartDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html#Syncfusion_Maui_Scheduler_AgendaViewWeekHeaderDetails_StartDate) and [EndDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html#Syncfusion_Maui_Scheduler_AgendaViewWeekHeaderDetails_EndDate) of the week.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+        <scheduler:SfScheduler.AgendaView>
+            <scheduler:SchedulerAgendaView LayoutMode="Mobile">
+                <scheduler:SchedulerAgendaView.WeekHeaderTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="LightBlue">
+                            <Label HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   FontSize="18"
+                                   TextColor="Black">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding StartDate, StringFormat='{0:MMM dd}'}" />
+                                        <Span Text=" - " />
+                                        <Span Text="{Binding EndDate, StringFormat='{0:MMM dd, yyyy}'}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </scheduler:SchedulerAgendaView.WeekHeaderTemplate>
+            </scheduler:SchedulerAgendaView>
+        </scheduler:SfScheduler.AgendaView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Agenda;
+        scheduler.AgendaView.LayoutMode = AgendaViewLayoutMode.Mobile;
+
+        scheduler.AgendaView.WeekHeaderTemplate = new DataTemplate(() =>
+        {
+            var startSpan = new Span
+            {
+                Text = "{0:MMM dd}",
+                TextColor = Colors.Black
+            };
+            startSpan.SetBinding(Span.TextProperty, new Binding("StartDate", stringFormat: "{0:MMM dd}"));
+
+            var separatorSpan = new Span { Text = " - ", TextColor = Colors.Black };
+
+            var endSpan = new Span
+            {
+                Text = "{0:MMM dd, yyyy}",
+                TextColor = Colors.Black
+            };
+            endSpan.SetBinding(Span.TextProperty, new Binding("EndDate", stringFormat: "{0:MMM dd, yyyy}"));
+
+            var formattedString = new FormattedString();
+            formattedString.Spans.Add(startSpan);
+            formattedString.Spans.Add(separatorSpan);
+            formattedString.Spans.Add(endSpan);
+
+            var label = new Label
+            {
+                FontSize = 18,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                FormattedText = formattedString
+            };
+
+            var grid = new Grid
+            {
+                BackgroundColor = Colors.LightBlue,
+                Children = { label }
+            };
+
+            return grid;
+        });
+
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![week-header-appearence-template-customization-in-maui-scheduler](images/agenda-view/week-header-appearence-template-customization-in-maui-scheduler.png)
+
+N> The [WeekHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_WeekHeaderTemplate) overrides the default `WeekHeaderSettings` rendering for the week header band and is supported only in the Agenda view.
+
 ## Day header appearance customization
 
 The agenda day header view can be customized by using the [DayHeaderSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_DayHeaderSettings) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
