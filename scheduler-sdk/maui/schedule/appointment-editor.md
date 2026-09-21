@@ -576,33 +576,108 @@ The binding context of the template is a [QuickInfoPopupDetails](https://help.sy
     <scheduler:SfScheduler x:Name="Scheduler"
                            AppointmentEditorMode="Add,Edit">
         <scheduler:SfScheduler.QuickInfoTemplate>
-            <DataTemplate>
-                <Grid Padding="12"
-                      RowDefinitions="Auto,Auto,Auto"
-                      ColumnDefinitions="*,Auto,Auto">
-                    <Label Grid.Row="0"
-                           Grid.ColumnSpan="3"
-                           FontSize="18"
-                           FontAttributes="Bold"
-                           Text="{Binding SchedulerAppointment.Subject}" />
-                    <Label Grid.Row="1"
-                           Grid.ColumnSpan="3"
-                           Text="{Binding SchedulerAppointment.StartTime}" />
-                    <Button Grid.Row="2"
-                            Grid.Column="0"
-                            Text="Edit"
-                            Clicked="OnEditButtonClicked" />
-                    <Button Grid.Row="2"
-                            Grid.Column="1"
-                            Text="Delete"
-                            Clicked="OnDeleteButtonClicked" />
-                    <Button Grid.Row="2"
-                            Grid.Column="2"
-                            Text="Close"
-                            Clicked="OnCloseButtonClicked" />
-                </Grid>
-            </DataTemplate>
-        </scheduler:SfScheduler.QuickInfoTemplate>
+                <DataTemplate>
+                    <Border
+                        Margin="4"
+                        Padding="20"
+                        BackgroundColor="White"
+                        Stroke="#FF9800"
+                        StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="24" />
+                        </Border.StrokeShape>
+                        <Grid
+                            RowDefinitions="Auto,*,Auto"
+                            RowSpacing="15">
+                            <!-- Header -->
+                            <Grid
+                                Grid.Row="0"
+                                ColumnDefinitions="44,*,44">
+                                <BoxView
+                                    Grid.Column="0"
+                                    BackgroundColor="Transparent" />
+                                <Label
+                                    Grid.Column="1"
+                                    Text="Meeting Details"
+                                    FontSize="20"
+                                    FontAttributes="Bold"
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center" />
+                                <!-- Close button at top-right -->
+                                <Button
+                                    Grid.Column="2"
+                                    Text="&#xE70B;"
+                                    FontFamily="MauiMaterialAssets"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#555555"
+                                    BackgroundColor="Transparent"
+                                    Padding="0"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Start"
+                                    Clicked="OnCloseClicked" />
+                            </Grid>
+                            <!-- Appointment details -->
+                            <VerticalStackLayout
+                                Grid.Row="1"
+                                Padding="10,5"
+                                Spacing="10"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
+                                <Label
+                                    FontSize="22"
+                                    FontAttributes="Bold"
+                                    TextColor="Black"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SchedulerAppointment.Subject}" />
+                                <Label
+                                    FontSize="15"
+                                    TextColor="#555555"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SchedulerAppointment.StartTime,
+                                                   StringFormat='Start: {0:dd MMM yyyy, hh:mm tt}'}" />
+                                <Label
+                                    FontSize="15"
+                                    TextColor="#555555"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SchedulerAppointment.EndTime,
+                                                   StringFormat='End: {0:dd MMM yyyy, hh:mm tt}'}" />
+                            </VerticalStackLayout>
+                            <!-- Bottom action buttons -->
+                            <Grid
+                                Grid.Row="2"
+                                Margin="0,10,0,0"
+                                ColumnDefinitions="*,*"
+                                ColumnSpacing="12">
+                                <Button
+                                    Grid.Column="0"
+                                    Text="Edit"
+                                    FontSize="16"
+                                    TextColor="White"
+                                    BackgroundColor="#512BD4"
+                                    CornerRadius="10"
+                                    HeightRequest="48"
+                                    Clicked="OnEditClicked" />
+                                <Button
+                                    Grid.Column="1"
+                                    Text="Delete"
+                                    FontSize="16"
+                                    TextColor="White"
+                                    BackgroundColor="#D32F2F"
+                                    CornerRadius="10"
+                                    HeightRequest="48"
+                                    Clicked="OnDeleteClicked" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </scheduler:SfScheduler.QuickInfoTemplate>
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
@@ -615,57 +690,181 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-
-        this.Scheduler.QuickInfoTemplate = new DataTemplate(() =>
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.AppointmentEditorMode = AppointmentEditorMode.Edit;
+        scheduler.QuickInfoTemplate = new DataTemplate(() =>
         {
-            var grid = new Grid
+            var border = new Border
             {
-                Padding = 12,
+                Margin = 4,
+                Padding = 20,
+                BackgroundColor = Colors.White,
+                Stroke = Color.FromArgb("#FF9800"),
+                StrokeThickness = 2,
+                StrokeShape = new RoundRectangle
+                {
+                    CornerRadius = new CornerRadius(24)
+                }
+            };
+
+            var rootGrid = new Grid
+            {
                 RowDefinitions =
                 {
-                    new RowDefinition { Height = GridLength.Auto },
-                    new RowDefinition { Height = GridLength.Auto },
-                    new RowDefinition { Height = GridLength.Auto }
+                    new RowDefinition(GridLength.Auto),
+                    new RowDefinition(GridLength.Star),
+                    new RowDefinition(GridLength.Auto)
                 },
+                RowSpacing = 15
+            };
+
+            // Header
+            var headerGrid = new Grid
+            {
                 ColumnDefinitions =
                 {
-                    new ColumnDefinition { Width = GridLength.Star },
-                    new ColumnDefinition { Width = GridLength.Auto },
-                    new ColumnDefinition { Width = GridLength.Auto }
+                    new ColumnDefinition(44),
+                    new ColumnDefinition(GridLength.Star),
+                    new ColumnDefinition(44)
                 }
+            };
+
+            headerGrid.Add(new BoxView
+            {
+                BackgroundColor = Colors.Transparent
+            }, 0, 0);
+
+            headerGrid.Add(new Label
+            {
+                Text = "Meeting Details",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Colors.Black,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }, 1, 0);
+
+            var closeButton = new Button
+            {
+                Text = "\uE70B",
+                FontFamily = "MauiMaterialAssets",
+                FontSize = 24,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.FromArgb("#555555"),
+                BackgroundColor = Colors.Transparent,
+                Padding = 0,
+                WidthRequest = 40,
+                HeightRequest = 40,
+                HorizontalOptions = LayoutOptions.End,
+                VerticalOptions = LayoutOptions.Start
+            };
+
+            closeButton.Clicked += OnCloseClicked;
+
+            headerGrid.Add(closeButton, 2, 0);
+
+            // Appointment details
+            var detailsLayout = new VerticalStackLayout
+            {
+                Padding = new Thickness(10, 5),
+                Spacing = 10,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
             };
 
             var subjectLabel = new Label
             {
-                FontSize = 18,
-                FontAttributes = FontAttributes.Bold
+                FontSize = 22,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Colors.Black,
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center
             };
             subjectLabel.SetBinding(Label.TextProperty, "SchedulerAppointment.Subject");
-            grid.Add(subjectLabel, 0, 0);
-            Grid.SetColumnSpan(subjectLabel, 3);
 
-            var startLabel = new Label();
-            startLabel.SetBinding(Label.TextProperty, "SchedulerAppointment.StartTime");
-            grid.Add(startLabel, 0, 1);
-            Grid.SetColumnSpan(startLabel, 3);
+            var startLabel = new Label
+            {
+                FontSize = 15,
+                TextColor = Color.FromArgb("#555555"),
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            startLabel.SetBinding(
+                Label.TextProperty,
+                new Binding(
+                    "SchedulerAppointment.StartTime",
+                    stringFormat: "Start: {0:dd MMM yyyy, hh:mm tt}"));
 
-            var editButton = new Button { Text = "Edit" };
-            editButton.Clicked += OnEditButtonClicked;
-            grid.Add(editButton, 0, 2);
+            var endLabel = new Label
+            {
+                FontSize = 15,
+                TextColor = Color.FromArgb("#555555"),
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            endLabel.SetBinding(
+                Label.TextProperty,
+                new Binding(
+                    "SchedulerAppointment.EndTime",
+                    stringFormat: "End: {0:dd MMM yyyy, hh:mm tt}"));
 
-            var deleteButton = new Button { Text = "Delete" };
-            deleteButton.Clicked += OnDeleteButtonClicked;
-            grid.Add(deleteButton, 1, 2);
+            detailsLayout.Children.Add(subjectLabel);
+            detailsLayout.Children.Add(startLabel);
+            detailsLayout.Children.Add(endLabel);
 
-            var closeButton = new Button { Text = "Close" };
-            closeButton.Clicked += OnCloseButtonClicked;
-            grid.Add(closeButton, 2, 2);
+            // Bottom buttons
+            var buttonGrid = new Grid
+            {
+                Margin = new Thickness(0, 10, 0, 0),
+                ColumnDefinitions =
+                {
+                    new ColumnDefinition(GridLength.Star),
+                    new ColumnDefinition(GridLength.Star)
+                },
+                ColumnSpacing = 12
+            };
 
-            return grid;
+            var editButton = new Button
+            {
+                Text = "Edit",
+                FontSize = 16,
+                TextColor = Colors.White,
+                BackgroundColor = Color.FromArgb("#512BD4"),
+                CornerRadius = 10,
+                HeightRequest = 48
+            };
+            editButton.Clicked += OnEditClicked;
+
+            var deleteButton = new Button
+            {
+                Text = "Delete",
+                FontSize = 16,
+                TextColor = Colors.White,
+                BackgroundColor = Color.FromArgb("#D32F2F"),
+                CornerRadius = 10,
+                HeightRequest = 48
+            };
+            deleteButton.Clicked += OnDeleteClicked;
+
+            buttonGrid.Add(editButton, 0, 0);
+            buttonGrid.Add(deleteButton, 1, 0);
+
+            rootGrid.Add(headerGrid);
+            Grid.SetRow(headerGrid, 0);
+
+            rootGrid.Add(detailsLayout);
+            Grid.SetRow(detailsLayout, 1);
+
+            rootGrid.Add(buttonGrid);
+            Grid.SetRow(buttonGrid, 2);
+
+            border.Content = rootGrid;
+
+            return border;
         });
     }
 
-    private void OnEditButtonClicked(object sender, EventArgs e)
+    private void OnEditClicked(object sender, EventArgs e)
     {
         if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
         {
@@ -673,7 +872,7 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void OnDeleteButtonClicked(object sender, EventArgs e)
+    private void OnDeleteClicked(object sender, EventArgs e)
     {
         if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
         {
@@ -681,7 +880,7 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void OnCloseButtonClicked(object sender, EventArgs e)
+    private void OnCloseClicked(object sender, EventArgs e)
     {
         if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
         {
@@ -691,6 +890,8 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
+
+![Quick-Info-Template-In-.NET-MAUI-SfScheduler](images/appointment-editor/quick-info-template.png)
 
 ## QuickInfoPopupDetails
 
@@ -716,7 +917,7 @@ The `EditAppointment` method opens the appointment editor for the associated app
 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}
-private void OnEditButtonClicked(object sender, EventArgs e)
+private void OnEditClicked(object sender, EventArgs e)
 {
     if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
     {
@@ -732,7 +933,7 @@ The `DeleteAppointment` method deletes the appointment associated with the quick
 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}
-private void OnDeleteButtonClicked(object sender, EventArgs e)
+private void OnDeleteClicked(object sender, EventArgs e)
 {
     if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
     {
@@ -748,7 +949,7 @@ The `ClosePopup` method closes the quick info popup, the same behavior as the bu
 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}
-private void OnCloseButtonClicked(object sender, EventArgs e)
+private void OnCloseClicked(object sender, EventArgs e)
 {
     if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
     {
