@@ -367,7 +367,50 @@ public partial class MainPage : ContentPage
 
 ![Horizontal-date-text-alignment-in-month-view](images/month-view/horizontal-date-text-alignment-in-month-view.png)
 
-## Number of weeks visible in the month view 
+## Day string format
+
+Customize the day text rendered inside each month cell by using the [DayStringFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_DayStringFormat) property of [SchedulerMonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). Use it to elevate the cell label beyond a bare number — for example, a zero-padded day-and-month (`dd MMM`) for a calendar-app feel, a full weekday name (`dddd`) for editorial-style reads, or a day-of-year value (`D`) for project planning views.
+
+The default value is `string.Empty`, which renders the day using the default value based on the [`CalendarType`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_CalendarType). The formatted text is rendered on a single line and trimmed with an ellipsis when it exceeds the cell width.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Month">
+        <scheduler:SfScheduler.MonthView>
+            <scheduler:SchedulerMonthView DayStringFormat="ddd, d - yyyy" />
+        </scheduler:SfScheduler.MonthView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.View = SchedulerView.Month;
+        this.Scheduler.MonthView.DayStringFormat = "ddd, d - yyyy";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![day-string-format-in-month-view](images/month-view/day-string-format-in-month-view.png)
+
+N> When the formatted today text exceeds the today highlight circle bounds, the today highlight circle is skipped and the [`SchedulerMonthCellStyle.TodayBackground`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthCellStyle.html#Syncfusion_Maui_Scheduler_SchedulerMonthCellStyle_TodayBackground) is applied to the text bounds instead.
+
+## Number of weeks visible in the month view
 
 The number of week visible in the month view can be changed by setting the [NumberOfVisibleWeeks](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_NumberOfVisibleWeeks) property in the [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). 
 
