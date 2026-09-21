@@ -1383,8 +1383,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-<!-- Image -->
-
 ## Agenda View Height
 
 The height of the Month Agenda View panel can be customized by setting the [AgendaViewHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_AgendaViewHeight) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The default value is `-1d`, which automatically calculates the agenda view height as 30% of the total scheduler height. When set to a value greater than or equal to 0, the agenda view uses the specified pixel height.
@@ -1417,8 +1415,6 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
-
-<!-- Image -->
 
 ## Agenda View Style
 
@@ -1458,8 +1454,6 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
-
-<!-- Image -->
 
 ### Background
 
@@ -1532,5 +1526,3 @@ The [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler
 </ContentPage>
 {% endhighlight %}
 {% endtabs %}
-
-<!-- Image -->

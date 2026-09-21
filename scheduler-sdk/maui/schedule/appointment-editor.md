@@ -692,8 +692,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-<!-- Image -->
-
 ## QuickInfoPopupDetails
 
 The [QuickInfoPopupDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html) class provides the data context and action methods available inside the `QuickInfoTemplate`. It exposes the [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html#Syncfusion_Maui_Scheduler_QuickInfoPopupDetails_SchedulerAppointment) associated with the currently displayed quick info popup, along with three methods that mirror the built‑in quick info actions.
