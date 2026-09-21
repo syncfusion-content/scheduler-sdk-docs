@@ -1383,6 +1383,8 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![month-agenda-view-in-maui-scheduler](images/month-view/month-agenda-view-in-maui-scheduler.png)
+
 ## Agenda View Height
 
 The height of the Month Agenda View panel can be customized by setting the [AgendaViewHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_AgendaViewHeight) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The default value is `-1d`, which automatically calculates the agenda view height as 30% of the total scheduler height. When set to a value greater than or equal to 0, the agenda view uses the specified pixel height.
@@ -1395,7 +1397,7 @@ The height of the Month Agenda View panel can be customized by setting the [Agen
 
     <scheduler:SfScheduler x:Name="Scheduler" View="Month">
         <scheduler:SfScheduler.MonthView>
-            <scheduler:SchedulerMonthView AgendaViewHeight="180" />
+            <scheduler:SchedulerMonthView ShowAgendaView="True" AgendaViewHeight="180" />
         </scheduler:SfScheduler.MonthView>
     </scheduler:SfScheduler>
 </ContentPage>
@@ -1410,11 +1412,14 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         this.Scheduler.View = SchedulerView.Month;
+        this.Scheduler.MonthView.ShowAgendaView = true;
         this.Scheduler.MonthView.AgendaViewHeight = 180;
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+![agenda-view-height-in-month-view-in-maui-scheduler](images/month-view/agenda-view-height-in-month-view-in-maui-scheduler.png)
 
 ## Agenda View Style
 
@@ -1454,6 +1459,8 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
+
+![agenda-view-style-in-month-view-in-maui-scheduler](images/month-view/agenda-view-style-in-month-view-in-maui-scheduler.png)
 
 ### Background
 
@@ -1525,4 +1532,53 @@ The [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.View = SchedulerView.Month;
+        this.Scheduler.MonthView.AgendaViewStyle = new MonthAgendaViewStyle()
+        {
+            ItemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid
+                {
+                    BackgroundColor = Colors.MediumOrchid,
+                    Padding = 8
+                };
+                var stack = new HorizontalStackLayout
+                {
+                    HorizontalOptions = LayoutOptions.Center,
+                    VerticalOptions = LayoutOptions.Center,
+                    Spacing = 6
+                };
+                stack.Add(new Label
+                {
+                    Text = "\uE71D",
+                    FontFamily = "MauiMaterialAssets",
+                    TextColor = Colors.White,
+                    VerticalOptions = LayoutOptions.Center
+                });
+                var subjectLabel = new Label
+                {
+                    TextColor = Colors.White,
+                    FontAttributes = FontAttributes.Bold,
+                    VerticalOptions = LayoutOptions.Center
+                };
+                subjectLabel.SetBinding(Label.TextProperty, "Subject");
+                stack.Add(subjectLabel);
+                grid.Add(stack);
+                return grid;
+            })
+        };
+    }
+}
+{% endhighlight %}
 {% endtabs %}
+
+![agenda-view-template-in-month-view-in-maui-scheduler](images/month-view/agenda-view-template-in-month-view-in-maui-scheduler.png)
