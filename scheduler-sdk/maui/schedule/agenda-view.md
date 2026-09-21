@@ -58,6 +58,71 @@ public partial class MainPage : ContentPage
 
 ![agenda-view-in-maui-scheduler](images/agenda-view/agenda-view-in-maui-scheduler.png)
 
+## Layout mode
+
+The layout used to render the agenda view can be specified using the [LayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_LayoutMode) property of the [SchedulerAgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `LayoutMode` property accepts one of the [AgendaViewLayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html) enumeration values and decides whether the mobile or the desktop agenda layout is rendered.
+
+By default, the `LayoutMode` is set to [Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Auto), where the Scheduler automatically chooses the mobile or desktop layout based on the available width and the platform.
+
+The available [AgendaViewLayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html) enumeration values are:
+
+N>
+* [Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Auto) - The agenda view layout is determined automatically based on the available width and the platform.
+* [Mobile](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Mobile) - The agenda view is always rendered using the mobile layout, regardless of the platform, device type, or available width.
+* [Desktop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Desktop) - The agenda view is always rendered using the desktop layout, regardless of the platform, device type, or available width.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4 5 6" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
+        <scheduler:SfScheduler.AgendaView>
+            <scheduler:SchedulerAgendaView LayoutMode="Mobile"/>
+        </scheduler:SfScheduler.AgendaView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11 12" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        this.scheduler.View = SchedulerView.Agenda;
+        // Setting the LayoutMode for the agenda view.
+        this.scheduler.AgendaView.LayoutMode = AgendaViewLayoutMode.Mobile;
+
+        // Creating an instance for the scheduler appointment collection.
+        var appointments = new ObservableCollection<SchedulerAppointment>();
+        // Adding scheduler appointment in the scheduler appointment collection.
+        appointments.Add(new SchedulerAppointment()
+        {
+            Subject = "Meeting",
+            StartTime = DateTime.Now,
+            EndTime = DateTime.Now.AddHours(1),
+            Background = Brush.Orange,
+        });
+        // Adding scheduler appointment into the AppointmentsSource.
+        this.scheduler.AppointmentsSource = appointments;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Agenda-View-LayoutMode-in-Maui-Scheduler](images/agenda-view/agenda-view-layoutmode-in-maui-scheduler.png)
+
+N> The default value of [LayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_LayoutMode) is [Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Auto). When the desktop view width is less than 600, the Scheduler automatically renders the mobile agenda UI; use [Mobile](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Mobile) or [Desktop](https://help.syncfusion.com/cr/maui/Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Desktop) to force a specific layout.
+
 ## Month header appearance customization
 
 The agenda month header view can be customized by using the [MonthHeaderSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_MonthHeaderSettings) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
