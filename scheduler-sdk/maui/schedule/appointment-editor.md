@@ -558,3 +558,204 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Quick Info Template
+
+The [QuickInfoTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_QuickInfoTemplate) property of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html) lets you customize the content displayed in the quick info popup. By default, `QuickInfoTemplate` is `null`, and the built‑in quick info UI is shown. When a custom template is provided, it replaces the default popup with developer‑defined content.
+
+N> The [AppointmentEditorMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentEditorMode.html) property should be set to `Add` or `Edit` for the quick info popup to be shown.
+
+The binding context of the template is a [QuickInfoPopupDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html) instance that provides the associated [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) through its `SchedulerAppointment` property and the `EditAppointment`, `DeleteAppointment`, and `ClosePopup` methods to perform edit, delete, and close actions with the same behavior as the built‑in quick info icons.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler"
+                           AppointmentEditorMode="Add,Edit">
+        <scheduler:SfScheduler.QuickInfoTemplate>
+            <DataTemplate>
+                <Grid Padding="12"
+                      RowDefinitions="Auto,Auto,Auto"
+                      ColumnDefinitions="*,Auto,Auto">
+                    <Label Grid.Row="0"
+                           Grid.ColumnSpan="3"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           Text="{Binding SchedulerAppointment.Subject}" />
+                    <Label Grid.Row="1"
+                           Grid.ColumnSpan="3"
+                           Text="{Binding SchedulerAppointment.StartTime}" />
+                    <Button Grid.Row="2"
+                            Grid.Column="0"
+                            Text="Edit"
+                            Clicked="OnEditButtonClicked" />
+                    <Button Grid.Row="2"
+                            Grid.Column="1"
+                            Text="Delete"
+                            Clicked="OnDeleteButtonClicked" />
+                    <Button Grid.Row="2"
+                            Grid.Column="2"
+                            Text="Close"
+                            Clicked="OnCloseButtonClicked" />
+                </Grid>
+            </DataTemplate>
+        </scheduler:SfScheduler.QuickInfoTemplate>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        this.Scheduler.QuickInfoTemplate = new DataTemplate(() =>
+        {
+            var grid = new Grid
+            {
+                Padding = 12,
+                RowDefinitions =
+                {
+                    new RowDefinition { Height = GridLength.Auto },
+                    new RowDefinition { Height = GridLength.Auto },
+                    new RowDefinition { Height = GridLength.Auto }
+                },
+                ColumnDefinitions =
+                {
+                    new ColumnDefinition { Width = GridLength.Star },
+                    new ColumnDefinition { Width = GridLength.Auto },
+                    new ColumnDefinition { Width = GridLength.Auto }
+                }
+            };
+
+            var subjectLabel = new Label
+            {
+                FontSize = 18,
+                FontAttributes = FontAttributes.Bold
+            };
+            subjectLabel.SetBinding(Label.TextProperty, "SchedulerAppointment.Subject");
+            grid.Add(subjectLabel, 0, 0);
+            Grid.SetColumnSpan(subjectLabel, 3);
+
+            var startLabel = new Label();
+            startLabel.SetBinding(Label.TextProperty, "SchedulerAppointment.StartTime");
+            grid.Add(startLabel, 0, 1);
+            Grid.SetColumnSpan(startLabel, 3);
+
+            var editButton = new Button { Text = "Edit" };
+            editButton.Clicked += OnEditButtonClicked;
+            grid.Add(editButton, 0, 2);
+
+            var deleteButton = new Button { Text = "Delete" };
+            deleteButton.Clicked += OnDeleteButtonClicked;
+            grid.Add(deleteButton, 1, 2);
+
+            var closeButton = new Button { Text = "Close" };
+            closeButton.Clicked += OnCloseButtonClicked;
+            grid.Add(closeButton, 2, 2);
+
+            return grid;
+        });
+    }
+
+    private void OnEditButtonClicked(object sender, EventArgs e)
+    {
+        if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+        {
+            details.EditAppointment();
+        }
+    }
+
+    private void OnDeleteButtonClicked(object sender, EventArgs e)
+    {
+        if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+        {
+            details.DeleteAppointment();
+        }
+    }
+
+    private void OnCloseButtonClicked(object sender, EventArgs e)
+    {
+        if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+        {
+            details.ClosePopup();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+<!-- Image -->
+
+## QuickInfoPopupDetails
+
+The [QuickInfoPopupDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html) class provides the data context and action methods available inside the `QuickInfoTemplate`. It exposes the [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html#Syncfusion_Maui_Scheduler_QuickInfoPopupDetails_SchedulerAppointment) associated with the currently displayed quick info popup, along with three methods that mirror the built‑in quick info actions.
+
+### SchedulerAppointment
+
+Gets the [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) for which the quick info popup is displayed. Bind it inside the template to surface appointment details such as subject, start time, end time, location, and notes.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" %}
+<scheduler:SfScheduler.QuickInfoTemplate>
+    <DataTemplate>
+        <Label Text="{Binding SchedulerAppointment.Subject}" />
+    </DataTemplate>
+</scheduler:SfScheduler.QuickInfoTemplate>
+{% endhighlight %}
+{% endtabs %}
+
+### EditAppointment
+
+The `EditAppointment` method opens the appointment editor for the associated appointment, replicating the behavior of the built‑in edit icon of the quick info popup.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+private void OnEditButtonClicked(object sender, EventArgs e)
+{
+    if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+    {
+        details.EditAppointment();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### DeleteAppointment
+
+The `DeleteAppointment` method deletes the appointment associated with the quick info popup and closes the popup, the same behavior as the built‑in delete icon. If the appointment is recurring, the recurrence edit mode selection popup is displayed when required.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+private void OnDeleteButtonClicked(object sender, EventArgs e)
+{
+    if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+    {
+        details.DeleteAppointment();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### ClosePopup
+
+The `ClosePopup` method closes the quick info popup, the same behavior as the built‑in close icon.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+private void OnCloseButtonClicked(object sender, EventArgs e)
+{
+    if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+    {
+        details.ClosePopup();
+    }
+}
+{% endhighlight %}
+{% endtabs %}

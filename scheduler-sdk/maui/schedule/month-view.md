@@ -1349,3 +1349,188 @@ public partial class MainPage : ContentPage
 N>
 * The BindingContext of the `CellTemplate` is the `SchedulerMonthCellDetails.`
 * When using data template selector, performance issues occur as the conversion template views take time within the framework.
+
+## Month Agenda View
+
+The Month Agenda View panel displays the appointments of the selected date in a split layout beneath the [Month](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html) view, with an auto-sized date header column on the left and the agenda list on the right. Enable the panel by setting the [ShowAgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_ShowAgendaView) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html) to `true`. By default, `ShowAgendaView` is `false`.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="5" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Month">
+        <scheduler:SfScheduler.MonthView>
+            <scheduler:SchedulerMonthView ShowAgendaView="True" />
+        </scheduler:SfScheduler.MonthView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="9" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.View = SchedulerView.Month;
+        this.Scheduler.MonthView.ShowAgendaView = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+<!-- Image -->
+
+## Agenda View Height
+
+The height of the Month Agenda View panel can be customized by setting the [AgendaViewHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_AgendaViewHeight) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The default value is `-1d`, which automatically calculates the agenda view height as 30% of the total scheduler height. When set to a value greater than or equal to 0, the agenda view uses the specified pixel height.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="5" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Month">
+        <scheduler:SfScheduler.MonthView>
+            <scheduler:SchedulerMonthView AgendaViewHeight="180" />
+        </scheduler:SfScheduler.MonthView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="9" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.View = SchedulerView.Month;
+        this.Scheduler.MonthView.AgendaViewHeight = 180;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+<!-- Image -->
+
+## Agenda View Style
+
+The styling configuration of the Month Agenda View panel can be customized using the [AgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_AgendaViewStyle) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The `AgendaViewStyle` is of type [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) and provides properties such as `Background`, `ItemHeight`, `TimeTextFormat`, `TextStyle`, `NoEventsTextStyle`, `DateTextStyle`, and `ItemTemplate` for customizing the appearance and behavior of the agenda panel.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="6 7 8 9 10 11 12" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Month">
+        <scheduler:SfScheduler.MonthView>
+            <scheduler:SchedulerMonthView ShowAgendaView="True">
+                <scheduler:SchedulerMonthView.AgendaViewStyle>
+                    <scheduler:MonthAgendaViewStyle Background="LightGray"
+                                                    ItemHeight="48" />
+                </scheduler:SchedulerMonthView.AgendaViewStyle>
+            </scheduler:SchedulerMonthView>
+        </scheduler:SfScheduler.MonthView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="9 10 11" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.View = SchedulerView.Month;
+        this.Scheduler.MonthView.AgendaViewStyle.Background = Brush.LightGray;
+        this.Scheduler.MonthView.AgendaViewStyle.ItemHeight = 48;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+<!-- Image -->
+
+### Background
+
+The [Background](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_Background) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the background brush for the inline appointment collection view. The default value is `SolidColorBrush(Color.FromArgb("#F7F2FB"))`. Setting this property to a color brush fills the agenda view with that color.
+
+### Item Height
+
+The [ItemHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_ItemHeight) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the height of each appointment item in the inline view. The default value is `50.0`. This property determines the uniform height of each appointment row in the inline collection view; smaller values compact the view, while larger values provide more spacing.
+
+### Time Text Format
+
+The [TimeTextFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_TimeTextFormat) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the time format string for appointment times displayed in the inline view. The default value is `"hh:mm tt"`. When the value is empty or null, the current culture's short time format is used.
+
+Common format strings:
+
+- `"hh:mm tt"` — 12-hour format with AM/PM (for example, `2:30 PM`)
+- `"HH:mm"` — 24-hour format (for example, `14:30`)
+- `"h:mm"` — 12-hour format without leading zero (for example, `2:30`)
+
+### Text Style
+
+The [TextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_TextStyle) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the text style for appointment items in the inline view. The default value is `new SchedulerTextStyle() { FontSize = 14, TextColor = Colors.Transparent }`. This style applies to both the appointment subject and start or end times displayed in each item, and lets you customize the font family, size, text color, and font attributes such as `Bold` and `Italic`.
+
+### No Events Text Style
+
+The [NoEventsTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_NoEventsTextStyle) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the text style for the "No Events" message displayed when a date has no appointments. The default value is `new SchedulerTextStyle() { FontSize = 14, TextColor = Color.FromArgb("#49454F") }`.
+
+### Date Text Style
+
+The [DateTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_DateTextStyle) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the text style applied to the date column header displayed at the top of the agenda panel. The default value is `new SchedulerTextStyle() { FontSize = 14, TextColor = Color.FromArgb("#1F1F1F") }`.
+
+### Item Template
+
+The [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_ItemTemplate) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the custom data template for appointment items displayed in the month agenda view. The default value is `null`. When a template is provided, it replaces the default appointment item layout with developer-defined content.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Month">
+        <scheduler:SfScheduler.MonthView>
+            <scheduler:SchedulerMonthView ShowAgendaView="True">
+                <scheduler:SchedulerMonthView.AgendaViewStyle>
+                    <scheduler:MonthAgendaViewStyle>
+                        <scheduler:MonthAgendaViewStyle.ItemTemplate>
+                            <DataTemplate>
+                                <Grid BackgroundColor="MediumOrchid" Padding="8">
+                                    <HorizontalStackLayout HorizontalOptions="Center"
+                                                           VerticalOptions="Center"
+                                                           Spacing="6">
+                                        <Label Text="&#xE71D;"
+                                               FontFamily="MauiMaterialAssets"
+                                               TextColor="White"
+                                               VerticalOptions="Center" />
+                                        <Label Text="{Binding Subject}"
+                                               TextColor="White"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Center" />
+                                    </HorizontalStackLayout>
+                                </Grid>
+                            </DataTemplate>
+                        </scheduler:MonthAgendaViewStyle.ItemTemplate>
+                    </scheduler:MonthAgendaViewStyle>
+                </scheduler:SchedulerMonthView.AgendaViewStyle>
+            </scheduler:SchedulerMonthView>
+        </scheduler:SfScheduler.MonthView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% endtabs %}
+
+<!-- Image -->
