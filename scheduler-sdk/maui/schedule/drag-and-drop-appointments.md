@@ -251,7 +251,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-#### Disable view navigation when dragging appointment
+### Disable view navigation when dragging appointment
 Using the [AllowNavigation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html#Syncfusion_Maui_Scheduler_DragDropSettings_AllowNavigation) property of the [DragDropSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html) you can handle whether you can navigate views while dragging the appointment or not. The default value of the `AllowNavigation` property is `true`.
 
 {% tabs %}
@@ -459,4 +459,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/DragAndDropSample)
+N> [View sample in GitHub](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Scheduler/SampleBrowser.Maui.Scheduler/Samples/Scheduler/DragAndDrop)

@@ -558,3 +558,403 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Quick Info Template
+
+The [QuickInfoTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_QuickInfoTemplate) property of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html) lets you customize the content displayed in the quick info popup. By default, `QuickInfoTemplate` is `null`, and the built‑in quick info UI is shown. When a custom template is provided, it replaces the default popup with developer‑defined content.
+
+N> The [AppointmentEditorMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentEditorMode.html) property should be set to `Add` or `Edit` for the quick info popup to be shown.
+
+The binding context of the template is a [QuickInfoPopupDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html) instance that provides the associated [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) through its `SchedulerAppointment` property and the `EditAppointment`, `DeleteAppointment`, and `ClosePopup` methods to perform edit, delete, and close actions with the same behavior as the built‑in quick info icons.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler"
+                           AppointmentEditorMode="Add,Edit">
+        <scheduler:SfScheduler.QuickInfoTemplate>
+                <DataTemplate>
+                    <Border
+                        Margin="4"
+                        Padding="20"
+                        BackgroundColor="White"
+                        Stroke="#FF9800"
+                        StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="24" />
+                        </Border.StrokeShape>
+                        <Grid
+                            RowDefinitions="Auto,*,Auto"
+                            RowSpacing="15">
+                            <!-- Header -->
+                            <Grid
+                                Grid.Row="0"
+                                ColumnDefinitions="44,*,44">
+                                <BoxView
+                                    Grid.Column="0"
+                                    BackgroundColor="Transparent" />
+                                <Label
+                                    Grid.Column="1"
+                                    Text="Meeting Details"
+                                    FontSize="20"
+                                    FontAttributes="Bold"
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center" />
+                                <!-- Close button at top-right -->
+                                <Button
+                                    Grid.Column="2"
+                                    Text="&#xE70B;"
+                                    FontFamily="MauiMaterialAssets"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#555555"
+                                    BackgroundColor="Transparent"
+                                    Padding="0"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Start"
+                                    Clicked="OnCloseClicked" />
+                            </Grid>
+                            <!-- Appointment details -->
+                            <VerticalStackLayout
+                                Grid.Row="1"
+                                Padding="10,5"
+                                Spacing="10"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
+                                <Label
+                                    FontSize="22"
+                                    FontAttributes="Bold"
+                                    TextColor="Black"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SchedulerAppointment.Subject}" />
+                                <Label
+                                    FontSize="15"
+                                    TextColor="#555555"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SchedulerAppointment.StartTime,
+                                                   StringFormat='Start: {0:dd MMM yyyy, hh:mm tt}'}" />
+                                <Label
+                                    FontSize="15"
+                                    TextColor="#555555"
+                                    HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SchedulerAppointment.EndTime,
+                                                   StringFormat='End: {0:dd MMM yyyy, hh:mm tt}'}" />
+                            </VerticalStackLayout>
+                            <!-- Bottom action buttons -->
+                            <Grid
+                                Grid.Row="2"
+                                Margin="0,10,0,0"
+                                ColumnDefinitions="*,*"
+                                ColumnSpacing="12">
+                                <Button
+                                    Grid.Column="0"
+                                    Text="Edit"
+                                    FontSize="16"
+                                    TextColor="White"
+                                    BackgroundColor="#512BD4"
+                                    CornerRadius="10"
+                                    HeightRequest="48"
+                                    Clicked="OnEditClicked" />
+                                <Button
+                                    Grid.Column="1"
+                                    Text="Delete"
+                                    FontSize="16"
+                                    TextColor="White"
+                                    BackgroundColor="#D32F2F"
+                                    CornerRadius="10"
+                                    HeightRequest="48"
+                                    Clicked="OnDeleteClicked" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </scheduler:SfScheduler.QuickInfoTemplate>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.AppointmentEditorMode = AppointmentEditorMode.Edit;
+        scheduler.QuickInfoTemplate = new DataTemplate(() =>
+        {
+            var border = new Border
+            {
+                Margin = 4,
+                Padding = 20,
+                BackgroundColor = Colors.White,
+                Stroke = Color.FromArgb("#FF9800"),
+                StrokeThickness = 2,
+                StrokeShape = new RoundRectangle
+                {
+                    CornerRadius = new CornerRadius(24)
+                }
+            };
+
+            var rootGrid = new Grid
+            {
+                RowDefinitions =
+                {
+                    new RowDefinition(GridLength.Auto),
+                    new RowDefinition(GridLength.Star),
+                    new RowDefinition(GridLength.Auto)
+                },
+                RowSpacing = 15
+            };
+
+            // Header
+            var headerGrid = new Grid
+            {
+                ColumnDefinitions =
+                {
+                    new ColumnDefinition(44),
+                    new ColumnDefinition(GridLength.Star),
+                    new ColumnDefinition(44)
+                }
+            };
+
+            headerGrid.Add(new BoxView
+            {
+                BackgroundColor = Colors.Transparent
+            }, 0, 0);
+
+            headerGrid.Add(new Label
+            {
+                Text = "Meeting Details",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Colors.Black,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            }, 1, 0);
+
+            var closeButton = new Button
+            {
+                Text = "\uE70B",
+                FontFamily = "MauiMaterialAssets",
+                FontSize = 24,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.FromArgb("#555555"),
+                BackgroundColor = Colors.Transparent,
+                Padding = 0,
+                WidthRequest = 40,
+                HeightRequest = 40,
+                HorizontalOptions = LayoutOptions.End,
+                VerticalOptions = LayoutOptions.Start
+            };
+
+            closeButton.Clicked += OnCloseClicked;
+
+            headerGrid.Add(closeButton, 2, 0);
+
+            // Appointment details
+            var detailsLayout = new VerticalStackLayout
+            {
+                Padding = new Thickness(10, 5),
+                Spacing = 10,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            var subjectLabel = new Label
+            {
+                FontSize = 22,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Colors.Black,
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            subjectLabel.SetBinding(Label.TextProperty, "SchedulerAppointment.Subject");
+
+            var startLabel = new Label
+            {
+                FontSize = 15,
+                TextColor = Color.FromArgb("#555555"),
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            startLabel.SetBinding(
+                Label.TextProperty,
+                new Binding(
+                    "SchedulerAppointment.StartTime",
+                    stringFormat: "Start: {0:dd MMM yyyy, hh:mm tt}"));
+
+            var endLabel = new Label
+            {
+                FontSize = 15,
+                TextColor = Color.FromArgb("#555555"),
+                HorizontalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            endLabel.SetBinding(
+                Label.TextProperty,
+                new Binding(
+                    "SchedulerAppointment.EndTime",
+                    stringFormat: "End: {0:dd MMM yyyy, hh:mm tt}"));
+
+            detailsLayout.Children.Add(subjectLabel);
+            detailsLayout.Children.Add(startLabel);
+            detailsLayout.Children.Add(endLabel);
+
+            // Bottom buttons
+            var buttonGrid = new Grid
+            {
+                Margin = new Thickness(0, 10, 0, 0),
+                ColumnDefinitions =
+                {
+                    new ColumnDefinition(GridLength.Star),
+                    new ColumnDefinition(GridLength.Star)
+                },
+                ColumnSpacing = 12
+            };
+
+            var editButton = new Button
+            {
+                Text = "Edit",
+                FontSize = 16,
+                TextColor = Colors.White,
+                BackgroundColor = Color.FromArgb("#512BD4"),
+                CornerRadius = 10,
+                HeightRequest = 48
+            };
+            editButton.Clicked += OnEditClicked;
+
+            var deleteButton = new Button
+            {
+                Text = "Delete",
+                FontSize = 16,
+                TextColor = Colors.White,
+                BackgroundColor = Color.FromArgb("#D32F2F"),
+                CornerRadius = 10,
+                HeightRequest = 48
+            };
+            deleteButton.Clicked += OnDeleteClicked;
+
+            buttonGrid.Add(editButton, 0, 0);
+            buttonGrid.Add(deleteButton, 1, 0);
+
+            rootGrid.Add(headerGrid);
+            Grid.SetRow(headerGrid, 0);
+
+            rootGrid.Add(detailsLayout);
+            Grid.SetRow(detailsLayout, 1);
+
+            rootGrid.Add(buttonGrid);
+            Grid.SetRow(buttonGrid, 2);
+
+            border.Content = rootGrid;
+
+            return border;
+        });
+    }
+
+    private void OnEditClicked(object sender, EventArgs e)
+    {
+        if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+        {
+            details.EditAppointment();
+        }
+    }
+
+    private void OnDeleteClicked(object sender, EventArgs e)
+    {
+        if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+        {
+            details.DeleteAppointment();
+        }
+    }
+
+    private void OnCloseClicked(object sender, EventArgs e)
+    {
+        if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+        {
+            details.ClosePopup();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Quick-Info-Template-In-.NET-MAUI-SfScheduler](images/appointment-editor/quick-info-template.png)
+
+## QuickInfoPopupDetails
+
+The [QuickInfoPopupDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html) class provides the data context and action methods available inside the `QuickInfoTemplate`. It exposes the [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html#Syncfusion_Maui_Scheduler_QuickInfoPopupDetails_SchedulerAppointment) associated with the currently displayed quick info popup, along with three methods that mirror the built‑in quick info actions.
+
+### SchedulerAppointment
+
+Gets the [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) for which the quick info popup is displayed. Bind it inside the template to surface appointment details such as subject, start time, end time, location, and notes.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" %}
+<scheduler:SfScheduler.QuickInfoTemplate>
+    <DataTemplate>
+        <Label Text="{Binding SchedulerAppointment.Subject}" />
+    </DataTemplate>
+</scheduler:SfScheduler.QuickInfoTemplate>
+{% endhighlight %}
+{% endtabs %}
+
+### EditAppointment
+
+The `EditAppointment` method opens the appointment editor for the associated appointment, replicating the behavior of the built‑in edit icon of the quick info popup.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+private void OnEditClicked(object sender, EventArgs e)
+{
+    if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+    {
+        details.EditAppointment();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### DeleteAppointment
+
+The `DeleteAppointment` method deletes the appointment associated with the quick info popup and closes the popup, the same behavior as the built‑in delete icon. If the appointment is recurring, the recurrence edit mode selection popup is displayed when required.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+private void OnDeleteClicked(object sender, EventArgs e)
+{
+    if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+    {
+        details.DeleteAppointment();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### ClosePopup
+
+The `ClosePopup` method closes the quick info popup, the same behavior as the built‑in close icon.
+
+{% tabs %}
+{% highlight c# tabtitle="C#" %}
+private void OnCloseClicked(object sender, EventArgs e)
+{
+    if (((Button)sender).BindingContext is QuickInfoPopupDetails details)
+    {
+        details.ClosePopup();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
