@@ -321,9 +321,64 @@ public partial class MainPage : ContentPage
 
 N> In the `Day`, `Week`, and `WorkWeek` views, **grouping resources by date is supported**. However, in the `Month` view, **grouping resources by date is not supported**. When the `ResourceGroupType` is set to `Date` while the `View` is `Month`, the scheduler automatically renders resources based on `ResourceGroupType` as `Resource` only.
 
-## Adaptive resource grouping - Mobile
+## Adaptive resource grouping
 
-On mobile platforms, the resource views for the Day, Week, WorkWeek, and Month views are grouped under an adaptive header.
+The .NET MAUI Scheduler groups resources under an adaptive header in the Day, Week, WorkWeek, and Month views. On mobile platforms (`Android` and `iOS`), this adaptive UI is used by default. On desktop platforms (`Windows` and `macOS`), the horizontal grouped resource view is used by default, and the adaptive UI can be enabled using the [EnableAdaptiveUI](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_EnableAdaptiveUI) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6).
+
+### Desktop view
+
+On desktop platforms (`Windows` and `macOS`), resources are displayed by default using the horizontal grouped resource view in the Day, Week, WorkWeek, and Month views. To use the adaptive resource grouping UI on desktop instead, set the [EnableAdaptiveUI](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_EnableAdaptiveUI) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6) to `true`. When enabled, the Scheduler renders the adaptive UI (hamburger header and drawer) instead of the horizontal grouped layout.
+
+The default value of the `EnableAdaptiveUI` property is `false`. This property has no effect on mobile platforms (`Android` and `iOS`), which always use the adaptive UI.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView EnableAdaptiveUI="True"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="18" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+                new SchedulerResource() { Name = "Sophia", Foreground = Colors.White, Background = Colors.MediumAquamarine, Id = "1000" },
+                new SchedulerResource() { Name = "Zoey Addison",  Foreground = Colors.White, Background = Colors.Salmon, Id = "1001" },
+                new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
+        };
+
+        this.Scheduler.ResourceView.Resources = Resources;
+        this.Scheduler.ResourceView.EnableAdaptiveUI = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Adaptive Header in Desktop Days View in .NET MAUI Scheduler](images/resource-view/adaptive-header-in-desktop-days-view.png)
+
+N> The `EnableAdaptiveUI` property is supported only in the Day, Week, WorkWeek, and Month views on desktop platforms. It has no effect on Timeline views or on mobile platforms.
+
+### Mobile view
+
+On mobile platforms (`Android` and `iOS`), resources are always displayed using the adaptive UI. The `EnableAdaptiveUI` property has no effect on these platforms, since the adaptive UI is the only available resource layout.
 
 ### Days view
 
