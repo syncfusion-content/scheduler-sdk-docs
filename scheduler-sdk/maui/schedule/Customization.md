@@ -261,9 +261,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}  
 {% endtabs %}
 
-N> This property is not applicable when the `SchedulerView` is `Timeline Month.`
-
 ![show-week-number-in-maui-scheduler](images/getting-started/show-week-number-in-maui-scheduler.png)
+
+![show-week-number-in-maui-scheduler-timeline-month](images/getting-started/show-week-number-in-maui-scheduler-timeline-month.png)
 
 #### Customize the week number text style
 
