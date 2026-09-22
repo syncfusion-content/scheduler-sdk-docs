@@ -6,6 +6,7 @@ platform: scheduler-sdk
 control: SfCalendar
 documentation: ug
 
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization and Formatting in WinUI Calendar

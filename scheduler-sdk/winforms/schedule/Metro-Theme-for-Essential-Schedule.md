@@ -5,6 +5,7 @@ description: Learn how to apply Metro theme to Windows Forms Scheduler control f
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Metro Theme in Windows Forms Scheduler

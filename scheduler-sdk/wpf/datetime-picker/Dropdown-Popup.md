@@ -5,6 +5,7 @@ description: Learn how to customize and use the dropdown popup with calendar and
 platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Dropdown Popup in WPF DateTimePicker

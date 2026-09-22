@@ -5,6 +5,7 @@ description: Learn about touch support in Windows Forms Scheduler for swipe scro
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Touch Support in Windows Forms Scheduler

@@ -6,6 +6,7 @@ description: Learn about introduction of Syncfusion Essential Studio WinUI Sched
 platform: scheduler-sdk
 control: Scheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WinUI Scheduler Control

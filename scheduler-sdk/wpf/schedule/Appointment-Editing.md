@@ -5,6 +5,7 @@ description: Learn about appointment editing in WPF Scheduler including adding, 
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointment Editing in WPF Scheduler

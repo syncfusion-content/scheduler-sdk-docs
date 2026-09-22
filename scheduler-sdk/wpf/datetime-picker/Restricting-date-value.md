@@ -5,6 +5,7 @@ description: Learn how to restrict date and time values within a particular rang
 platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Restricting Date Value in WPF DateTimePicker

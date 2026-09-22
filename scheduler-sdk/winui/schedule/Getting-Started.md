@@ -6,6 +6,7 @@ description: Learn how to get started with the Syncfusion WinUI Scheduler contro
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WinUI Scheduler

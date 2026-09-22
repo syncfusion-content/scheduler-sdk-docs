@@ -5,6 +5,7 @@ description: Learn how to customize timeline day, week, workweek and month view 
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Timeline Views in WinUI Scheduler
@@ -298,6 +299,58 @@ this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 ![special-time-region-customization-in-winui-scheduler](TimelineViews_Images/special-time-region-customization-in-winui-scheduler.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler-Examples/tree/main/SpecialTimeRegionCustomization)
+
+### Display special time regions in TimelineMonth
+
+The `ShowMonthTimeRegions` property defines whether special time regions are displayed in the scheduler’s `TimelineMonth` view.
+
+By default, the property is set to `false`, so time regions are hidden. Setting it to `true` makes the scheduler show the configured `SpecialTimeRegion` values within the `TimelineMonth` view.
+
+This property is only applicable when the `ViewType` is set to `TimelineMonth`.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="8" %}
+<Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+        <syncfusion:SfScheduler x:Name="Schedule" ViewType="TimelineMonth">
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings ShowMonthTimeRegions="True"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+        </syncfusion:SfScheduler>
+
+</Window>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="10" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+. . .
+public sealed partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+        this.Schedule.ViewType = SchedulerViewType.TimelineMonth;
+        this.Schedule.TimelineViewSettings.ShowMonthTimeRegions = true;
+
+        this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
+        {
+            StartTime = new System.DateTime(2026, 09, 16, 0, 0, 0),
+            EndTime = new System.DateTime(2026, 09, 16, 0, 0, 0),
+            Text = "Holiday",
+            CanEdit = false,
+            Background = new SolidColorBrush(Colors.LightGreen),
+            Foreground = new SolidColorBrush(Colors.Black)
+        });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Special time region in TimelineMonth of WinUI Scheduler](TimelineViews_Images/special-time-region-in-timline-month.png)
 
 ## Full screen scheduler
 

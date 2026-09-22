@@ -5,6 +5,7 @@ description: Learn how to show or hide the Done and Cancel buttons in the Syncfu
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Footer in UWP DatePicker

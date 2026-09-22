@@ -5,6 +5,7 @@ description: Learn how to customize the width, height, spacing, and count of sel
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # SelectorItem Customization in UWP DatePicker

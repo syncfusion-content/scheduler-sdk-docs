@@ -5,6 +5,7 @@ description: Learn about accessibility support in WinUI Scheduler including scre
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Accessibility Support in WinUI Scheduler

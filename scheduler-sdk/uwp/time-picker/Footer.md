@@ -5,6 +5,7 @@ description: Learn here all about Footer support in Syncfusion® UWP TimePicker 
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Footer in UWP TimePicker

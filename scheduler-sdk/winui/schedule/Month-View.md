@@ -5,6 +5,7 @@ description: Learn how to customize month view appearance and date format in Win
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Month View in WinUI Scheduler

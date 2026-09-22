@@ -5,6 +5,7 @@ description: Learn about user interactions support in Syncfusion UWP Scheduler (
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # User Interactions in UWP Scheduler
