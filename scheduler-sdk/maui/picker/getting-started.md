@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion<sup>&reg;</sup> .NET M
 platform: scheduler-sdk
 control: SfPicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with .NET MAUI Picker

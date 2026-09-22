@@ -5,6 +5,7 @@ title: Accessibility in .NET MAUI Time Picker control | Syncfusion®
 description: Provide accessibility support with screen readers and keyboard navigation in the .NET MAUI Time Picker control.
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Accessibility in .NET MAUI Time Picker
