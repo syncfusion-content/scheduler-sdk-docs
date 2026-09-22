@@ -5,6 +5,7 @@ description: Learn about UI automation support in WPF DateTimePicker control for
 platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # UI Automation in WPF DateTimePicker

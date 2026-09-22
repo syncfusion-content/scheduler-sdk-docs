@@ -5,6 +5,7 @@ description: Learn how to set and change date values in WPF DatePicker using dat
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Setting Date in WPF DatePicker

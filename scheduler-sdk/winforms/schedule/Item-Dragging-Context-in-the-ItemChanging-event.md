@@ -5,6 +5,7 @@ description: Learn about item dragging context in the ItemChanging event to dete
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Item Dragging Context in Windows Forms Scheduler

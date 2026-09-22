@@ -5,6 +5,7 @@ description: Learn about the appearance and structure of Windows Forms Clock con
 platform: scheduler-sdk
 control: Clock
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance and Structure in Windows Forms Clock

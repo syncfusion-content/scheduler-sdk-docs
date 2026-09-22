@@ -5,6 +5,7 @@ description: Learn about localization in WPF Scheduler to customize user interfa
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization in WPF Scheduler

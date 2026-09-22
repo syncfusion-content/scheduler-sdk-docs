@@ -5,6 +5,7 @@ description: Learn how to plan, configure and manage all day, recurrence and spa
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointments in WinUI Scheduler

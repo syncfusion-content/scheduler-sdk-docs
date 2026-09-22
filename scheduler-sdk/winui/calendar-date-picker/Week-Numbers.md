@@ -5,6 +5,7 @@ description: Learn about week number features in WinUI Calendar Date Picker cont
 platform: scheduler-sdk
 control: SfCalendarDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Week Numbers in WinUI Calendar Date Picker

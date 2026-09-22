@@ -5,6 +5,7 @@ description: Learn about load on demand functionality in WPF Scheduler for effic
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Load On Demand in WPF Scheduler
 The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports loading appointments on demand with a loading indicator and improves the loading performance when there are appointments ranging over multiple years.

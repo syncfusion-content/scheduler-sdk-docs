@@ -5,6 +5,7 @@ description: Learn how to set and change time values in WPF TimePicker using tim
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Setting Time in WPF TimePicker

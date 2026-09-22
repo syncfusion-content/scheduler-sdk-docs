@@ -5,6 +5,7 @@ description: Learn how to customize dropdown visibility and height in WPF DatePi
 platform: scheduler-sdk
 control:  SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Customizing DropDown in WPF DatePicker

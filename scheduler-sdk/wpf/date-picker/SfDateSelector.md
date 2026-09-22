@@ -5,6 +5,7 @@ description: Learn about SfDateSelector in WPF DatePicker that enables date sele
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Selector in WPF DatePicker

@@ -5,6 +5,7 @@ description: Learn about ScheduleControl user control that provides basic schedu
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # ScheduleControl in Windows Forms Scheduler

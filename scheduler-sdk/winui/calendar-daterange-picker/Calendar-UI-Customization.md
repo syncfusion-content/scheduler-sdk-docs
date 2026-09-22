@@ -5,6 +5,7 @@ description: Learn how to customize the calendar UI in WinUI Calendar DateRange 
 platform: scheduler-sdk
 control: SfCalendarDateRangePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # UI Customization in WinUI Calendar DateRange Picker
