@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Scheduler SDK
 
 This feature enables you to apply the Metro theme to the Schedule control. 
 
-### Use case scenario
+## Use case scenario
 
 The Metro theme support is useful for commercial applications to attract end users with inspiring UI look and feel.
 

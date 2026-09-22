@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Scheduler SDK
 
 This feature provides support to detect the dragging context when an item is dropped in the schedule part or calendar part. It also enables you to cancel specific items as needed through the ItemChanging event.
 
-### Use case scenario
+## Use case scenario
 
 In the ItemChanging event, through the ItemDragHitContext enumeration, you can detect the dragging context (Schedule or Calendar) and cancel specific items as needed.
 

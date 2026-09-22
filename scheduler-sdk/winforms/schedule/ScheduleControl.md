@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Scheduler SDK
 
 The ScheduleControl is a User Control that provides the basic scheduling functionality.
 
-### Properties
+## Properties
 
 <table>
 <tr>
