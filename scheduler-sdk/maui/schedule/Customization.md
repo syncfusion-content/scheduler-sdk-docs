@@ -261,9 +261,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}  
 {% endtabs %}
 
-N> This property is not applicable when the `SchedulerView` is `Timeline Month.`
-
 ![show-week-number-in-maui-scheduler](images/getting-started/show-week-number-in-maui-scheduler.png)
+
+![show-week-number-in-maui-scheduler-timeline-month](images/getting-started/show-week-number-in-maui-scheduler-timeline-month.png)
 
 ### Customize the week number text style
 
@@ -316,5 +316,136 @@ public partial class MainPage : ContentPage
 N> It is not applicable if the `View` is `Timeline Month` and it is applied only when the `ShowWeekNumber` property is `enabled.`
 
 ![customize-the-week-number-text-style-in-maui-scheduler](images/getting-started/customize-the-week-number-text-style-in-maui-scheduler.png)
+
+## Show floating action button
+
+Display a floating action button (FAB) at the bottom-right corner of the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html) by setting the [ShowFloatingActionButton](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ShowFloatingActionButton) property to `true`. Tapping the FAB opens the appointment editor for a new appointment on the scheduler's current [DisplayDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_DisplayDate), enabling quick creation of appointments from any view.
+
+The default value is `false`.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler"
+                           View="Week"
+                           ShowFloatingActionButton="True"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Week;
+        scheduler.ShowFloatingActionButton = true;
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![show-floating-action-button-in-maui-scheduler](images/getting-started/show-floating-action-button-in-maui-scheduler.png)
+
+N> 
+* The [ShowFloatingActionButton](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ShowFloatingActionButton) property has no effect on the SmartScheduler (AI-assisted) variant — the FAB is suppressed there so it doesn't compete with the SmartScheduler's own command surface.
+* Tapping the FAB opens the appointment editor only when the editor is enabled through the [AppointmentEditorMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentEditorMode) property (with the `Add` flag set).
+
+### Customize the floating action button appearance
+
+Customize the visual content rendered inside the FAB by setting the [FloatingActionButtonTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_FloatingActionButtonTemplate) property of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). Use this `DataTemplate` to render any view that matches the application's design language — for example, a compact 36×36 rounded `Border` containing a `Label` rendered with a Segoe Fluent / Material glyph as the FAB content.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler"
+                           View="Week"
+                           ShowFloatingActionButton="True">
+        <scheduler:SfScheduler.FloatingActionButtonTemplate>
+            <DataTemplate>
+                <Border BackgroundColor="#6750A4"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 12"
+                        HeightRequest="36"
+                        WidthRequest="36">
+
+                    <Grid>
+                        <Label Text="&#xE774;"
+                               FontFamily="MauiMaterialAssets"
+                               FontSize="18"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+            </DataTemplate>
+        </scheduler:SfScheduler.FloatingActionButtonTemplate>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
+
+using Syncfusion.Maui.Scheduler;
+using Microsoft.Maui.Controls.Shapes;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Week;
+        scheduler.ShowFloatingActionButton = true;
+        scheduler.FloatingActionButtonTemplate = new DataTemplate(() =>
+        {
+            var label = new Label
+            {
+                Text = "\uE774",
+                FontFamily = "MauiMaterialAssets",
+                FontSize = 18,
+                TextColor = Colors.White,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+
+            var grid = new Grid { Content = label };
+
+            var border = new Border
+            {
+                BackgroundColor = Color.FromArgb("#6750A4"),
+                StrokeShape = new RoundRectangle { CornerRadius = 12 },
+                StrokeThickness = 0,
+                HeightRequest = 36,
+                WidthRequest = 36,
+                Content = grid
+            };
+
+            return border;
+        });
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![customize-floating-action-button-template-in-maui-scheduler](images/getting-started/customize-floating-action-button-template-in-maui-scheduler.png)
 
 N> You can refer to our [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Scheduler Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Scheduler) that shows you how to render the Scheduler in .NET MAUI.

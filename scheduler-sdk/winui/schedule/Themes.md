@@ -5,6 +5,7 @@ description: Learn how to apply and customize various themes in WinUI Scheduler 
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Themes in WinUI Scheduler

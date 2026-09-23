@@ -5,6 +5,7 @@ description: Learn about events in WinUI Scheduler including cell tapped, appoin
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Events in WinUI Scheduler

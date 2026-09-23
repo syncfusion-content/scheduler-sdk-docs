@@ -5,6 +5,7 @@ description: Learn how to customize timeline day, week, workweek and month view 
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Timeline Views in WinUI Scheduler
@@ -340,14 +341,16 @@ public sealed partial class MainWindow : Window
             EndTime = new System.DateTime(2026, 09, 16, 0, 0, 0),
             Text = "Holiday",
             CanEdit = false,
-            Background = new SolidColorBrush(Colors.LimeGreen),
-            Foreground = new SolidColorBrush(Colors.White)
+            Background = new SolidColorBrush(Colors.LightGreen),
+            Foreground = new SolidColorBrush(Colors.Black)
         });
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+![Special time region in TimelineMonth of WinUI Scheduler](TimelineViews_Images/special-time-region-in-timline-month.png)
 
 ## Full screen scheduler
 

@@ -5,13 +5,14 @@ description: Learn about ScheduleControl user control that provides basic schedu
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # ScheduleControl in Windows Forms Scheduler
 
 The ScheduleControl is a User Control that provides the basic scheduling functionality.
 
-### Properties
+## Properties
 
 <table>
 <tr>
@@ -48,7 +49,7 @@ ScheduleType</td><td>
 Gets or sets whether a daily, weekly or monthly schedule is displayed.</td></tr>
 </table>
 
-### Methods
+## Methods
 
 <table>
 <tr>
@@ -81,7 +82,7 @@ PerformSwitchToScheduleViewTypeClick</td><td>
 Switches the display to the specified ScheduleView type.</td></tr>
 </table>
 
-### Events
+## Events
 
 <table>
 <tr>

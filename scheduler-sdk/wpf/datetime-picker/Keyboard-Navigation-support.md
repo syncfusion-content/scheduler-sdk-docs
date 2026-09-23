@@ -5,6 +5,7 @@ description: Learn about keyboard navigation shortcuts and how to navigate date 
 platform: scheduler-sdk
 control: DateTimeEdit 
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Keyboard Navigation in WPF DateTimePicker

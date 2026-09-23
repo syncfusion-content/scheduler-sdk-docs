@@ -5,6 +5,7 @@ description: Learn how to customize the dropdown spinner in WinUI Time Picker co
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Dropdown Spinner Customization in WinUI Time Picker

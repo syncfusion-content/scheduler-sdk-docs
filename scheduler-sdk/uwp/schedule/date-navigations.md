@@ -5,6 +5,7 @@ description: Learn how to enable and customize date navigations in Syncfusion UW
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Navigations in UWP Scheduler

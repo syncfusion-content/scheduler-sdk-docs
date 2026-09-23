@@ -5,6 +5,7 @@ description: Learn how to localize WinUI Scheduler by setting calendar types and
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization in WinUI Scheduler

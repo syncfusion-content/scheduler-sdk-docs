@@ -321,9 +321,64 @@ public partial class MainPage : ContentPage
 
 N> In the `Day`, `Week`, and `WorkWeek` views, **grouping resources by date is supported**. However, in the `Month` view, **grouping resources by date is not supported**. When the `ResourceGroupType` is set to `Date` while the `View` is `Month`, the scheduler automatically renders resources based on `ResourceGroupType` as `Resource` only.
 
-## Adaptive resource grouping - Mobile
+## Adaptive resource grouping
 
-On mobile platforms, the resource views for the Day, Week, WorkWeek, and Month views are grouped under an adaptive header.
+The .NET MAUI Scheduler groups resources under an adaptive header in the Day, Week, WorkWeek, and Month views. On mobile platforms (`Android` and `iOS`), this adaptive UI is used by default. On desktop platforms (`Windows` and `macOS`), the horizontal grouped resource view is used by default, and the adaptive UI can be enabled using the [EnableAdaptiveUI](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_EnableAdaptiveUI) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6).
+
+### Desktop view
+
+On desktop platforms (`Windows` and `macOS`), resources are displayed by default using the horizontal grouped resource view in the Day, Week, WorkWeek, and Month views. To use the adaptive resource grouping UI on desktop instead, set the [EnableAdaptiveUI](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_EnableAdaptiveUI) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6) to `true`. When enabled, the Scheduler renders the adaptive UI (hamburger header and drawer) instead of the horizontal grouped layout.
+
+The default value of the `EnableAdaptiveUI` property is `false`. This property has no effect on mobile platforms (`Android` and `iOS`), which always use the adaptive UI.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView EnableAdaptiveUI="True"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="18" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+                new SchedulerResource() { Name = "Sophia", Foreground = Colors.White, Background = Colors.MediumAquamarine, Id = "1000" },
+                new SchedulerResource() { Name = "Zoey Addison",  Foreground = Colors.White, Background = Colors.Salmon, Id = "1001" },
+                new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
+        };
+
+        this.Scheduler.ResourceView.Resources = Resources;
+        this.Scheduler.ResourceView.EnableAdaptiveUI = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Adaptive Header in Desktop Days View in .NET MAUI Scheduler](images/resource-view/adaptive-header-in-desktop-days-view.png)
+
+N> The `EnableAdaptiveUI` property is supported only in the Day, Week, WorkWeek, and Month views on desktop platforms. It has no effect on Timeline views or on mobile platforms.
+
+### Mobile view
+
+On mobile platforms (`Android` and `iOS`), resources are always displayed using the adaptive UI. The `EnableAdaptiveUI` property has no effect on these platforms, since the adaptive UI is the only available resource layout.
 
 ### Days view
 
@@ -1232,8 +1287,10 @@ When resources are enabled, a hamburger menu icon is shown in the adaptive heade
 
 As shown in the following image, Team A, Team B, and Team C are expanded, displaying all child resources in the hierarchy. Selecting a child resource displays the schedule associated with that resource, and the selected resource name is shown in the adaptive header for easy identification.
 
+![Adaptive header for hierarchical resources in month view in .NET MAUI Scheduler](images/resource-view/adaptive-header-for-hierarchical-resources-in-month-view.jpg)
 
 
+![Adaptive header for hierarchical resources in day view in .NET MAUI Scheduler](images/resource-view/adaptive-header-for-hierarchical-resources-in-day-view.jpg)
 
 ## Visible Resource Count
  
@@ -1533,6 +1590,70 @@ N>
 * If the MinimumRowHeight is less than the default row height then the default row height will be used.
 
 ![Resource minimum row and height in .NET MAUI Scheduler.](images/resource-view/resource-view-minimum-height-in-net-maui-scheduler.png)
+
+## Resource auto row height
+
+You can enable or disable automatic resource row-height calculation in timeline day, timeline week, timeline workweek, and timeline month views by using the [AutoRowHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_AutoRowHeight) property of [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6) in [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). The default value is `true`.
+
+When `AutoRowHeight` is set to `true`, resource rows expand automatically based on the appointment count, similar to the default behavior used with `MinimumRowHeight`.
+
+When `AutoRowHeight` is set to `false`, resource rows render in a fixed-height mode. The fixed height is determined by the following priority:
+
+1. [VisibleResourceCount](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_VisibleResourceCount) (if set) - height = viewportHeight / count.
+2. [MinimumRowHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_MinimumRowHeight) (if set) - height = MinimumRowHeight.
+3. Otherwise, the default viewport calculation is applied.
+
+When appointments exceed the visible slots in fixed-height mode, a `+N` text indicator is displayed. Tap the indicator to show a popup with all hidden appointments.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="8" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineWeek">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView AutoRowHeight="False"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# hl_lines="12" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+            new SchedulerResource() { Name = "Sophia", Foreground = Colors.White, Background = Colors.LightGreen, Id = "1000" },
+            new SchedulerResource() { Name = "Zoey Addison",  Foreground = Colors.White, Background = Colors.Gold, Id = "1001" },
+            new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
+        };
+
+        scheduler.ResourceView.Resources = Resources;
+        scheduler.View = SchedulerView.TimelineWeek;
+        scheduler.ResourceView.AutoRowHeight = false;
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* `AutoRowHeight` is supported only in timeline views (`TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth`).
+
+![Resource auto row height in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler.png)
+
+![Resource auto row height with popup in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler-popup.png)
 
 ## Assign special time regions to scheduler resources
 

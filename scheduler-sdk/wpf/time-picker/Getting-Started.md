@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF TimePicker contr
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WPF TimePicker

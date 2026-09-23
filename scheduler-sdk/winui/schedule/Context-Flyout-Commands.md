@@ -5,6 +5,7 @@ description: Learn about context flyout and commands in WinUI Scheduler for hand
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Context Flyout and Commands in WinUI Scheduler

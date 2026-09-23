@@ -58,6 +58,71 @@ public partial class MainPage : ContentPage
 
 ![agenda-view-in-maui-scheduler](images/agenda-view/agenda-view-in-maui-scheduler.png)
 
+## Layout mode
+
+The layout used to render the agenda view can be specified using the [LayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_LayoutMode) property of the [SchedulerAgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `LayoutMode` property accepts one of the [AgendaViewLayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html) enumeration values and decides whether the mobile or the desktop agenda layout is rendered.
+
+By default, the `LayoutMode` is set to [Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Auto), where the Scheduler automatically chooses the mobile or desktop layout based on the available width and the platform.
+
+The available [AgendaViewLayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html) enumeration values are:
+
+N>
+* [Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Auto) - The agenda view layout is determined automatically based on the available width and the platform.
+* [Mobile](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Mobile) - The agenda view is always rendered using the mobile layout, regardless of the platform, device type, or available width.
+* [Desktop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Desktop) - The agenda view is always rendered using the desktop layout, regardless of the platform, device type, or available width.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4 5 6" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" View="Agenda">
+        <scheduler:SfScheduler.AgendaView>
+            <scheduler:SchedulerAgendaView LayoutMode="Mobile"/>
+        </scheduler:SfScheduler.AgendaView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11 12" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        this.scheduler.View = SchedulerView.Agenda;
+        // Setting the LayoutMode for the agenda view.
+        this.scheduler.AgendaView.LayoutMode = AgendaViewLayoutMode.Mobile;
+
+        // Creating an instance for the scheduler appointment collection.
+        var appointments = new ObservableCollection<SchedulerAppointment>();
+        // Adding scheduler appointment in the scheduler appointment collection.
+        appointments.Add(new SchedulerAppointment()
+        {
+            Subject = "Meeting",
+            StartTime = DateTime.Now,
+            EndTime = DateTime.Now.AddHours(1),
+            Background = Brush.Orange,
+        });
+        // Adding scheduler appointment into the AppointmentsSource.
+        this.scheduler.AppointmentsSource = appointments;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Agenda-View-LayoutMode-in-Maui-Scheduler](images/agenda-view/agenda-view-layoutmode-in-maui-scheduler.png)
+
+N> The default value of [LayoutMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_LayoutMode) is [Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Auto). When the desktop view width is less than 600, the Scheduler automatically renders the mobile agenda UI; use [Mobile](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Mobile) or [Desktop](https://help.syncfusion.com/cr/maui/Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Desktop) to force a specific layout.
+
 ## Month header appearance customization
 
 The agenda month header view can be customized by using the [MonthHeaderSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_MonthHeaderSettings) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
@@ -294,6 +359,109 @@ N>
 * The default value for `DateFormat,` and `Height` are `MMM dd,` and `30` respectively.
 * For desktop UI, The agenda view displays the appointment only.
 
+### Customize week header appearance using DataTemplate
+
+You can fully customize the week header appearance of the scheduler by using the [WeekHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_WeekHeaderTemplate) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `BindingContext` of the template is the [AgendaViewWeekHeaderDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html), which exposes the [StartDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html#Syncfusion_Maui_Scheduler_AgendaViewWeekHeaderDetails_StartDate) and [EndDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html#Syncfusion_Maui_Scheduler_AgendaViewWeekHeaderDetails_EndDate) of the week.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+        <scheduler:SfScheduler.AgendaView>
+            <scheduler:SchedulerAgendaView LayoutMode="Mobile">
+                <scheduler:SchedulerAgendaView.WeekHeaderTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="LightBlue">
+                            <Label HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   FontSize="18"
+                                   TextColor="Black">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding StartDate, StringFormat='{0:MMM dd}'}" />
+                                        <Span Text=" - " />
+                                        <Span Text="{Binding EndDate, StringFormat='{0:MMM dd, yyyy}'}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </scheduler:SchedulerAgendaView.WeekHeaderTemplate>
+            </scheduler:SchedulerAgendaView>
+        </scheduler:SfScheduler.AgendaView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Agenda;
+        scheduler.AgendaView.LayoutMode = AgendaViewLayoutMode.Mobile;
+
+        scheduler.AgendaView.WeekHeaderTemplate = new DataTemplate(() =>
+        {
+            var startSpan = new Span
+            {
+                Text = "{0:MMM dd}",
+                TextColor = Colors.Black
+            };
+            startSpan.SetBinding(Span.TextProperty, new Binding("StartDate", stringFormat: "{0:MMM dd}"));
+
+            var separatorSpan = new Span { Text = " - ", TextColor = Colors.Black };
+
+            var endSpan = new Span
+            {
+                Text = "{0:MMM dd, yyyy}",
+                TextColor = Colors.Black
+            };
+            endSpan.SetBinding(Span.TextProperty, new Binding("EndDate", stringFormat: "{0:MMM dd, yyyy}"));
+
+            var formattedString = new FormattedString();
+            formattedString.Spans.Add(startSpan);
+            formattedString.Spans.Add(separatorSpan);
+            formattedString.Spans.Add(endSpan);
+
+            var label = new Label
+            {
+                FontSize = 18,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                FormattedText = formattedString
+            };
+
+            var grid = new Grid
+            {
+                BackgroundColor = Colors.LightBlue,
+                Children = { label }
+            };
+
+            return grid;
+        });
+
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![week-header-appearence-template-customization-in-maui-scheduler](images/agenda-view/week-header-appearence-template-customization-in-maui-scheduler.png)
+
+N> The [WeekHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_WeekHeaderTemplate) overrides the default `WeekHeaderSettings` rendering for the week header band and is supported only in the Agenda view.
+
 ## Day header appearance customization
 
 The agenda day header view can be customized by using the [DayHeaderSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_DayHeaderSettings) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
@@ -350,6 +518,103 @@ public partial class MainPage : ContentPage
 ![day-header-appearence-text-style-customization-in-maui-scheduler](images/agenda-view/day-header-appearence-text-style-customization-in-maui-scheduler.png)
 
 N> The default value of `DayFormat` is `MMM, ddd.`
+
+### Customize day header appearance using DataTemplate
+
+You can fully customize the day header appearance by using the [DayHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_DayHeaderTemplate) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `BindingContext` of the template is the [`DateTime`](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) for the corresponding agenda date, which lets you bind directly to date components like the weekday (`ddd`) and the day number (`dd`).
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Agenda">
+        <scheduler:SfScheduler.AgendaView>
+            <scheduler:SchedulerAgendaView>
+                <scheduler:SchedulerAgendaView.DayHeaderTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="LightGreen">
+                            <VerticalStackLayout HorizontalOptions="Center"
+                                                  VerticalOptions="Center">
+                                <Label FontSize="14"
+                                       TextColor="Gray"
+                                       HorizontalTextAlignment="Center"
+                                       Text="{Binding StringFormat='{0:ddd}'}" />
+                                <Label FontSize="20"
+                                       FontAttributes="Bold"
+                                       TextColor="Black"
+                                       HorizontalTextAlignment="Center"
+                                       Text="{Binding StringFormat='{0:dd}'}" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </scheduler:SchedulerAgendaView.DayHeaderTemplate>
+            </scheduler:SchedulerAgendaView>
+        </scheduler:SfScheduler.AgendaView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Agenda;
+
+        scheduler.AgendaView.DayHeaderTemplate = new DataTemplate(() =>
+        {
+            var dayLabel = new Label
+            {
+                FontSize = 14,
+                TextColor = Colors.Gray,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            dayLabel.SetBinding(Label.TextProperty, new Binding(".", stringFormat: "{0:ddd}"));
+
+            var dateLabel = new Label
+            {
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Colors.Black,
+                HorizontalTextAlignment = TextAlignment.Center
+            };
+            dateLabel.SetBinding(Label.TextProperty, new Binding(".", stringFormat: "{0:dd}"));
+
+            var stack = new VerticalStackLayout
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Children = { dayLabel, dateLabel }
+            };
+
+            var grid = new Grid
+            {
+                BackgroundColor = Colors.LightGreen,
+                Children = { stack }
+            };
+
+            return grid;
+        });
+
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![day-header-appearence-template-customization-in-maui-scheduler](images/agenda-view/day-header-appearence-template-customization-in-maui-scheduler.png)
+
+N> The [DayHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_DayHeaderTemplate) overrides the default `DayHeaderSettings` rendering for the day header band and is supported only in the mobile layout of the Agenda view.
 
 ## Appointment text appearance customization
 

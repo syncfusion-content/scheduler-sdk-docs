@@ -5,6 +5,7 @@ description: Learn about resource grouping in WPF Scheduler to organize appointm
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Resource Grouping in WPF Scheduler
