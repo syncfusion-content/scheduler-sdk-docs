@@ -5,6 +5,7 @@ description: Learn how to use time zones for appointments, scheduling, and relat
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Time Zone in WinUI Scheduler

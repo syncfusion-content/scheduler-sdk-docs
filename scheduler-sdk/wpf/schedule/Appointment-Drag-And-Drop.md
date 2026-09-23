@@ -5,6 +5,7 @@ description: Learn about appointment drag and drop functionality in WPF Schedule
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Appointment Drag and Drop in WPF Scheduler
 The [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) supports rescheduling an appointment by performing the drag and drop operation. 

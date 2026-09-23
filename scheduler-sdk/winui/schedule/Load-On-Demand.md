@@ -5,6 +5,7 @@ description: Learn how to load appointments on demand from visible date ranges i
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Load On Demand in WinUI Scheduler

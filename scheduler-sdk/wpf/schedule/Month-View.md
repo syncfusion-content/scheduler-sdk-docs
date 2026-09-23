@@ -5,6 +5,7 @@ description: Learn about month view in WPF Scheduler displaying calendar days wi
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Month View in WPF Scheduler
 The month view of the scheduler displays the days of a specific month; the current month is shown by default initially. The current date is highlighted differently from other dates of the current month.

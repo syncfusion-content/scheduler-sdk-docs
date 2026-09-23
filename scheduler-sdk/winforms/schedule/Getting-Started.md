@@ -6,6 +6,7 @@ description: Learn how to get started with the Syncfusion Windows Forms Schedule
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with Windows Forms Scheduler

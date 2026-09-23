@@ -5,6 +5,7 @@ description: Learn about timeline views in WPF Scheduler displaying horizontal t
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Timeline Views in WPF Scheduler

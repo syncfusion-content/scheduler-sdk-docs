@@ -5,6 +5,7 @@ description: Learn how to group appointments based on resources in day, week and
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Resource Grouping in WinUI Scheduler

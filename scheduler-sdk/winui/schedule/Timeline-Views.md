@@ -5,6 +5,7 @@ description: Learn how to customize timeline day, week, workweek and month view 
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Timeline Views in WinUI Scheduler

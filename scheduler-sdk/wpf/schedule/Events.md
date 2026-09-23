@@ -5,6 +5,7 @@ description: Learn about events in WPF Scheduler including cell tapped, appointm
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Events in WPF Scheduler

@@ -5,6 +5,7 @@ description: Learn about appearance customization and styling options available 
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance in WPF TimePicker

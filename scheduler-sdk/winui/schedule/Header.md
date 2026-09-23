@@ -5,6 +5,7 @@ description: Learn how to customize header height, date format and appearance in
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Header in WinUI Scheduler
