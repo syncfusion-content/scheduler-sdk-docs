@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Customization in .NET MAUI Scheduler
-Customization of the [.NET MAUI Scheduler](https://www.syncfusion.com/maui-controls/maui-scheduler) lets you adjust its views, appearance, and functionality to match your application requirements.
+Customization of the [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler) lets you adjust its views, appearance, and functionality to match your application requirements.
 
 ## Change different scheduler views
 
