@@ -5,6 +5,7 @@ description: Learn about appointment drag and drop functionality in WinUI Schedu
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointment Drag and Drop in WinUI Scheduler

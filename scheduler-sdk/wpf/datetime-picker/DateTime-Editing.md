@@ -5,6 +5,7 @@ description: Learn how to edit date and time values in WPF DateTimePicker using 
 platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # DateTime Editing in WPF DateTimePicker

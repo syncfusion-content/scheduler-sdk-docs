@@ -5,6 +5,7 @@ description: Learn about context menus and commands in WPF Scheduler for handlin
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # ContextMenu and Commands in WPF Scheduler

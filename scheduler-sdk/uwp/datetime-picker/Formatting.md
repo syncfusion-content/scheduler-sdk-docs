@@ -5,6 +5,7 @@ description: Learn how to format the display text using the FormatString propert
 platform: scheduler-sdk
 control: SfDateTimeCombo
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Formatting in UWP DateTimePicker

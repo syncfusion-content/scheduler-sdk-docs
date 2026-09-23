@@ -5,6 +5,7 @@ description: Learn about day and week views in WPF Scheduler displaying appointm
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Day and Week Views in WPF Scheduler

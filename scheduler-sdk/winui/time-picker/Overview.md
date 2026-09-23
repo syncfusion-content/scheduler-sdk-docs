@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio WinUI Time 
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WinUI Time Picker Control

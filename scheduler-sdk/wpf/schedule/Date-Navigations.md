@@ -5,6 +5,7 @@ description: Learn about date navigation features in WPF Scheduler to navigate b
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Navigations in WPF Scheduler

@@ -5,6 +5,7 @@ description: Learn how to change and configure different calendar types in WPF S
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Calendar Types in WPF Scheduler

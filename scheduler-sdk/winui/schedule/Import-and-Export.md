@@ -6,6 +6,7 @@ description: Import & export appointments in WinUI Scheduler via iCalendar (.ics
 control: SfScheduler
 documentation: ug
 keywords: winui scheduler, winui scheduler ics export, winui scheduler ics import, iCalendar support winui, export appointments to ics, import appointments from ics, winui scheduler calendar integration, scheduler iCalendar format, winui scheduler outlook integration, winui scheduler google calendar integration, winui scheduler apple calendar integration, sfscheduler ics file
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Import and Export iCalendar (.ICS) Files in WinUI Scheduler

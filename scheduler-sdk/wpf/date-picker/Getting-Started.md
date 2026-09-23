@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WPF DatePicker contr
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WPF DatePicker

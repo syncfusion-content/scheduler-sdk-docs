@@ -5,6 +5,7 @@ description: Learn about accessibility support in WPF Scheduler including screen
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Accessibility Support in WPF Scheduler

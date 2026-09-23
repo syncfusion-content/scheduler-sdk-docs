@@ -5,6 +5,7 @@ description: Learn how to restrict date selection within a particular range in W
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Restriction in WinUI Date Picker

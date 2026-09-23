@@ -7,6 +7,7 @@ platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
 
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Week View in UWP Scheduler
 

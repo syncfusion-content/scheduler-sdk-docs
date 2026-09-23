@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio UWP Schedul
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion UWP Scheduler Control

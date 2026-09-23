@@ -5,6 +5,7 @@ description: Learn about reminder functionality in WPF Scheduler to alert users 
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Reminder in WPF Scheduler
 [WPF Scheduler](https://www.syncfusion.com/scheduler-sdk/wpf-scheduler) alerts you for a particular appointment with a reminder window when enabling the [EnableReminder](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property. The reminder window supports `Dismiss`, `DismissAll`, or setting the `SnoozeTime` for the reminder appointments.

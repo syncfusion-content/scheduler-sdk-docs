@@ -5,6 +5,7 @@ description: Learn how to handle appointment editing and resizing in WinUI Sched
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointment Editing in WinUI Scheduler

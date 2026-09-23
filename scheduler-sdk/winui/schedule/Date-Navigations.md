@@ -5,6 +5,7 @@ description: Learn about date navigation features in WinUI Scheduler to navigate
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Navigations in WinUI Scheduler

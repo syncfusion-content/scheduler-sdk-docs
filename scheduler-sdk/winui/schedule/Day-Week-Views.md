@@ -5,6 +5,7 @@ description: Learn how to customize day, week and work week view settings and ap
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Day and Week Views in WinUI Scheduler

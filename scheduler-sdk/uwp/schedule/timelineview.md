@@ -5,6 +5,7 @@ description: Learn how to use the timeline view in Syncfusion UWP Scheduler (SfS
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Timeline View in UWP Scheduler

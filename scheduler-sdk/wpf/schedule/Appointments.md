@@ -5,6 +5,7 @@ description: Learn about managing appointments in WPF Scheduler including creati
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointments in WPF Scheduler

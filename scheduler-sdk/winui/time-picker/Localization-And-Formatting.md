@@ -5,6 +5,7 @@ description: Learn how to localize and customize time formats in WinUI Time Pick
 platform: scheduler-sdk
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization and Formatting in WinUI Time Picker
