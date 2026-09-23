@@ -39,7 +39,7 @@ this.clock1.StartGradientBackColor = Color.Black;
 {% endhighlight %}
 
 {% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 Me.clock1.BorderColor = Color.Violet
 
@@ -86,7 +86,7 @@ this.clock1.MinuteThickness = 4;
 {% endhighlight %}
 
 {% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 Me.clock1.HourHandThickness = 7
 
@@ -123,7 +123,7 @@ this.clock1.ShowSecondHand = false;
 {% endhighlight %}
 
 {% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 Me.clock1.ShowAMorPM = True
 
@@ -153,7 +153,7 @@ this.clock1.IsTransparent = true;
 {% endhighlight %}
 
 {% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 Me.clock1.IsTransparent = True
 
@@ -180,7 +180,7 @@ this.clock1.StopTimer = true;
 {% endhighlight %}
 
 {% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
+Imports Syncfusion.Windows.Forms.Tools
 
 'Gets or sets the value to freeze or unfreeze time in the clock.
 
