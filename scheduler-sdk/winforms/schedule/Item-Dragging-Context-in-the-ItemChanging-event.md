@@ -12,11 +12,11 @@ appliesto: UI Component Suite, Scheduler SDK
 
 This feature provides support to detect the dragging context when an item is dropped in the schedule part or calendar part. It also enables you to cancel specific items as needed through the ItemChanging event.
 
-### Use case scenario
+## Use case scenario
 
 In the ItemChanging event, through the ItemDragHitContext enumeration, you can detect the dragging context (Schedule or Calendar) and cancel specific items as needed.
 
-### Property
+## Property
 
 <table>
 <tr>
@@ -31,7 +31,7 @@ Specifies where the mouse is during an appointment drag in a week or month view.
 enum</td></tr>
 </table>
 
-### Event
+## Event
 
 <table>
 <tr>
@@ -46,13 +46,13 @@ object sender, ScheduleAppointmentCancelEventArgs e</td><td>
 Occurs after an IScheduleAppointment is modified.</td></tr>
 </table>
 
-#### Sample link
+### Sample link
 
 You can get the schedule sample from the following online location:
 
 [http://samples.syncfusion.com/windowsforms](http://samples.syncfusion.com/windowsforms)
 
-### Adding drag-context detection to an application
+## Adding drag-context detection to an application
 
 The following steps help you to get the target part in the Schedule control while dragging:
 
