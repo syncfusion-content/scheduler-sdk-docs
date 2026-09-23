@@ -5,6 +5,7 @@ description: Learn about columns in the Syncfusion® .NET MAUI Picker control, i
 platform: scheduler-sdk
 control: SfPicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Columns in .NET MAUI Picker control
