@@ -7,7 +7,7 @@ control: Scheduler
 documentation: ug
 ---
 
-# Overview in Blazor Scheduler
+# Blazor Scheduler Documentation Overview
 
 ## Introduction to Syncfusion Blazor Scheduler
 
@@ -165,10 +165,10 @@ The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler
 
 - **[WAI-ARIA attributes](./accessibility#wai-aria-attributes)** - Accessible roles and attributes for the Scheduler UI
 - **[Keyboard interaction](./accessibility#keyboard-interaction)** - Complete scheduler operation via keyboard
-  - Tab / Shift+Tab - Navigate between focusable areas
-  - Arrow keys - Navigate between cells and events
-  - Enter - Open the editor on a selected cell or event
-  - Delete - Remove the selected event
+  - **Tab / Shift+Tab** - Navigate between focusable areas
+  - **Arrow keys** - Navigate between cells and events
+  - **Enter** - Open the editor on a selected cell or event
+  - **Delete** - Remove the selected event
 - **[Ensuring accessibility](./accessibility#ensuring-accessibility)** - Validation guidance for accessible schedulers
 - **[Setting date format](./localization#setting-date-format)** and **[Time mode](./localization#time-mode)** - Culture-aware formats and 12/24-hour display
 - **[Displaying Scheduler in RTL mode](./localization#displaying-scheduler-in-rtl-mode)** - Right-to-left rendering for RTL languages
