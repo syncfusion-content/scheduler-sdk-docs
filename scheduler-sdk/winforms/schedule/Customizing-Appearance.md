@@ -5,6 +5,7 @@ description: Learn how to customize appearance in Windows Forms Scheduler by mod
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Customizing Appearance in Windows Forms Scheduler

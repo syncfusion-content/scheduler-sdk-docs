@@ -5,6 +5,7 @@ description: Learn how to localize the Syncfusion UWP Scheduler (SfSchedule) con
 platform: scheduler-sdk
 control: SfSchedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization in UWP Scheduler

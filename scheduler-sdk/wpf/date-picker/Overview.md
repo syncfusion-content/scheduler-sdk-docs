@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF DateP
 platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WPF DatePicker Control

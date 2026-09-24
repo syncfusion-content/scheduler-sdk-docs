@@ -5,6 +5,7 @@ description: Learn about time interval format options for scheduling appointment
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Time Interval in Windows Forms Scheduler

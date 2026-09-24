@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio WPF Calen
 platform: scheduler-sdk
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WPF Calendar Control

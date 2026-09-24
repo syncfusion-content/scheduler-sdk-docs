@@ -6,6 +6,7 @@ description: Learn about introduction of Syncfusion Essential Studio Windows For
 platform: scheduler-sdk
 control: Schedule
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion Windows Forms Scheduler Control

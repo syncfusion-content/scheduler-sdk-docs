@@ -5,6 +5,7 @@ description: Learn how to localize and customize date formats in WinUI Calendar 
 platform: scheduler-sdk
 control: SfCalendarDateRangePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Localization and Formatting in WinUI Calendar DateRange Picker

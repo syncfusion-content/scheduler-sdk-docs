@@ -5,6 +5,7 @@ description: Learn about accessibility support in WinUI Scheduler including scre
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Accessibility Support in WinUI Scheduler
@@ -13,7 +14,7 @@ documentation: ug
 
 The `Scheduler` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
 
-#### Month view
+### Month view
 
 <table>
 <tr>
@@ -251,7 +252,7 @@ Button <br/><br/></td><td>Content ControlType<br/><br/></td>
 
 The `Scheduler` supports selection using keyboard interactions.
 
-#### Day, Week and WorkWeek views
+### Day, Week and WorkWeek views
 
 <table>
 <tr>

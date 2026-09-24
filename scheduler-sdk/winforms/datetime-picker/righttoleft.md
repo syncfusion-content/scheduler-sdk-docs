@@ -5,6 +5,7 @@ description: Learn how to enable right-to-left layout in Windows Forms DateTimeP
 platform: scheduler-sdk
 control: SfDateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Right to Left Support in Windows Forms DateTimePicker

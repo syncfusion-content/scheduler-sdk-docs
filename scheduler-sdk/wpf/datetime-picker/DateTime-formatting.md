@@ -5,6 +5,7 @@ description: Learn how to format and display date time values in different forma
 platform: scheduler-sdk
 control: DateTimeEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # DateTime Formatting in WPF DateTimePicker

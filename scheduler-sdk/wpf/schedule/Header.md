@@ -5,6 +5,7 @@ description: Learn about header customization in WPF Scheduler including height,
 platform: scheduler-sdk
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Header in WPF Scheduler

@@ -5,6 +5,7 @@ description: Learn how to select dates and customize the date selection user int
 platform: scheduler-sdk
 control: CalendarEdit
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Selection in WPF Calendar

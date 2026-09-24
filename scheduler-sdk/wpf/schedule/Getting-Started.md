@@ -7,6 +7,7 @@ description: Learn how to get started with the Syncfusion WPF Scheduler control.
 platform: wpf
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WPF Scheduler
