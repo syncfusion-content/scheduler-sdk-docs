@@ -568,7 +568,7 @@ N> The [AppointmentEditorMode](https://help.syncfusion.com/cr/maui/Syncfusion.Ma
 The binding context of the template is a [QuickInfoPopupDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.QuickInfoPopupDetails.html) instance that provides the associated [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) through its `SchedulerAppointment` property and the `EditAppointment`, `DeleteAppointment`, and `ClosePopup` methods to perform edit, delete, and close actions with the same behavior as the built‑in quick info icons.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35" %}
+{% highlight xaml tabtitle="XAML" %}
 <ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">

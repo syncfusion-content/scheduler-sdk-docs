@@ -72,7 +72,7 @@ N>
 * [Desktop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Desktop) - The agenda view is always rendered using the desktop layout, regardless of the platform, device type, or available width.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4 5 6" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6" %}
 
 <ContentPage
     . . .
@@ -85,7 +85,7 @@ N>
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11 12" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="13" %}
 
 using Syncfusion.Maui.Scheduler;
 using System.Collections.ObjectModel;
@@ -364,7 +364,7 @@ N>
 You can fully customize the week header appearance of the scheduler by using the [WeekHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_WeekHeaderTemplate) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `BindingContext` of the template is the [AgendaViewWeekHeaderDetails](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html), which exposes the [StartDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html#Syncfusion_Maui_Scheduler_AgendaViewWeekHeaderDetails_StartDate) and [EndDate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewWeekHeaderDetails.html#Syncfusion_Maui_Scheduler_AgendaViewWeekHeaderDetails_EndDate) of the week.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
 
 <ContentPage
     . . .
@@ -397,7 +397,7 @@ You can fully customize the week header appearance of the scheduler by using the
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Scheduler;
 
@@ -524,7 +524,7 @@ N> The default value of `DayFormat` is `MMM, ddd.`
 You can fully customize the day header appearance by using the [DayHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html#Syncfusion_Maui_Scheduler_SchedulerAgendaView_DayHeaderTemplate) property of [AgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAgendaView.html). The `BindingContext` of the template is the [`DateTime`](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) for the corresponding agenda date, which lets you bind directly to date components like the weekday (`ddd`) and the day number (`dd`).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
 
 <ContentPage
     . . .
@@ -557,7 +557,7 @@ You can fully customize the day header appearance by using the [DayHeaderTemplat
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
 
 using Syncfusion.Maui.Scheduler;
 

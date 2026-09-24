@@ -374,7 +374,7 @@ Customize the day text rendered inside each month cell by using the [DayStringFo
 The default value is `string.Empty`, which renders the day using the default value based on the [`CalendarType`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_CalendarType). The formatted text is rendered on a single line and trimmed with an ellipsis when it exceeds the cell width.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
 
 <ContentPage
     . . .
@@ -388,7 +388,7 @@ The default value is `string.Empty`, which renders the day using the default val
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="10" %}
 
 using Syncfusion.Maui.Scheduler;
 
@@ -1355,7 +1355,7 @@ N>
 The Month Agenda View panel displays the appointments of the selected date in a split layout beneath the [Month](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html) view, with an auto-sized date header column on the left and the agenda list on the right. Enable the panel by setting the [ShowAgendaView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_ShowAgendaView) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html) to `true`. By default, `ShowAgendaView` is `false`.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="5" %}
+{% highlight xaml tabtitle="XAML" hl_lines="7" %}
 <ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
@@ -1367,7 +1367,7 @@ The Month Agenda View panel displays the appointments of the selected date in a 
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="9" %}
+{% highlight c# tabtitle="C#" hl_lines="10" %}
 using Syncfusion.Maui.Scheduler;
 
 . . .
@@ -1390,7 +1390,7 @@ public partial class MainPage : ContentPage
 The height of the Month Agenda View panel can be customized by setting the [AgendaViewHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_AgendaViewHeight) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The default value is `-1d`, which automatically calculates the agenda view height as 30% of the total scheduler height. When set to a value greater than or equal to 0, the agenda view uses the specified pixel height.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="5" %}
+{% highlight xaml tabtitle="XAML" hl_lines="7" %}
 <ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
@@ -1402,7 +1402,7 @@ The height of the Month Agenda View panel can be customized by setting the [Agen
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="9" %}
+{% highlight c# tabtitle="C#" hl_lines="11" %}
 using Syncfusion.Maui.Scheduler;
 
 . . .
@@ -1426,7 +1426,7 @@ public partial class MainPage : ContentPage
 The styling configuration of the Month Agenda View panel can be customized using the [AgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_AgendaViewStyle) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The `AgendaViewStyle` is of type [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) and provides properties such as `Background`, `ItemHeight`, `TimeTextFormat`, `TextStyle`, `NoEventsTextStyle`, `DateTextStyle`, and `ItemTemplate` for customizing the appearance and behavior of the agenda panel.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="6 7 8 9 10 11 12" %}
+{% highlight xaml tabtitle="XAML" hl_lines="8 9 10 11" %}
 <ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
@@ -1443,7 +1443,7 @@ The styling configuration of the Month Agenda View panel can be customized using
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="9 10 11" %}
+{% highlight c# tabtitle="C#" hl_lines="10 11" %}
 using Syncfusion.Maui.Scheduler;
 
 . . .
@@ -1497,7 +1497,7 @@ The [DateTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Schedule
 The [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html#Syncfusion_Maui_Scheduler_MonthAgendaViewStyle_ItemTemplate) property of [MonthAgendaViewStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthAgendaViewStyle.html) gets or sets the custom data template for appointment items displayed in the month agenda view. The default value is `null`. When a template is provided, it replaces the default appointment item layout with developer-defined content.
 
 {% tabs %}
-{% highlight xaml tabtitle="XAML" hl_lines="6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+{% highlight xaml tabtitle="XAML" %}
 <ContentPage
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
@@ -1532,7 +1532,7 @@ The [ItemTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler
     </scheduler:SfScheduler>
 </ContentPage>
 {% endhighlight %}
-{% highlight c# tabtitle="C#" hl_lines="10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26" %}
+{% highlight c# tabtitle="C#" %}
 using Syncfusion.Maui.Scheduler;
 
 . . .
