@@ -332,7 +332,7 @@ On desktop platforms (`Windows` and `macOS`), resources are displayed by default
 The default value of the `EnableAdaptiveUI` property is `false`. This property has no effect on mobile platforms (`Android` and `iOS`), which always use the adaptive UI.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
 
 <ContentPage
     . . .

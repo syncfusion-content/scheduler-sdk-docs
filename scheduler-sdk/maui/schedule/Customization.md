@@ -324,7 +324,7 @@ Display a floating action button (FAB) at the bottom-right corner of the [SfSche
 The default value is `false`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
 
 <ContentPage
     . . .
@@ -336,7 +336,7 @@ The default value is `false`.
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11" %}
 
 using Syncfusion.Maui.Scheduler;
 
@@ -367,7 +367,7 @@ N>
 Customize the visual content rendered inside the FAB by setting the [FloatingActionButtonTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_FloatingActionButtonTemplate) property of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). Use this `DataTemplate` to render any view that matches the application's design language — for example, a compact 36×36 rounded `Border` containing a `Label` rendered with a Segoe Fluent / Material glyph as the FAB content.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26" %}
 
 <ContentPage
     . . .
@@ -399,7 +399,7 @@ Customize the visual content rendered inside the FAB by setting the [FloatingAct
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38" %}
 
 using Syncfusion.Maui.Scheduler;
 using Microsoft.Maui.Controls.Shapes;

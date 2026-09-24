@@ -72,7 +72,7 @@ N>
 * [Desktop](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AgendaViewLayoutMode.html#Syncfusion_Maui_Scheduler_AgendaViewLayoutMode_Desktop) - The agenda view is always rendered using the desktop layout, regardless of the platform, device type, or available width.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4 5 6" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6" %}
 
 <ContentPage
     . . .
@@ -85,7 +85,7 @@ N>
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11 12" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="13" %}
 
 using Syncfusion.Maui.Scheduler;
 using System.Collections.ObjectModel;
