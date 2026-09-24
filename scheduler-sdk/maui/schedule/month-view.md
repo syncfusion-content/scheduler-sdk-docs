@@ -374,7 +374,7 @@ Customize the day text rendered inside each month cell by using the [DayStringFo
 The default value is `string.Empty`, which renders the day using the default value based on the [`CalendarType`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_CalendarType). The formatted text is rendered on a single line and trimmed with an ellipsis when it exceeds the cell width.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="5" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
 
 <ContentPage
     . . .
@@ -388,7 +388,7 @@ The default value is `string.Empty`, which renders the day using the default val
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="11" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="10" %}
 
 using Syncfusion.Maui.Scheduler;
 
