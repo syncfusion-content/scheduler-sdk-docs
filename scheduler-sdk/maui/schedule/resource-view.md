@@ -1606,7 +1606,7 @@ When `AutoRowHeight` is set to `false`, resource rows render in a fixed-height m
 When appointments exceed the visible slots in fixed-height mode, a `+N` text indicator is displayed. Tap the indicator to show a popup with all hidden appointments.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainPage.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
 
 <ContentPage
     . . .
@@ -1620,7 +1620,7 @@ When appointments exceed the visible slots in fixed-height mode, a `+N` text ind
 </ContentPage>
 
 {% endhighlight %}
-{% highlight C# hl_lines="12" %}
+{% highlight C# hl_lines="19" %}
 
 using Syncfusion.Maui.Scheduler;
 
@@ -1650,8 +1650,6 @@ public partial class MainPage : ContentPage
 
 N>
 * `AutoRowHeight` is supported only in timeline views (`TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth`).
-
-![Resource auto row height in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler.png)
 
 ![Resource auto row height with popup in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler-popup.png)
 
