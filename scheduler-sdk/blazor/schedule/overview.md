@@ -20,6 +20,8 @@ The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler
 | Use Case | Description | Key Features |
 |----------|-------------|--------------|
 | **[Appointment Booking](https://showcase.syncfusion.com/appointment-planner/blazor)** | Book and manage customer appointments with confirmation workflows | CRUD Actions, Editor Template, Recurring Events |
+| **[Hotel Booking Management](https://showcase.syncfusion.com/hotel-booking-management/)** | Manage reservations, room availability, and daily front-desk operations with booking timelines | Resource Grouping, Timeline Views, Block Events |
+| **[Sprint Management](https://showcase.syncfusion.com/sprint-management/blazor/)** | Track sprint tasks across stages with assignees and progress | Timeline Views, Resource Grouping, Block Events |
 | **Resource Planning** | Allocate rooms, staff, and equipment with group-level availability | Resources, Resource Grouping, Timeline Views |
 | **Personal Calendars** | Track personal events, reminders, and daily routines | Views, Appointments, Notifications/Tooltips |
 | **Corporate Scheduling** | Coordinate meetings across teams, regions, and time zones | Timezone, Working Hours, Shared Events |
