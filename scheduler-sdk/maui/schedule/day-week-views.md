@@ -326,6 +326,138 @@ public partial class MainPage : ContentPage
 
 ![Allow spanned appointments in timeslots in days view](images/day-week-views/allow-spanned-appointment-in-timeslot-in-days-view.png)
 
+## Major and minor ticks in Days view
+
+The Scheduler supports displaying minor ticks in `Day`, `Week`, and `WorkWeek` views to provide a more detailed timescale representation. Minor ticks are displayed between major time slots, making it easier to identify and work with shorter scheduling intervals.
+
+You can customize the time slot subdivisions, the time format of minor tick labels, and the appearance of minor tick text to match your application's requirements.
+
+
+### Configure time slot subdivisions
+
+The `TimeSlotCount` property of the `DaysView` is used to divide a time slot into multiple equal subdivisions. By default, the value is `1`, which displays only the major time intervals. When the value is greater than 1, each time slot is divided into the specified number of subdivisions, and minor ticks are displayed between the major ticks. This is useful for scheduling scenarios that require shorter intervals, such as 30-minute or 15-minute time slots.
+
+{% tabs %}
+{% highlight XAML hl_lines="8" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Day">
+        <scheduler:SfScheduler.DaysView>
+            <scheduler:SchedulerDaysView TimeSlotCount="2" />
+        </scheduler:SfScheduler.DaysView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight C# hl_lines="9" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        scheduler.DaysView.TimeSlotCount = 2;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Minor time slot ticks in days view in .NET MAUI SfScheduler](images/day-week-views/minor-time-slot-ticks.png)
+
+## Format minor tick labels
+
+The `MinorTickTimeFormat` property of the `DaysView` specifies the format used to display minor tick labels. It supports standard .NET date and time format strings. By default, the value is `"mm"`, which displays the minute component of the time.
+
+{% tabs %}
+{% highlight XAML hl_lines="8" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Day">
+        <scheduler:SfScheduler.DaysView>
+            <scheduler:SchedulerDaysView TimeSlotCount="2" MinorTickTimeFormat="t" />
+        </scheduler:SfScheduler.DaysView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight C# hl_lines="9 10" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        scheduler.DaysView.TimeSlotCount = 2;
+        scheduler.DaysView.MinorTickTimeFormat = "t";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Format minor time slot ticks in days view in .NET MAUI SfScheduler](images/day-week-views/format-minor-time-slot-ticks.png)
+
+## Customize minor tick label appearance
+
+The appearance of minor tick labels can be customized using the `MinorTickTextStyle` property in `DaysView`.
+
+{% tabs %}
+{% highlight xaml hl_lines="9 10 11" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Day">
+        <scheduler:SfScheduler.DaysView>
+            <scheduler:SchedulerDaysView TimeSlotCount="2">
+                <scheduler:SchedulerDaysView.MinorTickTextStyle>
+                    <scheduler:SchedulerTextStyle TextColor="DarkBlue" FontSize="11" FontAttributes="Bold"/>
+                </scheduler:SchedulerDaysView.MinorTickTextStyle>
+            </scheduler:SchedulerDaysView>
+        </scheduler:SfScheduler.DaysView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# hl_lines="10 12 13 14" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.DaysView.TimeSlotCount = 2;
+        this.Scheduler.DaysView.MinorTickTextStyle = new SchedulerTextStyle
+        {
+            TextColor = Colors.DarkBlue,
+            FontSize = 11,
+            FontAttributes = FontAttributes.Bold
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customize minor time slot lable appearance in days view in .NET MAUI SfScheduler](images/day-week-views/customize-minor-time-slot-ticks-labels.png)
+
 ## Special time regions
 
 The user interaction such as selection and highlights specific regions of day, week, and workweek views can be restricted by adding the [TimeRegions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeRegions) property of the [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). Set the [StartTime](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerRegionBase.html#Syncfusion_Maui_Scheduler_SchedulerRegionBase_StartTime) and [EndTime](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerRegionBase.html#Syncfusion_Maui_Scheduler_SchedulerRegionBase_EndTime) properties of `TimeRegions` to create a specialTimeRegion. Use the [TimeZone](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeRegion.html#Syncfusion_Maui_Scheduler_SchedulerTimeRegion_TimeZone) property to set the specific timezone for the start and end time of `TimeRegions.`
@@ -795,7 +927,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-#### Customize current time indicator appearance
+### Customize current time indicator appearance
 
 The current time indicator can be customized by using the [CurrentTimeIndicatorBrush](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_CurrentTimeIndicatorBrush) property of [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
 
@@ -1384,7 +1516,7 @@ public partial class MainPage : ContentPage
 N>
 * By default, the scheduler time text format is `hh:mm tt.`
 
-#### Customize time ruler text style
+### Customize time ruler text style
 
 The text style for the labels mentioning the time can be customized by setting the [TimeRulerTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeRulerTextStyle) property of [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
 

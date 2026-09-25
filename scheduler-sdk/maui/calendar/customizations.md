@@ -5,6 +5,7 @@ platform: scheduler-sdk
 description: Learn about customizations in Syncfusion® .NET MAUI Calendar control for cells, themes, and visual elements.
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Customizations in .NET MAUI Calendar control

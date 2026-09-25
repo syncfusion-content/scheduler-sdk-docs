@@ -227,7 +227,7 @@ public partial class MainPage : ContentPage
 
 #### Month view
 
-In [Month]((https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html)) View, grouping is supported only by Resource (ResourceGroupType="Resource"), where each resource is rendered with its own independent month calendar layout to clearly display appointments and availability; for example, if three resources are defined, the view will show three distinct monthly calendars side by side, each containing only the appointments assigned to that specific resource.
+In [Month](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html) View, grouping is supported only by Resource (ResourceGroupType="Resource"), where each resource is rendered with its own independent month calendar layout to clearly display appointments and availability; for example, if three resources are defined, the view will show three distinct monthly calendars side by side, each containing only the appointments assigned to that specific resource.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
@@ -321,9 +321,64 @@ public partial class MainPage : ContentPage
 
 N> In the `Day`, `Week`, and `WorkWeek` views, **grouping resources by date is supported**. However, in the `Month` view, **grouping resources by date is not supported**. When the `ResourceGroupType` is set to `Date` while the `View` is `Month`, the scheduler automatically renders resources based on `ResourceGroupType` as `Resource` only.
 
-## Adaptive resource grouping - Mobile
+## Adaptive resource grouping
 
-On mobile platforms, the resource views for the Day, Week, WorkWeek, and Month views are grouped under an adaptive header.
+The .NET MAUI Scheduler groups resources under an adaptive header in the Day, Week, WorkWeek, and Month views. On mobile platforms (`Android` and `iOS`), this adaptive UI is used by default. On desktop platforms (`Windows` and `macOS`), the horizontal grouped resource view is used by default, and the adaptive UI can be enabled using the [EnableAdaptiveUI](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_EnableAdaptiveUI) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6).
+
+### Desktop view
+
+On desktop platforms (`Windows` and `macOS`), resources are displayed by default using the horizontal grouped resource view in the Day, Week, WorkWeek, and Month views. To use the adaptive resource grouping UI on desktop instead, set the [EnableAdaptiveUI](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_EnableAdaptiveUI) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6) to `true`. When enabled, the Scheduler renders the adaptive UI (hamburger header and drawer) instead of the horizontal grouped layout.
+
+The default value of the `EnableAdaptiveUI` property is `false`. This property has no effect on mobile platforms (`Android` and `iOS`), which always use the adaptive UI.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="Day">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView EnableAdaptiveUI="True"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="18" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+                new SchedulerResource() { Name = "Sophia", Foreground = Colors.White, Background = Colors.MediumAquamarine, Id = "1000" },
+                new SchedulerResource() { Name = "Zoey Addison",  Foreground = Colors.White, Background = Colors.Salmon, Id = "1001" },
+                new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.MediumOrchid, Id = "1002" },
+        };
+
+        this.Scheduler.ResourceView.Resources = Resources;
+        this.Scheduler.ResourceView.EnableAdaptiveUI = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Adaptive Header in Desktop Days View in .NET MAUI Scheduler](images/resource-view/adaptive-header-in-desktop-days-view.png)
+
+N> The `EnableAdaptiveUI` property is supported only in the Day, Week, WorkWeek, and Month views on desktop platforms. It has no effect on Timeline views or on mobile platforms.
+
+### Mobile view
+
+On mobile platforms (`Android` and `iOS`), resources are always displayed using the adaptive UI. The `EnableAdaptiveUI` property has no effect on these platforms, since the adaptive UI is the only available resource layout.
 
 ### Days view
 
@@ -743,6 +798,500 @@ public partial class MainPage : ContentPage
 
 N> The BindingContext of the [DrawerResourceTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_DrawerResourceTemplate) is the [SchedulerResource.](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResource.html) and the custom data object can be bound in [DrawerResourceTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_DrawerResourceTemplate) by using [SchedulerResource.DataItem](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResource.html#Syncfusion_Maui_Scheduler_SchedulerResource_DataItem) .
 
+## Hierarchical resource view
+
+The Scheduler supports displaying resources in a hierarchical structure, enabling related resources to be organized under parent resources. This provides a structured representation of resource data and helps manage resource relationships across multiple levels. Hierarchical resources improve navigation and resource management by presenting large resource collections in a clear and organized layout. Hierarchical resource view is supported in all Scheduler view types except the Agenda view.
+
+### Create hierarchical resources
+
+Use the `GroupId` property of SchedulerResource to create parent-child relationships between resources. Each resource must have a unique `Id`. To add a resource under a parent resource, set the child resource's `GroupId` to the `Id` of the parent resource.
+
+In the following example, Team A, Team B, and Team C are parent resources, and their members are displayed as child resources under the corresponding team.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+            new SchedulerResource() { Name = "Team A", Id = "1001"},
+            new SchedulerResource() { Name = "Sophia", Id = "1002", GroupId = "1001" },
+            new SchedulerResource() { Name = "James", Id = "1003", GroupId = "1001" },
+
+            new SchedulerResource() { Name = "Team B", Id = "1004" },
+            new SchedulerResource() { Name = "Emma", Id = "1005", GroupId = "1004" },
+            new SchedulerResource() { Name = "David", Id = "1006", GroupId = "1004"},
+
+            new SchedulerResource() { Name = "Team C", Id = "1007"},
+            new SchedulerResource() { Name = "Michael", Id = "1008", GroupId = "1007"},
+            new SchedulerResource() { Name = "Ethan", Id = "1009", GroupId = "1007"},
+        };
+
+        this.Scheduler.ResourceView.Resources = Resources;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Resources without a `GroupId` are displayed as individual resources. Resources with a `GroupId` are displayed as child resources under the corresponding resource whose `Id` matches the specified `GroupId`.
+
+![Hierarchical resources in .NET MAUI Scheduler](images/resource-view/hierarchical-resources-in-scheduler.png)
+
+### Create nested resource hierarchies
+
+Resources can be organized across multiple hierarchy levels by setting a resource's `GroupId` to the `Id` of its parent resource. A child resource can also act as a parent resource, allowing nested resource hierarchies to be created.
+
+In the following example, Project Team contains Design Team and Testing Team. The team members are then grouped under their respective teams, creating a multi-level hierarchy.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+			new SchedulerResource() { Name = "Project Team", Id = "1006" },
+
+            new SchedulerResource() { Name = "Design Team", Id = "1007", GroupId = "1006" },
+            new SchedulerResource() { Name = "Michael", Id = "1008", GroupId = "1007" },
+            new SchedulerResource() { Name = "Ethan", Id = "1009", GroupId = "1007" },
+
+            new SchedulerResource() { Name = "Testing Team", Id = "1010", GroupId = "1006" },
+            new SchedulerResource() { Name = "Olivia", Id = "1011", GroupId = "1010" },
+            new SchedulerResource() { Name = "Mia", Id = "1012", GroupId = "1010" },
+        };
+
+        this.Scheduler.ResourceView.Resources = Resources;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+The Scheduler automatically creates the hierarchy based on the configured `Id` and `GroupId` values. This enables resources to be organized across multiple levels, where a resource can act as both a child resource and a parent resource within the same hierarchy.
+
+![Nested hierarchical resources in .NET MAUI Scheduler](images/resource-view/nested-hierarchical-resources-in-scheduler.png)
+
+### Expand and collapse resource nodes
+
+Use the `IsNodeCollapsed` property of `SchedulerResource` to specify whether a parent resource node is initially displayed in an expanded or collapsed state. By default, the value is `false`, which displays the parent resource node along with its child resources.
+
+When `IsNodeCollapsed` is set to `true`, the child resources are hidden when the Scheduler is first loaded. Parent resource nodes that contain child resources display an expand/collapse icon before the resource name. Clicking the icon shows or hides the child resources.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+			new SchedulerResource() { Name = "Team A", Id = "1001", IsNodeCollapsed = false},
+            new SchedulerResource() { Name = "Sophia", Id = "1002", GroupId = "1001"},
+            new SchedulerResource() { Name = "James", Id = "1003", GroupId = "1001" },
+
+			new SchedulerResource() { Name = "Team B", Id = "1004", IsNodeCollapsed = true },
+            new SchedulerResource() { Name = "Emma", Id = "1005", GroupId = "1004"},
+            new SchedulerResource() { Name = "David", Id = "1006", GroupId = "1004"},
+
+            new SchedulerResource() { Name = "Team C", Id = "1007", IsNodeCollapsed = true},
+            new SchedulerResource() { Name = "Michael", Id = "1008", GroupId = "1007"},
+            new SchedulerResource() { Name = "Ethan", Id = "1009", GroupId = "1007"},
+        };
+
+        this.Scheduler.ResourceView.Resources = Resources;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+In this example, Team A is initially expanded, while Team B and Team C are initially collapsed.
+
+![Expand or collapse resource nodes in .NET MAUI Scheduler](images/resource-view/expand-or-collapse-resource-nodes.png)
+
+N> The `IsNodeCollapsed` property is effective only for parent resource nodes that contain child resources. Setting this property on a resource that does not contain child resources has no effect.
+
+### Assign appointments to hierarchical resources
+
+Appointments can be assigned to hierarchical resources using the `ResourceIds` collection of `SchedulerAppointment` or the equivalent resource mapping property in a custom appointment class. To assign an appointment, add the `Id` of the corresponding child resource to the ResourceIds collection. The Scheduler displays the appointment under the specified child resource. Parent resource nodes are used to organize resources within the hierarchy and cannot be assigned directly to appointments.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="34" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        var resources = new ObservableCollection<SchedulerResource>()
+		{
+         new SchedulerResource() { Name = "Team A", Id = "1001"},
+         new SchedulerResource() { Name = "Sophia", Id = "1002", GroupId = "1001"},
+         new SchedulerResource() { Name = "James", Id = "1003", GroupId = "1001" },
+
+         new SchedulerResource() { Name = "Team B", Id = "1004"},
+         new SchedulerResource() { Name = "Emma", Id = "1005", GroupId = "1004"},
+         new SchedulerResource() { Name = "David", Id = "1006", GroupId = "1004"},
+
+         new SchedulerResource() { Name = "Team C", Id = "1007"},
+         new SchedulerResource() { Name = "Michael", Id = "1008", GroupId = "1007"},
+         new SchedulerResource() { Name = "Ethan", Id = "1009", GroupId = "1007"},
+
+		};
+
+		this.Scheduler.ResourceView.Resources = resources;
+
+		var appointments = new ObservableCollection<SchedulerAppointment>()
+        {
+            new SchedulerAppointment()
+            {
+                StartTime = new DateTime(2026, 9, 15, 7, 0, 0),
+                EndTime = new DateTime(2026, 9, 15, 9, 0, 0),
+                Subject = "Enterprise Discovery",
+                Location = "Room 101",
+                Background = Color.FromArgb("#EC4899"),
+                ResourceIds = new ObservableCollection<object>() { "1002" }
+            },
+            new SchedulerAppointment()
+            {
+                StartTime = new DateTime(2026, 9, 15, 8, 30, 0),
+                EndTime = new DateTime(2026, 9, 15, 10, 30, 0),
+                Subject = "Territory Planning",
+                Location = "Room 102",
+                Background = Color.FromArgb("#C026D3"),
+                ResourceIds = new ObservableCollection<object>() { "1003" }
+            },
+            new SchedulerAppointment()
+            {
+                StartTime = new DateTime(2026, 9, 15, 10, 0, 0),
+                EndTime = new DateTime(2026, 9, 15, 12, 0, 0),
+                Subject = "Proposal Review",
+                Location = "Conference Call",
+                Background = Color.FromArgb("#EF6C00"),
+                ResourceIds = new ObservableCollection<object>() { "1005" }
+            },
+            new SchedulerAppointment()
+            {
+                StartTime = new DateTime(2026, 9, 15, 12, 0, 0),
+                EndTime = new DateTime(2026, 9, 15, 14, 0, 0),
+                Subject = "Deal Strategy",
+                Location = "Room 103",
+                Background = Color.FromArgb("#22C55E"),
+                ResourceIds = new ObservableCollection<object>() { "1006" }
+            },
+            new SchedulerAppointment()
+            {
+                StartTime = new DateTime(2026, 9, 15, 13, 0, 0),
+                EndTime = new DateTime(2026, 9, 15, 15, 0, 0),
+                Subject = "Client Onboarding",
+                Location = "Room 104",
+                Background = Color.FromArgb("#3B82F6"),
+                ResourceIds = new ObservableCollection<object>() { "1008" }
+            },
+            new SchedulerAppointment()
+            {
+                StartTime = new DateTime(2026, 9, 15, 15, 0, 0),
+                EndTime = new DateTime(2026, 9, 15, 17, 0, 0),
+                Subject = "Escalation Review",
+                Location = "Room 105",
+                Background = Color.FromArgb("#00838F"),
+                ResourceIds = new ObservableCollection<object>() { "1009" }
+            },
+        };
+
+        this.Scheduler.AppointmentsSource = appointments;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Assign appointments to hierarchical resources in .NET MAUI Scheduler](images/resource-view/assign-appointments-to-hierarchical-resources.png)
+
+### Assign special time regions to hierarchical resources
+
+Special time regions can be displayed for specific resources in a hierarchical resource view by adding resource `Id` values to the `ResourceIds` collection of `SchedulerTimeRegion`. To display a special time region for a resource, add the `Id` of the corresponding child resource to the `ResourceIds` collection. The special time region is then shown only for that child resource. Since parent resource nodes are used to represent the hierarchy, special time regions can be applied only to child resources.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineDay"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="34" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        var resources = new ObservableCollection<SchedulerResource>()
+		{
+         new SchedulerResource() { Name = "Team A", Id = "1001"},
+         new SchedulerResource() { Name = "Sophia", Id = "1002", GroupId = "1001"},
+         new SchedulerResource() { Name = "James", Id = "1003", GroupId = "1001" },
+
+         new SchedulerResource() { Name = "Team B", Id = "1004"},
+         new SchedulerResource() { Name = "Emma", Id = "1005", GroupId = "1004"},
+         new SchedulerResource() { Name = "David", Id = "1006", GroupId = "1004"},
+
+         new SchedulerResource() { Name = "Team C", Id = "1007"},
+         new SchedulerResource() { Name = "Michael", Id = "1008", GroupId = "1007"},
+         new SchedulerResource() { Name = "Ethan", Id = "1009", GroupId = "1007"},
+
+		};
+
+		this.Scheduler.ResourceView.Resources = resources;
+        this.Scheduler.TimelineView.TimeRegions = this.GetTimeRegion();
+    }
+
+        private ObservableCollection<SchedulerTimeRegion> GetTimeRegion()
+        {
+            var timeRegions = new ObservableCollection<SchedulerTimeRegion>();
+            var timeRegion = new SchedulerTimeRegion()
+            {
+                StartTime = DateTime.Today.Date.AddHours(13),
+                EndTime = DateTime.Today.Date.AddHours(14),
+                Text = "Lunch",
+                EnablePointerInteraction = false,
+                ResourceIds = new ObservableCollection<object>() { "1002", "1003", "1005", "1006", "1008", "1009" }
+            };
+            timeRegions.Add(timeRegion);
+            return timeRegions;
+        }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Assign special time regions to hierarchical resources in .NET MAUI Scheduler](images/resource-view/assign-special-time-regions-to-hierarchical-resources.png)
+
+### Horizontal Resource Grouping
+
+When hierarchical resources are enabled, resources are displayed horizontally in the `Day`, `Week`, `WorkWeek`, and `Month` views on `desktop` platforms (`Windows` and `macOS`).
+
+In this layout, parent resources are displayed at the top level, with their child resources arranged beneath them. The corresponding dates or time slot cells are rendered below each child resource. 
+
+For hierarchical resources, only `ResourceGroupType="Resource"` is supported. In this mode, dates and time slots are displayed under each resource. `ResourceGroupType="Date"` is not supported when hierarchical resource grouping is enabled.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" 
+                           View="Week"
+                           AllowedViews="Day,Week,WorkWeek,Month"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="34" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        var resources = new ObservableCollection<SchedulerResource>()
+		{
+            new SchedulerResource() { Name = "Team A", Background = Colors.LightYellow, Id = "1001"},
+
+            new SchedulerResource() { Name = "Sophia", Background = Colors.MintCream, Id = "1002", GroupId = "1001"},
+
+            new SchedulerResource() { Name = "James", Background = Colors.MistyRose, Id = "1003", GroupId = "1001" },
+
+            new SchedulerResource() { Name = "Team B",Background = Colors.LightYellow, Id = "1004"},
+
+            new SchedulerResource() { Name = "Emma", Background = Colors.MintCream, Id = "1005", GroupId = "1004"},
+
+            new SchedulerResource() { Name = "David", Background = Colors.MistyRose, Id = "1006", GroupId = "1004"},
+
+
+            new SchedulerResource() { Name = "Team C", Background = Colors.LightYellow, Id = "1007"},
+
+            new SchedulerResource() { Name = "Michael", Background = Colors.MintCream, Id = "1008", GroupId = "1007"},
+
+            new SchedulerResource() { Name = "Ethan", Background = Colors.MistyRose, Id = "1009", GroupId = "1007"},
+		};
+
+		this.Scheduler.ResourceView.Resources = resources;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+In the following images, Team A is displayed as the parent resource, while Sophia and James are displayed as child resources. The date columns and scheduling area are shown separately under each child resource, providing a clear side-by-side view of resource schedules.
+
+![Horizontal resource grouping for hierarchical resources in days view in .NET MAUI Scheduler](images/resource-view/horizontal-resource-grouping-for-hierarchical-resources-in-days-view.png)
+
+![Horizontal resource grouping for hierarchical resources in month view in .NET MAUI Scheduler](images/resource-view/horizontal-resource-grouping-for-hierarchical-resources-in-month-view.png)
+
+N> Horizontal resource grouping is supported only on `desktop` platforms (`Windows` and `macOS`) in the `Day`, `Week`, `WorkWeek`, and `Month` views.
+
+### Vertical Resource Grouping
+
+The Scheduler supports vertical resource grouping for hierarchical resources in `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth` views on both `desktop` (`Windows` and `macOS`) and `mobile` (`Android` and `iOS`) platforms.
+
+In this layout, resources are displayed vertically along the left side of the Scheduler, with the corresponding date and time slot cells displayed beside each resource row. Parent resources can be expanded or collapsed to show or hide their child resources. 
+
+As shown in the following image, Team A, Team B, and Team C are displayed as parent resources, with their respective child resources listed beneath them. The scheduling area for each resource is aligned with the corresponding dates, providing a clear view of appointments and availability across the entire resource hierarchy.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" 
+                           View="TimelineMonth"
+                           AllowedViews="TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth"/>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="34" %}
+
+using Syncfusion.Maui.Scheduler;
+using System.Collections.ObjectModel;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        var resources = new ObservableCollection<SchedulerResource>()
+		{
+            new SchedulerResource() { Name = "Team A", Id = "1001"},
+
+            new SchedulerResource() { Name = "Sophia", Background = Colors.MintCream, Id = "1002", GroupId = "1001"},
+
+            new SchedulerResource() { Name = "James", Background = Colors.MistyRose, Id = "1003", GroupId = "1001" },
+
+            new SchedulerResource() { Name = "Team B", Id = "1004"},
+
+            new SchedulerResource() { Name = "Emma", Background = Colors.MintCream, Id = "1005", GroupId = "1004"},
+
+            new SchedulerResource() { Name = "David", Background = Colors.MistyRose, Id = "1006", GroupId = "1004"},
+
+
+            new SchedulerResource() { Name = "Team C", Id = "1007"},
+
+            new SchedulerResource() { Name = "Michael", Background = Colors.MintCream, Id = "1008", GroupId = "1007"},
+
+            new SchedulerResource() { Name = "Ethan", Background = Colors.MistyRose, Id = "1009", GroupId = "1007"},
+		};
+
+		this.Scheduler.ResourceView.Resources = resources;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Vertical resource grouping for hierarchical resources in timeline views in .NET MAUI Scheduler](images/resource-view/vertical-resource-grouping-for-hierarchical-resources-in-timeline-view.png)
+
+### Adaptive Resource Header
+
+On `mobile` platforms (`Android` and `iOS`), resources are displayed through an adaptive resource header in `Day`, `Week`, `WorkWeek`, and `Month` views.
+
+When resources are enabled, a hamburger menu icon is shown in the adaptive header. Tapping the icon opens a navigation drawer that displays all resources in a hierarchical structure. Parent resources can be expanded or collapsed to view their child resources. 
+
+As shown in the following image, Team A, Team B, and Team C are expanded, displaying all child resources in the hierarchy. Selecting a child resource displays the schedule associated with that resource, and the selected resource name is shown in the adaptive header for easy identification.
+
+![Adaptive header for hierarchical resources in month view in .NET MAUI Scheduler](images/resource-view/adaptive-header-for-hierarchical-resources-in-month-view.jpg)
+
+
+![Adaptive header for hierarchical resources in day view in .NET MAUI Scheduler](images/resource-view/adaptive-header-for-hierarchical-resources-in-day-view.jpg)
+
 ## Visible Resource Count
  
 The number of resources shown in the day, week, work week, month, timelineday, timelineweek, timelineworkweek views can be controlled using the [`VisibleResourceCount`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_VisibleResourceCount) property of the [`SchedulerResourceView`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_Resources) class. This lets you define how many resources are visible at a time.
@@ -1042,6 +1591,68 @@ N>
 
 ![Resource minimum row and height in .NET MAUI Scheduler.](images/resource-view/resource-view-minimum-height-in-net-maui-scheduler.png)
 
+## Resource auto row height
+
+You can enable or disable automatic resource row-height calculation in timeline day, timeline week, timeline workweek, and timeline month views by using the [AutoRowHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_AutoRowHeight) property of [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6) in [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). The default value is `true`.
+
+When `AutoRowHeight` is set to `true`, resource rows expand automatically based on the appointment count, similar to the default behavior used with `MinimumRowHeight`.
+
+When `AutoRowHeight` is set to `false`, resource rows render in a fixed-height mode. The fixed height is determined by the following priority:
+
+1. [VisibleResourceCount](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_VisibleResourceCount) (if set) - height = viewportHeight / count.
+2. [MinimumRowHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_MinimumRowHeight) (if set) - height = MinimumRowHeight.
+3. Otherwise, the default viewport calculation is applied.
+
+When appointments exceed the visible slots in fixed-height mode, a `+N` text indicator is displayed. Tap the indicator to show a popup with all hidden appointments.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="7" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler"  View="TimelineWeek">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView AutoRowHeight="False"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# hl_lines="19" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        var Resources = new ObservableCollection<SchedulerResource>()
+        {
+            new SchedulerResource() { Name = "Sophia", Foreground = Colors.White, Background = Colors.LightGreen, Id = "1000" },
+            new SchedulerResource() { Name = "Zoey Addison",  Foreground = Colors.White, Background = Colors.Gold, Id = "1001" },
+            new SchedulerResource() { Name = "James William",  Foreground = Colors.White, Background = Colors.Violet, Id = "1002" },
+        };
+
+        scheduler.ResourceView.Resources = Resources;
+        scheduler.View = SchedulerView.TimelineWeek;
+        scheduler.ResourceView.AutoRowHeight = false;
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>
+* `AutoRowHeight` is supported only in timeline views (`TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth`).
+
+![Resource auto row height with popup in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler-popup.png)
+
 ## Assign special time regions to scheduler resources
 
 You can highlight the resources availability by creating special [time regions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeRegions) in the day, week, workweek, timeline day, timeline week, and timeline workweek views. Special time regions can represent unavailable or reserved slots such as lunch breaks, team meetings, or non-working hours.
@@ -1176,6 +1787,8 @@ The Schedule supports full data binding to [Resources](https://help.syncfusion.c
 | Id | Maps the property name of custom class, which is equivalent to Id in SchedulerResource. |
 | Background | Maps the property name of custom class, which is equivalent to Background in SchedulerResource. |
 | Foreground | Maps the property name of custom class, which is equivalent to Foreground in SchedulerResource. |
+| GroupId | Maps the property name of custom class, which is equivalent to GroupId in SchedulerResource. |
+| IsNodeCollapsed | Maps the property name of custom class, which is equivalent to IsNodeCollapsed in SchedulerResource. |
 
 N> Custom resource class should contain a mandatory field for resource `Id`.
 
@@ -1405,10 +2018,10 @@ You can programmatically select the resource by using the [SelectedResourceId]()
 
 The resource appearance customization can be achieved by using the [HeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_HeaderTemplate) and [TextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_TextStyle) properties of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html?tabs=tabid-13%2Ctabid-6).
 
-#### Customize resource appearance using text style
+### Customize resource appearance using text style
 The resource header text style can be customized by using the [TextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_TextStyle) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html).
 	
-#### Customize resource appearance using HeaderTemplate
+### Customize resource appearance using HeaderTemplate
 The resource appearance customization can be achieved by using the [HeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_HeaderTemplate) property of the [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html).
 
 {% tabs %}

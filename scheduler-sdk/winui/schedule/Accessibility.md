@@ -64,7 +64,7 @@ BlackoutDates <br/><br/></td><td>Blackout Day dddd, MMMM d, yyyy<br/><br/></td>
 <td>Blackout Day-Saturday, June 26, 2021<br/><br></td></tr>
 </table>
 
-#### Day, week and workweek views
+### Day, week and workweek views
 
 <table>
 <tr>
@@ -98,7 +98,7 @@ Time ruler<br/><br/></td><td>Time ruler <br/><br/></td>
 <td>12 AM<br/><br></td></tr>
 </table>
 
-#### Timeline views
+### Timeline views
 
 <table>
 <tr>
@@ -132,7 +132,7 @@ Time ruler<br/><br/></td><td>Time ruler<br/><br/></td>
 <td>12 AM<br/><br></td></tr>
 </table>
 
-#### Scheduler header
+### Scheduler header
 
 <table>
 <tr>
@@ -158,7 +158,7 @@ Next navigation button<br/><br/></td><td>Next navigation button <br/><br/></td>
 <td>Next navigation button<br/><br></td></tr>
 </table>
 
-#### Scheduler resource header
+### Scheduler resource header
 
 <table>
 <tr>
@@ -172,7 +172,7 @@ Resource header<br/><br/></td><td>Name Id <br/><br/></td>
 <td>Sophia 1000<br/><br></td></tr>
 </table>
 
-#### Appointment editor window
+### Appointment editor window
 
 <table>
 <tr>
@@ -226,7 +226,7 @@ Combo box<br/><br/></td><td>Combobox content<br/><br/></td>
 <td>Custom<br/><br></td></tr>
 </table>
 
-#### Recurrence editing  window
+### Recurrence editing  window
 
 <table>
 <tr>
@@ -276,7 +276,7 @@ Up arrow<br/><br/></td><td>
 Moves selection to the previous time slot directly above the currently selected time slot.<br/><br/></td></tr>
 </table>
 
-#### Timeline view
+### Timeline view
 
 <table>
 <tr>
@@ -292,7 +292,7 @@ Left arrow<br/><br/></td><td>
 Moves selection to the previous time slot of the currently selected time slot.<br/><br/></td></tr>
 </table>
 
-#### Month view
+### Month view
 
 <table>
 <tr>
@@ -316,7 +316,7 @@ Up arrow<br/><br/></td><td>
 Moves selection to the date directly above the currently selected date on the previous row.<br/><br/></td></tr>
 </table>
 
-#### Appointments
+### Appointments
 
 <table>
 <tr>
@@ -335,7 +335,8 @@ Moves selection to the previous appointment of the currently selected appointmen
 Delete<br/><br/></td><td>Deletes the selected appointment from appointments collection.<br/><br/></td></tr>
 </table>
 
-#### View navigations
+### View navigations
+### View navigations
 
 <table>
 <tr>

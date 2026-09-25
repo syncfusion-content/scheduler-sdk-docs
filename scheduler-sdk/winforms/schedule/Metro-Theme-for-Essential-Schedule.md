@@ -16,7 +16,7 @@ This feature enables you to apply the Metro theme to the Schedule control.
 
 The Metro theme support is useful for commercial applications to attract end users with inspiring UI look and feel.
 
-### Property
+## Property
 
 <table>
 <tr>
@@ -29,7 +29,7 @@ VisualStyle</td><td>
 This is an enumeration type property used to get or set the visual styles (skins) such as Office2010, Office2007, Office2003, Metro, etc.</td></tr>
 </table>
 
-### Event
+## Event
 
 <table>
 <tr>
