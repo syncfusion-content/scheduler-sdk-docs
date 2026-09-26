@@ -64,23 +64,14 @@ npm install @syncfusion/ej2-react-schedule --save
 
 Themes for Syncfusion React components can be applied using CSS files from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/react/documentation/appearance/theme-studio). Refer to the [themes documentation](https://ej2.syncfusion.com/react/documentation/appearance/theme) for more details.
 
-This example demonstrates importing the `Bootstrap` theme CSS within the `App.tsx` file located at `~/src/webparts/app/components/`.
+This example demonstrates importing the `Tailwind` theme CSS within the `App.tsx` file located at `~/src/webparts/app/components/`.
 
 > **Note:** Import only the CSS files required by the Syncfusion components used in your SPFx solution.
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
 
-require('@syncfusion/ej2-base/styles/bootstrap5.css');
-require('@syncfusion/ej2-buttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-calendars/styles/bootstrap5.css');
-require('@syncfusion/ej2-dropdowns/styles/bootstrap5.css');
-require('@syncfusion/ej2-inputs/styles/bootstrap5.css');
-require('@syncfusion/ej2-lists/styles/bootstrap5.css');
-require('@syncfusion/ej2-navigations/styles/bootstrap5.css');
-require('@syncfusion/ej2-popups/styles/bootstrap5.css');
-require('@syncfusion/ej2-splitbuttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-schedule/styles/bootstrap5.css');  
+require('@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css'); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -219,16 +210,7 @@ import type { IAppProps } from './IAppProps';
 import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Inject } from '@syncfusion/ej2-react-schedule';
 
 // import Syncfusion CSS
-require('@syncfusion/ej2-base/styles/bootstrap5.css');
-require('@syncfusion/ej2-buttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-calendars/styles/bootstrap5.css');
-require('@syncfusion/ej2-dropdowns/styles/bootstrap5.css');
-require('@syncfusion/ej2-inputs/styles/bootstrap5.css');
-require('@syncfusion/ej2-lists/styles/bootstrap5.css');
-require('@syncfusion/ej2-navigations/styles/bootstrap5.css');
-require('@syncfusion/ej2-popups/styles/bootstrap5.css');
-require('@syncfusion/ej2-splitbuttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-schedule/styles/bootstrap5.css');
+require('@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css');
 
 export default class App extends React.Component<IAppProps> {
 	public render(): React.ReactElement<IAppProps> {
