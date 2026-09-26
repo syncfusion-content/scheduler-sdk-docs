@@ -89,15 +89,9 @@ The Google Identity Services (GIS) library handles OAuth authentication. Add the
 Import the required Syncfusion CSS stylesheets in your `src/App.js` file:
 
 ```css
-import '@syncfusion/ej2-base/styles/tailwind3.css';
-import '@syncfusion/ej2-buttons/styles/tailwind3.css';
-import '@syncfusion/ej2-calendars/styles/tailwind3.css';
-import '@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-import '@syncfusion/ej2-inputs/styles/tailwind3.css';
-import '@syncfusion/ej2-lists/styles/tailwind3.css';
-import '@syncfusion/ej2-popups/styles/tailwind3.css';
-import '@syncfusion/ej2-navigations/styles/tailwind3.css';
-import '@syncfusion/ej2-react-schedule/styles/tailwind3.css';
+
+import '@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css';
+
 ```
 
 ## Configuring the Syncfusion React Scheduler Component
