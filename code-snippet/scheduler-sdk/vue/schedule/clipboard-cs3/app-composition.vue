@@ -97,8 +97,7 @@ provide('schedule', [Day, Week, WorkWeek, Month, Agenda]);
 
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/schedule/index.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
 .content-wrapper {
     display: flex;
