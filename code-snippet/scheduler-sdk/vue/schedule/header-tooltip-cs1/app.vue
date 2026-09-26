@@ -58,14 +58,7 @@ export default {
 }
 </script>
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-buttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-calendars/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-dropdowns/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-inputs/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-navigations/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-popups/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-schedule/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/schedule/index.css";
 
 .e-schedule .e-vertical-view .e-resource-cells {
     height: 45px;
