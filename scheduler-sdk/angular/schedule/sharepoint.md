@@ -72,16 +72,7 @@ Create `app/scheduler.component.ts`:
 import { Component } from '@angular/core';
 import { ScheduleModule, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
 
-require('@syncfusion/ej2-base/styles/bootstrap5.css');
-require('@syncfusion/ej2-buttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-calendars/styles/bootstrap5.css');
-require('@syncfusion/ej2-dropdowns/styles/bootstrap5.css');
-require('@syncfusion/ej2-inputs/styles/bootstrap5.css');
-require('@syncfusion/ej2-lists/styles/bootstrap5.css');
-require('@syncfusion/ej2-navigations/styles/bootstrap5.css');
-require('@syncfusion/ej2-popups/styles/bootstrap5.css');
-require('@syncfusion/ej2-splitbuttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-schedule/styles/bootstrap5.css');
+require('@syncfusion/ej2-bootstrap5-theme/styles/schedule/index.css');
 
 @Component({
 selector: 'app-scheduler',
@@ -252,16 +243,7 @@ import { Component } from '@angular/core';
 import { ScheduleModule, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
 
 // import Syncfusion CSS
-require('@syncfusion/ej2-base/styles/bootstrap5.css');
-require('@syncfusion/ej2-buttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-calendars/styles/bootstrap5.css');
-require('@syncfusion/ej2-dropdowns/styles/bootstrap5.css');
-require('@syncfusion/ej2-inputs/styles/bootstrap5.css');
-require('@syncfusion/ej2-lists/styles/bootstrap5.css');
-require('@syncfusion/ej2-navigations/styles/bootstrap5.css');
-require('@syncfusion/ej2-popups/styles/bootstrap5.css');
-require('@syncfusion/ej2-splitbuttons/styles/bootstrap5.css');
-require('@syncfusion/ej2-schedule/styles/bootstrap5.css');
+require('@syncfusion/ej2-bootstrap5-theme/styles/schedule/index.css');
 
 @Component({
 selector: 'app-scheduler',
