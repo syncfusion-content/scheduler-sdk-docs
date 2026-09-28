@@ -338,20 +338,13 @@ Both packages should appear with version numbers in the output. **Required versi
 
 ### 2.2 Add the required Syncfusion styles
 
-Imports the Syncfusion Material 3 theme styles needed for rendering the Scheduler and its dependent UI modules.
+Imports the Syncfusion Tailwind 3 theme styles needed for rendering the Scheduler.
 
 {% tabs %}
 {% highlight css tabtitle="index.css" %}
 
 /* src/index.css */
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-react-schedule/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css";
 
 {% endhighlight %}
 {% endtabs %}
