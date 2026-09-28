@@ -1102,18 +1102,18 @@ scheduler.AllowOverlap = false;
 {% endhighlight %}
 {% endtabs %}
 
-When an overlap is detected during appointment creation, editing, drag-and-drop, or resizing while AllowOverlap is set to false, the Scheduler automatically displays an alert indicating that the appointment cannot be scheduled because it conflicts with an existing appointment.
+When an overlap is detected during appointment creation, editing, drag-and-drop, or resizing while AllowOverlap is set to `false`, the Scheduler automatically displays an alert indicating that the appointment cannot be scheduled because it conflicts with an existing appointment.
 
 ![Alert-displayed-to-restrict-appointment-overlaps-in-.NET MAUI SfScheduler](images/appointments/restrict-appointment-overlap.gif)
 
 ## Limit concurrent appointments in day views
 
-Limit the number of visible overlapping appointments in the Scheduler `Day`, `Week`, and `WorkWeek` views using the `MaxEventStack` property of `SchedulerDaysView`.
+Limit the number of visible overlapping appointments in the Scheduler `Day`, `Week`, and `WorkWeek` views using the `MaxEventStack` property of [SchedulerDaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html#properties).
 
 The `MaxEventStack` property specifies the maximum number of overlapping appointments displayed within a time slot. When the number of overlapping appointments exceeds this value, only appointments up to the specified limit are rendered. The remaining appointments are grouped into a more appointments indicator (+N). Tapping this indicator opens a popup that displays the hidden appointments.
 
 {% tabs %}
-{% highlight xaml hl_lines="5 6 7" %}
+{% highlight xaml hl_lines=" 4 5 6 7" %}
 <scheduler:SfScheduler x:Name="Scheduler"
                        View="Day"
                        AllowedViews="Day,Week,WorkWeek"
@@ -1123,7 +1123,7 @@ The `MaxEventStack` property specifies the maximum number of overlapping appoint
     </scheduler:SfScheduler.DaysView>
 </scheduler:SfScheduler>
 {% endhighlight %}
-{% highlight c# hl_lines="6" %}
+{% highlight c# hl_lines="6 8 10" %}
 using Syncfusion.Maui.Scheduler;
 
 SfScheduler scheduler = new SfScheduler();

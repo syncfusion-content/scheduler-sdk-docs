@@ -329,7 +329,7 @@ public partial class MainPage : ContentPage
 
 ![Minor time slot ticks in timeline view in .NET MAUI SfScheduler](images/timeline-views/minor-time-slot-ticks.png)
 
-## Format minor tick labels
+### Format minor tick labels
 
 The `MinorTickTimeFormat` property of the `TimelineView` specifies the format used to display minor tick labels. It supports standard .NET date and time format strings. By default, the value is `"mm"`, which displays the minute component of the time.
 
@@ -368,7 +368,7 @@ public partial class MainPage : ContentPage
 
 ![Format minor time slot ticks in timeline view in .NET MAUI SfScheduler](images/timeline-views/format-minor-time-slot-ticks.png)
 
-## Customize minor tick label appearance
+### Customize minor tick label appearance
 
 The appearance of minor tick labels can be customized using the `MinorTickTextStyle` property in `TimelineView`.
 

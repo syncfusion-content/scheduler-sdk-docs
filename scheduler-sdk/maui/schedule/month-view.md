@@ -242,7 +242,7 @@ public partial class MainPage : ContentPage
 
 ## Customize appointment height in Month view
 
-Use the `AppointmentHeight` property to specify the height of appointments displayed in the Month View. The default value of `AppointmentHeight` is `-1`, which automatically calculates the appointment height as 1.5 times the appointment font size. When a custom value is specified, appointments are rendered using the configured height, and the number of visible appointments in a month cell is determined based on the appointment height and the available cell space.
+Use the `AppointmentHeight` property to specify the height of appointments displayed in the `MonthView`. The default value of `AppointmentHeight` is `-1`, which automatically calculates the appointment height as 1.5 times the appointment font size. When a custom value is specified, appointments are rendered using the configured height, and the number of visible appointments in a month cell is determined based on the appointment height and the available cell space.
 
 {% tabs %}  
 {% highlight XAML tabtitle="XAML" hl_lines="8" %}

@@ -193,7 +193,7 @@ public partial class MainPage : ContentPage
 
 The edit appointment popup is used to modify the details of an existing appointment.
 
-Use the `OpenEditPopup(object appointment)` method to open the editor for the specified appointment. The appointment parameter specifies the appointment whose details are populated in the popup for editing. The appointment can be a SchedulerAppointment or a custom appointment object.
+Use the `OpenEditPopup(object appointment)` method to open the editor for the specified appointment. The appointment parameter specifies the appointment whose details are populated in the popup for editing. The appointment can be a [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) or a custom appointment object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,7 +249,7 @@ public partial class MainPage : ContentPage
 
 The quick info popup provides a compact view of appointment details.
 
-Use the `OpenQuickInfoPopup(object appointment)` method to display the quick info popup. The appointment parameter specifies the appointment whose details are displayed in the popup. The appointment can be a SchedulerAppointment or a custom appointment object.
+Use the `OpenQuickInfoPopup(object appointment)` method to display the quick info popup. The appointment parameter specifies the appointment whose details are displayed in the popup. The appointment can be a [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) or a custom appointment object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -305,7 +305,7 @@ public partial class MainPage : ContentPage
 
 The delete confirmation popup is used to confirm the removal of an appointment before it is deleted. 
 
-Use the `DeleteAppointment(object appointment)` method to display the delete confirmation popup. The appointment parameter specifies the appointment for which the confirmation is displayed. The appointment can be a SchedulerAppointment or a custom appointment object.
+Use the `DeleteAppointment(object appointment)` method to display the delete confirmation popup. The appointment parameter specifies the appointment for which the confirmation is displayed. The appointment can be a [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) or a custom appointment object.
 
 {% tabs %}
 {% highlight xaml %}
