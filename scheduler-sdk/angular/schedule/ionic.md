@@ -59,15 +59,7 @@ To apply the required styles for the Schedule component, update the `src/global.
 {% tabs %}
 {% highlight css tabtitle="~/src/global.scss" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/schedule/index.css';
 
 {% endhighlight %}
 {% endtabs %}

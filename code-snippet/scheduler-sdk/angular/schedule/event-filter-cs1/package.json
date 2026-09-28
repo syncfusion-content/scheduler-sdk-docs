@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "21.2.22",
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-calendars": "*",
+    "@syncfusion/ej2-material3-theme": "*",
     "@syncfusion/ej2-angular-schedule": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",
