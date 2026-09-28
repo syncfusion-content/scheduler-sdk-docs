@@ -331,14 +331,7 @@ Add CSS references for the Scheduler in `src/App.css`.
 {% tabs %}
 {% highlight css tabtitle="App.css" %}
 
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-react-schedule/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css";
 
 {% endhighlight %}
 {% endtabs %}

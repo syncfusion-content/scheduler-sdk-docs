@@ -94,7 +94,7 @@ This issue occurs when the Scheduler CSS references are missing in a project. Yo
   <title>EJ2 Angular Schedule Sample</title>
   
       <!-- Scheduler CSS is referenced from this link -->
-  <link href="https://cdn.syncfusion.com/ej2/tailwind3.css" rel="stylesheet">
+  <link href="https://cdn.syncfusion.com/ej2/34.1.29/tailwind3.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
  </head>
