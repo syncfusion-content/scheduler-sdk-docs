@@ -335,7 +335,7 @@ You can customize the time slot subdivisions, the time format of minor tick labe
 
 ### Configure time slot subdivisions
 
-The `TimeSlotCount` property of the `DaysView` is used to divide a time slot into multiple equal subdivisions. By default, the value is `1`, which displays only the major time intervals. When the value is greater than 1, each time slot is divided into the specified number of subdivisions, and minor ticks are displayed between the major ticks. This is useful for scheduling scenarios that require shorter intervals, such as 30-minute or 15-minute time slots.
+The [TimeSlotCount](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeSlotCount) property of the `DaysView` is used to divide a time slot into multiple equal subdivisions. By default, the value is `1`, which displays only the major time intervals. When the value is greater than 1, each time slot is divided into the specified number of subdivisions, and minor ticks are displayed between the major ticks. This is useful for scheduling scenarios that require shorter intervals, such as 30-minute or 15-minute time slots.
 
 {% tabs %}
 {% highlight XAML hl_lines="8" %}
@@ -373,7 +373,7 @@ public partial class MainPage : ContentPage
 
 ## Format minor tick labels
 
-The `MinorTickTimeFormat` property of the `DaysView` specifies the format used to display minor tick labels. It supports standard .NET date and time format strings. By default, the value is `"mm"`, which displays the minute component of the time.
+The [MinorTickTimeFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_MinorTickTimeFormat) property of the `DaysView` specifies the format used to display minor tick labels. It supports standard .NET date and time format strings. By default, the value is `"mm"`, which displays the minute component of the time.
 
 {% tabs %}
 {% highlight XAML hl_lines="8" %}
@@ -412,7 +412,7 @@ public partial class MainPage : ContentPage
 
 ## Customize minor tick label appearance
 
-The appearance of minor tick labels can be customized using the `MinorTickTextStyle` property in `DaysView`.
+The appearance of minor tick labels can be customized using the [MinorTickTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_MinorTickTextStyle) property in `DaysView`.
 
 {% tabs %}
 {% highlight xaml hl_lines="9 10 11" %}
