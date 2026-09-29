@@ -14,7 +14,7 @@ The TimelineView displays the dates in the horizontal time axis with the desired
 
 ## Change time interval
 
-Customize the interval of timeslots in the timeline views by using the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
+Customize the interval of timeslots in the timeline views by using the [TimeInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeInterval) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html). This property will be applicable to `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
@@ -302,7 +302,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 
 ### Display special time regions in TimelineMonth
 
-The `ShowMonthTimeRegions` property defines whether special time regions are displayed in the scheduler’s `TimelineMonth` view.
+The [ShowMonthTimeRegions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_ShowMonthTimeRegions) property defines whether special time regions are displayed in the scheduler’s `TimelineMonth` view.
 
 By default, the property is set to `false`, so time regions are hidden. Setting it to `true` makes the scheduler show the configured `SpecialTimeRegion` values within the `TimelineMonth` view.
 

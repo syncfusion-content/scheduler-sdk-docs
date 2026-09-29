@@ -65,7 +65,7 @@ Add the following permissions to `AndroidManifest.xml`:
 ```
 ## Exporting Appointments to an ICS File
 
-Use the `ExportToICalendar` method to export all appointments in the scheduler to an iCalendar (.ics) file. The method accepts an optional fileName parameter that specifies the name of the exported file. If no file name is provided, a default file name is used. The exported file is saved to a platform-specific location.
+Use the [ExportToICalendar](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ExportToICalendar_System_String_) method to export all appointments in the scheduler to an iCalendar (.ics) file. The method accepts an optional fileName parameter that specifies the name of the exported file. If no file name is provided, a default file name is used. The exported file is saved to a platform-specific location.
 
 ### Export with a Custom File Name
 
@@ -108,7 +108,7 @@ The location of the exported ICS file varies depending on the platform:
 
 ## Importing Appointments from an ICS File
 
-Use the `ImportICalendar` method to select and import appointments from an existing `.ics` file.
+Use the [ImportICalendar](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ImportICalendar) method to select and import appointments from an existing `.ics` file.
 
 {% tabs %}
 {% highlight c# tabtitle="C#" hl_lines="5" %}
@@ -121,7 +121,7 @@ await scheduler.ImportICalendar();
 {% endhighlight %}
 {% endtabs %}
 
-The `ImportICalendar` method opens the platform file picker for selecting an ICS file. Upon import, the appointments are automatically added to the scheduler data source.
+The [ImportICalendar](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ImportICalendar) method opens the platform file picker for selecting an ICS file. Upon import, the appointments are automatically added to the scheduler data source.
 
 ## Supported Appointment Properties
 
