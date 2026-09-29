@@ -15,7 +15,7 @@ The WPF Scheduler supports importing and exporting appointments using the indust
 
 ## Exporting Appointments to an ICS File
 
-Use the `ExportToICalendar` method to export all appointments in the scheduler to an iCalendar (.ics) file. The method accepts an optional fileName parameter that specifies the name of the exported file. If no file name is provided, a default file name is used.  
+Use the [ExportToICalendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ExportToICalendar_System_String_) method to export all appointments in the scheduler to an iCalendar (.ics) file. The method accepts an optional fileName parameter that specifies the name of the exported file. If no file name is provided, a default file name is used.  
 
 When exporting appointments, a `FileSavePicker` dialog is displayed, allowing users to choose the save location and file name for the ICS file.
 
@@ -51,7 +51,7 @@ This exports the appointments using the default file name.
 
 ## Importing Appointments from an ICS File
 
-Use the `ImportICalendar` method to select and import appointments from an existing `.ics` file. The `ImportICalendar` method opens a `FileOpenPicker` dialog that allows users to browse and select an ICS file. After a valid file is selected, the appointments are automatically added to the scheduler.
+Use the [ImportICalendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ImportICalendar) method to select and import appointments from an existing `.ics` file. The [ImportICalendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ImportICalendar) method opens a `FileOpenPicker` dialog that allows users to browse and select an ICS file. After a valid file is selected, the appointments are automatically added to the scheduler.
 
 {% tabs %}
 {% highlight c# tabtitle="C#" hl_lines="5" %}
