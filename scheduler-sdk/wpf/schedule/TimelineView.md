@@ -328,7 +328,7 @@ The `SpecialTimeRegion` background color can be customized by using the [Backgro
 
 ### Display special time regions in TimelineMonth
 
-The `ShowMonthTimeRegions` property defines whether special time regions are displayed in the scheduler’s `TimelineMonth` view.
+The [ShowMonthTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_ShowMonthTimeRegions) property defines whether special time regions are displayed in the scheduler’s `TimelineMonth` view.
 
 By default, the property is set to `false`, so time regions are hidden. Setting it to `true` makes the scheduler show the configured `SpecialTimeRegion` values within the `TimelineMonth` view.
 
