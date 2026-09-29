@@ -1077,11 +1077,11 @@ N>
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/RecursiveExceptionAppointment/BusinessObject)
 
 ## Restrict appointment overlaps
-By default, the Scheduler allows multiple appointments to occupy the same time range. The `AllowOverlap` property controls whether appointments can overlap. When overlap is disabled, the Scheduler validates appointment time ranges and prevents conflicting bookings, helping maintain a conflict-free schedule.
+By default, the Scheduler allows multiple appointments to occupy the same time range. The [AllowOverlap](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AllowOverlap) property controls whether appointments can overlap. When overlap is disabled, the Scheduler validates appointment time ranges and prevents conflicting bookings, helping maintain a conflict-free schedule.
 
-When `AllowOverlap` is `true` (default), multiple appointments can be scheduled within the same time range.
+When [AllowOverlap](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AllowOverlap) is `true` (default), multiple appointments can be scheduled within the same time range.
 
-To restrict overlapping appointments, set the `AllowOverlap` property of the Scheduler to `false`. When overlap is disabled, the Scheduler validates appointment ranges during the following operations:
+To restrict overlapping appointments, set the [AllowOverlap](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AllowOverlap) property of the Scheduler to `false`. When overlap is disabled, the Scheduler validates appointment ranges during the following operations:
 
 - **Creation** - Prevents adding an appointment whose time range overlaps an existing appointment.
 - **Editing** - Prevents updating an appointment to a time range that conflicts with another appointment.
@@ -1108,9 +1108,9 @@ When an overlap is detected during appointment creation, editing, drag-and-drop,
 
 ## Limit concurrent appointments in day views
 
-Limit the number of visible overlapping appointments in the Scheduler `Day`, `Week`, and `WorkWeek` views using the `MaxEventStack` property of `SchedulerDaysView`.
+Limit the number of visible overlapping appointments in the Scheduler `Day`, `Week`, and `WorkWeek` views using the [MaxEventStack](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html#Syncfusion_Maui_Scheduler_SchedulerDaysView_MaxEventStack) property of `SchedulerDaysView`.
 
-The `MaxEventStack` property specifies the maximum number of overlapping appointments displayed within a time slot. When the number of overlapping appointments exceeds this value, only appointments up to the specified limit are rendered. The remaining appointments are grouped into a more appointments indicator (+N). Tapping this indicator opens a popup that displays the hidden appointments.
+The [MaxEventStack](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html#Syncfusion_Maui_Scheduler_SchedulerDaysView_MaxEventStack) property specifies the maximum number of overlapping appointments displayed within a time slot. When the number of overlapping appointments exceeds this value, only appointments up to the specified limit are rendered. The remaining appointments are grouped into a more appointments indicator (+N). Tapping this indicator opens a popup that displays the hidden appointments.
 
 {% tabs %}
 {% highlight xaml hl_lines="5 6 7" %}
