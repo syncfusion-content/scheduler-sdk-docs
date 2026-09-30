@@ -6,6 +6,7 @@ description: Learn how to customize the appearance, date format, navigation, and
 control: SfScheduler
 documentation: ug
 keywords : .net maui scheduler, .net maui month view, .net maui month cell, .net maui month cell apperance, .net maui view header.
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Month View in .NET MAUI Scheduler

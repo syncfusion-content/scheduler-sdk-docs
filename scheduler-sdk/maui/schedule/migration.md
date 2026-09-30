@@ -5,6 +5,7 @@ title: Migrate from Xamarin Schedule to .NET MAUI Scheduler | Syncfusion®
 description: Migrate from Xamarin Schedule to .NET MAUI Scheduler with API mapping and guidance on renamed properties and methods.
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---  
 
 # Migrate from Xamarin Schedule to .NET MAUI Scheduler 

@@ -5,6 +5,7 @@ platform: scheduler-sdk
 description: Display appointments in chronological order grouped by date using the agenda view in the .NET MAUI Scheduler control.
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Agenda view in .NET MAUI Scheduler
