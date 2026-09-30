@@ -6,6 +6,7 @@ description: Create and manage normal, all-day, recurring, and spanning appointm
 control: SfScheduler
 documentation: ug
 keywords : .net maui scheduler, .net maui appointments planning, .net maui appointment editor, .net maui recurring events, .net maui spanned appointments, .net maui recurrence appointments.
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointments in .NET MAUI Scheduler

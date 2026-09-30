@@ -6,6 +6,7 @@ description: Display dates along horizontal time axis with customizable settings
 control: SfScheduler
 documentation: ug
 keywords : .net maui scheduler, .net maui timelineview, .net maui timeline day view, .net maui timeline week view, .net maui timeline work week view, .net maui timeline month view.
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Timeline Views in .NET MAUI Scheduler

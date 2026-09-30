@@ -5,6 +5,7 @@ title: Load on demand in .NET MAUI Scheduler control | Syncfusion®
 description: Load appointments on demand from visible dates to improve performance with a loading indicator in the .NET MAUI Scheduler.
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Load on demand in .NET MAUI Scheduler

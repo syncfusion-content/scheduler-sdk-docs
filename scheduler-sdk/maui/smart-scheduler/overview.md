@@ -6,6 +6,7 @@ description: Learn about introduction of Syncfusion<sup>&reg;</sup> Essential St
 control: SfSmartScheduler
 documentation: ug
 keywords : .net maui smartScheduler, maui smart scheduler, ai scheduling, natural language scheduling, resource-aware booking, free time finder, appointment summarization.
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion® .NET MAUI AI-Powered Scheduler Control
