@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Cell selection in .NET MAUI Scheduler control | Syncfusion®
 description: Customize month and timeslot cell selection appearance and behavior in the .NET MAUI Scheduler control.
 control: SfScheduler
-documentation: ugappliesto: UI Component Suite, Scheduler SDK
+documentation: ug
 ---
 
 # Cell selection in .NET MAUI Scheduler

@@ -5,7 +5,7 @@ title: Appointment Tooltip in .NET MAUI Scheduler control | Syncfusion®
 description: Display appointment details in tooltips to provide quick preview of scheduled events in the .NET MAUI Scheduler.
 control: SfScheduler
 documentation: ug
-keywords : .net maui scheduler, .net maui scheduler appointment tooltip, .net maui appointment details tooltip, .net maui scheduler tooltip customization, .net maui scheduler tooltip behavior.appliesto: UI Component Suite, Scheduler SDK
+keywords : .net maui scheduler, .net maui scheduler appointment tooltip, .net maui appointment details tooltip, .net maui scheduler tooltip customization, .net maui scheduler tooltip behavior.
 ---
 
 # Appointment Tooltip in .NET MAUI Scheduler

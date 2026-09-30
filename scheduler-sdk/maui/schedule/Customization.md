@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Customization in .NET MAUI Scheduler control | Syncfusion®
 description: Adjust views, appearance, and functionality of the .NET MAUI Scheduler to match your application requirements.
 control: SfScheduler
-documentation: ugappliesto: UI Component Suite, Scheduler SDK
+documentation: ug
 ---
 
 # Customization in .NET MAUI Scheduler

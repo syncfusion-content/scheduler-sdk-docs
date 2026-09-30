@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Time zone in .NET MAUI Scheduler control | Syncfusion®
 description: Create appointments in various time zones and display them in different time zones in the .NET MAUI Scheduler.
 control: SfScheduler
-documentation: ugappliesto: UI Component Suite, Scheduler SDK
+documentation: ug
 ---
 
 # Time zone in .NET MAUI Scheduler

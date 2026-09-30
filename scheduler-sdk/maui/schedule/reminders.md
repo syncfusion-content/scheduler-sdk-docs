@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Appointment reminders in .NET MAUI Scheduler control | Syncfusion®
 description: Set up appointment reminders with notifications in the .NET MAUI Scheduler using the EnableReminder property and ReminderAlertOpening event.
 control: SfScheduler
-documentation: ugappliesto: UI Component Suite, Scheduler SDK
+documentation: ug
 ---
 
 # Appointment reminders in .NET MAUI Scheduler

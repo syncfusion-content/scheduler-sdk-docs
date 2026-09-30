@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Calendar types in .NET MAUI Scheduler control | Syncfusion®
 description: Support multiple calendar types including Gregorian, Korean, Hebrew, and more in the .NET MAUI Scheduler control.
 control: SfScheduler
-documentation: ugappliesto: UI Component Suite, Scheduler SDK
+documentation: ug
 ---
 
 # Calendar types in .NET MAUI Scheduler

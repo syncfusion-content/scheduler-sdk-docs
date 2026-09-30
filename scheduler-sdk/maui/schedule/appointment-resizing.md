@@ -5,7 +5,7 @@ title: Appointment Resizing in .NET MAUI Scheduler control | Syncfusion®
 description: Resize appointments interactively by dragging edges to adjust start and end times in the .NET MAUI Scheduler.
 control: SfScheduler
 documentation: ug
-keywords : .net maui scheduler appointments, .net maui appointment resizing, .net maui scheduler appointment duration, .net maui scheduler resize events, .net maui scheduler resize appointment.appliesto: UI Component Suite, Scheduler SDK
+keywords : .net maui scheduler appointments, .net maui appointment resizing, .net maui scheduler appointment duration, .net maui scheduler resize events, .net maui scheduler resize appointment.
 ---
 
 # Appointment Resizing in .NET MAUI Scheduler

@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Methods in .NET MAUI AI-Powered Scheduler control | Syncfusion®
 description: Learn about methods in Syncfusion<sup>&reg;</sup> .NET MAUI AI-Powered Scheduler control to manage the AI assistant view programmatically.
 control: SfSmartScheduler
-documentation: ugappliesto: UI Component Suite, Scheduler SDK
+documentation: ug
 ---
 
 # Methods in .NET MAUI AI-Powered Scheduler (SfSmartScheduler)
