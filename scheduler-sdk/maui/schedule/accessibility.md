@@ -5,6 +5,7 @@ title: Accessibility in .NET MAUI Scheduler control | Syncfusion®
 description: Ensure accessibility in the .NET MAUI Scheduler with screen reader support, keyboard navigation, and assistive technology features.
 control: SfScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Accessibility in .NET MAUI Scheduler
