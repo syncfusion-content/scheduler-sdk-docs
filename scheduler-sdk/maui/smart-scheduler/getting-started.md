@@ -5,7 +5,7 @@ platform: scheduler-sdk
 description: Learn how to get started with the Syncfusion® .NET MAUI AI-Powered Scheduler control. Explore setup, features, examples, and customization options.
 control: SfSmartScheduler
 documentation: ug
-keywords : .net maui smart scheduler  
+keywords : .net maui smart scheduler  appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with .NET MAUI AI-Powered Scheduler

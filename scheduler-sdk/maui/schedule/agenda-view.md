@@ -4,7 +4,7 @@ title: Agenda view in .NET MAUI Scheduler control | Syncfusion®
 platform: scheduler-sdk
 description: Display appointments in chronological order grouped by date using the agenda view in the .NET MAUI Scheduler control.
 control: SfScheduler
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Agenda view in .NET MAUI Scheduler

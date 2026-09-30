@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Resource View in .NET MAUI Scheduler control | Syncfusion®
 description: Group appointments by resources in day, week, workweek, and timeline views in the .NET MAUI Scheduler with multi-resource support.
 control: SfScheduler
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Resource View in .NET MAUI Scheduler

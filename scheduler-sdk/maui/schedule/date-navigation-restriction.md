@@ -4,7 +4,7 @@ platform: scheduler-sdk
 title: Date Navigation and Restriction in .NET MAUI Scheduler | Syncfusion
 description: Navigate through dates programmatically or using buttons, and restrict date navigation ranges in the .NET MAUI Scheduler control.
 control: SfScheduler
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Date Navigation and Restriction in .NET MAUI Scheduler

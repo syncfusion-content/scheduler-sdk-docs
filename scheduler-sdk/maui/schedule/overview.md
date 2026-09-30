@@ -6,7 +6,7 @@ platform: scheduler-sdk
 description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Scheduler control and more details.
 control: SfScheduler
 documentation: ug
-keywords : .net maui scheduler, maui appointment scheduling, .net maui agenda view.
+keywords : .net maui scheduler, maui appointment scheduling, .net maui agenda view.appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion® .NET MAUI Scheduler Control

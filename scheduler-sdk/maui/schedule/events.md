@@ -4,7 +4,7 @@ title: Events in .NET MAUI Scheduler control | Syncfusion®
 platform: scheduler-sdk
 description: Handle events like Tapped, DoubleTapped, LongPressed, SelectionChanged, and ViewChanged in the .NET MAUI Scheduler.
 control: SfScheduler
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Events in .NET MAUI Scheduler

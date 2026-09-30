@@ -5,7 +5,7 @@ title: Context Menu in .NET MAUI Scheduler control | Syncfusion®
 description: Use context menus for quick access to actions on appointments, cells, and elements in the .NET MAUI Scheduler control.
 control: SfScheduler
 documentation: ug
-keywords : .net maui scheduler, .net maui scheduler context menu, .net maui scheduler right click menu, .net maui scheduler appointment context menu, .net maui scheduler cell context menu, .net maui scheduler menu actions, maui scheduler context menu.
+keywords : .net maui scheduler, .net maui scheduler context menu, .net maui scheduler right click menu, .net maui scheduler appointment context menu, .net maui scheduler cell context menu, .net maui scheduler menu actions, maui scheduler context menu.appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Context Menu in .NET MAUI Scheduler
