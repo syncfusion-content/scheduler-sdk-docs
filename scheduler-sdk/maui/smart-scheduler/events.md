@@ -5,6 +5,7 @@ title: Events in .NET MAUI AI-Powered Scheduler control | Syncfusion®
 description: Learn about events in Syncfusion® .NET MAUI AI-Powered Scheduler control to handle appointment creation, modification, and deletion through AI assistance.
 control: SfSmartScheduler
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Events in .NET MAUI AI-Powered Scheduler (SfSmartScheduler)
