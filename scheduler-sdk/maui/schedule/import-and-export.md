@@ -6,6 +6,7 @@ description: Import & export appointments in .NET MAUI Scheduler via iCalendar (
 control: SfScheduler
 documentation: ug
 keywords: .net maui scheduler, .net maui scheduler ics export, .net maui scheduler ics import, iCalendar support .net maui, export appointments to ics, import appointments from ics, .net maui scheduler calendar integration, scheduler iCalendar format, .net maui scheduler outlook integration, .net maui scheduler google calendar integration, .net maui scheduler apple calendar integration, sfscheduler ics file
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Import and Export iCalendar (.ICS) Files in .NET MAUI Scheduler
