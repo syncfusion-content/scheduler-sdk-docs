@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties of .NET MAUI Smart Scheduler control | Syncfusion®
-description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Smart Scheduler, including AI assist button configuration, assist view customization, and appointment response handling.
+description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Smart Scheduler, including AI assist features and appointment responses.
 platform: maui
 control: SfSmartScheduler
 documentation: ug
