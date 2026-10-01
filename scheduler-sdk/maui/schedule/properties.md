@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties of .NET MAUI Scheduler control | Syncfusion®
-description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Scheduler, including appointment configuration, view customization, drag-and-drop, reminders, resource grouping, and interaction handling.
+description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Scheduler, including appointments, views, resources, reminders, and interactions.
 platform: maui
 control: SfScheduler
 documentation: ug
