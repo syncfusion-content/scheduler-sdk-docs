@@ -93,7 +93,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui/calendar/overview">Calendar</a></td>
+<td><a href="/maui/calendar/overview" aria-label="Navigate to Calendar overview">Calendar</a>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -105,7 +105,7 @@ The following table summarizes the globalization support available in this contr
 ## Related controls
 
 - [Date Picker](https://help.syncfusion.com/maui/datepicker/overview) for selecting and handling single date input scenarios.  
-- [Scheduler](https://help.syncfusion.com/maui/scheduler/overview) for managing appointments and scheduling workflows.  
+- [Scheduler](https://help.syncfusion.com/scheduler-sdk/maui/schedule/overview) for managing appointments and scheduling workflows.  
 - [Date Time Picker](https://help.syncfusion.com/maui/datetimepicker/overview) for selecting combined date and time values.
 
 ## See Also

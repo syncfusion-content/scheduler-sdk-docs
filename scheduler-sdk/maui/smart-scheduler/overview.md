@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Scheduler SDK
 
 # About Syncfusion® .NET MAUI AI-Powered Scheduler Control
 
-The Syncfusion<sup>&reg;</sup> [.NET MAUI AI-Powered Scheduler](https://www.syncfusion.com/maui-controls/maui-smart-scheduler) combines the power of the Scheduler with AI-driven intent understanding. Users can create, update, delete, and explore appointments using plain language, reducing clicks and turning scheduling into a conversation. It respects current view context, resources, and availability, and can detect conflicts, find free time, and summarize schedules.
+The Syncfusion<sup>&reg;</sup> [.NET MAUI AI-Powered Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-smart-scheduler) combines the power of the Scheduler with AI-driven intent understanding. Users can create, update, delete, and explore appointments using plain language, reducing clicks and turning scheduling into a conversation. It respects current view context, resources, and availability, and can detect conflicts, find free time, and summarize schedules.
 
 <img src="images\overview\maui-smart-scheduler-overview.png" width="600" alt=".NET MAUI AI-Powered Scheduler." />
 
@@ -79,7 +79,7 @@ The following table summarizes the globalization support available in this contr
 
 ## Related controls
 
-- [Scheduler](https://help.syncfusion.com/maui/scheduler/overview) for traditional scheduling and calendar-based appointment management.  
+- [Scheduler](https://help.syncfusion.com/scheduler-sdk/maui/schedule/overview) for traditional scheduling and calendar-based appointment management.  
 - [Smart DataGrid](https://help.syncfusion.com/maui/smartdatagrid/overview) for AI-driven data analysis and interaction in tabular form.  
 - [Calendar](https://help.syncfusion.com/maui/calendar/overview) for basic date selection and navigation interfaces.  
 
@@ -227,7 +227,7 @@ The following table summarizes the globalization support available in this contr
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls/maui-smart-scheduler" class="explore-link">
+<a href="https://www.syncfusion.com/scheduler-sdk/maui-smart-scheduler" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
@@ -243,7 +243,7 @@ Explore Features
     <h3 class="form-title">Showcase Samples</h3>
 </div>
     <div class="form-description">Explore real-world sample apps to see components in action and learn by example.</div>
-    <a href="https://github.com/syncfusion/maui-demos/tree/master/MAUI/SmartComponents/SampleBrowser.Maui.SmartComponents/Samples/SmartScheduler" class="explore-link">
+    <a href="https://github.com/syncfusion/maui-demos/tree/master/MAUI/SmartScheduler" class="explore-link">
     View Samples
   <span class="card-icon card-arrow"></span>
 </a>
