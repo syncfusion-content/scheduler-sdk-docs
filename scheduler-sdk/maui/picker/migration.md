@@ -399,21 +399,6 @@ The following code example, explains how to initialize the properties of the `Xa
 <td>{{'[TextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerTextStyle.html#Syncfusion_Maui_Picker_PickerTextStyle_TextColor) From [TextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Picker.PickerBase.html#Syncfusion_Maui_Picker_PickerBase_TextStyle)'| markdownify }}</td>
 <td>Gets or sets the text color of the text style.</td>
 </tr>
-<tr>
-<td>{{'[CommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfPicker.html#Syncfusion_XForms_Pickers_SfPicker_CommandParameterProperty)'| markdownify }}</td>
-<td>Nil</td>
-<td>Not Supported.</td>
-</tr>
-<tr>
-<td>{{'[OkCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfPicker.html#Syncfusion_XForms_Pickers_SfPicker_OkCommandProperty)'| markdownify }}</td>
-<td>{{'[AcceptCommand]()'| markdownify }}</td>
-<td>Gets or sets a command to accept a selected value of SfPicker.</td>
-</tr>
-<tr>
-<td>{{'[CancelCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Pickers.SfPicker.html#Syncfusion_XForms_Pickers_SfPicker_CancelCommandProperty)'| markdownify }}</td>
-<td>{{'[DeclineCommand]()'| markdownify }}</td>
-<td>Gets or sets a command to decline a selected value of SfPicker.</td>
-</tr>
 </table>
 
 ## Events
