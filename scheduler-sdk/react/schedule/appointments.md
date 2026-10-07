@@ -1005,10 +1005,10 @@ The following example enables event buffers in the Week view. Each event shows i
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/schedule/events-cs40/app/App.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs58/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/schedule/events-cs40/app/App.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs58/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1020,10 +1020,10 @@ To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfte
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/schedule/events-cs41/app/App.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs59/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/schedule/events-cs41/app/App.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs59/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1043,10 +1043,10 @@ The following example color-codes buffer regions by event type and adds custom l
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/schedule/events-cs42/app/App.jsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs60/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/schedule/events-cs42/app/App.tsx %}
+{% include code-snippet/scheduler-sdk/react/schedule/events-cs60/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
