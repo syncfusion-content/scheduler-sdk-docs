@@ -1,39 +1,57 @@
 import * as React from 'react';
-import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, DragAndDrop, Resize, Inject } from '@syncfusion/ej2-react-schedule';
+import { ScheduleComponent, Day, Week, WorkWeek, DragAndDrop, Resize, Inject } from '@syncfusion/ej2-react-schedule';
 
 const currentYear = new Date().getFullYear();
 const eventData = [
     {
         Id: 1,
-        Subject: 'Dentist Checkup',
-        StartTime: new Date(currentYear, 0, 22, 8, 0),
-        EndTime: new Date(currentYear, 0, 22, 8, 30),
-        bufferBefore: 15,  // 15 min prep time
-        bufferAfter: 10,   // 10 min wrap-up
+        Subject: 'Patient Consultation - Sarah Johnson',
+        StartTime: new Date(currentYear, 0, 21, 10, 0),
+        EndTime: new Date(currentYear, 0, 21, 11, 30),
+        bufferBefore: 10,  // 10 min to review patient history
+        bufferAfter: 15,   // 15 min to update medical records
+        Location: 'Exam Room 3',
+        Description: 'Follow-up consultation for hypertension management',
     },
     {
         Id: 2,
-        Subject: 'Team Meeting',
-        StartTime: new Date(currentYear, 0, 22, 10, 0),
-        EndTime: new Date(currentYear, 0, 22, 11, 30),
-        bufferBefore: 30,  // 30 min prep for meeting room setup
-        bufferAfter: 20,   // 20 min to return to desk
+        Subject: 'Surgical Procedure - Knee Arthroscopy',
+        StartTime: new Date(currentYear, 0, 22, 10, 30),
+        EndTime: new Date(currentYear, 0, 22, 12, 0),
+        bufferBefore: 45,  // 45 min OR setup and anesthesia prep
+        bufferAfter: 30,   // 30 min recovery and post-op notes
+        Location: 'Operating Room 2',
+        Description: 'Outpatient knee arthroscopy for Mr. Robert Chen',
     },
     {
         Id: 3,
-        Subject: 'Lunch Break',
-        StartTime: new Date(currentYear, 0, 22, 12, 0),
-        EndTime: new Date(currentYear, 0, 22, 13, 0),
-        bufferBefore: 0,   // No prep needed
-        bufferAfter: 0,    // No wrap-up needed
+        Subject: 'Lunch & Rounds',
+        StartTime: new Date(currentYear, 0, 22, 12, 30),
+        EndTime: new Date(currentYear, 0, 22, 13, 30),
+        bufferBefore: 0,   // Direct transition
+        bufferAfter: 0,    // Direct transition
+        Location: 'Hospital Cafeteria',
+        Description: 'Working lunch with department heads',
     },
     {
         Id: 4,
-        Subject: 'Project Review',
-        StartTime: new Date(currentYear, 0, 22, 14, 0),
-        EndTime: new Date(currentYear, 0, 22, 15, 0),
-        bufferBefore: 20,
-        bufferAfter: 15,
+        Subject: 'Patient Consultation - Michael Davis',
+        StartTime: new Date(currentYear, 0, 22, 14, 30),
+        EndTime: new Date(currentYear, 0, 22, 15, 15),
+        bufferBefore: 15,  // 15 min to prep exam room
+        bufferAfter: 20,   // 20 min to complete documentation
+        Location: 'Exam Room 1',
+        Description: 'New patient intake and physical examination',
+    },
+    {
+        Id: 5,
+        Subject: 'Telehealth Consultation - Emma Wilson',
+        StartTime: new Date(currentYear, 0, 19, 11, 0),
+        EndTime: new Date(currentYear, 0, 19, 16, 30),
+        bufferBefore: 15,   // 5 min to test video connection
+        bufferAfter: 10,   // 10 min to send e-prescription and notes
+        Location: 'Virtual - Zoom',
+        Description: 'Virtual follow-up for diabetes management',
     },
 ];
 
@@ -54,7 +72,7 @@ function App() {
                 },
             }}
         >
-            <Inject services={[Day, Week, WorkWeek, Month, Agenda, DragAndDrop, Resize]} />
+            <Inject services={[Day, Week, WorkWeek, DragAndDrop, Resize]} />
         </ScheduleComponent>
     );
 }

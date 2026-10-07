@@ -1,31 +1,38 @@
 import * as React from 'react';
-import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, TimelineViews, TimelineMonth, DragAndDrop, Resize, Inject } from '@syncfusion/ej2-react-schedule';
+import { ScheduleComponent, Day, Week, WorkWeek, TimelineViews, DragAndDrop, Resize, Inject } from '@syncfusion/ej2-react-schedule';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 
+const currentYear = new Date().getFullYear();
 const eventData = [
     {
         Id: 1,
-        Subject: 'Conference',
+        Subject: 'Client Kickoff - Acme Corp',
         StartTime: new Date(currentYear, 0, 22, 9, 0),
         EndTime: new Date(currentYear, 0, 22, 10, 0),
-        bufferBefore: 30,
-        bufferAfter: 15,
+        bufferBefore: 30,  // 30 min to set up conference room and test AV
+        bufferAfter: 15,   // 15 min to send follow-up materials
+        Location: 'Boardroom A',
+        Description: 'Project kickoff meeting with Acme Corp leadership team',
     },
     {
         Id: 2,
-        Subject: 'Workshop',
+        Subject: 'Sales Training Workshop',
         StartTime: new Date(currentYear, 0, 22, 11, 0),
         EndTime: new Date(currentYear, 0, 22, 13, 0),
-        bufferBefore: 45,
-        bufferAfter: 30,
+        bufferBefore: 45,  // 45 min for room setup and materials distribution
+        bufferAfter: 30,   // 30 min for Q&A and feedback collection
+        Location: 'Training Room',
+        Description: 'Quarterly sales techniques and product knowledge training',
     },
     {
         Id: 3,
-        Subject: 'Presentation',
+        Subject: 'Product Demo - TechStart Inc',
         StartTime: new Date(currentYear, 0, 22, 14, 0),
         EndTime: new Date(currentYear, 0, 22, 15, 0),
-        bufferBefore: 20,
-        bufferAfter: 10,
+        bufferBefore: 20,  // 20 min to test demo environment
+        bufferAfter: 10,   // 10 min to gather requirements
+        Location: 'Conference Room B',
+        Description: 'Live demo of enterprise SaaS platform for TechStart Inc',
     },
 ];
 
@@ -88,7 +95,7 @@ function App() {
                     },
                 }}
             >
-                <Inject services={[Day, Week, WorkWeek, Month, Agenda, TimelineViews, TimelineMonth, DragAndDrop, Resize]} />
+                <Inject services={[Day, Week, WorkWeek, TimelineViews, DragAndDrop, Resize]} />
             </ScheduleComponent>
         </div>
     );

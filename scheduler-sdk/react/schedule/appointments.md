@@ -1012,7 +1012,6 @@ The following example enables event buffers in the Week view. Each event shows i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs58" %}
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs58" %}
 
 ### Dynamic Buffer Updates
@@ -1028,7 +1027,7 @@ To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfte
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs59" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs59" %}
 
 ### Customizing Buffer Appearance with Templates
 
@@ -1051,11 +1050,9 @@ The following example color-codes buffer regions by event type and adds custom l
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/schedule/events-cs60" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs60" %}
 
 ### Supported Views
-
-When adding buffer support, map the following fields in `eventSettings`:
 
 | View type | Views | Buffer Position |
 |-------|------|-------------|

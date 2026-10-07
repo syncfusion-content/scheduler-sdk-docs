@@ -1,68 +1,75 @@
 import * as React from 'react';
-import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, TimelineViews, TimelineMonth, DragAndDrop, Resize, Inject } from '@syncfusion/ej2-react-schedule';
+import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, TimelineViews, DragAndDrop, Resize, Inject } from '@syncfusion/ej2-react-schedule';
 
 const currentYear = new Date().getFullYear();
 const eventData = [
     {
         Id: 1,
-        Subject: 'Development Sprint Planning',
+        Subject: 'Therapy Session - John Smith',
         StartTime: new Date(currentYear, 0, 22, 9, 0),
         EndTime: new Date(currentYear, 0, 22, 10, 30),
-        bufferBefore: 15,
-        bufferAfter: 10,
+        bufferBefore: 10,  // 10 min to review session notes
+        bufferAfter: 15,   // 15 min to document observations
         eventType: 'development',
+        Location: 'Counseling Room 2',
     },
     {
         Id: 2,
-        Subject: 'Executive Sync',
+        Subject: 'Board Strategy Meeting',
         StartTime: new Date(currentYear, 0, 22, 11, 0),
         EndTime: new Date(currentYear, 0, 22, 12, 0),
-        bufferBefore: 30,
-        bufferAfter: 15,
+        bufferBefore: 30,  // 30 min to prepare briefing materials
+        bufferAfter: 20,   // 20 min for executive follow-up
         eventType: 'executive',
+        Location: 'Boardroom',
     },
     {
         Id: 3,
-        Subject: 'Lunch Break',
+        Subject: 'Personal Break',
         StartTime: new Date(currentYear, 0, 22, 12, 30),
         EndTime: new Date(currentYear, 0, 22, 13, 30),
         bufferBefore: 0,
         bufferAfter: 0,
         eventType: 'personal',
+        Location: 'Office',
     },
     {
         Id: 4,
-        Subject: 'Client Presentation',
+        Subject: 'Legal Consultation - Patent Filing',
         StartTime: new Date(currentYear, 0, 22, 14, 0),
         EndTime: new Date(currentYear, 0, 22, 15, 0),
-        bufferBefore: 45,
-        bufferAfter: 30,
+        bufferBefore: 45,  // 45 min to gather all technical documents
+        bufferAfter: 30,   // 30 min to review legal advice
         eventType: 'client',
+        Location: 'Law Firm - Suite 500',
     },
 ];
 
 function bufferTemplate(args: any) {
-    let bgColor = '#90ee90';  // Default green
-    let label = 'Transition';
-
-    if (args.data.eventType === 'executive') {
-        bgColor = args.bufferType === 'before' ? '#ff6b6b' : '#ffb3b3';
-        label = args.bufferType === 'before' ? 'Prepare' : 'Debrief';
-    } else if (args.data.eventType === 'client') {
-        bgColor = args.bufferType === 'before' ? '#4e7de7' : '#a8c5ff';
-        label = args.bufferType === 'before' ? 'Setup' : 'Wrap-up';
-    } else if (args.data.eventType === 'development') {
-        bgColor = args.bufferType === 'before' ? '#ffa500' : '#ffd699';
-        label = args.bufferType === 'before' ? 'Review' : 'Action Items';
-    }
-
-    const minutes = args.bufferType === 'before' ? args.data.bufferBefore : args.data.bufferAfter;
+    const label = args.bufferType === 'before' ? 'Setup' : 'Wrap-up';
+    const minutes = args.bufferType === 'before'
+        ? args.data.bufferBefore : args.data.bufferAfter;
 
     return (
-        '<div class="buffer-template" style="height:100%;display:flex;align-items:center;justify-content:center;' +
-        'font-size:10px;color:#000;opacity:0.9;text-align:center;background-color:' + bgColor + ';' +
-        'border:1px solid rgba(0,0,0,0.2);font-weight:500;">' +
-        label + '<br/>' + minutes + 'min</div>'
+        <div
+            className="buffer-template"
+            style={{
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "11px",
+                color: "#fff",
+                opacity: 1,
+                textAlign: "center",
+            }}
+        >
+            <div>
+                {label}
+                <br />
+                {minutes} min
+            </div>
+        </div>
     );
 }
 
@@ -96,7 +103,7 @@ function App() {
                 }
             }}
         >
-            <Inject services={[Day, Week, WorkWeek, Month, Agenda, TimelineViews, TimelineMonth, DragAndDrop, Resize]} />
+            <Inject services={[Day, Week, WorkWeek, TimelineViews, DragAndDrop, Resize]} />
         </ScheduleComponent>
     );
 }
