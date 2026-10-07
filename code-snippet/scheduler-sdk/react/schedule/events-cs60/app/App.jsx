@@ -8,8 +8,8 @@ const eventData = [
         Subject: 'Therapy Session - John Smith',
         StartTime: new Date(currentYear, 0, 22, 9, 0),
         EndTime: new Date(currentYear, 0, 22, 10, 30),
-        bufferBefore: 10,  // 10 min to review session notes
-        bufferAfter: 15,   // 15 min to document observations
+        bufferBefore: 30,  // 10 min to review session notes
+        bufferAfter: 25,   // 15 min to document observations
         eventType: 'therapy',
         Location: 'Counseling Room 2',
     },

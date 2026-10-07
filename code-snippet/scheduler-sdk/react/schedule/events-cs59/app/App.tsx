@@ -10,7 +10,7 @@ const eventData = [
         StartTime: new Date(currentYear, 0, 22, 9, 0),
         EndTime: new Date(currentYear, 0, 22, 10, 0),
         bufferBefore: 30,  // 30 min to set up conference room and test AV
-        bufferAfter: 15,   // 15 min to send follow-up materials
+        bufferAfter: 45,   // 15 min to send follow-up materials
         Location: 'Boardroom A',
         Description: 'Project kickoff meeting with Acme Corp leadership team',
     },
@@ -30,7 +30,7 @@ const eventData = [
         StartTime: new Date(currentYear, 0, 22, 14, 0),
         EndTime: new Date(currentYear, 0, 22, 15, 0),
         bufferBefore: 20,  // 20 min to test demo environment
-        bufferAfter: 10,   // 10 min to gather requirements
+        bufferAfter: 40,   // 10 min to gather requirements
         Location: 'Conference Room B',
         Description: 'Live demo of enterprise SaaS platform for TechStart Inc',
     },

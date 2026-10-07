@@ -8,8 +8,8 @@ const eventData = [
         Subject: 'Patient Consultation - Sarah Johnson',
         StartTime: new Date(currentYear, 0, 21, 10, 0),
         EndTime: new Date(currentYear, 0, 21, 11, 30),
-        bufferBefore: 10,  // 10 min to review patient history
-        bufferAfter: 15,   // 15 min to update medical records
+        bufferBefore: 30,  // 10 min to review patient history
+        bufferAfter: 45,   // 15 min to update medical records
         Location: 'Exam Room 3',
         Description: 'Follow-up consultation for hypertension management',
     },
@@ -38,7 +38,7 @@ const eventData = [
         Subject: 'Patient Consultation - Michael Davis',
         StartTime: new Date(currentYear, 0, 22, 14, 30),
         EndTime: new Date(currentYear, 0, 22, 15, 15),
-        bufferBefore: 15,  // 15 min to prep exam room
+        bufferBefore: 25,  // 15 min to prep exam room
         bufferAfter: 20,   // 20 min to complete documentation
         Location: 'Exam Room 1',
         Description: 'New patient intake and physical examination',
@@ -48,8 +48,8 @@ const eventData = [
         Subject: 'Telehealth Consultation - Emma Wilson',
         StartTime: new Date(currentYear, 0, 19, 11, 0),
         EndTime: new Date(currentYear, 0, 19, 16, 30),
-        bufferBefore: 15,   // 5 min to test video connection
-        bufferAfter: 10,   // 10 min to send e-prescription and notes
+        bufferBefore: 35,   // 5 min to test video connection
+        bufferAfter: 20,   // 10 min to send e-prescription and notes
         Location: 'Virtual - Zoom',
         Description: 'Virtual follow-up for diabetes management',
     },

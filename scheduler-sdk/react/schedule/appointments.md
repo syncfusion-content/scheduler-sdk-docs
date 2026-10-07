@@ -126,7 +126,7 @@ The following example illustrates creating a recurring event using a specific re
 
 To exclude specific instances from a recurrence series, add exception dates to the [`recurrenceException`](https://ej2.syncfusion.com/react/documentation/api/schedule/field#recurrenceexception) field in UTC format.
 
-**Date-Time Format:** `YYYYMMDDTHHmmssZ`
+**Date-Time Format:** `YYYYMMDDTHHMMSSZ`
 
 **Format Rules:**
 - Date portion: No hyphens (e.g., February 22, 2026 = `20260222`)
@@ -950,7 +950,7 @@ We can show more indicator if more than one appointment is available in a same c
 
 ## Event Buffer
 
-The event buffer feature shows preparation time before an appointment and wrap-up time after it. Use it to block setup or teardown periods, reserve transition time between meetings, or show travel time around field visits.
+The event buffer feature shows preparation time before an appointment and wrap-up time after it. Use it to block setup or tear down periods, reserve transition time between meetings, or show travel time around field visits.
 
 **Key capabilities:**
 - Set a different buffer duration before and after each event.
@@ -1031,7 +1031,7 @@ To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfte
 
 ### Customizing Buffer Appearance with Templates
 
-Use the [`bufferTemplate`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#buffertemplate) property in `eventSettings` to render custom content inside buffer regions. The template is called once for each buffer and receives a [`BufferTemplateArgs`](https://ej2.syncfusion.com/react/documentation/api/schedule/buffertemplateargs) object.
+Use the [`bufferTemplate`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#buffertemplate) property in `eventSettings` to render custom content inside buffer regions. The template is called once for each buffer and receives a `BufferTemplateArgs` object.
 
 | Argument | Type | Description |
 |----------|------|-------------|
