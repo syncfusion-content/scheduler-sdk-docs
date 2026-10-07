@@ -5,8 +5,8 @@ const eventData = [
     {
         Id: 1,
         Subject: 'Development Sprint Planning',
-        StartTime: new Date(2025, 0, 22, 9, 0),
-        EndTime: new Date(2025, 0, 22, 10, 30),
+        StartTime: new Date(currentYear, 0, 22, 9, 0),
+        EndTime: new Date(currentYear, 0, 22, 10, 30),
         bufferBefore: 15,
         bufferAfter: 10,
         eventType: 'development',
@@ -14,8 +14,8 @@ const eventData = [
     {
         Id: 2,
         Subject: 'Executive Sync',
-        StartTime: new Date(2025, 0, 22, 11, 0),
-        EndTime: new Date(2025, 0, 22, 12, 0),
+        StartTime: new Date(currentYear, 0, 22, 11, 0),
+        EndTime: new Date(currentYear, 0, 22, 12, 0),
         bufferBefore: 30,
         bufferAfter: 15,
         eventType: 'executive',
@@ -23,8 +23,8 @@ const eventData = [
     {
         Id: 3,
         Subject: 'Lunch Break',
-        StartTime: new Date(2025, 0, 22, 12, 30),
-        EndTime: new Date(2025, 0, 22, 13, 30),
+        StartTime: new Date(currentYear, 0, 22, 12, 30),
+        EndTime: new Date(currentYear, 0, 22, 13, 30),
         bufferBefore: 0,
         bufferAfter: 0,
         eventType: 'personal',
@@ -32,8 +32,8 @@ const eventData = [
     {
         Id: 4,
         Subject: 'Client Presentation',
-        StartTime: new Date(2025, 0, 22, 14, 0),
-        EndTime: new Date(2025, 0, 22, 15, 0),
+        StartTime: new Date(currentYear, 0, 22, 14, 0),
+        EndTime: new Date(currentYear, 0, 22, 15, 0),
         bufferBefore: 45,
         bufferAfter: 30,
         eventType: 'client',
@@ -71,7 +71,7 @@ function App() {
             width='100%'
             height='550px'
             currentView='TimelineWeek'
-            selectedDate={new Date(2025, 0, 22)}
+            selectedDate={new Date(currentYear, 0, 22)}
             timeScale={{ enable: true, interval: 60, slotCount: 4 }}
             eventSettings={{
                 dataSource: eventData,

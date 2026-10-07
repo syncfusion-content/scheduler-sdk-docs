@@ -2,28 +2,29 @@ import * as React from 'react';
 import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, TimelineViews, TimelineMonth, DragAndDrop, Resize, Inject, ActionEventArgs } from '@syncfusion/ej2-react-schedule';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 
+const currentYear = new Date().getFullYear();
 const eventData = [
     {
         Id: 1,
         Subject: 'Conference',
-        StartTime: new Date(2025, 0, 22, 9, 0),
-        EndTime: new Date(2025, 0, 22, 10, 0),
+        StartTime: new Date(currentYear, 0, 22, 9, 0),
+        EndTime: new Date(currentYear, 0, 22, 10, 0),
         bufferBefore: 30,
         bufferAfter: 15,
     },
     {
         Id: 2,
         Subject: 'Workshop',
-        StartTime: new Date(2025, 0, 22, 11, 0),
-        EndTime: new Date(2025, 0, 22, 13, 0),
+        StartTime: new Date(currentYear, 0, 22, 11, 0),
+        EndTime: new Date(currentYear, 0, 22, 13, 0),
         bufferBefore: 45,
         bufferAfter: 30,
     },
     {
         Id: 3,
         Subject: 'Presentation',
-        StartTime: new Date(2025, 0, 22, 14, 0),
-        EndTime: new Date(2025, 0, 22, 15, 0),
+        StartTime: new Date(currentYear, 0, 22, 14, 0),
+        EndTime: new Date(currentYear, 0, 22, 15, 0),
         bufferBefore: 20,
         bufferAfter: 10,
     },
@@ -77,7 +78,7 @@ function App() {
                 width='100%'
                 height='550px'
                 currentView='TimelineWeek'
-                selectedDate={new Date(2025, 0, 22)}
+                selectedDate={new Date(currentYear, 0, 22)}
                 timeScale={{ enable: true, interval: 60, slotCount: 4 }}
                 eventSettings={{
                     dataSource: eventData,

@@ -957,7 +957,7 @@ The event buffer feature shows preparation time before an appointment and wrap-u
 - Display buffer zones so they are visually distinct from the event itself.
 - Customize buffer content and styling with a template.
 - Use buffers with resource grouping.
-- Render buffers in vertical views (Day, Week, Work Week) and timeline views (Timeline Day, Timeline Week, - Timeline Month).
+- Render buffers in vertical views (Day, Week, Work Week) and timeline views (Timeline Day, Timeline Week, Timeline Work Week).
 
 ### Configuring Event Buffer
 
@@ -982,16 +982,16 @@ const eventData = [
     {
         Id: 1,
         Subject: 'Team Sync',
-        StartTime: new Date(2025, 0, 22, 9, 0),
-        EndTime: new Date(2025, 0, 22, 10, 0),
+        StartTime: new Date(2026, 0, 22, 9, 0),
+        EndTime: new Date(20256 0, 22, 10, 0),
         bufferBefore: 30,   // 30 minutes setup time before event
         bufferAfter: 15     // 15 minutes wrap-up time after event
     },
     {
         Id: 2,
         Subject: 'Client Review',
-        StartTime: new Date(2025, 0, 22, 11, 0),
-        EndTime: new Date(2025, 0, 22, 13, 0),
+        StartTime: new Date(2026, 0, 22, 11, 0),
+        EndTime: new Date(2026 0, 22, 13, 0),
         bufferBefore: 45,
         bufferAfter: 20
     }
@@ -1013,10 +1013,11 @@ The following example enables event buffers in the Week view. Each event shows i
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/schedule/events-cs58" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/events-cs58" %}
 
 ### Dynamic Buffer Updates
 
-To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the `saveEvent` method. The Scheduler re-renders the event with the new buffer immediately.
+To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the [`saveEvent`](https://ej2.syncfusion.com/react/documentation/api/schedule/index-default#saveevent) method. The Scheduler re-renders the event with the new buffer immediately.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -1031,7 +1032,7 @@ To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfte
 
 ### Customizing Buffer Appearance with Templates
 
-Use the `bufferTemplate` property in `eventSettings` to render custom content inside buffer regions. The template is called once for each buffer and receives a `BufferTemplateArgs` object.
+Use the [`bufferTemplate`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#buffertemplate) property in `eventSettings` to render custom content inside buffer regions. The template is called once for each buffer and receives a [`BufferTemplateArgs`](https://ej2.syncfusion.com/react/documentation/api/schedule/buffertemplateargs) object.
 
 | Argument | Type | Description |
 |----------|------|-------------|
@@ -1059,7 +1060,7 @@ When adding buffer support, map the following fields in `eventSettings`:
 | View type | Views | Buffer Position |
 |-------|------|-------------|
 | Vertical | Day, Week, Work Week | Above (before) and below (after) the event |
-| Timeline | Timeline Day, Timeline Week, Timeline Month | Left (before) and right (after) of the event |
+| Timeline | Timeline Day, Timeline Week, Timeline Work Week | Left (before) and right (after) of the event |
 
 Buffers render only when time slots are shown, so `timeScale.enable` must be `true`.
 
@@ -1067,7 +1068,7 @@ Buffers render only when time slots are shown, so `timeScale.enable` must be `tr
 
 - **Drag and resize:** The Scheduler accounts for buffer time when an event is dragged or resized, so the event's - `StartTime` and `EndTime` stay accurate and the buffer moves with the event.
 - **Zero buffers:** Set `bufferBefore` or `bufferAfter` to `0` to remove the buffer on that side for a specific event.
-- **Resource grouping:** Buffers render within each resource's row or column, and `bufferTemplate` receives that resource in `resourceData`.
+- **Resource grouping:** Buffers render within each resource's row or column, and [`bufferTemplate`](https://ej2.syncfusion.com/react/documentation/api/schedule/eventSettings#buffertemplate) receives that resource in `resourceData`.
 
 ## Limiting maximum number of events displayed
 
