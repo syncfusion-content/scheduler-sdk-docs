@@ -99,6 +99,30 @@ By default, the Scheduler highlights the current date header in all views and sh
         
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs4" %}
 
+## Customizing current time indicator
+
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/react/documentation/api/schedule#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
+
+* [`showTime`](https://ej2.syncfusion.com/react/documentation/api/schedule/currentTimeIndicatorSettings#showtime) - When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
+* [`showPreviousDates`](https://ej2.syncfusion.com/react/documentation/api/schedule/currentTimeIndicatorSettings#showpreviousdates) - When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
+* [`onTop`](https://ej2.syncfusion.com/react/documentation/api/schedule/currentTimeIndicatorSettings#ontop) - When set to `true`, positions the indicator line on top of appointments. When set to `false`, appointments appear on top of the indicator. The default value is `true`.
+
+> **Note:** The current time indicator customization is only applicable in views that display a time grid (Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views) when both [`timeScale`](https://ej2.syncfusion.com/react/documentation/api/schedule#timescale) is enabled and [`showTimeIndicator`](https://ej2.syncfusion.com/react/documentation/api/schedule#showtimeindicator) is set to `true`.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs5/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs5/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs5/app/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/react/schedule/timescale-cs5" %}
+
 ## See also
 
 * [Syncfusion React Scheduler](https://www.syncfusion.com/scheduler-sdk/react-scheduler) - Component homepage
