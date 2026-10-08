@@ -447,119 +447,119 @@ documentation: ug
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.SfSmartScheduler.html#Syncfusion_Maui_SmartScheduler_SfSmartScheduler_AssistAppointmentResponseCompleted" aria-label="View AssistAppointmentResponseCompleted event in API reference">AssistAppointmentResponseCompleted</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.AssistAppointmentResponseCompletedEventArgs.html" aria-label="View AssistAppointmentResponseCompletedEventArgs type in API reference">AssistAppointmentResponseCompletedEventArgs&gt;</a></a></td>
-    <td>Raised after the AI finishes processing a request, providing the appointment action (create or modify) and the response result so the caller can apply or inspect the outcome.</td>
+    <td>Triggered after the AI finishes processing a request, providing the appointment action (create or modify) and the response result so the caller can apply or inspect the outcome.</td>
 </tr>
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentDragOver" aria-label="View AppointmentDragOver event in API reference">AppointmentDragOver</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentDragOverEventArgs.html" aria-label="View AppointmentDragOverEventArgs type in API reference">AppointmentDragOverEventArgs&gt;</a></a></td>
-    <td>Raised continuously while a user drags an appointment, providing the current drag time and target resource.</td>
+    <td>Triggered continuously while a user drags an appointment, providing the current drag time and target resource.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentDragStarting" aria-label="View AppointmentDragStarting event in API reference">AppointmentDragStarting</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentDragStartingEventArgs.html" aria-label="View AppointmentDragStartingEventArgs type in API reference">AppointmentDragStartingEventArgs&gt;</a></a></td>
-    <td>Raised when a user starts dragging an appointment, providing the appointment and its original resource.</td>
+    <td>Triggered when a user starts dragging an appointment, providing the appointment and its original resource.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentDrop" aria-label="View AppointmentDrop event in API reference">AppointmentDrop</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentDropEventArgs.html" aria-label="View AppointmentDropEventArgs type in API reference">AppointmentDropEventArgs&gt;</a></a></td>
-    <td>Raised when a user releases a dragged appointment onto a new timeslot or resource, providing the drop time and target resource.</td>
+    <td>Triggered when a user releases a dragged appointment onto a new timeslot or resource, providing the drop time and target resource.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentEditorClosing" aria-label="View AppointmentEditorClosing event in API reference">AppointmentEditorClosing</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentEditorClosingEventArgs.html" aria-label="View AppointmentEditorClosingEventArgs type in API reference">AppointmentEditorClosingEventArgs&gt;</a></a></td>
-    <td>Raised before the appointment editor closes after a save, delete, or cancel action. The action can be canceled, or handling can be bypassed so custom logic saves the changes.</td>
+    <td>Triggered before the appointment editor closes after a save, delete, or cancel action. The action can be canceled, or handling can be bypassed so custom logic saves the changes.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentEditorOpening" aria-label="View AppointmentEditorOpening event in API reference">AppointmentEditorOpening</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentEditorOpeningEventArgs.html" aria-label="View AppointmentEditorOpeningEventArgs type in API reference">AppointmentEditorOpeningEventArgs&gt;</a></a></td>
-    <td>Raised before the appointment editor opens when a user double-taps an appointment or an empty timeslot. The editor can be canceled so a custom editor can be shown instead.</td>
+    <td>Triggered before the appointment editor opens when a user double-taps an appointment or an empty timeslot. The editor can be canceled so a custom editor can be shown instead.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentResizeEnd" aria-label="View AppointmentResizeEnd event in API reference">AppointmentResizeEnd</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentResizeEndEventArgs.html" aria-label="View AppointmentResizeEndEventArgs type in API reference">AppointmentResizeEndEventArgs&gt;</a></a></td>
-    <td>Raised when a user finishes resizing an appointment, providing the resized time and the resized edge.</td>
+    <td>Triggered when a user finishes resizing an appointment, providing the resized time and the resized edge.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentResizeStart" aria-label="View AppointmentResizeStart event in API reference">AppointmentResizeStart</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentResizeStartEventArgs.html" aria-label="View AppointmentResizeStartEventArgs type in API reference">AppointmentResizeStartEventArgs&gt;</a></a></td>
-    <td>Raised when a user begins resizing an appointment, providing the appointment, resource, and the edge being dragged.</td>
+    <td>Triggered when a user begins resizing an appointment, providing the appointment, resource, and the edge being dragged.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentResizing" aria-label="View AppointmentResizing event in API reference">AppointmentResizing</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentResizingEventArgs.html" aria-label="View AppointmentResizingEventArgs type in API reference">AppointmentResizingEventArgs&gt;</a></a></td>
-    <td>Raised continuously while a user resizes an appointment. The resize action can be canceled.</td>
+    <td>Triggered continuously while a user resizes an appointment. The resize action can be canceled.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ContextMenuOpening" aria-label="View ContextMenuOpening event in API reference">ContextMenuOpening</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerContextMenuOpeningEventArgs.html" aria-label="View SchedulerContextMenuOpeningEventArgs type in API reference">SchedulerContextMenuOpeningEventArgs&gt;</a></a></td>
-    <td>Raised when the appointment or cell context menu is about to open, providing context information about the tapped element.</td>
+    <td>Triggered when the appointment or cell context menu is about to open, providing context information about the tapped element.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_DoubleTapped" aria-label="View DoubleTapped event in API reference">DoubleTapped</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDoubleTappedEventArgs.html" aria-label="View SchedulerDoubleTappedEventArgs type in API reference">SchedulerDoubleTappedEventArgs&gt;</a></a></td>
-    <td>Raised when a user double-taps a scheduler element, providing the appointment, date, and scheduler element that was tapped.</td>
+    <td>Triggered when a user double-taps a scheduler element, providing the appointment, date, and scheduler element that was tapped.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_LongPressed" aria-label="View LongPressed event in API reference">LongPressed</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerLongPressedEventArgs.html" aria-label="View SchedulerLongPressedEventArgs type in API reference">SchedulerLongPressedEventArgs&gt;</a></a></td>
-    <td>Raised when a user performs a long press on a scheduler element, providing the appointment, date, and scheduler element that was pressed.</td>
+    <td>Triggered when a user performs a long press on a scheduler element, providing the appointment, date, and scheduler element that was pressed.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_MonthInlineAppointmentTapped" aria-label="View MonthInlineAppointmentTapped event in API reference">MonthInlineAppointmentTapped</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.MonthInlineAppointmentTappedEventArgs.html" aria-label="View MonthInlineAppointmentTappedEventArgs type in API reference">MonthInlineAppointmentTappedEventArgs&gt;</a></a></td>
-    <td>Raised when a user taps an appointment displayed in the inline expansion area of a month cell.</td>
+    <td>Triggered when a user taps an appointment displayed in the inline expansion area of a month cell.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_QueryAppointments" aria-label="View QueryAppointments event in API reference">QueryAppointments</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerQueryAppointmentsEventArgs.html" aria-label="View SchedulerQueryAppointmentsEventArgs type in API reference">SchedulerQueryAppointmentsEventArgs&gt;</a></a></td>
-    <td>Raised when the visible dates or the active view changes, so appointments can be loaded on demand for the displayed range. Not raised for add, delete, or update operations within the already-loaded range.</td>
+    <td>Triggered when the visible dates or the active view changes, so appointments can be loaded on demand for the displayed range. Not raised for add, delete, or update operations within the already-loaded range.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_RecurringAppointmentBeginningEdit" aria-label="View RecurringAppointmentBeginningEdit event in API reference">RecurringAppointmentBeginningEdit</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.RecurringAppointmentBeginningEditEventArgs.html" aria-label="View RecurringAppointmentBeginningEditEventArgs type in API reference">RecurringAppointmentBeginningEditEventArgs&gt;</a></a></td>
-    <td>Raised when a user double-taps or presses Delete on a recurring appointment, allowing the edit mode (single occurrence or series) to be chosen.</td>
+    <td>Triggered when a user double-taps or presses Delete on a recurring appointment, allowing the edit mode (single occurrence or series) to be chosen.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ReminderAlertOpening" aria-label="View ReminderAlertOpening event in API reference">ReminderAlertOpening</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.ReminderAlertOpeningEventArgs.html" aria-label="View ReminderAlertOpeningEventArgs type in API reference">ReminderAlertOpeningEventArgs&gt;</a></a></td>
-    <td>Raised before a reminder alert is shown for an appointment, allowing the alert to be customized or dismissed. Requires EnableReminder to be true.</td>
+    <td>Triggered before a reminder alert is shown for an appointment, allowing the alert to be customized or dismissed. Requires EnableReminder to be true.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_RightTapped" aria-label="View RightTapped event in API reference">RightTapped</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerRightTappedEventArgs.html" aria-label="View SchedulerRightTappedEventArgs type in API reference">SchedulerRightTappedEventArgs&gt;</a></a></td>
-    <td>Raised when a user right-taps a scheduler element on Windows or macOS. Not raised on Android or iOS.</td>
+    <td>Triggered when a user right-taps a scheduler element on Windows or macOS. Not raised on Android or iOS.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_SelectionChanged" aria-label="View SelectionChanged event in API reference">SelectionChanged</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerSelectionChangedEventArgs.html" aria-label="View SchedulerSelectionChangedEventArgs type in API reference">SchedulerSelectionChangedEventArgs&gt;</a></a></td>
-    <td>Raised when the selected date, timeslot, or appointment changes, providing the previous and new selected values.</td>
+    <td>Triggered when the selected date, timeslot, or appointment changes, providing the previous and new selected values.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_Tapped" aria-label="View Tapped event in API reference">Tapped</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTappedEventArgs.html" aria-label="View SchedulerTappedEventArgs type in API reference">SchedulerTappedEventArgs&gt;</a></a></td>
-    <td>Raised when a user taps a scheduler element, providing the appointment, date, and scheduler element that was tapped.</td>
+    <td>Triggered when a user taps a scheduler element, providing the appointment, date, and scheduler element that was tapped.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_ViewChanged" aria-label="View ViewChanged event in API reference">ViewChanged</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewChangedEventArgs.html" aria-label="View SchedulerViewChangedEventArgs type in API reference">SchedulerViewChangedEventArgs&gt;</a></a></td>
-    <td>Raised whenever the active view or the visible date range changes, providing the previous and new views and visible dates.</td>
+    <td>Triggered whenever the active view or the visible date range changes, providing the previous and new views and visible dates.</td>
 </tr>
 </table>
