@@ -6,6 +6,7 @@ description: Use the built-in appointment editor popup to create, edit, and dele
 control: SfScheduler
 documentation: ug
 keywords : .net maui scheduler, .net maui scheduler appointment editor, net maui appointment editing, .net maui create appointments, .net maui edit appointments, .net maui delete appointments, maui scheduler editor.
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appointment Editor in .NET MAUI Scheduler
@@ -149,7 +150,7 @@ N> These methods are applicable only when the appointment editor is enabled thro
 
 The add appointment popup is used to create a new appointment by entering details such as subject, start time, end time, location, recurrence information, and notes.
 
-To open the add appointment popup, call the `OpenAddPopup` method and specify the new appointment's start date and time using the `DateTime startDate` parameter. The popup is displayed with the specified start date and time preselected.
+To open the add appointment popup, call the [OpenAddPopup](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_OpenAddPopup_System_DateTime_) method and specify the new appointment's start date and time using the `DateTime startDate` parameter. The popup is displayed with the specified start date and time preselected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -193,7 +194,7 @@ public partial class MainPage : ContentPage
 
 The edit appointment popup is used to modify the details of an existing appointment.
 
-Use the `OpenEditPopup(object appointment)` method to open the editor for the specified appointment. The appointment parameter specifies the appointment whose details are populated in the popup for editing. The appointment can be a [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) or a custom appointment object.
+Use the [OpenEditPopup(object appointment)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_OpenEditPopup_System_Object_) method to open the editor for the specified appointment. The appointment parameter specifies the appointment whose details are populated in the popup for editing. The appointment can be a SchedulerAppointment or a custom appointment object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,7 +250,7 @@ public partial class MainPage : ContentPage
 
 The quick info popup provides a compact view of appointment details.
 
-Use the `OpenQuickInfoPopup(object appointment)` method to display the quick info popup. The appointment parameter specifies the appointment whose details are displayed in the popup. The appointment can be a [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) or a custom appointment object.
+Use the [OpenQuickInfoPopup(object appointment)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_OpenQuickInfoPopup_System_Object_) method to display the quick info popup. The appointment parameter specifies the appointment whose details are displayed in the popup. The appointment can be a SchedulerAppointment or a custom appointment object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -305,7 +306,7 @@ public partial class MainPage : ContentPage
 
 The delete confirmation popup is used to confirm the removal of an appointment before it is deleted. 
 
-Use the `DeleteAppointment(object appointment)` method to display the delete confirmation popup. The appointment parameter specifies the appointment for which the confirmation is displayed. The appointment can be a [SchedulerAppointment](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointment.html) or a custom appointment object.
+Use the [DeleteAppointment(object appointment)](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_DeleteAppointment_System_Object_) method to display the delete confirmation popup. The appointment parameter specifies the appointment for which the confirmation is displayed. The appointment can be a SchedulerAppointment or a custom appointment object.
 
 {% tabs %}
 {% highlight xaml %}
