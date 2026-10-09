@@ -91,4 +91,28 @@ By default, the Scheduler highlights the current date in the date header on all 
 
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs5" %}
 
+## Customizing current time indicator
+
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/javascript/documentation/api/schedule/#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
+
+* `showTime` — When `true`, displays the current time label (hours and minutes) on the indicator. Default: `true`.
+* `showPreviousDates` — When `true`, extends the indicator line to span across previous dates in the view. Default: `true`.
+* `onTop` — When `true`, positions the indicator line on top of appointments. When `false`, appointments appear on top of the indicator. Default: `true`.
+
+> **Note:** The current time indicator customization is only applicable in views that display a time grid (Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views) when both [`timeScale`](https://ej2.syncfusion.com/documentation/api/schedule#timescale) is enabled and [`showTimeIndicator`](https://ej2.syncfusion.com/documentation/api/schedule#showtimeindicator) is set to `true`.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/scheduler-sdk/javascript/schedule/timescale-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/scheduler-sdk/javascript/schedule/timescale-cs6/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="es5-datasource.js" %}
+{% include code-snippet/scheduler-sdk/javascript/schedule/timescale-cs6/es5-datasource.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/javascript/schedule/timescale-cs6" %}
+
 > Refer to the [JavaScript Scheduler feature tour](https://www.syncfusion.com/scheduler-sdk/javascript-scheduler) for a comprehensive overview of its capabilities. Explore the [JavaScript Scheduler example](https://ej2.syncfusion.com/demos/#/material/schedule/overview.html) to see how to present and manipulate data effectively.
