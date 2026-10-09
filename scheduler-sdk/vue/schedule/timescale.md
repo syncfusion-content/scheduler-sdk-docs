@@ -86,4 +86,25 @@ To disable the current time indicator, set the [`showTimeIndicator`](../api/sche
         
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs4" %}
 
+## Customizing current time indicator
+
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/vue/documentation/api/schedule/index-default#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
+
+* `showTime` - When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
+* `showPreviousDates` - When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
+* `onTop` - When set to `true`, positions the indicator line on top of appointments. When set to `false`, appointments appear on top of the indicator. The default value is `true`.
+
+> **Note:** The current time indicator customization is only applicable in views that display a time grid (Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views) when both [`timeScale`](../api/schedule#timescale) is enabled and [`showTimeIndicator`](../api/schedule#showtimeindicator) is set to `true`.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/scheduler-sdk/vue/schedule/timescale-cs5/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/scheduler-sdk/vue/schedule/timescale-cs5/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs5" %}
+
 > For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
