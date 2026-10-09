@@ -92,7 +92,7 @@ By default, the Scheduler highlights the current date in the date header on all 
 
 ## Customizing current time indicator
 
-The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/documentation/api/schedule/#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/documentation/api/schedule/index-default#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
 
 * `showTime` – When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
 * `showPreviousDates` – When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
