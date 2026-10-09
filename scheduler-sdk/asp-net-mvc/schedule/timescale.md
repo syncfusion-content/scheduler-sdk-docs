@@ -81,4 +81,25 @@ By default, the Scheduler indicates the current date with a highlighted date hea
 
 
 
+## Customizing current time indicator
+
+The appearance and behavior of the current time indicator can be customized using the [`CurrentTimeIndicatorSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentTimeIndicatorSettings) property. This property includes the following options to control different aspects of the time indicator:
+
+* `showTime` - When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
+* `showPreviousDates` - When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
+* `onTop` - When set to `true`, positions the indicator line on top of appointments. When set to `false`, appointments appear on top of the indicator. The default value is `false`.
+
+> **Note:** The current time indicator customization is only applicable in views that display a time grid (Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views) when both [`TimeScale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeScale) is enabled and [`ShowTimeIndicator`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowTimeIndicator) is set to `true`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/timescale/currenttimeindicatorsettings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/timescale/currenttimeindicatorsettings/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
 N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.
