@@ -98,7 +98,7 @@ By default, Scheduler indicates the current date with a highlighted date header 
 
 ## Customizing current time indicator
 
-The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/index-default#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
 
 * `showTime` - When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
 * `showPreviousDates` - When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
@@ -108,14 +108,14 @@ The appearance and behavior of the current time indicator can be customized usin
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs6/src/app.component.html %}
+{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs2/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs6/src/app.component.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs6/src/main.ts %}
+{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
