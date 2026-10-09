@@ -1,0 +1,137 @@
+@using Syncfusion.EJ2.Schedule
+
+<div class="control-section">
+    <div class="schedule-control-section">
+        @(Html.EJS().Schedule("schedule")
+            .Width("100%")
+            .Height("550px")
+            .Views(view => {
+                view.Option(View.Day).Add();
+                view.Option(View.Week).Add();
+                view.Option(View.WorkWeek).Add();
+                view.Option(View.TimelineDay).Add();
+                view.Option(View.TimelineWeek).Add();
+                view.Option(View.TimelineWorkWeek).Add();
+            })
+            .SelectedDate(new DateTime(2018, 2, 15))
+            .ShowTimeIndicator(true)
+            .TimeScale(ts => ts.Enable(true).Interval(60).SlotCount(4))
+            .CurrentTimeIndicatorSettings(new ScheduleCurrentTimeIndicatorSettings { ShowTime = true, ShowPreviousDates = true, OnTop = true })
+            .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+            .Render()
+        )
+    </div>
+</div>
+
+<div class="property-section">
+    <h4>Properties</h4>
+    <table id="property-grid" class="property-panel-table" style="width: 100%;">
+        <tbody>
+            <tr style="height: 50px">
+                <td style="width: 30%">
+                    <div>Show Time Indicator</div>
+                </td>
+                <td style="width: 70%">
+                    <div id="master-toggle">
+                        <input type="checkbox" id="masterToggle" checked="checked" />
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 50px">
+                <td style="width: 30%">
+                    <div>Show Time</div>
+                </td>
+                <td style="width: 70%">
+                    <div>
+                        <input type="checkbox" id="showTimeToggle" checked="checked" />
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 50px">
+                <td style="width: 30%">
+                    <div>Show Previous Dates</div>
+                </td>
+                <td style="width: 70%">
+                    <div>
+                        <input type="checkbox" id="showPreviousDatesToggle" checked="checked" />
+                    </div>
+                </td>
+            </tr>
+            <tr style="height: 50px">
+                <td style="width: 30%">
+                    <div>On Top</div>
+                </td>
+                <td style="width: 70%">
+                    <div>
+                        <input type="checkbox" id="onTopToggle" checked="checked" />
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    var masterToggle = document.getElementById('masterToggle');
+    var showTimeToggle = document.getElementById('showTimeToggle');
+    var showPreviousDatesToggle = document.getElementById('showPreviousDatesToggle');
+    var onTopToggle = document.getElementById('onTopToggle');
+    var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+
+    function applyChanges() {
+        if (!masterToggle.checked) {
+            scheduleObj.showTimeIndicator = false;
+            return;
+        }
+        scheduleObj.showTimeIndicator = true;
+        scheduleObj.currentTimeIndicatorSettings = {
+            showTime: showTimeToggle.checked,
+            showPreviousDates: showPreviousDatesToggle.checked,
+            onTop: onTopToggle.checked
+        };
+    }
+
+    masterToggle.addEventListener('change', applyChanges);
+    showTimeToggle.addEventListener('change', applyChanges);
+    showPreviousDatesToggle.addEventListener('change', applyChanges);
+    onTopToggle.addEventListener('change', applyChanges);
+</script>
+
+<style>
+    .control-section {
+        margin-bottom: 20px;
+    }
+
+    .schedule-control-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .property-section {
+        border: 1px solid #d0d0d0;
+        border-radius: 4px;
+        padding: 15px;
+    }
+
+    .property-panel-table {
+        border-collapse: collapse;
+    }
+
+    .property-panel-table td {
+        border: 1px solid #d9d9d9;
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    #master-toggle, #showTimeToggle, #showPreviousDatesToggle, #onTopToggle {
+        display: flex;
+        align-items: center;
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+</style>
