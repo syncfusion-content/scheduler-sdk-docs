@@ -96,4 +96,29 @@ By default, Scheduler indicates the current date with a highlighted date header 
 
 ![Highlight current Time](images/schedule-highlight.png)
 
+## Customizing current time indicator
+
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/index-default#currenttimeindicatorsettings) property. This property includes the following options to control different aspects of the time indicator:
+
+* `showTime` - When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
+* `showPreviousDates` - When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
+* `onTop` - When set to `true`, positions the indicator line on top of appointments. When set to `false`, appointments appear on top of the indicator. The default value is `true`.
+
+> **Note:** The current time indicator customization is only applicable in views that display a time grid (Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views) when both [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timescale) is enabled and [`showTimeIndicator`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showtimeindicator) is set to `true`.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs2/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/scheduler-sdk/angular/schedule/timescale-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://helpstaging.syncfusion.com/samples/scheduler-sdk/angular/schedule/timescale-cs2" %}
+
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to see how to present and manipulate data.
