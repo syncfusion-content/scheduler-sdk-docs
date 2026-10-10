@@ -11,25 +11,14 @@ documentation: ug
 
 # Skip a month in the Calendar
 
-The following example demonstrates how to skip a month in the Calendar while clicking the previous and next icons. In the example below, the [navigated](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Navigated) event is used to skip a month with [navigateTo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Navigated) method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/howto/skipmonth/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Skipmonth.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following example demonstrates how to skip a month in the Calendar while clicking the previous and next icons. In the example below, the [navigated](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Navigated) event is used to skip a month with [navigateTo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Navigated) method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/howto/skipmonth/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Skipmonth.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
+{% endhighlight %}
+{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

@@ -15,8 +15,6 @@ To achieve the client side validation in a DatePicker control by using [Essentia
 
 In this below example, the required field validation is implemented by mapping the name attribute value to the rules property. It will validate the DatePicker control and display the validation message when the textbox value is empty during form post back or focus out.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/how-to/validation/tagHelper %}
@@ -25,16 +23,3 @@ In this below example, the required field validation is implemented by mapping t
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/how-to/validation/validation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/how-to/validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Validation.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/how-to/validation/validation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

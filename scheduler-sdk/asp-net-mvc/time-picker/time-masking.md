@@ -13,24 +13,11 @@ documentation: ug
 
 TimePicker has `enableMask` property that provides the option to enable the built-in date masking support.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-input/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-input/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The mask pattern is defined based on the provided time format to the component. If the format is not specified, the mask pattern is formed based on the default format of the current culture.
 
@@ -41,19 +28,6 @@ The mask pattern is defined based on the provided time format to the component. 
 
 The following example demonstrates default and custom format of TimePicker component with mask.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-format/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Date-format.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-format/date-format.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-format/razor %}
@@ -62,9 +36,6 @@ The following example demonstrates default and custom format of TimePicker compo
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-format/date-format.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Configure Mask Placeholder
 
@@ -85,19 +56,6 @@ L10n.load({
 
 The following example demonstrates default and customized mask placeholder value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-placeholder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mask-placeholder.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-placeholder/mask-placeholder.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-placeholder/razor %}
@@ -106,6 +64,3 @@ The following example demonstrates default and customized mask placeholder value
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/mask-module/mask-placeholder/mask-placeholder.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-

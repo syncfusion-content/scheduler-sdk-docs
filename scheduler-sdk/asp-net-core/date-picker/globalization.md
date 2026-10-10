@@ -71,26 +71,13 @@ N> The `Localization` library allows to localize default text content of the Dat
 
 The following example demonstrates the DatePicker in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/globalization/globalization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## Right-To-Left
 
@@ -98,22 +85,10 @@ The DatePicker supports RTL (right-to-left) functionality for languages like Ara
 
 The following code example initializes the DatePicker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/globalization/rtl/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}

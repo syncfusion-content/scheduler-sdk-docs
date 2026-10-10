@@ -17,11 +17,9 @@ By default the DateRangePicker's format is based on the culture. You can also se
 
 N> Once the date format property has been defined, it will be common to all the cultures.
 
-To know more about the date format standards, refer to the [`Internationalization Date Format`](https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/globalization) section.
+To know more about the date format standards, refer to the [`Internationalization Date Format`](https://help.syncfusion.com/scheduler-sdk/asp-net-core/daterange-picker/globalization) section.
 
 The following example demonstrates the DateRangePicker with the custom format (`dd/MMM/yy hh:mm a`).
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -32,18 +30,6 @@ The following example demonstrates the DateRangePicker with the custom format (`
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/date-format/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Date-format.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/date-format/date-format.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Input formats 
 
 The [`inputFormats`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.calendars.daterangepicker.html#properties) property in the DateRangePicker control allows users to enter dates in various formats, providing flexibility in date entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
@@ -51,8 +37,6 @@ The [`inputFormats`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej
 When the user types the date in any of the specified input formats, it will be automatically converted to the display format after pressing Enter, the Tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.
 
 The following example demonstrates the DateRangePicker with multiple input formats.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -62,15 +46,3 @@ The following example demonstrates the DateRangePicker with multiple input forma
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/input-format/input-format.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/input-format/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Date-format.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/input-format/input-format.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

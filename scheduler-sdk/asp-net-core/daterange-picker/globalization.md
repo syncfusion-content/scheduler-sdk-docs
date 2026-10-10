@@ -84,26 +84,13 @@ N> The `Localization` library allows to localize default text content of the Dat
 
 The following example demonstrates the DateRangePicker in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/globalization/globalization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## Right-To-Left
 
@@ -113,22 +100,10 @@ The code example demonstrates the DateRangePicker component in `Arabic` culture.
 
 The following example demonstrates DateRangePicker in `Arabic` culture with right-to-left direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/globalization/rtl/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}

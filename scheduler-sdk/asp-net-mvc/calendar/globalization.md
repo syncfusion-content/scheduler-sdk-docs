@@ -15,7 +15,7 @@ Globalization is the combination of  adapting the control to various languages b
 
 By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [Essential JavaScript 2 Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) package to parse and format the date object based on the culture by uses the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data.
 
-* Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) property.
+* Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) property.
 
 To go with the different culture other than `English`, follow the below steps.
 
@@ -50,7 +50,7 @@ In ASP.NET MVC refer the culture files directly from `/node_modules/cldr-data` l
 
 ```
 
-N> The `Localization` library allows you to localize default text content of the Calendar. The Calendar control has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) value and translation object.
+N> The `Localization` library allows you to localize default text content of the Calendar. The Calendar control has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_Locale) value and translation object.
 
 | Locale keywords |Text |
 | ----- | ----- |
@@ -71,48 +71,24 @@ N> The `Localization` library allows you to localize default text content of the
 
 The following example demonstrates the Calendar in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/international/international/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/international/international/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ## Right-To-Left
 
-The Calendar supports right-to-left functionality for languages like Arabic, Hebrew, etc. To display the text in the right-to-left direction, use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_EnableRtl) property.
+The Calendar supports right-to-left functionality for languages like Arabic, Hebrew, etc. To display the text in the right-to-left direction, use [enableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_EnableRtl) property.
 
 The following example demonstrates the Calendar in `Arabic` culture with Right-To-Left direction.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/international/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/international/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
+{% endhighlight %}
+{% endtabs %}

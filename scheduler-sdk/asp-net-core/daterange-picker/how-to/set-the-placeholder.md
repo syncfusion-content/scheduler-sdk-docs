@@ -15,22 +15,10 @@ The following example demonstrates how to set [placeholder](https://help.syncfus
 
 Using `placeholder` you can display a short hint in the input element.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/how-to/placeholder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/how-to/placeholder/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}

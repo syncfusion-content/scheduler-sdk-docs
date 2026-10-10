@@ -19,8 +19,6 @@ You can restrict the minimum and maximum date that can be allowed as start and e
 * `min` – sets the minimum date that can be selected as startDate.
 * `max` – sets the maximum date that can be selected as endDate.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/daterange/tagHelper %}
@@ -29,20 +27,6 @@ You can restrict the minimum and maximum date that can be allowed as start and e
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/daterange/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/daterange/daterange.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 N> If the value of `min` or `max` property is changed through code behind, update the `start date` and `end date` properties to set within the range. Or else , if the `start` and `end` date is out of specified date range, a validation error class will be appended to the input element. If `strictMode` is enabled, and both the start, end date is lesser than the min date then start and end date will be updated with `min` date. If both the start and end date is higher than the max date then start and end date will be updated with `max` date. Or else, if startDate is less than `min` date, startDate will be updated with `min` date or if endDate is greater than `max` date, endDate will be updated with the `max` date.
 
@@ -53,32 +37,17 @@ Span between ranges can be limited to avoid excess or less days selection toward
 * `minDays` - Sets the minimum number of days between start and end date.
 * `maxDays` - Sets the maximum number of days between start and end date.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/rangespan/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rangespan.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/rangespan/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Rangespan.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## Strict mode
 
 DateRangePicker provides an option to limit the user towards entering the valid date. With strict mode, you can set only the valid date. If any invalid range is specified, the date range value resets to previous value. This restriction can be availed by enabling [strictMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_StrictMode) property as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -88,16 +57,3 @@ DateRangePicker provides an option to limit the user towards entering the valid 
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/strictmode/strickmode.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/strictmode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Strickmode.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/range-restriction/strictmode/strickmode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

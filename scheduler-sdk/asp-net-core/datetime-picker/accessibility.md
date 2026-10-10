@@ -107,8 +107,6 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 
 N> To focus the DateTimePicker control use the `alt+t` keys.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/accessibility/tagHelper %}
@@ -116,18 +114,6 @@ N> To focus the DateTimePicker control use the `alt+t` keys.
 {% highlight c# tabtitle="Accessibility.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ## Ensuring accessibility
 

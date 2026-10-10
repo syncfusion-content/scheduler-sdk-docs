@@ -15,55 +15,29 @@ The DateRangePicker is available for UI customization that can be achieved by us
 
 ## Day cell format
 
-The DateRangePicker is available for UI customization based on your application requirements. It can be achieved by using [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_RenderDayCell) event that provides an option to customize each day cell on rendering.
+The DateRangePicker is available for UI customization based on your application requirements. It can be achieved by using [renderDayCell](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_RenderDayCell) event that provides an option to customize each day cell on rendering.
 
 The following example disables the weekends of every month by using `renderDayCell` event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/customization/daycell/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Daycell.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/customization/daycell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daycell.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ## First day of week
 
-Start day in a week will differ based on the culture, but you can also customize this based on the application needs. For this, you have to make use of [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FirstDayOfWeek) property. By default, first day of a week in en-US is Sunday.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/customization/firstday/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Start day in a week will differ based on the culture, but you can also customize this based on the application needs. For this, you have to make use of [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FirstDayOfWeek) property. By default, first day of a week in en-US is Sunday.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/customization/firstday/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ## See Also
 

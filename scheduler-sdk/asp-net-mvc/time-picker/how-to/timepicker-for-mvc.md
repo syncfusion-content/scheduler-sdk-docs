@@ -15,19 +15,6 @@ The TimePickerFor component can be rendered by passing a value from the model. T
 
 The following sample demonstrates how to retrieve the value in the controller by rendering the  TimePickerFor component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/how-to/timepicker-for/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Timepickerfor.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/how-to/timepicker-for/timepickerfor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/how-to/timepicker-for/razor %}
@@ -36,9 +23,6 @@ The following sample demonstrates how to retrieve the value in the controller by
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/how-to/timepicker-for/timepickerfor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Selected value will be retrieved as below.
 

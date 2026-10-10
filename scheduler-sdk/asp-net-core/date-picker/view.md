@@ -25,26 +25,13 @@ You can use the [start](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 The following example demonstrates how to create a DatePicker with `decade` as initial rendering view.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/view/start/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Start.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/view/start/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ## Depth view
 
@@ -52,25 +39,12 @@ Define the [depth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 N> Always the depth view has to be smaller than the start view, otherwise the view restriction will be not restricted.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/view/depth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Depth.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/view/depth/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Depth.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
+{% endtabs %}
 
-
-
-N> To know more about Calendar views refer the Calendar's [Calendar Views](https://ej2.syncfusion.com/aspnetcore/documentation/calendar/calendar-views) section.
+N> To know more about Calendar views refer the Calendar's [Calendar Views](https://help.syncfusion.com/scheduler-sdk/asp-net-core/calendar/calendar-views) section.

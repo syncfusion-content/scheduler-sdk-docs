@@ -81,7 +81,7 @@ N> It supports the following list of shortcut keys to interact with the TimePick
 | <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>⌥</kbd> + <kbd>↓</kbd> | Opens the popup. |
 | <kbd>Esc</kbd> | <kbd>Esc</kbd> | Closes the popup. |
 
-N> To focusout the TimePicker component, use the `t` keys. For additional information about native event, [click](https://blazor.syncfusion.com/documentation/timepicker/native-events) here.
+N> To focusout the TimePicker component, use the `t` keys. For additional information about native event, [click](https://help.syncfusion.com/scheduler-sdk/blazor/time-picker/native-events) here.
 
 ```cshtml
 @using Syncfusion.Blazor.Calendars

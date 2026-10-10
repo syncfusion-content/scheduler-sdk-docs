@@ -11,26 +11,14 @@ documentation: ug
 
 # Set the placeholder
 
-The following example demonstrates how to set [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Placeholder) in the DateRangePicker control.
+The following example demonstrates how to set [placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Placeholder) in the DateRangePicker control.
 
 Using `placeholder` you can display a short hint in the input element.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/how-to/placeholder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/how-to/placeholder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endhighlight %}
+{% endtabs %}

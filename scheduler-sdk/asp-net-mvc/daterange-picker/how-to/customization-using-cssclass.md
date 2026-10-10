@@ -11,7 +11,7 @@ documentation: ug
 
 # Customization using cssClass
 
-To customize UI, you can make use of [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_CssClass) that will be added to the DateRangePicker control as the root CSS class. With this CSS class, you can override existing styles of DateRangePicker.
+To customize UI, you can make use of [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_CssClass) that will be added to the DateRangePicker control as the root CSS class. With this CSS class, you can override existing styles of DateRangePicker.
 
 Following is the list of classes that provides flexible way to customize the DateRangePicker control.
 
@@ -40,22 +40,10 @@ Following is the list of classes that provides flexible way to customize the Dat
 | e-selected | Applied to Calendar selected dates.|
 | e-disabled | Applied to Calendar disabled dates.|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/how-to/css/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/how-to/css/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endhighlight %}
+{% endtabs %}

@@ -11,24 +11,12 @@ documentation: ug
 
 # Disable the component
 
-To disable the DateTimePicker, use its [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Enabled) property to `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/disable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disable.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To disable the DateTimePicker, use its [enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Enabled) property to `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/disable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Disable.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endhighlight %}
+{% endtabs %}

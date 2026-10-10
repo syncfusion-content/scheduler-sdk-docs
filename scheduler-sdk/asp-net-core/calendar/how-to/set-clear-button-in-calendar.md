@@ -21,23 +21,11 @@ To configure `clear` button in Calendar UI, do the following:
 
 4. Bind the required event handler to the button tag to update the value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/settoday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Settoday.cs" %}
 {% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/settoday/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Settoday.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

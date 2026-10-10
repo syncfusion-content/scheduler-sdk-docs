@@ -19,26 +19,13 @@ The DateTimePicker is available for UI customization based on your application r
 
 The following example disables the weekends of every month by using `renderDayCell` event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/daytimecellformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daytimecellformat.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/daytimecellformat/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Daytimecellformat.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## See Also
 

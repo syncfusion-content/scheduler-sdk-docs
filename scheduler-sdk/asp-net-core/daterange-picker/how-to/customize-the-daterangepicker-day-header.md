@@ -24,25 +24,13 @@ You can find the possible formats on below.
 | `Abbreviated` | Sets the min format of day name (like Sun ) in day header. |
 | `Wide` | Sets the long format of day name (like Sunday ) in day header. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/how-to/headerformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/how-to/headerformat/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}
 
 ![daterangepicker](../images/narrow.png)
 

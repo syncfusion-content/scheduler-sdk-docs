@@ -14,8 +14,6 @@ To achieve client side validation in a TimePicker component, use [Essential Java
 
 In the following example, the required field validation is implemented by mapping the name attribute value to the rules property. It validates the TimePicker component and displays the validation message when the textbox value is empty during form post back or focus out.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/how-to/validation/tagHelper %}
@@ -24,15 +22,3 @@ In the following example, the required field validation is implemented by mappin
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/how-to/validation/validation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/how-to/validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Validation.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/how-to/validation/validation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

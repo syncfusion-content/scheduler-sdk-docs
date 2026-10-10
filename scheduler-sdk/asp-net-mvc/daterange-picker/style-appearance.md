@@ -157,17 +157,11 @@ Use the following CSS to customize the selected date cell grid in the DateRangeP
 
 ## Full screen mode support in mobiles and tablets
 
-The DateRangePicker full-screen mode feature enables users to view the popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker, simply set the [FullScreenMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
+The DateRangePicker full-screen mode feature enables users to view the popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker, simply set the [FullScreenMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
 
-{% if page.publishingplatform == "aspnet-core" %}
-```html
-<ejs-daterangepicker id="range" FullScreenMode=true></ejs-daterangepicker>
-```
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 ```html
 @Html.EJS().DateRangePicker("range").FullScreenMode(true).Render()
 ```
-{% endif %}
+
 ![DateRangePickerDefaultFullScreen](./images/DateRangePickerDefaultFullScreen.gif)
 ![DateRangePickerPresetsFullScreen](./images/DateRangePickerrPresetsFullScreen.gif)

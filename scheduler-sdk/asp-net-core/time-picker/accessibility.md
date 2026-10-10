@@ -84,8 +84,6 @@ N> It supports the following list of shortcut keys to interact with the TimePick
 
 In the below sample use the `alt+t` keys to focus the TimePicker control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/accessibility/tagHelper %}
@@ -93,17 +91,6 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% highlight c# tabtitle="Accessibility.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Ensuring accessibility
 

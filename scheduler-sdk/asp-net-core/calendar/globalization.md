@@ -71,8 +71,6 @@ N> The `Localization` library allows you to localize default text content of the
 
 The following example demonstrates the Calendar in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/international/tagHelper %}
@@ -80,25 +78,11 @@ The following example demonstrates the Calendar in `German` culture.
 {% highlight c# tabtitle="International.cs" %}
 {% endhighlight %}{% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/international/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
-
 ## Right-To-Left
 
 The Calendar supports right-to-left functionality for languages like Arabic, Hebrew, etc. To display the text in the right-to-left direction, use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_EnableRtl) property.
 
 The following example demonstrates the Calendar in `Arabic` culture with Right-To-Left direction.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -106,14 +90,3 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
 {% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-

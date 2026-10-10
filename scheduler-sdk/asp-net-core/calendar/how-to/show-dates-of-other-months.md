@@ -28,23 +28,11 @@ Using the following styles, you can bring the dates of other months to visibilit
 }
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/showdates/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Showdates.cs" %}
 {% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/showdates/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Showdates.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

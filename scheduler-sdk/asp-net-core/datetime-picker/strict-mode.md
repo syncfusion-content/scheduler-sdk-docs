@@ -17,8 +17,6 @@ The following example demonstrates the DateTimePicker in `strictMode` with min/m
 
 The following example demonstrates the DateTimePicker with strictMode `true`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/strict-mode/tagHelper %}
@@ -28,27 +26,11 @@ The following example demonstrates the DateTimePicker with strictMode `true`.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/strict-mode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Strictmode.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/strict-mode/strictmode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 By default, the DateTimePicker act in strictMode `false` state allows to enter the invalid or out-of-range datetime in textbox.
 
 If the datetime is out-of-range or invalid, then the model value will be set to `out of range` datetime value or `null` respectively with highlighted `error` class to indicate that the datetime is out of range or invalid.
 
 The following example demonstrates the `strictMode` as `false`. Here, it allows to enter the valid or invalid value in textbox. If you are entering the out-of-range or invalid datetime value, then the model value will be set to `out of range` datetime value or `null` respectively with highlighted `error` class to indicate that the datetime is out of range or invalid.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -58,19 +40,5 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 {% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/strict-mode-disabled/strictmode.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/strict-mode-disabled/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Strictmode.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/strict-mode-disabled/strictmode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 N> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.

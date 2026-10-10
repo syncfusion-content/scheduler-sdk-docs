@@ -62,8 +62,6 @@ function loadCultureFiles(name) {
 
 The following example demonstrates the TimePicker in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/globalization/tagHelper %}
@@ -71,19 +69,6 @@ The following example demonstrates the TimePicker in `German` culture.
 {% highlight c# tabtitle="Globalization.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/globalization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Right-To-Left
 
@@ -93,8 +78,6 @@ The following code example demonstrates the TimePicker control in `Arabic` cultu
 
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/rtl/tagHelper %}
@@ -102,15 +85,3 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% highlight c# tabtitle="Rtl.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

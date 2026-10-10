@@ -30,22 +30,10 @@ The below sample demonstrates customization of text appearance in a textbox, pop
 | e-hover | Applied to LI element hovering time. |
 | e-active | Applied to active LI element. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/how-to/css/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/how-to/css/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}

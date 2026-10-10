@@ -85,25 +85,11 @@ It supports the following list of shortcut keys:
 
 N> To focus the Calendar control, use `alt+t` keys.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/accessibility/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/accessibility/accessibility.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).
 

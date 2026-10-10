@@ -19,8 +19,6 @@ The value property depends on the min/max with respect to [strictMode](https://h
 
 The below example allows selecting a date within the range from 7th to 27th day in a month.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/daterange/tagHelper %}
@@ -29,19 +27,5 @@ The below example allows selecting a date within the range from 7th to 27th day 
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/daterange/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/daterange/daterange.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 N> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.

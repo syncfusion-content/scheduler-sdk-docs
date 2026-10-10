@@ -15,19 +15,6 @@ Post back is the action of posting the data back to the submitting page. In the 
 
 In this example, the content type is "application/json" and the request body is a JSON object. In the action method, you can pass a model as the parameter. The `POST` method determines how data is sent from the client via the form, to the server.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/postback-selected-dates/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Postback-selected-dates-mvc.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/postback-selected-dates/postback-selected-dates-mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/postback-selected-dates/razor %}
@@ -36,5 +23,3 @@ In this example, the content type is "application/json" and the request body is 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/postback-selected-dates/postback-selected-dates-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-

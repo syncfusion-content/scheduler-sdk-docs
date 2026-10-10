@@ -36,26 +36,13 @@ Below is the list of classes that provides flexible way to customize the DatePic
 
 The following example disables the weekends of every month using `renderDayCell` event. Here, the `e-disabled` class is used to highlight the disabled date.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## See Also
 
