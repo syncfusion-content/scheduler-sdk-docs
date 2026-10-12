@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" currentView="Week" selectedDate="new DateTime(DateTime.Now.Year, 1, 22)">
+    <e-schedule-timescale enable="true" interval="60" slotCount="2"></e-schedule-timescale>
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments" enableBuffer="true">
+        <e-eventsettings-fields id="Id">
+            <e-field-subject name="Subject"></e-field-subject>
+            <e-field-starttime name="StartTime"></e-field-starttime>
+            <e-field-endtime name="EndTime"></e-field-endtime>
+            <e-field-location name="Location"></e-field-location>
+            <e-field-description name="Description"></e-field-description>
+            <e-field-bufferbefore name="BufferBefore"></e-field-bufferbefore>
+            <e-field-bufferafter name="BufferAfter"></e-field-bufferafter>
+        </e-eventsettings-fields>
+    </e-schedule-eventsettings>
+</ejs-schedule>
