@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Daterangepicker | Syncfusion ASP.NET Core Daterangepicker Control
+title: Daterangepicker For Core | Syncfusion ASP.NET Core Daterangepicker
 description: Learn here all about Daterangepicker for core in Syncfusion ASP.NET Core Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Daterangepicker For Core

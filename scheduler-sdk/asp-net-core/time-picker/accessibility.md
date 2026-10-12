@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ASP.NET Core Timepicker | Syncfusion
+title: Accessibility in ASP.NET Core TimePicker | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ASP.NET Core Timepicker
+# Accessibility in ASP.NET Core TimePicker
 
 The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. It especially it tracks the dynamic value changes and DOM changes.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Datepicker Popup On Input Click | ASP.NET Core Datepicker Control
+title: Open Datepicker Popup | Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about open Datepicker popup on input click in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Open Datepicker Popup On Input Click

@@ -4,7 +4,6 @@ title: Render Datetimepicker| Syncfusion ASP.NET MVC Datetimepicker Control
 description: Learn here all about Datetimepicker for Mvc in Syncfusion ASP.NET MVC Datetimepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Datetimepicker For Mvc
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Render Daterangepicker in Syncfusion ASP.NET MVC Daterangepicker
 description: Learn here all about Daterangepicker for Mvc in Syncfusion ASP.NET MVC Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Daterangepicker For Mvc
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Day Header in Syncfusion ASP.NET MVC Daterangepicker Control
-description: Learn here all about how to customize the Daterangepicker day header in Syncfusion ASP.NET MVC Daterangepicker component of syncfusion and more.
+title: Day Header in Syncfusion ASP.NET MVC DateRangePicker Control
+description: Learn here all about how to customize the DateRangePicker day header in Syncfusion ASP.NET MVC DateRangePicker component of syncfusion and more.
 platform: scheduler-sdk
-control: Customize The Daterangepicker Day Header
+control: Customize The DateRangePicker Day Header
 documentation: ug
 ---
 
 
-# Customize the daterangepicker day header
+# Customize the DateRangePicker Day Header
 
 You can change the format of the day that has to be displayed in header using [dayHeaderFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_DayHeaderFormat) property.
 

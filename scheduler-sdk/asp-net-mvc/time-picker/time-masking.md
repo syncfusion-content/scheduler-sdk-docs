@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Time Masking in ASP.NET MVC Timepicker Component
-description: Learn here all about Time Masking in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
+title: Time Masking in Syncfusion ASP.NET MVC Timepicker Control
+description: Learn here all about Time Masking in Syncfusion ASP.NET MVC Timepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Time Masking
 documentation: ug

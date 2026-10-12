@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Client Side Validation in ASP.NET Core Timepicker | Syncfusion
+title: Client Side Validation in ASP.NET Core TimePicker | Syncfusion
 description: Learn here all about Client Side Validation Using Form Validator in Syncfusion ASP.NET Core Timepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Client Side Validation Using Form Validator
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Client Side Validation Using Form Validator in ASP.NET Core Timepicker
+# Client Side Validation Using Form Validator in ASP.NET Core TimePicker
 
 To achieve client side validation in a TimePicker component, use [Essential JavaScript 2 FormValidator](https://ej2.syncfusion.com/documentation/form-validator/validation-rules). It provides an option to customize feedback error messages to the corresponding fields for taking action and resolving the issue.
 

@@ -4,7 +4,6 @@ title: Disable State | Syncfusion ASP.NET MVC Daterangepicker Control
 description: Learn here all about how to disable the Daterangepicker component in Syncfusion ASP.NET MVC Daterangepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Disable The Daterangepicker Component
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

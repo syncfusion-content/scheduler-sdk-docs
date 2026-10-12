@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ASP.NET Core Datepicker Component
-description: Learn here all about customization in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in Syncfusion ASP.NET Core Datepicker Control
+description: Learn here all about customization in Syncfusion ASP.NET Core Datepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
 documentation: ug

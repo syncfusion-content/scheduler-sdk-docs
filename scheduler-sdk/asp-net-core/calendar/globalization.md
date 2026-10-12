@@ -75,7 +75,8 @@ The following example demonstrates the Calendar in `German` culture.
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/international/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Right-To-Left
 

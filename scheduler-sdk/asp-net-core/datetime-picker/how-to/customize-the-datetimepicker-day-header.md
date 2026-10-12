@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Day Header in Syncfusion ASP.NET Core Datetimepicker Control
+title: Day Header in Syncfusion ASP.NET Core DateTimePicker Control
 description: Learn here all about how to customize the Datetimepicker Day Header in Syncfusion ASP.NET Core Datetimepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Customize The Datetimepicker Day Header
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Customize the datetimepicker day header
+# Customize the DateTimePicker day header
 
 You can change the format of the day that has to be displayed in header using [dayHeaderFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_DayHeaderFormat) property.
 
