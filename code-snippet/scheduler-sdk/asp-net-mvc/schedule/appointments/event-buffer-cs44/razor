@@ -1,0 +1,43 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    ViewBag.bufferTemplate = "<div style='height:100%;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;text-align:center;'><div>${bufferType === 'before' ? 'Setup' : 'Wrap-up'}<br/>${bufferType === 'before' ? data.BufferBefore : data.BufferAfter} min</div></div>";
+}
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .CurrentView(View.TimelineWeek)
+    .SelectedDate(new DateTime(DateTime.Now.Year, 1, 22))
+    .TimeScale(ts => ts.Enable(true).Interval(60).SlotCount(4))
+    .EventRendered("onEventRendered")
+    .EventSettings(e => e.EnableBuffer(true)
+        .BufferTemplate(ViewBag.bufferTemplate)
+        .Fields(f => f.Id("Id")
+            .Subject(sub => sub.Name("Subject"))
+            .StartTime(st => st.Name("StartTime"))
+            .EndTime(et => et.Name("EndTime"))
+            .Location(loc => loc.Name("Location"))
+            .BufferBefore(bb => bb.Name("BufferBefore"))
+            .BufferAfter(ba => ba.Name("BufferAfter"))
+        )
+        .DataSource(ViewBag.appointments)
+    )
+    .Views(new List<string>() { "Day", "Week", "WorkWeek", "TimelineDay", "TimelineWeek", "TimelineWorkWeek" })
+    .Render()
+)
+
+<script type="text/javascript">
+    function onEventRendered(args) {
+        if (args.data.EventType === 'executive') {
+            args.element.style.backgroundColor = '#ff6b6b';
+            args.element.style.borderColor = '#ff6b6b';
+        } else if (args.data.EventType === 'client') {
+            args.element.style.backgroundColor = '#4e7de7';
+            args.element.style.borderColor = '#4e7de7';
+        } else if (args.data.EventType === 'development') {
+            args.element.style.backgroundColor = '#ffa500';
+            args.element.style.borderColor = '#ffa500';
+        }
+    }
+</script>
