@@ -85,4 +85,25 @@ By default, the Scheduler indicates the current date with a highlighted date hea
 
 ![Display Highlighting Current Date and Time in ASP.NET Core Scheduler](images/scheduler-highlight-date-time.png)
 
+## Customizing current time indicator
+
+The appearance and behavior of the current time indicator can be customized using the [`currentTimeIndicatorSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentTimeIndicatorSettings) property. This property includes the following options to control different aspects of the time indicator:
+
+* `showTime` - When set to `true`, displays the current time label (hours and minutes) on the indicator. The default value is `true`.
+* `showPreviousDates` - When set to `true`, extends the indicator line to span across previous dates in the view. The default value is `true`.
+* `onTop` - When set to `true`, positions the indicator line on top of appointments. When set to `false`, appointments appear on top of the indicator. The default value is `false`.
+
+> **Note:** The current time indicator customization is only applicable in views that display a time grid (Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views) when both [`timeScale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_TimeScale) is enabled and [`showTimeIndicator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ShowTimeIndicator) is set to `true`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timescale/current-time-indicator/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-core/schedule/timescale/current-time-indicator/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Display Customizing Current Time Indicator in ASP.NET Core Scheduler](images/scheduler-current-time-indicator.png)
+
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.

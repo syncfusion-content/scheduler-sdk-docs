@@ -1,0 +1,34 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    ViewBag.bufferTemplate = "<div style='height:100%;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;text-align:center;'><div>${bufferType === 'before' ? 'Setup' : 'Wrap-up'}<br/>${bufferType === 'before' ? data.BufferBefore : data.BufferAfter} min</div></div>";
+}
+
+<ejs-schedule id="schedule" width="100%" height="550px" currentView="TimelineWeek" selectedDate="new DateTime(DateTime.Now.Year, 1, 22)" eventRendered="onEventRendered">
+    <e-schedule-timescale enable="true" interval="60" slotCount="4"></e-schedule-timescale>
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments" enableBuffer="true" bufferTemplate="@ViewBag.bufferTemplate">
+        <e-eventsettings-fields id="Id">
+            <e-field-subject name="Subject"></e-field-subject>
+            <e-field-starttime name="StartTime"></e-field-starttime>
+            <e-field-endtime name="EndTime"></e-field-endtime>
+            <e-field-location name="Location"></e-field-location>
+            <e-field-bufferbefore name="BufferBefore"></e-field-bufferbefore>
+            <e-field-bufferafter name="BufferAfter"></e-field-bufferafter>
+        </e-eventsettings-fields>
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onEventRendered(args) {
+        if (args.data.EventType === 'executive') {
+            args.element.style.backgroundColor = '#ff6b6b';
+            args.element.style.borderColor = '#ff6b6b';
+        } else if (args.data.EventType === 'client') {
+            args.element.style.backgroundColor = '#4e7de7';
+            args.element.style.borderColor = '#4e7de7';
+        } else if (args.data.EventType === 'development') {
+            args.element.style.backgroundColor = '#ffa500';
+            args.element.style.borderColor = '#ffa500';
+        }
+    }
+</script>
