@@ -811,8 +811,8 @@ To enable the event buffer feature, set the [`enableBuffer`](https://help.syncfu
 
 ```cshtml
 .EventSettings(e => e.EnableBuffer(true)
-    .Fields(f => f.BufferBefore(bb => bb.Name("BufferBefore"))
-        .BufferAfter(ba => ba.Name("BufferAfter")))
+    .Fields(f => f.BufferBefore(field => field.Name("BufferBefore"))
+        .BufferAfter(field => field.Name("BufferAfter")))
     .DataSource(ViewBag.appointments)
 )
 ```
@@ -846,7 +846,7 @@ public List<AppointmentData> GetScheduleData()
     return appData;
 }
 ```
-> Note: If your data uses different field names, such as SetupTime and CleanupTime, map them using `.BufferBefore(bb => bb.Name("SetupTime"))` and `.BufferAfter(ba => ba.Name("CleanupTime"))`.
+> Note: If your data uses different field names, such as SetupTime and CleanupTime, map them using `.BufferBefore(field => field.Name("SetupTime"))` and `.BufferAfter(field => field.Name("CleanupTime"))`.
 
 ### Display buffers in the Week view
 
