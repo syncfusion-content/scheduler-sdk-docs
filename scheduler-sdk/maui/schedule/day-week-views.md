@@ -467,7 +467,7 @@ The user interaction such as selection and highlights specific regions of day, w
 
 Watch the video below for a step-by-step guide on adding and customizing TimeRegions in .NET MAUI Scheduler
 
-{% youtube "https://www.youtube.com/watch?v=ru06fr9jo5Q" %}
+<style>#MAUISchedulerSpecialTimeRegionsVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUISchedulerSpecialTimeRegionsVideoTutorial' src='https://www.youtube.com/embed/ru06fr9jo5Q'></iframe>
 
 ### Selection restriction in timeslots
 

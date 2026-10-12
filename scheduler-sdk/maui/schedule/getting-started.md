@@ -16,7 +16,7 @@ This section explains how to populate the appointments to the Scheduler as well 
 
 To quickly get started with the [.NET MAUI Scheduler](https://www.syncfusion.com/scheduler-sdk/maui-scheduler), watch this video.
 
-{% youtube "https://www.youtube.com/watch?v=Io2ElO8ORSQ" %}
+<style>#MAUISchedulerVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUISchedulerVideoTutorial' src='https://www.youtube.com/embed/Io2ElO8ORSQ'></iframe>
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
