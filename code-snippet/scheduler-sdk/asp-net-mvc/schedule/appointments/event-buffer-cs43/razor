@@ -1,0 +1,53 @@
+@using Syncfusion.EJ2.Schedule
+
+<div style="margin-bottom: 15px;">
+    <button id="increaseBuffer" class="e-btn">Increase Buffer</button>
+    <button id="decreaseBuffer" class="e-btn">Decrease Buffer</button>
+    <button id="resetBuffer" class="e-btn">Reset Buffer</button>
+</div>
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .CurrentView(View.TimelineWeek)
+    .SelectedDate(new DateTime(DateTime.Now.Year, 1, 22))
+    .TimeScale(ts => ts.Enable(true).Interval(60).SlotCount(4))
+    .EventSettings(e => e.EnableBuffer(true)
+        .Fields(f => f.Id("Id")
+            .Subject(sub => sub.Name("Subject"))
+            .StartTime(st => st.Name("StartTime"))
+            .EndTime(et => et.Name("EndTime"))
+            .Location(loc => loc.Name("Location"))
+            .Description(des => des.Name("Description"))
+            .BufferBefore(field => field.Name("BufferBefore"))
+            .BufferAfter(field => field.Name("BufferAfter"))
+        )
+        .DataSource(ViewBag.appointments)
+    )
+    .Views(new List<string>() { "Day", "Week", "WorkWeek", "TimelineDay", "TimelineWeek", "TimelineWorkWeek" })
+    .Render()
+)
+
+<script type="text/javascript">
+    function updateBuffer(getBefore, getAfter) {
+        var schedule = document.getElementById('schedule').ej2_instances[0];
+        if (schedule.eventsData.length > 0) {
+            var event = schedule.eventsData[0];
+            event.BufferBefore = getBefore(event.BufferBefore || 0);
+            event.BufferAfter = getAfter(event.BufferAfter || 0);
+            schedule.saveEvent(event);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('increaseBuffer').addEventListener('click', function () {
+            updateBuffer(function (b) { return b + 10; }, function (a) { return a + 10; });
+        });
+        document.getElementById('decreaseBuffer').addEventListener('click', function () {
+            updateBuffer(function (b) { return Math.max(0, b - 10); }, function (a) { return Math.max(0, a - 10); });
+        });
+        document.getElementById('resetBuffer').addEventListener('click', function () {
+            updateBuffer(function () { return 30; }, function () { return 15; });
+        });
+    });
+</script>
