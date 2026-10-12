@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Disable The Datetimepicker Component in ASP.NET MVC Datetimepicker Component
-description: Learn here all about disable the Datetimepicker component in Syncfusion ASP.NET MVC Datetimepicker component of syncfusion and more.
+title: Disable State in Syncfusion ASP.NET MVC Datetimepicker Control
+description: Learn here all about disable the Datetimepicker component in Syncfusion ASP.NET MVC Datetimepicker control of syncfusion and more.
 platform: scheduler-sdk
 control: Disable The Datetimepicker Component
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

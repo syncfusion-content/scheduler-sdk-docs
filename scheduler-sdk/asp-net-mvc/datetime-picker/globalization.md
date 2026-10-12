@@ -4,7 +4,6 @@ title: Globalization in ASP.NET MVC Datetimepicker Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ASP.NET MVC Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

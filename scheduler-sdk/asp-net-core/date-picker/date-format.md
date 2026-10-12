@@ -4,12 +4,11 @@ title: Date Format in ASP.NET Core Datepicker Component | Syncfusion
 description: Learn here all about Date Format in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Format
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Date Format in Syncfusion<sup style="font-size:70%">&reg;</sup> Datepicker Component
+# Date Format in Syncfusion® Datepicker Control
 
 Date format is a way of representing the date value in different string format in textbox.
 

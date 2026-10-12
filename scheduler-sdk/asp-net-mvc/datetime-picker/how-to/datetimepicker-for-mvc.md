@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datetimepicker For Mvc in ASP.NET MVC Datetimepicker Component
-description: Learn here all about Datetimepicker for Mvc in Syncfusion ASP.NET MVC Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Render Datetimepicker| Syncfusion ASP.NET MVC Datetimepicker Control
+description: Learn here all about Datetimepicker for Mvc in Syncfusion ASP.NET MVC Datetimepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Datetimepicker For Mvc
 publishingplatform: scheduler-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Render DateTimePickerFor
+# Render ASP.NET MVC DateTimePicker Control
 
 The DateTimePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
 

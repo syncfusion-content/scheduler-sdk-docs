@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Set The Placeholder in ASP.NET MVC Datepicker Component
+title: Set the Placeholder in Syncfusion ASP.NET MVC Datepicker Control
 description: Learn here all about how to set the Placeholder in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Set The Placeholder
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Set the placeholder
+# Set the placeholder in ASP.NET MVC DatePicker Control
 
 The following example demonstrates how to set `placholder` in the DatePicker control.
 

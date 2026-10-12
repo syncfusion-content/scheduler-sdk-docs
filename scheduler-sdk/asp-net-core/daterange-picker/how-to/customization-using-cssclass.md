@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customization Using Cssclass in ASP.NET Core Daterangepicker Component
+title: Customize Cssclass in Syncfusion ASP.NET Core Daterangepicker Control
 description: Learn here all about Customization using Cssclass in Syncfusion ASP.NET Core Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization Using Cssclass
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

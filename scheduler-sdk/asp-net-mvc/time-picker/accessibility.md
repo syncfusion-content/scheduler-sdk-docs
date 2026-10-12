@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC Timepicker Component
+title: Accessibility in Syncfusion ASP.NET MVC Timepicker Control
 description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

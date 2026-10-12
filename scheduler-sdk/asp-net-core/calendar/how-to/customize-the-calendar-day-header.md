@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize The Calendar Day Header in ASP.NET Core Calendar Control | Syncfusion
+title: Calendar Day Header in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about how to customize the Calendar Day Header in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customize The Calendar Day Header
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -27,7 +26,8 @@ N> By default, the format is `Short`.
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/headerformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 ![calendar](../images/narrow.png)
 

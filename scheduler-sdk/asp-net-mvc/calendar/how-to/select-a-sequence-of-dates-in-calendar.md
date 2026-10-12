@@ -4,7 +4,6 @@ title: Sequence Of Dates in ASP.NET MVC Calendar | Syncfusion
 description: Learn here all about how to select a sequence of Dates In Calendar in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Select A Sequence Of Dates In Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

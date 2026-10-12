@@ -4,7 +4,6 @@ title: Client Side Validation in Syncfusion ASP.NET MVC Datepicker
 description: Learn here all about Client Side Validation in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Client Side Validation
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

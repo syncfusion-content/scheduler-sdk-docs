@@ -4,7 +4,6 @@ title: Calendar With Week Numbers in ASP.NET MVC Calendar | Syncfusion
 description: Learn here all about how to Render the Calendar with Week Numbers in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Render The Calendar With Week Numbers
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Set Clear Button In Calendar in ASP.NET MVC Calendar Control | Syncfusion
+title: Set Clear Button in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about how to set Clear Button in Calendar in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Set Clear Button In Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

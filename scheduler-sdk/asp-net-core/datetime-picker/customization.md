@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Customization in ASP.NET Core Datetimepicker Component
+title: Customization in Syncfusion ASP.NET Core Datetimepicker Control
 description: Learn here all about customization in Syncfusion ASP.NET Core Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET Core DateTimePicker Control
 
 The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
 

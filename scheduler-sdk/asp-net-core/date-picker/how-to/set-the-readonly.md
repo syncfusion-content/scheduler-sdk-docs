@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Set The Readonly in ASP.NET Core Datepicker Component
+title: Set the Readonly in Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about how to set the Readonly in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Set The Readonly
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Set the readonly
+# Set the readonly in ASP.NET Core DatePicker Control
 
 The following example demonstrates how to set `readonly` in DatePicker control. You can achieve this by using [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Readonly) property.
 

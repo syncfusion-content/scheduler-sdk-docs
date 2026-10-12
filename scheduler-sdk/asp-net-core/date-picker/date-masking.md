@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Date Masking in ASP.NET Core Datepicker Component
+title: Date Masking in Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about Date Masking in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Masking
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

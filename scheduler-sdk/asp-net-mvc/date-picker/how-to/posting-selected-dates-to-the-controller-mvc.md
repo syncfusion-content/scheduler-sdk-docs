@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Posting Selected Dates To The Controller Mvc in ASP.NET MVC Datepicker Component
+title: Posting Selected Dates in Syncfusion ASP.NET MVC Datepicker Control
 description: Learn here all about Posting Selected Dates To The Controller Mvc in Syncfusion ASP.NET MVC Datepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Posting Selected Dates To The Controller Mvc
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

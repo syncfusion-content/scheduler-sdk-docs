@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Time Range in ASP.NET Core Timepicker Component
+title: Time Range in Syncfusion ASP.NET Core Timepicker Control
 description: Learn here all about Time Range in Syncfusion ASP.NET Core Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Time Range
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Time Range
+# Time Range in ASP.NET Core TimePicker Control
 
 TimePicker provides an option to select a time value within a specified range by using the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Min) and [max](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Max) properties. The min value should always be lesser than the max value.
 

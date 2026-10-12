@@ -4,7 +4,6 @@ title: Accessibility in ASP.NET MVC Daterangepicker Component | Syncfusion
 description: Learn here all about accessibility in Syncfusion ASP.NET MVC Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

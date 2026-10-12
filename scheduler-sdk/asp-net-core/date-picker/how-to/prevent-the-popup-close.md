@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Prevent The Popup Close in ASP.NET Core Datepicker Component
+title: Prevent The Popup Close in Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about how to prevent the popup close in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Prevent The Popup Close
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

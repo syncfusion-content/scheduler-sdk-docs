@@ -4,7 +4,6 @@ title: Globalization in ASP.NET MVC Datepicker Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -91,4 +90,5 @@ The following code example initialize the DatePicker control in `Arabic` culture
 {% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}

@@ -4,7 +4,6 @@ title: Skip A Month In Calendar in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about how to skip a month in Calendar in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Skip A Month In Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

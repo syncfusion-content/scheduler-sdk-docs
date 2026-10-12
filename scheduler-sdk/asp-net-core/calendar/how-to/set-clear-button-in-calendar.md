@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Set Clear Button In Calendar in ASP.NET Core Calendar Control | Syncfusion
+title: Set Clear Button in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about how to set Clear Button in Calendar in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Set Clear Button In Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -26,6 +25,7 @@ To configure `clear` button in Calendar UI, do the following:
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/settoday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Settoday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

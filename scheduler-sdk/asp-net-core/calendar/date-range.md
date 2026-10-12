@@ -4,7 +4,6 @@ title: Date Range in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about Date Range in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Range
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

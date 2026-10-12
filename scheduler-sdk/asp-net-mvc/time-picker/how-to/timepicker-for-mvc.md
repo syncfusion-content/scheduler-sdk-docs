@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Timepicker For Mvc in ASP.NET MVC Timepicker Component
+title: Render Timepicker For Mvc in Syncfusion ASP.NET MVC Timepicker Control
 description: Learn here all about Timepicker For Mvc in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Timepicker For Mvc
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Render TimePickerFor
+# Render ASP.NET MVC TimePicker Control
 
 The TimePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
 

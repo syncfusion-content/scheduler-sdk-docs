@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Date Format in ASP.NET MVC Daterangepicker Component | Syncfusion
-description: Learn here all about Date Format in Syncfusion ASP.NET MVC Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Date Format in ASP.NET MVC Daterangepicker Control | Syncfusion
+description: Learn here all about Date Format in Syncfusion ASP.NET MVC Daterangepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Format
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Date Format in Syncfusion<sup style="font-size:70%">&reg;</sup> Daterangepicker Component
+# Date Format in Syncfusion® Daterangepicker Control
 
 Date format is a way of representing the date value in different string format in textbox.
 

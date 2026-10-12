@@ -4,7 +4,6 @@ title: Calendar Views in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about Calendar Views in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Calendar Views
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

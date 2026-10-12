@@ -4,7 +4,6 @@ title: Date Time Range in Syncfusion ASP.NET MVC Datetimepicker Component
 description: Learn here all about Date Time Range in Syncfusion ASP.NET MVC Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Time Range
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -15,7 +14,7 @@ documentation: ug
 
 DateTimePicker provides an option to select a date and time value within a specified range by using the [min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Min) and [max](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Max) properties. Always the min value has to be lesser than the max value.
 
-When the min and max properties are configured and the selected datetime value is out-of-range or invalid, then the model value will be set to `out of range` datetime value or `null` respectively with highlighted `error` class to indicate that the datetime is out of range or invalid. The value property depends on the min/max with respect to [strictMode](./strict-mode/) property.
+When the min and max properties are configured and the selected datetime value is out-of-range or invalid, then the model value will be set to `out of range` datetime value or `null` respectively with highlighted `error` class to indicate that the datetime is out of range or invalid. The value property depends on the min/max with respect to [strictMode](./strict-mode) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

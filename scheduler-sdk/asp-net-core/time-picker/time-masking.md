@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Time Masking in ASP.NET Core Timepicker Component
+title: Time Masking in Syncfusion ASP.NET Core Timepicker Control
 description: Learn here all about Time Masking in Syncfusion ASP.NET Core Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Time Masking
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

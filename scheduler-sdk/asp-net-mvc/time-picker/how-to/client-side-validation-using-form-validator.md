@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Client Side Validation Using Form Validator in ASP.NET MVC Timepicker Component
+title: Client Side Validation in Syncfusion ASP.NET MVC Timepicker Control
 description: Learn here all about Client Side Validation Using Form Validator in Syncfusion ASP.NET MVC Timepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Client Side Validation Using Form Validator
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Customization in ASP.NET MVC Daterangepicker Component
-description: Learn here all about customization in Syncfusion ASP.NET MVC Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in Syncfusion ASP.NET MVC Daterangepicker Control
+description: Learn here all about customization in Syncfusion ASP.NET MVC Daterangepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET MVC DateRangePicker Control
 
 The DateRangePicker is available for UI customization that can be achieved by using available properties and events in the control.
 

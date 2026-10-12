@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize The Calendar Day Header in ASP.NET MVC Calendar Control | Syncfusion
+title: Day Header in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about how to customize the Calendar Day Header in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customize The Calendar Day Header
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

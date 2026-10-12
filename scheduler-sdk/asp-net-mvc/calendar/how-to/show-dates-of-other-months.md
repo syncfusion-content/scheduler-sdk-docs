@@ -4,7 +4,6 @@ title: Show Dates Of Other Months in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about show dates of other months in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Show Dates Of Other Months
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

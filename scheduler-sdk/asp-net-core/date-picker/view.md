@@ -4,7 +4,6 @@ title: View in ASP.NET Core Datepicker Component | Syncfusion
 description: Learn here all about View in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: View
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

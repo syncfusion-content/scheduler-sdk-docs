@@ -4,12 +4,11 @@ title: Date Time Format in ASP.NET Core Datetimepicker Component | Syncfusion
 description: Learn here all about Date Time Format in Syncfusion ASP.NET Core Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Time Format
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# DateTime Format
+# DateTime Format in ASP.NET Core DateTimePicker Control
 
 DateTime format is a way of representing the date and time value in different string format in textbox.
 
@@ -17,7 +16,7 @@ By default the DateTimePicker's format is based on the culture. You can also set
 
 N> Once the date format property has been defined it will be common to all the cultures.
 
-To know more about the date and time format standards, refer to the [`Internationalization Date Time Format`](/common/internationalization/) section.
+To know more about the date and time format standards, refer to the [`Internationalization Date Time Format`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) section.
 
 The following example demonstrates the DateTimePicker with the custom format (`yyyy-MM-dd hh:mm`).
 

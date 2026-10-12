@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Css Customization in ASP.NET MVC Timepicker Component
+title: Css Customization in Syncfusion ASP.NET MVC Timepicker Control
 description: Learn here all about Css Customization in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Css Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# CSS customization
+# CSS customization in ASP.NET MVC TimePicker Control
 
 TimePicker allows you to customize the textbox and popup list appearance to suit your application by using [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_CssClass) property.
 

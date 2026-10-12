@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Change The First Day Of Week in ASP.NET Core Calendar Control | Syncfusion
+title: First Day Of Week in Syncfusion ASP.NET Core Calendar Control
 description: Learn here all about how to change the first day of week in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Change The First Day Of Week
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -22,6 +21,7 @@ The following example shows the Calendar with `Tuesday` as the first day of the 
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/firstday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

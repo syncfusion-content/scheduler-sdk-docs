@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Style and appearance in ASP.NET MVC DateRangePicker Component
+title: Style and appearance in Syncfusion ASP.NET MVC DateRangePicker Control
 description: Learn here all about style and appearance in Syncfusion ASP.NET MVC DateRangePicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: daterangepicker
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Style and appearance in DateRangePicker Component
+# Style and appearance in ASP.NET MVC DateRangePicker Control
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

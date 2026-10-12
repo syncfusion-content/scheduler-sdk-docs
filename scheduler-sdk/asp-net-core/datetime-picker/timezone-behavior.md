@@ -4,11 +4,10 @@ title: Timezone Behavior in ASP.NET Core Datetimepicker | Syncfusion
 description: Learn here all about Timezone Behavior in Syncfusion ASP.NET Core Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Timezone Behavior
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Timezone Behavior in DateTimePicker Control
+# Timezone Behavior in ASP.NET Core DateTimePicker Control
 
 The DateTimePicker component displays and maintains the selected date and time value based on the client system’s current time zone. When a user selects a value, it is stored and rendered using the local time zone of the system at the time of selection. This ensures that the value remains consistent and predictable during user interaction.
 

@@ -4,7 +4,6 @@ title: Globalization in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ASP.NET Core Calendar component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -89,4 +88,5 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}

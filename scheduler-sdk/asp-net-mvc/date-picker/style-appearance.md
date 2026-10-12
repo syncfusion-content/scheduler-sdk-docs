@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Style and appearance in ASP.NET MVC DatePicker Component
+title: Style and appearance in Syncfusion ASP.NET MVC DatePicker Control
 description: Learn here all about style and appearance in Syncfusion ASP.NET MVC DatePicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: datepicker
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
-# Style and appearance in DatePicker Component
+# Style and appearance in ASP.NET MVC DatePicker Control
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
@@ -40,7 +39,7 @@ Use the following CSS to customize the DatePicker icon element.
 
 Check the below section, to customize the style and appearance of the Calendar component.
 
-[Customizing Calendar's style and appearance](../calendar/style-appearance/)
+[Customizing Calendar's style and appearance](../calendar/style-appearance)
 
 ## Full screen mode support in mobiles and tablets
 

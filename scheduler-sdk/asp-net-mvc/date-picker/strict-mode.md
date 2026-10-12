@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Strict Mode in ASP.NET MVC Datepicker Component
+title: Strict Mode in Syncfusion ASP.NET MVC Datepicker Control
 description: Learn here all about Strict Mode in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Strict Mode
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Strict Mode
+# Strict Mode in ASP.NET MVC DatePicker Control
 
 The [strictMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_StrictMode) is an act, that allows the user to enter only the valid date within the specified `min/max` range in textbox. If the date is invalid, then the component will stay with the previous value. Else, if the date is out of range, then the component will set the date to the min/max date.
 

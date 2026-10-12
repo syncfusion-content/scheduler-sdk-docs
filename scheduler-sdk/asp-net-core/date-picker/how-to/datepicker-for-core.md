@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Datepicker For Core in ASP.NET Core Datepicker Component
+title: Render Datepicker | Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about Datepicker for Core in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Datepicker For Core
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Render DatePickerFor
+# Render ASP.NET Core DatePicker Control
 
 The DatePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
 

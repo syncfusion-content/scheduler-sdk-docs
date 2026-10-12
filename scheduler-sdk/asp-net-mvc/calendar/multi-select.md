@@ -4,7 +4,6 @@ title: Multi Select in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about Multi Select in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Multi Select
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

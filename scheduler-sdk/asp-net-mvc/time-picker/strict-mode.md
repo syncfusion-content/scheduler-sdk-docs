@@ -4,7 +4,6 @@ title: Strict Mode in ASP.NET MVC Timepicker Control | Syncfusion
 description: Learn here all about Strict Mode in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Strict Mode
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

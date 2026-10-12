@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize The Datepicker Day Header in ASP.NET Core Datepicker Component
+title: Customize the Day Header in Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about how to customize the Datepicker day header in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customize The Datepicker Day Header
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

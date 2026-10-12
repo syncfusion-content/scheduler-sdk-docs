@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize The Daterangepicker Day Header in ASP.NET MVC Daterangepicker Component
+title: Day Header in Syncfusion ASP.NET MVC Daterangepicker Control
 description: Learn here all about how to customize the Daterangepicker day header in Syncfusion ASP.NET MVC Daterangepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Customize The Daterangepicker Day Header
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

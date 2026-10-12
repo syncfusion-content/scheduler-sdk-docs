@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Style and appearance in ASP.NET MVC TimePicker Component
+title: Style and appearance in Syncfusion ASP.NET MVC TimePicker Control
 description: Learn here all about style and appearance in Syncfusion ASP.NET MVC TimePicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: timepicker
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

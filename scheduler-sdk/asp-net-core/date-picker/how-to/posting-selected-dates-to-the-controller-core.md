@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Posting Selected Dates To The Controller Core in ASP.NET Core Datepicker Component
+title: Posting Selected Dates in ASP.NET Core Datepicker Control
 description: Learn here all about Posting Selected Dates to the Controller Core in Syncfusion ASP.NET Core Datepicker component of syncfusion and more.
 platform: scheduler-sdk
 control: Posting Selected Dates To The Controller Core
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Skip A Month In Calendar in ASP.NET Core Calendar Control | Syncfusion
+title: Skip a month in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about how to skip a month in Calendar in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Skip A Month In Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -18,6 +17,7 @@ The following example demonstrates how to skip a month in the Calendar while cli
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/skipmonth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Skipmonth.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

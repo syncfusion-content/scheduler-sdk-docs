@@ -4,12 +4,11 @@ title: Customization in ASP.NET Core Datepicker Component
 description: Learn here all about customization in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET Core DatePicker Control
 
 You can customize the entire appearance of the input element and Calendar by using custom [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_CssClass) property, and also you can use the calendar's [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_RenderDayCell) event to customize the appearance of the each day cell.
 

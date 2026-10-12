@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Globalization in ASP.NET MVC Timepicker Component
+title: Globalization in Syncfusion ASP.NET MVC Timepicker Control
 description: Learn here all about Globalization in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ASP.NET MVC TimePicker Control
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 

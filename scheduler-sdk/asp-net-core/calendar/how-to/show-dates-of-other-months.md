@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Show Dates Of Other Months in ASP.NET Core Calendar Control | Syncfusion
+title: Show Dates Of Other Month | ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about show dates of other months in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Show Dates Of Other Months
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -33,6 +32,7 @@ Using the following styles, you can bring the dates of other months to visibilit
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/howto/showdates/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Showdates.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

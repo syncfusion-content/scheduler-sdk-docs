@@ -4,7 +4,6 @@ title: Islamic Calendar in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about Islamic Calendar in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Islamic Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
