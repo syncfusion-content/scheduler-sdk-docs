@@ -794,6 +794,122 @@ We can show more indicator if more than one appointment is available in a same c
 {% endhighlight %}
 {% endtabs %}
 
+## Event Buffer
+
+The event buffer feature shows preparation time before an appointment and wrap-up time after it. Use it to block setup or tear down periods, reserve transition time between meetings, or show travel time around field visits.
+
+**Key capabilities:**
+- Set a different buffer duration before and after each event.
+- Display buffer zones so they are visually distinct from the event itself.
+- Customize buffer content and styling with a template.
+- Use buffers with resource grouping.
+- Render buffers in vertical views (Day, Week, Work Week) and timeline views (Timeline Day, Timeline Week, Timeline Work Week).
+
+### Configuring Event Buffer
+
+To enable the event buffer feature, set the [`enableBuffer`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_EnableBuffer) property to `true` in `eventSettings` and map the `BufferBefore` and `BufferAfter` fields to the matching fields in your data source.
+
+```cshtml
+.EventSettings(e => e.EnableBuffer(true)
+    .Fields(f => f.BufferBefore(field => field.Name("BufferBefore"))
+        .BufferAfter(field => field.Name("BufferAfter")))
+    .DataSource(ViewBag.appointments)
+)
+```
+
+### Event Data Structure with Buffers
+
+Set `BufferBefore` and `BufferAfter` on each event that needs a buffer. Events without these values, or with a value of 0, render without a buffer on that side.
+
+```csharp
+public List<AppointmentData> GetScheduleData()
+{
+    List<AppointmentData> appData = new List<AppointmentData>();
+    appData.Add(new AppointmentData
+    {
+        Id = 1,
+        Subject = "Team Sync",
+        StartTime = new DateTime(2026, 1, 22, 9, 0, 0),
+        EndTime = new DateTime(2026, 1, 22, 10, 0, 0),
+        BufferBefore = 30,   // 30 minutes setup time before event
+        BufferAfter = 15     // 15 minutes wrap-up time after event
+    });
+    appData.Add(new AppointmentData
+    {
+        Id = 2,
+        Subject = "Client Review",
+        StartTime = new DateTime(2026, 1, 22, 11, 0, 0),
+        EndTime = new DateTime(2026, 1, 22, 13, 0, 0),
+        BufferBefore = 45,
+        BufferAfter = 20
+    });
+    return appData;
+}
+```
+> Note: If your data uses different field names, such as SetupTime and CleanupTime, map them using `.BufferBefore(field => field.Name("SetupTime"))` and `.BufferAfter(field => field.Name("CleanupTime"))`.
+
+### Display buffers in the Week view
+
+The following example enables event buffers in the Week view. Each event shows its setup time above the event and its wrap-up time below it.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-buffer-cs42/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-buffer-cs42/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Dynamic Buffer Updates
+
+To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) method. The Scheduler re-renders the event with the new buffer immediately.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-buffer-cs43/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-buffer-cs43/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing Buffer Appearance with Templates
+
+Use the [`bufferTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_BufferTemplate) property in `eventSettings` to render custom content inside buffer regions. The template is called once for each buffer and receives a `BufferTemplateArgs` object.
+
+| Argument | Type | Description |
+|----------|------|-------------|
+| bufferType | 'before' \| 'after' | Whether the template is rendering the leading or trailing buffer. |
+| data | Object | The complete mapped event data, including bufferBefore, bufferAfter and all other event fields. |
+| resourceData | Object | The resource data of the parent event. Available only when resource grouping is enabled. |
+
+The following example color-codes buffer regions by event type and adds custom labels.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-buffer-cs44/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/scheduler-sdk/asp-net-mvc/schedule/appointments/event-buffer-cs44/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Supported Views
+
+| View type | Views | Buffer Position |
+|-------|------|-------------|
+| Vertical | Day, Week, Work Week | Above (before) and below (after) the event |
+| Timeline | Timeline Day, Timeline Week, Timeline Work Week | Left (before) and right (after) of the event |
+
+Buffers render only when time slots are shown, so `TimeScale` `Enable` must be `true`.
+
+### Important Notes
+
+- **Drag and resize:** The Scheduler accounts for buffer time when an event is dragged or resized, so the event's `StartTime` and `EndTime` stay accurate and the buffer moves with the event.
+- **Zero buffers:** Set `bufferBefore` or `bufferAfter` to `0` to remove the buffer on that side for a specific event.
+- **Resource grouping:** Buffers render within each resource's row or column, and [`bufferTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_BufferTemplate) receives that resource in `resourceData`.
+
 ## Limiting maximum number of events displayed
 
 In the Scheduler, you can limit the number of concurrent events displayed in each time slot to improve the quality of the presentation and prevent visual overcrowding. This can be accomplished using the following properties based on the view type:
