@@ -68,7 +68,7 @@ You can validate the required fields of the editor window on the client side bef
 
 ![Display Field Validation in ASP.NET Core Scheduler](images/schedule-field-validation.png)
 
-N> Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator#validation-rules) documentation.
+N> Applicable validation rules can be referred from [form validation](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#validation-rules) documentation.
 
 ### Add additional fields to the default editor
 
@@ -455,4 +455,4 @@ You can close the quick info popup in the Scheduler by using the `closeQuickInfo
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to learn how to present and manipulate data.
