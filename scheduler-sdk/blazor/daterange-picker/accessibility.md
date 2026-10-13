@@ -41,7 +41,7 @@ The accessibility compliance for the Blazor DateRangePicker component is outline
 The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA
 support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
 
-To learn about the accessibility of Calendar, refer to the Calendar's [Accessibility](https://blazor.syncfusion.com/documentation/calendar/accessibility) section.
+To learn about the accessibility of Calendar, refer to the Calendar's [Accessibility](https://help.syncfusion.com/scheduler-sdk/blazor/calendar/accessibility) section.
 
 It helps people with disabilities by providing information about the widget for assistive technology in the screen readers. DateRangePicker component contains grid role and grid cell for each day cell.
 
@@ -87,7 +87,7 @@ Use the following list of keys to navigate the currently focused Calendar after 
 | <kbd>Alt</kbd> + <kbd>→</kbd> | <kbd>⌥</kbd> + <kbd>→</kbd> | Focuses through out the pop-up container in forward direction. |
 | <kbd>Alt</kbd> + <kbd>←</kbd> | <kbd>⌥</kbd> + <kbd>←</kbd> | Focuses through out the pop-up container in backward direction. |
 
-N> To focus out the DateRangePicker component, use the `t` keys. For additional information about native event, [click](https://blazor.syncfusion.com/documentation/daterangepicker/native-events) here.
+N> To focus out the DateRangePicker component, use the `t` keys. For additional information about native event, [click](https://help.syncfusion.com/scheduler-sdk/blazor/daterange-picker/native-events) here.
 
 ```cshtml
 @using Syncfusion.Blazor.Calendars
@@ -106,7 +106,7 @@ N> To focus out the DateRangePicker component, use the `t` keys. For additional 
 }
 ```
 
-N> You can refer to our [Blazor Date Range Picker](https://www.syncfusion.com/blazor-components/blazor-daterangepicker) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Date Range Picker example](https://blazor.syncfusion.com/demos/daterangepicker/default-functionalities?theme=bootstrap4) to understand how to present and manipulate data.
+N> You can refer to our [Blazor Date Range Picker](https://www.syncfusion.com/blazor-components/blazor-daterangepicker) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Date Range Picker example](https://blazor.syncfusion.com/demos/daterangepicker/default-functionalities?theme=fluent2) to understand how to present and manipulate data.
 
 ## Ensuring accessibility
 

@@ -4,7 +4,6 @@ title: Islamic Calendar in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about Islamic Calendar in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Islamic Calendar
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -17,24 +16,10 @@ Also, it consists of all Gregorian calendar functionalities as like min and max 
 
 By default, calendar mode is in **Gregorian**. You can enable the Islamic mode by setting the **calendarMode** as **Islamic**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/islamic-mode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/islamic-mode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Islamic-mode.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/islamic-mode/islamic-mode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).

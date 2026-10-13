@@ -48,7 +48,7 @@ Common roles and attributes include:
 - `aria-disabled`: Conveys the disabled state of the DateTimePicker.
 - `aria-activedescendant`: Identifies the currently focused date cell within the calendar grid or the focused item in the time list.
 
-To learn about the accessibility of Calendar, refer to the Calendar's [Accessibility](https://blazor.syncfusion.com/documentation/calendar/accessibility) section.
+To learn about the accessibility of Calendar, refer to the Calendar's [Accessibility](https://help.syncfusion.com/scheduler-sdk/blazor/calendar/accessibility) section.
 
 ## Keyboard interaction
 
@@ -102,7 +102,7 @@ Use the following shortcut keys to interact with the TimePicker after the TimePi
 | <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>⌥</kbd> + <kbd>↓</kbd> | Opens the popup. |
 | <kbd>Esc</kbd> | <kbd>Esc</kbd> | Closes the popup. |
 
-N> The “t” key behavior in the following example is custom to the sample and not a built-in shortcut. For additional information about native events, see the [Native events](https://blazor.syncfusion.com/documentation/datetime-picker/native-events) topic.
+N> The “t” key behavior in the following example is custom to the sample and not a built-in shortcut. For additional information about native events, see the [Native events](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/native-events) topic.
 
 ```cshtml
 @using Syncfusion.Blazor.Calendars

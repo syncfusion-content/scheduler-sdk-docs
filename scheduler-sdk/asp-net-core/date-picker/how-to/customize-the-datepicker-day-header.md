@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize The Datepicker Day Header in ASP.NET Core Datepicker Component
+title: Customize the Day Header in Syncfusion ASP.NET Core Datepicker Control
 description: Learn here all about how to customize the Datepicker day header in Syncfusion ASP.NET Core Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customize The Datepicker Day Header
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -24,25 +23,13 @@ You can find the possible formats on below.
 | `Abbreviated` | Sets the min format of day name (like Sun ) in day header. |
 | `Wide` | Sets the long format of day name (like Sunday ) in day header. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/how-to/headerformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/how-to/headerformat/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}
 
 ![datepicker](../images/narrow.png)
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Customization in ASP.NET Core Datetimepicker Component
+title: Customization in Syncfusion ASP.NET Core Datetimepicker Control
 description: Learn here all about customization in Syncfusion ASP.NET Core Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET Core DateTimePicker Control
 
 The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
 
@@ -19,26 +18,13 @@ The DateTimePicker is available for UI customization based on your application r
 
 The following example disables the weekends of every month by using `renderDayCell` event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/daytimecellformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daytimecellformat.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/datetime-picker/daytimecellformat/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Daytimecellformat.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## See Also
 

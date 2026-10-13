@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Customization in ASP.NET MVC Datepicker Component
+title: Customization in Syncfusion ASP.NET MVC Datepicker Control
 description: Learn here all about customization in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET MVC DatePicker Control
 
-You can customize the entire appearance of the input element and Calendar by using custom [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_CssClass) property, and also you can use the calendar's [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_RenderDayCell) event to customize the appearance of the each day cell.
+You can customize the entire appearance of the input element and Calendar by using custom [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_CssClass) property, and also you can use the calendar's [renderDayCell](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_RenderDayCell) event to customize the appearance of the each day cell.
 
 Below is the list of classes that provides flexible way to customize the DatePicker component.
 
@@ -36,25 +35,13 @@ Below is the list of classes that provides flexible way to customize the DatePic
 
 The following example disables the weekends of every month using `renderDayCell` event. Here, the `e-disabled` class is used to highlight the disabled date.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/customization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 ## See Also
