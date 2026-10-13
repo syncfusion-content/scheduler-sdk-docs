@@ -1367,7 +1367,7 @@ Now, the Blazor Scheduler can be configured using the `SfDataManager` to interac
 }
 ```
 
-N> You can find the working sample on Entity framework [here](https://github.com/SyncfusionExamples/blazor-scheduler-crud-using-restful-service).
+N> You can find the working sample on Entity Framework [here](https://github.com/SyncfusionExamples/blazor-scheduler-crud-using-restful-service).
 
 ## Configuring Blazor Scheduler with Google API service
 

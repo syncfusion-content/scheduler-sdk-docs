@@ -216,4 +216,4 @@ The [Blazor Scheduler](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler
 - **Code Examples?** Browse [Blazor Scheduler Demos](https://www.syncfusion.com/scheduler-sdk/blazor-scheduler) and samples
 - **API Details?** See [Scheduler API Reference](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Schedule.SfSchedule-1.html)
 - **Community?** Join the [Syncfusion Community Forum](https://www.syncfusion.com/forums/blazor-components)
-- **What's New?** Check [Release Notes](https://help.syncfusion.com/scheduler-sdk/release-notes/)
+- **What's New?** Check [Release Notes](https://help.syncfusion.com/scheduler-sdk/release-notes)
