@@ -2,7 +2,7 @@
 layout: post
 title: Popup Settings in Blazor TimePicker | Syncfusion®
 description: Configure the Blazor TimePicker popup rendering using the AppendTo property to control where the popup appears, ensuring proper display in custom containers.
-platform: Blazor
+platform: scheduler-sdk
 control: TimePicker
 documentation: ug
 ---
