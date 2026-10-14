@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Date Time Masking in ASP.NET MVC Datetimepicker Component
-description: Learn here all about Date Time Masking in Syncfusion ASP.NET MVC Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Date Time Masking in Syncfusion ASP.NET MVC Datetimepicker Control
+description: Learn here all about Date Time Masking in Syncfusion ASP.NET MVC Datetimepicker control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Date Time Masking
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -12,19 +11,6 @@ documentation: ug
 # Enable the Masked Input
 
 DateTimePicker has `enableMask` property that provides the option to enable the built-in date masking support.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-input/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mask-input.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-input/mask-input.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,9 +20,6 @@ DateTimePicker has `enableMask` property that provides the option to enable the 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-input/mask-input.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The mask pattern is defined based on the provided date format to the component. If the format is not specified, the mask pattern is formed based on the default format of the current culture.
 
@@ -44,19 +27,6 @@ The mask pattern is defined based on the provided date format to the component. 
 | --- | --- |
 | <kbd>Up / Down arrows</kbd> | To increment and decrement the selected portion of the date and time. |
 | <kbd>Left / Right arrows and Tab</kbd> | To navigate the selection from one portion to next portion |
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-format/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Date-format.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-format/date-format.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -66,9 +36,6 @@ The mask pattern is defined based on the provided date format to the component. 
 {% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-format/date-format.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Configure Mask Placeholder
 
@@ -87,19 +54,6 @@ L10n.load({
 
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-placeholder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mask-placeholder.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-placeholder/mask-placeholder.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-placeholder/razor %}
@@ -108,6 +62,3 @@ L10n.load({
 {% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/mask-module/mask-placeholder/mask-placeholder.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-

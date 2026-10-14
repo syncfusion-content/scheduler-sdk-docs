@@ -89,8 +89,6 @@ Use the following list of keys to navigate the currently focused Calendar after 
 
 N> To focus the DateRangePicker control use the `alt+t` keys.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/accessibility/tagHelper %}
@@ -98,18 +96,6 @@ N> To focus the DateRangePicker control use the `alt+t` keys.
 {% highlight c# tabtitle="Accessibility.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ## Ensuring accessibility
 

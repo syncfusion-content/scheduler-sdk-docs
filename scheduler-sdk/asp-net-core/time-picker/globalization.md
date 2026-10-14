@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ASP.NET Core Timepicker | Syncfusion
+title: Globalization in ASP.NET Core TimePicker | Syncfusion
 description: Learn here all about Globalization in Syncfusion ASP.NET Core Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Globalization in ASP.NET Core Timepicker
+# Globalization in ASP.NET Core TimePicker
 
 Globalization is the combination of internalization and localization. You can adapt the control to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization), and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
@@ -62,8 +62,6 @@ function loadCultureFiles(name) {
 
 The following example demonstrates the TimePicker in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/globalization/tagHelper %}
@@ -71,19 +69,6 @@ The following example demonstrates the TimePicker in `German` culture.
 {% highlight c# tabtitle="Globalization.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/globalization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Right-To-Left
 
@@ -93,8 +78,6 @@ The following code example demonstrates the TimePicker control in `Arabic` cultu
 
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/rtl/tagHelper %}
@@ -102,15 +85,3 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% highlight c# tabtitle="Rtl.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/time-picker/globalization/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

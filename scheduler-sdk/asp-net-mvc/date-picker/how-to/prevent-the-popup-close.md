@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Prevent The Popup Close in ASP.NET MVC Datepicker Component
+title: Prevent The Popup Close in Syncfusion ASP.NET MVC Datepicker Control
 description: Learn here all about how to prevent the popup close in Syncfusion ASP.NET MVC Datepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Prevent The Popup Close
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -12,19 +11,6 @@ documentation: ug
 # Prevent the popup close
 
 To prevent the DatePicker popup from closing, use the preventDefault method from the `PreventableEventArgs`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/popupclose/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Popupclose.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/popupclose/popupclose.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,5 +20,3 @@ To prevent the DatePicker popup from closing, use the preventDefault method from
 {% include code-snippet/scheduler-sdk/asp-net-mvc/date-picker/how-to/popupclose/popupclose.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-

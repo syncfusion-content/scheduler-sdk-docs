@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customization Using Cssclass in ASP.NET Core Daterangepicker Component
+title: Customize Cssclass in Syncfusion ASP.NET Core Daterangepicker Control
 description: Learn here all about Customization using Cssclass in Syncfusion ASP.NET Core Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization Using Cssclass
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -40,22 +39,10 @@ Following is the list of classes that provides flexible way to customize the Dat
 | e-selected | Applied to Calendar selected dates.|
 | e-disabled | Applied to Calendar disabled dates.|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/how-to/css/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/daterange-picker/how-to/css/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}

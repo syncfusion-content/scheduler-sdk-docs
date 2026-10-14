@@ -4,7 +4,6 @@ title: Globalization in ASP.NET MVC Daterangepicker Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ASP.NET MVC Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -15,7 +14,7 @@ Globalization is the combination of  adapting the control to various languages b
 
 By default, DateRangePicker date format, week, and month names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
 
-* Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Locale) property.
+* Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Locale) property.
 
 To go with the different culture other than `English`, follow the below steps.
 
@@ -50,7 +49,7 @@ In ASP.NET MVC refer the culture files directly from `/node_modules/cldr-data` l
 
 ```
 
-N> The `Localization` library allows you to localize default text content of the DateRangePicker. The DateRangePicker control has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Locale) value and translation object.
+N> The `Localization` library allows you to localize default text content of the DateRangePicker. The DateRangePicker control has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |
@@ -84,50 +83,26 @@ N> The `Localization` library allows you to localize default text content of the
 
 The following example demonstrates the DateRangePicker in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/globalization/globalization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ## Right-To-Left
 
-The DateRangePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew. To display the text in the right-to-left direction, use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_EnableRtl) property.
+The DateRangePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew. To display the text in the right-to-left direction, use [enableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_EnableRtl) property.
 
 The code example demonstrates the DateRangePicker control in `Arabic` culture. It also explains how to set localized text to the placeholder using `L10n.load` method.
 
 The following example demonstrates DateRangePicker in `Arabic` culture with right-to-left direction.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/globalization/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/daterange-picker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
+{% endhighlight %}
+{% endtabs %}

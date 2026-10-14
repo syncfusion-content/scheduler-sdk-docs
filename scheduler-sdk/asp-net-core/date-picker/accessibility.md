@@ -93,8 +93,6 @@ Use the below list of keys to navigate the Calendar after the popup has opened.
 
 N> To focus the DatePicker control use the `alt+t` keys.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/date-picker/accessibility/tagHelper %}
@@ -102,18 +100,6 @@ N> To focus the DatePicker control use the `alt+t` keys.
 {% highlight c# tabtitle="Accessibility.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/date-picker/accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ## Ensuring accessibility
 
