@@ -10,14 +10,14 @@ documentation: ug
 
 # Data Binding in ASP.NET Core Scheduler
 
-The Scheduler uses `dataManager`, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property can be assigned either to a `dataManager` instance or to a JavaScript object array collection. It supports two kinds of data binding:
+The Scheduler uses `dataManager`, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property can be assigned either to a `dataManager` instance or to a JavaScript object array collection. It supports two kinds of data binding:
 
 * Local data
 * Remote data
 
 ## Binding local data
 
-To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) option within the Scheduler `eventSettings` property. The local data source can also be provided as a `dataManager` instance.
+To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) option within the Scheduler `eventSettings` property. The local data source can also be provided as a `dataManager` instance.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -36,7 +36,7 @@ N> By default, `dataManager` uses `JsonAdaptor` for local data binding.
 
 ## Binding remote data
 
-Any kind of remote data service can be bound to the Scheduler. To do so, create a `dataManager` instance, provide the service URL to the `Url` option, and assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property within `e-schedule-eventsettings`.
+Any kind of remote data service can be bound to the Scheduler. To do so, create a `dataManager` instance, provide the service URL to the `Url` option, and assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property within `e-schedule-eventsettings`.
 
 ### Using ODataV4Adaptor
 
@@ -87,7 +87,7 @@ You can create your own custom adaptor by extending the available built-in adapt
 
 ## Loading data via AJAX post
 
-You can bind event data through an external AJAX request and assign it to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property. In the following code example, we retrieve data from the server with an AJAX request and assign the returned data to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property within the Ajax `onSuccess` event.
+You can bind event data through an external AJAX request and assign it to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property. In the following code example, we retrieve data from the server with an AJAX request and assign the returned data to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property within the Ajax `onSuccess` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -104,7 +104,7 @@ N> The controller method definition for `GetData` can be referred to [here](#sch
 
 ## Passing additional parameters to the server
 
-To send an additional custom parameter to the server-side post, use the `addParams` method of `query`. Then assign this `query` object with the additional parameters to the Scheduler [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html) property.
+To send an additional custom parameter to the server-side post, use the `addParams` method of `query`. Then assign this `query` object with the additional parameters to the Scheduler [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_Query) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -121,7 +121,7 @@ N> The parameters added using the `query` property are sent with the data reques
 
 ## Handling failure actions
 
-During Scheduler interaction with the server, server-side exceptions may occur. You can capture those error messages or exception details on the client side using the Scheduler [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event.
+During Scheduler interaction with the server, server-side exceptions may occur. You can capture those error messages or exception details on the client side using the Scheduler [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionFailure) event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -134,7 +134,7 @@ During Scheduler interaction with the server, server-side exceptions may occur. 
 
 
 
-The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event contains the error details returned by the server.
+The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionFailure) event contains the error details returned by the server.
 
 ## Scheduler CRUD actions
 
@@ -267,7 +267,7 @@ N> You can find the working sample [here](https://github.com/SyncfusionExamples/
 
 ## Configuring Scheduler with Google API service
 
-We assign the custom Google Calendar URL to the `DataManager` and then assign it to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html). Since the event data retrieved from Google Calendar is in its own object format, it must be resolved manually within the Scheduler [`dataBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBinding) event. Within this event, the event fields need to be mapped properly and then assigned to the result.
+We assign the custom Google Calendar URL to the `DataManager` and then assign it to the Scheduler [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource). Since the event data retrieved from Google Calendar is in its own object format, it must be resolved manually within the Scheduler [`dataBinding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBinding) event. Within this event, the event fields need to be mapped properly and then assigned to the result.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -280,4 +280,4 @@ We assign the custom Google Calendar URL to the `DataManager` and then assign it
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to learn how to present and manipulate data.
