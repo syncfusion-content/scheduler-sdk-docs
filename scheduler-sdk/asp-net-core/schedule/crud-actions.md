@@ -391,7 +391,7 @@ Appointments can be deleted in either of the following ways:
 * Select an appointment and click the delete icon in the quick popup that appears.
 * Select an appointment and press the `Delete` key.
 * Select multiple appointments by tap-holding an event, then single-clicking consecutive events, and then pressing the `Delete` key.
-* Double-click an event to open the default event editor prefilled with event details, and then choose the `Delete` button.
+* Double-click an event to open the default event editor prefixed with event details, and then choose the `Delete` button.
 
 While performing any of these actions, a delete confirmation popup appears before the appointment is deleted.
 
@@ -585,4 +585,4 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 
 N> By default, when you resize a recurring instance, only that occurrence is edited, not the entire series.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for more details. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to learn how to present and manipulate data.

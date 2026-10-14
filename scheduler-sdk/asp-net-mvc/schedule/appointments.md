@@ -863,7 +863,7 @@ The following example enables event buffers in the Week view. Each event shows i
 
 ### Dynamic Buffer Updates
 
-To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) method. The Scheduler re-renders the event with the new buffer immediately.
+To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule/index-default#saveevent) method. The Scheduler re-renders the event with the new buffer immediately.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -12,7 +12,7 @@ documentation: ug
 
 To modify the Scheduler appearance, you need to override the default CSS of the Scheduler. You can also create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes used in the Scheduler below.
 
-| Css class | Purpose |
+| CSS class | Purpose |
 |-------|---------|
 | .e-schedule .e-vertical-view .e-work-cells | Work cells in vertical views of scheduler |
 | .e-schedule .e-month-view .e-work-cells | Work cells in month view of scheduler |
@@ -52,4 +52,4 @@ To modify the Scheduler appearance, you need to override the default CSS of the 
 | .e-parent-node | Parent resource cells in timeline views of the scheduler. |
 | .e-child-node | Child resource cells in timeline views of the scheduler. |
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to know how to present and manipulate data.

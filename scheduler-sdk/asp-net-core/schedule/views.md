@@ -33,7 +33,7 @@ As the Scheduler displays the `Week` view by default, to change the active view,
 * TimelineMonth
 * TimelineYear
 
-It is possible to display only the desired views on the Scheduler using the [`e-schedule-views`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleView_properties.html) property.
+It is possible to display only the desired views on the Scheduler using the [`e-schedule-views`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) property.
 
 In the following example, the Scheduler displays two views, namely Week and TimelineDay.
 
@@ -75,17 +75,17 @@ There are scenarios where each view may need to have different configurations. F
 | `dateHeaderTemplate` | String | The template option which is used to customize the date header cells and is applied only on the views, wherever it is defined. | All views. |
 | `eventTemplate` | String | The template option to customize the events background. It is applied to the events of the view on which it is currently defined. | All views. |
 | `showWeekend` | Boolean | When set to `false`, it hides the weekend days of a week from the views on which it is defined.| All views. |
-| [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) | [GroupModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleGroup_members.html) | Allows setting different resource grouping options on all available Scheduler view modes. | All views. |
+| [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Group) | [GroupModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleGroup.html) | Allows setting different resource grouping options on all available Scheduler view modes. | All views. |
 | `cellTemplate` | String | The template option to customize the work cells of the Scheduler and is applied only on the views, on which it is defined. | Applicable on all views except Agenda view. |
 | `workDays` | Number[] | It is used to set the working days on the Scheduler views. | Applicable on all views except Agenda view. |
 | `displayName` | String | When a particular view is customized to display with different intervals, this property allows the user to set a different display name for each of the views. | Applicable on all views except Agenda and Month Agenda. |
 | `interval` | Number | It allows customizing the default Scheduler views with a different set of days, weeks, work weeks, or months on the applicable view type. | Applicable on all views except Agenda and Month Agenda. |
 | `startHour` | String | It is used to specify the start hour from which the Scheduler should be displayed. It accepts the time string in a short skeleton format and also hides the time beyond the specified start time. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
 | `endHour` | String | It is used to specify the end hour at which the Scheduler ends. It accepts the time string in a short skeleton format. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
-| `timeScale` | [TimeScaleModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleTimeScale_members.html) | Allows setting different timescale configurations on each applicable view mode. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
+| `timeScale` | [TimeScaleModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html) | Allows setting different timescale configurations on each applicable view mode. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
 | `showWeekNumber` | Boolean | When set to `true`, shows the week number on the respective weeks.| Applicable on Day, Week, Work Week, and Month views. |
 | `allowVirtualScrolling` | Boolean | It is used to enable or disable the virtual scrolling functionality. | Applicable on Agenda and Timeline views. |
-| `headerRows` | [`HeaderRowsModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleHeaderRow_members.html) | Allows defining the custom header rows on the timeline views of the Scheduler to display the year, month, week, date, and hour label as individual rows. | Applicable only on all timeline views. |
+| `headerRows` | [`HeaderRowsModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleHeaderRow.html) | Allows defining the custom header rows on the timeline views of the Scheduler to display the year, month, week, date, and hour label as individual rows. | Applicable only on all timeline views. |
 
 ### Day view
 
@@ -362,4 +362,4 @@ N> The view intervals can be extended on all the Scheduler view modes except Age
 
 * [How to restrict view navigation while clicking on dates](./how-to/prevent-date-navigation)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to know how to present and manipulate data.

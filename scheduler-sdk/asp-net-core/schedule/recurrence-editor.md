@@ -12,7 +12,7 @@ documentation: ug
 
 The Recurrence editor is integrated into the Scheduler editor window by default to generate recurrence rules for events. It can also be used as a standalone component by referencing it from the Scheduler repository for recurrence-related workflows. Before using the samples, ensure the Scheduler package is installed and the project is configured with a data source.
 
-N> All the valid recurrence rule string mentioned in the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
+N> All the valid recurrence rule string mentioned in the [`iCalendar`](https://www.rfc-editor.org/info/rfc5545/#section-3.3.10) specifications are applicable to use with the recurrence editor.
 
 ## Customizing the repeat type option in editor
 
@@ -74,7 +74,7 @@ It is possible to customize the recurrence editor to display only specific end o
 
 ## Accessing the recurrence rule string
 
-The recurrence rule is usually generated based on the options selected in the recurrence editor, and it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is valid and can be used with the Scheduler event’s recurrence rule field.
+The recurrence rule is usually generated based on the options selected in the recurrence editor, and it follows the [`iCalendar`](https://www.rfc-editor.org/info/rfc5545/#section-3.3.10) specifications. The generated recurrence rule string is valid and can be used with the Scheduler event’s recurrence rule field.
 
 A `change` event is available in the recurrence editor. It triggers whenever the recurrence editor fields change. In the event argument, you can access the generated recurrence value through the `value` option, as shown in the following code example.
 
@@ -133,7 +133,7 @@ N> Above example will generate two dates January 7, 2018 & January 9 2018 by exc
 
 It is also possible to generate recurrence date instances on the server side by manually referring to the `RecurrenceHelper` class, which is specifically written and used on the application side to handle this date generation process.
 
-N> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for step-by-step guidance on generating dates on the server side.
+N> Refer [here](https://support.syncfusion.com/kb/article/11818/how-to-parse-the-recurrence-rule-rrule-in-server-side) for step-by-step guidance on generating dates on the server side.
 
 ## Restrict date generation with specific count
 
@@ -150,4 +150,4 @@ If the rule is in the "NEVER ENDS" category, you can specify the maximum count w
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to learn how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for an overview of its features. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to learn how to present and manipulate data.
