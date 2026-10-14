@@ -2,7 +2,7 @@
 layout: post
 title: Timezone-Aware Date Highlighting in Blazor DatePicker | Syncfusion®
 description: Learn how to highlight the current date based on the client timezone in Blazor DatePicker components using the TimeZoneOffset property.
-platform: Blazor
+platform: scheduler-sdk
 control: DatePicker
 documentation: ug
 ---
