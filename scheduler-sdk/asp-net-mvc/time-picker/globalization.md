@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Globalization in ASP.NET MVC Timepicker Component
+title: Globalization in Syncfusion ASP.NET MVC Timepicker Control
 description: Learn here all about Globalization in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ASP.NET MVC TimePicker Control
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 
 By default, TimePicker time format and meridian names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](https://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
 
-* Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Locale) property.
+* Set the culture by using the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Locale) property.
 
 To go with the different culture other than `English`, follow the below steps.
 
@@ -63,51 +62,26 @@ In ASP.NET MVC refer the culture files directly from `/node_modules/cldr-data` l
 
 The following example demonstrates the TimePicker in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/globalization/globalization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endhighlight %}
+{% endtabs %}
 
 ## Right-To-Left
 
-The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_EnableRtl) property to set the RTL direction.
+The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [enableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_EnableRtl) property to set the RTL direction.
 
-The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](https://ej2.syncfusion.com/documentation/api/base/l10n/) method.
+The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using `L10n.load` method.
 
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/globalization/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/time-picker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endhighlight %}
+{% endtabs %}

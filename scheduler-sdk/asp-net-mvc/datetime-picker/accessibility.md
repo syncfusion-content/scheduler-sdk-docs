@@ -4,7 +4,6 @@ title: Accessibility in ASP.NET MVC Datetimepicker Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Accessibility
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -42,7 +41,7 @@ The accessibility compliance for the DateTimePicker component is outlined below.
 
 ## WAI-ARIA attributes
 
-DateTimePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
+DateTimePicker provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
 
 To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility) section.
 
@@ -56,7 +55,7 @@ It helps to provide information about the widget for assistive technology to the
 
 ## Keyboard Interaction
 
-You can use the following keys to interact with the DateTimePicker. The control implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+You can use the following keys to interact with the DateTimePicker. The control implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 DateTimePicker supports the below list of shortcut keys.
 
@@ -108,18 +107,6 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 
 N> To focus the DateTimePicker control use the `alt+t` keys.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/datetime-picker/accessibility/razor %}
@@ -127,8 +114,6 @@ N> To focus the DateTimePicker control use the `alt+t` keys.
 {% highlight c# tabtitle="Accessibility.cs" %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ## Ensuring accessibility
 

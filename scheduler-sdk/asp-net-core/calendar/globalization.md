@@ -4,7 +4,6 @@ title: Globalization in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ASP.NET Core Calendar component of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Globalization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -71,26 +70,13 @@ N> The `Localization` library allows you to localize default text content of the
 
 The following example demonstrates the Calendar in `German` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/international/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/international/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-
+{% endtabs %}
 
 ## Right-To-Left
 
@@ -98,22 +84,10 @@ The Calendar supports right-to-left functionality for languages like Arabic, Heb
 
 The following example demonstrates the Calendar in `Arabic` culture with Right-To-Left direction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/international/rtl/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
+{% endtabs %}

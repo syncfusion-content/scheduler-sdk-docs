@@ -4,36 +4,25 @@ title: Customization in ASP.NET MVC Calendar Control | Syncfusion
 description: Learn here all about Customization in Syncfusion ASP.NET MVC Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Customization
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
 
 # Customization in Calendar Control
 
-Each day cell of the Calendar can be customized by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
+Each day cell of the Calendar can be customized by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
 
 The following section demonstrates how to disable or highlight specific dates in a Calendar.
 
 ## Disable weekends
 
-You can disable weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event. The `renderDayCell` event offers the following arguments on each day cell creation to help you disable the dates.
+You can disable weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event. The `renderDayCell` event offers the following arguments on each day cell creation to help you disable the dates.
 
 | **View** | **Description** |
 | --- | --- |
 | `date` | Defines the current date of the Calendar. |
 | `isDisabled` | Specifies whether the current date is to be disabled or not. |
 | `isOutOfRange` | Defines whether the current date is out of range or not. |
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/customization/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -43,13 +32,10 @@ You can disable weekends of every month in a Calendar by using the [renderDayCel
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/customization/customization.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Day cell format
 
-You can also highlight specific dates by adding custom CSS or element to the day cell by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
+You can also highlight specific dates by adding custom CSS or element to the day cell by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
 
 You can customize the appearance of the Calendar by overriding the existing styles. The following list of CSS class names are used to customize the Calendar control.
 
@@ -69,16 +55,6 @@ You can customize the appearance of the Calendar by overriding the existing styl
 
 The following example highlights the World Health Day (every 7th April) and World Forest Day (every 21st March) by using the custom icon and ToolTip.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/cellformat/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/cellformat/razor %}
@@ -87,23 +63,10 @@ The following example highlights the World Health Day (every 7th April) and Worl
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/cellformat/cellformat.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Highlight Weekends
 
-You can highlight the weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/highlight-weekend/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can highlight the weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -113,7 +76,6 @@ You can highlight the weekends of every month in a Calendar by using the [render
 {% include code-snippet/scheduler-sdk/asp-net-mvc/calendar/customization/highlight-weekend/highlight-weekend.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).
 
