@@ -391,7 +391,7 @@ Appointments can be deleted in either of the following ways:
 * Select an appointment and click the delete icon in the quick popup that appears.
 * Select an appointment and press the `Delete` key.
 * Select multiple appointments by tap-holding an event, then single-clicking consecutive events, and then pressing the `Delete` key.
-* Double-click an event to open the default event editor prefilled with event details, and then choose the `Delete` button.
+* Double-click an event to open the default event editor prefixed with event details, and then choose the `Delete` button.
 
 While performing any of these actions, a delete confirmation popup appears before the appointment is deleted.
 
