@@ -4,7 +4,6 @@ title: Calendar Views in ASP.NET Core Calendar Control | Syncfusion
 description: Learn here all about Calendar Views in Syncfusion ASP.NET Core Calendar control of Syncfusion Essential JS 2 and more.
 platform: scheduler-sdk
 control: Calendar Views
-publishingplatform: scheduler-sdk
 documentation: ug
 ---
 
@@ -23,27 +22,11 @@ When view is defined to the [start](https://help.syncfusion.com/cr/aspnetcore-js
 
 The following example demonstrates how to set the `year` as the start view of the Calendar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/calendar-view/views/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/calendar-view/views/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Views.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/calendar-view/views/views.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## View restriction
 
@@ -53,24 +36,10 @@ The following example displays the Calendar in `decade` view, and allows you to 
 
 N> Depth view should always be smaller than the start view. If the `depth` and `start` views are the same, then the Calendar view remains unchanged.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/scheduler-sdk/asp-net-core/calendar/calendar-view/restriction/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/calendar-view/restriction/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Restriction.cs" %}
-{% include code-snippet/scheduler-sdk/asp-net-core/calendar/calendar-view/restriction/restriction.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).
