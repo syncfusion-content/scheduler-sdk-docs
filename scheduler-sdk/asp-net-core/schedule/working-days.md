@@ -85,7 +85,7 @@ By default, week numbers are shown in the Scheduler based on the first day of th
 * `FirstFourDayWeek` – The first week of the year begins from the first week with four or more days.
 * `FirstFullWeek` – The first week of the year begins when meeting the first day of the week (`firstDayOfWeek`) and the first day of the year.
 
-For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
+For more details refer to [this link](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0#remarks)
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -186,7 +186,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to know how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to know how to present and manipulate data.
 
 ## See Also
 
