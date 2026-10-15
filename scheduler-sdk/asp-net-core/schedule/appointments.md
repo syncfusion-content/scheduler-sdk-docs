@@ -234,7 +234,7 @@ The built-in validation support has been added by default for recurring appointm
 
 ## Event fields
 
-The Scheduler dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleField_properties.html). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
+The Scheduler dataSource usually holds the event instances, where each of the instance includes a collection of appropriate [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html). It is mandatory to map these fields with the equivalent fields of database, when remote data is bound to it. When the local JSON data is bound, then the field names defined within the instances needs to be mapped with the scheduler event fields correctly.
 
 N> To create an event on Scheduler, it is enough to define the [`startTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTime) and [`endTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTime). Also [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_Id) field becomes mandatory to process CRUD actions on appropriate events.
 
@@ -883,7 +883,7 @@ The following example enables event buffers in the Week view. Each event shows i
 
 ### Dynamic Buffer Updates
 
-To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule#saveevent) method. The Scheduler re-renders the event with the new buffer immediately.
+To change an event's buffer at runtime, update its `bufferBefore` or `bufferAfter` value and pass the event to the [`saveEvent`](https://ej2.syncfusion.com/documentation/api/schedule/index-default#saveevent) method. The Scheduler re-renders the event with the new buffer immediately.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -1098,4 +1098,4 @@ If your requirement is to simply refresh the appointments instead of refreshing 
 scheduleObj.refreshEvents();
 ```
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/schedule/overview#/fluent2) to knows how to present and manipulate data.

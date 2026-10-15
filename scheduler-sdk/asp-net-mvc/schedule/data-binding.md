@@ -10,14 +10,14 @@ documentation: ug
 
 # Data Binding in ASP.NET MVC Scheduler
 
-The Scheduler uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property can be assigned either with an instance of `DataManager` or a JavaScript object array collection. It supports two kinds of data binding methods:
+The Scheduler uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property can be assigned either with an instance of `DataManager` or a JavaScript object array collection. It supports two kinds of data binding methods:
 
 * Local data
 * Remote data
 
 ## Binding local data
 
-To bind local JSON data to the Scheduler, you can simply assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) option of the scheduler within the `EventSettings` property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local JSON data to the Scheduler, you can simply assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) option of the scheduler within the `EventSettings` property. The local data source can also be provided as an instance of the `DataManager`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,7 +36,7 @@ N> By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
 ## Binding remote data
 
-Any kind of remote data service can be bound to the Scheduler. To do so, create an instance of `DataManager` and provide the service URL to the `Url` option of `DataManager`, and then assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property within `EventSettings`.
+Any kind of remote data service can be bound to the Scheduler. To do so, create an instance of `DataManager` and provide the service URL to the `Url` option of `DataManager`, and then assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property within `EventSettings`.
 
 ### Using ODataV4Adaptor
 
@@ -72,7 +72,7 @@ The following image represents how the parameters are passed using ODataV4 filte
 
 ### Using custom adaptor
 
-It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `EventID` for the appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`. The custom adaptor is registered with the `DataManager` using the `adaptor` option, and the resulting `DataManager` instance is then assigned to the Scheduler's [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property.
+It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `EventID` for the appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`. The custom adaptor is registered with the `DataManager` using the `adaptor` option, and the resulting `DataManager` instance is then assigned to the Scheduler's [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -87,7 +87,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 ## Loading data via AJAX post
 
-You can bind the event data through an external AJAX request and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property of the Scheduler. In the following code example, we have retrieved the data from the server with the help of an AJAX request and assigned the resultant data to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property of the Scheduler within the `success` (also known as `onSuccess`) event of the AJAX call.
+You can bind the event data through an external AJAX request and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property of the Scheduler. In the following code example, we have retrieved the data from the server with the help of an AJAX request and assigned the resultant data to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property of the Scheduler within the `success` (also known as `onSuccess`) event of the AJAX call.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -104,7 +104,7 @@ N> The definition for the controller method `GetData` can be referred to [here](
 
 ## Passing additional parameters to the server
 
-To send an additional custom parameter to the server-side post, you need to use the `addParams` method of `Query`. Then, assign this `Query` object with the additional parameters to the [`Query`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html) property of the Scheduler.
+To send an additional custom parameter to the server-side post, you need to use the `addParams` method of `Query`. Then, assign this `Query` object with the additional parameters to the [`Query`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_Query) property of the Scheduler.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -121,7 +121,7 @@ N> The parameters added using the `Query` property will be sent along with the d
 
 ## Handling failure actions
 
-When the Scheduler interacts with the server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details on the client side using the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event of the Scheduler.
+When the Scheduler interacts with the server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details on the client side using the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionFailure) event of the Scheduler.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -134,7 +134,7 @@ When the Scheduler interacts with the server, there are chances that some server
 
 
 
-The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event contains the error details returned from the server. The argument exposes properties such as `error` (the error object or message), `action` (the operation that caused the failure, for example, `insert`, `update`, `remove`, `batch`, or `read`), and `result` (the raw server response, if any), so you can inspect the cause and surface an appropriate message to the end user.
+The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionFailure) event contains the error details returned from the server. The argument exposes properties such as `error` (the error object or message), `action` (the operation that caused the failure, for example, `insert`, `update`, `remove`, `batch`, or `read`), and `result` (the raw server response, if any), so you can inspect the cause and surface an appropriate message to the end user.
 
 ## Scheduler CRUD actions
 
@@ -259,7 +259,7 @@ namespace ScheduleSample.Controllers
 
 ## Configuring Scheduler with Google API service
 
-We have assigned our custom-created Google Calendar URL to the `DataManager` and assigned the same to the Scheduler [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html). Since the event data retrieved from Google Calendar will be in its own object format, it needs to be resolved manually within the Scheduler's [`DataBinding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBinding) event. Within this event, the event fields need to be mapped properly and then assigned to the result. The Google Calendar URL must support CORS or be accessible from the Scheduler's hosting domain, and you must provide a valid API key in the `key` query parameter of the Google Calendar URL.
+We have assigned our custom-created Google Calendar URL to the `DataManager` and assigned the same to the Scheduler [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource). Since the event data retrieved from Google Calendar will be in its own object format, it needs to be resolved manually within the Scheduler's [`DataBinding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_DataBinding) event. Within this event, the event fields need to be mapped properly and then assigned to the result. The Google Calendar URL must support CORS or be accessible from the Scheduler's hosting domain, and you must provide a valid API key in the `key` query parameter of the Google Calendar URL.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -272,4 +272,4 @@ We have assigned our custom-created Google Calendar URL to the `DataManager` and
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to know how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/schedule/overview#/fluent2) example to know how to present and manipulate data.

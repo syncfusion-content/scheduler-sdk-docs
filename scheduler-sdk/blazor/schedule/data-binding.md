@@ -1367,7 +1367,7 @@ Now, the Blazor Scheduler can be configured using the `SfDataManager` to interac
 }
 ```
 
-N> You can find the working sample on Entity framework [here](https://github.com/SyncfusionExamples/blazor-scheduler-crud-using-restful-service).
+N> You can find the working sample on Entity Framework [here](https://github.com/SyncfusionExamples/blazor-scheduler-crud-using-restful-service).
 
 ## Configuring Blazor Scheduler with Google API service
 
@@ -1379,5 +1379,5 @@ N> The runnable sample for the above code will be available [here](https://githu
 
 ## See also
 
-* [How to Access Microsoft Graph Calendar Events with Blazor Scheduler](https://www.syncfusion.com/blogs/post/how-to-access-microsoft-graph-calendar-events-with-syncfusion-blazor-scheduler.aspx )
-* [Easy Steps to Synchronize JIRA Calendar Tasks with the Blazor Scheduler](https://www.syncfusion.com/blogs/post/easy-steps-to-synchronize-jira-calendar-tasks-with-the-blazor-scheduler.aspx)
+* [How to Access Microsoft Graph Calendar Events with Blazor Scheduler](https://www.syncfusion.com/blogs/post/how-to-access-microsoft-graph-calendar-events-with-syncfusion-blazor-scheduler)
+* [Easy Steps to Synchronize JIRA Calendar Tasks with the Blazor Scheduler](https://www.syncfusion.com/blogs/post/easy-steps-to-synchronize-jira-calendar-tasks-with-the-blazor-scheduler)

@@ -1051,7 +1051,7 @@ The application now provides a professional appointment scheduling system with:
 ## Additional Resources
 
 - [Blazor Scheduler Documentation](https://help.syncfusion.com/scheduler-sdk/blazor/schedule/getting-started)
-- [Entity Framework Core Documentation](https://docs.microsoft.com/en-us/ef/core/)
+- [Entity Framework Core Documentation](https://learn.microsoft.com/en-us/ef/core/)
 - [Npgsql Entity Framework Core Provider](https://www.npgsql.org/efcore/)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
