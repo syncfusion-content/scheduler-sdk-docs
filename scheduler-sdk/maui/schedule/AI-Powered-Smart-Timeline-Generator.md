@@ -1,19 +1,19 @@
 ---
 layout: post
-title: AI-Powered Smart Project Planning in .NET MAUI Scheduler | Syncfusion®
-description: Learn how to build AI-powered smart project planning in .NET MAUI Scheduler by integrating Azure OpenAI services for intelligent timeline generation.
+title: AI-Powered Smart TimeLine Generator in .NET MAUI Scheduler | Syncfusion®
+description: Learn how to build AI-powered smart TimeLine Generator in .NET MAUI Scheduler by integrating Azure OpenAI services for intelligent timeline generation.
 platform: maui
 control: SfScheduler
 documentation: ug
 ---
 
-# AI-Powered Smart Project Planning in .NET MAUI Scheduler
+# AI-Powered Smart TimeLine Generator in .NET MAUI Scheduler
 
-This guide explains how to implement AI-powered project planning in a .NET MAUI application using Syncfusion® Scheduler (`SfScheduler`) and Azure OpenAI.
+This guide explains how to implement AI-powered TimeLine Generator in a .NET MAUI application using Syncfusion® Scheduler (`SfScheduler`) and Azure OpenAI.
 
 Users can enter a high-level objective such as planning an event, launching a product, or managing a project. Azure OpenAI analyzes the request and automatically generates a structured timeline of project activities with dates and descriptions.
 
-## Integrating AI-Powered Smart Project Planning in .NET MAUI Scheduler
+## Integrating AI-Powered Smart TimeLine Generator in .NET MAUI Scheduler
 
 Before proceeding, ensure that Azure OpenAI is configured and integrated with your .NET MAUI application. Refer to the **Azure OpenAI integration prerequisites** and complete the required setup steps.
 
@@ -80,7 +80,7 @@ public async Task<AIPlannerResponse?> GeneratePlanAsync(string userInput, Cancel
 
 ## Step 1: Designing the User Interface
 
-Use an `Editor` to collect project planning requirements and a button to generate the timeline.
+Use an `Editor` to collect TimeLine Generator requirements and a button to generate the timeline.
 
 {% tabs %}
 {% highlight xaml %}
@@ -167,7 +167,7 @@ With these implementations, the Scheduler becomes AI-powered, enabling users to 
 
 Azure OpenAI analyzes the project objective, identifies meaningful activities, assigns logical dates and durations, and generates a complete project timeline. Users can review and refine the generated schedule before applying it to the Scheduler.
 
-![AI Powered Smart Project Planning Scheduler](images/smart-ai-samples/Create-Data-Form-with-AI-technology-in-.NET-MAUI.gif)
+![AI Powered Smart TimeLine Generator Scheduler](images/smart-ai-samples/AI-Powered-Smart-TimeLine-Generator.gif)
 images/smart-ai-samples/AI-Powered-Smart-Project-Planning-Scheduler.gif
 
 You can download the complete sample from this [link]().
