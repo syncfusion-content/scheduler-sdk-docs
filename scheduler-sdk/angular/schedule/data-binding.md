@@ -57,7 +57,7 @@ The Scheduler supports binding to various remote data services. To configure thi
 
 ### Filter events using the in-built query
 
-To enable server-side filtering based on specific conditions, set the [`includeFiltersInQuery`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettingsModel#includefiltersinquery) API to true. This allows the filter query to include the start date, end date, and recurrence rule, so the request retrieves only the relevant data from the server.
+To enable server-side filtering based on specific conditions, set the [`includeFiltersInQuery`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettingsModel#includefiltersinquery) API to true. This allows the filter query to include the start date, end date, and recurrence rule, so the request retrieves only the relevant data from the server.
 
 This method greatly improves performance by reducing the data transferred to the client side. As a result, the component becomes more efficient and responsive, providing a better user experience. However, longer query strings may affect the maximum URL length or exceed server query-string limits.
 
@@ -103,7 +103,7 @@ You can bind event data through an external AJAX request and assign it to the Sc
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Ajax } from "@syncfusion/ej2-base";
 import { DataManager, UrlAdaptor, Query } from "@syncfusion/ej2-data";
-import { EventSettingsModel, View, EventRenderedArgs, DayService, WeekService, WorkWeekService, MonthService AgendaService, ResizeService, DragAndDropService, ScheduleComponent } from "@syncfusion/ej2-angular-schedule";
+import { EventSettingsModel, View, EventRenderedArgs, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService, ScheduleComponent } from "@syncfusion/ej2-angular-schedule";
 
 @Component({
   selector: "app-root",

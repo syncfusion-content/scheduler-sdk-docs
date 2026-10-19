@@ -27,7 +27,7 @@ export class AppComponent {
     public selectedDate: Date = new Date(2018, 10, 14);
     public readonly: boolean = true;
     private calendarId: string = '5105trob9dasha31vuqek6qgp0@group.calendar.google.com';
-    private publicKey: string = 'AIzaSyD76zjMDsL_jkenM5AAnNsORypS1Icuqxg';
+    private publicKey: string = 'YOUR_GOOGLE_API_KEY';
     private dataManger: DataManager = new DataManager({
         url: 'https://www.googleapis.com/calendar/v3/calendars/' + this.calendarId + '/events?key=' + this.publicKey,
         adaptor: new WebApiAdaptor,
