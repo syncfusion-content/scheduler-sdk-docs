@@ -10,11 +10,11 @@ appliesto: UI Component Suite, Scheduler SDK
 
 # Metro Theme in Windows Forms Scheduler
 
-This feature enables you to apply the Metro theme to the Schedule control. 
+The Schedule control supports Metro styling, which allows you to provide a modern and consistent user interface. You can apply the Metro theme by setting the appropriate visual style for the control. 
 
 ## Use case scenario
 
-The Metro theme support is useful for commercial applications to attract end users with inspiring UI look and feel.
+Use the Metro theme to provide a modern appearance for the Schedule control and maintain visual consistency across your application.
 
 ## Property
 
@@ -26,7 +26,7 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-This is an enumeration type property used to get or set the visual styles (skins) such as Office2010, Office2007, Office2003, Metro, etc.</td></tr>
+Gets or sets the visual style applied to the Schedule control. Supported styles include Office2010, Office2007, Office2003, Metro, and other available themes.</td></tr>
 </table>
 
 ## Event
@@ -44,9 +44,9 @@ Object sender, EventArgs e</td><td>
 Occurs when the ThemesEnabled property is changed.</td></tr>
 </table>
 
-## Applying Metro Theme to the Schedule Control
+## Apply the Metro Theme
 
-You can apply Metro theme to the Schedule control by setting the GridVisualStyles property as Metro. 
+To apply the Metro theme, set the `VisualStyle` property of the Schedule control to `GridVisualStyles.Metro`.
 
 {% tabs %}
 {% highlight c# %}
