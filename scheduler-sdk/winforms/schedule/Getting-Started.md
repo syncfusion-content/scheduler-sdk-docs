@@ -54,17 +54,20 @@ To add the Scheduler control programmatically, follow these steps.
 {% tabs %}
 {% highlight  c# %}
 using Syncfusion.Windows.Forms.Schedule;
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        private readonly ScheduleControl scheduleControl;
+
         public Form1()
         {
             InitializeComponent();
-            ScheduleControl scheduleControl1 = new ScheduleControl();
-            scheduleControl1.Location = new Point(82, 12);
-            scheduleControl1.Size = new Size(350, 360);
-            this.Controls.Add(scheduleControl1);
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Location = new Point(82, 12);
+            scheduleControl.Size = new Size(350, 360);
+            this.Controls.Add(scheduleControl);
         }
     }
 }
@@ -72,15 +75,16 @@ namespace WindowsFormsApplication1
 
 {% highlight vb %}
 Imports Syncfusion.Windows.Forms.Schedule
+
 Namespace WindowsFormsApplication1
     Public Partial Class Form1
-        Inherits Form
+        Private ReadOnly scheduleControl As ScheduleControl
         Public Sub New()
             InitializeComponent()
-            Dim scheduleControl1 As ScheduleControl = New ScheduleControl()
-            scheduleControl1.Location = New Point(82, 12)
-            scheduleControl1.Size = New Size(350, 360)
-            Me.Controls.Add(scheduleControl1)
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Location = New Point(82, 12)
+            scheduleControl.Size = New Size(350, 360)
+            Me.Controls.Add(scheduleControl)
         End Sub
     End Class
 End Namespace
@@ -115,22 +119,20 @@ Add a using statement so that you can refer to the class names in `SimpleSchedul
 
 {% tabs %}
 {% highlight c# %}
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using Syncfusion.Windows.Forms.Schedule;
 
 namespace GridScheduleSample
 {
     public partial class Form1 : Form
     {
+        private readonly ScheduleControl scheduleControl = new();
+
 	 	public Form1()
 	 	{
 			InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            this.Controls.Add(scheduleControl);
+            Load += Form1_Load;
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -138,39 +140,34 @@ namespace GridScheduleSample
 			SimpleScheduleDataProvider data = new SimpleScheduleDataProvider();
 			data.MasterList = new SimpleScheduleAppointmentList();
 			data.FileName = "default.schedule";
-			this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
-			this.scheduleControl1.DataSource = data;
+			this.scheduleControl.ScheduleType = ScheduleViewType.Month;
+			this.scheduleControl.DataSource = data;
 		}
-
 	 }
-
 }
 {% endhighlight %}
 {% highlight vb %}
-Imports System
-Imports System.Collections.Generic
-Imports System.ComponentModel
-Imports System.Data
-Imports System.Drawing
-Imports System.Text
-Imports System.Windows.Forms
 Imports Syncfusion.Windows.Forms.Schedule
 
 Namespace GridScheduleSample
 
     Public Partial Class Form1
-        Inherits Form
+
+        Private ReadOnly scheduleControl As ScheduleControl
 
         Public Sub New()
             InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            Me.Controls.Add(scheduleControl)
+            AddHandler Load, AddressOf Form1_Load
         End Sub
 
         Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim data As SimpleScheduleDataProvider = New SimpleScheduleDataProvider()
             data.MasterList = New SimpleScheduleAppointmentList()
             data.FileName = "default.schedule"
-            Me.scheduleControl1.ScheduleType = ScheduleViewType.Month
-            Me.scheduleControl1.DataSource = data
+            Me.scheduleControl.ScheduleType = ScheduleViewType.Month
+            Me.scheduleControl.DataSource = data
         End Sub
     End Class
 End Namespace
@@ -239,15 +236,8 @@ Then update `Form_Load` so it reloads the saved data when the file exists on dis
 
 {% tabs %}
 {% highlight c# %}
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using Syncfusion.Windows.Forms.Schedule;
 using System.IO;
+using Syncfusion.Windows.Forms.Schedule;
 
 namespace GridScheduleSample
 {
@@ -273,8 +263,8 @@ namespace GridScheduleSample
 				data.MasterList = new SimpleScheduleAppointmentList();
 				data.FileName = "default.schedule";
 			}
-			this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
-			this.scheduleControl1.DataSource = data;
+			this.scheduleControl.ScheduleType = ScheduleViewType.Month;
+			this.scheduleControl.DataSource = data;
 		}
 
 	}
@@ -282,13 +272,6 @@ namespace GridScheduleSample
 }
 {% endhighlight %}
 {% highlight vb %}
-Imports System
-Imports System.Collections.Generic
-Imports System.ComponentModel
-Imports System.Data
-Imports System.Drawing
-Imports System.Text
-Imports System.Windows.Forms
 Imports Syncfusion.Windows.Forms.Schedule
 Imports System.IO
 
@@ -312,8 +295,8 @@ Namespace GridScheduleSample
                 data.FileName = "default.schedule"
             End If
 
-            Me.scheduleControl1.ScheduleType = ScheduleViewType.Month
-            Me.scheduleControl1.DataSource = data
+            Me.scheduleControl.ScheduleType = ScheduleViewType.Month
+            Me.scheduleControl.DataSource = data
         End Sub
     End Class
 End Namespace
@@ -329,23 +312,68 @@ Run the application again. The Month view appears with the saved appointment.
 Use the **ForeColor** property to customize the text color displayed for an appointment.
 
 {% tabs %}
-{% highlight c# %}
-SimpleScheduleAppointmentList masterList = new SimpleScheduleAppointmentList();
+{% highlight c# hl_lines="24" %}
+public partial class Form1 : Form
+{
+    private readonly ScheduleControl scheduleControl = new();
 
-ScheduleAppointment item = masterList.NewScheduleAppointment() as ScheduleAppointment;
-item.StartTime = DateTime.Now;
-item.EndTime = item.StartTime.AddDays(2);
-item.ForeColor = Color.Red;
-masterList.Add(item);
+    public Form1()
+    {
+        InitializeComponent();
+        scheduleControl = new ScheduleControl();
+        this.Controls.Add(scheduleControl);
+        Load += Form1_Load;
+    }
+    
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        SimpleScheduleDataProvider data = new SimpleScheduleDataProvider();
+        data.MasterList = new SimpleScheduleAppointmentList();
+        this.scheduleControl.ScheduleType = ScheduleViewType.Month;
+        this.scheduleControl.DataSource = data;
+
+        ScheduleAppointment item = data.NewScheduleAppointment() as ScheduleAppointment;
+        item.StartTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 10, 30, 0);
+        item.EndTime = item.StartTime.AddHours(1);
+        item.Subject = "Meeting";
+        item.ForeColor = Color.Red;
+        data.MasterList.Add(item);
+    }
+
+}
 {% endhighlight %}
-{% highlight vb %}
-Dim masterList As New SimpleScheduleAppointmentList()
+{% highlight vb hl_lines="27" %}
+Imports Syncfusion.Windows.Forms.Schedule
 
-Dim item As ScheduleAppointment = TryCast(masterList.NewScheduleAppointment(),ScheduleAppointment)
-item.StartTime = DateTime.Now
-item.EndTime = item.StartTime.AddDays(2)
-item.ForeColor = Color.Red
-masterList.Add(item)
+Namespace GridScheduleSample
+
+    Public Partial Class Form1
+
+        Private ReadOnly scheduleControl As ScheduleControl
+
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            Me.Controls.Add(scheduleControl)
+            AddHandler Load, AddressOf Form1_Load
+        End Sub
+
+        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
+            Dim data As SimpleScheduleDataProvider = New SimpleScheduleDataProvider()
+            data.MasterList = New SimpleScheduleAppointmentList()
+            data.FileName = "default.schedule"
+            Me.scheduleControl.ScheduleType = ScheduleViewType.Month
+            Me.scheduleControl.DataSource = data
+
+            Dim item As ScheduleAppointment = TryCast(data.NewScheduleAppointment(), ScheduleAppointment)
+            item.StartTime = New DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 10, 30, 0)
+            item.EndTime = item.StartTime.AddHours(1)
+            item.Subject = "Meeting"
+            item.ForeColor = Color.Red
+            data.MasterList.Add(item)
+        End Sub
+    End Class
+End Namespace
 {% endhighlight %}
 {% endtabs %}
 
