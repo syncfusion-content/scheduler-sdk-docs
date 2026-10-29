@@ -540,3 +540,101 @@ The following properties control how dates are displayed in Scheduler headers:
     scheduleControl.Appearance.WorkWeekHeaderFormat = "ddd dd"
 {% endhighlight %}
 {% endtabs %}
+
+## Customize Prime Time Appearance
+
+The Scheduler supports highlighting a specific range of hours, known as prime time, to visually distinguish important scheduling periods from the rest of the day. Prime time is commonly used to emphasize business hours, working hours, or other key time ranges.
+
+### Configure Prime Time Range and Colors
+
+The following properties define the prime time interval and customize the appearance of prime and non-prime time cells:
+
+* [PrimeTimeStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_PrimeTimeStart) - Specifies the hour at which the prime time range begins.
+* [PrimeTimeEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_PrimeTimeEnd) - Specifies the hour at which the prime time range ends.
+* [PrimeTimeCellColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_PrimeTimeCellColor) - Specifies the background color applied to cells within the prime time range.
+* [NonPrimeTimeCellColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NonPrimeTimeCellColor) - Specifies the background color applied to cells outside the prime time range.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.NonPrimeTimeCellColor = Color.LightGray;
+    scheduleControl.Appearance.PrimeTimeCellColor = Color.LightGreen;
+    scheduleControl.Appearance.PrimeTimeStart = 10;
+    scheduleControl.Appearance.PrimeTimeEnd = 18;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.NonPrimeTimeCellColor = Color.LightGray
+    scheduleControl.Appearance.PrimeTimeCellColor = Color.LightGreen
+    scheduleControl.Appearance.PrimeTimeStart = 10
+    scheduleControl.Appearance.PrimeTimeEnd = 18
+{% endhighlight %}
+{% endtabs %}
+
+In this example, time slots between 10:00 AM and 6:00 PM are highlighted using a light green background, while all remaining time slots use a light gray background. This distinction helps draw attention to preferred scheduling hours and improves the readability of the schedule.
+
+## Customize the Time Column
+
+The Scheduler displays a time column in Day and WorkWeek views to indicate the time associated with each time slot. The appearance and format of this column can be customized to improve readability and align with the application's visual style.
+
+### Customize Time Column Display
+
+The following properties control the visibility and format of the time column:
+
+* [ShowTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_ShowTime) - Specifies whether the time column is displayed.
+* [Hours24](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_Hours24) - Determines whether time values are displayed using a 24-hour format.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.ShowTime = true;
+    scheduleControl.Appearance.Hours24 = true;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.ShowTime = True
+    scheduleControl.Appearance.Hours24 = True
+{% endhighlight %}
+{% endtabs %}
+
+When `Hours24` is set to `true`, time values are displayed using the 24-hour clock format. Setting `ShowTime` to `false` hides the time column from the Scheduler.
+
+### Customize Time Column Appearance
+
+The appearance of the time column can be customized using the following properties:
+
+* [TimeBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeBackColor) - Specifies the background color of the time column.
+* [TimeTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeTextColor) - Specifies the color of the text displayed in the time column.
+* [MarkColumnColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_MarkColumnColor) - Specifies the color of the solid line displayed next to the time column in Day view.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.TimeBackColor = Color.WhiteSmoke;
+    scheduleControl.Appearance.TimeTextColor = Color.DarkBlue;
+    scheduleControl.Appearance.MarkColumnColor = Color.SteelBlue;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.TimeBackColor = Color.WhiteSmoke
+    scheduleControl.Appearance.TimeTextColor = Color.DarkBlue
+    scheduleControl.Appearance.MarkColumnColor = Color.SteelBlue
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Time Column Font Size
+
+The Scheduler uses different font sizes within the time column to display time labels.
+
+* [TimeBigFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeBigFontSize) - Specifies the size of the larger font used in the time column.
+* [TimeLittleFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeLittleFontSize) - Specifies the size of the smaller font used in the time column.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.TimeBigFontSize = 10;
+    scheduleControl.Appearance.TimeLittleFontSize = 8;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.TimeBigFontSize = 10
+    scheduleControl.Appearance.TimeLittleFontSize = 8
+{% endhighlight %}
+{% endtabs %}
+
