@@ -47,10 +47,24 @@ The following ARIA attributes are used in the Blazor Scheduler:
 |-------|---------|
 | role="main" | Attribute added to the Blazor Scheduler element describes the actual role of the element and denotes it as the main and unique content. |
 | role="button" | Attribute is assigned to the appointments of Blazor Scheduler to denote them as clickable elements. |
+| role="application" | Attribute added to the Blazor Scheduler root element denotes the Scheduler as a single interactive widget region, so assistive technologies announce it as one unit and route the key presses to the Scheduler keyboard handlers. |
+| role="grid" | Attribute added to the content tables of the Blazor Scheduler identifies the calendar content as a grid structure and provides the row and cell semantics required by the grid pattern. |
+| role="rowgroup" | Attribute added to the tbody element of the Blazor Scheduler content tables groups the related rows within the grid structure and provides row grouping semantics for assistive technologies. |
+| role="row" | Attribute added to the load more row and the resource grouped row elements of the Blazor Scheduler Agenda View represents the rows within the grid structure and provides row semantics for assistive technologies. |
+| role="none"| Attribute added to the table elements of the Blazor Recurrence Editor removes the native table semantics of these elements, so assistive technologies do not interpret them as meaningful structural content. |
+| role="presentation" | Attribute added to the layout tables, agenda lists, agenda items, and event buffer template elements of the Blazor Scheduler removes the native semantics of these elements, so assistive technologies do not interpret them as meaningful structural content. |
+| role="dialog"| Attribute is assigned to the quick info popup and more event popup elements of Blazor Scheduler to denote them as modal dialogs. |
+| tabindex="0" | Attribute is added to the appointment, more event indicator, all day expand, timeline resource cell, and year view content elements of Blazor Scheduler to make them focusable. In the grid views it is applied as a roving tabindex, so only the focused cell holds tabindex="0" and the arrow keys move it between the cells. |
 | aria-label | Attribute is set to the Blazor Scheduler parent element and its default value is the Blazor Scheduler's current date. Whenever the date is navigated, this attribute is updated with the appropriate current date values. It is also assigned to other Blazor Scheduler UI elements such as previous and next date navigation buttons, the div element displaying the date range in the header bar, and appointment elements. |
 | aria-labelledby | It indicates the editor dialog title to users through assistive technologies. |
 | aria-describedby | It indicates the editor dialog content description to users through assistive technologies. |
 | aria-disabled | Attribute is set on the appointment element to indicate the disabled state of the Blazor Scheduler. |
+| aria-live | Attribute is set to "assertive" on the date range item of the Blazor Scheduler toolbar to notify assistive technologies when the date range is updated through date navigation. |
+| aria-selected | 	Attribute is set on the work cell, all day cell, agenda cell, and agenda resource header cell elements of Blazor Scheduler to indicate their selection state. It is dynamically updated to "true" and "false" when the cells are selected or deselected through mouse or keyboard interactions. |
+| aria-atomic | Attribute is set to "true" on the date range item of the Blazor Scheduler toolbar to announce the complete date range in a single announcement. |
+| aria-grabbed | Attribute is set on the appointment elements of Blazor Scheduler to indicate the drag state of the appointment. |
+| aria-haspopup | Attribute is set on the date range button element of the Blazor Scheduler toolbar to indicate that it opens a popup. |
+| aria-grabbed | Attribute is set on the appointment elements of Blazor Scheduler to indicate the drag state of the appointment. |
 
 The Syncfusion® Blazor Scheduler component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
 
