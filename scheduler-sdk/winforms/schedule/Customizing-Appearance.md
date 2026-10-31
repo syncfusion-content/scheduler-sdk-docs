@@ -10,269 +10,631 @@ appliesto: UI Component Suite, Scheduler SDK
 
 # Customizing Appearance in Windows Forms Scheduler
 
-The appearance of any region of the ScheduleControl can be customized by using the [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler). Appearance property. This property provides access to the ScheduleAppearance object that controls various appearance attributes of different WinForms Scheduler regions. 
+The [Winforms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) control provides extensive appearance customization options through the [Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleControl.html#Syncfusion_Windows_Forms_Schedule_ScheduleControl_Appearance) property. The [ScheduleAppearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html) object exposes settings that allow you to customize colors, display formats, headers, navigation elements, time slots, visual styles, and various scheduler-specific UI elements.
 
-The following table describes the appearance options available in the customized WinForms Scheduler control.
+This section explains how to customize the appearance of different Scheduler regions.
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th></tr>
-<tr>
-<th colspan = "2">
-Border</th></tr>
-<tr>
-<td>
-ClickItemBorderColor</td><td>
-Gets or sets border color of a clicked item.</td></tr>
-<tr>
-<td>
-DragColor</td><td>
-Gets or sets color of the dragged item.</td></tr>
-<tr>
-<td>
-SolidBorderColor</td><td>
-Gets or sets color of the solid lines in the calendar.</td></tr>
-<tr>
-<th colspan = "2">
-Caption</th></tr>
-<tr>
-<td>
-CaptionBackColor</td><td>
-Gets or sets color of the caption area above the calendar.</td></tr>
-<tr>
-<td>
-ShowCaption</td><td>
-Specifies whether the caption panel above the calendar is visible or not.</td></tr>
-<tr>
-<td>
-ShowCaptionButtons</td><td>
-Specifies whether the navigation buttons are shown on the caption panel or not.</td></tr>
-<tr>
-<th colspan = "2">
-DisplayItemFormat</th></tr>
-<tr>
-<td>
-AllDayItemFormat</td><td>
-Gets or sets the display format of an all-day item.</td></tr>
-<tr>
-<td>
-DateFormat</td><td>
-Gets or sets format string used when formatting any token from DisplayItemFormatStrings that represents a date only value.</td></tr>
-<tr>
-<td>
-DateTimeFormat</td><td>
-Gets or sets format string used when formatting any token from DisplayItemFormatStrings that represents combined date and time values.</td></tr>
-<tr>
-<td>
-DayItemFormat</td><td>
-Gets or sets display format of a schedule item displayed in a day or workweek view.</td></tr>
-<tr>
-<td>
-FullWeekHeaderFormat</td><td>
-Specifies display format of the header of a day in week view.</td></tr>
-<tr>
-<td>
-LongHeaderFormat</td><td>
-Specifies display format of the header in a day view.</td></tr>
-<tr>
-<td>
-SpanItemFormatLeftText</td><td>
-Specifies display format of text displayed on the interior left side of a multi day span.</td></tr>
-<tr>
-<td>
-SpanItemFormatMiddleText</td><td>
-Specifies display format of the text displayed in the middle of a multi day span.</td></tr>
-<tr>
-<td>
-SpanItemFormatRightText</td><td>
-Specifies display format of the text displayed on the interior right side of a multi day span.</td></tr>
-<tr>
-<td>
-SpanItemFormatTerminalLeftText</td><td>
-Specifies display format of the text displayed on the open left side of a multi day span.</td></tr>
-<tr>
-<td>
-SpanItemFormatTerminalRightText</td><td>
-Specifies display format of text displayed on the open right side of a multi day span.</td></tr>
-<tr>
-<td>
-TimeFormat</td><td>
-Gets or sets format string used when formatting any token from DisplayItemFormatStrings that represents a time only value.</td></tr>
-<tr>
-<td>
-WeekHeaderFormat</td><td>
-Specifies display format of the header label in a workweek view.</td></tr>
-<tr>
-<td>
-WeekMonthItemFormat</td><td>
-Specifies display format of a schedule item shown in a week or month view.</td></tr>
-<tr>
-<td>
-WorkWeekHeaderFormat</td><td>
-Determines display format of the header of a day in a workweek view.</td></tr>
-<tr>
-<th colspan = "2">
-Header</th></tr>
-<tr>
-<td>
-AllDayBackColor</td><td>
-Gets or sets back color of the all day row in the calendar.</td></tr>
-<tr>
-<td>
-MonthWeekHeaderBackColor</td><td>
-Specifies back color of the header cells in a month or week view.</td></tr>
-<tr>
-<td>
-MonthWeekHeaderForeColor</td><td>
-Specifies fore color of the header cells in a month or week view.</td></tr>
-<tr>
-<td>
-WorkWeekHeaderBackColor</td><td>
-Specifies back color of header cells in a workweek view.</td></tr>
-<tr>
-<td>
-WorkWeekHeaderForeColor</td><td>
-Specifies fore color of header cells in a workweek view.</td></tr>
-<tr>
-<th colspan = "2">
-Navigation Calendar</th></tr>
-<tr>
-<td>
-NavigationCalendarArrowColor</td><td>
-Specifies color of arrows in the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarBackColor</td><td>
-Specifies back color of the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarDisabledTextColor</td><td>
-Specifies color of disabled text in the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarHeaderColor</td><td>
-Gets or sets color of the header in the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarSelectionColor</td><td>
-Gets or sets selection color in the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarStartDayOfWeek </td><td>
-Specifies the DayOfWeek shown in the left-most column of the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarTextColor</td><td>
-Specifies text color of the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarTodayColor</td><td>
-Specifies color of today's text in the navigation calendar.</td></tr>
-<tr>
-<td>
-NavigationCalendarWeekNumberColor</td><td>
-Specifies color of week numbers in the navigation calendar.</td></tr>
-<tr>
-<th colspan = "2">
-Prime time</th></tr>
-<tr>
-<td>
-NonPrimeTimeCellColor</td><td>
-Gets or sets color of non-prime time cells in the calendar.</td></tr>
-<tr>
-<td>
-PrimeTimeCellColor</td><td>
-Gets or sets color of prime time cells in the calendar.</td></tr>
-<tr>
-<td>
-PrimeTimeEnd</td><td>
-Specifies the time when the prime time color stops being used in the display.</td></tr>
-<tr>
-<td>
-PrimeTimeStart</td><td>
-Specifies the time when the prime time color starts being used in the display.</td></tr>
-<tr>
-<th colspan = "2">
-Time Column</th></tr>
-<tr>
-<td>
-Hours24</td><td>
-Determines whether the time column is displayed using a 24-hour format or not.</td></tr>
-<tr>
-<td>
-MarkColumnColor</td><td>
-Gets or sets the color of the thick solid line next to the time column in a day view.</td></tr>
-<tr>
-<td>
-ShowTime</td><td>
-Indicates whether the time column should appear or not.</td></tr>
-<tr>
-<td>
-TimeBackColor</td><td>
-Specifies the back color of the time column.</td></tr>
-<tr>
-<td>
-TimeBigFontSize</td><td>
-Determines size of the larger font used in the time column.</td></tr>
-<tr>
-<td>
-TimeLittleFontSize</td><td>
-Determines size of the smaller font used in the time column.</td></tr>
-<tr>
-<td>
-TimeTextColor</td><td>
-Specifies color of the text in the time column.</td></tr>
-<tr>
-<td colspan = "2">
-Visual Style</td></tr>
-<tr>
-<th>
-VisualStyle</th><th>
-Specifies visual style for the ScheduleControl.</th></tr>
-<tr>
-<td>
-Miscellaneous</td><td>
-</td></tr>
-<tr>
-<td>
-DayMonthCutOff</td><td>
-Gets or sets maximum number of days appear side-by-side in a day style calendar.</td></tr>
-<tr>
-<td>
-DivisionsPerHour</td><td>
-Gets or sets number of time divisions appear in a day, custom, or workweek view.</td></tr>
-<tr>
-<td>
-MonthCalendarStartDayOfWeek</td><td>
-Gets or sets the DayOfWeek shown in the left-most column of the month calendar.</td></tr>
-<tr>
-<td>
-MonthShowFullWeek</td><td>
-Specifies whether the month view shows 7 columns or 6 columns with Saturday or Sunday stacked or not.</td></tr>
-<tr>
-<td>
-ScheduleAppointmentTipFormat </td><td>
-Defines the text displayed for schedule item tips.</td></tr>
-<tr>
-<td>
-ScheduleAppointmentTipsEnabled</td><td>
-Determines whether to show item tips or not.</td></tr>
-<tr>
-<td>
-SplitterBackColor</td><td>
-Specifies back color of the two splitters in the the ScheduleControl.</td></tr>
-<tr>
-<td>
-TextColor</td><td>
-Specifies color of basic text shown in the calendar.</td></tr>
-<tr>
-<td>
-ThemesEnabled</td><td>
-Specifies whether the themes are enabled or not.</td></tr>
-<tr>
-<td>
-WeekCalendarStartDayOfWeek</td><td>
-Specifies the DayOfWeek shown in the first column of the week calendar.</td></tr>
-</table>
+## Customize Scheduler Colors
+
+The Scheduler allows you to customize colors used for borders, text, grid lines, and other visual elements.
+
+### Customize the Selected Appointment Border
+
+When an appointment is selected, the Scheduler displays a border around the item to indicate its selection state. The [ClickItemBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_ClickItemBorderColor) property defines the color of this border, making the selected appointment visually distinct from other appointments in the Scheduler.
+
+{% tabs %}
+{% highlight  c# hl_lines="13" %}
+using Syncfusion.Windows.Forms.Schedule;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private readonly ScheduleControl scheduleControl;
+
+        public Form1()
+        {
+            InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Appearance.ClickItemBorderColor = Color.Blue;
+            this.Controls.Add(scheduleControl);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb hl_lines="9" %}
+Imports Syncfusion.Windows.Forms.Schedule
+
+Namespace WindowsFormsApplication1
+    Public Partial Class Form1
+        Private ReadOnly scheduleControl As ScheduleControl
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Appearance.ClickItemBorderColor = Color.Blue
+            Me.Controls.Add(scheduleControl)
+        End Sub
+    End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Drag-and-Drop Indicators
+
+When an appointment is dragged, the Scheduler displays a visual indicator. The [DragColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_DragColor) property specifies the color of this indicator during the drag-and-drop operation.
+
+{% tabs %}
+{% highlight  c# hl_lines="13" %}
+using Syncfusion.Windows.Forms.Schedule;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private readonly ScheduleControl scheduleControl;
+
+        public Form1()
+        {
+            InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Appearance.DragColor = Color.Green;
+            this.Controls.Add(scheduleControl);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb hl_lines="9" %}
+Imports Syncfusion.Windows.Forms.Schedule
+
+Namespace WindowsFormsApplication1
+    Public Partial Class Form1
+        Private ReadOnly scheduleControl As ScheduleControl
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Appearance.DragColor = Color.Green
+            Me.Controls.Add(scheduleControl)
+        End Sub
+    End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Grid Line Colors
+
+The [SolidBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_SolidBorderColor) property specifies the color of the grid lines displayed in the calendar within the navigation panel.
+
+{% tabs %}
+{% highlight  c# hl_lines="13" %}
+using Syncfusion.Windows.Forms.Schedule;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private readonly ScheduleControl scheduleControl;
+
+        public Form1()
+        {
+            InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Appearance.SolidBorderColor = Color.Green;
+            this.Controls.Add(scheduleControl);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb hl_lines="9" %}
+Imports Syncfusion.Windows.Forms.Schedule
+
+Namespace WindowsFormsApplication1
+    Public Partial Class Form1
+        Private ReadOnly scheduleControl As ScheduleControl
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Appearance.SolidBorderColor = Color.Green
+            Me.Controls.Add(scheduleControl)
+        End Sub
+    End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}
+
+## Customize the Caption Area
+
+The Scheduler displays a caption bar at the top for navigation and date display.
+
+## Change the Caption Background Color
+
+Use the [CaptionBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_CaptionBackColor) property to customize the caption panel background.
+
+{% tabs %}
+{% highlight  c# hl_lines="13" %}
+using Syncfusion.Windows.Forms.Schedule;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private readonly ScheduleControl scheduleControl;
+
+        public Form1()
+        {
+            InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Appearance.CaptionBackColor = Color.Yellow;
+            this.Controls.Add(scheduleControl);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb hl_lines="9" %}
+Imports Syncfusion.Windows.Forms.Schedule
+
+Namespace WindowsFormsApplication1
+    Public Partial Class Form1
+        Private ReadOnly scheduleControl As ScheduleControl
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Appearance.CaptionBackColor = Color.Yellow
+            Me.Controls.Add(scheduleControl)
+        End Sub
+    End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}
+
+## Show or Hide the Caption Bar
+
+You can control caption visibility using the [ShowCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_ShowCaption) property.
+
+{% tabs %}
+{% highlight  c# hl_lines="13" %}
+using Syncfusion.Windows.Forms.Schedule;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private readonly ScheduleControl scheduleControl;
+
+        public Form1()
+        {
+            InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Appearance.ShowCaption = false;
+            this.Controls.Add(scheduleControl);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb hl_lines="9" %}
+Imports Syncfusion.Windows.Forms.Schedule
+
+Namespace WindowsFormsApplication1
+    Public Partial Class Form1
+        Private ReadOnly scheduleControl As ScheduleControl
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Appearance.ShowCaption = False
+            Me.Controls.Add(scheduleControl)
+        End Sub
+    End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}
+
+## Show or Hide Navigation Buttons
+
+Use the [ShowCaptionButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_ShowCaptionButtons) property to control the visibility of previous and next navigation buttons.
+
+{% tabs %}
+{% highlight  c# hl_lines="13" %}
+using Syncfusion.Windows.Forms.Schedule;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        private readonly ScheduleControl scheduleControl;
+
+        public Form1()
+        {
+            InitializeComponent();
+            scheduleControl = new ScheduleControl();
+            scheduleControl.Appearance.ShowCaptionButtons = false;
+            this.Controls.Add(scheduleControl);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight vb hl_lines="9" %}
+Imports Syncfusion.Windows.Forms.Schedule
+
+Namespace WindowsFormsApplication1
+    Public Partial Class Form1
+        Private ReadOnly scheduleControl As ScheduleControl
+        Public Sub New()
+            InitializeComponent()
+            scheduleControl = New ScheduleControl()
+            scheduleControl.Appearance.ShowCaptionButtons = False
+            Me.Controls.Add(scheduleControl)
+        End Sub
+    End Class
+End Namespace
+{% endhighlight %}
+{% endtabs %}
+
+N> When `ShowCaption` is set to `false`, the entire caption panel including navigation buttons is hidden.
+
+## Customize Header Appearance
+
+The Scheduler displays date headers to identify the dates associated with the visible schedule. Header colors can be customized to improve readability and match the application's theme.
+
+### Customize Week and Month Headers
+
+Use the [MonthWeekHeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_MonthWeekHeaderBackColor) and [MonthWeekHeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_MonthWeekHeaderForeColor) properties to customize the background and text colors of headers displayed in `Week` and `Month` views.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.MonthWeekHeaderBackColor = Color.LightSteelBlue;
+    scheduleControl.Appearance.MonthWeekHeaderForeColor = Color.DarkBlue;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.MonthWeekHeaderBackColor = Color.LightSteelBlue
+    scheduleControl.Appearance.MonthWeekHeaderForeColor = Color.DarkBlue
+{% endhighlight %}
+{% endtabs %}
+
+### Customize WorkWeek Headers
+
+Use the [WorkWeekHeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_WorkWeekHeaderBackColor) and [WorkWeekHeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_WorkWeekHeaderForeColor) properties to customize the appearance of headers in the `WorkWeek` view.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.WorkWeekHeaderBackColor = Color.Gainsboro;
+    scheduleControl.Appearance.WorkWeekHeaderForeColor = Color.Black;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.WorkWeekHeaderBackColor = Color.Gainsboro
+    scheduleControl.Appearance.WorkWeekHeaderForeColor = Color.Black
+{% endhighlight %}
+{% endtabs %}
+
+### Customize the All-Day Row
+
+The Scheduler includes a dedicated row for displaying all-day appointments. Use the [AllDayBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_AllDayBackColor) property to customize the background color of this row.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.AllDayBackColor = Color.Beige;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.AllDayBackColor = Color.Beige
+{% endhighlight %}
+{% endtabs %}
+
+## Customize Navigation Calendar Appearance
+
+The navigation calendar provides a compact monthly view that can be used to browse and navigate dates within the Scheduler. Its appearance can be customized to match the application's visual style.
+
+### Customize Calendar Colors
+
+The following properties customize the overall appearance of the navigation calendar:
+
+* [NavigationCalendarBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedu) - Specifies the background color of the navigation calendar.
+* [NavigationCalendarHeaderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarHeaderColor) - Specifies the color of the header that displays the current month and year.
+* [NavigationCalendarTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarTextColor) - Specifies the color of date text displayed in the navigation calendar.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.NavigationCalendarBackColor = Color.White;
+    scheduleControl.Appearance.NavigationCalendarHeaderColor = Color.SteelBlue;
+    scheduleControl.Appearance.NavigationCalendarTextColor = Color.Black;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.NavigationCalendarBackColor = Color.White
+    scheduleControl.Appearance.NavigationCalendarHeaderColor = Color.SteelBlue
+    scheduleControl.Appearance.NavigationCalendarTextColor = Color.Black
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Date Highlighting
+
+The navigation calendar provides dedicated appearance settings for selected dates, the current date, and disabled dates. Customizing these elements helps distinguish important dates and improves the overall navigation experience.
+
+* [NavigationCalendarSelectionColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarSelectionColor) - Specifies the color used for the selected date in the navigation calendar.
+* [NavigationCalendarTodayColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarTextColor) - Specifies the text color used for the current date.
+* [NavigationCalendarTodayBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarTodayBackColor) - Specifies the background color of the current date.
+* [NavigationCalendarDisabledTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarDisabledTextColor) - Specifies the text color of dates that are unavailable or displayed in a disabled state.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.NavigationCalendarSelectionColor = Color.CornflowerBlue;
+    scheduleControl.Appearance.NavigationCalendarTodayColor = Color.Red;
+    scheduleControl.Appearance.NavigationCalendarTodayBackColor = Color.LightYellow;
+    scheduleControl.Appearance.NavigationCalendarDisabledTextColor = Color.Gray;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.NavigationCalendarSelectionColor = Color.CornflowerBlue
+    scheduleControl.Appearance.NavigationCalendarTodayColor = Color.Red
+    scheduleControl.Appearance.NavigationCalendarTodayBackColor = Color.LightYellow
+    scheduleControl.Appearance.NavigationCalendarDisabledTextColor = Color.Gray
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Navigation Elements
+
+The navigation calendar includes month navigation controls and week numbers that can be customized independently.
+
+* [NavigationCalendarArrowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarArrowColor) - Specifies the color of the navigation arrows used to move between months.
+* [NavigationCalendarWeekNumberColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarWeekNumberColor) - Specifies the color of week numbers displayed in the navigation calendar.
+* [NavigationCalendarStartDayOfWeek](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NavigationCalendarStartDayOfWeek) - Specifies which day appears as the first day of the week in the navigation calendar.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.NavigationCalendarArrowColor = Color.SteelBlue;
+    scheduleControl.Appearance.NavigationCalendarWeekNumberColor = Color.DarkGray;
+    scheduleControl.Appearance.NavigationCalendarStartDayOfWeek = DayOfWeek.Monday;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.NavigationCalendarArrowColor = Color.SteelBlue
+    scheduleControl.Appearance.NavigationCalendarWeekNumberColor = Color.DarkGray
+    scheduleControl.Appearance.NavigationCalendarStartDayOfWeek = DayOfWeek.Monday
+{% endhighlight %}
+{% endtabs %}
+
+
+## Customize Appointment Text Format
+
+The Scheduler allows you to control the information displayed within appointment cells by using customizable format strings. Format strings can contain predefined tokens that are replaced with values from the corresponding appointment at runtime.
+
+These format strings can be used to display appointment details such as the subject, location, owner, dates, times, and reminder information. The same set of tokens can be used when formatting standard appointments and multi-day appointments.
+
+### Supported Format Tokens 
+
+Supported Format Tokens
+
+The following tokens can be used in appointment format strings:
+
+* [subject] - Displays the appointment subject.
+* [content] - Displays the appointment content or description.
+* [location] - Displays the appointment location.
+* [owner] - Displays the appointment owner.
+* [label] - Displays the appointment label value.
+* [marker] - Displays the appointment marker value.
+* [reminder] - Displays the appointment reminder information.
+* [allday] - Indicates whether the appointment is an all-day appointment.
+* [start] - Displays the appointment start date and time.
+* [end] - Displays the appointment end date and time.
+* [startdate] - Displays the appointment start date.
+* [enddate] - Displays the appointment end date.
+* [starttime] - Displays the appointment start time.
+* [endtime] - Displays the appointment end time.
+
+### Customize Date and Time Token Formatting
+
+Date- and time-related tokens can be formatted using standard .NET format strings. These formatting settings are applied whenever the corresponding tokens are displayed in appointment text.
+
+* [DateFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_DateFormat) - Specifies the format used for date-only tokens such as [startdate] and [enddate].
+* [TimeFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeFormat) - Specifies the format used for time-only tokens such as [starttime] and [endtime].
+* [DateTimeFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_DateTimeFormat) - Specifies the format used for date and time tokens such as [start] and [end].
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.DateFormat = "dd/MM/yyyy";
+    scheduleControl.Appearance.TimeFormat = "HH:mm";
+    scheduleControl.Appearance.DateTimeFormat = "dd/MM/yyyy HH:mm";
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.DateFormat = "dd/MM/yyyy"
+    scheduleControl.Appearance.TimeFormat = "HH:mm"
+    scheduleControl.Appearance.DateTimeFormat = "dd/MM/yyyy HH:mm"
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Appointment Display Formats
+
+The Scheduler provides separate formatting properties for appointments displayed in different views. These properties determine how appointment information is rendered within appointment cells.
+
+* [DayItemFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_DayItemFormat) - Specifies the display format of appointments shown in Day and WorkWeek views.
+* [WeekMonthItemFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_WeekMonthItemFormat) - Specifies the display format of appointments shown in Week and Month views.
+* [AllDayItemFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_AllDayItemFormat) - Specifies the display format of all-day appointments.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.DayItemFormat = "[subject] from [starttime] to [endtime]";
+    scheduleControl.Appearance.WeekMonthItemFormat = "[subject] from [starttime] to [endtime]";
+    scheduleControl.Appearance.AllDayItemFormat = "[subject] from [starttime] to [endtime]";
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.DayItemFormat = "[subject] from [starttime] to [endtime]"
+    scheduleControl.Appearance.WeekMonthItemFormat = "[subject] from [starttime] to [endtime]"
+    scheduleControl.Appearance.AllDayItemFormat = "[subject] from [starttime] to [endtime]"
+{% endhighlight %}
+{% endtabs %}
+
+The preceding example displays the appointment subject followed by its start and end times.
+
+#### Customize Multi-Day Appointment Text
+
+Appointments that span multiple days are rendered differently from standard appointments. The Scheduler provides separate formatting properties for different portions of a multi-day appointment span.
+
+The following properties define the text displayed across different sections of a multi-day appointment:
+
+* [SpanItemFormatLeftText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_SpanItemFormatLeftText) - Specifies the text displayed on the interior left side of a multi-day span.
+* [SpanItemFormatMiddleText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_SpanItemFormatMiddleText) - Specifies the text displayed in the middle of a multi-day span.
+* [SpanItemFormatRightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_SpanItemFormatRightText) - Specifies the text displayed on the interior right side of a multi-day span.
+* [SpanItemFormatTerminalLeftText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_SpanItemFormatTerminalLeftText) - Specifies the text displayed on the open left side of a multi-day span.
+* [SpanItemFormatTerminalRightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_SpanItemFormatTerminalRightText) - Specifies the text displayed on the open right side of a multi-day span.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.SpanItemFormatLeftText = "[subject]";
+    scheduleControl.Appearance.SpanItemFormatMiddleText = "[subject]";
+    scheduleControl.Appearance.SpanItemFormatRightText = "[subject]";
+    scheduleControl.Appearance.SpanItemFormatTerminalLeftText = "[subject]";
+    scheduleControl.Appearance.SpanItemFormatTerminalRightText = "[subject]";
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.SpanItemFormatLeftText = "[subject]"
+    scheduleControl.Appearance.SpanItemFormatMiddleText = "[subject]"
+    scheduleControl.Appearance.SpanItemFormatRightText = "[subject]"
+    scheduleControl.Appearance.SpanItemFormatTerminalLeftText = "[subject]"
+    scheduleControl.Appearance.SpanItemFormatTerminalRightText = "[subject]"
+{% endhighlight %}
+{% endtabs %}
+
+These properties use the same format tokens supported by standard appointment formats and enable different text to be displayed for various sections of a multi-day appointment span.
+
+N> 
+
+- Format strings can contain both static text and tokens. Any text outside the token delimiters ([ and ]) is displayed as-is. For example, the format string "[subject] from [starttime] to [endtime]" renders the words from and to together with the appointment values.
+
+- To display a literal opening or closing bracket in a format string, use double brackets:
+
+    - [[ displays [
+    - ]] displays ]
+
+## Customize Header Formats
+
+The Scheduler displays date headers in Day, Week, and WorkWeek views to identify the dates associated with the visible schedule. Header text can be customized using standard .NET date format strings to display either detailed or compact date information depending on the active view and available space.
+
+The following properties control how dates are displayed in Scheduler headers:
+
+* LongHeaderFormat - Specifies the header format used in Day view. The default value is "dddd, d MMMM yyyy".
+* FullWeekHeaderFormat - Specifies the header format used in Week view. The default value is "D" (long date pattern).
+* WeekHeaderFormat - Specifies the header label format used in WorkWeek view. The default value is "MMM d".
+* WorkWeekHeaderFormat - Specifies the header format used in WorkWeek view. The default value is "MM/dd/yyyy".
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.LongHeaderFormat = "dddd, MMMM dd yyyy";
+    scheduleControl.Appearance.FullWeekHeaderFormat = "D";
+    scheduleControl.Appearance.WeekHeaderFormat = "MMM dd";
+    scheduleControl.Appearance.WorkWeekHeaderFormat = "ddd dd";
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.LongHeaderFormat = "dddd, MMMM dd yyyy"
+    scheduleControl.Appearance.FullWeekHeaderFormat = "D"
+    scheduleControl.Appearance.WeekHeaderFormat = "MMM dd"
+    scheduleControl.Appearance.WorkWeekHeaderFormat = "ddd dd"
+{% endhighlight %}
+{% endtabs %}
+
+## Customize Prime Time Appearance
+
+The Scheduler supports highlighting a specific range of hours, known as prime time, to visually distinguish important scheduling periods from the rest of the day. Prime time is commonly used to emphasize business hours, working hours, or other key time ranges.
+
+### Configure Prime Time Range and Colors
+
+The following properties define the prime time interval and customize the appearance of prime and non-prime time cells:
+
+* [PrimeTimeStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_PrimeTimeStart) - Specifies the hour at which the prime time range begins.
+* [PrimeTimeEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_PrimeTimeEnd) - Specifies the hour at which the prime time range ends.
+* [PrimeTimeCellColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_PrimeTimeCellColor) - Specifies the background color applied to cells within the prime time range.
+* [NonPrimeTimeCellColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_NonPrimeTimeCellColor) - Specifies the background color applied to cells outside the prime time range.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.NonPrimeTimeCellColor = Color.LightGray;
+    scheduleControl.Appearance.PrimeTimeCellColor = Color.LightGreen;
+    scheduleControl.Appearance.PrimeTimeStart = 10;
+    scheduleControl.Appearance.PrimeTimeEnd = 18;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.NonPrimeTimeCellColor = Color.LightGray
+    scheduleControl.Appearance.PrimeTimeCellColor = Color.LightGreen
+    scheduleControl.Appearance.PrimeTimeStart = 10
+    scheduleControl.Appearance.PrimeTimeEnd = 18
+{% endhighlight %}
+{% endtabs %}
+
+In this example, time slots between 10:00 AM and 6:00 PM are highlighted using a light green background, while all remaining time slots use a light gray background. This distinction helps draw attention to preferred scheduling hours and improves the readability of the schedule.
+
+## Customize the Time Column
+
+The Scheduler displays a time column in Day and WorkWeek views to indicate the time associated with each time slot. The appearance and format of this column can be customized to improve readability and align with the application's visual style.
+
+### Customize Time Column Display
+
+The following properties control the visibility and format of the time column:
+
+* [ShowTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_ShowTime) - Specifies whether the time column is displayed.
+* [Hours24](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_Hours24) - Determines whether time values are displayed using a 24-hour format.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.ShowTime = true;
+    scheduleControl.Appearance.Hours24 = true;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.ShowTime = True
+    scheduleControl.Appearance.Hours24 = True
+{% endhighlight %}
+{% endtabs %}
+
+When `Hours24` is set to `true`, time values are displayed using the 24-hour clock format. Setting `ShowTime` to `false` hides the time column from the Scheduler.
+
+### Customize Time Column Appearance
+
+The appearance of the time column can be customized using the following properties:
+
+* [TimeBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeBackColor) - Specifies the background color of the time column.
+* [TimeTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeTextColor) - Specifies the color of the text displayed in the time column.
+* [MarkColumnColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_MarkColumnColor) - Specifies the color of the solid line displayed next to the time column in Day view.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.TimeBackColor = Color.WhiteSmoke;
+    scheduleControl.Appearance.TimeTextColor = Color.DarkBlue;
+    scheduleControl.Appearance.MarkColumnColor = Color.SteelBlue;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.TimeBackColor = Color.WhiteSmoke
+    scheduleControl.Appearance.TimeTextColor = Color.DarkBlue
+    scheduleControl.Appearance.MarkColumnColor = Color.SteelBlue
+{% endhighlight %}
+{% endtabs %}
+
+### Customize Time Column Font Size
+
+The Scheduler uses different font sizes within the time column to display time labels.
+
+* [TimeBigFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeBigFontSize) - Specifies the size of the larger font used in the time column.
+* [TimeLittleFontSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Schedule.ScheduleAppearance.html#Syncfusion_Windows_Forms_Schedule_ScheduleAppearance_TimeLittleFontSize) - Specifies the size of the smaller font used in the time column.
+
+{% tabs %}
+{% highlight  c# %}
+    scheduleControl.Appearance.TimeBigFontSize = 10;
+    scheduleControl.Appearance.TimeLittleFontSize = 8;
+{% endhighlight %}
+
+{% highlight vb %}
+    scheduleControl.Appearance.TimeBigFontSize = 10
+    scheduleControl.Appearance.TimeLittleFontSize = 8
+{% endhighlight %}
+{% endtabs %}
+
