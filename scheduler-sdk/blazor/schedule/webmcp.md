@@ -120,14 +120,14 @@ Pass a list of names to `GetWebMcpToolsAsync` to inspect specific tools only.
 
 The Blazor Scheduler ships built-in WebMCP tools for navigation and for write operations.
 
-### Navigate Tools
+### Navigate tools
 
 | Tool Name | Description |
 | --------- | ----------- |
 | changeView | Switches the Scheduler to the requested view |
 | navigateDate | Moves the Scheduler to the requested date |
 
-### Write Tools
+### Write tools
 
 | Tool Name | Description |
 | --------- | ----------- |
