@@ -199,10 +199,6 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.NavigateDate"
                                 Name="goToDate"
                                 Description="Moves the Scheduler to the requested calendar date." />
-            <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.Custom"
-                                Name="getCurrentInfo"
-                                Description="Return the current view and selected date of the Scheduler."
-                                InputSchema="@EmptySchema" />
         </ScheduleWebMcpTools>
     </ScheduleWebMcpSettings>
 </SfSchedule>
@@ -212,8 +208,6 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
         new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
-
-    private string EmptySchema = """{"type":"object","properties":{}}""";
 
     public class AppointmentData
     {
@@ -315,36 +309,18 @@ The following sample registers a custom tool that returns the current view and s
 
     private Task OnWebMcpExecute(ScheduleWebMcpExecuteEventArgs args)
     {
-        if (args.Command != ScheduleWebMcpToolCommand.Custom)
+        if (args.Command == ScheduleWebMcpToolCommand.Custom &&
+            args.Name == CustomToolName)
         {
-            return Task.CompletedTask;
+            string selectedDate = ScheduleRef!.SelectedDate.ToString(
+                "MMMM dd, yyyy",
+                CultureInfo.InvariantCulture);
+
+            args.Result =
+                $"The Scheduler is currently displaying the " +
+                $"{ScheduleRef.CurrentView} view with " +
+                $"{selectedDate} selected.";
         }
-
-        if (!string.Equals(
-                args.Name,
-                CustomToolName,
-                StringComparison.OrdinalIgnoreCase))
-        {
-            return Task.CompletedTask;
-        }
-
-        if (ScheduleRef is null)
-        {
-            args.Cancel = true;
-            args.CancellationResponse =
-                "The Scheduler component is not available.";
-
-            return Task.CompletedTask;
-        }
-
-        string selectedDate = ScheduleRef.SelectedDate.ToString(
-            "MMMM dd, yyyy",
-            CultureInfo.InvariantCulture);
-
-        args.Result =
-            $"The Scheduler is currently displaying the " +
-            $"{ScheduleRef.CurrentView} view with " +
-            $"{selectedDate} selected.";
 
         return Task.CompletedTask;
     }
