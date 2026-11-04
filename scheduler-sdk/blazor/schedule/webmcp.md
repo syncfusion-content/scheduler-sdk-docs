@@ -23,7 +23,6 @@ Before you begin, ensure you have:
 Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `ScheduleWebMcpSettings` tag so tool names stay unique on the page.
 
 ```cshtml
-
 @page "/"
 @using Syncfusion.Blazor.Schedule;
 
@@ -40,9 +39,7 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `Schedule
 
 @code {
     private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
-
     private readonly List<AppointmentData> Appointments = new();
-
     public class AppointmentData
     {
         public int Id { get; set; }
@@ -66,7 +63,6 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `Schedule
 Call `GetWebMcpToolsAsync` to list the tools the component registered.
 
 ```cshtml
-
 @page "/"
 @using Syncfusion.Blazor.Schedule;
 
@@ -94,11 +90,8 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
 @code {
     private SfSchedule<AppointmentData> ScheduleRef;
     private List<string> ToolLines = new();
-
     private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
-
     private readonly List<AppointmentData> Appointments = new();
-
     public class AppointmentData
     {
         public int Id { get; set; }
@@ -109,7 +102,6 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
         public DateTime EndTime { get; set; }
         public bool IsAllDay { get; set; }
     }
-
     private async Task ShowToolsAsync()
     {
         if (ScheduleRef is null) return;
@@ -164,7 +156,6 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
 `args.Name` in `OnWebMcpExecute` and the `Name` on each item returned by `GetWebMcpToolsAsync` are the tool name without the prefix. Match on that value, or on `args.Command`, when you decide which call to handle.
 
 ```cshtml
-
 @page "/"
 @using Syncfusion.Blazor.Schedule;
 
@@ -191,9 +182,7 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
 
 @code {
     private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
-
     private readonly List<AppointmentData> Appointments = new();
-
     public class AppointmentData
     {
         public int Id { get; set; }
@@ -204,7 +193,6 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
         public DateTime EndTime { get; set; }
         public bool IsAllDay { get; set; }
     }
-
     private Task OnWebMcpExecute(ScheduleWebMcpExecuteEventArgs args)
     {
         return Task.CompletedTask;
@@ -220,7 +208,6 @@ Set `Command` to `Custom` to expose an action the component does not provide. A 
 The following sample registers a custom tool that returns the current view and selected date of the Scheduler. The tool takes no input, so its schema declares no properties.
 
 ```cshtml
-
 @page "/"
 @using System.Globalization;
 @using Syncfusion.Blazor.Schedule;
@@ -248,19 +235,9 @@ The following sample registers a custom tool that returns the current view and s
 
 @code {
     private SfSchedule<AppointmentData> ScheduleRef;
-
     private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
-
     private readonly List<AppointmentData> Appointments = new();
-
-    private string CustomInputSchema =>
-        @"
-    {
-        ""type"": ""object"",
-        ""properties"": {},
-        ""required"": []
-    }";
-
+    private string CustomInputSchema => """{"type":"object","properties":{},"required":[]}""";
     public class AppointmentData
     {
         public int Id { get; set; }
@@ -271,7 +248,6 @@ The following sample registers a custom tool that returns the current view and s
         public DateTime EndTime { get; set; }
         public bool IsAllDay { get; set; }
     }
-
     private Task OnWebMcpExecute(ScheduleWebMcpExecuteEventArgs args)
     {
         if (args.Command == ScheduleWebMcpToolCommand.Custom &&
@@ -280,13 +256,11 @@ The following sample registers a custom tool that returns the current view and s
             string selectedDate = ScheduleRef.SelectedDate.ToString(
                 "MMMM dd, yyyy",
                 CultureInfo.InvariantCulture);
-
             args.Result =
                 $"The Scheduler is currently displaying the " +
                 $"{ScheduleRef.CurrentView} view with " +
                 $"{selectedDate} selected.";
         }
-
         return Task.CompletedTask;
     }
 }
@@ -310,7 +284,6 @@ The order of work for each call is:
 For a built-in write tool, set `ShowConfirmationDialog` and leave the work to the component. Do not change data in the event for that call. The component runs its handler only after the user accepts. The confirmation gate applies to built-in tools only, because a custom tool has already run its side effect by the time the event returns.
 
 ```cshtml
-
 @page "/"
 @using Syncfusion.Blazor.Schedule;
 
@@ -335,11 +308,8 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
 
 @code {
     private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
-
     private readonly List<AppointmentData> Appointments = new();
-
     private bool UserCanEditEvents { get; set; } = true;
-
     public class AppointmentData
     {
         public int Id { get; set; }
@@ -350,7 +320,6 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
         public DateTime EndTime { get; set; }
         public bool IsAllDay { get; set; }
     }
-
     private Task OnWebMcpExecute(ScheduleWebMcpExecuteEventArgs args)
     {
         // Block a write tool when the user is not allowed to change events.
@@ -360,16 +329,13 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
             args.Cancel = true;
             args.CancellationResponse =
                 "Deleting events is not allowed for this user.";
-
             return Task.CompletedTask;
         }
-
         // Ask the user to confirm before a built-in tool changes the schedule.
         if (args.Command == ScheduleWebMcpToolCommand.NavigateDate)
         {
             args.ShowConfirmationDialog = true;
         }
-
         return Task.CompletedTask;
     }
 }
