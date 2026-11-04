@@ -13,24 +13,24 @@ appliesto: UI Component Suite, Scheduler SDK
 
 The Scheduler is a Windows Forms class library that brings complete appointment planning and calendar management to desktop applications. It is designed for business scheduling scenarios that need a familiar Outlook-style experience, quick date navigation, and flexible calendar layouts for everyday work.
 
-The control helps users create appointments, review schedules across different time ranges, and manage both simple and recurring events with ease. Appointments can be moved and resized interactively, reminders help users stay aware of upcoming work, and the built-in navigation calendar makes it easy to jump directly to the dates that matter most.
+The control supports creating and managing appointments across different time ranges and views, including recurring events. Appointments can be moved and resized interactively, reminders help track upcoming events, and the built-in navigation calendar provides a convenient way to browse and navigate dates.
 
 ![windows forms schedule showing month view](overview_images/windowsforms-scheduler-showing-month-view.png)
 
-The [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) control is well suited for timetables, calendars, event scheduling, activity planning, project management, reservations, and resource usage planning.
+The [WinForms Scheduler](https://www.syncfusion.com/scheduler-sdk/winforms-scheduler) control is suitable for a wide range of scheduling scenarios, including calendars, timetables, event scheduling, activity planning, project scheduling, reservation systems, and appointment management applications.
 
 ## Key features
 
-* **Caption panel**: Shows the current schedule range at the top of the control and provides convenient navigation for moving to earlier or later dates.
-* **Navigation panel and calendar**: Places a compact calendar beside the schedule so users can move quickly to another date. The panel can be displayed on either side of the control or hidden when a cleaner layout is preferred.
-* **Built-in views**: Supports Day, Work Week, Week, Month, and Custom Week views so users can switch between detailed and high-level planning modes as needed.
-* **Appointment editing**: Lets users create and update appointments with familiar scheduling details such as time, location, notes, labels, markers, and reminders.
-* **Drag and drop**: Makes rescheduling simple by allowing appointments to be moved between time slots and resized directly in the view.
-* **Recurring appointments**: Supports daily, weekly, monthly, quarterly, and yearly repetition patterns for meetings and other repeating schedules, helping users plan once and repeat automatically.
-* **Reminders and alerts**: Surfaces upcoming events through an alert window so users can dismiss, snooze, or clear reminders when needed.
-* **Visual styles**: Includes a broad set of built-in themes and office-inspired appearances, from classic to modern flat styles, with support for high-contrast rendering.
-* **Touch support**: Works smoothly on touch-enabled devices with swipe, pan, and zoom interactions for natural calendar navigation.
-* **Globalization and localization**: Adapts date formats, day names, and month names to the current culture for regional consistency.
-* **Right-to-left support**: Mirrors the layout for right-to-left languages so the scheduler remains usable and natural in multilingual applications.
+* **Caption Panel**: Displays the currently visible date range at the top of the control and provides navigation buttons for moving to previous or next dates.
+* **Navigation Panel and Calendar**: Displays a navigation calendar beside the schedule for browsing and selecting dates. The panel can be docked to either side of the control or hidden as needed.
+* **Built-in Views**: Supports Day, Work Week, Week, Month, and Custom Week views, enabling appointments to be displayed at varying levels of detail.
+* **Appointment Editing**: Provides built-in support for creating and modifying appointments with scheduling details such as subject, time, location, notes, labels, markers, and reminders.
+* **Drag and Drop**: Allows appointments to be moved between time slots and resized directly within the schedule view.
+* **Recurring Appointments**: Supports daily, weekly, monthly, quarterly, and yearly recurrence patterns for meetings and other repeating events.
+* **Reminders and Alerts**: Displays reminder notifications for upcoming appointments and provides options to dismiss, snooze, or clear reminders.
+* **Visual Styles**: Includes a variety of built-in themes and Office-inspired appearances, ranging from classic styles to modern flat designs, with support for high-contrast rendering.
+* **Touch Support**: Supports touch interactions such as swipe, pan, and zoom gestures for intuitive schedule navigation on touch-enabled devices.
+* **Globalization and Localization**: Adapts date formats, day names, month names, and other culture-specific information based on the current culture settings.
+* **Right-to-Left Support**: Supports right-to-left layouts, enabling the Scheduler to integrate naturally into applications that target RTL languages.
 
-N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. Looking for the full WinForms Scheduler component overview, features, pricing, and documentation? Visit the [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) page.
+N> Explore the [WinForms Scheduler examples](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) to learn how to create, customize, and manage appointments in various scheduling scenarios. To learn more about the control, including its key features, licensing information, and documentation, visit the [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) page.
