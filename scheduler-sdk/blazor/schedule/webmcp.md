@@ -39,25 +39,18 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `Schedule
 </SfSchedule>
 
 @code {
-    private readonly DateTime SelectedDate =
-        new DateTime(2026, 10, 22);
+    private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
 
     public class AppointmentData
     {
         public int Id { get; set; }
-
-        public string? Subject { get; set; }
-
-        public string? Location { get; set; }
-
-        public string? Description { get; set; }
-
+        public string Subject { get; set; }
+        public string Location { get; set; }
+        public string Description { get; set; }
         public DateTime StartTime { get; set; }
-
         public DateTime EndTime { get; set; }
-
         public bool IsAllDay { get; set; }
     }
 }
@@ -99,28 +92,21 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
 </SfSchedule>
 
 @code {
-    private SfSchedule<AppointmentData>? ScheduleRef;
+    private SfSchedule<AppointmentData> ScheduleRef;
     private List<string> ToolLines = new();
 
-    private readonly DateTime SelectedDate =
-        new DateTime(2026, 10, 22);
+    private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
 
     public class AppointmentData
     {
         public int Id { get; set; }
-
-        public string? Subject { get; set; }
-
-        public string? Location { get; set; }
-
-        public string? Description { get; set; }
-
+        public string Subject { get; set; }
+        public string Location { get; set; }
+        public string Description { get; set; }
         public DateTime StartTime { get; set; }
-
         public DateTime EndTime { get; set; }
-
         public bool IsAllDay { get; set; }
     }
 
@@ -204,25 +190,18 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
 </SfSchedule>
 
 @code {
-    private readonly DateTime SelectedDate =
-        new DateTime(2026, 10, 22);
+    private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
 
     public class AppointmentData
     {
         public int Id { get; set; }
-
-        public string? Subject { get; set; }
-
-        public string? Location { get; set; }
-
-        public string? Description { get; set; }
-
+        public string Subject { get; set; }
+        public string Location { get; set; }
+        public string Description { get; set; }
         public DateTime StartTime { get; set; }
-
         public DateTime EndTime { get; set; }
-
         public bool IsAllDay { get; set; }
     }
 
@@ -257,30 +236,22 @@ The following sample registers a custom tool that returns the current view and s
     <ScheduleEventSettings TValue="AppointmentData"
                            DataSource="@Appointments">
     </ScheduleEventSettings>
-    <ScheduleWebMcpSettings Name="@SchedulePrefix">
+    <ScheduleWebMcpSettings Name="Schedule">
         <ScheduleWebMcpTools>
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.Custom"
-                                Name="@CustomToolName"
-                                Description="@CustomToolDescription"
+                                Name="getCurrentInfo"
+                                Description="Gets the current view and selected date of the Scheduler."
                                 InputSchema="@CustomInputSchema" />
         </ScheduleWebMcpTools>
     </ScheduleWebMcpSettings>
 </SfSchedule>
 
 @code {
-    private SfSchedule<AppointmentData>? ScheduleRef;
+    private SfSchedule<AppointmentData> ScheduleRef;
 
-    private readonly DateTime SelectedDate =
-        new DateTime(2026, 10, 22);
+    private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
-
-    private string SchedulePrefix => "Schedule";
-
-    private string CustomToolName => "getCurrentInfo";
-
-    private string CustomToolDescription =>
-        "Gets the current view and selected date of the Scheduler.";
 
     private string CustomInputSchema =>
         @"
@@ -293,26 +264,20 @@ The following sample registers a custom tool that returns the current view and s
     public class AppointmentData
     {
         public int Id { get; set; }
-
-        public string? Subject { get; set; }
-
-        public string? Location { get; set; }
-
-        public string? Description { get; set; }
-
+        public string Subject { get; set; }
+        public string Location { get; set; }
+        public string Description { get; set; }
         public DateTime StartTime { get; set; }
-
         public DateTime EndTime { get; set; }
-
         public bool IsAllDay { get; set; }
     }
 
     private Task OnWebMcpExecute(ScheduleWebMcpExecuteEventArgs args)
     {
         if (args.Command == ScheduleWebMcpToolCommand.Custom &&
-            args.Name == CustomToolName)
+            args.Name == "getCurrentInfo")
         {
-            string selectedDate = ScheduleRef!.SelectedDate.ToString(
+            string selectedDate = ScheduleRef.SelectedDate.ToString(
                 "MMMM dd, yyyy",
                 CultureInfo.InvariantCulture);
 
@@ -359,46 +324,30 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
     <ScheduleEventSettings TValue="AppointmentData"
                            DataSource="@Appointments">
     </ScheduleEventSettings>
-    <ScheduleWebMcpSettings Name="@SchedulePrefix">
+    <ScheduleWebMcpSettings Name="Schedule">
         <ScheduleWebMcpTools>
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.NavigateDate"
-                                Name="@NavigateDateToolName"
-                                Description="@NavigateDateDescription" />
+                                Name="goToDate"
+                                Description="Navigates the Scheduler to a specific date." />
         </ScheduleWebMcpTools>
     </ScheduleWebMcpSettings>
 </SfSchedule>
 
 @code {
-    private readonly DateTime SelectedDate =
-        new DateTime(2026, 10, 22);
+    private readonly DateTime SelectedDate = new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
-
-    private string SchedulePrefix => "Schedule";
-
-    private string NavigateDateToolName => "navigateDate";
-
-    private string NavigateDateDescription =>
-        "Navigates the Scheduler to a specific date.";
-
-    private string CustomToolName => "getCurrentInfo";
 
     private bool UserCanEditEvents { get; set; } = true;
 
     public class AppointmentData
     {
         public int Id { get; set; }
-
-        public string? Subject { get; set; }
-
-        public string? Location { get; set; }
-
-        public string? Description { get; set; }
-
+        public string Subject { get; set; }
+        public string Location { get; set; }
+        public string Description { get; set; }
         public DateTime StartTime { get; set; }
-
         public DateTime EndTime { get; set; }
-
         public bool IsAllDay { get; set; }
     }
 
@@ -419,25 +368,7 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
         if (args.Command == ScheduleWebMcpToolCommand.NavigateDate)
         {
             args.ShowConfirmationDialog = true;
-
-            return Task.CompletedTask;
         }
-
-        // Custom tool sample.
-        if (args.Command != ScheduleWebMcpToolCommand.Custom)
-        {
-            return Task.CompletedTask;
-        }
-
-        if (!string.Equals(
-                args.Name,
-                CustomToolName,
-                StringComparison.OrdinalIgnoreCase))
-        {
-            return Task.CompletedTask;
-        }
-
-        args.Result = "The Scheduler is ready.";
 
         return Task.CompletedTask;
     }
