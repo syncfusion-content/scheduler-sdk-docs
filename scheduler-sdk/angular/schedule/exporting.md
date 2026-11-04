@@ -16,7 +16,7 @@ The Scheduler supports exporting appointments to Excel and ICS files on the clie
 
 The Scheduler allows you to export events to an Excel file by using the [`exportToExcel`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoexcel) client-side method. By default, it exports all fields mapped through the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) property.
 
-> Before enabling Excel export, import and inject the `ExcelExport` module from `@syncfusion/ej2-schedule` using the `Inject` method of the Scheduler.
+> Before enabling Excel export, import the `ExcelExportService` module from `@syncfusion/ej2-angular-schedule` and inject it using `providers:[ExcelExportService]`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -178,7 +178,7 @@ Here is an example of how you can add a custom header and footer to an Excel she
 
 ## Exporting calendar events as ICS file
 
-You can export the Scheduler events to a calendar (.ics) file format and open it in default calendars such as Google Calendar or Outlook. To export the Scheduler events to an ICS file, first import the `ICalendarExport` module from the `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarExport)` method.
+You can export the Scheduler events to a calendar (.ics) file format and open it in default calendars such as Google Calendar or Outlook. To export the Scheduler events to an ICS file, first import the `ICalendarExportService` module from the `@syncfusion/ej2-angular-schedule` package and then inject it using `providers:[ICalendarExportService]`.
 
 The following code example shows how the Scheduler events are exported to a calendar (.ics) file by making use of the [`exportToICalendar`](https://ej2.syncfusion.com/angular/documentation/api/schedule#exporttoicalendar) public method.
 
@@ -216,7 +216,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 
 Events from external calendars (ICS files) can be imported into the Scheduler by using the `importICalendar` method. This method accepts the blob object of an `.ics` file as a mandatory argument.
 
-> To import an ICS file containing events into Scheduler, you need to first import the `ICalendarImport` module from `@syncfusion/ej2-schedule` package and then inject it using the `Schedule.Inject(ICalendarImport)` method.
+> To import an ICS file containing events into Scheduler, you need to first import the `ICalendarImportService` module from `@syncfusion/ej2-angular-schedule` package and then inject it using `providers:[ICalendarImportService]`.
 
 The following example shows how to import an ICS file into Scheduler, using the `importICalendar` method.
 

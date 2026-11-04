@@ -103,7 +103,7 @@ You can bind event data through an external AJAX request and assign it to the Sc
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Ajax } from "@syncfusion/ej2-base";
 import { DataManager, UrlAdaptor, Query } from "@syncfusion/ej2-data";
-import { EventSettingsModel, View, EventRenderedArgs, DayService, WeekService, WorkWeekService, MonthService AgendaService, ResizeService, DragAndDropService, ScheduleComponent } from "@syncfusion/ej2-angular-schedule";
+import { EventSettingsModel, View, EventRenderedArgs, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService, ScheduleComponent } from "@syncfusion/ej2-angular-schedule";
 
 @Component({
   selector: "app-root",
