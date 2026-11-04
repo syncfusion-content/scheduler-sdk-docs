@@ -57,7 +57,7 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `Schedule
 
 ```
 
-`EnableWebMcp` turns registration on. `Name` becomes the prefix for the tool names. If you omit it, the component `ID` is used, then a generated ID.
+`EnableWebMcp` turns registration on. `Name` becomes the prefix for the tool names. If you omit it, then component ID or generated ID will be used.
 
 ![Blazor Scheduler - WebMCP enabled](images/blazor-scheduler-webmcp-enabled.png)
 
