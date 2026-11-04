@@ -136,7 +136,7 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
 
 Pass a list of names to `GetWebMcpToolsAsync` to inspect specific tools only.
 
-![Blazor Scheduler - registered WebMCP tools](images/blazor-scheduler-registered-webmcp-tools.png)
+![Blazor Scheduler - registered WebMCP tools](images/blazor-scheduler-webmcp-registered-tools.png)
 
 ## Supported tools
 
@@ -328,7 +328,7 @@ The following sample registers a custom tool that returns the current view and s
 
 ```
 
-![Blazor Scheduler - custom WebMCP tool result](images/blazor-scheduler-custom-webmcp-tool-result.png)
+![Blazor Scheduler - custom WebMCP tool result](images/blazor-scheduler-webmcp-custom-tool-result.png)
 
 ## Control tool execution
 
@@ -445,7 +445,7 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
 
 ```
 
-![Blazor Scheduler - Control tool execution](images/blazor-scheduler-Control-tool-execution.png)
+![Blazor Scheduler - Control tool execution](images/blazor-scheduler-webmcp-control-tool-execution.png)
 
 ## Inspect tools
 
