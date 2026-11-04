@@ -390,4 +390,4 @@ With your agent connected, ask for something the component can do, for example "
 
 ## See also
 
-* [WebMCP overview](https://blazor.syncfusion.com/documentation/webmcp/overview) explains how a component registers tools and how an agent calls them.
+* [WebMCP overview](../../ai-tools/webmcp-tools) explains how a component registers tools and how an agent calls them.
