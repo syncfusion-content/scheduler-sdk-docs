@@ -238,5 +238,5 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 ## See also
 
 * [Getting Started with Blazor for Client-Side in .NET Core CLI](../getting-started/getting-started/blazor-webassembly-app)
-* [Getting Started with Blazor for Server-side in Visual Studio](../getting-started/blazor-server-side-visual-studio)
+* [Getting Started with Blazor for Server-side in Visual Studio](../getting-started-with-server-app)
 * [Getting Started with Blazor for Server-Side in .NET Core CLI](../getting-started/blazor-web-app)
