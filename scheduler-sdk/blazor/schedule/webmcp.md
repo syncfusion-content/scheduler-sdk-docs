@@ -29,17 +29,17 @@ Set `EnableWebMcp` to `true`. Optionally set `Name` on the component's `Schedule
 
 <SfSchedule TValue="AppointmentData"
             Height="650px"
-            SelectedDate="@InitialSelectedDate"
+            SelectedDate="@SelectedDate"
             EnableWebMcp="true">
     <ScheduleEventSettings TValue="AppointmentData"
                            DataSource="@Appointments">
     </ScheduleEventSettings>
-    <ScheduleWebMcpSettings Name="Testing">
+    <ScheduleWebMcpSettings Name="Schedule">
     </ScheduleWebMcpSettings>
 </SfSchedule>
 
 @code {
-    private readonly DateTime InitialSelectedDate =
+    private readonly DateTime SelectedDate =
         new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
@@ -88,13 +88,13 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
 
 <SfSchedule TValue="AppointmentData"
             Height="650px"
-            SelectedDate="@InitialSelectedDate"
+            SelectedDate="@SelectedDate"
             EnableWebMcp="true"
             @ref="ScheduleRef">
     <ScheduleEventSettings TValue="AppointmentData"
                            DataSource="@Appointments">
     </ScheduleEventSettings>
-    <ScheduleWebMcpSettings Name="Testing">
+    <ScheduleWebMcpSettings Name="Schedule">
     </ScheduleWebMcpSettings>
 </SfSchedule>
 
@@ -102,7 +102,7 @@ Call `GetWebMcpToolsAsync` to list the tools the component registered.
     private SfSchedule<AppointmentData>? ScheduleRef;
     private List<string> ToolLines = new();
 
-    private readonly DateTime InitialSelectedDate =
+    private readonly DateTime SelectedDate =
         new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
@@ -140,9 +140,9 @@ Pass a list of names to `GetWebMcpToolsAsync` to inspect specific tools only.
 
 ## Supported tools
 
-The Blazor Scheduler ships built-in WebMCP tools for reading and for write operations.
+The Blazor Scheduler ships built-in WebMCP tools for navigation and for write operations.
 
-### Read Tools
+### Navigate Tools
 
 | Tool Name | Description |
 | --------- | ----------- |
@@ -169,9 +169,11 @@ A built-in tool is selected with `Command`. The properties below apply to every 
 | `Name` | Registered tool name. Required for custom tools. Optional override for built-in tools. Use camelCase, for example `getCurrentInfo` | Generated |
 | `Description` | Text the agent reads to decide when to call the tool | Built-in text |
 | `InputSchema` | JSON Schema for the tool's input as a JSON string | Built-in schema |
-| `Enabled` | Whether the tool is registered with the browser | `true` |
+| `Enabled` | Whether the tool is registered with the browser. Set it to `false` to keep a tool out of registration | `true` |
 
-The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Name` on `ScheduleWebMcpSettings`, or the component `ID` when `Name` is empty. The tool part is the built-in command, or the `Name` you set on a custom tool. With `Name="Testing"`, the built-in `createEvent` tool is registered as `Testing_createEvent`, and a custom tool named `getCurrentInfo` is registered as `Testing_getCurrentInfo`.
+Every tool registers by default, so `Enabled` only needs to appear when you exclude a tool. Setting `Enabled="false"` on an entry keeps that tool out of the browser registration; the other tools still register.
+
+The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Name` on `ScheduleWebMcpSettings`, or the component `ID` when `Name` is empty. The tool part is the built-in command, or the `Name` you set on a custom tool. With `Name="Schedule"`, the built-in `createEvent` tool is registered as `Schedule_createEvent`, and a custom tool named `getCurrentInfo` is registered as `Schedule_getCurrentInfo`.
 
 `args.Name` in `OnWebMcpExecute` and the `Name` on each item returned by `GetWebMcpToolsAsync` are the tool name without the prefix. Match on that value, or on `args.Command`, when you decide which call to handle.
 
@@ -182,7 +184,7 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
 
 <SfSchedule TValue="AppointmentData"
             Height="650px"
-            SelectedDate="@InitialSelectedDate"
+            SelectedDate="@SelectedDate"
             EnableWebMcp="true">
     <ScheduleEvents TValue="AppointmentData"
                     OnWebMcpExecute="OnWebMcpExecute">
@@ -190,25 +192,23 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
     <ScheduleEventSettings TValue="AppointmentData"
                            DataSource="@Appointments">
     </ScheduleEventSettings>
-    <ScheduleWebMcpSettings Name="Testing">
+    <ScheduleWebMcpSettings Name="Schedule">
         <ScheduleWebMcpTools>
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.DeleteEvent"
                                 Enabled="false" />
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.NavigateDate"
                                 Name="goToDate"
-                                Description="Moves the Scheduler to the requested calendar date."
-                                Enabled="true" />
+                                Description="Moves the Scheduler to the requested calendar date." />
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.Custom"
                                 Name="getCurrentInfo"
                                 Description="Return the current view and selected date of the Scheduler."
-                                InputSchema="@EmptySchema"
-                                Enabled="true" />
+                                InputSchema="@EmptySchema" />
         </ScheduleWebMcpTools>
     </ScheduleWebMcpSettings>
 </SfSchedule>
 
 @code {
-    private readonly DateTime InitialSelectedDate =
+    private readonly DateTime SelectedDate =
         new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
@@ -244,18 +244,17 @@ The name registered with the browser is `{Prefix}_{Tool}`. The prefix is the `Na
 
 Set `Command` to `Custom` to expose an action the component does not provide. A custom tool needs a `Name`, a `Description`, and an `InputSchema`. Handle the call in `OnWebMcpExecute`, match `args.Name`, and set `args.Result`.
 
-The following sample reads the `includeTime` argument from the tool schema and returns the current view and selected date of the Scheduler.
+The following sample registers a custom tool that returns the current view and selected date of the Scheduler. The tool takes no input, so its schema declares no properties.
 
 ```cshtml
 
 @page "/"
-@using System.Collections.Generic;
 @using System.Globalization;
 @using Syncfusion.Blazor.Schedule;
 
 <SfSchedule TValue="AppointmentData"
             Height="650px"
-            SelectedDate="@InitialSelectedDate"
+            SelectedDate="@SelectedDate"
             EnableWebMcp="true"
             @ref="ScheduleRef">
     <ScheduleEvents TValue="AppointmentData"
@@ -269,8 +268,7 @@ The following sample reads the `includeTime` argument from the tool schema and r
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.Custom"
                                 Name="@CustomToolName"
                                 Description="@CustomToolDescription"
-                                InputSchema="@CustomInputSchema"
-                                Enabled="true" />
+                                InputSchema="@CustomInputSchema" />
         </ScheduleWebMcpTools>
     </ScheduleWebMcpSettings>
 </SfSchedule>
@@ -278,12 +276,12 @@ The following sample reads the `includeTime` argument from the tool schema and r
 @code {
     private SfSchedule<AppointmentData>? ScheduleRef;
 
-    private readonly DateTime InitialSelectedDate =
+    private readonly DateTime SelectedDate =
         new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
 
-    private string SchedulePrefix => "MySchedule";
+    private string SchedulePrefix => "Schedule";
 
     private string CustomToolName => "getCurrentInfo";
 
@@ -294,12 +292,7 @@ The following sample reads the `includeTime` argument from the tool schema and r
         @"
     {
         ""type"": ""object"",
-        ""properties"": {
-        ""includeTime"": {
-            ""type"": ""boolean"",
-            ""description"": ""When true, includes time information in the selected-date result.""
-        }
-        },
+        ""properties"": {},
         ""required"": []
     }";
 
@@ -344,17 +337,9 @@ The following sample reads the `includeTime` argument from the tool schema and r
             return Task.CompletedTask;
         }
 
-        bool includeTime = ReadBooleanArgument(
-            args.Arguments,
-            "includeTime");
-
-        string selectedDate = includeTime
-            ? ScheduleRef.SelectedDate.ToString(
-                "MMMM dd, yyyy hh:mm:ss tt",
-                CultureInfo.InvariantCulture)
-            : ScheduleRef.SelectedDate.ToString(
-                "MMMM dd, yyyy",
-                CultureInfo.InvariantCulture);
+        string selectedDate = ScheduleRef.SelectedDate.ToString(
+            "MMMM dd, yyyy",
+            CultureInfo.InvariantCulture);
 
         args.Result =
             $"The Scheduler is currently displaying the " +
@@ -362,31 +347,6 @@ The following sample reads the `includeTime` argument from the tool schema and r
             $"{selectedDate} selected.";
 
         return Task.CompletedTask;
-    }
-
-    private static bool ReadBooleanArgument(
-    IReadOnlyDictionary<string, object>? arguments,
-    string key)
-    {
-        if (arguments?.TryGetValue(
-                key,
-                out object? value) != true ||
-            value is null)
-        {
-            return false;
-        }
-
-        if (value is bool booleanValue)
-        {
-            return booleanValue;
-        }
-
-        return bool.TryParse(
-            Convert.ToString(
-                value,
-                CultureInfo.InvariantCulture),
-            out bool parsedValue) &&
-            parsedValue;
     }
 }
 
@@ -415,7 +375,7 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
 
 <SfSchedule TValue="AppointmentData"
             Height="650px"
-            SelectedDate="@InitialSelectedDate"
+            SelectedDate="@SelectedDate"
             EnableWebMcp="true">
     <ScheduleEvents TValue="AppointmentData"
                     OnWebMcpExecute="OnWebMcpExecute">
@@ -427,19 +387,18 @@ For a built-in write tool, set `ShowConfirmationDialog` and leave the work to th
         <ScheduleWebMcpTools>
             <ScheduleWebMcpTool Command="@ScheduleWebMcpToolCommand.NavigateDate"
                                 Name="@NavigateDateToolName"
-                                Description="@NavigateDateDescription"
-                                Enabled="true" />
+                                Description="@NavigateDateDescription" />
         </ScheduleWebMcpTools>
     </ScheduleWebMcpSettings>
 </SfSchedule>
 
 @code {
-    private readonly DateTime InitialSelectedDate =
+    private readonly DateTime SelectedDate =
         new DateTime(2026, 10, 22);
 
     private readonly List<AppointmentData> Appointments = new();
 
-    private string SchedulePrefix => "MySchedule";
+    private string SchedulePrefix => "Schedule";
 
     private string NavigateDateToolName => "navigateDate";
 
