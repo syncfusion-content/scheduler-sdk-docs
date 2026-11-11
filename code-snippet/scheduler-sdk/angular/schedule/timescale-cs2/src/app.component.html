@@ -1,1 +1,18 @@
-<!-- Inline template is used in app.component.ts -->
+<div style="margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+    <label style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600;">
+        <input type="checkbox" [checked]="currentTimeIndicatorSettings.showTime" (change)="showTimeChange($any($event.target).checked)" />
+        showTime
+    </label>
+    <label style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600;">
+        <input type="checkbox" [checked]="currentTimeIndicatorSettings.showPreviousDates" (change)="showPreviousDatesChange($any($event.target).checked)" />
+        showPreviousDates
+    </label>
+    <label style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600;">
+        <input type="checkbox" [checked]="currentTimeIndicatorSettings.onTop" (change)="onTopChange($any($event.target).checked)" />
+        onTop
+    </label>
+</div>
+<ejs-schedule width='100%' height='450px' [selectedDate]="selectedDate" [eventSettings]="eventSettings"
+    [showTimeIndicator]="true" [timeScale]="timeScale" [currentTimeIndicatorSettings]="currentTimeIndicatorSettings"
+    [views]="['Day', 'Week', 'WorkWeek', 'TimelineDay', 'TimelineWeek', 'TimelineWorkWeek']">
+</ejs-schedule>
