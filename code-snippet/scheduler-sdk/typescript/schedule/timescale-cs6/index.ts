@@ -1,7 +1,7 @@
-import { Schedule, Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek } from '@syncfusion/ej2-schedule';
+import { Schedule, Day, Week, WorkWeek, TimelineViews } from '@syncfusion/ej2-schedule';
 import { scheduleData } from './datasource';
 
-Schedule.Inject(Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek);
+Schedule.Inject(Day, Week, WorkWeek, TimelineViews);
 
 const scheduleObj: Schedule = new Schedule({
     width: '100%',
@@ -20,17 +20,11 @@ const scheduleObj: Schedule = new Schedule({
 scheduleObj.appendTo('#Schedule');
 
 // Handle toggle controls
-const masterToggle = document.getElementById('master-toggle') as HTMLInputElement;
 const showTimeToggle = document.getElementById('show-time-toggle') as HTMLInputElement;
 const showPreviousDatesToggle = document.getElementById('show-previous-dates-toggle') as HTMLInputElement;
 const onTopToggle = document.getElementById('on-top-toggle') as HTMLInputElement;
 
 const applyChanges = (): void => {
-    if (!masterToggle.checked) {
-        scheduleObj.showTimeIndicator = false;
-        return;
-    }
-    scheduleObj.showTimeIndicator = true;
     scheduleObj.currentTimeIndicatorSettings = {
         showTime: showTimeToggle.checked,
         showPreviousDates: showPreviousDatesToggle.checked,
@@ -38,8 +32,7 @@ const applyChanges = (): void => {
     };
 };
 
-if (masterToggle && showTimeToggle && showPreviousDatesToggle && onTopToggle) {
-    masterToggle.addEventListener('change', applyChanges);
+if (showTimeToggle && showPreviousDatesToggle && onTopToggle) {
     showTimeToggle.addEventListener('change', applyChanges);
     showPreviousDatesToggle.addEventListener('change', applyChanges);
     onTopToggle.addEventListener('change', applyChanges);

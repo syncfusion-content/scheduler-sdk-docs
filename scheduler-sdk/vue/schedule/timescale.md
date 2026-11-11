@@ -98,13 +98,13 @@ The appearance and behavior of the current time indicator can be customized usin
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/scheduler-sdk/vue/schedule/timescale-cs5/app-composition.vue %}
+{% include code-snippet/scheduler-sdk/vue/schedule/timescale-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/scheduler-sdk/vue/schedule/timescale-cs5/app.vue %}
+{% include code-snippet/scheduler-sdk/vue/schedule/timescale-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs5" %}
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/vue/schedule/timescale-cs6" %}
 
 > For a complete overview of Scheduler features, visit the [Vue Scheduler](https://www.syncfusion.com/scheduler-sdk/vue-scheduler) feature tour page. Explore live examples at [Vue Scheduler example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/schedule/overview.html) to learn how to present and manipulate data.
