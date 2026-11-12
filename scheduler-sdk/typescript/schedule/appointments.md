@@ -462,7 +462,7 @@ By default, events can be dragged and dropped within any applicable Scheduler vi
 
 ### Preventing drag and drop on specific targets
 
-Drag actions on specific targets can be prevented by specifying the target to exclude in the [`excludeSelectors`](../api/schedule/dragEventArgs#excludeselectors) option within the [`dragStart`](../api/schedule#dragstart) event. In the following example, drag actions are prevented on the all-day row:
+Drag actions on specific targets can be prevented by specifying the target to exclude in the [`excludeSelectors`](https://ej2.syncfusion.com/documentation/api/schedule/drageventargs#excludeselectors) option within the [`dragStart`](../api/schedule#dragstart) event. In the following example, drag actions are prevented on the all-day row:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -480,7 +480,7 @@ Drag actions on specific targets can be prevented by specifying the target to ex
 
 ### Disable scrolling on drag action
 
-By default, when dragging an appointment to the edges (top or bottom in vertical Scheduler, or left or right in timeline Scheduler), automatic scrolling occurs. To prevent this scrolling action, set the [`scroll`](../api/schedule/dragEventArgs#scroll) value to `false` within the [`dragStart`](../api/schedule#dragstart) event arguments.
+By default, when dragging an appointment to the edges (top or bottom in vertical Scheduler, or left or right in timeline Scheduler), automatic scrolling occurs. To prevent this scrolling action, set the [`scroll`](https://ej2.syncfusion.com/documentation/api/schedule/drageventargs#scroll) value to `false` within the [`dragStart`](../api/schedule#dragstart) event arguments.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -498,7 +498,7 @@ By default, when dragging an appointment to the edges (top or bottom in vertical
 
 ### Controlling scroll speed while dragging an event
 
-The scrolling speed while dragging an appointment to the Scheduler edges can be controlled within the [`dragStart`](../api/schedule#dragstart) event by setting desired values for [`scrollBy`](../api/schedule/scrollOptions#scrollby) and [`timeDelay`](../api/schedule/scrollOptions#timedelay) options. Default values are 30 minutes for `scrollBy` and 100 ms for `timeDelay`.
+The scrolling speed while dragging an appointment to the Scheduler edges can be controlled within the [`dragStart`](../api/schedule#dragstart) event by setting desired values for [`scrollBy`](https://ej2.syncfusion.com/documentation/api/schedule/scrolloptions#scrollby) and [`timeDelay`](https://ej2.syncfusion.com/documentation/api/schedule/scrolloptions#timedelay) options. Default values are 30 minutes for `scrollBy` and 100 ms for `timeDelay`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -516,9 +516,9 @@ The scrolling speed while dragging an appointment to the Scheduler edges can be 
 
 ### Auto navigation of date ranges on dragging an event
 
-When an event is dragged to either the left or right extreme edges of the Scheduler and held for a few seconds without dropping, auto-navigation of date ranges can be enabled. This allows the Scheduler to navigate back and forth between the current date range. By default, this action is set to `false`. To enable it, set [`navigation`](../api/schedule/dragEventArgs#navigation) to `true` within the [`dragStart`](../api/schedule#dragstart) event.
+When an event is dragged to either the left or right extreme edges of the Scheduler and held for a few seconds without dropping, auto-navigation of date ranges can be enabled. This allows the Scheduler to navigate back and forth between the current date range. By default, this action is set to `false`. To enable it, set [`navigation`](https://ej2.syncfusion.com/documentation/api/schedule/drageventargs#navigation) to `true` within the [`dragStart`](../api/schedule#dragstart) event.
 
-By default, the navigation delay is set to 2000 ms, determining how long a user must drag and hold appointments at the extremities. A custom delay value can be set using the [`timeDelay`](../api/schedule/scrollOptions#timedelay) option within the [`dragStart`](../api/schedule#dragstart) event.
+By default, the navigation delay is set to 2000 ms, determining how long a user must drag and hold appointments at the extremities. A custom delay value can be set using the [`timeDelay`](https://ej2.syncfusion.com/documentation/api/schedule/scrolloptions#timedelay) option within the [`dragStart`](../api/schedule#dragstart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -536,7 +536,7 @@ By default, the navigation delay is set to 2000 ms, determining how long a user 
 
 ### Setting drag time interval
 
-By default, when dragging an appointment, it moves in 30-minute intervals. To change the dragging time interval, pass appropriate values to the [`interval`](../api/schedule/dragEventArgs#interval) option within the [`dragStart`](../api/schedule#dragstart) event.
+By default, when dragging an appointment, it moves in 30-minute intervals. To change the dragging time interval, pass appropriate values to the [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/drageventargs#interval) option within the [`dragStart`](../api/schedule#dragstart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -691,7 +691,7 @@ By default, when resizing an appointment and its handler reaches the edge of the
 
 ### Controlling scroll speed while resizing an event
 
-The scrolling speed when resizing an appointment to the Scheduler edges can be controlled by setting the desired value for the [`scrollBy`](../api/schedule/scrollOptions#scrollby) option within the [`resizeStart`](../api/schedule#resizestart) event.
+The scrolling speed when resizing an appointment to the Scheduler edges can be controlled by setting the desired value for the [`scrollBy`](https://ej2.syncfusion.com/documentation/api/schedule/scrolloptions#scrollby) option within the [`resizeStart`](../api/schedule#resizestart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
