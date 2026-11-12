@@ -18,17 +18,11 @@ var scheduleObj = new ej.schedule.Schedule({
 scheduleObj.appendTo('#Schedule');
 
 // Handle toggle controls
-var masterToggle = document.getElementById('master-toggle');
 var showTimeToggle = document.getElementById('show-time-toggle');
 var showPreviousDatesToggle = document.getElementById('show-previous-dates-toggle');
 var onTopToggle = document.getElementById('on-top-toggle');
 
 function applyChanges() {
-    if (!masterToggle.checked) {
-        scheduleObj.showTimeIndicator = false;
-        return;
-    }
-    scheduleObj.showTimeIndicator = true;
     scheduleObj.currentTimeIndicatorSettings = {
         showTime: showTimeToggle.checked,
         showPreviousDates: showPreviousDatesToggle.checked,
@@ -36,8 +30,7 @@ function applyChanges() {
     };
 }
 
-if (masterToggle && showTimeToggle && showPreviousDatesToggle && onTopToggle) {
-    masterToggle.addEventListener('change', applyChanges);
+if (showTimeToggle && showPreviousDatesToggle && onTopToggle) {
     showTimeToggle.addEventListener('change', applyChanges);
     showPreviousDatesToggle.addEventListener('change', applyChanges);
     onTopToggle.addEventListener('change', applyChanges);
