@@ -123,11 +123,11 @@ function App() {
   return (
     <ScheduleComponent id="scheduler"
       enableWebMcp={true}
-      webMcpSettings={{
+      webMcpSettings={ {
         name: 'planner',
         tools: ['createEvent', 'updateEvent', 'deleteEvent'],
         exposedTo: ['https://www.syncfusion.com/']
-      }}>
+      } }>
       <Inject services={[Day, Week, WorkWeek, Month, Agenda, WebMcpScheduler]} />
     </ScheduleComponent>
   );
@@ -176,11 +176,11 @@ function App() {
   return (
     <ScheduleComponent id="scheduler"
       enableWebMcp={true}
-      webMcpSettings={{
+      webMcpSettings={ {
         name: 'planner',
         tools: ['createEvent', 'updateEvent', 'deleteEvent'],
         exposedTo: ['https://www.syncfusion.com/']
-      }}
+      } }
       beforeWebMcpToolExecute={beforeWebMcpToolExecute}>
       <Inject services={[Day, Week, WorkWeek, Month, Agenda, WebMcpScheduler]} />
     </ScheduleComponent>
