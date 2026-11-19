@@ -117,7 +117,7 @@ The appearance and behavior of the current time indicator can be customized usin
 {% include code-snippet/scheduler-sdk/react/schedule/timescale-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs5/app/index.html %}
+{% include code-snippet/scheduler-sdk/react/schedule/timescale-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         

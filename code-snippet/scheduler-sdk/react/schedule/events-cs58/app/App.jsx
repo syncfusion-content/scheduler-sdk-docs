@@ -63,14 +63,14 @@ function App() {
             currentView='Week'
             selectedDate={new Date(currentYear, 0, 22)}
             timeScale={{ enable: true, interval: 60, slotCount: 2 }}
-            eventSettings={{
+            eventSettings={ {
                 dataSource: eventData,
                 enableBuffer: true,
                 fields: {
                     bufferBefore: { name: 'bufferBefore' },
                     bufferAfter: { name: 'bufferAfter' },
                 },
-            }}
+            } }
         >
             <Inject services={[Day, Week, WorkWeek, DragAndDrop, Resize]} />
         </ScheduleComponent>
