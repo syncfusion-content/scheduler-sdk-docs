@@ -62,7 +62,7 @@ In the TimePicker, the `combobox` plays the role of input element, and the `list
 
 ## Keyboard interaction
 
-The TimePicker is an editable input, so the popup does not open when the input itself is activated (for example, a screen reader press action). Open the popup by clicking or activating the clock icon, or by pressing <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> while focus is in the input. Focus remains in the input when the popup opens. The input is exposed as a combo box because it combines text entry with an associated popup.
+The TimePicker is an editable input, so activating the input (for example, with a screen reader's activate command) does not open the popup. To open the popup, select the clock icon, or press <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> (<kbd>Option</kbd> + <kbd>Down Arrow</kbd> on macOS) while focus is in the input. Focus stays in the input when the popup opens, and you use the arrow keys to move through the times. Because the input combines text entry with an associated popup, it is exposed to assistive technologies as a combo box (`role="combobox"`).
 
 Keyboard accessibility is one of the most important aspects of web accessibility. Disabled people like blind and those who have motor disabilities or birth defects use keyboard shortcuts more than the mouse.
 

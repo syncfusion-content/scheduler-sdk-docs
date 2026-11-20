@@ -51,7 +51,7 @@ It helps people with disabilities by providing information about the widget for 
 
 ## Keyboard interaction
 
-The DateRangePicker is an editable input, so the popup does not open when the input itself is activated (for example, a screen reader press action). Open the popup by clicking or activating the calendar icon, or by pressing <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> while focus is in the input. Focus remains in the input when the popup opens. The input is exposed as a combo box because it combines text entry with an associated popup.
+The DateRangePicker is an editable input, so activating the input (for example, with a screen reader's activate command) does not open the popup. To open the popup, select the calendar icon, or press <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> (<kbd>Option</kbd> + <kbd>Down Arrow</kbd> on macOS) while focus is in the input. Focus stays in the input when the popup opens, and you use the arrow keys to move through the dates. Because the input combines text entry with an associated popup, it is exposed to assistive technologies as a combo box (`role="combobox"`).
 
 Use the following keys to interact with the DateRangePicker. This component implements the keyboard navigation support by following the  [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
