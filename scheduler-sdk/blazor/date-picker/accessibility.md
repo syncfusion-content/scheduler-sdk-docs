@@ -54,6 +54,8 @@ It provides information about the widget for assistive technology to the disable
 
 ## Keyboard interaction
 
+The DatePicker is an editable input, so activating the input (for example, with a screen reader's activate command) does not open the popup. To open the popup, select the calendar icon, or press <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> (<kbd>Option</kbd> + <kbd>Down Arrow</kbd> on macOS) while focus is in the input. Focus stays in the input when the popup opens, and you use the arrow keys to move through the dates. Because the input combines text entry with an associated popup, it is exposed to assistive technologies as a combo box (`role="combobox"`).
+
 You can use the following keys to interact with the Blazor DatePicker. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 It supports the following list of shortcut keys:
