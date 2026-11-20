@@ -52,6 +52,8 @@ To learn about the accessibility of Calendar, refer to the Calendar's [Accessibi
 
 ## Keyboard interaction
 
+The DateTimePicker is an editable input, so activating the input (for example, with a screen reader's activate command) does not open the popup. To open the popup, select the calendar or clock icon, or press <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> (<kbd>Option</kbd> + <kbd>Down Arrow</kbd> on macOS) while focus is in the input. Press <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> again to switch between the date and time popups. Focus stays in the input when the popup opens, and you use the arrow keys to move through the dates or times. Because the input combines text entry with an associated popup, it is exposed to assistive technologies as a combo box (`role="combobox"`).
+
 Use the following keys to interact with the Blazor DateTimePicker. This component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 Blazor DateTimePicker supports the below list of shortcut keys:
