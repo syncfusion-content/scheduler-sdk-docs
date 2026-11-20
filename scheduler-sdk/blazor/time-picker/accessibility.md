@@ -62,6 +62,8 @@ In the TimePicker, the `combobox` plays the role of input element, and the `list
 
 ## Keyboard interaction
 
+The TimePicker is an editable input, so the popup does not open when the input itself is activated (for example, a screen reader press action). Open the popup by clicking or activating the clock icon, or by pressing <kbd>Alt</kbd> + <kbd>Down Arrow</kbd> while focus is in the input. Focus remains in the input when the popup opens. The input is exposed as a combo box because it combines text entry with an associated popup.
+
 Keyboard accessibility is one of the most important aspects of web accessibility. Disabled people like blind and those who have motor disabilities or birth defects use keyboard shortcuts more than the mouse.
 
 The Blazor TimePicker component has built-in keyboard accessibility support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
