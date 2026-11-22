@@ -959,3 +959,100 @@ private void OnCloseClicked(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Appointment Editor Validation
+
+The Scheduler provides built-in validation support for the default appointment editor through the `EditorValidation` property of `SfScheduler`. You can use the `SchedulerAppointmentEditorValidation` class to validate appointment details before they are saved.
+
+Validation can be applied to the Subject, Location, and Description fields using the `SchedulerFieldValidationRule` class. The appointment editor also validates the selected start and end date/time values and prevents users from saving appointments with invalid date or time ranges.
+
+When validation fails, the editor displays an error message and highlights the corresponding field until the validation errors are resolved.
+
+### Enable appointment editor validation
+
+Use the `SchedulerAppointmentEditorValidation` class to define validation rules and assign it to the `EditorValidation` property.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="6" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler"
+                           View="Day"
+                           AppointmentEditorMode="Add,Edit">
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="10 11 12 13 14 15 16 17 19 20 21 22 23" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+
+        scheduler.EditorValidation = new SchedulerAppointmentEditorValidation()
+        {
+            Subject = new SchedulerFieldValidationRule()
+            {
+                IsRequired = true,
+                MinLength = 3,
+                MaxLength = 100
+            },
+
+            Location = new SchedulerFieldValidationRule()
+            {
+                IsRequired = true
+            }
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Field validation rules
+
+The `SchedulerFieldValidationRule` class provides the following validation options for the Subject, Location, and Description fields.
+
+<table border="1">
+    <tr>
+        <th>Property<br/>
+            <br/></th>        
+        <th>Description<br/>
+            <br/></th>
+    </tr>
+   <tr>
+      <td>IsRequired</td>
+      <td>Specifies whether a value is required.</td>
+    </tr>
+    <tr>
+      <td>MinLength</td>
+      <td>Specifies the minimum number of characters allowed.</td>
+    </tr>
+    <tr>
+      <td>MaxLength</td>
+      <td>Specifies the maximum number of characters allowed.</td>
+    </tr>
+    <tr>
+      <td>RegexPattern</td>
+      <td>Specifies a regular expression pattern used to validate the input value.</td>
+    </tr>
+    <tr>
+      <td>RequiredErrorMessage</td>
+      <td>Specifies the error message displayed when a required field is empty.</td>
+    </tr>
+    <tr>
+      <td>MinLengthErrorMessage</td>
+      <td>Specifies the error message displayed when the input is shorter than the minimum length.</td>
+    </tr>
+    <tr>
+      <td>MaxLengthErrorMessage</td>
+      <td>Specifies the error message displayed when the input exceeds the maximum length.</td>
+    </tr>
+    <tr>
+      <td>RegexErrorMessage</td>
+      <td>Specifies the error message displayed when the input does not match the specified regular expression pattern.</td>
+    </tr>
+</table>
