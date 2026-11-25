@@ -207,7 +207,7 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 
 ## Appointment resizing
 
-The Scheduler has support to resize the selected appointment. This support is available for all views except  the `Month` view.
+The Scheduler has support to resize the selected appointment. This support is available for all views.
 
 ### Disable appointment resize
 

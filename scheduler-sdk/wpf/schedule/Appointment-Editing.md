@@ -207,7 +207,7 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 {% endtabs %}
 
 ## Appointment Resizing
-Scheduler supports resizing the selected appointment. This support is available for all views except the 'Month' view.
+Scheduler supports resizing the selected appointment. This support is available for all views.
 
 ### Disable appointment resize
 Scheduler supports disabling the appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AppointmentEditFlag) property except `Resize`. In this case, appointment resizing cannot be performed.
