@@ -1070,6 +1070,43 @@ N>
 * [View scheduler appointment sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/GettingStarted)
 * [View business object sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/BusinessObject)
 
+## Customize Appointment Height
+
+Use the `AppointmentHeight` property of [SchedulerTimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html?tabs=tabid-7%2Ctabid-3%2Ctabid-5) to define the height of appointments displayed in Timeline views. The default value is -1, which automatically determines the appointment height based on the available space. The configured height is applied across all Timeline views.
+
+{% tabs %}
+{% highlight XAML hl_lines="8" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="Scheduler" 
+                           View="TimelineWeek">
+        <scheduler:SfScheduler.TimelineView>
+            <scheduler:SchedulerTimelineView AppointmentHeight="60" />
+        </scheduler:SfScheduler.TimelineView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# hl_lines="10" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        scheduler.View = SchedulerView.TimelineWeek;
+        scheduler.TimelineView.AppointmentHeight = 60; 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## View header
 
 You can customize the default appearance of view header in a timeline views by setting the [DateFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DateFormat), [DayFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DayFormat), [Background](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderSettingsBase.html#Syncfusion_Maui_Scheduler_SchedulerHeaderSettingsBase_Background), [DateTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DateTextStyle), [DayTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DayTextStyle), [Height](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderSettingsBase.html#Syncfusion_Maui_Scheduler_SchedulerHeaderSettingsBase_Height), and [ViewHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_ViewHeaderTemplate) properties of [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).

@@ -1056,3 +1056,142 @@ The `SchedulerFieldValidationRule` class provides the following validation optio
       <td>Specifies the error message displayed when the input does not match the specified regular expression pattern.</td>
     </tr>
 </table>
+
+## Customize the appointment editor using template
+
+The `AppointmentEditorTemplate` property of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html) allows you to replace the built-in appointment editor with your own content. The template is used for both adding and editing appointments. The default value is `null`, which displays the built-in editor.
+
+The binding context of the template is an `AppointmentEditorDetails` object, which has the following members.
+
+<table>
+    <tr>
+        <th>Member</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>HeaderText</td>
+        <td>Gets the localized heading for the current operation, either create or edit appointment.</td>
+    </tr>
+    <tr>
+        <td>SchedulerAppointment</td>
+        <td>Gets the appointment that is being created or edited. Bind the editor fields to its properties.</td>
+    </tr>
+    <tr>
+        <td>Save()</td>
+        <td>Saves the appointment in the same way as the Save button of the built-in editor.</td>
+    </tr>
+    <tr>
+        <td>Cancel()</td>
+        <td>Discards the changes and closes the editor in the same way as the Cancel button of the built-in editor.</td>
+    </tr>
+    <tr>
+        <td>Close()</td>
+        <td>Closes the editor popup without saving or cancelling.</td>
+    </tr>
+</table>
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4 5 6" %}
+
+<scheduler:SfScheduler x:Name="Scheduler"
+                       View="Week"
+                       AppointmentEditorMode="Add,Edit">
+    <scheduler:SfScheduler.AppointmentEditorTemplate>
+        <DataTemplate>
+            <Grid Padding="16" RowDefinitions="Auto,Auto,Auto">
+                <Label Text="{Binding HeaderText}" />
+                <Entry Grid.Row="1"
+                       Text="{Binding SchedulerAppointment.Subject, Mode=TwoWay}" />
+                <HorizontalStackLayout Grid.Row="2" Spacing="8">
+                    <Button Text="Save" Clicked="OnEditorSaveClicked" />
+                    <Button Text="Cancel" Clicked="OnEditorCancelClicked" />
+                    <Button Text="Close" Clicked="OnEditorCloseClicked" />
+                </HorizontalStackLayout>
+            </Grid>
+        </DataTemplate>
+    </scheduler:SfScheduler.AppointmentEditorTemplate>
+</scheduler:SfScheduler>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+private void OnEditorSaveClicked(object sender, EventArgs e)
+{
+    if ((sender as BindableObject)?.BindingContext is AppointmentEditorDetails details)
+    {
+        details.Save();
+    }
+}
+
+private void OnEditorCancelClicked(object sender, EventArgs e)
+{
+    if ((sender as BindableObject)?.BindingContext is AppointmentEditorDetails details)
+    {
+        details.Cancel();
+    }
+}
+
+private void OnEditorCloseClicked(object sender, EventArgs e)
+{
+    if ((sender as BindableObject)?.BindingContext is AppointmentEditorDetails details)
+    {
+        details.Close();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The template edits a copy of the appointment. The changes are applied to the appointment and the data source only when `Save()` is called. The [AppointmentEditorOpening](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentEditorOpening) and [AppointmentEditorClosing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_AppointmentEditorClosing) events are still raised, and canceling the closing event prevents `Save()` from committing the appointment.
+
+## Change the popup size
+
+The size of the appointment editor and the quick info popup can be customized using the following properties of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html). The default value of all of them is `-1`, which keeps the default size of the platform, including the full screen display on mobile devices.
+
+<table>
+    <tr>
+        <th>Property</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>AppointmentEditorWidth</td>
+        <td>Sets the width of the appointment editor popup.</td>
+    </tr>
+    <tr>
+        <td>AppointmentEditorHeight</td>
+        <td>Sets the height of the appointment editor popup.</td>
+    </tr>
+    <tr>
+        <td>QuickInfoPopupWidth</td>
+        <td>Sets the width of the quick info popup.</td>
+    </tr>
+    <tr>
+        <td>QuickInfoPopupHeight</td>
+        <td>Sets the height of the quick info popup.</td>
+    </tr>
+</table>
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="3 4 5 6" %}
+
+<scheduler:SfScheduler x:Name="Scheduler"
+                       View="Week"
+                       AppointmentEditorWidth="720"
+                       AppointmentEditorHeight="640"
+                       QuickInfoPopupWidth="420"
+                       QuickInfoPopupHeight="360" />
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="2 3 4 5" %}
+
+SfScheduler scheduler = new SfScheduler();
+scheduler.AppointmentEditorWidth = 720;
+scheduler.AppointmentEditorHeight = 640;
+scheduler.QuickInfoPopupWidth = 420;
+scheduler.QuickInfoPopupHeight = 360;
+this.Content = scheduler;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> A value greater than zero is limited to the available window area, so that the popup is always visible. The sizes are applied to both the built-in and the custom content, and they can be changed at runtime.

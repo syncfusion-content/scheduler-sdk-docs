@@ -470,43 +470,31 @@ N> [View sample in GitHub](https://github.com/syncfusion/maui-demos/tree/master/
 You can customize the opacity of the appointment displayed during a drag operation using the `DragViewOpacity` property of [DragDropSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-8). The default value is 0.6.
 
 {% tabs %}
-{% highlight xaml %}
-
+{% highlight xaml hl_lines="7" %}
 <ContentPage   
     . . .
     xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
 
-    <scheduler:SfScheduler x:Name="scheduler" 
-                           ShowBusyIndicator="True"
-                           AppointmentsSource="{Binding DragEvents}"
-                           View="Week">
-        <scheduler:SfScheduler.DragDropSettings>
-            <scheduler:DragDropSettings 
-                TimeIndicatorStyle="{scheduler:SchedulerTextStyle TextColor=Green}"/>
-        </scheduler:SfScheduler.DragDropSettings>
-    </scheduler:SfScheduler>
+<scheduler:SfScheduler AllowAppointmentDrag="True">
+    <scheduler:SfScheduler.DragDropSettings>
+        <scheduler:DragDropSettings DragViewOpacity="0.4" />
+    </scheduler:SfScheduler.DragDropSettings>
+</scheduler:SfScheduler>
+
 </ContentPage>
-
 {% endhighlight %}
-{% highlight c# %}
-
+{% highlight c# hl_lines="9" %}
 using Syncfusion.Maui.Scheduler;
-
 . . .
 public partial class MainPage : ContentPage
 {
     public MainPage()
     {
         InitializeComponent();
-        this.scheduler.View = SchedulerView.Week;
-        var timeIndicatorStyle = new SchedulerTextStyle()
-        {
-           TextColor = Colors.Green,
-        };
-        this.scheduler.DragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
+        this.scheduler.AllowAppointmentDrag = true;
+        this.scheduler.DragDropSettings.DragViewOpacity = 0.4;
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -514,57 +502,33 @@ The `DragViewOpacity` property can be set between `0` and `1`, where `0` makes t
 
 <table border="1">
     <tr>
-        <th>SchedulerAppointment<br/>
+        <th>Value<br/>
             <br/></th>        
-        <th>ICS Property<br/>
+        <th>Description<br/>
             <br/></th>
     </tr>
    <tr>
-      <td>Id</td>
-      <td>UID</td>
+      <td>0</td>
+      <td>The drag view is fully transparent.</td>
     </tr>
     <tr>
-      <td>Subject</td>
-      <td>SUMMARY</td>
+      <td>1</td>
+      <td>The drag view is fully opaque.</td>
     </tr>
     <tr>
-      <td>Notes</td>
-      <td>DESCRIPTION</td>
+      <td>0 to 1</td>
+      <td>Displays the drag view with the specified opacity.</td>
     </tr>
     <tr>
-      <td>Location</td>
-      <td>LOCATION</td>
+      <td>Less than 0</td>
+      <td>Treated as 0.</td>
     </tr>
     <tr>
-      <td>StartTime</td>
-      <td>DTSTART</td>
+      <td>Greater than 1</td>
+      <td>Treated as 1.</td>
     </tr>
     <tr>
-      <td>EndTime</td>
-      <td>DTEND</td>
+      <td>NaN or Infinity</td>
+      <td>Uses the default value (0.6).</td>
     </tr>
-    <tr>
-      <td>StartTimeZone</td>
-      <td>DTSTART;TZID</td>
-    </tr>
-    <tr>
-      <td>EndTimeZone</td>
-      <td>DTEND;TZID</td>
-    </tr>
-    <tr>
-      <td>IsAllDay</td>
-      <td>VALUE=DATE</td>
-    </tr>
-    <tr>
-      <td>RecurrenceRule</td>
-      <td>RRULE</td>
-    </tr>
-    <tr>
-      <td>RecurrenceExceptionDates</td>
-      <td>EXDATE</td>
-    </tr>
-    <tr>
-      <td>RecurrenceId</td>
-      <td>RECURRENCE-ID</td>
-    </tr>
-</table>7
+</table>

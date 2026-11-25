@@ -287,6 +287,32 @@ public partial class MainPage : ContentPage
 
 ![Customize all day appointments height in days view](images/day-week-views/all-day-appointment-height-customization.png)
 
+## Show or hide the all-day panel
+
+The [ShowAllDay](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html#Syncfusion_Maui_Scheduler_SchedulerDaysView_ShowAllDay) property of [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html) controls the visibility of the all-day panel in the `Day`, `Week`, and `WorkWeek` views. The default value is `true`.
+
+When it is set to `false`, the all-day panel, its selection area, and the expander icon are removed, and the time slots use the freed space.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+
+<scheduler:SfScheduler x:Name="Scheduler" View="Week">
+    <scheduler:SfScheduler.DaysView>
+        <scheduler:SchedulerDaysView ShowAllDay="False" />
+    </scheduler:SfScheduler.DaysView>
+</scheduler:SfScheduler>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="2" %}
+
+this.Scheduler.View = SchedulerView.Week;
+this.Scheduler.DaysView.ShowAllDay = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> When the all-day section is hidden, all-day and spanned appointments are not displayed in the `Day`, `Week`, and `WorkWeek` views. The appointments are not removed from the data source and are still displayed in the other views. The property does not affect the `Month`, timeline, and `Agenda` views.
+
 ## Display spanned appointments in time slots
 
 The [AllowSpannedAppointmentsInTimeSlots](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html#Syncfusion_Maui_Scheduler_SchedulerDaysView_AllowSpannedAppointmentsInTimeSlots) property determines whether appointments spanning more than 24 hours are displayed in the all-day panel or directly within the timeslot cells of the `Day`, `Week`, and `WorkWeek` views. By default, these appointments are rendered in the all-day panel. Setting `AllowSpannedAppointmentsInTimeSlots` to `true` displays spanned appointments within the corresponding time-slot cells.

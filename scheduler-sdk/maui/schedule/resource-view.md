@@ -1654,6 +1654,126 @@ N>
 
 ![Resource auto row height with popup in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler-popup.png)
 
+## Resource header title
+
+The `HeaderTitle` property of [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html) displays a title above the resource headers. It helps to label the resource section, for example, `Employees` or `Rooms`. The default value is `null`, and the title is not displayed.
+
+The title is displayed in the timeline views (`TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth`) and in the `Day`, `Week`, and `WorkWeek` views on `Windows` and `macOS`.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="8" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineWeek">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView Resources="{Binding Resources}"
+                                            HeaderTitle="Employees"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+
+</ContentPage>
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="10" %}
+using Syncfusion.Maui.Scheduler;
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.View = SchedulerView.TimelineWeek;
+        this.Scheduler.ResourceView.Resources = Resources;
+        this.Scheduler.ResourceView.HeaderTitle = "Employees";
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Customize header title appearance using style
+
+The text style and background of the title can be customized using the `HeaderTitleStyle` and `HeaderTitleBackground` properties. The default `HeaderTitleStyle` is font size `14` with text color `#1C1B1F`, and the default `HeaderTitleBackground` is transparent.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="8 9 10 11 12 13 14 15" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineWeek">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView HeaderTitle="Employees">
+                <scheduler:SchedulerResourceView.HeaderTitleStyle>
+                    <scheduler:SchedulerTextStyle FontSize="16"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"/>
+                </scheduler:SchedulerResourceView.HeaderTitleStyle>
+                <scheduler:SchedulerResourceView.HeaderTitleBackground>
+                    <SolidColorBrush Color="LightGray"/>
+                </scheduler:SchedulerResourceView.HeaderTitleBackground>
+            </scheduler:SchedulerResourceView>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+
+</ContentPage>
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="9 10 11 12 13 14 15" %}
+using Syncfusion.Maui.Scheduler;
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.ResourceView.HeaderTitle = "Employees";
+        this.Scheduler.ResourceView.HeaderTitleStyle = new SchedulerTextStyle()
+        {
+            FontSize = 16,
+            FontAttributes = FontAttributes.Bold,
+            TextColor = Colors.Black
+        };
+        this.Scheduler.ResourceView.HeaderTitleBackground = new SolidColorBrush(Colors.LightGray);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Customize header title appearance using DataTemplate
+
+The title area can be fully customized using the `HeaderTitleTemplate` property. The `HeaderTitle` string is the `BindingContext` of the template.
+
+N> When `HeaderTitleTemplate` is set, the default title text is not drawn, and `HeaderTitleStyle` and `HeaderTitleBackground` are not applied. Set the background inside the template.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17" %}
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="Scheduler" View="TimelineWeek">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView HeaderTitle="Employees">
+                <scheduler:SchedulerResourceView.HeaderTitleTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="LightGray">
+                            <Label Text="{Binding}"
+                                FontAttributes="Bold"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </scheduler:SchedulerResourceView.HeaderTitleTemplate>
+            </scheduler:SchedulerResourceView>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+
+</ContentPage>
+{% endhighlight %}
+{% endtabs %}
+
+N> The title area uses the existing view header height, so a template taller than this height is clipped.
+
 ## Assign special time regions to scheduler resources
 
 You can highlight the resources availability by creating special [time regions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeRegions) in the day, week, workweek, timeline day, timeline week, and timeline workweek views. Special time regions can represent unavailable or reserved slots such as lunch breaks, team meetings, or non-working hours.
