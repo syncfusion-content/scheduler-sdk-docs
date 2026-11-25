@@ -148,6 +148,39 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 
 ![WPF Scheduler BlackoutDates](Timeline_Images/wpf-scheduler-blackoutdates.png)
 
+## Show Week Number in Timeline Month View
+
+Display the week number of a year in the Scheduler Timeline Month view by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_ShowWeekNumber) property of `TimelineViewSettings` to `true`. By default, it is set to `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<Window
+    . . .
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+    <Grid>
+        <syncfusion:SfScheduler
+            x:Name="schedule"
+            ViewType="TimelineMonth">
+
+            <syncfusion:SfScheduler.TimelineViewSettings>
+                <syncfusion:TimelineViewSettings ShowWeekNumber="True"/>
+            </syncfusion:SfScheduler.TimelineViewSettings>
+
+        </syncfusion:SfScheduler>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Scheduler;
+
+this.Schedule.ViewType = SchedulerViewType.TimelineMonth;
+this.Schedule.TimelineViewSettings.ShowWeekNumber = true;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler Timeline Month view ShowWeekNumber](Timeline_images/wpf-scheduler-timeline-month-showweeknumber.png)
+
 ## Special time regions
 Restrict the user interaction such as selection and highlights specific regions of time in the timeline views by adding the [SpecialTimeRegions](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_SpecialTimeRegions) property of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.html). Set the [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_StartTime) and [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html#Syncfusion_UI_Xaml_Scheduler_SpecialTimeRegion_EndTime) properties of [SpecialTimeRegion](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SpecialTimeRegion.html) to create a `SpecialTimeRegion,` use the timeZone property to set the specific timezone for the start and end time of the `SpecialTimeRegion.` The `SpecialTimeRegion` will display the text or image on it that is set to the text or icon property of `SpecialTimeRegion.` This property will be applicable to the `TimelineDay,` `TimelineWeek,` and `TimelineWorkWeek` views.
 
