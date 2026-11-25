@@ -1363,6 +1363,91 @@ N>
 * The BindingContext of the `ViewHeaderTemplate` is the`DateTime.` The `SelectableDayPredicate,` `MinimumDateTime,` and `MaximumDateTime` properties of date and time values can be used directly in the data template selector.
 * When using data template selector, performance issues occur as the conversion template views take time within the framework.
 
+### Sticky view header for custom view header template
+
+When a custom [ViewHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_ViewHeaderTemplate) is set on the [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html), the template header of the day at the leading edge of the viewport stays visible while you scroll horizontally. This matches the built-in timeline view header, which is always sticky.
+
+N>
+* No property is needed. The behavior is always on when `ViewHeaderTemplate` is set, and it cannot be turned off.
+* It applies to the **TimelineDay**, **TimelineWeek**, and **TimelineWorkWeek** views.
+* It does not apply to the **TimelineMonth** view. The month header cells are not pinned.
+* If `ViewHeaderTemplate` is `null`, the built-in header is used. It is already sticky, and nothing changes for it.
+
+#### How it works
+
+* Each visible date has one template cell, and each cell is one day wide.
+* As you scroll, the template cell at the leading edge of the viewport is pinned toward the trailing edge of its day. Its content stays visible while part of that day is still on screen.
+* The cell is pinned only when its content is wider than the visible part of the day. Otherwise, it scrolls naturally.
+* The pinned cell never moves before the start of its own day and never overlaps the next day's cell. When the next day arrives, the next cell takes over.
+* In the right-to-left (RTL) flow direction, the behavior is mirrored, and the right edge is the leading edge.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler"
+                           View="TimelineWeek">
+        <scheduler:SfScheduler.TimelineView>
+            <scheduler:SchedulerTimelineView>
+                <scheduler:SchedulerTimelineView.ViewHeaderTemplate>
+                    <DataTemplate>
+                        <Grid Background="MediumPurple" Padding="8,0">
+                            <Label HorizontalOptions="Start"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="{Binding StringFormat='{0:dddd, MMMM dd}'}" />
+                        </Grid>
+                    </DataTemplate>
+                </scheduler:SchedulerTimelineView.ViewHeaderTemplate>
+            </scheduler:SchedulerTimelineView>
+        </scheduler:SfScheduler.TimelineView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.TimelineWeek;
+        scheduler.TimelineView = new SchedulerTimelineView()
+        {
+            ViewHeaderTemplate = new DataTemplate(() =>
+            {
+                var label = new Label
+                {
+                    HorizontalOptions = LayoutOptions.Start,
+                    VerticalOptions = LayoutOptions.Center,
+                    TextColor = Colors.White
+                };
+                label.SetBinding(Label.TextProperty, new Binding(".", stringFormat: "{0:dddd, MMMM dd}"));
+
+                return new Grid
+                {
+                    Background = Colors.MediumPurple,
+                    Padding = new Thickness(8, 0),
+                    Children = { label }
+                };
+            })
+        };
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![sticky-view-header-custom-template-in-maui-scheduler](images/timeline-views/sticky-view-header-custom-template.gif)
+
 ## Time text formatting
 
 The format for the labels mentioning the time can be customized by setting the [TimeFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeFormat) property of [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).

@@ -973,6 +973,158 @@ public partial class MainPage : ContentPage
 N>
 The current time indicator color is applied only when the `ShowCurrentTimeIndicator` property is enabled.
 
+### Current time indicator options
+
+The [CurrentTimeIndicatorSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_CurrentTimeIndicatorSettings) property of [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html) (type [SchedulerCurrentTimeIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerCurrentTimeIndicator.html)) customizes how the current time indicator behaves. It applies to the views that have a time scale: day, week, work week, and timeline day, timeline week, and timeline work week.
+
+N>
+* The settings in this section do not turn the indicator on or off, and they do not change its color. Use the `ShowCurrentTimeIndicator` and `CurrentTimeIndicatorBrush` properties of the time slot view settings (for example, `DaysView` and `TimelineView`) for that, as described in the preceding sections.
+* The following options take effect only when the indicator is visible.
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `ShowTime` | `bool` | `false` | Shows the current time as a label in the time ruler at the indicator position. |
+| `ShowPreviousDates` | `bool` | `false` | Extends the indicator as a dashed line over the earlier visible dates. |
+| `OnTop` | `bool` | `true` | Draws the indicator above the appointments. Set it to `false` to draw it below them. |
+
+#### Show time
+
+Set the `ShowTime` property to `true` to show the current time as a label in the time ruler at the indicator position.
+
+* The time ruler label of the current time slot is hidden while the current time label is shown.
+* Any other ruler label that would overlap the current time label is hidden too.
+* The label is shown only when the current date is one of the visible dates.
+* The time is converted to the scheduler's `TimeZone`.
+* The label's text color comes from the theme. If the theme does not set one, black or white is chosen so that the text stays readable on the label fill.
+
+{% tabs %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="6 7 8" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Week">
+        <scheduler:SfScheduler.CurrentTimeIndicatorSettings>
+            <scheduler:SchedulerCurrentTimeIndicator ShowTime="True" />
+        </scheduler:SfScheduler.CurrentTimeIndicatorSettings>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="11 12 13 14" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Week;
+        scheduler.CurrentTimeIndicatorSettings = new SchedulerCurrentTimeIndicator
+        {
+            ShowTime = true
+        };
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Show current time label in .NET MAUI Scheduler.](images/day-week-views/current-time-show-time.png)
+
+#### Show previous dates
+
+Set the `ShowPreviousDates` property to `true` to extend the indicator as a dashed line over the earlier visible dates. By default, the indicator is drawn only on the current date.
+
+{% tabs %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="6 7 8" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Week">
+        <scheduler:SfScheduler.CurrentTimeIndicatorSettings>
+            <scheduler:SchedulerCurrentTimeIndicator ShowPreviousDates="True" />
+        </scheduler:SfScheduler.CurrentTimeIndicatorSettings>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="11 12 13 14" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Week;
+        scheduler.CurrentTimeIndicatorSettings = new SchedulerCurrentTimeIndicator
+        {
+            ShowPreviousDates = true
+        };
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Show previous date in .NET MAUI Scheduler.](images/day-week-views/current-time-previous-date.png)
+
+#### Draw the indicator on top of appointments
+
+The `OnTop` property is `true` by default, so the indicator is drawn above the appointments. Set it to `false` to draw the indicator below the appointments.
+
+{% tabs %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="6 7 8" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Week">
+        <scheduler:SfScheduler.CurrentTimeIndicatorSettings>
+            <scheduler:SchedulerCurrentTimeIndicator OnTop="False" />
+        </scheduler:SfScheduler.CurrentTimeIndicatorSettings>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="11 12 13 14" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Week;
+        scheduler.CurrentTimeIndicatorSettings = new SchedulerCurrentTimeIndicator
+        {
+            OnTop = false
+        };
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![draw the indicator on top of appointment-in-maui-scheduler](images/day-week-views/show-indicator-top.png)
+
 ## Change time ruler width
 
 The [TimeRulerWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html#Syncfusion_Maui_Scheduler_SchedulerDaysView_TimeRulerWidth) property of [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerDaysView.html) can be used to customize the size of the time ruler view where the labels with the time are placed.

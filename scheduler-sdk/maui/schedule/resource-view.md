@@ -1654,6 +1654,59 @@ N>
 
 ![Resource auto row height with popup in .NET MAUI Scheduler.](images/resource-view/resource-view-auto-row-height-in-net-maui-scheduler-popup.png)
 
+## Sticky resource rows in timeline views
+
+In timeline views with resources, you can pin chosen resource rows at the top of the view. The pinned rows stay visible while the other resource rows scroll vertically beneath them.
+
+Two properties of [SchedulerResourceView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html) control this:
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| [StickyResourceIds](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_StickyResourceIds) | `ObservableCollection<object>` | `null` | The `Id` values of the resources to pin at the top. |
+| [StickyResourceHeight](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html#Syncfusion_Maui_Scheduler_SchedulerResourceView_StickyResourceHeight) | `double` | `-1` | The total height of the sticky area. |
+
+### Pin resource rows
+
+Add the `Id` of each resource you want to pin to the `StickyResourceIds` property. The ids must match the `Id` of the items in `Resources`.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="6 7" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" View="TimelineWeek">
+        <scheduler:SfScheduler.ResourceView>
+            <scheduler:SchedulerResourceView Resources="{Binding Resources}"
+                                             StickyResourceIds="{Binding StickyIds}"/>
+        </scheduler:SfScheduler.ResourceView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="8 9 10 11 12" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.scheduler.View = SchedulerView.TimelineWeek;
+        this.scheduler.ResourceView = new SchedulerResourceView
+        {
+            Resources = resources,
+            StickyResourceIds = new ObservableCollection<object> { "1000", "1002" }
+        };
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+![sticky resources rows in timeline view in .NET MAUI Scheduler.](images/resource-view/sticky-resource-view-timeline.gif)
+
 ## Assign special time regions to scheduler resources
 
 You can highlight the resources availability by creating special [time regions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_TimeRegions) in the day, week, workweek, timeline day, timeline week, and timeline workweek views. Special time regions can represent unavailable or reserved slots such as lunch breaks, team meetings, or non-working hours.
