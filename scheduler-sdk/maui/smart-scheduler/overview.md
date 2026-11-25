@@ -34,6 +34,8 @@ The Syncfusion<sup>&reg;</sup> [.NET MAUI AI-Powered Scheduler](https://www.sync
 - **Adaptive assist panel** allows displaying AI interaction UI in compact or expanded layouts across devices.  
 - **Assist button customization** allows enabling, disabling, or customizing the trigger UI for AI interactions.  
 - **Event handling** allows controlling how AI-driven changes are applied through manual or automatic workflows.  
+- **Smart rescheduling** allows rescheduling multiple matching appointments at once using a single natural language request.
+- **Custom appointment and resource mapping** allows binding your own business objects as appointments and resources by mapping their properties to the scheduler fields, so the assist view creates, edits, and deletes them directly.
 
 ## Globalization
 
