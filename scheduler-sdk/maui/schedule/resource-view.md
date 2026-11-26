@@ -1684,7 +1684,7 @@ Add the `Id` of each resource you want to pin to the `StickyResourceIds` propert
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="8 9 10 11 12" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="10 11 12 13 14" %}
 
 using Syncfusion.Maui.Scheduler;
 
@@ -1701,6 +1701,7 @@ public partial class MainPage : ContentPage
             StickyResourceIds = new ObservableCollection<object> { "1000", "1002" }
         };
     }
+}
 
 {% endhighlight %}
 {% endtabs %}

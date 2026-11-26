@@ -377,7 +377,7 @@ The voice input functionality can be enabled by using the [EnableVoiceInput](htt
 </ContentPage>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="4" %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5" %}
 
 using Syncfusion.Maui.SmartScheduler;
 
@@ -414,7 +414,7 @@ public class Meeting
 }
 
 {% endhighlight %}
-{% highlight XAML tabtitle="MainPage.xaml" hl_lines="9 10 11 12 13 14 15 16 17 18 19" %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17" %}
 
 <ContentPage   
     . . .
@@ -437,7 +437,7 @@ public class Meeting
 </ContentPage>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5 6 7 8 9 10 11 12 13 14" %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5 6 7 8 9 10 11 12 13 14 15" %}
 
 using Syncfusion.Maui.Scheduler;
 using Syncfusion.Maui.SmartScheduler;
@@ -480,7 +480,7 @@ public class Employee
 }
 
 {% endhighlight %}
-{% highlight XAML tabtitle="MainPage.xaml" hl_lines="8 9 10 11 12 13 14 15 16" %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="6 7 8 9 10 11 12 13 14 15" %}
 
 <ContentPage   
     . . .
@@ -501,7 +501,7 @@ public class Employee
 </ContentPage>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5 6 7 8 9 10 11 12 13 14" %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5 6 7 8 9 10 11 12 13 14 15" %}
 
 using Syncfusion.Maui.Scheduler;
 using Syncfusion.Maui.SmartScheduler;
