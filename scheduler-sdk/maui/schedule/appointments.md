@@ -1200,6 +1200,56 @@ private void Scheduler_ViewChanged(object? sender, SchedulerViewChangedEventArgs
 {% endhighlight %}  
 {% endtabs %}
 
+## Appointment cell padding
+
+The scheduler leaves a small gap between an appointment and the edge of the cell that contains it. You can change this gap using the cell padding properties.
+
+### Cell right padding in day, week, and work week views
+
+The `CellRightPadding` property of [DaysView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_DaysView) sets the space between an appointment and the right edge of its cell in the `Day`, `Week`, and `WorkWeek` views. The default value is `-1`, which uses the built-in padding of the view (`10` for the `Day` view and `3` for the `Week` and `WorkWeek` views). Any other value replaces the built-in padding.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+
+<scheduler:SfScheduler x:Name="Scheduler" View="Week">
+    <scheduler:SfScheduler.DaysView>
+        <scheduler:SchedulerDaysView CellRightPadding="30" />
+    </scheduler:SfScheduler.DaysView>
+</scheduler:SfScheduler>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="2" %}
+
+this.Scheduler.View = SchedulerView.Week;
+this.Scheduler.DaysView.CellRightPadding = 30;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Cell bottom padding in timeline views
+
+The `CellBottomPadding` property of [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_TimelineView) sets the space at the bottom of the appointments in the `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, and `TimelineMonth` views. The default value is `5`.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" hl_lines="4" %}
+
+<scheduler:SfScheduler x:Name="Scheduler" View="TimelineWeek">
+    <scheduler:SfScheduler.TimelineView>
+        <scheduler:SchedulerTimelineView CellBottomPadding="15" />
+    </scheduler:SfScheduler.TimelineView>
+</scheduler:SfScheduler>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" hl_lines="2" %}
+
+this.Scheduler.View = SchedulerView.TimelineWeek;
+this.Scheduler.TimelineView.CellBottomPadding = 15;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The padding also applies to all-day appointments in the `Day`, `Week`, and `WorkWeek` views. An invalid value (`NaN` or infinity) falls back to the default.
+
 ## Appointment appearance customization
 
 The appointment appearance customization can be achieved by using the `TextStyle` and `AppointmentTemplate` properties in the `SfScheduler.`

@@ -335,6 +335,53 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+### Customize Allowed Views Order
+
+By default, Scheduler displays the allowed view buttons in the order defined by the [SchedulerViews](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViews.html) enumeration. Use the `AllowedViewOrder` property to customize the order of views displayed in the header and allowed views dropdown menu.
+
+The `AllowedViewOrder` property is of type `IList<SchedulerViews>`, which allows you to specify the desired sequence of views.
+
+{% tabs %}
+{% highlight XAML hl_lines="7" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+        <scheduler:SfScheduler x:Name="Scheduler"
+                               AllowedViews="Day,Week,Month"
+                               AllowedViewOrder="{Binding AllowedViewOrder}">
+        </scheduler:SfScheduler>
+
+</ContentPage>
+{% endhighlight %}
+{% highlight C# hl_lines="9 10 11 12 13 14" %}
+using Syncfusion.Maui.Scheduler;
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.Scheduler.AllowedViews = SchedulerViews.Day | SchedulerViews.Week | SchedulerViews.Month;
+        this.Scheduler.AllowedViewOrder = new List<SchedulerViews>()
+        {
+            SchedulerViews.Month,
+            SchedulerViews.Day,
+            SchedulerViews.Week,
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+Views specified in AllowedViewOrder are displayed first. Any allowed views that are not included in the collection are automatically appended in their default order.
+
+N> 
+- Only views available in AllowedViews are considered.
+- Duplicate entries in AllowedViewOrder are ignored.
+- If AllowedViewOrder is null or empty, the default view order is used.
+- To update the order, assign a new IList<SchedulerViews> collection to the AllowedViewOrder property.
+
 ### Enable or disable swipe navigation 
 
 The [EnableSwipeNavigation](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html#Syncfusion_Maui_Scheduler_SfScheduler_EnableSwipeNavigation) property determines whether users can navigate between dates using the scheduler's built-in navigation interactions. By default, `EnableSwipeNavigation` is set to `true`, allowing users to navigate using swipe gestures and the navigation buttons in the scheduler header. Setting `EnableSwipeNavigation` to `false` disables these navigation interactions.

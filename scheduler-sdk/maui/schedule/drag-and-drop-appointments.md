@@ -290,7 +290,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-#### Handle dragging appointment navigation delay
+### Handle dragging appointment navigation delay
 Using the [AutoNavigationDelay](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html#Syncfusion_Maui_Scheduler_DragDropSettings_AutoNavigationDelay) property you can handle the navigation time when navigating through views while holding the dragged appointment.
 
 {% tabs %}
@@ -312,7 +312,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-#### Handle view scroll when dragging appointment
+### Handle view scroll when dragging appointment
 Using the [AllowScroll](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html#Syncfusion_Maui_Scheduler_DragDropSettings_AllowScroll) property you can handle scrolling the time slot while dragging the appointment or not, while dragging the appointment to the endpoint of the current view in Schedule. The default value of the `AllowScroll` property is `true`.
 
 {% tabs %}
@@ -351,6 +351,10 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 N> This is not applicable for MonthView.
+
+### Drag time indicator
+
+The Scheduler displays a drag time indicator during appointment drag-and-drop operations to indicate the current date and time position of the dragged appointment. You can customize the visibility, appearance, and text format of the drag time indicator using the properties available in DragDropSettings.
 
 #### Show or hide drag time indicator
 You can handle whether the drag and drop indicator should be displayed within the scheduler during appointment dragging by using the [ShowTimeIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html#Syncfusion_Maui_Scheduler_DragDropSettings_ShowTimeIndicator) property which shows the dragged appointment's current position time. The default value of the `ShowTimeIndicator` property is `true`.
@@ -461,3 +465,70 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 N> [View sample in GitHub](https://github.com/syncfusion/maui-demos/tree/master/MAUI/Scheduler/SampleBrowser.Maui.Scheduler/Samples/Scheduler/DragAndDrop)
+
+### Drag view opacity
+You can customize the opacity of the appointment displayed during a drag operation using the `DragViewOpacity` property of [DragDropSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html?tabs=tabid-1%2Ctabid-3%2Ctabid-7%2Ctabid-5%2Ctabid-9%2Ctabid-8). The default value is 0.6.
+
+{% tabs %}
+{% highlight xaml hl_lines="7" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+<scheduler:SfScheduler AllowAppointmentDrag="True">
+    <scheduler:SfScheduler.DragDropSettings>
+        <scheduler:DragDropSettings DragViewOpacity="0.4" />
+    </scheduler:SfScheduler.DragDropSettings>
+</scheduler:SfScheduler>
+
+</ContentPage>
+{% endhighlight %}
+{% highlight c# hl_lines="9" %}
+using Syncfusion.Maui.Scheduler;
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.scheduler.AllowAppointmentDrag = true;
+        this.scheduler.DragDropSettings.DragViewOpacity = 0.4;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The `DragViewOpacity` property can be set between `0` and `1`, where `0` makes the drag view fully transparent and `1` makes it fully opaque. This property only affects the appearance of the drag view and does not modify the original appointment. The following table describes the supported values of the DragViewOpacity property.
+
+<table border="1">
+    <tr>
+        <th>Value<br/>
+            <br/></th>        
+        <th>Description<br/>
+            <br/></th>
+    </tr>
+   <tr>
+      <td>0</td>
+      <td>The drag view is fully transparent.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>The drag view is fully opaque.</td>
+    </tr>
+    <tr>
+      <td>0 to 1</td>
+      <td>Displays the drag view with the specified opacity.</td>
+    </tr>
+    <tr>
+      <td>Less than 0</td>
+      <td>Treated as 0.</td>
+    </tr>
+    <tr>
+      <td>Greater than 1</td>
+      <td>Treated as 1.</td>
+    </tr>
+    <tr>
+      <td>NaN or Infinity</td>
+      <td>Uses the default value (0.6).</td>
+    </tr>
+</table>
