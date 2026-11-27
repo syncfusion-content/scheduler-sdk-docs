@@ -168,3 +168,163 @@ The [AppointmentToolTipTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.
 {% endtabs %}
 
 ![Appointment-Tooltip-Template-in-.NET-MAUI-SfScheduler](images/appointment-tooltip/appointment-tooltip-template.png)
+
+## Header Tooltip
+
+The header tooltip shows a short plain-text description for the built-in elements of the scheduler header. By default, the [IsHeaderToolTipEnabled](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderView.html#Syncfusion_Maui_Scheduler_SchedulerHeaderView_IsHeaderToolTipEnabled) property of the [SchedulerHeaderView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderView.html) is set to `false`. To display the tooltips, set the `IsHeaderToolTipEnabled` property to `true`.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="8" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Week">
+        <scheduler:SfScheduler.HeaderView>
+            <scheduler:SchedulerHeaderView 
+                IsHeaderToolTipEnabled="True"/>
+        </scheduler:SfScheduler.HeaderView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="9" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.scheduler.HeaderView.IsHeaderToolTipEnabled = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The tooltip is available for the following header elements:
+
+- Previous navigation button
+- Next navigation button
+- Today button
+- Date-picker button
+- Allowed-view selector items (Day, Week, Month, and so on)
+- More-icon button (shown when the allowed views overflow)
+
+The tooltip text is the localized display text of the element. For a view item, it is the view name, for example "Day", "Week", or "Month". The header layout is the same whether the tooltips are on or off.
+
+N>
+- **Desktop platforms**: A tooltip is shown when you hover the mouse over a header element.
+
+### Header Tooltip Settings
+
+The [HeaderToolTipSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderView.html#Syncfusion_Maui_Scheduler_SchedulerHeaderView_HeaderToolTipSettings) property allows you to customize the appearance of header tooltips. It applies only when `IsHeaderToolTipEnabled` is `true`. The following settings can be configured:
+
+- **Background** – Defines the background of the tooltip. The default value is `#1C1B1F`.
+
+- **TextStyle** – Specifies the text styling of the tooltip content. The [`SchedulerTextStyle`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTextStyle.html) exposes `TextColor`, `FontSize`, `FontAttributes`, `FontFamily`, and other text-related properties. By default, the `TextColor` is `#F4EFF4`.
+
+- **Padding** – Specifies the spacing between the text and the tooltip edge. The default value is `12,8,12,8`.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="8 9 10 11 12 13 14" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Week">
+        <scheduler:SfScheduler.HeaderView>
+            <scheduler:SchedulerHeaderView IsHeaderToolTipEnabled="True">
+                <scheduler:SchedulerHeaderView.HeaderToolTipSettings>
+                    <scheduler:HeaderToolTipSettings Background="PaleGreen" Padding="5">
+                        <scheduler:HeaderToolTipSettings.TextStyle>
+                            <scheduler:SchedulerTextStyle TextColor="Purple" FontSize="15" FontAttributes="Bold"/>
+                        </scheduler:HeaderToolTipSettings.TextStyle>
+                    </scheduler:HeaderToolTipSettings>
+                </scheduler:SchedulerHeaderView.HeaderToolTipSettings>
+            </scheduler:SchedulerHeaderView>
+        </scheduler:SfScheduler.HeaderView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="9 10 11 12 13 14 15 16 17 18 19" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.scheduler.HeaderView.IsHeaderToolTipEnabled = true;
+        this.scheduler.HeaderView.HeaderToolTipSettings = new HeaderToolTipSettings()
+        {
+            Background = Colors.PaleGreen,
+            Padding = new Thickness(5),
+            TextStyle = new SchedulerTextStyle
+            {
+                TextColor = Colors.Purple,
+                FontSize = 15,
+                FontAttributes = FontAttributes.Bold
+            }
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Header Tooltip Template
+
+The [HeaderToolTipTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderView.html#Syncfusion_Maui_Scheduler_SchedulerHeaderView_HeaderToolTipTemplate) property lets you replace the default tooltip content with a custom layout. It applies only when `IsHeaderToolTipEnabled` is `true`.
+
+{% tabs %}
+{% highlight xaml tabtitle="XAML" hl_lines="8 9 10 11 12 13 14" %}
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Week">
+        <scheduler:SfScheduler.HeaderView>
+            <scheduler:SchedulerHeaderView IsHeaderToolTipEnabled="True">
+                <scheduler:SchedulerHeaderView.HeaderToolTipTemplate>
+                    <DataTemplate x:DataType="x:String">
+                        <Label Text="{Binding .}"
+                               FontAttributes="Bold"
+                               FontSize="12"
+                               TextColor="White" />
+                    </DataTemplate>
+                </scheduler:SchedulerHeaderView.HeaderToolTipTemplate>
+            </scheduler:SchedulerHeaderView>
+        </scheduler:SfScheduler.HeaderView>
+    </scheduler:SfScheduler>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# tabtitle="C#" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20" %}
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.scheduler.HeaderView.IsHeaderToolTipEnabled = true;
+        this.scheduler.HeaderView.HeaderToolTipTemplate = new DataTemplate(() =>
+        {
+            var label = new Label
+            {
+                FontAttributes = FontAttributes.Bold,
+                FontSize = 12,
+                TextColor = Colors.White
+            };
+            label.SetBinding(Label.TextProperty, ".");
+            return label;
+        });
+    }
+}{% endhighlight %}
+{% endtabs %}
+
+N>
+Each of the `IsHeaderToolTipEnabled`, `HeaderToolTipSettings`, and `HeaderToolTipTemplate` properties is a `BindableProperty`, so it supports data binding and styling.
+
+![Header-Tooltip-in-.NET-MAUI-SfScheduler](images/appointment-tooltip/appointment-tooltip-header.png)

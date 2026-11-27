@@ -283,6 +283,81 @@ public partial class MainPage : ContentPage
 
 ![Customize-appointment-height-in-Month-view-in-.NET MAUI SfScheduler ](images/month-view/customize-appointment-height-in-month-view.png)
 
+## Render appointments based on actual start and end times in Month view
+
+By default, an appointment in the Month view is drawn as a full-width bar over each day it covers. The start and end times are not reflected in the bar.
+
+Set the [RenderAppointmentsBasedOnTime](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_RenderAppointmentsBasedOnTime) property of [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html) to `true` to size and position each bar by the appointment's displayed start and end times within the day. For example, an appointment from 12:00 PM to 6:00 PM covers the second half of the day cell, and a 6:00 AM to 12:00 PM appointment covers the second quarter. The default value is `false`.
+
+{% tabs %}
+{% highlight XAML tabtitle="XAML" hl_lines="9 10" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="Month">
+        <scheduler:SfScheduler.MonthView>
+            <scheduler:SchedulerMonthView AppointmentDisplayMode="Text"
+                                          RenderAppointmentsBasedOnTime="True"/>
+        </scheduler:SfScheduler.MonthView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="C#" hl_lines="11 12" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.Month;
+        scheduler.MonthView.AppointmentDisplayMode = SchedulerMonthAppointmentDisplayMode.Text;
+        scheduler.MonthView.RenderAppointmentsBasedOnTime = true;
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![render-appointment-based-on-actual-start-and-end-time-in- .NET MAUI SfScheduler ](images/month-view/month-view-time-based-rendering.png)
+
+N>
+* The `RenderAppointmentsBasedOnTime` property takes effect only when the view is `Month` and the `AppointmentDisplayMode` is `Text`. In the other display modes, such as `Indicator`, the property has no effect, and no exception or warning is raised.
+* Day cells are narrow in the Month view on small screens, so the minimum width of 24 device-independent units may make short appointments look longer than their duration.
+
+### Rendering rules
+
+* **One day is 24 hours.** Each day cell is treated as 24 hours of displayed clock time. This includes days with daylight saving changes.
+* **Single-day appointments.** The bar starts at the start time and ends at the end time, as a fraction of the day cell width.
+* **Multi-day appointments.** The appointment stays one continuous bar. It starts partway into the first day, according to its start time, and ends partway into the last day, according to its end time. The days in between are fully covered.
+* **Clipped appointments.** If the appointment begins before the first visible date, or in a week row that it continues into, the bar starts at the edge of that day or row. Likewise, the bar ends at the edge when the appointment ends after the last visible date or row.
+* **End at midnight.** An end time of exactly midnight on a later date does not add a sliver of width on that date.
+* **All-day appointments.** They keep the full width of every day they cover.
+* **Minimum width.** A short or zero-duration appointment has a minimum visible width of 24 device-independent units. The minimum is limited to the available area. A single-day bar shifts left when needed to fit within the cell. The true extent is not painted separately.
+* **Layout is unchanged.** Only the horizontal bounds change. Appointment lanes (rows) and row heights are the same as with the default rendering.
+* **Horizontal resource view.** The bars are placed within each resource's own column.
+* **Right-to-left.** The bars are mirrored in the RTL flow direction.
+
+### Interaction
+
+Drag and drop and appointment resizing take the time-based layout into account. The scheduler converts a position within the day cell to a time of day.
+
+* **Resizing.** The resize handles work on the actual start and end times. The time indicator can be shown during resizing, as in other views. See the [ShowTimeIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentResizeSettings.html#Syncfusion_Maui_Scheduler_AppointmentResizeSettings_ShowTimeIndicator) property of `AppointmentResizeSettings`.
+* **Drag and drop.** While dragging, the position within the day cell sets the time of day. The time indicator can be shown through the [ShowTimeIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html#Syncfusion_Maui_Scheduler_DragDropSettings_ShowTimeIndicator) property of `DragDropSettings`.
+* Positions in the padding of a cell map to the nearest edge of the cell.
+
+### Default and compatibility
+
+The property is `false` by default. Existing applications continue to render full-width bars, with no change, until the property is set to `true`.
+
 ## Hide leading and trailing dates
 
 The previous and next month dates from a Scheduler month view can be hidden by using the [ShowLeadingAndTrailingDates](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html#Syncfusion_Maui_Scheduler_SchedulerMonthView_ShowLeadingAndTrailingDates) property in the [MonthView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerMonthView.html). The `ShowLeadingAndTrailingDates` property defaults to `true.`

@@ -359,6 +359,190 @@ this.Content = smartScheduler;
 {% endhighlight %}
 {% endtabs %}
 
+### Voice input
+
+The voice input functionality can be enabled by using the [EnableVoiceInput](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.SchedulerAssistViewSettings.html#Syncfusion_Maui_SmartScheduler_SchedulerAssistViewSettings_EnableVoiceInput) property of the [AssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.SchedulerAssistViewSettings.html). When enabled, users can interact with the assist view using voice commands instead of typing requests manually. By default, the `EnableVoiceInput` property is set to `false`.
+
+{% tabs %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="6" %}
+
+<ContentPage   
+    . . .
+    xmlns:smartScheduler="clr-namespace:Syncfusion.Maui.SmartScheduler;assembly=Syncfusion.Maui.SmartScheduler">
+    <smartScheduler:SfSmartScheduler  x:Name="smartScheduler">
+        <smartScheduler:SfSmartScheduler.AssistViewSettings>
+            <smartScheduler:SchedulerAssistViewSettings EnableVoiceInput="True"/>
+        </smartScheduler:SfSmartScheduler.AssistViewSettings>
+    </smartScheduler:SfSmartScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5" %}
+
+using Syncfusion.Maui.SmartScheduler;
+
+. . .
+this.smartScheduler = new SfSmartScheduler();
+this.smartScheduler.AssistViewSettings.EnableVoiceInput = true;
+this.Content = smartScheduler;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Voice input support in .NET MAUI AI-Powered Scheduler.](images/working-with-smart-scheduler/maui-smart-scheduler-view-voice-support.png)
+
+## Custom appointment and resource mapping
+
+The [SfSmartScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.html) works with your own business objects. You do not have to convert them to `SchedulerAppointment` or `SchedulerResource`. Map your model properties to the scheduler fields, and the assist view creates, edits, and deletes appointments on your objects directly.
+
+### Custom appointment mapping
+
+Map the properties of your data model to the scheduler appointment fields using the [AppointmentMapping](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerAppointmentMapping.html) property. The `AppointmentsSource` must be a collection of your custom objects.
+
+{% tabs %}
+{% highlight C# tabtitle="Meeting.cs" %}
+
+public class Meeting
+{
+    public string EventName { get; set; } = string.Empty;
+    public DateTime From { get; set; }
+    public DateTime To { get; set; }
+    public bool IsAllDay { get; set; }
+    public string Notes { get; set; } = string.Empty;
+    public Brush Background { get; set; } = Brush.Red;
+    public ObservableCollection<object> Resources { get; set; } = new();
+}
+
+{% endhighlight %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+    xmlns:smartScheduler="clr-namespace:Syncfusion.Maui.SmartScheduler;assembly=Syncfusion.Maui.SmartScheduler">
+    <smartScheduler:SfSmartScheduler x:Name="smartScheduler"
+                                     EnableAssistButton="True"
+                                     AppointmentsSource="{Binding Meetings}">
+        <smartScheduler:SfSmartScheduler.AppointmentMapping>
+            <scheduler:SchedulerAppointmentMapping
+                Subject="EventName"
+                StartTime="From"
+                EndTime="To"
+                IsAllDay="IsAllDay"
+                Notes="Notes"
+                Background="Background"
+                ResourceIds="Resources" />
+        </smartScheduler:SfSmartScheduler.AppointmentMapping>
+    </smartScheduler:SfSmartScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5 6 7 8 9 10 11 12 13 14 15" %}
+
+using Syncfusion.Maui.Scheduler;
+using Syncfusion.Maui.SmartScheduler;
+
+. . .
+this.smartScheduler.AppointmentsSource = meetings;
+this.smartScheduler.AppointmentMapping = new SchedulerAppointmentMapping
+{
+    Subject = nameof(Meeting.EventName),
+    StartTime = nameof(Meeting.From),
+    EndTime = nameof(Meeting.To),
+    IsAllDay = nameof(Meeting.IsAllDay),
+    Notes = nameof(Meeting.Notes),
+    Background = nameof(Meeting.Background),
+    ResourceIds = nameof(Meeting.Resources),
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+When you ask the assist view to create, reschedule, or delete a meeting, it performs the following actions:
+
+- Creates a new `Meeting` instance and fills the mapped properties.
+- Updates the mapped properties on the existing `Meeting` when it is edited.
+- Removes the `Meeting` from the `AppointmentsSource` when it is deleted.
+
+### Custom resource mapping
+
+Map your resource model to the scheduler resource fields using the [Mapping](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerResourceView.html) property of the `ResourceView`.
+
+{% tabs %}
+{% highlight C# tabtitle="Employee.cs" %}
+
+public class Employee
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public Brush Background { get; set; } = Brush.Blue;
+    public Brush Foreground { get; set; } = Brush.White;
+}
+
+{% endhighlight %}
+{% highlight XAML tabtitle="MainPage.xaml" hl_lines="6 7 8 9 10 11 12 13 14 15" %}
+
+<ContentPage   
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+    xmlns:smartScheduler="clr-namespace:Syncfusion.Maui.SmartScheduler;assembly=Syncfusion.Maui.SmartScheduler">
+    <smartScheduler:SfSmartScheduler x:Name="smartScheduler">
+        <smartScheduler:SfSmartScheduler.ResourceView>
+            <scheduler:SchedulerResourceView Resources="{Binding Employees}">
+                <scheduler:SchedulerResourceView.Mapping>
+                    <scheduler:SchedulerResourceMapping Id="Id"
+                                                        Name="Name"
+                                                        Background="Background"
+                                                        Foreground="Foreground" />
+                </scheduler:SchedulerResourceView.Mapping>
+            </scheduler:SchedulerResourceView>
+        </smartScheduler:SfSmartScheduler.ResourceView>
+    </smartScheduler:SfSmartScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="MainPage.xaml.cs" hl_lines="5 6 7 8 9 10 11 12 13 14 15" %}
+
+using Syncfusion.Maui.Scheduler;
+using Syncfusion.Maui.SmartScheduler;
+
+. . .
+this.smartScheduler.ResourceView = new SchedulerResourceView
+{
+    Resources = employees,
+    Mapping = new SchedulerResourceMapping
+    {
+        Id = nameof(Employee.Id),
+        Name = nameof(Employee.Name),
+        Background = nameof(Employee.Background),
+        Foreground = nameof(Employee.Foreground),
+    },
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+The assist view finds resources by their mapped `Name`, for example, *"Schedule a meeting with Alice."* It stores the matching resource `Id` in the mapped `ResourceIds` property of the appointment.
+
+### Supported mapping properties
+
+| Mapping class | Property | Description |
+|---|---|---|
+| `SchedulerAppointmentMapping` | `Subject` | Title of the appointment. |
+| | `StartTime` / `EndTime` | Start and end date-time of the appointment. |
+| | `IsAllDay` | Indicates whether the appointment is an all-day appointment. |
+| | `Notes` | Description or notes of the appointment. |
+| | `Background` | Background color of the appointment. |
+| | `ResourceIds` | Collection of assigned resource IDs. |
+| | `Reminders` | Reminders collection of the appointment. |
+| `SchedulerResourceMapping` | `Id` | Unique ID of the resource. |
+| | `Name` | Display name of the resource. The assist view uses it to match resources. |
+| | `Background` / `Foreground` | Background and foreground colors of the resource. |
+
+N>
+- Property names in the mapping must match the model property names exactly.
+- Without a mapping, the `AppointmentsSource` is a collection of `SchedulerAppointment` and works as usual.
+
 ## Template Customization
 
 The [SfSmartScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.html) facilitates the customization of both header and banner templates according to specific requirements. This feature enhances flexibility and provides a higher degree of control over the display of assist view.
@@ -586,3 +770,19 @@ The following examples illustrate common view switching requests:
 
 N>
 View switching honors the [AllowedViews](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.SfSmartScheduler.html#Syncfusion_Maui_SmartScheduler_SfSmartScheduler_AllowedViews) property of [`SfSmartScheduler`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartScheduler.html). The assist panel restricts its view-switching to only the views listed in that property.
+
+## Smart rescheduling
+
+The Smart rescheduling capability allows users to reschedule multiple matching appointments using a single natural language request in the assist panel.
+
+### Reschedule multiple appointments
+
+Users can reschedule all matching appointments at once by specifying terms such as *all* or *every* in the natural language request. The Smart Scheduler identifies the matching appointments and updates them based on the requested date or time.
+
+The following examples illustrate common smart rescheduling requests:
+
+- *"Reschedule all of Sarah's meetings to 3 PM."*
+- *"Move every project review meeting to tomorrow."*
+- *"Reschedule all of today's appointments with Zoey Addison to tomorrow."*
+
+![Smart rescheduling in .NET MAUI AI-Powered Scheduler.](images/working-with-smart-scheduler/maui-smart-scheduler-view-smart-reschedule.gif)

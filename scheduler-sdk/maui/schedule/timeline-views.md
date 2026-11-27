@@ -1070,6 +1070,76 @@ N>
 * [View scheduler appointment sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/GettingStarted)
 * [View business object sample in GitHub](https://github.com/SyncfusionExamples/maui-scheduler-examples/tree/main/BusinessObject)
 
+## Render appointments based on actual start and end times in Timeline Month view
+
+By default, an appointment in the Timeline Month view is drawn as a full-width bar over each day it covers. The start and end times are not reflected in the bar.
+
+Set the [RenderAppointmentsBasedOnTime](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html#Syncfusion_Maui_Scheduler_SchedulerTimelineView_RenderAppointmentsBasedOnTime) property of [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html) to `true` to size and position each bar by the appointment's displayed start and end times within the day. For example, an appointment from 12:00 PM to 6:00 PM covers the second half of the day cell, and a 6:00 AM to 12:00 PM appointment covers the second quarter. The default value is `false`.
+
+{% tabs %}
+{% highlight XAML tabtitle="XAML" hl_lines="8" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler" 
+                           View="TimelineMonth">
+        <scheduler:SfScheduler.TimelineView>
+            <scheduler:SchedulerTimelineView RenderAppointmentsBasedOnTime="True"/>
+        </scheduler:SfScheduler.TimelineView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight C# tabtitle="C#" hl_lines="10" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        scheduler.View = SchedulerView.TimelineMonth;
+        scheduler.TimelineView.RenderAppointmentsBasedOnTime = true;
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![render-appointment-based-on-actual-start-and-end-time-for-timelinemonth-in- .NET MAUI SfScheduler ](images/timeline-views//timeline-view-time-based-rendering.png)
+
+N>
+* The `RenderAppointmentsBasedOnTime` property takes effect only when the view is `TimelineMonth`. It has no effect in the timeline day, timeline week, and timeline workweek views, and no exception or warning is raised.
+
+### Rendering rules
+
+* **One day is 24 hours.** Each day cell is treated as 24 hours of displayed clock time. This includes days with daylight saving changes, and it is independent of the `StartHour` and `EndHour` properties.
+* **Single-day appointments.** The bar starts at the start time and ends at the end time, as a fraction of the day cell width.
+* **Multi-day appointments.** The appointment stays one continuous bar. It starts partway into the first day, according to its start time, and ends partway into the last day, according to its end time. The days in between are fully covered.
+* **Clipped appointments.** If the appointment begins before the first visible date, the bar starts at the edge of that day. Likewise, the bar ends at the edge when the appointment ends after the last visible date.
+* **End at midnight.** An end time of exactly midnight on a later date does not add a sliver of width on that date.
+* **All-day appointments.** They keep the full width of every day they cover. Only all-day appointments keep full-width ends. All timed appointments, including multi-day ones, use proportional ends.
+* **Minimum width.** A short or zero-duration appointment has a minimum visible width of 24 device-independent units. The minimum is limited to the available area. A single-day bar shifts left when needed to fit within the cell. The true extent is not painted separately.
+* **Layout is unchanged.** Only the horizontal bounds change. Appointment lanes (rows) and row heights are the same as with the default rendering.
+* **Hidden non-working days.** The bars follow the visible days after the hidden non-working days are removed.
+* **Right-to-left.** The bars are mirrored in the RTL flow direction.
+
+### Interaction
+
+Drag and drop and appointment resizing take the time-based layout into account. The scheduler converts a position within the day cell to a time of day.
+
+* **Resizing.** The resize handles work on the actual start and end times. The time indicator can be shown during resizing, as in other views. See the [ShowTimeIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.AppointmentResizeSettings.html#Syncfusion_Maui_Scheduler_AppointmentResizeSettings_ShowTimeIndicator) property of `AppointmentResizeSettings`.
+* **Drag and drop.** While dragging, the position within the day cell sets the time of day. The time indicator can be shown through the [ShowTimeIndicator](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.DragDropSettings.html#Syncfusion_Maui_Scheduler_DragDropSettings_ShowTimeIndicator) property of `DragDropSettings`.
+* Positions in the padding of a cell map to the nearest edge of the cell.
+
+### Default and compatibility
+
+The property is `false` by default. Existing applications continue to render full-width bars, with no change, until the property is set to `true`.
+
 ## View header
 
 You can customize the default appearance of view header in a timeline views by setting the [DateFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DateFormat), [DayFormat](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DayFormat), [Background](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderSettingsBase.html#Syncfusion_Maui_Scheduler_SchedulerHeaderSettingsBase_Background), [DateTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DateTextStyle), [DayTextStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerViewHeaderSettings.html#Syncfusion_Maui_Scheduler_SchedulerViewHeaderSettings_DayTextStyle), [Height](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerHeaderSettingsBase.html#Syncfusion_Maui_Scheduler_SchedulerHeaderSettingsBase_Height), and [ViewHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_ViewHeaderTemplate) properties of [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html) in the [SfScheduler](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SfScheduler.html).
@@ -1362,6 +1432,91 @@ public partial class MainPage : ContentPage
 N>
 * The BindingContext of the `ViewHeaderTemplate` is the`DateTime.` The `SelectableDayPredicate,` `MinimumDateTime,` and `MaximumDateTime` properties of date and time values can be used directly in the data template selector.
 * When using data template selector, performance issues occur as the conversion template views take time within the framework.
+
+### Sticky view header for custom view header template
+
+When a custom [ViewHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimeSlotView.html#Syncfusion_Maui_Scheduler_SchedulerTimeSlotView_ViewHeaderTemplate) is set on the [TimelineView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Scheduler.SchedulerTimelineView.html), the template header of the day at the leading edge of the viewport stays visible while you scroll horizontally. This matches the built-in timeline view header, which is always sticky.
+
+N>
+* No property is needed. The behavior is always on when `ViewHeaderTemplate` is set, and it cannot be turned off.
+* It applies to the **TimelineDay**, **TimelineWeek**, and **TimelineWorkWeek** views.
+* It does not apply to the **TimelineMonth** view. The month header cells are not pinned.
+* If `ViewHeaderTemplate` is `null`, the built-in header is used. It is already sticky, and nothing changes for it.
+
+#### How it works
+
+* Each visible date has one template cell, and each cell is one day wide.
+* As you scroll, the template cell at the leading edge of the viewport is pinned toward the trailing edge of its day. Its content stays visible while part of that day is still on screen.
+* The cell is pinned only when its content is wider than the visible part of the day. Otherwise, it scrolls naturally.
+* The pinned cell never moves before the start of its own day and never overlaps the next day's cell. When the next day arrives, the next cell takes over.
+* In the right-to-left (RTL) flow direction, the behavior is mirrored, and the right edge is the leading edge.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler">
+    <scheduler:SfScheduler x:Name="scheduler"
+                           View="TimelineWeek">
+        <scheduler:SfScheduler.TimelineView>
+            <scheduler:SchedulerTimelineView>
+                <scheduler:SchedulerTimelineView.ViewHeaderTemplate>
+                    <DataTemplate>
+                        <Grid Background="MediumPurple" Padding="8,0">
+                            <Label HorizontalOptions="Start"
+                                   VerticalOptions="Center"
+                                   TextColor="White"
+                                   Text="{Binding StringFormat='{0:dddd, MMMM dd}'}" />
+                        </Grid>
+                    </DataTemplate>
+                </scheduler:SchedulerTimelineView.ViewHeaderTemplate>
+            </scheduler:SchedulerTimelineView>
+        </scheduler:SfScheduler.TimelineView>
+    </scheduler:SfScheduler>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.Scheduler;
+
+. . .
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfScheduler scheduler = new SfScheduler();
+        scheduler.View = SchedulerView.TimelineWeek;
+        scheduler.TimelineView = new SchedulerTimelineView()
+        {
+            ViewHeaderTemplate = new DataTemplate(() =>
+            {
+                var label = new Label
+                {
+                    HorizontalOptions = LayoutOptions.Start,
+                    VerticalOptions = LayoutOptions.Center,
+                    TextColor = Colors.White
+                };
+                label.SetBinding(Label.TextProperty, new Binding(".", stringFormat: "{0:dddd, MMMM dd}"));
+
+                return new Grid
+                {
+                    Background = Colors.MediumPurple,
+                    Padding = new Thickness(8, 0),
+                    Children = { label }
+                };
+            })
+        };
+        this.Content = scheduler;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![sticky-view-header-custom-template-in-maui-scheduler](images/timeline-views/sticky-view-header-custom-template.gif)
 
 ## Time text formatting
 
