@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 # Summary in TypeScript Scheduler
 
-The Scheduler provides summary rows and columns in Timeline and vertical views, with or without resource grouping. Use them to display values for time ranges and, when resources are grouped, resource rows. Group summaries turn parent resource rows into summary bands in Timeline views with hierarchical resource grouping.
+The Scheduler provides summary rows and columns in Timeline and vertical views. Use them to display values for time ranges and, when resources are grouped, resource rows. Group summaries turn parent resource rows into summary bands in Timeline views with hierarchical resource grouping.
 
 Supply summary values through the `renderSummaryCell` event or the `template` option in the corresponding `summaryRow`, `summaryColumn`, or `groupSummary` configuration.
 
