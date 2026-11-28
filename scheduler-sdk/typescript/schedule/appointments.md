@@ -400,6 +400,73 @@ The following code example demonstrates how to check for overlaps when adding an
 
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs41" %}
 
+## Event spacing
+
+### Overview
+
+Event spacing controls the amount of space around and between appointments without changing their time positions. It applies along the stacking axis: columns in the Day, Week, and Work Week views, and lanes in the all-day row, Month, Timeline, and Timeline Year views.
+
+The [`eventSpacing`](../api/schedule#eventspacing) property provides the following options:
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `gap` | `number` | `null` | Adds space between adjacent appointments on the stacking axis. |
+| `leadingSpace` | `number` | `null` | Reserves space before the first appointment column or lane in a track. |
+| `trailingSpace` | `number` | `null` | Reserves space after the last appointment column or lane in a track. |
+
+All spacing values are CSS pixels. Set a field to `null` to use the built-in spacing for the active view.
+
+### Basic setup
+
+Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/scheduler-sdk/typescript/schedule/event-spacing-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/scheduler-sdk/typescript/schedule/event-spacing-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-spacing-cs1" %}
+
+### Event spacing modes
+
+#### Component and view-level spacing
+
+Use the component-level [`eventSpacing`](../api/schedule#eventspacing) property for a common layout. A view-level value overrides only the fields that it defines, while the remaining fields inherit the component-level value.
+
+```ts
+const scheduleObj: Schedule = new Schedule({
+    views: [
+        { option: 'Week', eventSpacing: { gap: 4 } },
+        { option: 'Month', eventSpacing: { gap: 1 } }
+    ],
+    eventSpacing: {
+        gap: 3,
+        leadingSpace: 8,
+        trailingSpace: 12
+    }
+});
+```
+
+In this example, the Month view uses a 1-pixel gap and inherits the component values for `leadingSpace` and `trailingSpace`. The Week view uses a 4-pixel gap and also inherits the remaining component values.
+
+#### Supported views
+
+Event spacing affects the stacking layout of the following views:
+
+* Day
+* Week
+* Work Week
+* all-day row
+* Month
+* Timeline views
+* Timeline Year
+
+Spacing is ignored in Agenda, Year, and Month Agenda views.
+
 ## Drag and drop appointments
 
 Appointments can be rescheduled to any time by dragging and dropping them to the desired location. To use drag-and-drop functionality, inject the `DragAndDrop` module and ensure [`allowDragAndDrop`](../api/schedule#allowdraganddrop) is set to true (the default value). In mobile mode, tap and hold an event, then drop it at the desired location.
