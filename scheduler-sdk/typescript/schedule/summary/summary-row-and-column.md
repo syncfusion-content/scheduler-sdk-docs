@@ -18,7 +18,7 @@ Provide values through the [`renderSummaryCell`](https://ej2.syncfusion.com/docu
 
 ## Basic setup
 
-The following example enables both summaries in the vertical Week and Timeline Week views without configuring resources. The sample opens on the current week with events generated from today's date. Switch views to see the summary layout in both orientations. The `renderSummaryCell` event displays the appointment count for each cell.
+The following example enables both summaries in the vertical Week and Timeline Week views without configuring resources. Switch views to see the summary layout in both orientations. The `renderSummaryCell` event displays the appointment count for each cell.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
