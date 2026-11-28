@@ -18,7 +18,7 @@ Provide values through the [`renderSummaryCell`](https://ej2.syncfusion.com/docu
 
 ## Basic setup
 
-The following example enables both summaries in the vertical Week and Timeline Week views without configuring resources. The sample opens on the current week with events generated from today's date. Switch views to see the summary layout in both orientations. The `renderSummaryCell` event displays the appointment count for each cell.
+The following example enables both summaries in the vertical Week and Timeline Week views without configuring resources. Switch views to see the summary layout in both orientations. The `renderSummaryCell` event displays the appointment count for each cell.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -49,7 +49,7 @@ An unsupported value falls back to the view default.
 
 ## Summary column
 
-The summary column appears at the trailing edge of the content and aligns with the corresponding content rows or time slots. It works when no resources are configured, when resources are configured without grouping, and when resources are grouped. In RTL layout, it appears on the left.
+The summary column appears at the trailing edge of the content and aligns with the corresponding content rows or time slots. In RTL layout, it appears on the left.
 
 In vertical Day, Week, and Work Week views, `cellUnit` accepts `Slot` or `MajorSlot`. A `Slot` cell represents one time slot, while a `MajorSlot` cell spans a major time slot. The summary column also includes a cell aligned with the all-day row. In vertical Month view, each summary cell aligns with a week row. Timeline and Month views determine the column cell size from their layout.
 
@@ -142,6 +142,5 @@ Use `template` to customize summary cells, `labelTemplate` to customize the summ
 
 * Summary row and column are supported in Timeline Day, Week, Work Week, Month, and resource-oriented Timeline Year views, and vertical Day, Week, Work Week, and Month views.
 * In Timeline Year, summaries are supported when the orientation is `Vertical` and resources are displayed as rows.
-* Adaptive or mobile layout is not supported.
 * The `Summary` module must be injected to render summaries.
 * The summary row is pinned at the bottom of the content area.
