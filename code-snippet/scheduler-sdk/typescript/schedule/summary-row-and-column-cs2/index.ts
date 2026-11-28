@@ -15,14 +15,14 @@ const scheduleObj: Schedule = new Schedule({
     ],
     summaryRow: {
         enable: true,
-        template: '<div class="summary-cell">Date summary</div>',
+        template: '<div class="summary-cell">${eventData.length} events</div>',
         labelTemplate: '<div class="summary-label">Summary row</div>',
-        totalTemplate: '<div class="summary-total">Overall total</div>'
+        totalTemplate: '<div class="summary-total">Total: ${eventData.length} events</div>'
     },
     summaryColumn: {
         enable: true,
         cellUnit: 'Slot',
-        template: '<div class="summary-cell">Time summary</div>',
+        template: '<div class="summary-cell">${eventData.length} events</div>',
         labelTemplate: '<div class="summary-label">Summary column</div>'
     }
 });

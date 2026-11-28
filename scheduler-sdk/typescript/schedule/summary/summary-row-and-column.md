@@ -125,7 +125,7 @@ The summary layout refreshes automatically after appointment CRUD actions and Sc
 
 ## Customization
 
-Use `template` to customize summary cells, `labelTemplate` to customize the summary row or column label, and `totalTemplate` to customize the grand total at the corner where the row and column meet. The following preview demonstrates these templates in both vertical Week and Timeline Week views.
+Use `template` to customize summary cells, `labelTemplate` to customize the summary row or column label, and `totalTemplate` to customize the grand total at the corner where the row and column meet. The templates can read `eventData` to show the number of appointments in each cell, and the grand total template shows the count for the whole view. The following preview demonstrates these templates in both vertical Week and Timeline Week views.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

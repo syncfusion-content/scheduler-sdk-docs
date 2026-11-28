@@ -418,7 +418,7 @@ All spacing values are CSS pixels. Set a field to `null` to use the built-in spa
 
 ### Basic setup
 
-Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track.
+Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track. The sample shows the vertical Week and Timeline Week views with a single level of resource grouping, and sets [`rowAutoHeight`](https://ej2.syncfusion.com/documentation/api/schedule#rowautoheight) to `true` so that the timeline rows grow to show the spacing between stacked appointments.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

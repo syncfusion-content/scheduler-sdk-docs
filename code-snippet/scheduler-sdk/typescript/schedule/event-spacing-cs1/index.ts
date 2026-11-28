@@ -1,14 +1,25 @@
-import { Schedule, Day, Week, WorkWeek, Month } from '@syncfusion/ej2-schedule';
-import { spacingData } from './datasource.ts';
+import { Schedule, Week, TimelineViews } from '@syncfusion/ej2-schedule';
+import { spacingData, ownerData } from './datasource.ts';
 
-Schedule.Inject(Day, Week, WorkWeek, Month);
+Schedule.Inject(Week, TimelineViews);
 
 const scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
     selectedDate: new Date(),
     currentView: 'Week',
-    views: ['Day', 'Week', 'WorkWeek', 'Month'],
+    views: ['Week', 'TimelineWeek'],
+    rowAutoHeight: true,
+    group: { resources: ['Owners'] },
+    resources: [{
+        field: 'OwnerId',
+        title: 'Owner',
+        name: 'Owners',
+        dataSource: ownerData,
+        textField: 'Text',
+        idField: 'Id',
+        colorField: 'Color'
+    }],
     eventSettings: { dataSource: spacingData },
     eventSpacing: {
         gap: 4,
