@@ -6,7 +6,7 @@ Schedule.Inject(Week, TimelineViews, Summary);
 const scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
-    selectedDate: new Date(2026, 10, 30),
+    selectedDate: new Date(),
     currentView: 'Week',
     eventSettings: { dataSource: summaryData },
     summaryRow: { enable: true },
@@ -16,6 +16,9 @@ const scheduleObj: Schedule = new Schedule({
         { option: 'TimelineWeek', summaryRow: { enable: true, cellUnit: 'Date' } }
     ],
     renderSummaryCell: (args: RenderSummaryCellEventArgs) => {
+        if (args.renderType === 'SummaryRowLabel' || args.renderType === 'SummaryColumnLabel') {
+            return;
+        }
         const count: number = args.eventData ? args.eventData.length : 0;
         args.text = args.mode === 'Initial' ? 'Loading' : `${count} events`;
     }

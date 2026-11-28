@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 A group summary converts the parent rows of selected resource levels in Timeline views into summary bands. It does not add extra rows. Each parent resource row displays summary cells for the complete group, including all descendant resources, while the child rows continue to display appointments normally.
 
-Enable the [`Summary`](../../api/schedule/summary) module and configure [`groupSummary`](../../api/schedule#groupsummary). The option requires hierarchical resource grouping.
+Enable the `Summary` module and configure [`groupSummary`](https://ej2.syncfusion.com/documentation/api/schedule#groupsummary). The option requires hierarchical resource grouping.
 
 ## Basic setup
 
@@ -115,7 +115,7 @@ summaryCellClick: (args: SummaryCellClickEventArgs) => {
 
 ## Customization
 
-Customize group rows with the existing [`resourceHeaderTemplate`](../../api/schedule/resources#resourceheadertemplate). It remains responsible for the parent resource header. The `template` in `groupSummary` customizes only the time-axis summary cells.
+Customize group rows with the existing [`resourceHeaderTemplate`](https://ej2.syncfusion.com/documentation/api/schedule#resourceheadertemplate). It remains responsible for the parent resource header. The `template` in `groupSummary` customizes only the time-axis summary cells.
 
 ```ts
 resourceHeaderTemplate: (data: any) => {
@@ -147,8 +147,8 @@ The following preview combines a group summary with a summary row and summary co
 
 ## API reference
 
-* [`groupSummary`](../../api/schedule#groupsummary) - Configures hierarchical resource summary bands.
-* [`renderSummaryCell`](../../api/schedule#rendersummarycell) - Provides group summary values and custom content.
-* [`summaryCellClick`](../../api/schedule#summarycellclick) - Handles group summary cell clicks.
-* [`refreshSummary`](../../api/schedule#refreshsummary) - Refreshes group and other summary values.
-* [`getSummaryCellDetails`](../../api/schedule#getsummarycelldetails) - Returns details for a summary cell.
+* [`groupSummary`](https://ej2.syncfusion.com/documentation/api/schedule#groupsummary) - Configures hierarchical resource summary bands.
+* [`renderSummaryCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendersummarycell) - Provides group summary values and custom content.
+* [`summaryCellClick`](https://ej2.syncfusion.com/documentation/api/schedule#summarycellclick) - Handles group summary cell clicks.
+* [`refreshSummary`](https://ej2.syncfusion.com/documentation/api/schedule#refreshsummary) - Refreshes group and other summary values.
+* [`getSummaryCellDetails`](https://ej2.syncfusion.com/documentation/api/schedule#getsummarycelldetails) - Returns details for a summary cell.

@@ -6,7 +6,7 @@ Schedule.Inject(Day, Week, WorkWeek, Month);
 const scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
-    selectedDate: new Date(2026, 10, 28),
+    selectedDate: new Date(),
     currentView: 'Week',
     views: ['Day', 'Week', 'WorkWeek', 'Month'],
     eventSettings: { dataSource: spacingData },

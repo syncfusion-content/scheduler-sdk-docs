@@ -14,11 +14,11 @@ domainurl: https://help.syncfusion.com/scheduler-sdk
 
 A summary row and summary column add cells to the Scheduler content for displaying application-defined values. The summary row appears at the bottom of the content area, and the summary column appears at its trailing edge, aligned with the corresponding content rows or time slots. Both features work in Timeline and vertical Day, Week, Work Week, and Month views, whether resources are configured or not and whether they are grouped or not.
 
-Provide values through the [`renderSummaryCell`](../../api/schedule#rendersummarycell) event or set a `template` in the corresponding `summaryRow` or `summaryColumn` configuration. Enable the [`Summary`](../../api/schedule/summary) module and configure [`summaryRow`](../../api/schedule#summaryrow) or [`summaryColumn`](../../api/schedule#summarycolumn). Both options are disabled by default.
+Provide values through the [`renderSummaryCell`](https://ej2.syncfusion.com/documentation/api/schedule#rendersummarycell) event or set a `template` in the corresponding `summaryRow` or `summaryColumn` configuration. Enable the `Summary` module and configure [`summaryRow`](https://ej2.syncfusion.com/documentation/api/schedule#summaryrow) or [`summaryColumn`](https://ej2.syncfusion.com/documentation/api/schedule#summarycolumn). Both options are disabled by default.
 
 ## Basic setup
 
-The following example enables both summaries in the vertical Week and Timeline Week views without configuring resources. Use the view selector to see the summary layout in both orientations. The `renderSummaryCell` event displays the appointment count for each cell.
+The following example enables both summaries in the vertical Week and Timeline Week views without configuring resources. The sample opens on the current week with events generated from today's date. Switch views to see the summary layout in both orientations. The `renderSummaryCell` event displays the appointment count for each cell.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -104,6 +104,22 @@ scheduleObj.refreshSummary();
 const details: any = scheduleObj.getSummaryCellDetails(element);
 console.log(details);
 ```
+
+### Event arguments
+
+The following `renderSummaryCell` arguments are most often used:
+
+| Argument | Description |
+|---|---|
+| `mode` | `Initial` when the layout is rendered and the cell is blank. `Refresh` after events render, when the value can be calculated. |
+| `renderType` | `SummaryRow`, `SummaryColumn`, `SummaryTotal`, `SummaryRowLabel`, `SummaryColumnLabel`, or `GroupSummary`. |
+| `text` | The text to display in the cell. Set it to change the cell content. |
+| `element` | The summary cell element. |
+| `startTime`, `endTime` | The time range the cell covers. |
+| `eventData` | The events in the cell's time range and resource scope. |
+| `resourceData`, `groupIndex` | The resource the cell belongs to, when resources are configured. |
+
+The label cells also trigger `renderSummaryCell`. Check `renderType` before setting `args.text` so that a calculated value does not replace a label.
 
 The summary layout refreshes automatically after appointment CRUD actions and Scheduler navigation.
 

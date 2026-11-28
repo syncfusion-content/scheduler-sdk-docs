@@ -6,7 +6,7 @@ Schedule.Inject(Week, TimelineViews, Summary);
 const scheduleObj: Schedule = new Schedule({
     width: '100%',
     height: '550px',
-    selectedDate: new Date(2026, 10, 30),
+    selectedDate: new Date(),
     currentView: 'Week',
     eventSettings: { dataSource: summaryData },
     views: [

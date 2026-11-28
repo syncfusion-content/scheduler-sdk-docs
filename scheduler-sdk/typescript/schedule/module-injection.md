@@ -28,6 +28,7 @@ Import and inject the required modules to enable specific Scheduler views and fe
 * `ICalendarExport` - Inject this module to export Scheduler events data to an ICS file.
 * `ICalendarImport` - Inject this module to import Scheduler events data from an ICS file.
 * `Print` - Inject this module to enable print functionality for the Scheduler.
+* `Summary` - Inject this module to enable the summary row, summary column, and group summary.
 
 ## Module injection
 

@@ -44,7 +44,7 @@ Spanned events are appointments that extend beyond 24 hours. By default, these e
 
 ### Customize the rendering of the spanned events
 
-By default, the Scheduler renders spanned events (appointments lasting more than 24 hours) in the all-day row. To display these events within work cells instead, set the [`spannedEventPlacement`](../api/schedule/eventSettings#spannedeventplacement) option to `TimeSlot` within the [`eventSettings`](../api/schedule/eventSettings) property. The following example demonstrates this customization:
+By default, the Scheduler renders spanned events (appointments lasting more than 24 hours) in the all-day row. To display these events within work cells instead, set the [`spannedEventPlacement`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#spannedeventplacement) option to `TimeSlot` within the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property. The following example demonstrates this customization:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -62,7 +62,7 @@ By default, the Scheduler renders spanned events (appointments lasting more than
 
 All-day events are appointments that occupy an entire day, such as holidays or full-day conferences. These events typically display in a separate all-day row below the date header section. In Timeline views, all-day appointments appear within the main content area since these views do not include a separate all-day row.
 
-> To designate a normal appointment as an all-day event, set the [`isAllDay`](../api/schedule/field#isallday) field to true.
+> To designate a normal appointment as an all-day event, set the [`isAllDay`](https://ej2.syncfusion.com/documentation/api/schedule/field#isallday) field to true.
 
 ### Hide all-day row events
 
@@ -81,7 +81,7 @@ The all-day row appointments can be hidden from the Scheduler UI using CSS custo
 
 ## Expand all day appointments view on initial load
 
-When numerous appointments exist in the all-day view, the [`dataBound`](../api/schedule#databound) event can be utilized to automatically display all all-day events on initial load, eliminating the need for users to manually click the expand toggle.
+When numerous appointments exist in the all-day view, the [`dataBound`](https://ej2.syncfusion.com/documentation/api/schedule#databound) event can be utilized to automatically display all all-day events on initial load, eliminating the need for users to manually click the expand toggle.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -100,7 +100,7 @@ Recurring events are appointments that repeat at regular intervals according to 
 
 ### Creating a recurring event
 
-The following example demonstrates how to create a recurring event in the Scheduler with a specific [`recurrenceRule`](../api/schedule/field#recurrencerule). In this example, an event recurs daily and ends after 5 occurrences:
+The following example demonstrates how to create a recurring event in the Scheduler with a specific [`recurrenceRule`](https://ej2.syncfusion.com/documentation/api/schedule/field#recurrencerule). In this example, an event recurs daily and ends after 5 occurrences:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -115,7 +115,7 @@ The following example demonstrates how to create a recurring event in the Schedu
 
 ### Adding exceptions
 
-Specific dates can be excluded from a recurrence series by adding them to the [`recurrenceException`](../api/schedule/field#recurrenceexception) field. Exception dates should be provided in basic UTC date format without hyphens.
+Specific dates can be excluded from a recurrence series by adding them to the [`recurrenceException`](https://ej2.syncfusion.com/documentation/api/schedule/field#recurrenceexception) field. Exception dates should be provided in basic UTC date format without hyphens.
 
 > For example, February 22, 2018, should be represented as `20180222`. The time component in UTC format requires a `Z` suffix without spaces, so `07:30:00 UTC` becomes `073000Z`.
 
@@ -132,10 +132,10 @@ Specific dates can be excluded from a recurrence series by adding them to the [`
 
 ### Editing an occurrence from a series
 
-To edit a particular occurrence from an event series and display it on the initial Scheduler load, add the edited occurrence as a new event to the dataSource collection. Include an additional [`recurrenceID`](../api/schedule/field/recurrenceid) field that references the ID value of the parent event.
+To edit a particular occurrence from an event series and display it on the initial Scheduler load, add the edited occurrence as a new event to the dataSource collection. Include an additional [`recurrenceID`](https://ej2.syncfusion.com/documentation/api/schedule/field/recurrenceid) field that references the ID value of the parent event.
 
 
-In the following example, a recurring instance appearing on January 30, 2018, is modified with alternative timings. This date is removed from the parent repeating event (running from January 28 to February 4, 2018) by populating the [`recurrenceException`](../api/schedule/field#recurrenceexception) field on the parent event with the excluded date value. The edited occurrence, created as a new event, includes a [`recurrenceID`](../api/schedule/field#recurrenceid) field that references the parent event's [`Id`](../api/schedule/field#id) value.
+In the following example, a recurring instance appearing on January 30, 2018, is modified with alternative timings. This date is removed from the parent repeating event (running from January 28 to February 4, 2018) by populating the [`recurrenceException`](https://ej2.syncfusion.com/documentation/api/schedule/field#recurrenceexception) field on the parent event with the excluded date value. The edited occurrence, created as a new event, includes a [`recurrenceID`](https://ej2.syncfusion.com/documentation/api/schedule/field#recurrenceid) field that references the parent event's [`Id`](https://ej2.syncfusion.com/documentation/api/schedule/field#id) value.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -150,9 +150,9 @@ In the following example, a recurring instance appearing on January 30, 2018, is
 
 ### Edit only the current and following events
 
-To edit only the current and following events in a recurring series, enable the [`editFollowingEvents`](../api/schedule/eventSettings#editfollowingevents) property within [`eventSettings`](../api/schedule/eventSettings). Add the edited occurrence as a new event to the dataSource collection with an additional [`followingID`](../api/schedule/field#followingid) field that references the ID value of the immediate parent event.
+To edit only the current and following events in a recurring series, enable the [`editFollowingEvents`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#editfollowingevents) property within [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings). Add the edited occurrence as a new event to the dataSource collection with an additional [`followingID`](https://ej2.syncfusion.com/documentation/api/schedule/field#followingid) field that references the ID value of the immediate parent event.
 
-In the following example, a recurring instance appearing on January 30, 2018, and all following dates are modified with a different subject. These dates are removed from the parent repeating event (repeating from January 28 to February 4, 2018) by modifying the [`recurrenceRule`](../api/schedule/field#recurrencerule) field on the parent event with an until date value. The updated events, created as new events, include a [`followingID`](../api/schedule/field#followingid) field that references the immediate parent event's `Id` value.
+In the following example, a recurring instance appearing on January 30, 2018, and all following dates are modified with a different subject. These dates are removed from the parent repeating event (repeating from January 28 to February 4, 2018) by modifying the [`recurrenceRule`](https://ej2.syncfusion.com/documentation/api/schedule/field#recurrencerule) field on the parent event with an until date value. The updated events, created as new events, include a [`followingID`](https://ej2.syncfusion.com/documentation/api/schedule/field#followingid) field that references the immediate parent event's `Id` value.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -167,7 +167,7 @@ In the following example, a recurring instance appearing on January 30, 2018, an
 
 ### Recurrence options and rules
 
-Events can repeat on daily, weekly, monthly, or yearly bases using recurrence rules. The following details must be assigned to the [`recurrenceRule`](../api/schedule/field#recurrencerule) property to generate recurring instances:
+Events can repeat on daily, weekly, monthly, or yearly bases using recurrence rules. The following details must be assigned to the [`recurrenceRule`](https://ej2.syncfusion.com/documentation/api/schedule/field#recurrencerule) property to generate recurring instances:
 
 - Repeat type (daily/weekly/monthly/yearly)
 - Repetition frequency
@@ -254,13 +254,13 @@ Built-in validation support is enabled by default for recurring appointments dur
 
 ## Event fields
 
-The Scheduler dataSource contains event instances, where each instance includes a collection of appropriate [`fields`](../api/schedule/field). When binding remote data, these fields must be mapped to their equivalent database fields. For local JSON data, the field names defined within instances must be correctly mapped with the Scheduler event fields.
+The Scheduler dataSource contains event instances, where each instance includes a collection of appropriate [`fields`](https://ej2.syncfusion.com/documentation/api/schedule/field). When binding remote data, these fields must be mapped to their equivalent database fields. For local JSON data, the field names defined within instances must be correctly mapped with the Scheduler event fields.
 
 > To create an event in the Scheduler, defining `startTime` and `endTime` is sufficient. The `id` field becomes mandatory for processing CRUD actions on appropriate events.
 
 ### Built-in fields
 
-The built-in [`fields`](../api/schedule/field) available on Scheduler event objects are as follows:
+The built-in [`fields`](https://ej2.syncfusion.com/documentation/api/schedule/field) available on Scheduler event objects are as follows:
 
 | Field name | Description |
 |-------|---------|
@@ -281,7 +281,7 @@ The built-in [`fields`](../api/schedule/field) available on Scheduler event obje
 
 ### Binding different field names
 
-When event instances have default mapping names, manual mapping is unnecessary. However, if the Scheduler's dataSource contains events with different field names, mapping them to their equivalent field names within the [`eventSettings`](../api/schedule/eventSettings) property becomes necessary.
+When event instances have default mapping names, manual mapping is unnecessary. However, if the Scheduler's dataSource contains events with different field names, mapping them to their equivalent field names within the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property becomes necessary.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -322,7 +322,7 @@ In the following example, the Subject field in the event editor displays the lab
 
 ## Adding Custom fields
 
-In addition to default Scheduler fields, any number of custom fields can be included for appointments. The following code example demonstrates how to incorporate two custom fields, **Status** and **Priority**, within the event collection. Binding custom fields within [`eventSettings`](../api/schedule/eventSettings) is optional; however, these additional fields can be easily accessed for internal processing and from the application end.
+In addition to default Scheduler fields, any number of custom fields can be included for appointments. The following code example demonstrates how to incorporate two custom fields, **Status** and **Priority**, within the event collection. Binding custom fields within [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) is optional; however, these additional fields can be easily accessed for internal processing and from the application end.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -337,7 +337,7 @@ In addition to default Scheduler fields, any number of custom fields can be incl
 
 ## Customize the order of the overlapping events
 
-By default, the Scheduler renders overlapping events based on their start and end times. The order of overlapping events can be customized using the [`sortComparer`](../api/schedule/eventSettings#sortcomparer) property within the [`eventSettings`](../api/schedule/eventSettings) property. The following code example demonstrates how to sort appointments based on a custom field:
+By default, the Scheduler renders overlapping events based on their start and end times. The order of overlapping events can be customized using the [`sortComparer`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#sortcomparer) property within the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property. The following code example demonstrates how to sort appointments based on a custom field:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -352,11 +352,11 @@ By default, the Scheduler renders overlapping events based on their start and en
 
 ## Preventing Overlapping Events
 
-By default, the Scheduler displays overlapping events according to their start and end times. To prevent overlapping, set the [`allowOverlap`](../api/schedule#allowoverlap) property to `false`.
+By default, the Scheduler displays overlapping events according to their start and end times. To prevent overlapping, set the [`allowOverlap`](https://ej2.syncfusion.com/documentation/api/schedule#allowoverlap) property to `false`.
 
-When this property is set to `false`, any new or updated events overlapping with existing ones will trigger an overlap alert. Overlapping events are collected in the [`overlapEvents`](../api/schedule/popupOpenEventArgs#overlapevents) property within the [`PopupOpenEventArgs`](../api/schedule/popupOpenEventArgs).
+When this property is set to `false`, any new or updated events overlapping with existing ones will trigger an overlap alert. Overlapping events are collected in the [`overlapEvents`](https://ej2.syncfusion.com/documentation/api/schedule/popupOpenEventArgs#overlapevents) property within the [`PopupOpenEventArgs`](https://ej2.syncfusion.com/documentation/api/schedule/popupOpenEventArgs).
 
-When [`allowOverlap`](../api/schedule#allowoverlap) is set to `false`, the Scheduler behaves as follows:
+When [`allowOverlap`](https://ej2.syncfusion.com/documentation/api/schedule#allowoverlap) is set to `false`, the Scheduler behaves as follows:
 
 **Initial Load Behavior:** Upon initial loading, the Scheduler prioritizes non-overlapping events based on duration and all-day status. Events with longer durations and all-day designations receive higher priority to ensure no overlaps.
 
@@ -366,7 +366,7 @@ When [`allowOverlap`](../api/schedule#allowoverlap) is set to `false`, the Sched
 
 **Dynamic Recurrence Series Creation or Editing:** When users create or edit a recurrence series dynamically, the Scheduler prevents any occurrences from being added if a conflict is found within the series.
 
-The following code example demonstrates how to disable overlap checking by setting the [`allowOverlap`](../api/schedule#allowoverlap) property to `false`:
+The following code example demonstrates how to disable overlap checking by setting the [`allowOverlap`](https://ej2.syncfusion.com/documentation/api/schedule#allowoverlap) property to `false`:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -381,11 +381,11 @@ The following code example demonstrates how to disable overlap checking by setti
 
 **Limitations**
 
-The [`allowOverlap`](../api/schedule#allowoverlap) property checks for event overlaps only within the currently visible date range. Events scheduled outside the rendered date range are not included in the overlap check by default.
+The [`allowOverlap`](https://ej2.syncfusion.com/documentation/api/schedule#allowoverlap) property checks for event overlaps only within the currently visible date range. Events scheduled outside the rendered date range are not included in the overlap check by default.
 
-To check for overlaps with events outside the visible date range, leverage the [`promise`](../api/schedule/actionEventArgs#promise) field within the [`actionBegin`](../api/schedule#actionbegin) event to validate all events before proceeding. By implementing a custom validation method inside the [`actionBegin`](../api/schedule#actionbegin) event, the result (a boolean) can be assigned to the [`promise`](../api/schedule/actionEventArgs#promise) field. If the result is `true`, the action (e.g., adding or saving the event) proceeds; if `false`, the action is blocked.
+To check for overlaps with events outside the visible date range, leverage the [`promise`](https://ej2.syncfusion.com/documentation/api/schedule/actionEventArgs#promise) field within the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/schedule#actionbegin) event to validate all events before proceeding. By implementing a custom validation method inside the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/schedule#actionbegin) event, the result (a boolean) can be assigned to the [`promise`](https://ej2.syncfusion.com/documentation/api/schedule/actionEventArgs#promise) field. If the result is `true`, the action (e.g., adding or saving the event) proceeds; if `false`, the action is blocked.
 
-Additionally, the public method [`openOverlapAlert`](../api/schedule#openoverlapalert) can be used to display an alert popup whenever an overlap occurs and the result is `false`.
+Additionally, the public method [`openOverlapAlert`](https://ej2.syncfusion.com/documentation/api/schedule#openoverlapalert) can be used to display an alert popup whenever an overlap occurs and the result is `false`.
 
 The following code example demonstrates how to check for overlaps when adding an event. If an overlap is found, the event is not added, and an alert is displayed:
 
@@ -406,7 +406,7 @@ The following code example demonstrates how to check for overlaps when adding an
 
 Event spacing controls the amount of space around and between appointments without changing their time positions. It applies along the stacking axis: columns in the Day, Week, and Work Week views, and lanes in the all-day row, Month, Timeline, and Timeline Year views.
 
-The [`eventSpacing`](../api/schedule#eventspacing) property provides the following options:
+The [`eventSpacing`](https://ej2.syncfusion.com/documentation/api/schedule#eventspacing) property provides the following options:
 
 | Property | Type | Default | Description |
 |---|---|---|---|
@@ -418,7 +418,7 @@ All spacing values are CSS pixels. Set a field to `null` to use the built-in spa
 
 ### Basic setup
 
-Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track:
+Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track. The sample opens on the current week with events generated from today's date, including overlapping events so the gap is visible:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -435,7 +435,7 @@ Configure event spacing at the Scheduler level to apply it to every supported vi
 
 #### Component and view-level spacing
 
-Use the component-level [`eventSpacing`](../api/schedule#eventspacing) property for a common layout. A view-level value overrides only the fields that it defines, while the remaining fields inherit the component-level value.
+Use the component-level [`eventSpacing`](https://ej2.syncfusion.com/documentation/api/schedule#eventspacing) property for a common layout. A view-level value overrides only the fields that it defines, while the remaining fields inherit the component-level value.
 
 ```ts
 const scheduleObj: Schedule = new Schedule({
@@ -467,9 +467,11 @@ Event spacing affects the stacking layout of the following views:
 
 Spacing is ignored in Agenda, Year, and Month Agenda views.
 
+The reserved space belongs to the cell beneath it. Clicking, tapping, or dropping in the space acts on that cell. The `trailingSpace` stays free when a track is full.
+
 ## Drag and drop appointments
 
-Appointments can be rescheduled to any time by dragging and dropping them to the desired location. To use drag-and-drop functionality, inject the `DragAndDrop` module and ensure [`allowDragAndDrop`](../api/schedule#allowdraganddrop) is set to true (the default value). In mobile mode, tap and hold an event, then drop it at the desired location.
+Appointments can be rescheduled to any time by dragging and dropping them to the desired location. To use drag-and-drop functionality, inject the `DragAndDrop` module and ensure [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/schedule#allowdraganddrop) is set to true (the default value). In mobile mode, tap and hold an event, then drop it at the desired location.
 
 > By default, drag-and-drop is available in all Scheduler views except `Agenda`, `Month-Agenda`, and `Year` views.
 
@@ -489,7 +491,7 @@ Appointments can be rescheduled to any time by dragging and dropping them to the
 
 ### Drag and drop multiple appointments
 
-Multiple appointments can be dragged and dropped by enabling the [`allowMultiDrag`](../api/schedule#allowmultidrag) property. Select multiple appointments by holding the CTRL key, then release it and begin dragging the events.
+Multiple appointments can be dragged and dropped by enabling the [`allowMultiDrag`](https://ej2.syncfusion.com/documentation/api/schedule#allowmultidrag) property. Select multiple appointments by holding the CTRL key, then release it and begin dragging the events.
 
 Multiple events can also be dragged from one resource to another. If all selected events belong to different resources, they will all be moved to the single resource associated with the target event.
 
@@ -511,7 +513,7 @@ Multiple events can also be dragged from one resource to another. If all selecte
 
 ### Disable the drag action
 
-By default, events can be dragged and dropped within any applicable Scheduler view. To disable this functionality, set the [`allowDragAndDrop`](../api/schedule#allowdraganddrop) property to `false`.
+By default, events can be dragged and dropped within any applicable Scheduler view. To disable this functionality, set the [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/schedule#allowdraganddrop) property to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -529,7 +531,7 @@ By default, events can be dragged and dropped within any applicable Scheduler vi
 
 ### Preventing drag and drop on specific targets
 
-Drag actions on specific targets can be prevented by specifying the target to exclude in the [`excludeSelectors`](../api/schedule/dragEventArgs#excludeselectors) option within the [`dragStart`](../api/schedule#dragstart) event. In the following example, drag actions are prevented on the all-day row:
+Drag actions on specific targets can be prevented by specifying the target to exclude in the [`excludeSelectors`](https://ej2.syncfusion.com/documentation/api/schedule/dragEventArgs#excludeselectors) option within the [`dragStart`](https://ej2.syncfusion.com/documentation/api/schedule#dragstart) event. In the following example, drag actions are prevented on the all-day row:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -547,7 +549,7 @@ Drag actions on specific targets can be prevented by specifying the target to ex
 
 ### Disable scrolling on drag action
 
-By default, when dragging an appointment to the edges (top or bottom in vertical Scheduler, or left or right in timeline Scheduler), automatic scrolling occurs. To prevent this scrolling action, set the [`scroll`](../api/schedule/dragEventArgs#scroll) value to `false` within the [`dragStart`](../api/schedule#dragstart) event arguments.
+By default, when dragging an appointment to the edges (top or bottom in vertical Scheduler, or left or right in timeline Scheduler), automatic scrolling occurs. To prevent this scrolling action, set the [`scroll`](https://ej2.syncfusion.com/documentation/api/schedule/dragEventArgs#scroll) value to `false` within the [`dragStart`](https://ej2.syncfusion.com/documentation/api/schedule#dragstart) event arguments.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -565,7 +567,7 @@ By default, when dragging an appointment to the edges (top or bottom in vertical
 
 ### Controlling scroll speed while dragging an event
 
-The scrolling speed while dragging an appointment to the Scheduler edges can be controlled within the [`dragStart`](../api/schedule#dragstart) event by setting desired values for [`scrollBy`](../api/schedule/scrollOptions#scrollby) and [`timeDelay`](../api/schedule/scrollOptions#timedelay) options. Default values are 30 minutes for `scrollBy` and 100 ms for `timeDelay`.
+The scrolling speed while dragging an appointment to the Scheduler edges can be controlled within the [`dragStart`](https://ej2.syncfusion.com/documentation/api/schedule#dragstart) event by setting desired values for [`scrollBy`](https://ej2.syncfusion.com/documentation/api/schedule/scrollOptions#scrollby) and [`timeDelay`](https://ej2.syncfusion.com/documentation/api/schedule/scrollOptions#timedelay) options. Default values are 30 minutes for `scrollBy` and 100 ms for `timeDelay`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -583,9 +585,9 @@ The scrolling speed while dragging an appointment to the Scheduler edges can be 
 
 ### Auto navigation of date ranges on dragging an event
 
-When an event is dragged to either the left or right extreme edges of the Scheduler and held for a few seconds without dropping, auto-navigation of date ranges can be enabled. This allows the Scheduler to navigate back and forth between the current date range. By default, this action is set to `false`. To enable it, set [`navigation`](../api/schedule/dragEventArgs#navigation) to `true` within the [`dragStart`](../api/schedule#dragstart) event.
+When an event is dragged to either the left or right extreme edges of the Scheduler and held for a few seconds without dropping, auto-navigation of date ranges can be enabled. This allows the Scheduler to navigate back and forth between the current date range. By default, this action is set to `false`. To enable it, set [`navigation`](https://ej2.syncfusion.com/documentation/api/schedule/dragEventArgs#navigation) to `true` within the [`dragStart`](https://ej2.syncfusion.com/documentation/api/schedule#dragstart) event.
 
-By default, the navigation delay is set to 2000 ms, determining how long a user must drag and hold appointments at the extremities. A custom delay value can be set using the [`timeDelay`](../api/schedule/scrollOptions#timedelay) option within the [`dragStart`](../api/schedule#dragstart) event.
+By default, the navigation delay is set to 2000 ms, determining how long a user must drag and hold appointments at the extremities. A custom delay value can be set using the [`timeDelay`](https://ej2.syncfusion.com/documentation/api/schedule/scrollOptions#timedelay) option within the [`dragStart`](https://ej2.syncfusion.com/documentation/api/schedule#dragstart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -603,7 +605,7 @@ By default, the navigation delay is set to 2000 ms, determining how long a user 
 
 ### Setting drag time interval
 
-By default, when dragging an appointment, it moves in 30-minute intervals. To change the dragging time interval, pass appropriate values to the [`interval`](../api/schedule/dragEventArgs#interval) option within the [`dragStart`](../api/schedule#dragstart) event.
+By default, when dragging an appointment, it moves in 30-minute intervals. To change the dragging time interval, pass appropriate values to the [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/dragEventArgs#interval) option within the [`dragStart`](https://ej2.syncfusion.com/documentation/api/schedule#dragstart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -621,9 +623,9 @@ By default, when dragging an appointment, it moves in 30-minute intervals. To ch
 
 ### Drag and drop items from external source
 
-It is possible to drag and drop unplanned items from any external source into the scheduler by manually saving the dropped items as new appointment data using the [`addEvent`](../api/schedule#addevent) method of the scheduler.
+It is possible to drag and drop unplanned items from any external source into the scheduler by manually saving the dropped items as new appointment data using the [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) method of the scheduler.
 
-In the following example, the tree view control serves as the external source, with child nodes dragged and dropped onto the Scheduler. The [`nodeDragStop`] event of the TreeView component is utilized to create an event object and save it using the [`addEvent`](../api/schedule#addevent) method.
+In the following example, the tree view control serves as the external source, with child nodes dragged and dropped onto the Scheduler. The [`nodeDragStop`] event of the TreeView component is utilized to create an event object and save it using the [`addEvent`](https://ej2.syncfusion.com/documentation/api/schedule#addevent) method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -641,7 +643,7 @@ In the following example, the tree view control serves as the external source, w
 
 ### Opening the editor window on drag stop
 
-In scenarios where opening the editor filled with data at a newly dropped location is desired, proceeding to save only when the `Save` button is clicked, and reverting changes when `Cancel` is clicked, use the [`dragStop`](../api/schedule#dragstop) event of the Scheduler.
+In scenarios where opening the editor filled with data at a newly dropped location is desired, proceeding to save only when the `Save` button is clicked, and reverting changes when `Cancel` is clicked, use the [`dragStop`](https://ej2.syncfusion.com/documentation/api/schedule#dragstop) event of the Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -675,11 +677,11 @@ To edit an appointment inline:
 3. Make changes.
 4. Press enter to update the appointment.
 
-Enable or disable this feature using the [`allowInline`](../api/schedule#allowinline) property, which is set to false by default.
+Enable or disable this feature using the [`allowInline`](https://ej2.syncfusion.com/documentation/api/schedule#allowinline) property, which is set to false by default.
 
 Important notes:
-- When [`allowInline`](../api/schedule#allowinline) is enabled, [`showQuickInfo`](../api/schedule#showquickinfo) is turned off.
-- The quick popup does not appear when clicking on a work cell or appointment if [`allowInline`](../api/schedule#allowinline) is set to `true`.
+- When [`allowInline`](https://ej2.syncfusion.com/documentation/api/schedule#allowinline) is enabled, [`showQuickInfo`](https://ej2.syncfusion.com/documentation/api/schedule#showquickinfo) is turned off.
+- The quick popup does not appear when clicking on a work cell or appointment if [`allowInline`](https://ej2.syncfusion.com/documentation/api/schedule#allowinline) is set to `true`.
 - In work cells, multiple cells can be selected using the keyboard, then press enter to create an appointment wrapper.
 - Be aware of potential overlapping scenarios when creating inline events.
 
@@ -704,7 +706,7 @@ When editing an occurrence from a recurrence series, only a `single occurrence` 
 
 ## Appointment Resizing
 
-Another way to reschedule appointments is by resizing them. To use resizing functionality, inject the `Resize` module and ensure the [`allowResizing`](../api/schedule#allowresizing) property is set to true (the default value).
+Another way to reschedule appointments is by resizing them. To use resizing functionality, inject the `Resize` module and ensure the [`allowResizing`](https://ej2.syncfusion.com/documentation/api/schedule#allowresizing) property is set to true (the default value).
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -722,7 +724,7 @@ Another way to reschedule appointments is by resizing them. To use resizing func
 
 ### Disable the resize action
 
-By default, resizing events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable event resizing, set [`allowResizing`](../api/schedule#allowresizing) to `false`.
+By default, resizing events is allowed on all Scheduler views except Agenda and Month-Agenda view. To disable event resizing, set [`allowResizing`](https://ej2.syncfusion.com/documentation/api/schedule#allowresizing) to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -740,7 +742,7 @@ By default, resizing events is allowed on all Scheduler views except Agenda and 
 
 ### Disable scrolling on resize action
 
-By default, when resizing an appointment and its handler reaches the edge of the Scheduler, scrolling occurs along with event resizing. To prevent this scrolling action, set the [`scroll`](../api/schedule/resizeEventArgs#scroll) value to `false` within the [`resizeStart`](../api/schedule#resizestart) event.
+By default, when resizing an appointment and its handler reaches the edge of the Scheduler, scrolling occurs along with event resizing. To prevent this scrolling action, set the [`scroll`](https://ej2.syncfusion.com/documentation/api/schedule/resizeEventArgs#scroll) value to `false` within the [`resizeStart`](https://ej2.syncfusion.com/documentation/api/schedule#resizestart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -758,7 +760,7 @@ By default, when resizing an appointment and its handler reaches the edge of the
 
 ### Controlling scroll speed while resizing an event
 
-The scrolling speed when resizing an appointment to the Scheduler edges can be controlled by setting the desired value for the [`scrollBy`](../api/schedule/scrollOptions#scrollby) option within the [`resizeStart`](../api/schedule#resizestart) event.
+The scrolling speed when resizing an appointment to the Scheduler edges can be controlled by setting the desired value for the [`scrollBy`](https://ej2.syncfusion.com/documentation/api/schedule/scrollOptions#scrollby) option within the [`resizeStart`](https://ej2.syncfusion.com/documentation/api/schedule#resizestart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -776,7 +778,7 @@ The scrolling speed when resizing an appointment to the Scheduler edges can be c
 
 ### Setting resize time interval
 
-By default, when resizing an appointment, it extends or shrinks at 30-minute intervals. To change this default resize interval, set appropriate values to the [`interval`](../api/schedule/resizeEventArgs#interval) option within the [`resizeStart`](../api/schedule#resizestart) event.
+By default, when resizing an appointment, it extends or shrinks at 30-minute intervals. To change this default resize interval, set appropriate values to the [`interval`](https://ej2.syncfusion.com/documentation/api/schedule/resizeEventArgs#interval) option within the [`resizeStart`](https://ej2.syncfusion.com/documentation/api/schedule#resizestart) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -802,7 +804,7 @@ The Scheduler provides multiple approaches to customize the appearance of appoin
 
 ### Using template
 
-Add text, images, and links to customize the appearance of events. Use the [`template`](../api/schedule/eventSettings#template) option within the [`eventSettings`](../api/schedule/eventSettings) property to format and change the default appearance of events. The following example customizes the appointment's default color and time format:
+Add text, images, and links to customize the appearance of events. Use the [`template`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#template) option within the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property to format and change the default appearance of events. The following example customizes the appointment's default color and time format:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -818,7 +820,7 @@ Add text, images, and links to customize the appearance of events. Use the [`tem
 
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-template-cs1" %}
 
-> All built-in fields mapped to appropriate field properties within [`eventSettings`](../api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource, can be accessed within the template code.
+> All built-in fields mapped to appropriate field properties within [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings), as well as custom mapped fields from the Scheduler dataSource, can be accessed within the template code.
 
 ### Customize appointments using eventRendered event
 
@@ -840,7 +842,7 @@ The [`eventRendered`](https://ej2.syncfusion.com/documentation/api/schedule#even
 
 ### Customize appointments using CSS classes
 
-You can also customize event appearance using the [`cssClass`](../api/schedule#cssclass) property of the Scheduler. The following example changes the background of appointments using cssClass:
+You can also customize event appearance using the [`cssClass`](https://ej2.syncfusion.com/documentation/api/schedule#cssclass) property of the Scheduler. The following example changes the background of appointments using cssClass:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -858,7 +860,7 @@ You can also customize event appearance using the [`cssClass`](../api/schedule#c
 
 ## Setting minimum height
 
-You can set a minimal height for appointments on the Scheduler using the [`eventRendered`](../api/schedule#eventrendered) event when the start and end time duration is less than the default duration of a single slot.
+You can set a minimal height for appointments on the Scheduler using the [`eventRendered`](https://ej2.syncfusion.com/documentation/api/schedule#eventrendered) event when the start and end time duration is less than the default duration of a single slot.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -873,7 +875,7 @@ You can set a minimal height for appointments on the Scheduler using the [`event
 
 ## Block Dates and Times
 
-Block a set of dates or specific time ranges on the Scheduler by defining an appointment object within [`eventSettings`](../api/schedule/eventSettings) with the required time range and setting the [`isBlock`](../api/schedule/field#isblock) field to true. Appointments with the isBlock field set to true will prevent users from creating new appointments, dragging existing appointments, or resizing appointments within the specified time ranges defined by  [`startTime`](../api/schedule/field#starttime) and [`endTime`](../api/schedule/field#endtime) fields.
+Block a set of dates or specific time ranges on the Scheduler by defining an appointment object within [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) with the required time range and setting the [`isBlock`](https://ej2.syncfusion.com/documentation/api/schedule/field#isblock) field to true. Appointments with the isBlock field set to true will prevent users from creating new appointments, dragging existing appointments, or resizing appointments within the specified time ranges defined by  [`startTime`](https://ej2.syncfusion.com/documentation/api/schedule/field#starttime) and [`endTime`](https://ej2.syncfusion.com/documentation/api/schedule/field#endtime) fields.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -904,7 +906,7 @@ Block appointments can also be defined to repeat on several days as shown in the
 
 ## Readonly
 
-Enable or disable interaction with Scheduler appointments using the [`readonly`](../api/schedule#readonly) property. When enabled, navigation between Scheduler dates and views is allowed, and appointment details can be viewed in the quick info window. However, CRUD actions cannot be performed on the Scheduler. By default, this property is set to `false`.
+Enable or disable interaction with Scheduler appointments using the [`readonly`](https://ej2.syncfusion.com/documentation/api/schedule#readonly) property. When enabled, navigation between Scheduler dates and views is allowed, and appointment details can be viewed in the quick info window. However, CRUD actions cannot be performed on the Scheduler. By default, this property is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -922,7 +924,7 @@ Enable or disable interaction with Scheduler appointments using the [`readonly`]
 
 ## Make specific events readonly
 
-In some scenarios, CRUD actions on specific appointments may need to be restricted based on certain conditions. For example, past appointments can be made readonly. This can be achieved by setting the [`isReadonly`](../api/schedule/field#isreadonly) field of readonly appointments to `true`.
+In some scenarios, CRUD actions on specific appointments may need to be restricted based on certain conditions. For example, past appointments can be made readonly. This can be achieved by setting the [`isReadonly`](https://ej2.syncfusion.com/documentation/api/schedule/field#isreadonly) field of readonly appointments to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -938,11 +940,11 @@ In some scenarios, CRUD actions on specific appointments may need to be restrict
           
 {% previewsample "https://helpstaging.syncfusion.com/code-snippet/scheduler-sdk/typescript/schedule/event-cs33" %}
 
-> By default, the event editor is prevented from opening on readonly events when the [`isReadonly`](../api/schedule/field#isreadonly) field is set to `true`.
+> By default, the event editor is prevented from opening on readonly events when the [`isReadonly`](https://ej2.syncfusion.com/documentation/api/schedule/field#isreadonly) field is set to `true`.
 
 ## Restricting appointment creation on specific time slots
 
-Restrict users from creating and updating more than one appointment on specific time slots using the Scheduler's public method [`isSlotAvailable`](../api/schedule#isslotavailable). CRUD actions can also be disabled on occupied time slots using this method.
+Restrict users from creating and updating more than one appointment on specific time slots using the Scheduler's public method [`isSlotAvailable`](https://ej2.syncfusion.com/documentation/api/schedule#isslotavailable). CRUD actions can also be disabled on occupied time slots using this method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -962,7 +964,7 @@ Restrict users from creating and updating more than one appointment on specific 
 
 ## Differentiate the past time appointments
 
-Differentiate the appearance of appointments based on specific criteria, such as displaying past hour appointments with different colors on the Scheduler, using the [`eventRendered`](../api/schedule#eventrendered) event. This event triggers before an appointment renders on the Scheduler.
+Differentiate the appearance of appointments based on specific criteria, such as displaying past hour appointments with different colors on the Scheduler, using the [`eventRendered`](https://ej2.syncfusion.com/documentation/api/schedule#eventrendered) event. This event triggers before an appointment renders on the Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -980,9 +982,9 @@ Differentiate the appearance of appointments based on specific criteria, such as
 
 ## Appointments occupying entire cell
 
-The Scheduler allows appointments to occupy the full height of the cell without its header part by setting `true` for the [`enableMaxHeight`](../api/schedule/eventSettings#enablemaxheight) property.
+The Scheduler allows appointments to occupy the full height of the cell without its header part by setting `true` for the [`enableMaxHeight`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#enablemaxheight) property.
 
-When multiple appointments are available in the same cell, an indicator can be displayed by setting `true` to the [`enableIndicator`](../api/schedule/eventSettings#enableindicator) property. Its default value is `false`.
+When multiple appointments are available in the same cell, an indicator can be displayed by setting `true` to the [`enableIndicator`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#enableindicator) property. Its default value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1189,7 +1191,7 @@ Tooltips provide additional information about appointments in a formatted style.
 
 ### Show or hide built-in tooltip
 
-Display tooltips for appointments by setting `true` to the [`enableTooltip`](../api/schedule/eventSettings#enabletooltip) option within the [`eventSettings`](../api/schedule/eventSettings) property.
+Display tooltips for appointments by setting `true` to the [`enableTooltip`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#enabletooltip) option within the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1210,7 +1212,7 @@ Display tooltips for appointments by setting `true` to the [`enableTooltip`](../
 Customize the content and appearance of tooltips using templates. To implement this:
 
 1. Enable the default tooltip.
-2. Use the [`tooltipTemplate`](../api/schedule/eventSettings#tooltiptemplate) option within the [`eventSettings`](../api/schedule/eventSettings) property to define a custom template.
+2. Use the [`tooltipTemplate`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#tooltiptemplate) option within the [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings) property to define a custom template.
 
 The following example demonstrates tooltip customization:
 
@@ -1252,7 +1254,7 @@ To prevent a tooltip from appearing for certain events, set the `cancel` propert
 
 ## Appointment filtering
 
-Filter appointments based on specific criteria using the [`query`](../api/schedule/eventSettings#query) option in [`eventSettings`](../api/schedule/eventSettings). 
+Filter appointments based on specific criteria using the [`query`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings#query) option in [`eventSettings`](https://ej2.syncfusion.com/documentation/api/schedule/eventSettings). 
 
 The following example demonstrates filtering to render only selected appointments:
 
@@ -1287,7 +1289,7 @@ Note: When deleting multiple selected occurrences of a recurring event series, o
 
 ## Retrieve appointment details from UI elements
 
-Access information about an appointment's fields directly from its UI element using the public method [`getEventDetails`](../api/schedule#geteventdetails). Pass the appointment element as an argument to this method.
+Access information about an appointment's fields directly from its UI element using the public method [`getEventDetails`](https://ej2.syncfusion.com/documentation/api/schedule#geteventdetails). Pass the appointment element as an argument to this method.
 
 The following example shows how to display the subject of a clicked appointment:
 
@@ -1307,7 +1309,7 @@ The following example shows how to display the subject of a clicked appointment:
 
 ## Get current view appointments
 
-To retrieve the appointments visible in the current Scheduler view using the [`getCurrentViewEvents`](../api/schedule#getcurrentviewevents) public method. In the following example, the count of current view appointment collection rendered has been traced in [`dataBound`](../api/schedule#databound) event.
+To retrieve the appointments visible in the current Scheduler view using the [`getCurrentViewEvents`](https://ej2.syncfusion.com/documentation/api/schedule#getcurrentviewevents) public method. In the following example, the count of current view appointment collection rendered has been traced in [`dataBound`](https://ej2.syncfusion.com/documentation/api/schedule#databound) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1325,7 +1327,7 @@ To retrieve the appointments visible in the current Scheduler view using the [`g
 
 ## Get all appointments
 
-To access all appointments rendered on the Scheduler, regardless of the current view, use the [`getEvents`](../api/schedule#getevents) public method. In the following example, the count of entire appointment collection rendered on the Scheduler has been traced in [`dataBound`](../api/schedule#databound) event.
+To access all appointments rendered on the Scheduler, regardless of the current view, use the [`getEvents`](https://ej2.syncfusion.com/documentation/api/schedule#getevents) public method. In the following example, the count of entire appointment collection rendered on the Scheduler has been traced in [`dataBound`](https://ej2.syncfusion.com/documentation/api/schedule#databound) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1343,7 +1345,7 @@ To access all appointments rendered on the Scheduler, regardless of the current 
 
 ## Refresh appointments
 
-Update only the appointments without refreshing the entire Scheduler using the  [`refreshEvents`](../api/schedule#refreshevents) public method.
+Update only the appointments without refreshing the entire Scheduler using the  [`refreshEvents`](https://ej2.syncfusion.com/documentation/api/schedule#refreshevents) public method.
 
 ```ts
 scheduleObj.refreshEvents();
