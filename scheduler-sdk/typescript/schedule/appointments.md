@@ -418,7 +418,7 @@ All spacing values are CSS pixels. Set a field to `null` to use the built-in spa
 
 ### Basic setup
 
-Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track. The sample opens on the current week with events generated from today's date, including overlapping events so the gap is visible:
+Configure event spacing at the Scheduler level to apply it to every supported view. The following example applies a 4-pixel gap and reserves 10 pixels before and 20 pixels after each track.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -467,7 +467,7 @@ Event spacing affects the stacking layout of the following views:
 
 Spacing is ignored in Agenda, Year, and Month Agenda views.
 
-The reserved space belongs to the cell beneath it. Clicking, tapping, or dropping in the space acts on that cell. The `trailingSpace` stays free when a track is full.
+The reserved space belongs to the cell beneath it. Clicking, tapping, or dropping in the space acts on that cell.
 
 ## Drag and drop appointments
 
